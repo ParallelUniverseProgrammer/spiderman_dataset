@@ -1,5 +1,24 @@
 # Spider-Man Media Dataset — Audit & Review
 
+> ## ⚠️ Historical document — every issue below is fixed
+>
+> This is the QA audit of the **v2** build, dated 2025-07-25. It is kept as a
+> record of how the dataset was hardened, **not** as a description of the current
+> data. Every bug and gap it identifies was resolved in v4, which is what ships in
+> `spiderman.db` today. Spot checks against the current build:
+>
+> | Audit finding (v2) | Current state (v4) |
+> |---|---|
+> | Title collisions wiped enrichment from *Spider-Man* (1977) and *The Amazing Spider-Man* (2012) | Both carry full credits (17 and 21 `cast_crew` rows); matching is keyed on `(title, year, media_type)` |
+> | 50 of 81 works (62%) had zero enrichment | **0 works** have zero enrichment |
+> | `review_scores` at 9 rows (2% coverage) | **270 rows** across 30 works and 36 publications |
+> | `people` external IDs on 20 hardcoded rows | **367 of 581** resolved via TMDB, each with a recorded match method |
+> | `characters.alignment` unnormalized (42 distinct values) | 4-value enum, `CHECK`-constrained; raw strings preserved in `alignment_raw` |
+> | `work_studios.role` violated its `CHECK` constraint | Enum extended to the 9 roles the research actually uses |
+> | `box_office` conflated weekly and lifetime figures | `scope` column added and required; see the README |
+>
+> For the current schema, caveats and coverage, read [README.md](README.md).
+
 **Date:** 2025-07-25  
 **Database:** `spiderman.db` (v2)  
 **Build Script:** `build_db_v2.py`  
