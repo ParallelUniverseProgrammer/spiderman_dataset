@@ -1,0 +1,19 @@
+id,work_id,amount_usd,currency,component,inflation_adj_2024,source_year,is_primary,note
+1,5,139000000,USD,production,,2002,1,
+2,6,200000000,USD,production,,2004,1,
+3,7,258000000,USD,production,,2007,1,
+4,8,200000000,USD,production,,2012,1,
+5,9,200000000,USD,production,,2014,1,
+6,9,100000000,USD,marketing,,2014,1,
+7,10,175000000,USD,production,,2017,1,
+8,11,90000000,USD,production,,2018,1,
+9,12,160000000,USD,production,,2019,1,
+10,13,200000000,USD,production,,2021,1,
+11,14,100000000,USD,production,,2023,1,
+12,17,100000000,USD,production,,2018,1,
+13,18,110000000,USD,production,,2021,1,
+14,19,75000000,USD,production,,2022,1,
+15,20,80000000,USD,production,,2024,0,competing published estimate
+16,20,100000000,USD,production,,2024,1,highest published estimate
+17,21,110000000,USD,production,,2024,1,
+18,22,110000000,USD,production,,2024,1,

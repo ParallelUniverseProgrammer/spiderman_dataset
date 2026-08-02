@@ -1,0 +1,143 @@
+id,work_id,comic_title,issue_range,comic_writer,comic_year,storyline_arc
+1,1,Spider-Man,Amazing Fantasy #15,Stan Lee / Steve Ditko,1962,origin
+2,2,Spider-Man,,Stan Lee / Steve Ditko,1962,"""Deadly Dust"" TV episodes"
+3,3,Spider-Man,,Stan Lee / Steve Ditko,1962,"""The Chinese Web"" TV episodes"
+4,4,Spider-Man (Takuya Yamashiro),,Stan Lee / Steve Ditko + Toei original,1962,spin-off
+5,5,Spider-Man,Amazing Fantasy #15,Stan Lee / Steve Ditko,1962,origin
+6,5,The Night Gwen Stacy Died,Amazing Spider-Man #121-122,Gerry Conway,1973,(Fincher proposed; not used)
+7,6,Spider-Man No More!,Amazing Spider-Man #50,Stan Lee / John Romita Sr.,1967,main inspiration
+8,6,If This Be My Destiny...!,Amazing Spider-Man #31-33,Stan Lee / Steve Ditko,1966,partial influence
+9,6,Doctor Octopus debut,Amazing Spider-Man #3,Stan Lee / Steve Ditko,1963,
+10,7,Spider-Man,,Stan Lee / Steve Ditko,1962,
+11,7,Venom,Web of Spider-Man #18 / Amazing Spider-Man #300,David Michelinie / Todd McFarlane,1988,
+12,7,Sandman,Amazing Spider-Man #4,Stan Lee / Steve Ditko,1963,
+13,7,Gwen Stacy,Amazing Spider-Man #31,Stan Lee / Steve Ditko,1965,
+14,8,Spider-Man,Amazing Fantasy #15,Stan Lee / Steve Ditko,1962,origin
+15,8,Ultimate Spider-Man,,Brian Michael Bendis / Mark Bagley,2000,influence
+16,8,Lizard,Amazing Spider-Man #6,Stan Lee / Steve Ditko,1963,
+17,9,Electro,Amazing Spider-Man #9,Stan Lee / Steve Ditko,1964,
+18,9,Green Goblin (Harry),Amazing Spider-Man #121-122,Gerry Conway,1973,The Night Gwen Stacy Died
+19,9,Rhino,Amazing Spider-Man #41,Stan Lee / John Romita Sr.,1966,
+20,9,The Night Gwen Stacy Died,Amazing Spider-Man #121-122,Gerry Conway,1973,
+21,10,Spider-Man,,Stan Lee / Steve Ditko,1962,
+22,10,Ultimate Spider-Man,,Brian Michael Bendis,2000,influence on Ned
+23,10,Vulture,Amazing Spider-Man #2,Stan Lee / Steve Ditko,1963,
+24,10,Shocker,Amazing Spider-Man #46,Stan Lee / John Romita Sr.,1967,
+25,10,Damage Control,,Dwayne McDuffie / Ernie Colón,1988,
+26,10,Captain America: Civil War,,MCU film,2016,tie-in
+27,11,Miles Morales,Ultimate Fallout #4,Brian Michael Bendis / Sara Pichelli,2011,
+28,11,Spider-Verse,Spider-Verse crossover,Dan Slott / Olivier Coipel,2014,
+29,11,Spider-Gwen,Edge of Spider-Verse #2,Jason Latour / Robbie Rodriguez,2014,
+30,11,Spider-Man Noir,Spider-Man Noir #1,David Hine / Fabry,2009,
+31,11,Spider-Ham,Marvel Tails Starring Peter Porker,1983,,
+32,11,Peni Parker,Edge of Spider-Verse #5,Gerard Way / Rodriguez,2014,
+33,11,Kingpin,Amazing Spider-Man #50,Stan Lee / John Romita Sr.,1967,
+34,11,Prowler,Amazing Spider-Man #78,Stan Lee / John Buscema,1969,
+35,12,Mysterio,Amazing Spider-Man #13,Stan Lee / Steve Ditko,1964,
+36,12,Elementals,,various comics,,
+37,12,E.D.I.T.H. glasses,,original to MCU,,
+38,13,One More Day,Amazing Spider-Man #544,J. Michael Straczynski / Joe Quesada,2007,(memory-wipe spell)
+39,13,Spider-Man,various,Stan Lee / Steve Ditko,1962,
+40,13,Multiverse saga,,,,
+41,14,Miles Morales,Ultimate Fallout #4,Brian Michael Bendis / Sara Pichelli,2011,
+42,14,Spider-Man 2099,Spider-Man 2099 #1,Peter David / Rick Leonardi,1992,
+43,14,Spider-Verse,,Dan Slott,2014,
+44,14,The Spot,Amazing Spider-Man #589,Christos Gage / Martin Palermo,2009,
+45,14,Spider-Man India,,Sharad Devarajan / Jeevan Kang,2005,
+46,14,Spider-Punk,,Dan Slott / Olivier Coipel,2014,
+47,14,Ben Reilly / Scarlet Spider,,,,
+48,14,Spider-Byte (Margo Kess),,,,
+49,14,Mayday Parker,Spider-Girl #1,Tom DeFalco / Ron Frenz,1998,
+50,17,Venom: Lethal Protector,miniseries,David Michelinie / Mark Bagley,1993,main inspiration
+51,17,Planet of the Symbiotes,story arc,,1995,
+52,17,Venom,Web of Spider-Man #18 / Amazing Spider-Man #300,David Michelinie / Todd McFarlane,1988,
+53,17,Eddie Brock,Web of Spider-Man #18,David Michelinie / Todd McFarlane,1986,
+54,17,Riot,Venom: Lethal Protector #4,David Michelinie / Mark Bagley,1993,
+55,17,Life Foundation symbiotes,Venom: Lethal Protector,,1993,
+56,17,Cletus Kasady / Carnage,Amazing Spider-Man #344-361,David Michelinie / Erik Larsen,1991,
+57,18,Carnage,Amazing Spider-Man #344-361,David Michelinie / Erik Larsen,1991,
+58,18,Maximum Carnage,crossover,Tom DeFalco / Terry Kavanagh,1993,(title considered)
+59,18,Shriek,Spider-Man Unlimited #1,Tom DeFalco / Ron Lim,1993,
+60,18,Toxin (Patrick Mulligan),Venom/Carnage #1,Peter Milligan / Clayton Crain,2004,
+61,18,Venom: Lethal Protector,,David Michelinie / Mark Bagley,1993,
+62,19,"Morbius, the Living Vampire",Amazing Spider-Man #101,Roy Thomas / Gil Kane,1971,
+63,19,Loxias Crown / Hunger (basis for Milo),Spider-Man #76,Todd DeZago / M.J. Gallagher,1997,
+64,19,Martine Bancroft,Amazing Spider-Man #102,Roy Thomas / Gil Kane,1971,
+65,19,Simon Stroud,Creatures on the Loose #30,Gerry Conway / George Tuska,1974,
+66,20,Madame Web (Cassandra Webb),Amazing Spider-Man #210,Dennis O'Neil / John Romita Jr.,1980,
+67,20,Julia Carpenter / Spider-Woman (Cornwall),Secret Wars #6,Jim Shooter / Mike Zeck,1984,
+68,20,Anya Corazón / Araña / Spider-Girl,Amazing Fantasy #1,Fiona Avery / Mark Brooks,2004,
+69,20,Mattie Franklin / Spider-Woman,Spider-Woman #1 (vol. 3),John Byrne,1999,
+70,20,Ezekiel Sims,Amazing Spider-Man #30 (vol. 2),J. Michael Straczynski / John Romita Jr.,2001,
+71,20,Ben Parker / Uncle Ben,Amazing Fantasy #15,Stan Lee / Steve Ditko,1962,
+72,20,Mary Parker,Amazing Spider-Man Annual #5,Al Sulman,1968,
+73,20,Peter Parker (infant),Spider-Man,Amazing Fantasy #15 (1962),,
+74,21,Kraven the Hunter,Amazing Spider-Man #15,Stan Lee / Steve Ditko,1964,
+75,21,Kraven's Last Hunt,Marvel Fanfare #4-7 / Web of Spider-Man #31-32 / Amazing Spider-Man #293-294 / Spectacular Spider-Man #131-132,J.M. DeMatteis / Mike Zeck,1987,
+76,21,Chameleon,Amazing Spider-Man #1,Stan Lee / Steve Ditko,1963,
+77,21,Rhino,Amazing Spider-Man #41,Stan Lee / John Romita Sr.,1966,
+78,21,Calypso,Amazing Spider-Man #209,Dennis O'Neil / John Romita Jr.,1980,
+79,21,Foreigner,Web of Spider-Man #15,Louise Simonson / Greg LaRocque,1986,
+80,21,Nikolai Kravinoff,Kraven's Last Hunt,J.M. DeMatteis,1987,
+81,22,Venom,Web of Spider-Man #18 / Amazing Spider-Man #300,David Michelinie / Todd McFarlane,1988,
+82,22,Knull,Venom #3 (vol. 4),Donny Cates / Ryan Stegman,2018,
+83,22,Xenophage,Venom: Planet of the Symbiotes / Symbiote Spider-Man,,1995,
+84,22,Rex Strickland,Venom #1 (vol. 4),Donny Cates / Ryan Stegman,2018,
+85,22,Imperium,,Donny Cates / Ryan Stegman,2018,(King in Black lore)
+86,22,Agony (symbiote),Venom: Lethal Protector #4,David Michelinie / Mark Bagley,1993,
+87,22,Lasher (symbiote),Venom: Lethal Protector #4,David Michelinie / Mark Bagley,1993,
+88,15,Spider-Verse,The Amazing Spider-Man #9-15,Dan Slott,2014,Spider-Verse
+89,16,Brand New Day,The Amazing Spider-Man #546-564,Dan Slott,2008,Brand New Day
+90,23,Friendly Neighborhood Spider-Man,#6,Peter David,2006,
+91,24,Spider-Man,Amazing Fantasy #15,Stan Lee,1962,Spider-Man origin
+92,25,Spider-Man,,Stan Lee / Steve Ditko,1962,
+93,26,Spider-Man,,Stan Lee / Steve Ditko,1962,Loose adaptation
+94,28,Spider-Man,,Stan Lee / Steve Ditko,1962,
+95,29,Spider-Man,,Stan Lee / Steve Ditko,1962,
+96,30,Spider-Man; X-Men,,Stan Lee / Steve Ditko / Jack Kirby,1962,
+97,31,The Amazing Spider-Man,,Various,1963,Venom Saga; Six Arms Saga; Secret Wars; Clone Saga
+98,32,The Amazing Spider-Man,#1-26 (initial adaptation plan),Stan Lee / Steve Ditko,1963,Counter-Earth
+99,33,Ultimate Spider-Man,,Brian Michael Bendis,2000,Initial adaptation plan
+100,34,The Amazing Spider-Man; Ultimate Spider-Man,,Stan Lee / Steve Ditko / John Romita Sr. / Brian Michael Bendis,1963,
+101,35,Ultimate Spider-Man,,Brian Michael Bendis,2000,
+102,36,Spider-Man,,Stan Lee / Steve Ditko,1962,Superior Spider-Man; Spider-Island; Maximum Venom
+103,37,Spider-Man,,Stan Lee / Steve Ditko,1962,
+104,38,The Amazing Spider-Man,,Stan Lee / Steve Ditko / John Romita Sr.,1963,Early Spider-Man stories
+105,27,Spider-Man Noir,#1-4,David Hine / Fabrice Sapolsky,2009,Spider-Man Noir
+106,39,Spider-Man (Marvel Comics),ongoing comic,Stan Lee / Steve Ditko,1962,general mythology
+107,40,Spider-Man (Marvel Comics),general mythology,Stan Lee / Steve Ditko,1962,general
+108,41,Spider-Man & Captain America comics,general mythology,multiple,,general
+109,45,Spider-Man comics,general mythology,Stan Lee / Steve Ditko,1962,
+110,46,Spider-Man comics,general mythology,Stan Lee / Steve Ditko,1962,
+111,48,"""Return of the Sinister Six""",Amazing Spider-Man #334-339 (1990),David Michelinie / Erik Larsen,1990,Sinister Six storyline
+112,51,"""Maximum Carnage""",Maximum Carnage #1-14 (1993),Tom DeFalco / Mark Bagley,1993,Maximum Carnage storyline
+113,52,"""The Lethal Foes of Spider-Man"" (1993 limited series)",#1-4,John Byrne / Dave Hoover,1993,(name inspiration only)
+114,53,Venom: Separation Anxiety (titled after),#1-4 (1994),Howard Mackie / Ron Lim,1994,
+115,53,Venom: Lethal Protector (plot closely follows),#1-6 (1993),David Michelinie / Mark Bagley,1993,Lethal Protector
+116,54,Spider-Man: The Animated Series (1994-1998 TV series),1994,(animated adaptation),,
+117,55,Spider-Man comics,general mythology,Stan Lee / Steve Ditko,1962,
+118,55,New Enforcers storyline elements,,,,
+119,57,Spider-Man comics,general mythology,Stan Lee / Steve Ditko,1962,
+120,59,Spider-Man comics,general mythology,Stan Lee / Steve Ditko,1962,
+121,60,Spider-Man comics,general mythology,Stan Lee / Steve Ditko,1962,
+122,61,Spider-Man (2002 film),2002,Sam Raimi (director),2002,film tie-in
+123,62,Spider-Man 2 (2004 film),2004,Sam Raimi (director),2004,film tie-in (with comic expansions)
+124,63,Ultimate Spider-Man (comic),#1-ongoing (2000+),Brian Michael Bendis / Mark Bagley,2000,Ultimate Marvel universe
+125,65,Spider-Man 3 (2007 film),2007,Sam Raimi (director),2007,"film tie-in (with comic expansions: Lizard, Kraven, Calypso, Scorpion, Morbius, Shriek, Carlyle)"
+126,66,Sam Raimi Spider-Man film trilogy,2002-2007,Sam Raimi,,non-canon divergence from films
+127,67,Spider-Man comics,general mythology (symbiote invasion story),,,
+128,69,Spider-Man comics (multiverse),Tablet of Order and Chaos (game original),,,Multiverse / Spider-Verse precursor
+129,70,Spider-Man 2099 comics,general,Peter David / Rick Leonardi,1992,Marvel 2099 setting
+130,71,The Amazing Spider-Man (2012 film),2012,Marc Webb (director),2012,film epilogue (alternate continuity)
+131,72,The Amazing Spider-Man 2 (2014 film),2014,Marc Webb (director),2014,film tie-in (alternate continuity)
+132,73,Spider-Man comics (multiverse/Spider-Verse),2014 storyline,Dan Slott / Olivier Coipel,2014,Spider-Verse
+133,74,Marvel Comics (broad),general mythology,various,,original story (Lego multiverse)
+134,75,Marvel Comics (broad multiverse),Chronopolis / Kang storyline,,,original story
+135,76,Spider-Man comics,Earth-1048 (original),inspired by long-running mythology & other media,,(Insomniac original universe)
+136,79,Miles Morales (Ultimate Spider-Man),2011-present,Brian Michael Bendis / Sara Pichelli,2011,(Insomniac Earth-1048)
+137,80,Spider-Man comics,Earth-1048,inspired by Kraven's Last Hunt & Venom/symbiote mythology,,(Insomniac original)
+138,77,Spider-Man comics,Earth-1048,"inspired by Black Cat, Maggia, Hammerhead mythology",,
+139,50,Invasion of the Spider-Slayers,The Amazing Spider-Man #368-373,David Michelinie,1992,Invasion of the Spider-Slayers
+140,56,The Sinister Six,The Amazing Spider-Man Annual #1,Stan Lee,1964,The Sinister Six
+141,58,The Sinister Six,The Amazing Spider-Man Annual #1,Stan Lee,1964,The Sinister Six
+142,68,Ultimate Spider-Man,Ultimate Spider-Man #1,Brian Michael Bendis,2000,

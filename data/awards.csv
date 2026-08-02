@@ -1,0 +1,22 @@
+work_id,award_body,year,category,result,recipient_person_id
+5,Academy Awards,2003,Best Sound,nominated,
+5,Academy Awards,2003,Best Visual Effects,nominated,
+6,Academy Awards,2005,Best Visual Effects,won,
+6,Academy Awards,2005,Best Sound Mixing,nominated,
+6,Academy Awards,2005,Best Sound Editing,nominated,
+6,Saturn Awards,2005,Best Fantasy Film,won,
+6,Saturn Awards,2005,Best Director,won,194
+11,Academy Awards,2019,Best Animated Feature,won,
+13,Academy Awards,2022,Best Visual Effects,nominated,
+14,Critics' Choice Movie Awards,2024,Best Animated Feature,won,
+14,Annie Awards,2024,Best Animated Feature,won,
+14,Producers Guild of America Awards,2024,Best Animated Feature,won,
+14,Golden Globe Awards,2024,Best Animated Feature,nominated,
+14,BAFTA Awards,2024,Best Animated Feature,nominated,
+14,Academy Awards,2024,Best Animated Feature,nominated,
+19,Golden Raspberry Awards,2023,Worst Actor,won,278
+19,Golden Raspberry Awards,2023,Worst Supporting Actress,won,80
+19,Golden Raspberry Awards,2023,Worst Picture,nominated,
+20,Golden Raspberry Awards,2025,Worst Picture,won,
+20,Golden Raspberry Awards,2025,Worst Actress,won,84
+20,Golden Raspberry Awards,2025,Worst Screenplay,won,

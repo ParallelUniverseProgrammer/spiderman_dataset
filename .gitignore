@@ -1,0 +1,3 @@
+# TMDB response cache written by fetch_tmdb_people.py — regenerable, not source data
+data_raw/.tmdb_cache/
+__pycache__/

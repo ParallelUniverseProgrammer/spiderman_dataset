@@ -1,0 +1,2957 @@
+[
+  {
+    "title": "Spidey Super Stories",
+    "release_year": 1974,
+    "principal_cast": [
+      {
+        "actor": "Danny Seagren",
+        "character": "Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Morgan Freeman",
+        "character": "Narrator / various characters",
+        "billing_order": 2
+      },
+      {
+        "actor": "Skip Hinnant",
+        "character": "Narrator / various characters",
+        "billing_order": 3
+      },
+      {
+        "actor": "Judy Graubart",
+        "character": "Various characters",
+        "billing_order": 4
+      },
+      {
+        "actor": "Jim Boyd",
+        "character": "Various characters",
+        "billing_order": 5
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Stan Lee",
+        "role": "source character co-creator"
+      },
+      {
+        "person": "Steve Ditko",
+        "role": "source character co-creator"
+      },
+      {
+        "person": "Gary William Friedman",
+        "role": "theme music composer"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Children's Television Workshop",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Comics Group",
+        "role": "co_production"
+      }
+    ],
+    "episodes": [
+      {
+        "season_number": 4,
+        "episode_number": null,
+        "title": "Season 4 summary",
+        "air_date": null,
+        "runtime_minutes": 5,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 5,
+        "episode_number": null,
+        "title": "Season 5 summary",
+        "air_date": null,
+        "runtime_minutes": 5,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 6,
+        "episode_number": 29,
+        "title": "The Beastly Banana",
+        "air_date": null,
+        "runtime_minutes": 5,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      }
+    ],
+    "review_scores": [],
+    "source_material": [
+      {
+        "comic_title": "Spider-Man",
+        "issue_range": "Amazing Fantasy #15",
+        "comic_writer": "Stan Lee",
+        "comic_year": 1962,
+        "storyline_arc": "Spider-Man origin"
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spider-Man (1967 TV series)",
+        "relation_type": "related"
+      },
+      {
+        "related_work_title": "The Amazing Spider-Man",
+        "relation_type": "related"
+      },
+      {
+        "related_work_title": "Spider-Man: Across the Spider-Verse",
+        "relation_type": "crossover"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Spider-Man",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Spoiler",
+        "alignment": "villain",
+        "alias": "Spoiler",
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Queen Bee",
+        "alignment": "villain",
+        "alias": "Queen Bee",
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Thumper",
+        "alignment": "villain",
+        "alias": "Thumper",
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      }
+    ]
+  },
+  {
+    "title": "The Amazing Spider-Man",
+    "release_year": 1977,
+    "principal_cast": [
+      {
+        "actor": "Nicholas Hammond",
+        "character": "Peter Parker / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Robert F. Simon",
+        "character": "J. Jonah Jameson",
+        "billing_order": 2
+      },
+      {
+        "actor": "Chip Fields",
+        "character": "Rita Conway",
+        "billing_order": 3
+      },
+      {
+        "actor": "Michael Pataki",
+        "character": "Captain Barbera",
+        "billing_order": 4
+      },
+      {
+        "actor": "Ellen Bry",
+        "character": "Julie Masters",
+        "billing_order": 5
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Alvin Boretz",
+        "role": "creator"
+      },
+      {
+        "person": "Daniel R. Goodman",
+        "role": "producer"
+      },
+      {
+        "person": "Stu Phillips",
+        "role": "theme music composer"
+      },
+      {
+        "person": "Dana Kaproff",
+        "role": "theme music composer"
+      },
+      {
+        "person": "Don McDougall",
+        "role": "director"
+      },
+      {
+        "person": "Ron Satlof",
+        "role": "director"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Charles Fries Productions",
+        "role": "production"
+      },
+      {
+        "name": "Dan Goodman Productions",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Comics Group",
+        "role": "co_production"
+      },
+      {
+        "name": "Columbia Pictures Television",
+        "role": "distributor"
+      }
+    ],
+    "episodes": [
+      {
+        "season_number": null,
+        "episode_number": null,
+        "title": "Spider-Man",
+        "air_date": "1977-09-14",
+        "runtime_minutes": null,
+        "director": "E. W. Swackhamer",
+        "writer": "Alvin Boretz",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 1,
+        "title": "The Deadly Dust: Part 1",
+        "air_date": "1978-04-05",
+        "runtime_minutes": null,
+        "director": "Ron Satlof",
+        "writer": "Robert Janes",
+        "us_viewers_millions": 16.6
+      },
+      {
+        "season_number": 1,
+        "episode_number": 2,
+        "title": "The Deadly Dust: Part 2",
+        "air_date": "1978-04-12",
+        "runtime_minutes": null,
+        "director": "Ron Satlof",
+        "writer": "Robert Janes",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 3,
+        "title": "The Curse of Rava",
+        "air_date": "1978-04-19",
+        "runtime_minutes": null,
+        "director": "Michael Caffey",
+        "writer": "Dick Nelson; Robert Janes",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 4,
+        "title": "Night of the Clones",
+        "air_date": "1978-04-26",
+        "runtime_minutes": null,
+        "director": "Fernando Lamas",
+        "writer": "John W. Bloch",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 5,
+        "title": "Escort to Danger",
+        "air_date": "1978-05-03",
+        "runtime_minutes": null,
+        "director": "Dennis Donnelly",
+        "writer": "Duke Sandefur",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 2,
+        "episode_number": 1,
+        "title": "The Captive Tower",
+        "air_date": "1978-09-05",
+        "runtime_minutes": null,
+        "director": "Cliff Bole",
+        "writer": "Gregory S. Dinallo; Bruce Kalish; Philip John Taylor",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 2,
+        "episode_number": 2,
+        "title": "A Matter of State",
+        "air_date": "1978-09-12",
+        "runtime_minutes": null,
+        "director": "Larry Stewart",
+        "writer": "Howard Dimsdale",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 2,
+        "episode_number": 3,
+        "title": "The Con Caper",
+        "air_date": "1978-11-25",
+        "runtime_minutes": null,
+        "director": "Tom Blank",
+        "writer": "Brian McKay; Gregory S. Dinallo",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 2,
+        "episode_number": 4,
+        "title": "The Kirkwood Haunting",
+        "air_date": "1978-12-30",
+        "runtime_minutes": null,
+        "director": "Don McDougall",
+        "writer": "Michael Michaelian",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 2,
+        "episode_number": 5,
+        "title": "Photo Finish",
+        "air_date": "1979-02-07",
+        "runtime_minutes": null,
+        "director": "Tony Ganz",
+        "writer": "Howard Dimsdale",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 2,
+        "episode_number": 6,
+        "title": "Wolfpack",
+        "air_date": "1979-02-21",
+        "runtime_minutes": null,
+        "director": "Joseph Manduke",
+        "writer": "Stephen Kandel",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 2,
+        "episode_number": 7,
+        "title": "The Chinese Web: Part 1",
+        "air_date": "1979-07-06",
+        "runtime_minutes": null,
+        "director": "Don McDougall",
+        "writer": "Lionel E. Siegel",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 2,
+        "episode_number": 8,
+        "title": "The Chinese Web: Part 2",
+        "air_date": "1979-07-06",
+        "runtime_minutes": null,
+        "director": "Don McDougall",
+        "writer": "Lionel E. Siegel",
+        "us_viewers_millions": null
+      }
+    ],
+    "review_scores": [],
+    "source_material": [
+      {
+        "comic_title": "Spider-Man",
+        "issue_range": null,
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1962,
+        "storyline_arc": null
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spidey Super Stories",
+        "relation_type": "related"
+      },
+      {
+        "related_work_title": "Spider-Man (1977 film)",
+        "relation_type": "tie_in"
+      },
+      {
+        "related_work_title": "Spider-Man Strikes Back",
+        "relation_type": "tie_in"
+      },
+      {
+        "related_work_title": "Spider-Man: The Dragon's Challenge",
+        "relation_type": "tie_in"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Peter Parker",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "J. Jonah Jameson",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "The Amazing Spider-Man #1",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Robbie Robertson",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "The Amazing Spider-Man #51",
+        "first_comic_year": 1967
+      },
+      {
+        "name": "Rita Conway",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Julie Masters",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      }
+    ]
+  },
+  {
+    "title": "Spider-Man (Japanese TV series)",
+    "release_year": 1978,
+    "principal_cast": [
+      {
+        "actor": "Shinji Tōdō",
+        "character": "Takuya Yamashiro / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Rika Miura",
+        "character": "Hitomi Sakuma",
+        "billing_order": 2
+      },
+      {
+        "actor": "Mitsuo Andō",
+        "character": "Professor Monster",
+        "billing_order": 3
+      },
+      {
+        "actor": "Yukie Kagawa",
+        "character": "Amazoness",
+        "billing_order": 4
+      },
+      {
+        "actor": "Izumi Ōyama",
+        "character": "Shinko Yamashiro",
+        "billing_order": 5
+      },
+      {
+        "actor": "Yoshiharu Yabuki",
+        "character": "Takuji Yamashiro",
+        "billing_order": 6
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Saburo Yatsude",
+        "role": "creator"
+      },
+      {
+        "person": "Shōzō Uehara",
+        "role": "head writer"
+      },
+      {
+        "person": "Susumu Takaku",
+        "role": "head writer"
+      },
+      {
+        "person": "Kōichi Takemoto",
+        "role": "director"
+      },
+      {
+        "person": "Michiaki Watanabe",
+        "role": "composer"
+      },
+      {
+        "person": "Susumu Yoshikawa",
+        "role": "producer"
+      },
+      {
+        "person": "Gene Pelc",
+        "role": "producer"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Toei Company",
+        "role": "production"
+      },
+      {
+        "name": "Toei Advertising",
+        "role": "co_production"
+      },
+      {
+        "name": "Tokyo Channel 12",
+        "role": "co_production"
+      }
+    ],
+    "episodes": [
+      {
+        "season_number": 1,
+        "episode_number": null,
+        "title": "Season 1 summary",
+        "air_date": "1978-05-17",
+        "runtime_minutes": 24,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      }
+    ],
+    "review_scores": [],
+    "source_material": [
+      {
+        "comic_title": "Spider-Man",
+        "issue_range": null,
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1962,
+        "storyline_arc": "Loose adaptation"
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "The Amazing Spider-Man",
+        "relation_type": "related"
+      },
+      {
+        "related_work_title": "Super Sentai",
+        "relation_type": "spin_off"
+      },
+      {
+        "related_work_title": "Spider-Verse",
+        "relation_type": "crossover"
+      },
+      {
+        "related_work_title": "Spider-Geddon",
+        "relation_type": "crossover"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Takuya Yamashiro",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Professor Monster",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Amazoness",
+        "alignment": "villain",
+        "alias": "Saeko Yoshida",
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Garia",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Leopardon",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      }
+    ]
+  },
+  {
+    "title": "Spider-Man (1967 TV series)",
+    "release_year": 1967,
+    "principal_cast": [
+      {
+        "actor": "Paul Soles",
+        "character": "Peter Parker / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Paul Kligman",
+        "character": "J. Jonah Jameson",
+        "billing_order": 2
+      },
+      {
+        "actor": "Peg Dixon",
+        "character": "Betty Brant / Aunt May / Mary Jane Watson",
+        "billing_order": 3
+      },
+      {
+        "actor": "Bernard Cowan",
+        "character": "Narrator",
+        "billing_order": 4
+      },
+      {
+        "actor": "Len Carlson",
+        "character": "Green Goblin / Captain Ned Stacy",
+        "billing_order": 5
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Robert L. Lawrence",
+        "role": "executive producer"
+      },
+      {
+        "person": "Ralph Bakshi",
+        "role": "executive producer"
+      },
+      {
+        "person": "Ray Patterson",
+        "role": "producer"
+      },
+      {
+        "person": "Paul Francis Webster",
+        "role": "theme lyricist"
+      },
+      {
+        "person": "Bob Harris",
+        "role": "theme music composer"
+      },
+      {
+        "person": "Ray Ellis",
+        "role": "composer"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Grantray-Lawrence Animation",
+        "role": "production"
+      },
+      {
+        "name": "Krantz Films",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Comics Group",
+        "role": "co_production"
+      }
+    ],
+    "episodes": [
+      {
+        "season_number": 1,
+        "episode_number": null,
+        "title": "Season 1 summary",
+        "air_date": "1967-09-09",
+        "runtime_minutes": 25,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 2,
+        "episode_number": null,
+        "title": "Season 2 summary",
+        "air_date": "1968-09-14",
+        "runtime_minutes": 25,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 3,
+        "episode_number": null,
+        "title": "Season 3 summary",
+        "air_date": "1970-03-22",
+        "runtime_minutes": 25,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      }
+    ],
+    "review_scores": [],
+    "source_material": [
+      {
+        "comic_title": "Spider-Man",
+        "issue_range": null,
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1962,
+        "storyline_arc": null
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Rocket Robin Hood",
+        "relation_type": "tie_in"
+      },
+      {
+        "related_work_title": "Spider-Verse",
+        "relation_type": "crossover"
+      },
+      {
+        "related_work_title": "Spider-Man: Into the Spider-Verse",
+        "relation_type": "crossover"
+      },
+      {
+        "related_work_title": "Spider-Man: Across the Spider-Verse",
+        "relation_type": "crossover"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Peter Parker",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "J. Jonah Jameson",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "The Amazing Spider-Man #1",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Betty Brant",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "The Amazing Spider-Man #4",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "May Parker",
+        "alignment": "neutral",
+        "alias": "Aunt May",
+        "first_comic_appearance": "Amazing Fantasy #15",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Green Goblin",
+        "alignment": "villain",
+        "alias": "Norman Osborn",
+        "first_comic_appearance": "The Amazing Spider-Man #14",
+        "first_comic_year": 1964
+      },
+      {
+        "name": "Doctor Octopus",
+        "alignment": "villain",
+        "alias": "Otto Octavius",
+        "first_comic_appearance": "The Amazing Spider-Man #3",
+        "first_comic_year": 1963
+      }
+    ]
+  },
+  {
+    "title": "Spider-Man (1981 TV series)",
+    "release_year": 1981,
+    "principal_cast": [
+      {
+        "actor": "Ted Schwartz",
+        "character": "Spider-Man / Peter Parker",
+        "billing_order": 1
+      },
+      {
+        "actor": "William Woodson",
+        "character": "J. Jonah Jameson",
+        "billing_order": 2
+      },
+      {
+        "actor": "Morgan Lofting",
+        "character": "Aunt May / Black Cat",
+        "billing_order": 3
+      },
+      {
+        "actor": "Mona Marshall",
+        "character": "Betty Brant",
+        "billing_order": 4
+      },
+      {
+        "actor": "Lee Bailey",
+        "character": "Robbie Robertson",
+        "billing_order": 5
+      },
+      {
+        "actor": "Brad Crandall",
+        "character": "Doctor Doom",
+        "billing_order": 6
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Stan Lee",
+        "role": "creator"
+      },
+      {
+        "person": "Arthur Vitello",
+        "role": "producer"
+      },
+      {
+        "person": "David H. DePatie",
+        "role": "executive producer"
+      },
+      {
+        "person": "Lee Gunther",
+        "role": "executive producer"
+      },
+      {
+        "person": "Johnny Douglas",
+        "role": "composer"
+      },
+      {
+        "person": "Wally Burr",
+        "role": "voice director"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Marvel Productions",
+        "role": "production"
+      }
+    ],
+    "episodes": [
+      {
+        "season_number": 1,
+        "episode_number": null,
+        "title": "Season 1 summary",
+        "air_date": "1981-09-12",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      }
+    ],
+    "review_scores": [],
+    "source_material": [
+      {
+        "comic_title": "Spider-Man",
+        "issue_range": null,
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1962,
+        "storyline_arc": null
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spider-Man (1967 TV series)",
+        "relation_type": "related"
+      },
+      {
+        "related_work_title": "Spider-Man and His Amazing Friends",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Marvel Action Universe",
+        "relation_type": "tie_in"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Peter Parker",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "J. Jonah Jameson",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "The Amazing Spider-Man #1",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "May Parker",
+        "alignment": "neutral",
+        "alias": "Aunt May",
+        "first_comic_appearance": "Amazing Fantasy #15",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Doctor Doom",
+        "alignment": "villain",
+        "alias": "Victor von Doom",
+        "first_comic_appearance": "The Fantastic Four #5",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Green Goblin",
+        "alignment": "villain",
+        "alias": "Norman Osborn",
+        "first_comic_appearance": "The Amazing Spider-Man #14",
+        "first_comic_year": 1964
+      }
+    ]
+  },
+  {
+    "title": "Spider-Man and His Amazing Friends",
+    "release_year": 1981,
+    "principal_cast": [
+      {
+        "actor": "Dan Gilvezan",
+        "character": "Spider-Man / Peter Parker",
+        "billing_order": 1
+      },
+      {
+        "actor": "Frank Welker",
+        "character": "Iceman / Bobby Drake",
+        "billing_order": 2
+      },
+      {
+        "actor": "Kathy Garver",
+        "character": "Fire-Star / Angelica Jones",
+        "billing_order": 3
+      },
+      {
+        "actor": "June Foray",
+        "character": "Aunt May",
+        "billing_order": 4
+      },
+      {
+        "actor": "Dick Tufeld",
+        "character": "Narrator",
+        "billing_order": 5
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Stan Lee",
+        "role": "creator"
+      },
+      {
+        "person": "Don Jurwich",
+        "role": "director"
+      },
+      {
+        "person": "Dennis Marks",
+        "role": "producer"
+      },
+      {
+        "person": "Johnny Douglas",
+        "role": "composer"
+      },
+      {
+        "person": "David H. DePatie",
+        "role": "executive producer"
+      },
+      {
+        "person": "Lee Gunther",
+        "role": "executive producer"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Marvel Productions",
+        "role": "production"
+      }
+    ],
+    "episodes": [
+      {
+        "season_number": 1,
+        "episode_number": null,
+        "title": "Season 1 summary",
+        "air_date": "1981-09-12",
+        "runtime_minutes": 25,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 2,
+        "episode_number": null,
+        "title": "Season 2 summary",
+        "air_date": "1982-09-18",
+        "runtime_minutes": 25,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 3,
+        "episode_number": null,
+        "title": "Season 3 summary",
+        "air_date": "1983-09-17",
+        "runtime_minutes": 25,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      }
+    ],
+    "review_scores": [],
+    "source_material": [
+      {
+        "comic_title": "Spider-Man; X-Men",
+        "issue_range": null,
+        "comic_writer": "Stan Lee / Steve Ditko / Jack Kirby",
+        "comic_year": 1962,
+        "storyline_arc": null
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spider-Man (1981 TV series)",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "The Incredible Hulk and the Amazing Spider-Man",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Spider-Man: Across the Spider-Verse",
+        "relation_type": "crossover"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Spider-Man",
+        "alignment": "hero",
+        "alias": "Peter Parker",
+        "first_comic_appearance": "Amazing Fantasy #15",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Iceman",
+        "alignment": "hero",
+        "alias": "Bobby Drake",
+        "first_comic_appearance": "X-Men #1",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Firestar",
+        "alignment": "hero",
+        "alias": "Angelica Jones",
+        "first_comic_appearance": "Uncanny X-Men #193",
+        "first_comic_year": 1985
+      },
+      {
+        "name": "Videoman",
+        "alignment": "neutral",
+        "alias": "Francis Byte",
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Green Goblin",
+        "alignment": "villain",
+        "alias": "Norman Osborn",
+        "first_comic_appearance": "The Amazing Spider-Man #14",
+        "first_comic_year": 1964
+      }
+    ]
+  },
+  {
+    "title": "Spider-Man: The Animated Series",
+    "release_year": 1994,
+    "principal_cast": [
+      {
+        "actor": "Christopher Daniel Barnes",
+        "character": "Spider-Man / Peter Parker",
+        "billing_order": 1
+      },
+      {
+        "actor": "Ed Asner",
+        "character": "J. Jonah Jameson",
+        "billing_order": 2
+      },
+      {
+        "actor": "Rodney Saulsberry",
+        "character": "Robbie Robertson",
+        "billing_order": 3
+      },
+      {
+        "actor": "Sara Ballantine",
+        "character": "Mary Jane Watson",
+        "billing_order": 4
+      },
+      {
+        "actor": "Jennifer Hale",
+        "character": "Felicia Hardy / Black Cat",
+        "billing_order": 5
+      },
+      {
+        "actor": "Gary Imhoff",
+        "character": "Harry Osborn",
+        "billing_order": 6
+      },
+      {
+        "actor": "Roscoe Lee Browne",
+        "character": "Kingpin / Wilson Fisk",
+        "billing_order": 7
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "John Semper",
+        "role": "supervising producer and story editor"
+      },
+      {
+        "person": "Bob Richardson",
+        "role": "supervising director"
+      },
+      {
+        "person": "Avi Arad",
+        "role": "executive producer"
+      },
+      {
+        "person": "Stan Lee",
+        "role": "executive producer"
+      },
+      {
+        "person": "Shuki Levy",
+        "role": "composer"
+      },
+      {
+        "person": "Kussa Mahchi",
+        "role": "composer"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Marvel Entertainment",
+        "role": "production"
+      },
+      {
+        "name": "Saban Entertainment",
+        "role": "co_production"
+      },
+      {
+        "name": "Fox Kids Network",
+        "role": "distributor"
+      }
+    ],
+    "episodes": [
+      {
+        "season_number": 1,
+        "episode_number": null,
+        "title": "Season 1 summary",
+        "air_date": "1994-11-19",
+        "runtime_minutes": 22,
+        "director": "Bob Richardson",
+        "writer": null,
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 2,
+        "episode_number": null,
+        "title": "Neogenic Nightmare summary",
+        "air_date": "1995-09-09",
+        "runtime_minutes": 22,
+        "director": "Bob Richardson",
+        "writer": null,
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 3,
+        "episode_number": null,
+        "title": "The Sins of the Fathers summary",
+        "air_date": "1996-04-27",
+        "runtime_minutes": 22,
+        "director": "Bob Richardson",
+        "writer": null,
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 4,
+        "episode_number": null,
+        "title": "Partners in Danger summary",
+        "air_date": "1997-02-01",
+        "runtime_minutes": 22,
+        "director": "Bob Richardson",
+        "writer": null,
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 5,
+        "episode_number": null,
+        "title": "Season 5 summary",
+        "air_date": "1997-09-12",
+        "runtime_minutes": 22,
+        "director": "Bob Richardson",
+        "writer": null,
+        "us_viewers_millions": null
+      }
+    ],
+    "review_scores": [],
+    "source_material": [
+      {
+        "comic_title": "The Amazing Spider-Man",
+        "issue_range": null,
+        "comic_writer": "Various",
+        "comic_year": 1963,
+        "storyline_arc": "Venom Saga; Six Arms Saga; Secret Wars; Clone Saga"
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "X-Men: The Animated Series",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Spider-Man Unlimited",
+        "relation_type": "sequel"
+      },
+      {
+        "related_work_title": "Spider-Verse",
+        "relation_type": "crossover"
+      },
+      {
+        "related_work_title": "X-Men '97",
+        "relation_type": "same_universe"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Spider-Man",
+        "alignment": "hero",
+        "alias": "Peter Parker",
+        "first_comic_appearance": "Amazing Fantasy #15",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Mary Jane Watson",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "The Amazing Spider-Man #25",
+        "first_comic_year": 1965
+      },
+      {
+        "name": "Kingpin",
+        "alignment": "villain",
+        "alias": "Wilson Fisk",
+        "first_comic_appearance": "The Amazing Spider-Man #50",
+        "first_comic_year": 1967
+      },
+      {
+        "name": "Venom",
+        "alignment": "villain",
+        "alias": "Eddie Brock",
+        "first_comic_appearance": "The Amazing Spider-Man #300",
+        "first_comic_year": 1988
+      },
+      {
+        "name": "Carnage",
+        "alignment": "villain",
+        "alias": "Cletus Kasady",
+        "first_comic_appearance": "The Amazing Spider-Man #361",
+        "first_comic_year": 1992
+      },
+      {
+        "name": "Madame Web",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "The Amazing Spider-Man #210",
+        "first_comic_year": 1980
+      }
+    ]
+  },
+  {
+    "title": "Spider-Man Unlimited",
+    "release_year": 1999,
+    "principal_cast": [
+      {
+        "actor": "Rino Romano",
+        "character": "Peter Parker / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Brian Drummond",
+        "character": "Eddie Brock / Venom",
+        "billing_order": 2
+      },
+      {
+        "actor": "Michael Donovan",
+        "character": "Cletus Kasady / Carnage",
+        "billing_order": 3
+      },
+      {
+        "actor": "Richard Newman",
+        "character": "High Evolutionary / J. Jonah Jameson",
+        "billing_order": 4
+      },
+      {
+        "actor": "Jennifer Hale",
+        "character": "Mary Jane Watson-Parker / Lady Vermin",
+        "billing_order": 5
+      },
+      {
+        "actor": "John Payne",
+        "character": "John Jameson",
+        "billing_order": 6
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Avi Arad",
+        "role": "developer"
+      },
+      {
+        "person": "Will Meugniot",
+        "role": "developer and producer"
+      },
+      {
+        "person": "Patrick Archibald",
+        "role": "director"
+      },
+      {
+        "person": "Jeremy Sweet",
+        "role": "theme music composer"
+      },
+      {
+        "person": "Ian Nickus",
+        "role": "theme music composer"
+      },
+      {
+        "person": "Eric S. Rollman",
+        "role": "executive producer"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Marvel Studios",
+        "role": "production"
+      },
+      {
+        "name": "Saban Entertainment",
+        "role": "production"
+      },
+      {
+        "name": "Atomic Cartoons",
+        "role": "co_production"
+      }
+    ],
+    "episodes": [
+      {
+        "season_number": 1,
+        "episode_number": 1,
+        "title": "Worlds Apart Part One",
+        "air_date": "1999-10-02",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": "Michael Reaves",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 2,
+        "title": "Worlds Apart Part Two",
+        "air_date": "1999-10-09",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": "Michael Reaves",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 3,
+        "title": "Where Evil Nests",
+        "air_date": "1999-10-16",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": "Brynne Chandler Reaves",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 4,
+        "title": "Deadly Choices",
+        "air_date": "2000-12-23",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": "Steve Perry",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 5,
+        "title": "Steel Cold Heart",
+        "air_date": "2001-01-13",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": "Roger Slifer",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 6,
+        "title": "Enter the Hunter!",
+        "air_date": "2001-02-03",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": "Diane Duane; Peter Morwood",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 7,
+        "title": "Cry Vulture",
+        "air_date": "2001-02-10",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": "Larry Brody; Robert Gregory Browne",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 8,
+        "title": "Ill-Met by Moonlight",
+        "air_date": "2001-02-17",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": "Robert Gregory Browne; Larry Brody",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 9,
+        "title": "Sustenance",
+        "air_date": "2001-03-03",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": "Robert Gregory Browne; Larry Brody",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 10,
+        "title": "Matters of the Heart",
+        "air_date": "2001-03-10",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": "Mark Hoffmeier; Larry Brody",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 11,
+        "title": "One Is the Loneliest Number",
+        "air_date": "2001-03-17",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": "Robert Gregory Browne; Larry Brody",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 12,
+        "title": "Sins of the Fathers",
+        "air_date": "2001-03-24",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": "Robert Gregory Browne; Larry Brody",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 13,
+        "title": "Destiny Unleashed",
+        "air_date": "2001-03-31",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": "Robert Gregory Browne; Larry Brody",
+        "us_viewers_millions": null
+      }
+    ],
+    "review_scores": [
+      {
+        "source": "Rotten Tomatoes",
+        "score": 50,
+        "max_score": 100,
+        "review_count": null
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "The Amazing Spider-Man",
+        "issue_range": "#1-26 (initial adaptation plan)",
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1963,
+        "storyline_arc": "Counter-Earth"
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spider-Man: The Animated Series",
+        "relation_type": "sequel"
+      },
+      {
+        "related_work_title": "Spider-Man: Across the Spider-Verse",
+        "relation_type": "crossover"
+      },
+      {
+        "related_work_title": "Spider-Verse",
+        "relation_type": "crossover"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Spider-Man",
+        "alignment": "hero",
+        "alias": "Peter Parker",
+        "first_comic_appearance": "Amazing Fantasy #15",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "High Evolutionary",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": "The Mighty Thor #134",
+        "first_comic_year": 1966
+      },
+      {
+        "name": "Venom",
+        "alignment": "villain",
+        "alias": "Eddie Brock",
+        "first_comic_appearance": "The Amazing Spider-Man #300",
+        "first_comic_year": 1988
+      },
+      {
+        "name": "Carnage",
+        "alignment": "villain",
+        "alias": "Cletus Kasady",
+        "first_comic_appearance": "The Amazing Spider-Man #361",
+        "first_comic_year": 1992
+      },
+      {
+        "name": "X-51",
+        "alignment": "hero",
+        "alias": "Machine Man",
+        "first_comic_appearance": "2001: A Space Odyssey #8",
+        "first_comic_year": 1977
+      }
+    ]
+  },
+  {
+    "title": "Spider-Man: The New Animated Series",
+    "release_year": 2003,
+    "principal_cast": [
+      {
+        "actor": "Neil Patrick Harris",
+        "character": "Peter Parker / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Lisa Loeb",
+        "character": "Mary Jane Watson",
+        "billing_order": 2
+      },
+      {
+        "actor": "Ian Ziering",
+        "character": "Harry Osborn",
+        "billing_order": 3
+      },
+      {
+        "actor": "Keith Carradine",
+        "character": "J. Jonah Jameson",
+        "billing_order": 4
+      },
+      {
+        "actor": "Angelle Brooks",
+        "character": "Indira Daimonji",
+        "billing_order": 5
+      },
+      {
+        "actor": "Michael Clarke Duncan",
+        "character": "Kingpin",
+        "billing_order": 6
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Brian Michael Bendis",
+        "role": "developer"
+      },
+      {
+        "person": "Morgan Gendel",
+        "role": "developer"
+      },
+      {
+        "person": "Marsha Griffin",
+        "role": "developer and producer"
+      },
+      {
+        "person": "John Digweed",
+        "role": "theme music composer"
+      },
+      {
+        "person": "Nick Muir",
+        "role": "theme music composer"
+      },
+      {
+        "person": "Avi Arad",
+        "role": "executive producer"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Mainframe Entertainment",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Enterprises",
+        "role": "co_production"
+      },
+      {
+        "name": "Adelaide Productions",
+        "role": "co_production"
+      },
+      {
+        "name": "Sony Pictures Television",
+        "role": "distributor"
+      }
+    ],
+    "episodes": [
+      {
+        "season_number": 1,
+        "episode_number": 1,
+        "title": "Heroes & Villains",
+        "air_date": "2003-08-22",
+        "runtime_minutes": 22,
+        "director": "Tim Eldred",
+        "writer": "Morgan Gendel",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 2,
+        "title": "Royal Scam",
+        "air_date": "2003-08-15",
+        "runtime_minutes": 22,
+        "director": "Vincent Edwards",
+        "writer": "Rick Suvalle",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 3,
+        "title": "Law of the Jungle",
+        "air_date": "2003-07-18",
+        "runtime_minutes": 22,
+        "director": "Audu Paden",
+        "writer": "Greg Johnson",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 4,
+        "title": "The Sword of Shikata",
+        "air_date": "2003-07-11",
+        "runtime_minutes": 22,
+        "director": "Brandon Vietti",
+        "writer": "Todd Felderstein; Morgan Gendel",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 5,
+        "title": "Keeping Secrets",
+        "air_date": "2003-07-18",
+        "runtime_minutes": 22,
+        "director": "Alan Caldwell",
+        "writer": "Marsha Griffin",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 6,
+        "title": "Tight Squeeze",
+        "air_date": "2003-07-25",
+        "runtime_minutes": 22,
+        "director": "Vincent Edwards",
+        "writer": "Morgan Gendel",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 7,
+        "title": "Head Over Heels",
+        "air_date": "2003-07-25",
+        "runtime_minutes": 22,
+        "director": "Brandon Vietti",
+        "writer": "Tracey Forbes",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 8,
+        "title": "The Party",
+        "air_date": "2003-07-11",
+        "runtime_minutes": 22,
+        "director": "Audu Paden",
+        "writer": "Brian Michael Bendis; Morgan Gendel; Marsha Griffin",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 9,
+        "title": "Flash Memory",
+        "air_date": "2003-08-29",
+        "runtime_minutes": 22,
+        "director": "Tim Eldred",
+        "writer": "Whip Lipsey; Scott Lipsey",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 10,
+        "title": "Spider-Man Dis-Sabled",
+        "air_date": "2003-08-08",
+        "runtime_minutes": 22,
+        "director": "Alan Caldwell",
+        "writer": "Morgan Gendel; Rick Suvalle",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 11,
+        "title": "When Sparks Fly",
+        "air_date": "2003-08-01",
+        "runtime_minutes": 22,
+        "director": "Vincent Edwards",
+        "writer": "Morgan Gendel",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 12,
+        "title": "Mind Games, Part One",
+        "air_date": "2003-09-05",
+        "runtime_minutes": 22,
+        "director": "Alan Caldwell; Vincent Edwards; Audu Paden",
+        "writer": "Morgan Gendel",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 13,
+        "title": "Mind Games, Part Two",
+        "air_date": "2003-09-12",
+        "runtime_minutes": 22,
+        "director": "Tim Eldred; Brandon Vietti",
+        "writer": "Steven Kriozere",
+        "us_viewers_millions": null
+      }
+    ],
+    "review_scores": [],
+    "source_material": [
+      {
+        "comic_title": "Ultimate Spider-Man",
+        "issue_range": null,
+        "comic_writer": "Brian Michael Bendis",
+        "comic_year": 2000,
+        "storyline_arc": "Initial adaptation plan"
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spider-Man (2002 film)",
+        "relation_type": "tie_in"
+      },
+      {
+        "related_work_title": "Daredevil (2003 film)",
+        "relation_type": "crossover"
+      },
+      {
+        "related_work_title": "Spider-Man 2",
+        "relation_type": "related"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Peter Parker",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Mary Jane Watson",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "The Amazing Spider-Man #25",
+        "first_comic_year": 1965
+      },
+      {
+        "name": "Curt Connors",
+        "alignment": "villain",
+        "alias": "Lizard",
+        "first_comic_appearance": "The Amazing Spider-Man #6",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Kingpin",
+        "alignment": "villain",
+        "alias": "Wilson Fisk",
+        "first_comic_appearance": "The Amazing Spider-Man #50",
+        "first_comic_year": 1967
+      },
+      {
+        "name": "Max Dillon",
+        "alignment": "villain",
+        "alias": "Electro",
+        "first_comic_appearance": "The Amazing Spider-Man #9",
+        "first_comic_year": 1964
+      }
+    ]
+  },
+  {
+    "title": "The Spectacular Spider-Man",
+    "release_year": 2008,
+    "principal_cast": [
+      {
+        "actor": "Josh Keaton",
+        "character": "Peter Parker / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Lacey Chabert",
+        "character": "Gwen Stacy",
+        "billing_order": 2
+      },
+      {
+        "actor": "James Arnold Taylor",
+        "character": "Harry Osborn",
+        "billing_order": 3
+      },
+      {
+        "actor": "Daran Norris",
+        "character": "J. Jonah Jameson",
+        "billing_order": 4
+      },
+      {
+        "actor": "Vanessa Marshall",
+        "character": "Mary Jane Watson",
+        "billing_order": 5
+      },
+      {
+        "actor": "Alanna Ubach",
+        "character": "Liz Allan",
+        "billing_order": 6
+      },
+      {
+        "actor": "Alan Rachins",
+        "character": "Norman Osborn",
+        "billing_order": 7
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Greg Weisman",
+        "role": "developer, supervising producer, story editor and writer"
+      },
+      {
+        "person": "Victor Cook",
+        "role": "developer, supervising producer and supervising director"
+      },
+      {
+        "person": "Diane A. Crea",
+        "role": "producer"
+      },
+      {
+        "person": "Kristopher Carter",
+        "role": "composer"
+      },
+      {
+        "person": "Michael McCuistion",
+        "role": "composer"
+      },
+      {
+        "person": "Lolita Ritmanis",
+        "role": "composer"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Adelaide Productions",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Entertainment",
+        "role": "co_production"
+      },
+      {
+        "name": "Culver Entertainment",
+        "role": "co_production"
+      },
+      {
+        "name": "Sony Pictures Television",
+        "role": "distributor"
+      }
+    ],
+    "episodes": [
+      {
+        "season_number": 1,
+        "episode_number": null,
+        "title": "Season 1 summary",
+        "air_date": "2008-03-08",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 2,
+        "episode_number": null,
+        "title": "Season 2 summary",
+        "air_date": "2009-06-22",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      }
+    ],
+    "review_scores": [],
+    "source_material": [
+      {
+        "comic_title": "The Amazing Spider-Man; Ultimate Spider-Man",
+        "issue_range": null,
+        "comic_writer": "Stan Lee / Steve Ditko / John Romita Sr. / Brian Michael Bendis",
+        "comic_year": 1963,
+        "storyline_arc": null
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spider-Man: The New Animated Series",
+        "relation_type": "related"
+      },
+      {
+        "related_work_title": "Ultimate Spider-Man",
+        "relation_type": "related"
+      },
+      {
+        "related_work_title": "Spider-Man: Across the Spider-Verse",
+        "relation_type": "crossover"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Peter Parker",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Gwen Stacy",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "The Amazing Spider-Man #31",
+        "first_comic_year": 1965
+      },
+      {
+        "name": "Eddie Brock",
+        "alignment": "villain",
+        "alias": "Venom",
+        "first_comic_appearance": "The Amazing Spider-Man #300",
+        "first_comic_year": 1988
+      },
+      {
+        "name": "Norman Osborn",
+        "alignment": "villain",
+        "alias": "Green Goblin",
+        "first_comic_appearance": "The Amazing Spider-Man #14",
+        "first_comic_year": 1964
+      },
+      {
+        "name": "Otto Octavius",
+        "alignment": "villain",
+        "alias": "Doctor Octopus",
+        "first_comic_appearance": "The Amazing Spider-Man #3",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Tombstone",
+        "alignment": "villain",
+        "alias": "L. Thompson Lincoln",
+        "first_comic_appearance": "Web of Spider-Man #36",
+        "first_comic_year": 1988
+      }
+    ]
+  },
+  {
+    "title": "Ultimate Spider-Man",
+    "release_year": 2012,
+    "principal_cast": [
+      {
+        "actor": "Drake Bell",
+        "character": "Peter Parker / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Ogie Banks",
+        "character": "Luke Cage / Power Man; Miles Morales",
+        "billing_order": 2
+      },
+      {
+        "actor": "Greg Cipes",
+        "character": "Danny Rand / Iron Fist",
+        "billing_order": 3
+      },
+      {
+        "actor": "Caitlyn Taylor Love",
+        "character": "Ava Ayala / White Tiger",
+        "billing_order": 4
+      },
+      {
+        "actor": "Logan Miller",
+        "character": "Sam Alexander / Nova",
+        "billing_order": 5
+      },
+      {
+        "actor": "Matt Lanter",
+        "character": "Harry Osborn / Flash Thompson / Agent Venom",
+        "billing_order": 6
+      },
+      {
+        "actor": "Tom Kenny",
+        "character": "Doctor Octopus",
+        "billing_order": 7
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Brian Michael Bendis",
+        "role": "writer and producer"
+      },
+      {
+        "person": "Paul Dini",
+        "role": "writer and producer"
+      },
+      {
+        "person": "Joe Kelly",
+        "role": "writer and supervising producer"
+      },
+      {
+        "person": "Steven T. Seagle",
+        "role": "writer and supervising producer"
+      },
+      {
+        "person": "Alex Soto",
+        "role": "supervising director"
+      },
+      {
+        "person": "Kevin Manthei",
+        "role": "composer"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Film Roman",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Animation",
+        "role": "co_production"
+      }
+    ],
+    "episodes": [
+      {
+        "season_number": 1,
+        "episode_number": null,
+        "title": "Season 1 summary",
+        "air_date": "2012-04-01",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 2,
+        "episode_number": null,
+        "title": "Season 2 summary",
+        "air_date": "2013-01-21",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 3,
+        "episode_number": null,
+        "title": "Web-Warriors summary",
+        "air_date": "2014-03-13",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 4,
+        "episode_number": null,
+        "title": "vs. the Sinister 6 summary",
+        "air_date": "2016-02-21",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      }
+    ],
+    "review_scores": [],
+    "source_material": [
+      {
+        "comic_title": "Ultimate Spider-Man",
+        "issue_range": null,
+        "comic_writer": "Brian Michael Bendis",
+        "comic_year": 2000,
+        "storyline_arc": null
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "The Spectacular Spider-Man",
+        "relation_type": "related"
+      },
+      {
+        "related_work_title": "Spider-Man (2017 TV series)",
+        "relation_type": "related"
+      },
+      {
+        "related_work_title": "Avengers Assemble",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Hulk and the Agents of S.M.A.S.H.",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Guardians of the Galaxy",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Spider-Verse",
+        "relation_type": "crossover"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Spider-Man",
+        "alignment": "hero",
+        "alias": "Peter Parker",
+        "first_comic_appearance": "Amazing Fantasy #15",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Nova",
+        "alignment": "hero",
+        "alias": "Sam Alexander",
+        "first_comic_appearance": "Marvel Point One #1",
+        "first_comic_year": 2011
+      },
+      {
+        "name": "White Tiger",
+        "alignment": "hero",
+        "alias": "Ava Ayala",
+        "first_comic_appearance": "Avengers Academy #20",
+        "first_comic_year": 2011
+      },
+      {
+        "name": "Iron Fist",
+        "alignment": "hero",
+        "alias": "Danny Rand",
+        "first_comic_appearance": "Marvel Premiere #15",
+        "first_comic_year": 1974
+      },
+      {
+        "name": "Power Man",
+        "alignment": "hero",
+        "alias": "Luke Cage",
+        "first_comic_appearance": "Luke Cage, Hero for Hire #1",
+        "first_comic_year": 1972
+      },
+      {
+        "name": "Scarlet Spider",
+        "alignment": "hero",
+        "alias": "Ben Reilly",
+        "first_comic_appearance": "The Amazing Spider-Man #149",
+        "first_comic_year": 1975
+      },
+      {
+        "name": "Doctor Octopus",
+        "alignment": "villain",
+        "alias": "Otto Octavius",
+        "first_comic_appearance": "The Amazing Spider-Man #3",
+        "first_comic_year": 1963
+      }
+    ]
+  },
+  {
+    "title": "Spider-Man (2017 TV series)",
+    "release_year": 2017,
+    "principal_cast": [
+      {
+        "actor": "Robbie Daymond",
+        "character": "Peter Parker / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Nadji Jeter",
+        "character": "Miles Morales / Ultimate Spider-Man",
+        "billing_order": 2
+      },
+      {
+        "actor": "Laura Bailey",
+        "character": "Gwen Stacy / Ghost-Spider",
+        "billing_order": 3
+      },
+      {
+        "actor": "Melanie Minichino",
+        "character": "Anya Corazon / Spider-Girl",
+        "billing_order": 4
+      },
+      {
+        "actor": "Max Mittelman",
+        "character": "Harry Osborn / Hobgoblin",
+        "billing_order": 5
+      },
+      {
+        "actor": "Scott Menville",
+        "character": "Otto Octavius / Doctor Octopus",
+        "billing_order": 6
+      },
+      {
+        "actor": "Josh Keaton",
+        "character": "Norman Osborn / Dark Goblin",
+        "billing_order": 7
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Kevin Shinick",
+        "role": "developer and story editor"
+      },
+      {
+        "person": "Philip Pignotti",
+        "role": "creative director and supervising director"
+      },
+      {
+        "person": "Dan Duncan",
+        "role": "director"
+      },
+      {
+        "person": "Kevin Manthei",
+        "role": "composer"
+      },
+      {
+        "person": "Collette Sunderman",
+        "role": "voice director"
+      },
+      {
+        "person": "Kris Zimmerman-Salter",
+        "role": "voice director"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Marvel Animation",
+        "role": "production"
+      }
+    ],
+    "episodes": [
+      {
+        "season_number": null,
+        "episode_number": null,
+        "title": "Origin Shorts summary",
+        "air_date": "2017-07-24",
+        "runtime_minutes": null,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": null,
+        "title": "Season 1 summary",
+        "air_date": "2017-08-19",
+        "runtime_minutes": 21,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 2,
+        "episode_number": null,
+        "title": "Season 2 summary",
+        "air_date": "2018-06-18",
+        "runtime_minutes": 21,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 3,
+        "episode_number": null,
+        "title": "Maximum Venom summary",
+        "air_date": "2020-04-19",
+        "runtime_minutes": 44,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      }
+    ],
+    "review_scores": [],
+    "source_material": [
+      {
+        "comic_title": "Spider-Man",
+        "issue_range": null,
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1962,
+        "storyline_arc": "Superior Spider-Man; Spider-Island; Maximum Venom"
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Ultimate Spider-Man",
+        "relation_type": "related"
+      },
+      {
+        "related_work_title": "Guardians of the Galaxy",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Avengers Assemble",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Spidey and His Amazing Friends",
+        "relation_type": "related"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Spider-Man",
+        "alignment": "hero",
+        "alias": "Peter Parker",
+        "first_comic_appearance": "Amazing Fantasy #15",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Miles Morales",
+        "alignment": "hero",
+        "alias": "Ultimate Spider-Man",
+        "first_comic_appearance": "Ultimate Fallout #4",
+        "first_comic_year": 2011
+      },
+      {
+        "name": "Gwen Stacy",
+        "alignment": "hero",
+        "alias": "Ghost-Spider",
+        "first_comic_appearance": "The Amazing Spider-Man #31",
+        "first_comic_year": 1965
+      },
+      {
+        "name": "Anya Corazon",
+        "alignment": "hero",
+        "alias": "Spider-Girl",
+        "first_comic_appearance": "Amazing Fantasy #1",
+        "first_comic_year": 2004
+      },
+      {
+        "name": "Harry Osborn",
+        "alignment": "hero",
+        "alias": "Hobgoblin",
+        "first_comic_appearance": "The Amazing Spider-Man #31",
+        "first_comic_year": 1965
+      },
+      {
+        "name": "Norman Osborn",
+        "alignment": "villain",
+        "alias": "Dark Goblin",
+        "first_comic_appearance": "The Amazing Spider-Man #14",
+        "first_comic_year": 1964
+      }
+    ]
+  },
+  {
+    "title": "Spidey and His Amazing Friends",
+    "release_year": 2021,
+    "principal_cast": [
+      {
+        "actor": "Benjamin Valic",
+        "character": "Peter Parker / Spidey",
+        "billing_order": 1
+      },
+      {
+        "actor": "Jakari Fraser",
+        "character": "Miles Morales / Spin",
+        "billing_order": 2
+      },
+      {
+        "actor": "Lily Sanfelippo",
+        "character": "Gwen Stacy / Ghost-Spider",
+        "billing_order": 3
+      },
+      {
+        "actor": "Dee Bradley Baker",
+        "character": "TRACE-E / TWIST-E / CAL",
+        "billing_order": 4
+      },
+      {
+        "actor": "Melanie Minichino",
+        "character": "Aunt May",
+        "billing_order": 5
+      },
+      {
+        "actor": "Kelly Ohanian",
+        "character": "Doc Ock",
+        "billing_order": 6
+      },
+      {
+        "actor": "J. P. Karliak",
+        "character": "Green Goblin",
+        "billing_order": 7
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Harrison Wilcox",
+        "role": "executive producer"
+      },
+      {
+        "person": "Darren Bachynski",
+        "role": "director"
+      },
+      {
+        "person": "Mitch Stookey",
+        "role": "director"
+      },
+      {
+        "person": "Patrick Stump",
+        "role": "theme music composer and composer"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Marvel Animation",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Studios Animation",
+        "role": "production"
+      },
+      {
+        "name": "Atomic Cartoons",
+        "role": "co_production"
+      }
+    ],
+    "episodes": [
+      {
+        "season_number": 1,
+        "episode_number": null,
+        "title": "Season 1 summary",
+        "air_date": "2021-08-06",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 2,
+        "episode_number": null,
+        "title": "Season 2 summary",
+        "air_date": "2022-08-19",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 3,
+        "episode_number": null,
+        "title": "Season 3 summary",
+        "air_date": "2024-01-08",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 4,
+        "episode_number": null,
+        "title": "Season 4 summary",
+        "air_date": "2025-06-16",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 5,
+        "episode_number": null,
+        "title": "Season 5 summary",
+        "air_date": "2026-07-13",
+        "runtime_minutes": 22,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      }
+    ],
+    "review_scores": [],
+    "source_material": [
+      {
+        "comic_title": "Spider-Man",
+        "issue_range": null,
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1962,
+        "storyline_arc": null
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spider-Man and His Amazing Friends",
+        "relation_type": "related"
+      },
+      {
+        "related_work_title": "Iron Man and His Awesome Friends",
+        "relation_type": "spin_off"
+      },
+      {
+        "related_work_title": "Avengers: Mightiest Friends",
+        "relation_type": "spin_off"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Peter Parker",
+        "alignment": "hero",
+        "alias": "Spidey",
+        "first_comic_appearance": "Amazing Fantasy #15",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Miles Morales",
+        "alignment": "hero",
+        "alias": "Spin",
+        "first_comic_appearance": "Ultimate Fallout #4",
+        "first_comic_year": 2011
+      },
+      {
+        "name": "Gwen Stacy",
+        "alignment": "hero",
+        "alias": "Ghost-Spider",
+        "first_comic_appearance": "The Amazing Spider-Man #31",
+        "first_comic_year": 1965
+      },
+      {
+        "name": "Doc Ock",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": "The Amazing Spider-Man #3",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Green Goblin",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": "The Amazing Spider-Man #14",
+        "first_comic_year": 1964
+      },
+      {
+        "name": "Rhino",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": "The Amazing Spider-Man #41",
+        "first_comic_year": 1966
+      },
+      {
+        "name": "Electro",
+        "alignment": "villain",
+        "alias": "Francine Frye",
+        "first_comic_appearance": "The Amazing Spider-Man #9",
+        "first_comic_year": 1964
+      }
+    ]
+  },
+  {
+    "title": "Your Friendly Neighborhood Spider-Man",
+    "release_year": 2025,
+    "principal_cast": [
+      {
+        "actor": "Hudson Thames",
+        "character": "Peter Parker / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Kari Wahlgren",
+        "character": "May Parker",
+        "billing_order": 2
+      },
+      {
+        "actor": "Grace Song",
+        "character": "Nico Minoru",
+        "billing_order": 3
+      },
+      {
+        "actor": "Eugene Byrd",
+        "character": "Lonnie Lincoln / Tombstone",
+        "billing_order": 4
+      },
+      {
+        "actor": "Zeno Robinson",
+        "character": "Harry Osborn",
+        "billing_order": 5
+      },
+      {
+        "actor": "Colman Domingo",
+        "character": "Norman Osborn",
+        "billing_order": 6
+      },
+      {
+        "actor": "Hugh Dancy",
+        "character": "Otto Octavius",
+        "billing_order": 7
+      },
+      {
+        "actor": "Charlie Cox",
+        "character": "Daredevil / Matt Murdock",
+        "billing_order": 8
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Jeff Trammell",
+        "role": "creator, showrunner and head writer"
+      },
+      {
+        "person": "Mel Zwyer",
+        "role": "supervising director"
+      },
+      {
+        "person": "Liza Singer",
+        "role": "director"
+      },
+      {
+        "person": "Stu Livingston",
+        "role": "director"
+      },
+      {
+        "person": "Leo Birenberg",
+        "role": "composer"
+      },
+      {
+        "person": "Zach Robinson",
+        "role": "composer"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Marvel Studios Animation",
+        "role": "production"
+      },
+      {
+        "name": "Polygon Pictures",
+        "role": "co_production"
+      },
+      {
+        "name": "CGCG, Inc.",
+        "role": "co_production"
+      }
+    ],
+    "episodes": [
+      {
+        "season_number": 1,
+        "episode_number": 1,
+        "title": "Amazing Fantasy",
+        "air_date": "2025-01-29",
+        "runtime_minutes": null,
+        "director": "Mel Zwyer",
+        "writer": "Jeff Trammell",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 2,
+        "title": "The Parker Luck",
+        "air_date": "2025-01-29",
+        "runtime_minutes": null,
+        "director": "Liza Singer",
+        "writer": "Charlie Neuner",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 3,
+        "title": "Secret Identity Crisis",
+        "air_date": "2025-02-05",
+        "runtime_minutes": null,
+        "director": "Stu Livingston",
+        "writer": "Jeff Trammell",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 4,
+        "title": "Hitting the Big Time",
+        "air_date": "2025-02-05",
+        "runtime_minutes": null,
+        "director": "Liza Singer",
+        "writer": "Charlie Neuner",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 5,
+        "title": "The Unicorn Unleashed!",
+        "air_date": "2025-02-05",
+        "runtime_minutes": null,
+        "director": "Stu Livingston",
+        "writer": "Jeff Trammell",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 6,
+        "title": "Duel with the Devil",
+        "air_date": "2025-02-12",
+        "runtime_minutes": null,
+        "director": "Liza Singer",
+        "writer": "Charlie Neuner",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 7,
+        "title": "Scorpion Rising",
+        "air_date": "2025-02-12",
+        "runtime_minutes": null,
+        "director": "Stu Livingston",
+        "writer": "Raven Koné",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 8,
+        "title": "Tangled Web",
+        "air_date": "2025-02-12",
+        "runtime_minutes": null,
+        "director": "Liza Singer",
+        "writer": "Charlie Neuner",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 9,
+        "title": "Hero or Menace",
+        "air_date": "2025-02-19",
+        "runtime_minutes": null,
+        "director": "Liza Singer",
+        "writer": "Jeff Trammell",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 1,
+        "episode_number": 10,
+        "title": "If This Be My Destiny...",
+        "air_date": "2025-02-19",
+        "runtime_minutes": null,
+        "director": "Stu Livingston",
+        "writer": "Charlie Neuner; Jeff Trammell",
+        "us_viewers_millions": null
+      },
+      {
+        "season_number": 2,
+        "episode_number": null,
+        "title": "Season 2 summary",
+        "air_date": null,
+        "runtime_minutes": null,
+        "director": null,
+        "writer": null,
+        "us_viewers_millions": null
+      }
+    ],
+    "review_scores": [],
+    "source_material": [
+      {
+        "comic_title": "The Amazing Spider-Man",
+        "issue_range": null,
+        "comic_writer": "Stan Lee / Steve Ditko / John Romita Sr.",
+        "comic_year": 1963,
+        "storyline_arc": "Early Spider-Man stories"
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "What If...?",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Daredevil: Born Again",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "The Spectacular Spider-Man",
+        "relation_type": "related"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Peter Parker",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "May Parker",
+        "alignment": "neutral",
+        "alias": "Aunt May",
+        "first_comic_appearance": "Amazing Fantasy #15",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Nico Minoru",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Runaways #1",
+        "first_comic_year": 2003
+      },
+      {
+        "name": "Lonnie Lincoln",
+        "alignment": "neutral",
+        "alias": "Tombstone",
+        "first_comic_appearance": "Web of Spider-Man #36",
+        "first_comic_year": 1988
+      },
+      {
+        "name": "Norman Osborn",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "The Amazing Spider-Man #14",
+        "first_comic_year": 1964
+      },
+      {
+        "name": "Otto Octavius",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": "The Amazing Spider-Man #3",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Daredevil",
+        "alignment": "hero",
+        "alias": "Matt Murdock",
+        "first_comic_appearance": "Daredevil #1",
+        "first_comic_year": 1964
+      },
+      {
+        "name": "Mac Gargan",
+        "alignment": "villain",
+        "alias": "Scorpion",
+        "first_comic_appearance": "The Amazing Spider-Man #20",
+        "first_comic_year": 1964
+      }
+    ]
+  },
+  {
+    "title": "Spider-Noir",
+    "release_year": 2026,
+    "principal_cast": [
+      {
+        "actor": "Nicolas Cage",
+        "character": "Ben Reilly / Spider-Man Noir",
+        "billing_order": 1
+      },
+      {
+        "actor": "Lamorne Morris",
+        "character": null,
+        "billing_order": 2
+      },
+      {
+        "actor": "Brendan Gleeson",
+        "character": null,
+        "billing_order": 3
+      },
+      {
+        "actor": "Li Jun Li",
+        "character": null,
+        "billing_order": 4
+      },
+      {
+        "actor": "Jack Huston",
+        "character": null,
+        "billing_order": 5
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Oren Uziel",
+        "role": "showrunner"
+      },
+      {
+        "person": "Steve Lightfoot",
+        "role": "showrunner"
+      },
+      {
+        "person": "Phil Lord",
+        "role": "executive producer"
+      },
+      {
+        "person": "Christopher Miller",
+        "role": "executive producer"
+      },
+      {
+        "person": "Amy Pascal",
+        "role": "executive producer"
+      },
+      {
+        "person": "Harry Bradbeer",
+        "role": "director"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Amazon MGM Studios",
+        "role": "production"
+      },
+      {
+        "name": "Sony Pictures Television",
+        "role": "production"
+      },
+      {
+        "name": "Columbia Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Pascal Pictures",
+        "role": "production"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Ben Reilly / Spider-Man Noir",
+        "alias": "Spider-Man Noir",
+        "alignment": "hero",
+        "first_comic_appearance": "Spider-Man Noir #1 (2009)",
+        "first_comic_year": 2009
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "Spider-Man Noir",
+        "issue_range": "#1-4",
+        "comic_writer": "David Hine / Fabrice Sapolsky",
+        "comic_year": 2009,
+        "storyline_arc": "Spider-Man Noir"
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spider-Man: Into the Spider-Verse",
+        "relation_type": "spin_off"
+      }
+    ],
+    "episodes": [],
+    "review_scores": []
+  }
+]

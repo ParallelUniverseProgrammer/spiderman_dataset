@@ -1,0 +1,6224 @@
+[
+  {
+    "title": "Spider-Man",
+    "release_year": 1977,
+    "principal_cast": [
+      {
+        "actor": "Nicholas Hammond",
+        "character": "Peter Parker / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "David White",
+        "character": "J. Jonah Jameson",
+        "billing_order": 2
+      },
+      {
+        "actor": "Michael Pataki",
+        "character": "Capt. Barbera",
+        "billing_order": 3
+      },
+      {
+        "actor": "Lisa Eilbacher",
+        "character": "Judy Tyler",
+        "billing_order": 4
+      },
+      {
+        "actor": "Jeff Donnell",
+        "character": "May Parker",
+        "billing_order": 5
+      },
+      {
+        "actor": "Hilly Hicks",
+        "character": "Joe \"Robbie\" Robertson",
+        "billing_order": 6
+      },
+      {
+        "actor": "Thayer David",
+        "character": "Edward Byron",
+        "billing_order": 7
+      },
+      {
+        "actor": "Robert Hastings",
+        "character": "Monahan",
+        "billing_order": 8
+      },
+      {
+        "actor": "Ivor Francis",
+        "character": "Prof. Noah Tyler",
+        "billing_order": 9
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "E. W. Swackhamer",
+        "role": "director"
+      },
+      {
+        "person": "Alvin Boretz",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Charles W. Fries",
+        "role": "producer"
+      },
+      {
+        "person": "Daniel R. Goodman",
+        "role": "producer"
+      },
+      {
+        "person": "Edward J. Montagne",
+        "role": "producer"
+      },
+      {
+        "person": "Johnnie Spence",
+        "role": "composer"
+      },
+      {
+        "person": "Fred Jackman Jr.",
+        "role": "cinematographer"
+      },
+      {
+        "person": "Aaron Stell",
+        "role": "editor"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Danchuck Productions",
+        "role": "production"
+      },
+      {
+        "name": "CBS",
+        "role": "distributor"
+      },
+      {
+        "name": "Columbia Pictures",
+        "role": "distributor"
+      }
+    ],
+    "box_office_weekly": [
+      {
+        "week_number": 1,
+        "week_start_date": null,
+        "domestic_usd": null,
+        "international_usd": null,
+        "worldwide_usd": 9000000,
+        "scope": "lifetime"
+      }
+    ],
+    "budgets": [],
+    "awards": [],
+    "review_scores": [],
+    "soundtracks": [
+      {
+        "type": "score",
+        "title": null,
+        "composer_or_performer": "Johnnie Spence",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "Spider-Man",
+        "issue_range": "Amazing Fantasy #15",
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1962,
+        "storyline_arc": "origin"
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spider-Man Strikes Back",
+        "relation_type": "sequel"
+      },
+      {
+        "related_work_title": "Spider-Man: The Dragon's Challenge",
+        "relation_type": "sequel"
+      },
+      {
+        "related_work_title": "The Amazing Spider-Man (TV series)",
+        "relation_type": "same_universe"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Peter Parker / Spider-Man",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "J. Jonah Jameson",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #1 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Aunt May (May Parker)",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Robbie Robertson",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #51 (1967)",
+        "first_comic_year": 1967
+      },
+      {
+        "name": "Edward Byron (Guru)",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      }
+    ]
+  },
+  {
+    "title": "Spider-Man Strikes Back",
+    "release_year": 1978,
+    "principal_cast": [
+      {
+        "actor": "Nicholas Hammond",
+        "character": "Peter Parker / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Robert Alda",
+        "character": "Mr. White",
+        "billing_order": 2
+      },
+      {
+        "actor": "Robert F. Simon",
+        "character": "J. Jonah Jameson",
+        "billing_order": 3
+      },
+      {
+        "actor": "Joanna Cameron",
+        "character": "Gale Hoffman",
+        "billing_order": 4
+      },
+      {
+        "actor": "Michael Pataki",
+        "character": "Capt. Barbera",
+        "billing_order": 5
+      },
+      {
+        "actor": "Chip Fields",
+        "character": "Rita Conway",
+        "billing_order": 6
+      },
+      {
+        "actor": "Randy Powell",
+        "character": "Craig",
+        "billing_order": 7
+      },
+      {
+        "actor": "Lawrence P. Casey",
+        "character": "Angel",
+        "billing_order": 8
+      },
+      {
+        "actor": "Simon Scott",
+        "character": "Dr. Baylor",
+        "billing_order": 9
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Ron Satlof",
+        "role": "director"
+      },
+      {
+        "person": "Robert Janes",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Ron Satlof",
+        "role": "producer"
+      },
+      {
+        "person": "Robert Janes",
+        "role": "producer"
+      },
+      {
+        "person": "Jack Whitman",
+        "role": "cinematographer"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Charles Fries Productions",
+        "role": "production"
+      },
+      {
+        "name": "Columbia Pictures Television",
+        "role": "distributor"
+      },
+      {
+        "name": "Columbia Pictures",
+        "role": "distributor"
+      }
+    ],
+    "box_office_weekly": [],
+    "budgets": [],
+    "awards": [],
+    "review_scores": [],
+    "soundtracks": [],
+    "source_material": [
+      {
+        "comic_title": "Spider-Man",
+        "issue_range": null,
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1962,
+        "storyline_arc": "\"Deadly Dust\" TV episodes"
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spider-Man (1977 film)",
+        "relation_type": "prequel"
+      },
+      {
+        "related_work_title": "Spider-Man: The Dragon's Challenge",
+        "relation_type": "sequel"
+      },
+      {
+        "related_work_title": "The Amazing Spider-Man (TV series)",
+        "relation_type": "same_universe"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Peter Parker / Spider-Man",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "J. Jonah Jameson",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #1 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Mr. White",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Rita Conway (Glory Grant analog)",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #140 (1974)",
+        "first_comic_year": 1974
+      }
+    ]
+  },
+  {
+    "title": "Spider-Man: The Dragon's Challenge",
+    "release_year": 1981,
+    "principal_cast": [
+      {
+        "actor": "Nicholas Hammond",
+        "character": "Spider-Man / Peter Parker",
+        "billing_order": 1
+      },
+      {
+        "actor": "Robert F. Simon",
+        "character": "J. Jonah Jameson",
+        "billing_order": 2
+      },
+      {
+        "actor": "Rosalind Chao",
+        "character": "Emily Chan",
+        "billing_order": 3
+      },
+      {
+        "actor": "Benson Fong",
+        "character": "Min Lo Chan",
+        "billing_order": 4
+      },
+      {
+        "actor": "Richard Erdman",
+        "character": "Charles Zeider",
+        "billing_order": 5
+      },
+      {
+        "actor": "Ellen Bry",
+        "character": "Julie Masters",
+        "billing_order": 6
+      },
+      {
+        "actor": "Chip Fields",
+        "character": "Rita Conway",
+        "billing_order": 7
+      },
+      {
+        "actor": "John Milford",
+        "character": "Prof. Dent",
+        "billing_order": 8
+      },
+      {
+        "actor": "Hagan Beggs",
+        "character": "Clyde Evans",
+        "billing_order": 9
+      },
+      {
+        "actor": "Ted Danson",
+        "character": "Major Collings",
+        "billing_order": 10
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Don McDougall",
+        "role": "director"
+      },
+      {
+        "person": "Lionel E. Siegel",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Lionel E. Siegel",
+        "role": "producer"
+      },
+      {
+        "person": "Dana Kaproff",
+        "role": "composer"
+      },
+      {
+        "person": "Vincent A. Martinelli",
+        "role": "cinematographer"
+      },
+      {
+        "person": "Erwin Dumbrille",
+        "role": "editor"
+      },
+      {
+        "person": "Fred Roth",
+        "role": "editor"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Danchuck Productions",
+        "role": "production"
+      },
+      {
+        "name": "Columbia Pictures Television",
+        "role": "distributor"
+      },
+      {
+        "name": "Columbia Pictures",
+        "role": "distributor"
+      }
+    ],
+    "box_office_weekly": [],
+    "budgets": [],
+    "awards": [],
+    "review_scores": [],
+    "soundtracks": [
+      {
+        "type": "score",
+        "title": null,
+        "composer_or_performer": "Dana Kaproff",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "Spider-Man",
+        "issue_range": null,
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1962,
+        "storyline_arc": "\"The Chinese Web\" TV episodes"
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spider-Man (1977 film)",
+        "relation_type": "prequel"
+      },
+      {
+        "related_work_title": "Spider-Man Strikes Back",
+        "relation_type": "prequel"
+      },
+      {
+        "related_work_title": "The Amazing Spider-Man (TV series)",
+        "relation_type": "same_universe"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Peter Parker / Spider-Man",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "J. Jonah Jameson",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #1 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Julie Masters",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Emily Chan",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Charles Zeider",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      }
+    ]
+  },
+  {
+    "title": "Spider-Man",
+    "release_year": 1978,
+    "principal_cast": [
+      {
+        "actor": "Shinji Tōdō",
+        "character": "Takuya Yamashiro / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Noboru Nakaya",
+        "character": "Jūzō Mamiya",
+        "billing_order": 2
+      },
+      {
+        "actor": "Mitsuo Andō",
+        "character": "(supporting)",
+        "billing_order": 3
+      },
+      {
+        "actor": "Yukie Kagawa",
+        "character": "(supporting)",
+        "billing_order": 4
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Kōichi Takemoto",
+        "role": "director"
+      },
+      {
+        "person": "Susumu Takaku",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Saburo Yatsude",
+        "role": "story"
+      },
+      {
+        "person": "Susumu Yoshikawa",
+        "role": "producer"
+      },
+      {
+        "person": "Michiaki Watanabe (Chumei Watanabe)",
+        "role": "composer"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Toei Company",
+        "role": "production"
+      },
+      {
+        "name": "Toei Company",
+        "role": "distributor"
+      }
+    ],
+    "box_office_weekly": [],
+    "budgets": [],
+    "awards": [],
+    "review_scores": [],
+    "soundtracks": [
+      {
+        "type": "score",
+        "title": null,
+        "composer_or_performer": "Michiaki Watanabe",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "Spider-Man (Takuya Yamashiro)",
+        "issue_range": null,
+        "comic_writer": "Stan Lee / Steve Ditko + Toei original",
+        "comic_year": 1962,
+        "storyline_arc": "spin-off"
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spider-Man (Japanese TV series)",
+        "relation_type": "same_universe"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Takuya Yamashiro / Spider-Man",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Jūzō Mamiya",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Iron Cross Army / Sea-Devil",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      }
+    ]
+  },
+  {
+    "title": "Spider-Man",
+    "release_year": 2002,
+    "principal_cast": [
+      {
+        "actor": "Tobey Maguire",
+        "character": "Peter Parker / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Willem Dafoe",
+        "character": "Norman Osborn / Green Goblin",
+        "billing_order": 2
+      },
+      {
+        "actor": "Kirsten Dunst",
+        "character": "Mary Jane Watson",
+        "billing_order": 3
+      },
+      {
+        "actor": "James Franco",
+        "character": "Harry Osborn",
+        "billing_order": 4
+      },
+      {
+        "actor": "Cliff Robertson",
+        "character": "Ben Parker",
+        "billing_order": 5
+      },
+      {
+        "actor": "Rosemary Harris",
+        "character": "May Parker",
+        "billing_order": 6
+      },
+      {
+        "actor": "J. K. Simmons",
+        "character": "J. Jonah Jameson",
+        "billing_order": 7
+      },
+      {
+        "actor": "Joe Manganiello",
+        "character": "Flash Thompson",
+        "billing_order": 8
+      },
+      {
+        "actor": "Michael Papajohn",
+        "character": "The Carjacker",
+        "billing_order": 9
+      },
+      {
+        "actor": "Bill Nunn",
+        "character": "Robbie Robertson",
+        "billing_order": 10
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Sam Raimi",
+        "role": "director"
+      },
+      {
+        "person": "David Koepp",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Laura Ziskin",
+        "role": "producer"
+      },
+      {
+        "person": "Ian Bryce",
+        "role": "producer"
+      },
+      {
+        "person": "Danny Elfman",
+        "role": "composer"
+      },
+      {
+        "person": "Don Burgess",
+        "role": "cinematographer"
+      },
+      {
+        "person": "Bob Murawski",
+        "role": "editor"
+      },
+      {
+        "person": "Arthur Coburn",
+        "role": "editor"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Columbia Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Enterprises",
+        "role": "in_association_with"
+      },
+      {
+        "name": "Laura Ziskin Productions",
+        "role": "production"
+      },
+      {
+        "name": "Sony Pictures Releasing",
+        "role": "distributor"
+      }
+    ],
+    "box_office_weekly": [
+      {
+        "week_number": 1,
+        "week_start_date": null,
+        "domestic_usd": 403700000,
+        "international_usd": null,
+        "worldwide_usd": 826800000,
+        "scope": "lifetime"
+      }
+    ],
+    "budgets": [
+      {
+        "amount_usd": 139000000,
+        "component": "production",
+        "source_year": 2002,
+        "is_primary": true
+      }
+    ],
+    "awards": [
+      {
+        "award_body": "Academy Awards",
+        "year": 2003,
+        "category": "Best Sound",
+        "result": "nominated",
+        "recipient": null
+      },
+      {
+        "award_body": "Academy Awards",
+        "year": 2003,
+        "category": "Best Visual Effects",
+        "result": "nominated",
+        "recipient": null
+      }
+    ],
+    "review_scores": [],
+    "soundtracks": [
+      {
+        "type": "score",
+        "title": null,
+        "composer_or_performer": "Danny Elfman",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      },
+      {
+        "type": "song",
+        "title": "Hero",
+        "composer_or_performer": "Chad Kroeger ft. Josey Scott",
+        "chart_peak_us": 3,
+        "chart_peak_uk": null
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "Spider-Man",
+        "issue_range": "Amazing Fantasy #15",
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1962,
+        "storyline_arc": "origin"
+      },
+      {
+        "comic_title": "The Night Gwen Stacy Died",
+        "issue_range": "Amazing Spider-Man #121-122",
+        "comic_writer": "Gerry Conway",
+        "comic_year": 1973,
+        "storyline_arc": "(Fincher proposed; not used)"
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spider-Man 2",
+        "relation_type": "sequel"
+      },
+      {
+        "related_work_title": "Spider-Man 3",
+        "relation_type": "sequel"
+      },
+      {
+        "related_work_title": "Spider-Man: No Way Home",
+        "relation_type": "crossover"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Peter Parker / Spider-Man",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Norman Osborn / Green Goblin",
+        "alignment": "villain",
+        "alias": "Green Goblin",
+        "first_comic_appearance": "Amazing Spider-Man #14 (1964)",
+        "first_comic_year": 1964
+      },
+      {
+        "name": "Mary Jane Watson",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #42 (1966)",
+        "first_comic_year": 1966
+      },
+      {
+        "name": "Harry Osborn",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #31 (1965)",
+        "first_comic_year": 1965
+      },
+      {
+        "name": "Ben Parker (Uncle Ben)",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "May Parker (Aunt May)",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "J. Jonah Jameson",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #1 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Flash Thompson",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Robbie Robertson",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #51 (1967)",
+        "first_comic_year": 1967
+      },
+      {
+        "name": "Betty Brant",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #4 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Mendel Stromm",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #37 (1966)",
+        "first_comic_year": 1966
+      }
+    ]
+  },
+  {
+    "title": "Spider-Man 2",
+    "release_year": 2004,
+    "principal_cast": [
+      {
+        "actor": "Tobey Maguire",
+        "character": "Peter Parker / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Kirsten Dunst",
+        "character": "Mary Jane Watson",
+        "billing_order": 2
+      },
+      {
+        "actor": "James Franco",
+        "character": "Harry Osborn",
+        "billing_order": 3
+      },
+      {
+        "actor": "Alfred Molina",
+        "character": "Dr. Otto Octavius / Doctor Octopus",
+        "billing_order": 4
+      },
+      {
+        "actor": "Rosemary Harris",
+        "character": "May Parker",
+        "billing_order": 5
+      },
+      {
+        "actor": "Donna Murphy",
+        "character": "Rosalie Octavius",
+        "billing_order": 6
+      },
+      {
+        "actor": "J. K. Simmons",
+        "character": "J. Jonah Jameson",
+        "billing_order": 7
+      },
+      {
+        "actor": "Daniel Gillies",
+        "character": "John Jameson",
+        "billing_order": 8
+      },
+      {
+        "actor": "Dylan Baker",
+        "character": "Dr. Curt Connors",
+        "billing_order": 9
+      },
+      {
+        "actor": "Willem Dafoe",
+        "character": "Norman Osborn",
+        "billing_order": 10
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Sam Raimi",
+        "role": "director"
+      },
+      {
+        "person": "Alvin Sargent",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Alfred Gough",
+        "role": "story"
+      },
+      {
+        "person": "Miles Millar",
+        "role": "story"
+      },
+      {
+        "person": "Michael Chabon",
+        "role": "story"
+      },
+      {
+        "person": "Laura Ziskin",
+        "role": "producer"
+      },
+      {
+        "person": "Avi Arad",
+        "role": "producer"
+      },
+      {
+        "person": "Danny Elfman",
+        "role": "composer"
+      },
+      {
+        "person": "Bill Pope",
+        "role": "cinematographer"
+      },
+      {
+        "person": "Bob Murawski",
+        "role": "editor"
+      },
+      {
+        "person": "Neil Spisak",
+        "role": "production designer"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Columbia Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Enterprises",
+        "role": "production"
+      },
+      {
+        "name": "Laura Ziskin Productions",
+        "role": "production"
+      },
+      {
+        "name": "Sony Pictures Releasing",
+        "role": "distributor"
+      }
+    ],
+    "box_office_weekly": [
+      {
+        "week_number": 1,
+        "week_start_date": null,
+        "domestic_usd": null,
+        "international_usd": null,
+        "worldwide_usd": 797000000,
+        "scope": "lifetime"
+      }
+    ],
+    "budgets": [
+      {
+        "amount_usd": 200000000,
+        "component": "production",
+        "source_year": 2004,
+        "is_primary": true
+      }
+    ],
+    "awards": [
+      {
+        "award_body": "Academy Awards",
+        "year": 2005,
+        "category": "Best Visual Effects",
+        "result": "won",
+        "recipient": null
+      },
+      {
+        "award_body": "Academy Awards",
+        "year": 2005,
+        "category": "Best Sound Mixing",
+        "result": "nominated",
+        "recipient": null
+      },
+      {
+        "award_body": "Academy Awards",
+        "year": 2005,
+        "category": "Best Sound Editing",
+        "result": "nominated",
+        "recipient": null
+      },
+      {
+        "award_body": "Saturn Awards",
+        "year": 2005,
+        "category": "Best Fantasy Film",
+        "result": "won",
+        "recipient": null
+      },
+      {
+        "award_body": "Saturn Awards",
+        "year": 2005,
+        "category": "Best Director",
+        "result": "won",
+        "recipient": "Sam Raimi"
+      }
+    ],
+    "review_scores": [],
+    "soundtracks": [
+      {
+        "type": "score",
+        "title": null,
+        "composer_or_performer": "Danny Elfman",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      },
+      {
+        "type": "song",
+        "title": "Vindicated",
+        "composer_or_performer": "Dashboard Confessional",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      },
+      {
+        "type": "song",
+        "title": "We Are",
+        "composer_or_performer": "Ana Johnsson",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "Spider-Man No More!",
+        "issue_range": "Amazing Spider-Man #50",
+        "comic_writer": "Stan Lee / John Romita Sr.",
+        "comic_year": 1967,
+        "storyline_arc": "main inspiration"
+      },
+      {
+        "comic_title": "If This Be My Destiny...!",
+        "issue_range": "Amazing Spider-Man #31-33",
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1966,
+        "storyline_arc": "partial influence"
+      },
+      {
+        "comic_title": "Doctor Octopus debut",
+        "issue_range": "Amazing Spider-Man #3",
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1963,
+        "storyline_arc": null
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spider-Man (2002)",
+        "relation_type": "prequel"
+      },
+      {
+        "related_work_title": "Spider-Man 3",
+        "relation_type": "sequel"
+      },
+      {
+        "related_work_title": "Spider-Man: No Way Home",
+        "relation_type": "crossover"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Peter Parker / Spider-Man",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Otto Octavius / Doctor Octopus",
+        "alignment": "villain",
+        "alias": "Doctor Octopus",
+        "first_comic_appearance": "Amazing Spider-Man #3 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Mary Jane Watson",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #42 (1966)",
+        "first_comic_year": 1966
+      },
+      {
+        "name": "Harry Osborn",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #31 (1965)",
+        "first_comic_year": 1965
+      },
+      {
+        "name": "May Parker",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Rosalie Octavius",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "J. Jonah Jameson",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #1 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "John Jameson",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #1 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Curt Connors / Lizard",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #6 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Norman Osborn / Green Goblin",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #14 (1964)",
+        "first_comic_year": 1964
+      }
+    ]
+  },
+  {
+    "title": "Spider-Man 3",
+    "release_year": 2007,
+    "principal_cast": [
+      {
+        "actor": "Tobey Maguire",
+        "character": "Peter Parker / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Kirsten Dunst",
+        "character": "Mary Jane Watson",
+        "billing_order": 2
+      },
+      {
+        "actor": "James Franco",
+        "character": "Harry Osborn / New Goblin",
+        "billing_order": 3
+      },
+      {
+        "actor": "Thomas Haden Church",
+        "character": "Flint Marko / Sandman",
+        "billing_order": 4
+      },
+      {
+        "actor": "Topher Grace",
+        "character": "Eddie Brock Jr. / Venom",
+        "billing_order": 5
+      },
+      {
+        "actor": "Bryce Dallas Howard",
+        "character": "Gwen Stacy",
+        "billing_order": 6
+      },
+      {
+        "actor": "James Cromwell",
+        "character": "Capt. George Stacy",
+        "billing_order": 7
+      },
+      {
+        "actor": "Rosemary Harris",
+        "character": "May Parker",
+        "billing_order": 8
+      },
+      {
+        "actor": "J. K. Simmons",
+        "character": "J. Jonah Jameson",
+        "billing_order": 9
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Sam Raimi",
+        "role": "director"
+      },
+      {
+        "person": "Sam Raimi",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Ivan Raimi",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Alvin Sargent",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Laura Ziskin",
+        "role": "producer"
+      },
+      {
+        "person": "Avi Arad",
+        "role": "producer"
+      },
+      {
+        "person": "Grant Curtis",
+        "role": "producer"
+      },
+      {
+        "person": "Christopher Young",
+        "role": "composer"
+      },
+      {
+        "person": "Bill Pope",
+        "role": "cinematographer"
+      },
+      {
+        "person": "Bob Murawski",
+        "role": "editor"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Columbia Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Entertainment",
+        "role": "production"
+      },
+      {
+        "name": "Laura Ziskin Productions",
+        "role": "production"
+      },
+      {
+        "name": "Sony Pictures Releasing",
+        "role": "distributor"
+      }
+    ],
+    "box_office_weekly": [
+      {
+        "week_number": 1,
+        "week_start_date": null,
+        "domestic_usd": null,
+        "international_usd": null,
+        "worldwide_usd": 895900000,
+        "scope": "lifetime"
+      }
+    ],
+    "budgets": [
+      {
+        "amount_usd": 258000000,
+        "component": "production",
+        "source_year": 2007,
+        "is_primary": true
+      }
+    ],
+    "awards": [],
+    "review_scores": [],
+    "soundtracks": [
+      {
+        "type": "score",
+        "title": null,
+        "composer_or_performer": "Christopher Young",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "Spider-Man",
+        "issue_range": null,
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1962,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Venom",
+        "issue_range": "Web of Spider-Man #18 / Amazing Spider-Man #300",
+        "comic_writer": "David Michelinie / Todd McFarlane",
+        "comic_year": 1988,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Sandman",
+        "issue_range": "Amazing Spider-Man #4",
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1963,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Gwen Stacy",
+        "issue_range": "Amazing Spider-Man #31",
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1965,
+        "storyline_arc": null
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spider-Man 2",
+        "relation_type": "prequel"
+      },
+      {
+        "related_work_title": "Spider-Man 4",
+        "relation_type": "sequel"
+      },
+      {
+        "related_work_title": "Venom (2018)",
+        "relation_type": "spin_off"
+      },
+      {
+        "related_work_title": "Spider-Man: No Way Home",
+        "relation_type": "crossover"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Peter Parker / Spider-Man",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Flint Marko / Sandman",
+        "alignment": "villain",
+        "alias": "Sandman",
+        "first_comic_appearance": "Amazing Spider-Man #4 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Eddie Brock / Venom",
+        "alignment": "villain",
+        "alias": "Venom",
+        "first_comic_appearance": "Web of Spider-Man #18 (1986); ASM #300 (1988)",
+        "first_comic_year": 1986
+      },
+      {
+        "name": "Harry Osborn / New Goblin",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #31 (1965)",
+        "first_comic_year": 1965
+      },
+      {
+        "name": "Gwen Stacy",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #31 (1965)",
+        "first_comic_year": 1965
+      },
+      {
+        "name": "George Stacy",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #56 (1968)",
+        "first_comic_year": 1968
+      },
+      {
+        "name": "Mary Jane Watson",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #42 (1966)",
+        "first_comic_year": 1966
+      },
+      {
+        "name": "May Parker",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "J. Jonah Jameson",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #1 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Norman Osborn / Green Goblin",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #14 (1964)",
+        "first_comic_year": 1964
+      },
+      {
+        "name": "Curt Connors / Lizard",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #6 (1963)",
+        "first_comic_year": 1963
+      }
+    ]
+  },
+  {
+    "title": "The Amazing Spider-Man",
+    "release_year": 2012,
+    "principal_cast": [
+      {
+        "actor": "Andrew Garfield",
+        "character": "Peter Parker / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Emma Stone",
+        "character": "Gwen Stacy",
+        "billing_order": 2
+      },
+      {
+        "actor": "Rhys Ifans",
+        "character": "Dr. Curt Connors / Lizard",
+        "billing_order": 3
+      },
+      {
+        "actor": "Denis Leary",
+        "character": "Capt. George Stacy",
+        "billing_order": 4
+      },
+      {
+        "actor": "Campbell Scott",
+        "character": "Richard Parker",
+        "billing_order": 5
+      },
+      {
+        "actor": "Irrfan Khan",
+        "character": "Rajit Ratha",
+        "billing_order": 6
+      },
+      {
+        "actor": "Martin Sheen",
+        "character": "Ben Parker",
+        "billing_order": 7
+      },
+      {
+        "actor": "Sally Field",
+        "character": "May Parker",
+        "billing_order": 8
+      },
+      {
+        "actor": "Chris Zylka",
+        "character": "Flash Thompson",
+        "billing_order": 9
+      },
+      {
+        "actor": "Embeth Davidtz",
+        "character": "Mary Parker",
+        "billing_order": 10
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Marc Webb",
+        "role": "director"
+      },
+      {
+        "person": "James Vanderbilt",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Alvin Sargent",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Steve Kloves",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Laura Ziskin",
+        "role": "producer"
+      },
+      {
+        "person": "Avi Arad",
+        "role": "producer"
+      },
+      {
+        "person": "Matt Tolmach",
+        "role": "producer"
+      },
+      {
+        "person": "James Horner",
+        "role": "composer"
+      },
+      {
+        "person": "John Schwartzman",
+        "role": "cinematographer"
+      },
+      {
+        "person": "Alan Edward Bell",
+        "role": "editor"
+      },
+      {
+        "person": "Pietro Scalia",
+        "role": "editor"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Columbia Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Entertainment",
+        "role": "production"
+      },
+      {
+        "name": "Laura Ziskin Productions",
+        "role": "production"
+      },
+      {
+        "name": "Arad Productions",
+        "role": "production"
+      },
+      {
+        "name": "Matt Tolmach Productions",
+        "role": "production"
+      },
+      {
+        "name": "Sony Pictures Releasing",
+        "role": "distributor"
+      }
+    ],
+    "box_office_weekly": [
+      {
+        "week_number": 1,
+        "week_start_date": null,
+        "domestic_usd": null,
+        "international_usd": null,
+        "worldwide_usd": 758700000,
+        "scope": "lifetime"
+      }
+    ],
+    "budgets": [
+      {
+        "amount_usd": 200000000,
+        "component": "production",
+        "source_year": 2012,
+        "is_primary": true
+      }
+    ],
+    "awards": [],
+    "review_scores": [],
+    "soundtracks": [
+      {
+        "type": "score",
+        "title": null,
+        "composer_or_performer": "James Horner",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "Spider-Man",
+        "issue_range": "Amazing Fantasy #15",
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1962,
+        "storyline_arc": "origin"
+      },
+      {
+        "comic_title": "Ultimate Spider-Man",
+        "issue_range": null,
+        "comic_writer": "Brian Michael Bendis / Mark Bagley",
+        "comic_year": 2000,
+        "storyline_arc": "influence"
+      },
+      {
+        "comic_title": "Lizard",
+        "issue_range": "Amazing Spider-Man #6",
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1963,
+        "storyline_arc": null
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "The Amazing Spider-Man 2",
+        "relation_type": "sequel"
+      },
+      {
+        "related_work_title": "Spider-Man: No Way Home",
+        "relation_type": "crossover"
+      },
+      {
+        "related_work_title": "Spider-Man 3",
+        "relation_type": "prequel"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Peter Parker / Spider-Man",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Gwen Stacy",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #31 (1965)",
+        "first_comic_year": 1965
+      },
+      {
+        "name": "Curt Connors / Lizard",
+        "alignment": "villain",
+        "alias": "Lizard",
+        "first_comic_appearance": "Amazing Spider-Man #6 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "George Stacy",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #56 (1968)",
+        "first_comic_year": 1968
+      },
+      {
+        "name": "Richard Parker",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man Annual #5 (1968)",
+        "first_comic_year": 1968
+      },
+      {
+        "name": "Ben Parker / Uncle Ben",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "May Parker / Aunt May",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Flash Thompson",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Rajit Ratha",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      }
+    ]
+  },
+  {
+    "title": "The Amazing Spider-Man 2",
+    "release_year": 2014,
+    "principal_cast": [
+      {
+        "actor": "Andrew Garfield",
+        "character": "Peter Parker / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Emma Stone",
+        "character": "Gwen Stacy",
+        "billing_order": 2
+      },
+      {
+        "actor": "Jamie Foxx",
+        "character": "Max Dillon / Electro",
+        "billing_order": 3
+      },
+      {
+        "actor": "Dane DeHaan",
+        "character": "Harry Osborn / Green Goblin",
+        "billing_order": 4
+      },
+      {
+        "actor": "Campbell Scott",
+        "character": "Richard Parker",
+        "billing_order": 5
+      },
+      {
+        "actor": "Embeth Davidtz",
+        "character": "Mary Parker",
+        "billing_order": 6
+      },
+      {
+        "actor": "Colm Feore",
+        "character": "Donald Menken",
+        "billing_order": 7
+      },
+      {
+        "actor": "Paul Giamatti",
+        "character": "Aleksei Sytsevich / Rhino",
+        "billing_order": 8
+      },
+      {
+        "actor": "Sally Field",
+        "character": "May Parker",
+        "billing_order": 9
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Marc Webb",
+        "role": "director"
+      },
+      {
+        "person": "Alex Kurtzman",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Roberto Orci",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Jeff Pinkner",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Avi Arad",
+        "role": "producer"
+      },
+      {
+        "person": "Matt Tolmach",
+        "role": "producer"
+      },
+      {
+        "person": "Hans Zimmer",
+        "role": "composer"
+      },
+      {
+        "person": "The Magnificent Six",
+        "role": "composer"
+      },
+      {
+        "person": "Dan Mindel",
+        "role": "cinematographer"
+      },
+      {
+        "person": "Pietro Scalia",
+        "role": "editor"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Columbia Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Entertainment",
+        "role": "production"
+      },
+      {
+        "name": "Arad Productions, Inc.",
+        "role": "production"
+      },
+      {
+        "name": "Matt Tolmach Productions",
+        "role": "production"
+      },
+      {
+        "name": "Ingenious Film Studios",
+        "role": "financing"
+      },
+      {
+        "name": "Sony Pictures Releasing",
+        "role": "distributor"
+      }
+    ],
+    "box_office_weekly": [
+      {
+        "week_number": 1,
+        "week_start_date": null,
+        "domestic_usd": null,
+        "international_usd": null,
+        "worldwide_usd": 717000000,
+        "scope": "lifetime"
+      }
+    ],
+    "budgets": [
+      {
+        "amount_usd": 200000000,
+        "component": "production",
+        "source_year": 2014,
+        "is_primary": true
+      },
+      {
+        "amount_usd": 100000000,
+        "component": "marketing",
+        "source_year": 2014,
+        "is_primary": true
+      }
+    ],
+    "awards": [],
+    "review_scores": [],
+    "soundtracks": [
+      {
+        "type": "score",
+        "title": null,
+        "composer_or_performer": "Hans Zimmer & The Magnificent Six",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      },
+      {
+        "type": "song",
+        "title": "It's On Again",
+        "composer_or_performer": "Alicia Keys ft. Kendrick Lamar",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "Electro",
+        "issue_range": "Amazing Spider-Man #9",
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1964,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Green Goblin (Harry)",
+        "issue_range": "Amazing Spider-Man #121-122",
+        "comic_writer": "Gerry Conway",
+        "comic_year": 1973,
+        "storyline_arc": "The Night Gwen Stacy Died"
+      },
+      {
+        "comic_title": "Rhino",
+        "issue_range": "Amazing Spider-Man #41",
+        "comic_writer": "Stan Lee / John Romita Sr.",
+        "comic_year": 1966,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "The Night Gwen Stacy Died",
+        "issue_range": "Amazing Spider-Man #121-122",
+        "comic_writer": "Gerry Conway",
+        "comic_year": 1973,
+        "storyline_arc": null
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "The Amazing Spider-Man (2012)",
+        "relation_type": "prequel"
+      },
+      {
+        "related_work_title": "Sinister Six (cancelled)",
+        "relation_type": "spin_off"
+      },
+      {
+        "related_work_title": "Venom (cancelled ASM-verse version)",
+        "relation_type": "spin_off"
+      },
+      {
+        "related_work_title": "Spider-Man: No Way Home",
+        "relation_type": "crossover"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Peter Parker / Spider-Man",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Gwen Stacy",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #31 (1965)",
+        "first_comic_year": 1965
+      },
+      {
+        "name": "Max Dillon / Electro",
+        "alignment": "villain",
+        "alias": "Electro",
+        "first_comic_appearance": "Amazing Spider-Man #9 (1964)",
+        "first_comic_year": 1964
+      },
+      {
+        "name": "Harry Osborn / Green Goblin",
+        "alignment": "villain",
+        "alias": "Green Goblin",
+        "first_comic_appearance": "Amazing Spider-Man #31 (1965) / ASM #136 (1974)",
+        "first_comic_year": 1965
+      },
+      {
+        "name": "Aleksei Sytsevich / Rhino",
+        "alignment": "villain",
+        "alias": "Rhino",
+        "first_comic_appearance": "Amazing Spider-Man #41 (1966)",
+        "first_comic_year": 1966
+      },
+      {
+        "name": "Norman Osborn",
+        "alignment": "villain",
+        "alias": "Green Goblin",
+        "first_comic_appearance": "Amazing Spider-Man #14 (1964)",
+        "first_comic_year": 1964
+      },
+      {
+        "name": "Donald Menken",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": "Web of Spider-Man #2 (1985)",
+        "first_comic_year": 1985
+      },
+      {
+        "name": "Felicia Hardy",
+        "alignment": "neutral",
+        "alias": "Black Cat",
+        "first_comic_appearance": "Amazing Spider-Man #194 (1979)",
+        "first_comic_year": 1979
+      },
+      {
+        "name": "Alistair Smythe",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #292 (1987)",
+        "first_comic_year": 1987
+      },
+      {
+        "name": "Ashley Kafka",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Spectacular Spider-Man #178 (1991)",
+        "first_comic_year": 1991
+      },
+      {
+        "name": "Gustav Fiers / The Gentleman",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      }
+    ]
+  },
+  {
+    "title": "Spider-Man: Homecoming",
+    "release_year": 2017,
+    "principal_cast": [
+      {
+        "actor": "Tom Holland",
+        "character": "Peter Parker / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Michael Keaton",
+        "character": "Adrian Toomes / Vulture",
+        "billing_order": 2
+      },
+      {
+        "actor": "Robert Downey Jr.",
+        "character": "Tony Stark / Iron Man",
+        "billing_order": 3
+      },
+      {
+        "actor": "Marisa Tomei",
+        "character": "May Parker",
+        "billing_order": 4
+      },
+      {
+        "actor": "Jon Favreau",
+        "character": "Happy Hogan",
+        "billing_order": 5
+      },
+      {
+        "actor": "Gwyneth Paltrow",
+        "character": "Pepper Potts",
+        "billing_order": 6
+      },
+      {
+        "actor": "Zendaya",
+        "character": "Michelle \"MJ\"",
+        "billing_order": 7
+      },
+      {
+        "actor": "Jacob Batalon",
+        "character": "Ned",
+        "billing_order": 8
+      },
+      {
+        "actor": "Laura Harrier",
+        "character": "Liz",
+        "billing_order": 9
+      },
+      {
+        "actor": "Tony Revolori",
+        "character": "Flash Thompson",
+        "billing_order": 10
+      },
+      {
+        "actor": "Donald Glover",
+        "character": "Aaron Davis",
+        "billing_order": 11
+      },
+      {
+        "actor": "Bokeem Woodbine",
+        "character": "Herman Schultz / Shocker",
+        "billing_order": 12
+      },
+      {
+        "actor": "Tyne Daly",
+        "character": "Anne Marie Hoag",
+        "billing_order": 13
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Jon Watts",
+        "role": "director"
+      },
+      {
+        "person": "Jonathan Goldstein",
+        "role": "screenwriter"
+      },
+      {
+        "person": "John Francis Daley",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Jon Watts",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Christopher Ford",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Chris McKenna",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Erik Sommers",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Kevin Feige",
+        "role": "producer"
+      },
+      {
+        "person": "Amy Pascal",
+        "role": "producer"
+      },
+      {
+        "person": "Michael Giacchino",
+        "role": "composer"
+      },
+      {
+        "person": "Salvatore Totino",
+        "role": "cinematographer"
+      },
+      {
+        "person": "Dan Lebental",
+        "role": "editor"
+      },
+      {
+        "person": "Debbie Berman",
+        "role": "editor"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Columbia Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Studios",
+        "role": "production"
+      },
+      {
+        "name": "Pascal Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Sony Pictures Releasing",
+        "role": "distributor"
+      }
+    ],
+    "box_office_weekly": [
+      {
+        "week_number": 1,
+        "week_start_date": null,
+        "domestic_usd": null,
+        "international_usd": null,
+        "worldwide_usd": 880900000,
+        "scope": "lifetime"
+      }
+    ],
+    "budgets": [
+      {
+        "amount_usd": 175000000,
+        "component": "production",
+        "source_year": 2017,
+        "is_primary": true
+      }
+    ],
+    "awards": [],
+    "review_scores": [],
+    "soundtracks": [
+      {
+        "type": "score",
+        "title": null,
+        "composer_or_performer": "Michael Giacchino",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "Spider-Man",
+        "issue_range": null,
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1962,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Ultimate Spider-Man",
+        "issue_range": null,
+        "comic_writer": "Brian Michael Bendis",
+        "comic_year": 2000,
+        "storyline_arc": "influence on Ned"
+      },
+      {
+        "comic_title": "Vulture",
+        "issue_range": "Amazing Spider-Man #2",
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1963,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Shocker",
+        "issue_range": "Amazing Spider-Man #46",
+        "comic_writer": "Stan Lee / John Romita Sr.",
+        "comic_year": 1967,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Damage Control",
+        "issue_range": null,
+        "comic_writer": "Dwayne McDuffie / Ernie Colón",
+        "comic_year": 1988,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Captain America: Civil War",
+        "issue_range": null,
+        "comic_writer": "MCU film",
+        "comic_year": 2016,
+        "storyline_arc": "tie-in"
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Captain America: Civil War",
+        "relation_type": "prequel"
+      },
+      {
+        "related_work_title": "Spider-Man: Far From Home",
+        "relation_type": "sequel"
+      },
+      {
+        "related_work_title": "Spider-Man: No Way Home",
+        "relation_type": "sequel"
+      },
+      {
+        "related_work_title": "The Avengers (MCU)",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Venom (2018)",
+        "relation_type": "same_universe"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Peter Parker / Spider-Man",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Adrian Toomes / Vulture",
+        "alignment": "villain",
+        "alias": "Vulture",
+        "first_comic_appearance": "Amazing Spider-Man #2 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Tony Stark / Iron Man",
+        "alignment": "hero",
+        "alias": "Iron Man",
+        "first_comic_appearance": "Tales of Suspense #39 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "May Parker",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Happy Hogan",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Tales of Suspense #45 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Pepper Potts",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Tales of Suspense #45 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Michelle \"MJ\" Jones-Watson",
+        "alignment": "hero",
+        "alias": "(composite of Mary Jane Watson)",
+        "first_comic_appearance": "Amazing Spider-Man #42 (1966)",
+        "first_comic_year": 1966
+      },
+      {
+        "name": "Ned Leeds",
+        "alignment": "hero",
+        "alias": "(composite w/ Ganke Lee)",
+        "first_comic_appearance": "Amazing Spider-Man #18 (1964)",
+        "first_comic_year": 1964
+      },
+      {
+        "name": "Liz Allan",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Flash Thompson",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Aaron Davis / Prowler",
+        "alignment": "villain",
+        "alias": "Prowler",
+        "first_comic_appearance": "Amazing Spider-Man #78 (1969)",
+        "first_comic_year": 1969
+      },
+      {
+        "name": "Herman Schultz / Shocker",
+        "alignment": "villain",
+        "alias": "Shocker",
+        "first_comic_appearance": "Amazing Spider-Man #46 (1967)",
+        "first_comic_year": 1967
+      },
+      {
+        "name": "Anne Marie Hoag",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Damage Control #1 (1989)",
+        "first_comic_year": 1989
+      },
+      {
+        "name": "Mac Gargan",
+        "alignment": "villain",
+        "alias": "Scorpion",
+        "first_comic_appearance": "Amazing Spider-Man #20 (1965)",
+        "first_comic_year": 1965
+      },
+      {
+        "name": "Jackson Brice / Shocker",
+        "alignment": "villain",
+        "alias": "Shocker",
+        "first_comic_appearance": "Spectacular Spider-Man #49 (1980)",
+        "first_comic_year": 1980
+      },
+      {
+        "name": "Karen (suit AI)",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      }
+    ]
+  },
+  {
+    "title": "Spider-Man: Into the Spider-Verse",
+    "release_year": 2018,
+    "principal_cast": [
+      {
+        "actor": "Shameik Moore",
+        "character": "Miles Morales / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Jake Johnson",
+        "character": "Peter B. Parker / Spider-Man",
+        "billing_order": 2
+      },
+      {
+        "actor": "Hailee Steinfeld",
+        "character": "Gwen Stacy / Spider-Gwen",
+        "billing_order": 3
+      },
+      {
+        "actor": "Mahershala Ali",
+        "character": "Aaron Davis / The Prowler",
+        "billing_order": 4
+      },
+      {
+        "actor": "Brian Tyree Henry",
+        "character": "Jefferson Davis",
+        "billing_order": 5
+      },
+      {
+        "actor": "Lily Tomlin",
+        "character": "May Parker",
+        "billing_order": 6
+      },
+      {
+        "actor": "Luna Lauren Vélez",
+        "character": "Rio Morales",
+        "billing_order": 7
+      },
+      {
+        "actor": "John Mulaney",
+        "character": "Peter Porker / Spider-Ham",
+        "billing_order": 8
+      },
+      {
+        "actor": "Kimiko Glenn",
+        "character": "Peni Parker / SP//dr",
+        "billing_order": 9
+      },
+      {
+        "actor": "Nicolas Cage",
+        "character": "Spider-Man Noir",
+        "billing_order": 10
+      },
+      {
+        "actor": "Liev Schreiber",
+        "character": "Wilson Fisk / Kingpin",
+        "billing_order": 11
+      },
+      {
+        "actor": "Chris Pine",
+        "character": "Peter Parker (Miles' universe)",
+        "billing_order": 12
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Bob Persichetti",
+        "role": "director"
+      },
+      {
+        "person": "Peter Ramsey",
+        "role": "director"
+      },
+      {
+        "person": "Rodney Rothman",
+        "role": "director"
+      },
+      {
+        "person": "Phil Lord",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Rodney Rothman",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Avi Arad",
+        "role": "producer"
+      },
+      {
+        "person": "Amy Pascal",
+        "role": "producer"
+      },
+      {
+        "person": "Phil Lord",
+        "role": "producer"
+      },
+      {
+        "person": "Christopher Miller",
+        "role": "producer"
+      },
+      {
+        "person": "Christina Steinberg",
+        "role": "producer"
+      },
+      {
+        "person": "Daniel Pemberton",
+        "role": "composer"
+      },
+      {
+        "person": "Robert Fisher Jr.",
+        "role": "editor"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Columbia Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Entertainment",
+        "role": "production"
+      },
+      {
+        "name": "Sony Pictures Animation",
+        "role": "production"
+      },
+      {
+        "name": "Pascal Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Arad Productions",
+        "role": "production"
+      },
+      {
+        "name": "Lord Miller Productions",
+        "role": "production"
+      },
+      {
+        "name": "Sony Pictures Releasing",
+        "role": "distributor"
+      }
+    ],
+    "box_office_weekly": [
+      {
+        "week_number": 1,
+        "week_start_date": null,
+        "domestic_usd": null,
+        "international_usd": null,
+        "worldwide_usd": 395000000,
+        "scope": "lifetime"
+      }
+    ],
+    "budgets": [
+      {
+        "amount_usd": 90000000,
+        "component": "production",
+        "source_year": 2018,
+        "is_primary": true
+      }
+    ],
+    "awards": [
+      {
+        "award_body": "Academy Awards",
+        "year": 2019,
+        "category": "Best Animated Feature",
+        "result": "won",
+        "recipient": null
+      }
+    ],
+    "review_scores": [],
+    "soundtracks": [
+      {
+        "type": "score",
+        "title": null,
+        "composer_or_performer": "Daniel Pemberton",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      },
+      {
+        "type": "song",
+        "title": "Sunflower",
+        "composer_or_performer": "Post Malone & Swae Lee",
+        "chart_peak_us": 1,
+        "chart_peak_uk": null
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "Miles Morales",
+        "issue_range": "Ultimate Fallout #4",
+        "comic_writer": "Brian Michael Bendis / Sara Pichelli",
+        "comic_year": 2011,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Spider-Verse",
+        "issue_range": "Spider-Verse crossover",
+        "comic_writer": "Dan Slott / Olivier Coipel",
+        "comic_year": 2014,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Spider-Gwen",
+        "issue_range": "Edge of Spider-Verse #2",
+        "comic_writer": "Jason Latour / Robbie Rodriguez",
+        "comic_year": 2014,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Spider-Man Noir",
+        "issue_range": "Spider-Man Noir #1",
+        "comic_writer": "David Hine / Fabry",
+        "comic_year": 2009,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Spider-Ham",
+        "issue_range": "Marvel Tails Starring Peter Porker",
+        "comic_writer": "1983",
+        "comic_year": null,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Peni Parker",
+        "issue_range": "Edge of Spider-Verse #5",
+        "comic_writer": "Gerard Way / Rodriguez",
+        "comic_year": 2014,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Kingpin",
+        "issue_range": "Amazing Spider-Man #50",
+        "comic_writer": "Stan Lee / John Romita Sr.",
+        "comic_year": 1967,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Prowler",
+        "issue_range": "Amazing Spider-Man #78",
+        "comic_writer": "Stan Lee / John Buscema",
+        "comic_year": 1969,
+        "storyline_arc": null
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spider-Man: Across the Spider-Verse",
+        "relation_type": "sequel"
+      },
+      {
+        "related_work_title": "Spider-Man: Beyond the Spider-Verse",
+        "relation_type": "sequel"
+      },
+      {
+        "related_work_title": "Spider-Ham: Caught in a Ham",
+        "relation_type": "spin_off"
+      },
+      {
+        "related_work_title": "The Spider Within: A Spider-Verse Story",
+        "relation_type": "spin_off"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Miles Morales / Spider-Man",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Ultimate Fallout #4 (2011)",
+        "first_comic_year": 2011
+      },
+      {
+        "name": "Peter B. Parker / Spider-Man",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Gwen Stacy / Spider-Gwen",
+        "alignment": "hero",
+        "alias": "Spider-Woman",
+        "first_comic_appearance": "Edge of Spider-Verse #2 (2014)",
+        "first_comic_year": 2014
+      },
+      {
+        "name": "Aaron Davis / Prowler",
+        "alignment": "villain",
+        "alias": "Prowler",
+        "first_comic_appearance": "Amazing Spider-Man #78 (1969)",
+        "first_comic_year": 1969
+      },
+      {
+        "name": "Jefferson Davis",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Ultimate Comics Spider-Man #1 (2011)",
+        "first_comic_year": 2011
+      },
+      {
+        "name": "Rio Morales",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Ultimate Comics Spider-Man #1 (2011)",
+        "first_comic_year": 2011
+      },
+      {
+        "name": "May Parker",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Peter Porker / Spider-Ham",
+        "alignment": "hero",
+        "alias": "Spider-Ham",
+        "first_comic_appearance": "Marvel Tails (1983)",
+        "first_comic_year": 1983
+      },
+      {
+        "name": "Peni Parker / SP//dr",
+        "alignment": "hero",
+        "alias": "Peni Parker",
+        "first_comic_appearance": "Edge of Spider-Verse #5 (2014)",
+        "first_comic_year": 2014
+      },
+      {
+        "name": "Spider-Man Noir",
+        "alignment": "hero",
+        "alias": "Spider-Man Noir",
+        "first_comic_appearance": "Spider-Man Noir #1 (2009)",
+        "first_comic_year": 2009
+      },
+      {
+        "name": "Wilson Fisk / Kingpin",
+        "alignment": "villain",
+        "alias": "Kingpin",
+        "first_comic_appearance": "Amazing Spider-Man #50 (1967)",
+        "first_comic_year": 1967
+      },
+      {
+        "name": "Olivia Octavius / Doctor Octopus",
+        "alignment": "villain",
+        "alias": "Doctor Octopus",
+        "first_comic_appearance": "Amazing Spider-Man #3 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Norman Osborn / Green Goblin",
+        "alignment": "villain",
+        "alias": "Green Goblin",
+        "first_comic_appearance": "Amazing Spider-Man #14 (1964)",
+        "first_comic_year": 1964
+      },
+      {
+        "name": "Tombstone",
+        "alignment": "villain",
+        "alias": "Tombstone",
+        "first_comic_appearance": "Web of Spider-Man #36 (1988)",
+        "first_comic_year": 1988
+      },
+      {
+        "name": "Scorpion (Mac Gargan)",
+        "alignment": "villain",
+        "alias": "Scorpion",
+        "first_comic_appearance": "Amazing Spider-Man #20 (1965)",
+        "first_comic_year": 1965
+      },
+      {
+        "name": "Mary Jane Parker",
+        "alignment": "hero",
+        "alias": "Mary Jane Watson",
+        "first_comic_appearance": "Amazing Spider-Man #42 (1966)",
+        "first_comic_year": 1966
+      },
+      {
+        "name": "Miguel O'Hara / Spider-Man 2099",
+        "alignment": "hero",
+        "alias": "Spider-Man 2099",
+        "first_comic_appearance": "Spider-Man 2099 #1 (1992)",
+        "first_comic_year": 1992
+      },
+      {
+        "name": "Miles' Peter Parker (blonde)",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      }
+    ]
+  },
+  {
+    "title": "Spider-Man: Far From Home",
+    "release_year": 2019,
+    "principal_cast": [
+      {
+        "actor": "Tom Holland",
+        "character": "Peter Parker / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Jake Gyllenhaal",
+        "character": "Quentin Beck / Mysterio",
+        "billing_order": 2
+      },
+      {
+        "actor": "Samuel L. Jackson",
+        "character": "Nick Fury",
+        "billing_order": 3
+      },
+      {
+        "actor": "Zendaya",
+        "character": "MJ",
+        "billing_order": 4
+      },
+      {
+        "actor": "Cobie Smulders",
+        "character": "Maria Hill",
+        "billing_order": 5
+      },
+      {
+        "actor": "Jon Favreau",
+        "character": "Happy Hogan",
+        "billing_order": 6
+      },
+      {
+        "actor": "J. B. Smoove",
+        "character": "Julius Dell",
+        "billing_order": 7
+      },
+      {
+        "actor": "Jacob Batalon",
+        "character": "Ned Leeds",
+        "billing_order": 8
+      },
+      {
+        "actor": "Martin Starr",
+        "character": "Roger Harrington",
+        "billing_order": 9
+      },
+      {
+        "actor": "Tony Revolori",
+        "character": "Flash Thompson",
+        "billing_order": 10
+      },
+      {
+        "actor": "Marisa Tomei",
+        "character": "May Parker",
+        "billing_order": 11
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Jon Watts",
+        "role": "director"
+      },
+      {
+        "person": "Chris McKenna",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Erik Sommers",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Kevin Feige",
+        "role": "producer"
+      },
+      {
+        "person": "Amy Pascal",
+        "role": "producer"
+      },
+      {
+        "person": "Michael Giacchino",
+        "role": "composer"
+      },
+      {
+        "person": "Matthew J. Lloyd",
+        "role": "cinematographer"
+      },
+      {
+        "person": "Dan Lebental",
+        "role": "editor"
+      },
+      {
+        "person": "Leigh Folsom Boyd",
+        "role": "editor"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Columbia Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Studios",
+        "role": "production"
+      },
+      {
+        "name": "Pascal Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Sony Pictures Releasing",
+        "role": "distributor"
+      }
+    ],
+    "box_office_weekly": [
+      {
+        "week_number": 1,
+        "week_start_date": null,
+        "domestic_usd": null,
+        "international_usd": null,
+        "worldwide_usd": 1133000000,
+        "scope": "lifetime"
+      }
+    ],
+    "budgets": [
+      {
+        "amount_usd": 160000000,
+        "component": "production",
+        "source_year": 2019,
+        "is_primary": true
+      }
+    ],
+    "awards": [],
+    "review_scores": [],
+    "soundtracks": [
+      {
+        "type": "score",
+        "title": null,
+        "composer_or_performer": "Michael Giacchino",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "Mysterio",
+        "issue_range": "Amazing Spider-Man #13",
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1964,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Elementals",
+        "issue_range": null,
+        "comic_writer": "various comics",
+        "comic_year": null,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "E.D.I.T.H. glasses",
+        "issue_range": null,
+        "comic_writer": "original to MCU",
+        "comic_year": null,
+        "storyline_arc": null
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spider-Man: Homecoming",
+        "relation_type": "prequel"
+      },
+      {
+        "related_work_title": "Avengers: Endgame",
+        "relation_type": "prequel"
+      },
+      {
+        "related_work_title": "Spider-Man: No Way Home",
+        "relation_type": "sequel"
+      },
+      {
+        "related_work_title": "Captain Marvel",
+        "relation_type": "same_universe"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Peter Parker / Spider-Man",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Quentin Beck / Mysterio",
+        "alignment": "villain",
+        "alias": "Mysterio",
+        "first_comic_appearance": "Amazing Spider-Man #13 (1964)",
+        "first_comic_year": 1964
+      },
+      {
+        "name": "Nick Fury",
+        "alignment": "hero",
+        "alias": "Nick Fury",
+        "first_comic_appearance": "Sgt. Fury #1 (1963) (MCU version)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Maria Hill",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Marvel Spotlight #4 (1979)",
+        "first_comic_year": 1979
+      },
+      {
+        "name": "MJ (Michelle Jones-Watson)",
+        "alignment": "hero",
+        "alias": "(composite of Mary Jane Watson)",
+        "first_comic_appearance": "Amazing Spider-Man #42 (1966)",
+        "first_comic_year": 1966
+      },
+      {
+        "name": "Happy Hogan",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Tales of Suspense #45 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Ned Leeds",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #18 (1964)",
+        "first_comic_year": 1964
+      },
+      {
+        "name": "Flash Thompson",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "May Parker",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Roger Harrington",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Julius Dell",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "J. Jonah Jameson",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #1 (1963) (MCU version, J.K. Simmons)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Talos (Skrull)",
+        "alignment": "hero",
+        "alias": "Skrull",
+        "first_comic_appearance": "Fantastic Four #2 (1962) (MCU version)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Soren (Skrull)",
+        "alignment": "hero",
+        "alias": "Skrull",
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "William Ginter Riva",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Brad Davis",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Dimitri",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "(Chameleon-inspired) Amazing Spider-Man #1 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Janice Lincoln",
+        "alignment": "villain",
+        "alias": "Beetle",
+        "first_comic_appearance": "Thunderbolts #111 (2007) (different version)",
+        "first_comic_year": 2007
+      }
+    ]
+  },
+  {
+    "title": "Spider-Man: No Way Home",
+    "release_year": 2021,
+    "principal_cast": [
+      {
+        "actor": "Tom Holland",
+        "character": "Peter Parker / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Zendaya",
+        "character": "Michelle \"MJ\" Jones-Watson",
+        "billing_order": 2
+      },
+      {
+        "actor": "Benedict Cumberbatch",
+        "character": "Dr. Stephen Strange",
+        "billing_order": 3
+      },
+      {
+        "actor": "Jacob Batalon",
+        "character": "Ned Leeds",
+        "billing_order": 4
+      },
+      {
+        "actor": "Jon Favreau",
+        "character": "Happy Hogan",
+        "billing_order": 5
+      },
+      {
+        "actor": "Jamie Foxx",
+        "character": "Max Dillon / Electro",
+        "billing_order": 6
+      },
+      {
+        "actor": "Willem Dafoe",
+        "character": "Norman Osborn / Green Goblin",
+        "billing_order": 7
+      },
+      {
+        "actor": "Alfred Molina",
+        "character": "Otto Octavius / Doctor Octopus",
+        "billing_order": 8
+      },
+      {
+        "actor": "Benedict Wong",
+        "character": "Wong",
+        "billing_order": 9
+      },
+      {
+        "actor": "Tony Revolori",
+        "character": "Flash Thompson",
+        "billing_order": 10
+      },
+      {
+        "actor": "Marisa Tomei",
+        "character": "May Parker",
+        "billing_order": 11
+      },
+      {
+        "actor": "Andrew Garfield",
+        "character": "Peter Parker / Spider-Man (Peter-Three)",
+        "billing_order": 12
+      },
+      {
+        "actor": "Tobey Maguire",
+        "character": "Peter Parker / Spider-Man (Peter-Two)",
+        "billing_order": 13
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Jon Watts",
+        "role": "director"
+      },
+      {
+        "person": "Chris McKenna",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Erik Sommers",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Kevin Feige",
+        "role": "producer"
+      },
+      {
+        "person": "Amy Pascal",
+        "role": "producer"
+      },
+      {
+        "person": "Michael Giacchino",
+        "role": "composer"
+      },
+      {
+        "person": "Mauro Fiore",
+        "role": "cinematographer"
+      },
+      {
+        "person": "Jeffrey Ford",
+        "role": "editor"
+      },
+      {
+        "person": "Leigh Folsom Boyd",
+        "role": "editor"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Columbia Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Studios",
+        "role": "production"
+      },
+      {
+        "name": "Pascal Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Sony Pictures Releasing",
+        "role": "distributor"
+      }
+    ],
+    "box_office_weekly": [
+      {
+        "week_number": 1,
+        "week_start_date": null,
+        "domestic_usd": null,
+        "international_usd": null,
+        "worldwide_usd": 1921000000,
+        "scope": "lifetime"
+      }
+    ],
+    "budgets": [
+      {
+        "amount_usd": 200000000,
+        "component": "production",
+        "source_year": 2021,
+        "is_primary": true
+      }
+    ],
+    "awards": [
+      {
+        "award_body": "Academy Awards",
+        "year": 2022,
+        "category": "Best Visual Effects",
+        "result": "nominated",
+        "recipient": null
+      }
+    ],
+    "review_scores": [],
+    "soundtracks": [
+      {
+        "type": "score",
+        "title": null,
+        "composer_or_performer": "Michael Giacchino",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "One More Day",
+        "issue_range": "Amazing Spider-Man #544",
+        "comic_writer": "J. Michael Straczynski / Joe Quesada",
+        "comic_year": 2007,
+        "storyline_arc": "(memory-wipe spell)"
+      },
+      {
+        "comic_title": "Spider-Man",
+        "issue_range": "various",
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1962,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Multiverse saga",
+        "issue_range": null,
+        "comic_writer": null,
+        "comic_year": null,
+        "storyline_arc": null
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spider-Man: Homecoming",
+        "relation_type": "prequel"
+      },
+      {
+        "related_work_title": "Spider-Man: Far From Home",
+        "relation_type": "prequel"
+      },
+      {
+        "related_work_title": "Spider-Man (2002)",
+        "relation_type": "crossover"
+      },
+      {
+        "related_work_title": "Spider-Man 2",
+        "relation_type": "crossover"
+      },
+      {
+        "related_work_title": "Spider-Man 3",
+        "relation_type": "crossover"
+      },
+      {
+        "related_work_title": "The Amazing Spider-Man (2012)",
+        "relation_type": "crossover"
+      },
+      {
+        "related_work_title": "The Amazing Spider-Man 2",
+        "relation_type": "crossover"
+      },
+      {
+        "related_work_title": "Venom: Let There Be Carnage",
+        "relation_type": "crossover"
+      },
+      {
+        "related_work_title": "Doctor Strange in the Multiverse of Madness",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Daredevil (TV series)",
+        "relation_type": "same_universe"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Peter Parker / Spider-Man (MCU)",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Peter Parker / Spider-Man (Raimi-verse)",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Peter Parker / Spider-Man (Webb-verse)",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Norman Osborn / Green Goblin",
+        "alignment": "villain",
+        "alias": "Green Goblin",
+        "first_comic_appearance": "Amazing Spider-Man #14 (1964)",
+        "first_comic_year": 1964
+      },
+      {
+        "name": "Otto Octavius / Doctor Octopus",
+        "alignment": "villain",
+        "alias": "Doctor Octopus",
+        "first_comic_appearance": "Amazing Spider-Man #3 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Max Dillon / Electro",
+        "alignment": "villain",
+        "alias": "Electro",
+        "first_comic_appearance": "Amazing Spider-Man #9 (1964)",
+        "first_comic_year": 1964
+      },
+      {
+        "name": "Flint Marko / Sandman",
+        "alignment": "villain",
+        "alias": "Sandman",
+        "first_comic_appearance": "Amazing Spider-Man #4 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Curt Connors / Lizard",
+        "alignment": "villain",
+        "alias": "Lizard",
+        "first_comic_appearance": "Amazing Spider-Man #6 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Stephen Strange / Doctor Strange",
+        "alignment": "hero",
+        "alias": "Doctor Strange",
+        "first_comic_appearance": "Strange Tales #110 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Wong",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Strange Tales #64 (1964) (Sorcerer Supreme)",
+        "first_comic_year": 1964
+      },
+      {
+        "name": "MJ (Michelle Jones-Watson)",
+        "alignment": "hero",
+        "alias": "(Mary Jane Watson composite)",
+        "first_comic_appearance": "Amazing Spider-Man #42 (1966)",
+        "first_comic_year": 1966
+      },
+      {
+        "name": "Ned Leeds",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #18 (1964)",
+        "first_comic_year": 1964
+      },
+      {
+        "name": "May Parker",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Happy Hogan",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Tales of Suspense #45 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Flash Thompson",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Eddie Brock / Venom (SSU)",
+        "alignment": "neutral",
+        "alias": "Venom",
+        "first_comic_appearance": "Web of Spider-Man #18 (1986); ASM #300 (1988)",
+        "first_comic_year": 1986
+      },
+      {
+        "name": "Matt Murdock / Daredevil",
+        "alignment": "hero",
+        "alias": "Daredevil",
+        "first_comic_appearance": "Daredevil #1 (1964)",
+        "first_comic_year": 1964
+      },
+      {
+        "name": "J. Jonah Jameson",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #1 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Gwen Stacy (mentioned)",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #31 (1965)",
+        "first_comic_year": 1965
+      },
+      {
+        "name": "Ben Parker (mentioned)",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      }
+    ]
+  },
+  {
+    "title": "Spider-Man: Across the Spider-Verse",
+    "release_year": 2023,
+    "principal_cast": [
+      {
+        "actor": "Shameik Moore",
+        "character": "Miles Morales / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Hailee Steinfeld",
+        "character": "Gwen Stacy / Spider-Gwen",
+        "billing_order": 2
+      },
+      {
+        "actor": "Oscar Isaac",
+        "character": "Miguel O'Hara / Spider-Man 2099",
+        "billing_order": 3
+      },
+      {
+        "actor": "Jake Johnson",
+        "character": "Peter B. Parker / Spider-Man",
+        "billing_order": 4
+      },
+      {
+        "actor": "Jason Schwartzman",
+        "character": "Johnathon Ohnn / The Spot",
+        "billing_order": 5
+      },
+      {
+        "actor": "Issa Rae",
+        "character": "Jess Drew / Spider-Woman",
+        "billing_order": 6
+      },
+      {
+        "actor": "Daniel Kaluuya",
+        "character": "Hobie Brown / Spider-Punk",
+        "billing_order": 7
+      },
+      {
+        "actor": "Brian Tyree Henry",
+        "character": "Jefferson Morales",
+        "billing_order": 8
+      },
+      {
+        "actor": "Lauren Vélez",
+        "character": "Rio Morales",
+        "billing_order": 9
+      },
+      {
+        "actor": "Karan Soni",
+        "character": "Pavitr Prabhakar / Spider-Man India",
+        "billing_order": 10
+      },
+      {
+        "actor": "Shea Whigham",
+        "character": "George Stacy",
+        "billing_order": 11
+      },
+      {
+        "actor": "Mahershala Ali",
+        "character": "Aaron Davis / Prowler (Earth-42)",
+        "billing_order": 12
+      },
+      {
+        "actor": "Jharrel Jerome",
+        "character": "Miles G. Morales / Prowler (Earth-42)",
+        "billing_order": 13
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Joaquim Dos Santos",
+        "role": "director"
+      },
+      {
+        "person": "Kemp Powers",
+        "role": "director"
+      },
+      {
+        "person": "Justin K. Thompson",
+        "role": "director"
+      },
+      {
+        "person": "Phil Lord",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Christopher Miller",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Dave Callaham",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Phil Lord",
+        "role": "producer"
+      },
+      {
+        "person": "Christopher Miller",
+        "role": "producer"
+      },
+      {
+        "person": "Amy Pascal",
+        "role": "producer"
+      },
+      {
+        "person": "Avi Arad",
+        "role": "producer"
+      },
+      {
+        "person": "Christina Steinberg",
+        "role": "producer"
+      },
+      {
+        "person": "Daniel Pemberton",
+        "role": "composer"
+      },
+      {
+        "person": "Michael Andrews",
+        "role": "editor"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Columbia Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Entertainment",
+        "role": "production"
+      },
+      {
+        "name": "Sony Pictures Animation",
+        "role": "production"
+      },
+      {
+        "name": "Pascal Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Lord Miller Productions",
+        "role": "production"
+      },
+      {
+        "name": "Arad Productions",
+        "role": "production"
+      },
+      {
+        "name": "Sony Pictures Releasing",
+        "role": "distributor"
+      }
+    ],
+    "box_office_weekly": [
+      {
+        "week_number": 1,
+        "week_start_date": null,
+        "domestic_usd": null,
+        "international_usd": null,
+        "worldwide_usd": 690800000,
+        "scope": "lifetime"
+      }
+    ],
+    "budgets": [
+      {
+        "amount_usd": 100000000,
+        "component": "production",
+        "source_year": 2023,
+        "is_primary": true
+      }
+    ],
+    "awards": [
+      {
+        "award_body": "Critics' Choice Movie Awards",
+        "year": 2024,
+        "category": "Best Animated Feature",
+        "result": "won",
+        "recipient": null
+      },
+      {
+        "award_body": "Annie Awards",
+        "year": 2024,
+        "category": "Best Animated Feature",
+        "result": "won",
+        "recipient": null
+      },
+      {
+        "award_body": "Producers Guild of America Awards",
+        "year": 2024,
+        "category": "Best Animated Feature",
+        "result": "won",
+        "recipient": null
+      },
+      {
+        "award_body": "Golden Globe Awards",
+        "year": 2024,
+        "category": "Best Animated Feature",
+        "result": "nominated",
+        "recipient": null
+      },
+      {
+        "award_body": "BAFTA Awards",
+        "year": 2024,
+        "category": "Best Animated Feature",
+        "result": "nominated",
+        "recipient": null
+      },
+      {
+        "award_body": "Academy Awards",
+        "year": 2024,
+        "category": "Best Animated Feature",
+        "result": "nominated",
+        "recipient": null
+      }
+    ],
+    "review_scores": [],
+    "soundtracks": [
+      {
+        "type": "score",
+        "title": null,
+        "composer_or_performer": "Daniel Pemberton",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      },
+      {
+        "type": "song",
+        "title": "Annihilate",
+        "composer_or_performer": "Metro Boomin, Swae Lee, Lil Wayne",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      },
+      {
+        "type": "song",
+        "title": "Calling",
+        "composer_or_performer": "Metro Boomin, Swae Lee, Nav",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      },
+      {
+        "type": "song",
+        "title": "Hummingbird",
+        "composer_or_performer": "Metro Boomin, James Blake",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      },
+      {
+        "type": "song",
+        "title": "Self Love",
+        "composer_or_performer": "Metro Boomin, Coi Leray",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      },
+      {
+        "type": "song",
+        "title": "Home",
+        "composer_or_performer": "Metro Boomin, Don Toliver, Lil Uzi Vert",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "Miles Morales",
+        "issue_range": "Ultimate Fallout #4",
+        "comic_writer": "Brian Michael Bendis / Sara Pichelli",
+        "comic_year": 2011,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Spider-Man 2099",
+        "issue_range": "Spider-Man 2099 #1",
+        "comic_writer": "Peter David / Rick Leonardi",
+        "comic_year": 1992,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Spider-Verse",
+        "issue_range": null,
+        "comic_writer": "Dan Slott",
+        "comic_year": 2014,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "The Spot",
+        "issue_range": "Amazing Spider-Man #589",
+        "comic_writer": "Christos Gage / Martin Palermo",
+        "comic_year": 2009,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Spider-Man India",
+        "issue_range": null,
+        "comic_writer": "Sharad Devarajan / Jeevan Kang",
+        "comic_year": 2005,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Spider-Punk",
+        "issue_range": null,
+        "comic_writer": "Dan Slott / Olivier Coipel",
+        "comic_year": 2014,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Ben Reilly / Scarlet Spider",
+        "issue_range": null,
+        "comic_writer": null,
+        "comic_year": null,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Spider-Byte (Margo Kess)",
+        "issue_range": null,
+        "comic_writer": null,
+        "comic_year": null,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Mayday Parker",
+        "issue_range": "Spider-Girl #1",
+        "comic_writer": "Tom DeFalco / Ron Frenz",
+        "comic_year": 1998,
+        "storyline_arc": null
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spider-Man: Into the Spider-Verse",
+        "relation_type": "prequel"
+      },
+      {
+        "related_work_title": "Spider-Man: Beyond the Spider-Verse",
+        "relation_type": "sequel"
+      },
+      {
+        "related_work_title": "Spider-Women",
+        "relation_type": "spin_off"
+      },
+      {
+        "related_work_title": "Spider-Punk",
+        "relation_type": "spin_off"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Miles Morales / Spider-Man",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Ultimate Fallout #4 (2011)",
+        "first_comic_year": 2011
+      },
+      {
+        "name": "Gwen Stacy / Spider-Gwen",
+        "alignment": "hero",
+        "alias": "Spider-Woman",
+        "first_comic_appearance": "Edge of Spider-Verse #2 (2014)",
+        "first_comic_year": 2014
+      },
+      {
+        "name": "Miguel O'Hara / Spider-Man 2099",
+        "alignment": "neutral",
+        "alias": "Spider-Man 2099",
+        "first_comic_appearance": "Spider-Man 2099 #1 (1992)",
+        "first_comic_year": 1992
+      },
+      {
+        "name": "Peter B. Parker / Spider-Man",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Johnathon Ohnn / The Spot",
+        "alignment": "villain",
+        "alias": "The Spot",
+        "first_comic_appearance": "Amazing Spider-Man #589 (2009)",
+        "first_comic_year": 2009
+      },
+      {
+        "name": "Jessica Drew / Spider-Woman",
+        "alignment": "neutral",
+        "alias": "Spider-Woman",
+        "first_comic_appearance": "Marvel Spotlight #32 (1977)",
+        "first_comic_year": 1977
+      },
+      {
+        "name": "Hobie Brown / Spider-Punk",
+        "alignment": "hero",
+        "alias": "Spider-Punk",
+        "first_comic_appearance": "Spider-Verse (2014)",
+        "first_comic_year": 2014
+      },
+      {
+        "name": "Pavitr Prabhakar / Spider-Man India",
+        "alignment": "hero",
+        "alias": "Spider-Man India",
+        "first_comic_appearance": "Spider-Man India #1 (2005)",
+        "first_comic_year": 2005
+      },
+      {
+        "name": "Jefferson Morales",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Ultimate Comics Spider-Man #1 (2011)",
+        "first_comic_year": 2011
+      },
+      {
+        "name": "Rio Morales",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Ultimate Comics Spider-Man #1 (2011)",
+        "first_comic_year": 2011
+      },
+      {
+        "name": "George Stacy",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #56 (1968)",
+        "first_comic_year": 1968
+      },
+      {
+        "name": "Aaron Davis / Prowler (Earth-42)",
+        "alignment": "villain",
+        "alias": "Prowler",
+        "first_comic_appearance": "Amazing Spider-Man #78 (1969)",
+        "first_comic_year": 1969
+      },
+      {
+        "name": "Miles G. Morales / Prowler (Earth-42)",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Mayday Parker",
+        "alignment": "hero",
+        "alias": "Spider-Girl",
+        "first_comic_appearance": "Spider-Girl #1 (1998)",
+        "first_comic_year": 1998
+      },
+      {
+        "name": "Ben Reilly / Scarlet Spider",
+        "alignment": "neutral",
+        "alias": "Scarlet Spider",
+        "first_comic_appearance": "Amazing Spider-Man #149 (1975)",
+        "first_comic_year": 1975
+      },
+      {
+        "name": "Margo Kess / Spider-Byte",
+        "alignment": "hero",
+        "alias": "Spider-Byte",
+        "first_comic_appearance": "Edge of Spider-Verse #2 (2014)",
+        "first_comic_year": 2014
+      },
+      {
+        "name": "Peni Parker / SP//dr",
+        "alignment": "hero",
+        "alias": "Peni Parker",
+        "first_comic_appearance": "Edge of Spider-Verse #5 (2014)",
+        "first_comic_year": 2014
+      },
+      {
+        "name": "Spider-Man Noir",
+        "alignment": "hero",
+        "alias": "Spider-Man Noir",
+        "first_comic_appearance": "Spider-Man Noir #1 (2009)",
+        "first_comic_year": 2009
+      },
+      {
+        "name": "Spider-Ham",
+        "alignment": "hero",
+        "alias": "Spider-Ham",
+        "first_comic_appearance": "Marvel Tails (1983)",
+        "first_comic_year": 1983
+      },
+      {
+        "name": "Lyla (AI)",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Spider-Man 2099 #1 (1992)",
+        "first_comic_year": 1992
+      },
+      {
+        "name": "Adriano Tumino / Vulture",
+        "alignment": "villain",
+        "alias": "Vulture",
+        "first_comic_appearance": "Amazing Spider-Man #2 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Lyla",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Spider-Man 2099 (1992)",
+        "first_comic_year": 1992
+      }
+    ]
+  },
+  {
+    "title": "Venom",
+    "release_year": 2018,
+    "principal_cast": [
+      {
+        "actor": "Tom Hardy",
+        "character": "Eddie Brock / Venom",
+        "billing_order": 1
+      },
+      {
+        "actor": "Michelle Williams",
+        "character": "Anne Weying",
+        "billing_order": 2
+      },
+      {
+        "actor": "Riz Ahmed",
+        "character": "Carlton Drake / Riot",
+        "billing_order": 3
+      },
+      {
+        "actor": "Scott Haze",
+        "character": "Roland Treece",
+        "billing_order": 4
+      },
+      {
+        "actor": "Reid Scott",
+        "character": "Dan Lewis",
+        "billing_order": 5
+      },
+      {
+        "actor": "Jenny Slate",
+        "character": "Dora Skirth",
+        "billing_order": 6
+      },
+      {
+        "actor": "Woody Harrelson",
+        "character": "Cletus Kasady",
+        "billing_order": null
+      },
+      {
+        "actor": "Peggy Lu",
+        "character": "Mrs. Chen",
+        "billing_order": 8
+      },
+      {
+        "actor": "Melora Walters",
+        "character": "Maria",
+        "billing_order": 9
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Ruben Fleischer",
+        "role": "director"
+      },
+      {
+        "person": "Jeff Pinkner",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Scott Rosenberg",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Kelly Marcel",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Avi Arad",
+        "role": "producer"
+      },
+      {
+        "person": "Matt Tolmach",
+        "role": "producer"
+      },
+      {
+        "person": "Amy Pascal",
+        "role": "producer"
+      },
+      {
+        "person": "Ludwig Göransson",
+        "role": "composer"
+      },
+      {
+        "person": "Matthew Libatique",
+        "role": "cinematographer"
+      },
+      {
+        "person": "Maryann Brandon",
+        "role": "editor"
+      },
+      {
+        "person": "Alan Baumgarten",
+        "role": "editor"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Columbia Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Entertainment",
+        "role": "production"
+      },
+      {
+        "name": "Tencent Pictures",
+        "role": "financing"
+      },
+      {
+        "name": "Arad Productions",
+        "role": "production"
+      },
+      {
+        "name": "Matt Tolmach Productions",
+        "role": "production"
+      },
+      {
+        "name": "Pascal Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Sony Pictures Releasing",
+        "role": "distributor"
+      }
+    ],
+    "box_office_weekly": [
+      {
+        "week_number": 1,
+        "week_start_date": null,
+        "domestic_usd": null,
+        "international_usd": null,
+        "worldwide_usd": 856100000,
+        "scope": "lifetime"
+      }
+    ],
+    "budgets": [
+      {
+        "amount_usd": 100000000,
+        "component": "production",
+        "source_year": 2018,
+        "is_primary": true
+      }
+    ],
+    "awards": [],
+    "review_scores": [],
+    "soundtracks": [
+      {
+        "type": "score",
+        "title": null,
+        "composer_or_performer": "Ludwig Göransson",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      },
+      {
+        "type": "song",
+        "title": "Venom",
+        "composer_or_performer": "Eminem",
+        "chart_peak_us": 50,
+        "chart_peak_uk": null
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "Venom: Lethal Protector",
+        "issue_range": "miniseries",
+        "comic_writer": "David Michelinie / Mark Bagley",
+        "comic_year": 1993,
+        "storyline_arc": "main inspiration"
+      },
+      {
+        "comic_title": "Planet of the Symbiotes",
+        "issue_range": "story arc",
+        "comic_writer": null,
+        "comic_year": 1995,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Venom",
+        "issue_range": "Web of Spider-Man #18 / Amazing Spider-Man #300",
+        "comic_writer": "David Michelinie / Todd McFarlane",
+        "comic_year": 1988,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Eddie Brock",
+        "issue_range": "Web of Spider-Man #18",
+        "comic_writer": "David Michelinie / Todd McFarlane",
+        "comic_year": 1986,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Riot",
+        "issue_range": "Venom: Lethal Protector #4",
+        "comic_writer": "David Michelinie / Mark Bagley",
+        "comic_year": 1993,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Life Foundation symbiotes",
+        "issue_range": "Venom: Lethal Protector",
+        "comic_writer": null,
+        "comic_year": 1993,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Cletus Kasady / Carnage",
+        "issue_range": "Amazing Spider-Man #344-361",
+        "comic_writer": "David Michelinie / Erik Larsen",
+        "comic_year": 1991,
+        "storyline_arc": null
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spider-Man 3",
+        "relation_type": "spin_off"
+      },
+      {
+        "related_work_title": "Venom: Let There Be Carnage",
+        "relation_type": "sequel"
+      },
+      {
+        "related_work_title": "Venom: The Last Dance",
+        "relation_type": "sequel"
+      },
+      {
+        "related_work_title": "Morbius",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Spider-Man: No Way Home",
+        "relation_type": "crossover"
+      },
+      {
+        "related_work_title": "Spider-Man: Into the Spider-Verse",
+        "relation_type": "tie_in"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Eddie Brock / Venom",
+        "alignment": "antihero",
+        "alias": "Venom",
+        "first_comic_appearance": "Web of Spider-Man #18 (1986); ASM #300 (1988)",
+        "first_comic_year": 1986
+      },
+      {
+        "name": "Anne Weying",
+        "alignment": "hero",
+        "alias": "She-Venom",
+        "first_comic_appearance": "Amazing Spider-Man #375 (1993)",
+        "first_comic_year": 1993
+      },
+      {
+        "name": "Carlton Drake / Riot",
+        "alignment": "villain",
+        "alias": "Riot",
+        "first_comic_appearance": "Venom: Lethal Protector #4 (1993)",
+        "first_comic_year": 1993
+      },
+      {
+        "name": "Roland Treece",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": "Venom: Lethal Protector (1993)",
+        "first_comic_year": 1993
+      },
+      {
+        "name": "Dora Skirth",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Cletus Kasady",
+        "alignment": "villain",
+        "alias": "Carnage",
+        "first_comic_appearance": "Amazing Spider-Man #344 (1991)",
+        "first_comic_year": 1991
+      },
+      {
+        "name": "John Jameson",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #1 (1963) (different version)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Mrs. Chen",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Maria",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      }
+    ]
+  },
+  {
+    "title": "Venom: Let There Be Carnage",
+    "release_year": 2021,
+    "principal_cast": [
+      {
+        "actor": "Tom Hardy",
+        "character": "Eddie Brock / Venom",
+        "billing_order": 1
+      },
+      {
+        "actor": "Woody Harrelson",
+        "character": "Cletus Kasady / Carnage",
+        "billing_order": 2
+      },
+      {
+        "actor": "Michelle Williams",
+        "character": "Anne Weying",
+        "billing_order": 3
+      },
+      {
+        "actor": "Naomie Harris",
+        "character": "Frances Barrison / Shriek",
+        "billing_order": 4
+      },
+      {
+        "actor": "Reid Scott",
+        "character": "Dan Lewis",
+        "billing_order": 5
+      },
+      {
+        "actor": "Stephen Graham",
+        "character": "Patrick Mulligan",
+        "billing_order": 6
+      },
+      {
+        "actor": "Peggy Lu",
+        "character": "Mrs. Chen",
+        "billing_order": 7
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Andy Serkis",
+        "role": "director"
+      },
+      {
+        "person": "Kelly Marcel",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Tom Hardy",
+        "role": "story"
+      },
+      {
+        "person": "Kelly Marcel",
+        "role": "story"
+      },
+      {
+        "person": "Avi Arad",
+        "role": "producer"
+      },
+      {
+        "person": "Matt Tolmach",
+        "role": "producer"
+      },
+      {
+        "person": "Amy Pascal",
+        "role": "producer"
+      },
+      {
+        "person": "Kelly Marcel",
+        "role": "producer"
+      },
+      {
+        "person": "Tom Hardy",
+        "role": "producer"
+      },
+      {
+        "person": "Hutch Parker",
+        "role": "producer"
+      },
+      {
+        "person": "Marco Beltrami",
+        "role": "composer"
+      },
+      {
+        "person": "Robert Richardson",
+        "role": "cinematographer"
+      },
+      {
+        "person": "Maryann Brandon",
+        "role": "editor"
+      },
+      {
+        "person": "Stan Salfas",
+        "role": "editor"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Columbia Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Entertainment",
+        "role": "production"
+      },
+      {
+        "name": "Arad Productions",
+        "role": "production"
+      },
+      {
+        "name": "Matt Tolmach Productions",
+        "role": "production"
+      },
+      {
+        "name": "Pascal Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Sony Pictures Releasing",
+        "role": "distributor"
+      }
+    ],
+    "box_office_weekly": [
+      {
+        "week_number": 1,
+        "week_start_date": null,
+        "domestic_usd": null,
+        "international_usd": null,
+        "worldwide_usd": 506800000,
+        "scope": "lifetime"
+      }
+    ],
+    "budgets": [
+      {
+        "amount_usd": 110000000,
+        "component": "production",
+        "source_year": 2021,
+        "is_primary": true
+      }
+    ],
+    "awards": [],
+    "review_scores": [],
+    "soundtracks": [
+      {
+        "type": "score",
+        "title": null,
+        "composer_or_performer": "Marco Beltrami",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      },
+      {
+        "type": "song",
+        "title": "Last One Standing",
+        "composer_or_performer": "Skylar Grey, Polo G, Mozzy, Eminem",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "Carnage",
+        "issue_range": "Amazing Spider-Man #344-361",
+        "comic_writer": "David Michelinie / Erik Larsen",
+        "comic_year": 1991,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Maximum Carnage",
+        "issue_range": "crossover",
+        "comic_writer": "Tom DeFalco / Terry Kavanagh",
+        "comic_year": 1993,
+        "storyline_arc": "(title considered)"
+      },
+      {
+        "comic_title": "Shriek",
+        "issue_range": "Spider-Man Unlimited #1",
+        "comic_writer": "Tom DeFalco / Ron Lim",
+        "comic_year": 1993,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Toxin (Patrick Mulligan)",
+        "issue_range": "Venom/Carnage #1",
+        "comic_writer": "Peter Milligan / Clayton Crain",
+        "comic_year": 2004,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Venom: Lethal Protector",
+        "issue_range": null,
+        "comic_writer": "David Michelinie / Mark Bagley",
+        "comic_year": 1993,
+        "storyline_arc": null
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Venom (2018)",
+        "relation_type": "prequel"
+      },
+      {
+        "related_work_title": "Venom: The Last Dance",
+        "relation_type": "sequel"
+      },
+      {
+        "related_work_title": "Spider-Man: No Way Home",
+        "relation_type": "crossover"
+      },
+      {
+        "related_work_title": "Morbius",
+        "relation_type": "same_universe"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Eddie Brock / Venom",
+        "alignment": "antihero",
+        "alias": "Venom",
+        "first_comic_appearance": "Web of Spider-Man #18 (1986); ASM #300 (1988)",
+        "first_comic_year": 1986
+      },
+      {
+        "name": "Cletus Kasady / Carnage",
+        "alignment": "villain",
+        "alias": "Carnage",
+        "first_comic_appearance": "Amazing Spider-Man #344 (1991)",
+        "first_comic_year": 1991
+      },
+      {
+        "name": "Anne Weying",
+        "alignment": "hero",
+        "alias": "She-Venom",
+        "first_comic_appearance": "Amazing Spider-Man #375 (1993)",
+        "first_comic_year": 1993
+      },
+      {
+        "name": "Frances Barrison / Shriek",
+        "alignment": "villain",
+        "alias": "Shriek",
+        "first_comic_appearance": "Spider-Man Unlimited #1 (1993)",
+        "first_comic_year": 1993
+      },
+      {
+        "name": "Patrick Mulligan / Toxin",
+        "alignment": "neutral",
+        "alias": "Toxin",
+        "first_comic_appearance": "Venom/Carnage #1 (2004)",
+        "first_comic_year": 2004
+      },
+      {
+        "name": "Dan Lewis",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Mrs. Chen",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Peter Parker / Spider-Man (archival footage)",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "J. Jonah Jameson (archival footage)",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #1 (1963)",
+        "first_comic_year": 1963
+      }
+    ]
+  },
+  {
+    "title": "Morbius",
+    "release_year": 2022,
+    "principal_cast": [
+      {
+        "actor": "Jared Leto",
+        "character": "Dr. Michael Morbius",
+        "billing_order": 1
+      },
+      {
+        "actor": "Matt Smith",
+        "character": "Lucien / Milo Morbius",
+        "billing_order": 2
+      },
+      {
+        "actor": "Adria Arjona",
+        "character": "Dr. Martine Bancroft",
+        "billing_order": 3
+      },
+      {
+        "actor": "Jared Harris",
+        "character": "Dr. Emil Nicholas",
+        "billing_order": 4
+      },
+      {
+        "actor": "Al Madrigal",
+        "character": "Al Rodriguez",
+        "billing_order": 5
+      },
+      {
+        "actor": "Tyrese Gibson",
+        "character": "Simon Stroud",
+        "billing_order": 6
+      },
+      {
+        "actor": "Michael Keaton",
+        "character": "Adrian Toomes / Vulture",
+        "billing_order": null
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Daniel Espinosa",
+        "role": "director"
+      },
+      {
+        "person": "Matt Sazama",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Burk Sharpless",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Avi Arad",
+        "role": "producer"
+      },
+      {
+        "person": "Matt Tolmach",
+        "role": "producer"
+      },
+      {
+        "person": "Lucas Foster",
+        "role": "producer"
+      },
+      {
+        "person": "Jon Ekstrand",
+        "role": "composer"
+      },
+      {
+        "person": "Oliver Wood",
+        "role": "cinematographer"
+      },
+      {
+        "person": "Pietro Scalia",
+        "role": "editor"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Columbia Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Entertainment",
+        "role": "production"
+      },
+      {
+        "name": "Arad Productions",
+        "role": "production"
+      },
+      {
+        "name": "Matt Tolmach Productions",
+        "role": "production"
+      },
+      {
+        "name": "Sony Pictures Releasing",
+        "role": "distributor"
+      }
+    ],
+    "box_office_weekly": [
+      {
+        "week_number": 1,
+        "week_start_date": null,
+        "domestic_usd": null,
+        "international_usd": null,
+        "worldwide_usd": 167500000,
+        "scope": "lifetime"
+      }
+    ],
+    "budgets": [
+      {
+        "amount_usd": 75000000,
+        "component": "production",
+        "source_year": 2022,
+        "is_primary": true
+      }
+    ],
+    "awards": [
+      {
+        "award_body": "Golden Raspberry Awards",
+        "year": 2023,
+        "category": "Worst Actor",
+        "result": "won",
+        "recipient": "Jared Leto"
+      },
+      {
+        "award_body": "Golden Raspberry Awards",
+        "year": 2023,
+        "category": "Worst Supporting Actress",
+        "result": "won",
+        "recipient": "Adria Arjona"
+      },
+      {
+        "award_body": "Golden Raspberry Awards",
+        "year": 2023,
+        "category": "Worst Picture",
+        "result": "nominated",
+        "recipient": null
+      }
+    ],
+    "review_scores": [],
+    "soundtracks": [
+      {
+        "type": "score",
+        "title": null,
+        "composer_or_performer": "Jon Ekstrand",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "Morbius, the Living Vampire",
+        "issue_range": "Amazing Spider-Man #101",
+        "comic_writer": "Roy Thomas / Gil Kane",
+        "comic_year": 1971,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Loxias Crown / Hunger (basis for Milo)",
+        "issue_range": "Spider-Man #76",
+        "comic_writer": "Todd DeZago / M.J. Gallagher",
+        "comic_year": 1997,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Martine Bancroft",
+        "issue_range": "Amazing Spider-Man #102",
+        "comic_writer": "Roy Thomas / Gil Kane",
+        "comic_year": 1971,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Simon Stroud",
+        "issue_range": "Creatures on the Loose #30",
+        "comic_writer": "Gerry Conway / George Tuska",
+        "comic_year": 1974,
+        "storyline_arc": null
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Venom (2018)",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Venom: Let There Be Carnage",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Spider-Man: Homecoming",
+        "relation_type": "crossover"
+      },
+      {
+        "related_work_title": "Spider-Man: No Way Home",
+        "relation_type": "crossover"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Michael Morbius / Living Vampire",
+        "alignment": "antihero",
+        "alias": "Morbius",
+        "first_comic_appearance": "Amazing Spider-Man #101 (1971)",
+        "first_comic_year": 1971
+      },
+      {
+        "name": "Lucien / Milo Morbius",
+        "alignment": "villain",
+        "alias": "(based on Loxias Crown / Hunger)",
+        "first_comic_appearance": "Spider-Man #76 (1997)",
+        "first_comic_year": 1997
+      },
+      {
+        "name": "Martine Bancroft",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man #102 (1971)",
+        "first_comic_year": 1971
+      },
+      {
+        "name": "Emil Nicholas",
+        "alignment": "hero",
+        "alias": "(based on Emil Nikos)",
+        "first_comic_appearance": "Adventures into Fear #20 (1974)",
+        "first_comic_year": 1974
+      },
+      {
+        "name": "Simon Stroud",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Creatures on the Loose #30 (1974)",
+        "first_comic_year": 1974
+      },
+      {
+        "name": "Al Rodriguez",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Adrian Toomes / Vulture",
+        "alignment": "villain",
+        "alias": "Vulture",
+        "first_comic_appearance": "Amazing Spider-Man #2 (1963) (MCU version)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Mr. Fox",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      }
+    ]
+  },
+  {
+    "title": "Madame Web",
+    "release_year": 2024,
+    "principal_cast": [
+      {
+        "actor": "Dakota Johnson",
+        "character": "Cassandra \"Cassie\" Webb / Madame Web",
+        "billing_order": 1
+      },
+      {
+        "actor": "Sydney Sweeney",
+        "character": "Julia Cornwall",
+        "billing_order": 2
+      },
+      {
+        "actor": "Isabela Merced",
+        "character": "Anya Corazón",
+        "billing_order": 3
+      },
+      {
+        "actor": "Celeste O'Connor",
+        "character": "Mattie Franklin",
+        "billing_order": 4
+      },
+      {
+        "actor": "Tahar Rahim",
+        "character": "Ezekiel Sims",
+        "billing_order": 5
+      },
+      {
+        "actor": "Mike Epps",
+        "character": "O'Neil",
+        "billing_order": 6
+      },
+      {
+        "actor": "Emma Roberts",
+        "character": "Mary Parker",
+        "billing_order": 7
+      },
+      {
+        "actor": "Adam Scott",
+        "character": "Ben Parker",
+        "billing_order": 8
+      },
+      {
+        "actor": "Kerry Bishé",
+        "character": "Constance Webb",
+        "billing_order": 9
+      },
+      {
+        "actor": "Zosia Mamet",
+        "character": "Amaria",
+        "billing_order": 10
+      },
+      {
+        "actor": "José María Yazpik",
+        "character": "Santiago",
+        "billing_order": 11
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "S. J. Clarkson",
+        "role": "director"
+      },
+      {
+        "person": "Matt Sazama",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Burk Sharpless",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Claire Parker",
+        "role": "screenwriter"
+      },
+      {
+        "person": "S. J. Clarkson",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Kerem Sanga",
+        "role": "story"
+      },
+      {
+        "person": "Lorenzo di Bonaventura",
+        "role": "producer"
+      },
+      {
+        "person": "Johan Söderqvist",
+        "role": "composer"
+      },
+      {
+        "person": "Mauro Fiore",
+        "role": "cinematographer"
+      },
+      {
+        "person": "Leigh Folsom Boyd",
+        "role": "editor"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Columbia Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Entertainment",
+        "role": "production"
+      },
+      {
+        "name": "Di Bonaventura Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Sony Pictures Releasing",
+        "role": "distributor"
+      }
+    ],
+    "box_office_weekly": [
+      {
+        "week_number": 1,
+        "week_start_date": null,
+        "domestic_usd": null,
+        "international_usd": null,
+        "worldwide_usd": 100500000,
+        "scope": "lifetime"
+      }
+    ],
+    "budgets": [
+      {
+        "amount_usd": 80000000,
+        "component": "production",
+        "source_year": 2024,
+        "is_primary": false,
+        "note": "competing published estimate"
+      },
+      {
+        "amount_usd": 100000000,
+        "component": "production",
+        "source_year": 2024,
+        "is_primary": true,
+        "note": "highest published estimate"
+      }
+    ],
+    "awards": [
+      {
+        "award_body": "Golden Raspberry Awards",
+        "year": 2025,
+        "category": "Worst Picture",
+        "result": "won",
+        "recipient": null
+      },
+      {
+        "award_body": "Golden Raspberry Awards",
+        "year": 2025,
+        "category": "Worst Actress",
+        "result": "won",
+        "recipient": "Dakota Johnson"
+      },
+      {
+        "award_body": "Golden Raspberry Awards",
+        "year": 2025,
+        "category": "Worst Screenplay",
+        "result": "won",
+        "recipient": null
+      }
+    ],
+    "review_scores": [],
+    "soundtracks": [
+      {
+        "type": "score",
+        "title": null,
+        "composer_or_performer": "Johan Söderqvist",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "Madame Web (Cassandra Webb)",
+        "issue_range": "Amazing Spider-Man #210",
+        "comic_writer": "Dennis O'Neil / John Romita Jr.",
+        "comic_year": 1980,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Julia Carpenter / Spider-Woman (Cornwall)",
+        "issue_range": "Secret Wars #6",
+        "comic_writer": "Jim Shooter / Mike Zeck",
+        "comic_year": 1984,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Anya Corazón / Araña / Spider-Girl",
+        "issue_range": "Amazing Fantasy #1",
+        "comic_writer": "Fiona Avery / Mark Brooks",
+        "comic_year": 2004,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Mattie Franklin / Spider-Woman",
+        "issue_range": "Spider-Woman #1 (vol. 3)",
+        "comic_writer": "John Byrne",
+        "comic_year": 1999,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Ezekiel Sims",
+        "issue_range": "Amazing Spider-Man #30 (vol. 2)",
+        "comic_writer": "J. Michael Straczynski / John Romita Jr.",
+        "comic_year": 2001,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Ben Parker / Uncle Ben",
+        "issue_range": "Amazing Fantasy #15",
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1962,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Mary Parker",
+        "issue_range": "Amazing Spider-Man Annual #5",
+        "comic_writer": "Al Sulman",
+        "comic_year": 1968,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Peter Parker (infant)",
+        "issue_range": "Spider-Man",
+        "comic_writer": "Amazing Fantasy #15 (1962)",
+        "comic_year": null,
+        "storyline_arc": null
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Venom (2018)",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Morbius",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Kraven the Hunter",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Spider-Man (Tobey Maguire films)",
+        "relation_type": "same_universe"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Cassandra \"Cassie\" Webb / Madame Web",
+        "alignment": "hero",
+        "alias": "Madame Web",
+        "first_comic_appearance": "Amazing Spider-Man #210 (1980)",
+        "first_comic_year": 1980
+      },
+      {
+        "name": "Julia Cornwall (future Spider-Woman)",
+        "alignment": "hero",
+        "alias": "Spider-Woman (Julia Carpenter)",
+        "first_comic_appearance": "Secret Wars #6 (1984)",
+        "first_comic_year": 1984
+      },
+      {
+        "name": "Anya Corazón (future Spider-Girl)",
+        "alignment": "hero",
+        "alias": "Araña/Spider-Girl",
+        "first_comic_appearance": "Amazing Fantasy #1 (2004)",
+        "first_comic_year": 2004
+      },
+      {
+        "name": "Mattie Franklin (future Spider-Woman)",
+        "alignment": "hero",
+        "alias": "Spider-Woman",
+        "first_comic_appearance": "Spider-Woman #1 vol.3 (1999)",
+        "first_comic_year": 1999
+      },
+      {
+        "name": "Ezekiel Sims",
+        "alignment": "villain",
+        "alias": "Ezekiel",
+        "first_comic_appearance": "Amazing Spider-Man #30 vol.2 (2001)",
+        "first_comic_year": 2001
+      },
+      {
+        "name": "Ben Parker / Uncle Ben",
+        "alignment": "hero",
+        "alias": "Uncle Ben",
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Mary Parker",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": "Amazing Spider-Man Annual #5 (1968)",
+        "first_comic_year": 1968
+      },
+      {
+        "name": "Peter Parker (infant)",
+        "alignment": "hero",
+        "alias": "Spider-Man",
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Constance Webb",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "O'Neil",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Santiago",
+        "alignment": "hero",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Amaria",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      }
+    ]
+  },
+  {
+    "title": "Kraven the Hunter",
+    "release_year": 2024,
+    "principal_cast": [
+      {
+        "actor": "Aaron Taylor-Johnson",
+        "character": "Sergei Kravinoff / Kraven the Hunter",
+        "billing_order": 1
+      },
+      {
+        "actor": "Ariana DeBose",
+        "character": "Calypso Ezili",
+        "billing_order": 2
+      },
+      {
+        "actor": "Fred Hechinger",
+        "character": "Dmitri Kravinoff / Chameleon",
+        "billing_order": 3
+      },
+      {
+        "actor": "Alessandro Nivola",
+        "character": "Aleksei Sytsevich / Rhino",
+        "billing_order": 4
+      },
+      {
+        "actor": "Christopher Abbott",
+        "character": "The Foreigner",
+        "billing_order": 5
+      },
+      {
+        "actor": "Russell Crowe",
+        "character": "Nikolai Kravinoff",
+        "billing_order": 6
+      },
+      {
+        "actor": "Levi Miller",
+        "character": "young Sergei",
+        "billing_order": 7
+      },
+      {
+        "actor": "Billy Barratt",
+        "character": "young Dmitri",
+        "billing_order": 8
+      },
+      {
+        "actor": "Diaana Babnicova",
+        "character": "young Calypso",
+        "billing_order": 9
+      },
+      {
+        "actor": "Yuri Kolokolnikov",
+        "character": "Semyon Chorney",
+        "billing_order": 10
+      },
+      {
+        "actor": "Murat Seven",
+        "character": "Ömer Ozdemir",
+        "billing_order": 11
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "J.C. Chandor",
+        "role": "director"
+      },
+      {
+        "person": "Art Marcum",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Matt Holloway",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Richard Wenk",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Richard Wenk",
+        "role": "story"
+      },
+      {
+        "person": "Avi Arad",
+        "role": "producer"
+      },
+      {
+        "person": "Matt Tolmach",
+        "role": "producer"
+      },
+      {
+        "person": "David Householter",
+        "role": "producer"
+      },
+      {
+        "person": "Benjamin Wallfisch",
+        "role": "composer"
+      },
+      {
+        "person": "Evgueni Galperine",
+        "role": "composer"
+      },
+      {
+        "person": "Sacha Galperine",
+        "role": "composer"
+      },
+      {
+        "person": "Ben Davis",
+        "role": "cinematographer"
+      },
+      {
+        "person": "Chris Lebenzon",
+        "role": "editor"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Columbia Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Entertainment",
+        "role": "production"
+      },
+      {
+        "name": "Arad Productions",
+        "role": "production"
+      },
+      {
+        "name": "Matt Tolmach Productions",
+        "role": "production"
+      },
+      {
+        "name": "Sony Pictures Releasing",
+        "role": "distributor"
+      }
+    ],
+    "box_office_weekly": [
+      {
+        "week_number": 1,
+        "week_start_date": null,
+        "domestic_usd": null,
+        "international_usd": null,
+        "worldwide_usd": 62000000,
+        "scope": "lifetime"
+      }
+    ],
+    "budgets": [
+      {
+        "amount_usd": 110000000,
+        "component": "production",
+        "source_year": 2024,
+        "is_primary": true
+      }
+    ],
+    "awards": [],
+    "review_scores": [],
+    "soundtracks": [
+      {
+        "type": "score",
+        "title": null,
+        "composer_or_performer": "Benjamin Wallfisch, Evgueni & Sacha Galperine",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      },
+      {
+        "type": "song",
+        "title": "The Man Comes Around",
+        "composer_or_performer": "Johnny Cash",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "Kraven the Hunter",
+        "issue_range": "Amazing Spider-Man #15",
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1964,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Kraven's Last Hunt",
+        "issue_range": "Marvel Fanfare #4-7 / Web of Spider-Man #31-32 / Amazing Spider-Man #293-294 / Spectacular Spider-Man #131-132",
+        "comic_writer": "J.M. DeMatteis / Mike Zeck",
+        "comic_year": 1987,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Chameleon",
+        "issue_range": "Amazing Spider-Man #1",
+        "comic_writer": "Stan Lee / Steve Ditko",
+        "comic_year": 1963,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Rhino",
+        "issue_range": "Amazing Spider-Man #41",
+        "comic_writer": "Stan Lee / John Romita Sr.",
+        "comic_year": 1966,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Calypso",
+        "issue_range": "Amazing Spider-Man #209",
+        "comic_writer": "Dennis O'Neil / John Romita Jr.",
+        "comic_year": 1980,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Foreigner",
+        "issue_range": "Web of Spider-Man #15",
+        "comic_writer": "Louise Simonson / Greg LaRocque",
+        "comic_year": 1986,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Nikolai Kravinoff",
+        "issue_range": "Kraven's Last Hunt",
+        "comic_writer": "J.M. DeMatteis",
+        "comic_year": 1987,
+        "storyline_arc": null
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Venom (2018)",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Morbius",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Madame Web",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Venom: The Last Dance",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "The Amazing Spider-Man 2",
+        "relation_type": "prequel"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Sergei Kravinoff / Kraven the Hunter",
+        "alignment": "antihero",
+        "alias": "Kraven",
+        "first_comic_appearance": "Amazing Spider-Man #15 (1964)",
+        "first_comic_year": 1964
+      },
+      {
+        "name": "Dmitri Kravinoff / Chameleon",
+        "alignment": "villain",
+        "alias": "Chameleon",
+        "first_comic_appearance": "Amazing Spider-Man #1 (1963)",
+        "first_comic_year": 1963
+      },
+      {
+        "name": "Aleksei Sytsevich / Rhino",
+        "alignment": "villain",
+        "alias": "Rhino",
+        "first_comic_appearance": "Amazing Spider-Man #41 (1966)",
+        "first_comic_year": 1966
+      },
+      {
+        "name": "Calypso Ezili",
+        "alignment": "hero",
+        "alias": "Calypso",
+        "first_comic_appearance": "Amazing Spider-Man #209 (1980)",
+        "first_comic_year": 1980
+      },
+      {
+        "name": "The Foreigner",
+        "alignment": "villain",
+        "alias": "Foreigner",
+        "first_comic_appearance": "Web of Spider-Man #15 (1986)",
+        "first_comic_year": 1986
+      },
+      {
+        "name": "Nikolai Kravinoff",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": "Kraven's Last Hunt (1987)",
+        "first_comic_year": 1987
+      },
+      {
+        "name": "Ömer Ozdemir",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Semyon Chorney",
+        "alignment": "villain",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      }
+    ]
+  },
+  {
+    "title": "Venom: The Last Dance",
+    "release_year": 2024,
+    "principal_cast": [
+      {
+        "actor": "Tom Hardy",
+        "character": "Eddie Brock / Venom",
+        "billing_order": 1
+      },
+      {
+        "actor": "Chiwetel Ejiofor",
+        "character": "Gen. Rex Strickland",
+        "billing_order": 2
+      },
+      {
+        "actor": "Juno Temple",
+        "character": "Dr. Teddy Paine",
+        "billing_order": 3
+      },
+      {
+        "actor": "Rhys Ifans",
+        "character": "Martin Moon",
+        "billing_order": 4
+      },
+      {
+        "actor": "Stephen Graham",
+        "character": "Patrick Mulligan",
+        "billing_order": 5
+      },
+      {
+        "actor": "Peggy Lu",
+        "character": "Mrs. Chen",
+        "billing_order": 6
+      },
+      {
+        "actor": "Alanna Ubach",
+        "character": "Nova Moon",
+        "billing_order": 7
+      },
+      {
+        "actor": "Clark Backo",
+        "character": "Sadie \"Christmas\"",
+        "billing_order": 8
+      },
+      {
+        "actor": "Andy Serkis",
+        "character": "Knull",
+        "billing_order": 9
+      },
+      {
+        "actor": "Cristo Fernández",
+        "character": "Bartender",
+        "billing_order": 10
+      },
+      {
+        "actor": "Reid Scott",
+        "character": "Head of Imperium / Dan Lewis",
+        "billing_order": 11
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Kelly Marcel",
+        "role": "director"
+      },
+      {
+        "person": "Kelly Marcel",
+        "role": "screenwriter"
+      },
+      {
+        "person": "Tom Hardy",
+        "role": "story"
+      },
+      {
+        "person": "Kelly Marcel",
+        "role": "story"
+      },
+      {
+        "person": "Avi Arad",
+        "role": "producer"
+      },
+      {
+        "person": "Matt Tolmach",
+        "role": "producer"
+      },
+      {
+        "person": "Amy Pascal",
+        "role": "producer"
+      },
+      {
+        "person": "Kelly Marcel",
+        "role": "producer"
+      },
+      {
+        "person": "Tom Hardy",
+        "role": "producer"
+      },
+      {
+        "person": "Hutch Parker",
+        "role": "producer"
+      },
+      {
+        "person": "Dan Deacon",
+        "role": "composer"
+      },
+      {
+        "person": "Fabian Wagner",
+        "role": "cinematographer"
+      },
+      {
+        "person": "Mark Sanger",
+        "role": "editor"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Columbia Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Entertainment",
+        "role": "production"
+      },
+      {
+        "name": "Arad Productions",
+        "role": "production"
+      },
+      {
+        "name": "Matt Tolmach Productions",
+        "role": "production"
+      },
+      {
+        "name": "Pascal Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Marcel Hardy Productions",
+        "role": "production"
+      },
+      {
+        "name": "Hutch Parker Entertainment",
+        "role": "production"
+      },
+      {
+        "name": "Sony Pictures Releasing",
+        "role": "distributor"
+      }
+    ],
+    "box_office_weekly": [
+      {
+        "week_number": 1,
+        "week_start_date": null,
+        "domestic_usd": 51000000,
+        "international_usd": 109000000,
+        "worldwide_usd": null,
+        "scope": "week"
+      },
+      {
+        "week_number": 2,
+        "week_start_date": null,
+        "domestic_usd": 26100000,
+        "international_usd": null,
+        "worldwide_usd": null,
+        "scope": "week"
+      },
+      {
+        "week_number": 3,
+        "week_start_date": null,
+        "domestic_usd": 16200000,
+        "international_usd": null,
+        "worldwide_usd": null,
+        "scope": "week"
+      },
+      {
+        "week_number": 4,
+        "week_start_date": null,
+        "domestic_usd": 7300000,
+        "international_usd": null,
+        "worldwide_usd": null,
+        "scope": "week"
+      }
+    ],
+    "budgets": [
+      {
+        "amount_usd": 110000000,
+        "component": "production",
+        "source_year": 2024,
+        "is_primary": true
+      }
+    ],
+    "awards": [],
+    "review_scores": [
+      {
+        "source": "Rotten Tomatoes (critic)",
+        "score": 40.0,
+        "max_score": 100.0,
+        "review_count": 219
+      },
+      {
+        "source": "Metacritic (critic)",
+        "score": 41.0,
+        "max_score": 100.0,
+        "review_count": 47
+      },
+      {
+        "source": "CinemaScore",
+        "score": null,
+        "max_score": null,
+        "review_count": null
+      },
+      {
+        "source": "PostTrak",
+        "score": null,
+        "max_score": 100.0,
+        "review_count": null
+      }
+    ],
+    "soundtracks": [
+      {
+        "type": "score",
+        "title": null,
+        "composer_or_performer": "Dan Deacon",
+        "chart_peak_us": null,
+        "chart_peak_uk": null
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "Venom",
+        "issue_range": "Web of Spider-Man #18 / Amazing Spider-Man #300",
+        "comic_writer": "David Michelinie / Todd McFarlane",
+        "comic_year": 1988,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Knull",
+        "issue_range": "Venom #3 (vol. 4)",
+        "comic_writer": "Donny Cates / Ryan Stegman",
+        "comic_year": 2018,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Xenophage",
+        "issue_range": "Venom: Planet of the Symbiotes / Symbiote Spider-Man",
+        "comic_writer": null,
+        "comic_year": 1995,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Rex Strickland",
+        "issue_range": "Venom #1 (vol. 4)",
+        "comic_writer": "Donny Cates / Ryan Stegman",
+        "comic_year": 2018,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Imperium",
+        "issue_range": null,
+        "comic_writer": "Donny Cates / Ryan Stegman",
+        "comic_year": 2018,
+        "storyline_arc": "(King in Black lore)"
+      },
+      {
+        "comic_title": "Agony (symbiote)",
+        "issue_range": "Venom: Lethal Protector #4",
+        "comic_writer": "David Michelinie / Mark Bagley",
+        "comic_year": 1993,
+        "storyline_arc": null
+      },
+      {
+        "comic_title": "Lasher (symbiote)",
+        "issue_range": "Venom: Lethal Protector #4",
+        "comic_writer": "David Michelinie / Mark Bagley",
+        "comic_year": 1993,
+        "storyline_arc": null
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Venom (2018)",
+        "relation_type": "prequel"
+      },
+      {
+        "related_work_title": "Venom: Let There Be Carnage",
+        "relation_type": "prequel"
+      },
+      {
+        "related_work_title": "Spider-Man: No Way Home",
+        "relation_type": "crossover"
+      },
+      {
+        "related_work_title": "Morbius",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Madame Web",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Kraven the Hunter",
+        "relation_type": "same_universe"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Eddie Brock / Venom",
+        "alignment": "antihero",
+        "alias": "Venom",
+        "first_comic_appearance": "Web of Spider-Man #18 (1986); ASM #300 (1988)",
+        "first_comic_year": 1986
+      },
+      {
+        "name": "Rex Strickland",
+        "alignment": "hero",
+        "alias": "Rex Strickland",
+        "first_comic_appearance": "Venom #1 vol.4 (2018)",
+        "first_comic_year": 2018
+      },
+      {
+        "name": "Dr. Teddy Paine / Agony (symbiote)",
+        "alignment": "hero",
+        "alias": "Doctor Paine / Agony",
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Patrick Mulligan / Toxin",
+        "alignment": "neutral",
+        "alias": "Toxin",
+        "first_comic_appearance": "Venom/Carnage #1 (2004)",
+        "first_comic_year": 2004
+      },
+      {
+        "name": "Sadie \"Christmas\" / Lasher (symbiote)",
+        "alignment": "hero",
+        "alias": "Lasher",
+        "first_comic_appearance": "Venom: Lethal Protector #4 (1993)",
+        "first_comic_year": 1993
+      },
+      {
+        "name": "Knull",
+        "alignment": "villain",
+        "alias": "Knull",
+        "first_comic_appearance": "Venom #3 vol.4 (2018)",
+        "first_comic_year": 2018
+      },
+      {
+        "name": "Martin Moon",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Nova Moon",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Mrs. Chen",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Jim / brown symbiote host",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Jade Clark / violet symbiote host",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      },
+      {
+        "name": "Bartender (MCU + SSU versions)",
+        "alignment": "neutral",
+        "alias": null,
+        "first_comic_appearance": null,
+        "first_comic_year": null
+      }
+    ]
+  },
+  {
+    "title": "Spider-Man: Beyond the Spider-Verse",
+    "release_year": null,
+    "principal_cast": [
+      {
+        "actor": "Shameik Moore",
+        "character": "Miles Morales / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Hailee Steinfeld",
+        "character": "Gwen Stacy / Spider-Woman",
+        "billing_order": 2
+      },
+      {
+        "actor": "Oscar Isaac",
+        "character": "Miguel O'Hara / Spider-Man 2099",
+        "billing_order": 3
+      },
+      {
+        "actor": "Jake Johnson",
+        "character": "Peter B. Parker / Spider-Man",
+        "billing_order": 4
+      },
+      {
+        "actor": "Jason Schwartzman",
+        "character": "Jonathan Ohnn / The Spot",
+        "billing_order": 5
+      },
+      {
+        "actor": "Brian Tyree Henry",
+        "character": "Jefferson Davis",
+        "billing_order": 6
+      },
+      {
+        "actor": "Luna Lauren Vélez",
+        "character": "Rio Morales",
+        "billing_order": 7
+      },
+      {
+        "actor": "Issa Rae",
+        "character": "Jessica Drew / Spider-Woman",
+        "billing_order": 8
+      },
+      {
+        "actor": "Daniel Kaluuya",
+        "character": "Hobie Brown / Spider-Punk",
+        "billing_order": 9
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Bob Persichetti",
+        "role": "director"
+      },
+      {
+        "person": "Phil Lord",
+        "role": "writer"
+      },
+      {
+        "person": "Christopher Miller",
+        "role": "writer"
+      },
+      {
+        "person": "Dave Callaham",
+        "role": "writer"
+      },
+      {
+        "person": "Phil Lord",
+        "role": "producer"
+      },
+      {
+        "person": "Christopher Miller",
+        "role": "producer"
+      },
+      {
+        "person": "Amy Pascal",
+        "role": "producer"
+      },
+      {
+        "person": "Avi Arad",
+        "role": "producer"
+      },
+      {
+        "person": "Christina Steinberg",
+        "role": "producer"
+      },
+      {
+        "person": "Justin K. Thompson",
+        "role": "production designer"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Columbia Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Sony Pictures Animation",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Entertainment",
+        "role": "production"
+      },
+      {
+        "name": "Pascal Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Lord Miller",
+        "role": "production"
+      },
+      {
+        "name": "Sony Pictures Releasing",
+        "role": "distributor"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Miles Morales / Spider-Man",
+        "alias": "Spider-Man",
+        "alignment": "hero",
+        "first_comic_appearance": "Ultimate Fallout #4 (2011)",
+        "first_comic_year": 2011
+      },
+      {
+        "name": "Gwen Stacy / Spider-Woman",
+        "alias": "Spider-Gwen",
+        "alignment": "hero",
+        "first_comic_appearance": "Edge of Spider-Verse #2 (2014)",
+        "first_comic_year": 2014
+      },
+      {
+        "name": "Miguel O'Hara / Spider-Man 2099",
+        "alias": "Spider-Man 2099",
+        "alignment": "antihero",
+        "first_comic_appearance": "Spider-Man 2099 #1 (1992)",
+        "first_comic_year": 1992
+      },
+      {
+        "name": "Peter B. Parker / Spider-Man",
+        "alias": "Spider-Man",
+        "alignment": "hero",
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Jonathan Ohnn / The Spot",
+        "alias": "The Spot",
+        "alignment": "villain",
+        "first_comic_appearance": "Peter Parker, The Spectacular Spider-Man #98 (1985)",
+        "first_comic_year": 1985
+      },
+      {
+        "name": "Hobie Brown / Spider-Punk",
+        "alias": "Spider-Punk",
+        "alignment": "hero",
+        "first_comic_appearance": "The Amazing Spider-Man #78 (1969)",
+        "first_comic_year": 1969
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "Spider-Verse",
+        "issue_range": "The Amazing Spider-Man #9-15",
+        "comic_writer": "Dan Slott",
+        "comic_year": 2014,
+        "storyline_arc": "Spider-Verse"
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spider-Man: Across the Spider-Verse",
+        "relation_type": "prequel"
+      },
+      {
+        "related_work_title": "Spider-Man: Into the Spider-Verse",
+        "relation_type": "prequel"
+      }
+    ],
+    "review_scores": [],
+    "box_office_weekly": [],
+    "budgets": [],
+    "awards": [],
+    "soundtracks": []
+  },
+  {
+    "title": "Spider-Man: Brand New Day",
+    "release_year": 2026,
+    "principal_cast": [
+      {
+        "actor": "Tom Holland",
+        "character": "Peter Parker / Spider-Man",
+        "billing_order": 1
+      },
+      {
+        "actor": "Zendaya",
+        "character": "Michelle 'MJ' Jones-Watson",
+        "billing_order": 2
+      },
+      {
+        "actor": "Jacob Batalon",
+        "character": "Ned Leeds",
+        "billing_order": 3
+      },
+      {
+        "actor": "Jon Bernthal",
+        "character": "Frank Castle / The Punisher",
+        "billing_order": 4
+      },
+      {
+        "actor": "Mark Ruffalo",
+        "character": "Bruce Banner",
+        "billing_order": 5
+      },
+      {
+        "actor": "Michael Mando",
+        "character": "Mac Gargan / Scorpion",
+        "billing_order": 6
+      },
+      {
+        "actor": "Marvin Jones III",
+        "character": "Lonnie Lincoln / Tombstone",
+        "billing_order": 7
+      },
+      {
+        "actor": "Sadie Sink",
+        "character": null,
+        "billing_order": 8
+      },
+      {
+        "actor": "Liza Colón-Zayas",
+        "character": null,
+        "billing_order": 9
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Destin Daniel Cretton",
+        "role": "director"
+      },
+      {
+        "person": "Chris McKenna",
+        "role": "writer"
+      },
+      {
+        "person": "Erik Sommers",
+        "role": "writer"
+      },
+      {
+        "person": "Kevin Feige",
+        "role": "producer"
+      },
+      {
+        "person": "Amy Pascal",
+        "role": "producer"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Columbia Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Studios",
+        "role": "production"
+      },
+      {
+        "name": "Pascal Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Sony Pictures Releasing",
+        "role": "distributor"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Peter Parker / Spider-Man",
+        "alias": "Spider-Man",
+        "alignment": "hero",
+        "first_comic_appearance": "Amazing Fantasy #15 (1962)",
+        "first_comic_year": 1962
+      },
+      {
+        "name": "Frank Castle / The Punisher",
+        "alias": "The Punisher",
+        "alignment": "antihero",
+        "first_comic_appearance": "The Amazing Spider-Man #129 (1974)",
+        "first_comic_year": 1974
+      },
+      {
+        "name": "Mac Gargan / Scorpion",
+        "alias": "Scorpion",
+        "alignment": "villain",
+        "first_comic_appearance": "The Amazing Spider-Man #20 (1965)",
+        "first_comic_year": 1965
+      },
+      {
+        "name": "Lonnie Lincoln / Tombstone",
+        "alias": "Tombstone",
+        "alignment": "villain",
+        "first_comic_appearance": "Web of Spider-Man #36 (1988)",
+        "first_comic_year": 1988
+      },
+      {
+        "name": "Bruce Banner",
+        "alias": "Hulk",
+        "alignment": "hero",
+        "first_comic_appearance": "The Incredible Hulk #1 (1962)",
+        "first_comic_year": 1962
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "Brand New Day",
+        "issue_range": "The Amazing Spider-Man #546-564",
+        "comic_writer": "Dan Slott",
+        "comic_year": 2008,
+        "storyline_arc": "Brand New Day"
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Spider-Man: No Way Home",
+        "relation_type": "prequel"
+      },
+      {
+        "related_work_title": "Spider-Man: Homecoming",
+        "relation_type": "prequel"
+      },
+      {
+        "related_work_title": "Spider-Man: Far From Home",
+        "relation_type": "prequel"
+      }
+    ],
+    "review_scores": [],
+    "box_office_weekly": [],
+    "budgets": [],
+    "awards": [],
+    "soundtracks": []
+  },
+  {
+    "title": "El Muerto",
+    "release_year": null,
+    "principal_cast": [
+      {
+        "actor": "Benito Antonio Martínez Ocasio",
+        "character": "Juan-Carlos Estrada Sánchez / El Muerto",
+        "billing_order": 1
+      }
+    ],
+    "key_crew": [
+      {
+        "person": "Jonás Cuarón",
+        "role": "director"
+      },
+      {
+        "person": "Gareth Dunnet-Alcocer",
+        "role": "writer"
+      }
+    ],
+    "studios": [
+      {
+        "name": "Columbia Pictures",
+        "role": "production"
+      },
+      {
+        "name": "Marvel Entertainment",
+        "role": "production"
+      },
+      {
+        "name": "Sony Pictures Releasing",
+        "role": "distributor"
+      }
+    ],
+    "characters": [
+      {
+        "name": "Juan-Carlos Estrada Sánchez / El Muerto",
+        "alias": "El Muerto",
+        "alignment": "antihero",
+        "first_comic_appearance": "Friendly Neighborhood Spider-Man #6 (2006)",
+        "first_comic_year": 2006
+      }
+    ],
+    "source_material": [
+      {
+        "comic_title": "Friendly Neighborhood Spider-Man",
+        "issue_range": "#6",
+        "comic_writer": "Peter David",
+        "comic_year": 2006,
+        "storyline_arc": null
+      }
+    ],
+    "work_relations": [
+      {
+        "related_work_title": "Venom",
+        "relation_type": "same_universe"
+      },
+      {
+        "related_work_title": "Morbius",
+        "relation_type": "same_universe"
+      }
+    ],
+    "review_scores": [],
+    "box_office_weekly": [],
+    "budgets": [],
+    "awards": [],
+    "soundtracks": []
+  }
+]

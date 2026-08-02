@@ -1,0 +1,518 @@
+work_id,person_id,role
+1,162,director
+1,163,screenwriter
+1,164,producer
+1,165,producer
+1,166,producer
+1,167,composer
+1,168,cinematographer
+1,169,editor
+2,174,director
+2,175,screenwriter
+2,174,producer
+2,175,producer
+2,176,cinematographer
+3,181,director
+3,182,screenwriter
+3,182,producer
+3,183,composer
+3,184,cinematographer
+3,185,editor
+3,186,editor
+4,187,director
+4,188,screenwriter
+4,189,story
+4,190,producer
+4,191,composer
+5,194,director
+5,195,screenwriter
+5,196,producer
+5,197,producer
+5,198,composer
+5,199,cinematographer
+5,200,editor
+5,201,editor
+6,194,director
+6,203,screenwriter
+6,204,story
+6,205,story
+6,206,story
+6,196,producer
+6,207,producer
+6,198,composer
+6,208,cinematographer
+6,200,editor
+6,209,production designer
+7,194,director
+7,194,screenwriter
+7,211,screenwriter
+7,203,screenwriter
+7,196,producer
+7,207,producer
+7,212,producer
+7,213,composer
+7,208,cinematographer
+7,200,editor
+8,217,director
+8,218,screenwriter
+8,203,screenwriter
+8,219,screenwriter
+8,196,producer
+8,207,producer
+8,220,producer
+8,221,composer
+8,222,cinematographer
+8,223,editor
+8,224,editor
+9,217,director
+9,225,screenwriter
+9,226,screenwriter
+9,227,screenwriter
+9,207,producer
+9,220,producer
+9,228,composer
+9,229,composer
+9,230,cinematographer
+9,224,editor
+10,234,director
+10,235,screenwriter
+10,236,screenwriter
+10,234,screenwriter
+10,237,screenwriter
+10,238,screenwriter
+10,239,screenwriter
+10,240,producer
+10,241,producer
+10,242,composer
+10,243,cinematographer
+10,244,editor
+10,245,editor
+11,247,director
+11,248,director
+11,249,director
+11,250,screenwriter
+11,249,screenwriter
+11,207,producer
+11,241,producer
+11,250,producer
+11,251,producer
+11,252,producer
+11,253,composer
+11,254,editor
+12,234,director
+12,238,screenwriter
+12,239,screenwriter
+12,240,producer
+12,241,producer
+12,242,composer
+12,255,cinematographer
+12,244,editor
+12,256,editor
+13,234,director
+13,238,screenwriter
+13,239,screenwriter
+13,240,producer
+13,241,producer
+13,242,composer
+13,258,cinematographer
+13,259,editor
+13,256,editor
+14,261,director
+14,262,director
+14,263,director
+14,250,screenwriter
+14,251,screenwriter
+14,264,screenwriter
+14,250,producer
+14,251,producer
+14,241,producer
+14,207,producer
+14,252,producer
+14,253,composer
+14,265,editor
+17,266,director
+17,227,screenwriter
+17,267,screenwriter
+17,268,screenwriter
+17,207,producer
+17,220,producer
+17,241,producer
+17,269,composer
+17,270,cinematographer
+17,271,editor
+17,272,editor
+18,100,director
+18,268,screenwriter
+18,69,story
+18,268,story
+18,207,producer
+18,220,producer
+18,241,producer
+18,268,producer
+18,69,producer
+18,274,producer
+18,275,composer
+18,276,cinematographer
+18,271,editor
+18,277,editor
+19,279,director
+19,280,screenwriter
+19,281,screenwriter
+19,207,producer
+19,220,producer
+19,282,producer
+19,283,composer
+19,284,cinematographer
+19,224,editor
+20,289,director
+20,280,screenwriter
+20,281,screenwriter
+20,290,screenwriter
+20,289,screenwriter
+20,291,story
+20,292,producer
+20,293,composer
+20,258,cinematographer
+20,256,editor
+21,297,director
+21,298,screenwriter
+21,299,screenwriter
+21,300,screenwriter
+21,300,story
+21,207,producer
+21,220,producer
+21,301,producer
+21,302,composer
+21,303,composer
+21,304,composer
+21,305,cinematographer
+21,306,editor
+22,268,director
+22,268,screenwriter
+22,69,story
+22,268,story
+22,207,producer
+22,220,producer
+22,241,producer
+22,268,producer
+22,69,producer
+22,274,producer
+22,310,composer
+22,311,cinematographer
+22,312,editor
+15,247,director
+15,250,writer
+15,251,writer
+15,264,writer
+15,250,producer
+15,251,producer
+15,241,producer
+15,207,producer
+15,252,producer
+15,263,production designer
+16,315,director
+16,238,writer
+16,239,writer
+16,240,producer
+16,241,producer
+23,316,director
+23,317,writer
+24,322,source character co-creator
+24,323,source character co-creator
+24,324,theme music composer
+25,163,creator
+25,165,producer
+25,325,theme music composer
+25,183,theme music composer
+25,181,director
+25,174,director
+26,189,creator
+26,329,head writer
+26,188,head writer
+26,187,director
+26,330,composer
+26,190,producer
+26,331,producer
+28,333,executive producer
+28,334,executive producer
+28,335,producer
+28,336,theme lyricist
+28,337,theme music composer
+28,338,composer
+29,322,creator
+29,342,producer
+29,343,executive producer
+29,344,executive producer
+29,345,composer
+29,346,voice director
+30,322,creator
+30,350,director
+30,351,producer
+30,345,composer
+30,343,executive producer
+30,344,executive producer
+31,356,supervising producer and story editor
+31,357,supervising director
+31,207,executive producer
+31,322,executive producer
+31,358,composer
+31,359,composer
+32,207,developer
+32,361,developer and producer
+32,362,director
+32,363,theme music composer
+32,364,theme music composer
+32,365,executive producer
+33,369,developer
+33,370,developer
+33,371,developer and producer
+33,372,theme music composer
+33,373,theme music composer
+33,207,executive producer
+34,377,"developer, supervising producer, story editor and writer"
+34,378,"developer, supervising producer and supervising director"
+34,379,producer
+34,380,composer
+34,381,composer
+34,382,composer
+35,369,writer and producer
+35,384,writer and producer
+35,385,writer and supervising producer
+35,386,writer and supervising producer
+35,387,supervising director
+35,388,composer
+36,391,developer and story editor
+36,392,creative director and supervising director
+36,393,director
+36,388,composer
+36,394,voice director
+36,395,voice director
+37,397,executive producer
+37,398,director
+37,399,director
+37,400,theme music composer and composer
+38,402,"creator, showrunner and head writer"
+38,403,supervising director
+38,404,director
+38,405,director
+38,406,composer
+38,407,composer
+27,412,showrunner
+27,413,showrunner
+27,250,executive producer
+27,251,executive producer
+27,241,executive producer
+27,414,director
+39,415,programmer/designer
+40,416,designer
+40,417,artist
+40,418,artist
+41,419,designer
+41,321,programmer
+41,420,programmer
+41,421,programmer
+41,419,programmer
+45,422,producer
+45,423,producer (Game Gear)
+45,424,designer
+45,425,designer/programmer (Sega CD)
+45,426,designer (Sega CD)
+45,427,designer (Sega CD)
+45,428,designer (Sega CD)
+45,425,programmer
+45,429,programmer
+45,430,programmer (GG/MS)
+45,431,composer (Sega CD)
+45,432,composer (Sega CD)
+45,433,composer
+45,434,composer
+45,435,composer
+46,436,designer
+46,437,composer
+48,438,composer
+49,439,composer
+49,440,composer
+49,441,cover artist
+51,442,producer
+51,443,producer
+51,444,designer
+51,445,programmer
+51,446,composer (SNES)
+51,447,composer (SNES)
+51,448,composer (Genesis)
+51,449,composer (Genesis)
+52,450,designer
+52,451,designer
+52,452,designer
+52,453,designer
+52,454,composer
+52,455,composer
+52,456,composer
+52,457,composer
+52,458,cover artists
+52,459,cover artists
+52,460,cover artists
+53,461,producer
+53,462,producer
+53,463,designer
+53,464,designer
+53,445,programmer
+53,465,composer
+54,466,composer
+55,467,producer
+55,468,producer
+55,469,programmer
+55,470,programmer
+55,471,composer
+55,472,composer
+57,473,producer
+57,474,producer
+57,475,designer
+57,476,programmer
+57,477,programmer
+57,478,programmer
+57,479,artist
+57,480,composer
+57,481,composer
+57,322,narrator
+59,482,producer / writer
+59,483,designer / writer
+59,484,programmer
+59,485,programmer
+59,486,programmer
+59,487,artist
+59,488,artist
+59,474,writer
+59,489,composer
+59,322,opening narration
+61,490,director
+61,491,producer
+61,492,designer
+61,493,writer
+61,381,composer
+62,492,director
+62,494,producer
+62,491,producer
+62,495,producer
+62,496,designer
+62,493,writer
+62,497,composer
+62,381,composer
+62,498,designer (web-swinging physics)
+63,369,director (also comic writer)
+63,499,director (PC/consoles)
+63,500,designer
+63,501,designer
+63,502,designer
+63,503,designer (GBA/DS)
+63,504,programmer
+63,505,programmer (GBA/DS)
+63,490,artist
+63,506,artist
+63,507,artist
+63,508,artist
+63,509,artist
+63,388,composer
+65,510,composer
+66,511,director
+66,512,designer
+66,513,designer
+66,514,programmer
+66,515,programmer
+66,516,artist
+66,517,composer
+67,518,composer
+67,519,composer (NDS)
+67,520,voice director/casting
+67,521,voice director/casting
+69,522,director
+69,523,director
+69,524,producer
+69,525,writer
+69,526,writer
+69,527,writer
+69,528,composer
+69,322,narrator
+70,529,director
+70,530,director
+70,531,producer
+70,532,writer
+70,533,composer
+71,529,director
+71,534,director
+71,535,writer
+71,536,writer
+71,533,composer
+71,537,composer (mobile)
+71,538,additional music
+72,539,director
+72,540,producer
+72,541,writer
+72,542,composer
+73,543,director
+73,544,producer
+73,545,designer
+73,546,programmer
+73,547,composer
+74,548,director
+74,549,producer
+74,550,designer
+74,551,programmer
+74,552,artist
+74,525,writer
+74,553,composer
+75,554,director
+75,548,director / designer
+75,555,producer
+75,556,producer
+75,557,producer
+75,551,programmer
+75,552,artist
+75,558,writer
+75,554,writer
+75,559,composer
+76,560,director
+76,561,director
+76,562,director (creative)
+76,563,director
+76,564,programmer
+76,565,artist
+76,566,artist
+76,567,writer
+76,568,writer
+76,569,writer
+76,541,writer
+76,570,composer
+79,561,director
+79,571,producer
+79,572,designer
+79,573,programmer
+79,574,programmer
+79,575,programmer
+79,576,artist
+79,577,artist
+79,578,writer
+79,579,writer
+79,570,composer
+80,562,director (creative)
+80,560,director (game)
+80,565,artist
+80,566,artist
+80,567,writer
+80,580,writer
+80,568,writer
+80,570,composer
+77,560,director
+77,561,director
+77,562,director
+77,563,director
+77,564,programmer
+77,565,artist
+77,566,artist
+77,567,writer
+77,568,writer
+77,569,writer
+77,570,composer
+78,562,creative director
+78,560,game director
+78,581,voice actor

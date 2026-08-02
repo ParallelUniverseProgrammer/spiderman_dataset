@@ -1,0 +1,82 @@
+id,title,release_year,release_date,media_type,franchise_id,notes
+1,Spider-Man,1977,1977-09-14,movie,1,TV movie pilot for The Amazing Spider-Man series
+2,Spider-Man Strikes Back,1978,1978-05-04,movie,1,Composite of two TV episodes; later theatrically released in Europe
+3,Spider-Man: The Dragon's Challenge,1981,1981-09-09,movie,1,Composite of TV episodes; theatrically released in Europe
+4,Spider-Man (Toei),1978,1978-07-22,movie,2,Theatrical spin-off of the Toei tokusatsu TV series; non-Peter-Parker lead
+5,Spider-Man,2002,2002-05-03,movie,3,Nominated for Best Visual Effects and Best Sound at 75th Academy Awards
+6,Spider-Man 2,2004,2004-06-30,movie,3,Won Best Visual Effects at 77th Academy Awards
+7,Spider-Man 3,2007,2007-05-04,movie,3,Spider-Man 4 was cancelled in 2010
+8,The Amazing Spider-Man,2012,2012-07-03,movie,4,Reboot of the franchise
+9,The Amazing Spider-Man 2,2014,2014-05-02,movie,4,Sequels and Sinister Six spin-off were cancelled
+10,Spider-Man: Homecoming,2017,2017-07-07,movie,5,First MCU Spider-Man solo film; co-production with Marvel Studios
+11,Spider-Man: Into the Spider-Verse,2018,2018-12-14,movie,6,Won Best Animated Feature at 91st Academy Awards
+12,Spider-Man: Far From Home,2019,2019-07-02,movie,5,First Spider-Man film to gross over $1 billion
+13,Spider-Man: No Way Home,2021,2021-12-17,movie,5,Features Tobey Maguire and Andrew Garfield multiverse cameos
+14,Spider-Man: Across the Spider-Verse,2023,2023-06-02,movie,6,First part of a two-part sequel
+15,Spider-Man: Beyond the Spider-Verse,,,movie,6,"Upcoming; release delayed, year unconfirmed"
+16,Spider-Man: Brand New Day,2026,2026-07-31,movie,5,Announced; release date set for July 2026
+17,Venom,2018,2018-10-05,movie,7,First SSU film
+18,Venom: Let There Be Carnage,2021,2021-10-01,movie,7,
+19,Morbius,2022,2022-04-01,movie,7,
+20,Madame Web,2024,2024-02-14,movie,7,
+21,Kraven the Hunter,2024,2024-12-13,movie,7,Final film in the SSU
+22,Venom: The Last Dance,2024,2024-10-25,movie,7,
+23,El Muerto,,,movie,7,In development; indefinitely delayed; release date TBD
+24,Spidey Super Stories,1974,,tv_show,12,Segment on The Electric Company; first live-action Spider-Man portrayal
+25,The Amazing Spider-Man,1977,,tv_show,1,Live-action CBS series starring Nicholas Hammond; canceled after two seasons
+26,Spider-Man (Japanese TV series),1978,,tv_show,2,"Toei tokusatsu series; Spider-Man is Takuya Yamashiro, not Peter Parker; introduced giant-robot tradition carried into Super Sentai"
+27,Spider-Noir,2026,2026-05-25,tv_show,6,Live-action Spider-Man Noir series spinning out of the Spider-Verse films; premiered May 25 2026 on MGM+; 8 episodes
+28,Spider-Man (1967 TV series),1967,1967-09-09,tv_show,9,"First Spider-Man animated series; theme song became iconic; first season Grantray-Lawrence, then Ralph Bakshi"
+29,Spider-Man (1981 TV series),1981,1981-09-12,tv_show,9,First Marvel Productions Spider-Man series; syndicated
+30,Spider-Man and His Amazing Friends,1981,1981-09-12,tv_show,9,"Spider-Man, Iceman and Firestar team-up series on NBC"
+31,Spider-Man: The Animated Series,1994,1994-11-19,tv_show,9,Longest Spider-Man series until Ultimate Spider-Man; one story arc per season; 65 episodes
+32,Spider-Man Unlimited,1999,1999-10-02,tv_show,9,Spider-Man transported to Counter-Earth; canceled after one season
+33,Spider-Man: The New Animated Series,2003,2003-07-11,tv_show,11,CGI series on MTV continuing the 2002 film continuity
+34,The Spectacular Spider-Man,2008,2008-03-08,tv_show,9,Acclaimed series based on Lee/Ditko/Romita and Ultimate comics; ended when Sony returned animation rights to Marvel
+35,Ultimate Spider-Man,2012,2012-04-01,tv_show,9,Spider-Man leads a S.H.I.E.L.D. trainee team; 104 episodes over 4 seasons
+36,Spider-Man (2017 TV series),2017,2017-08-19,tv_show,9,"Peter teams with Miles Morales, Gwen Stacy and Anya Corazon"
+37,Spidey and His Amazing Friends,2021,2021-08-06,tv_show,9,Preschool series on Disney Junior
+38,Your Friendly Neighborhood Spider-Man,2025,2025-01-29,tv_show,5,MCU animated series on Disney+; alternate timeline where Norman Osborn mentors Peter instead of Tony Stark
+39,Spider-Man (1982 video game),1982,,game,9,"First Spider-Man video game; climb skyscraper, defuse Green Goblin bombs"
+40,Questprobe featuring Spider-Man,1984,,game,9,Part of the Questprobe text/graphic adventure series
+41,The Amazing Spider-Man and Captain America in Dr. Doom's Revenge!,1989,,game,9,Comic-panel storytelling crossover
+42,The Amazing Spider-Man (1990 computer),1990,,game,9,Home computer release
+43,The Amazing Spider-Man (1990 Game Boy),1990,,game,9,First Game Boy Spider-Man; start of Game Boy trilogy
+44,The Punisher: The Ultimate Payback!,1991,,game,9,Spider-Man appears as supporting character
+45,Spider-Man vs. The Kingpin,1991,1991-01-01,game,9,"Released 1990 Master System/Genesis, 1992 Game Gear, 1993 Sega CD"
+46,Spider-Man: The Video Game,1991,,game,9,4-player arcade cabinet
+47,The Amazing Spider-Man 2 (1992),1992,,game,9,Game Boy trilogy part 2
+48,Spider-Man: Return of the Sinister Six,1992,,game,9,First NES Spider-Man
+49,Spider-Man and the X-Men in Arcade's Revenge,1992,,game,9,Crossover with the X-Men
+50,The Amazing Spider-Man 3: Invasion of the Spider-Slayers,1993,,game,9,Game Boy trilogy part 3
+51,Spider-Man and Venom: Maximum Carnage,1994,,game,9,Based on the Maximum Carnage comic arc
+52,The Amazing Spider-Man: Lethal Foes,1995,,game,9,Japan-only Super Famicom release
+53,Venom/Spider-Man: Separation Anxiety,1995,,game,9,Sequel to Maximum Carnage
+54,Spider-Man (1995 video game),1995,,game,9,Based on the 1994 animated series
+55,The Amazing Spider-Man: Web of Fire,1996,,game,9,One of the last 32X releases
+56,Spider-Man: The Sinister Six,1996,,game,9,PC CD-ROM point-and-click
+57,Spider-Man (2000 video game),2000,2000-08-30,game,9,First Activision-era Spider-Man
+58,Spider-Man 2: The Sinister Six,2001,,game,9,Handheld sequel
+59,Spider-Man 2: Enter: Electro,2001,2001-08-19,game,9,Sequel to the 2000 game
+60,Spider-Man: Mysterio's Menace,2001,2001-09-19,game,9,
+61,Spider-Man (2002 video game),2002,2002-04-16,game,11,Tie-in to Spider-Man (2002 film)
+62,Spider-Man 2 (2004 video game),2004,2004-06-28,game,11,Tie-in to Spider-Man 2 (2004 film); first open-world web-swinging
+63,Ultimate Spider-Man (2005 video game),2005,2005-09-22,game,9,Based on Ultimate Spider-Man comic; cel-shaded art
+64,Spider-Man: Battle for New York,2006,2006-11-07,game,9,
+65,Spider-Man 3 (2007 video game),2007,2007-05-04,game,11,Tie-in to Spider-Man 3 (2007 film)
+66,Spider-Man: Friend or Foe,2007,2007-10-02,game,11,Loosely ties to the film trilogy
+67,Spider-Man: Web of Shadows,2008,2008-10-21,game,9,Multiple endings based on red/black suit choices
+68,Ultimate Spider-Man: Total Mayhem,2010,2010-09-22,game,9,Mobile title
+69,Spider-Man: Shattered Dimensions,2010,2010-09-07,game,9,"Four Spider-Men across dimensions (Amazing, Noir, 2099, Ultimate)"
+70,Spider-Man: Edge of Time,2011,2011-10-04,game,9,Amazing and 2099 Spider-Men
+71,The Amazing Spider-Man (2012 video game),2012,2012-06-26,game,11,Tie-in to The Amazing Spider-Man (2012 film)
+72,The Amazing Spider-Man 2 (2014 video game),2014,2014-04-29,game,11,Tie-in to The Amazing Spider-Man 2 (2014 film); last Activision Spider-Man game
+73,Spider-Man Unlimited (2014 video game),2014,2014-09-10,game,9,Mobile endless runner; shut down 2019
+74,LEGO Marvel Super Heroes,2013,2013-10-22,game,10,Spider-Man as major playable character
+75,LEGO Marvel Super Heroes 2,2017,2017-11-14,game,10,Spider-Man as major playable character
+76,Marvel's Spider-Man,2018,2018-09-07,game,8,Earth-1048; Remastered on PS5 Nov 12 2020 and Windows Aug 12 2022
+77,Marvel's Spider-Man: The City That Never Sleeps,2018,2018-10-23,game,8,3-episode DLC for Marvel's Spider-Man
+78,Marvel's Spider-Man Remastered,2020,2020-11-12,game,8,"Remaster with ray tracing, new Peter model"
+79,Marvel's Spider-Man: Miles Morales,2020,2020-11-12,game,8,Spin-off; PC release Nov 18 2022
+80,Marvel's Spider-Man 2,2023,2023-10-20,game,8,PC release Jan 30 2025; features Venom symbiote
+81,Marvel's Spider-Man 3,,,game,8,In development; internal target 2028 (per leaked roadmap); not officially released
