@@ -37,7 +37,6 @@ work_a_id,work_b_id,relation_type
 13,18,crossover
 14,11,prequel
 14,15,sequel
-17,7,spin_off
 17,18,sequel
 17,22,sequel
 17,19,same_universe
@@ -85,7 +84,6 @@ work_a_id,work_b_id,relation_type
 30,29,same_universe
 30,14,crossover
 31,32,sequel
-32,31,sequel
 32,14,crossover
 33,5,tie_in
 33,6,related

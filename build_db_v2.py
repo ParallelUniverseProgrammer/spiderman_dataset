@@ -142,6 +142,10 @@ CREATE TABLE work_characters (
 );
 
 -- NEW: cast & crew (unified people per work)
+-- character_name is NULL on every crew credit, and SQLite holds two NULLs to be
+-- distinct when enforcing a key, so this PRIMARY KEY does not in fact dedupe the
+-- ~500 crew rows — INSERT OR IGNORE never sees a conflict. idx_cast_crew_identity
+-- below folds the NULL to '' and is what actually enforces the key.
 CREATE TABLE cast_crew (
     work_id        INTEGER REFERENCES media_works(id),
     person_id      INTEGER REFERENCES people(id),
@@ -215,6 +219,10 @@ CREATE TABLE box_office (
     domestic_usd       INTEGER,
     international_usd  INTEGER,
     worldwide_usd      INTEGER,
+    -- week_number is NULL on every scope='lifetime' row, and SQLite treats NULLs as
+    -- distinct here too, so this constraint does not cover the 16 lifetime rows:
+    -- a second lifetime total for one film would be inserted rather than replaced.
+    -- idx_box_office_identity below folds the NULL and is the real enforcement.
     UNIQUE (work_id, scope, week_number)
 );
 
@@ -336,6 +344,17 @@ CREATE TABLE work_people (
 -- NULL release_year, which SQLite treats as distinct, so they never collide here.
 CREATE UNIQUE INDEX idx_media_works_identity
     ON media_works (title, release_year, media_type);
+
+-- Two keys above end in a nullable column, and a NULL never equals another NULL
+-- when SQLite tests uniqueness, so those declarations silently stop applying to
+-- exactly the rows where the column is NULL — crew credits, and lifetime box
+-- office totals. Folding the NULL to a sentinel restores the intended key, and
+-- INSERT OR IGNORE / OR REPLACE honour a unique index just as they do a table
+-- constraint. Both tables are duplicate-free today; these keep them that way.
+CREATE UNIQUE INDEX idx_cast_crew_identity
+    ON cast_crew (work_id, person_id, role, COALESCE(character_name, ''));
+CREATE UNIQUE INDEX idx_box_office_identity
+    ON box_office (work_id, scope, COALESCE(week_number, -1));
 
 -- ---------------------------------------------------------------------------
 -- Analysis views. Each one exists because the naive query over the base tables
@@ -541,7 +560,10 @@ CHARACTER_IDENTITIES = {
     "Carnage":            {"names": ["cletus kasady"],      "mantles": ["carnage", "carnage killer"]},
     "Lizard":             {"names": ["curt connors"],       "mantles": ["lizard"]},
     "Black Cat":          {"names": ["felicia hardy"],      "mantles": ["black cat"]},
-    "Aunt May":           {"names": ["may parker", "aunt may"], "mantles": []},
+    # "aunt may parker" is one un-delimited token, so no slash- or paren-splitting
+    # reaches it: unless it is listed here it becomes its own identity.
+    "Aunt May":           {"names": ["may parker", "aunt may", "aunt may parker"],
+                           "mantles": []},
     "Uncle Ben":          {"names": ["ben parker", "uncle ben"], "mantles": []},
     "Vulture":            {"names": ["adrian toomes"],      "mantles": ["vulture"]},
     "Kingpin":            {"names": ["wilson fisk"],        "mantles": ["kingpin"]},
@@ -574,6 +596,24 @@ CHARACTER_IDENTITIES = {
     # character_tokens flattens to "cassandra cassie webb".
     "Madame Web":         {"names": ["cassandra webb", "cassandra cassie webb"],
                            "mantles": ["madame web"]},
+    # Characters the research spells one way with a slash and another way without.
+    # An un-delimited spelling is a single token, so the splitter cannot break it
+    # apart and only an explicit listing reunites the two rows. Each bare token
+    # below was checked to occur in exactly one credit string across all three
+    # research files, so none of them can pull in an unrelated character.
+    "Frank Castle / The Punisher": {"names": ["frank castle"],
+                                    "mantles": ["punisher", "the punisher"]},
+    "Michelle Jones-Watson / MJ": {"names": ["michelle mj jones-watson",
+                                             "michelle jones-watson", "mj"],
+                                   "mantles": []},
+    # Milo is a separate character who also carries the Morbius surname, but the
+    # research spells him "Milo Morbius", which is its own token and never matches
+    # the bare "morbius" mantle.
+    "Michael Morbius / Living Vampire": {"names": ["michael morbius"],
+                                         "mantles": ["morbius", "living vampire"]},
+    "Calypso":            {"names": ["calypso ezili"],      "mantles": ["calypso"]},
+    # Lee's cameos are credited both in full and as a bare first name.
+    "Stan Lee":           {"names": ["stan lee", "stan"],   "mantles": []},
 }
 
 # Who a bare, unqualified codename means. A mantle with no entry here identifies
@@ -619,6 +659,11 @@ MANTLE_DEFAULT = {
     "tinkerer":          "Tinkerer",
     "chameleon":         "Chameleon",
     "scarlet spider":    "Ben Reilly / Scarlet Spider",
+    "punisher":          "Frank Castle / The Punisher",
+    "the punisher":      "Frank Castle / The Punisher",
+    "morbius":           "Michael Morbius / Living Vampire",
+    "living vampire":    "Michael Morbius / Living Vampire",
+    "calypso":           "Calypso",
 }
 
 # Credits naming two characters' identifying tokens at once, where the model
@@ -1495,6 +1540,52 @@ for research, wid in RESOLVED_ALL:
         cur.execute("""INSERT OR IGNORE INTO work_relations(work_a_id, work_b_id, relation_type)
                        VALUES (?,?,?)""", (a, b, rel_type))
 
+# Several research items declare a relation reciprocally: both The Animated Series
+# and Spider-Man Unlimited name the other as their "sequel". For a symmetric type
+# (same_universe, crossover, related, inspired, tie_in) that is merely redundant and
+# both edges stand. For an ordering type it is a contradiction — a work cannot be
+# both the sequel of another and the thing that sequel follows — and the catalog
+# shipped both directions, so "what is the sequel of Spider-Man Unlimited" answered
+# with the 1994 series.
+#
+# The sign below is where work_b should sit relative to work_a in release order for
+# the declared direction to hold. An edge contradicting it, whose reverse is also
+# present, is the wrong half of the pair and is dropped. Chronology only settles a
+# pair when the two years actually differ; anything it cannot decide is reported
+# instead, in keeping with the single-edge case, where a prequel may legitimately
+# ship after the work it precedes.
+ANTISYMMETRIC_RELATION_ORDER = {
+    'sequel': +1, 'spin_off': +1, 'remake': +1,
+    'prequel': -1, 'prequel_in_lineage': -1,
+    # These read the other way round: work_a is the DLC/remaster/adaptation.
+    'dlc_of': -1, 'remaster_of': -1, 'adapted_from': -1, 'tie_in_game_of': -1,
+}
+contradictory_edges_dropped = []
+undecidable_contradictions = []
+for _rt, _sign in ANTISYMMETRIC_RELATION_ORDER.items():
+    mutual = cur.execute("""
+        SELECT r.work_a_id, a.title, a.release_year, r.work_b_id, b.title, b.release_year
+        FROM work_relations r
+        JOIN work_relations rev ON rev.work_a_id = r.work_b_id
+                               AND rev.work_b_id = r.work_a_id
+                               AND rev.relation_type = r.relation_type
+        JOIN media_works a ON a.id = r.work_a_id
+        JOIN media_works b ON b.id = r.work_b_id
+        WHERE r.relation_type = ?""", (_rt,)).fetchall()
+    for aid, atitle, ayear, bid, btitle, byear in mutual:
+        if ayear is None or byear is None or ayear == byear:
+            if aid < bid:       # report the pair once, not once per direction
+                undecidable_contradictions.append(
+                    f"{atitle} <--{_rt}--> {btitle} (release order cannot decide)")
+            continue
+        if (byear - ayear) * _sign > 0:
+            continue            # this is the half that agrees with release order
+        cur.execute("""DELETE FROM work_relations
+                       WHERE work_a_id=? AND work_b_id=? AND relation_type=?""",
+                    (aid, bid, _rt))
+        contradictory_edges_dropped.append(
+            f"{atitle} ({ayear}) --{_rt}--> {btitle} ({byear})")
+
 # ---- 11. SOURCE MATERIAL ----
 # movies.json/tv.json use comic_* keys; games.json uses comic_or_film_title etc.
 for research, wid in RESOLVED_ALL:
@@ -1793,6 +1884,50 @@ if _dupe_app:
     print(f"  NOTE: {_dupe_app} (work, character) pairs were credited under "
           f"more than one spelling; v_character_work deduplicates them.")
 
+# Identities whose canonical names nest inside one another ("Punisher" within
+# "Frank Castle / The Punisher") are the signature of a spelling the merge rules
+# never saw: an un-delimited credit string is one token, so neither the slash split
+# nor the parenthetical strip can reach into it, and it silently becomes its own
+# character. That is how Aunt May, the Punisher, MJ, Stan Lee, Morbius and Calypso
+# each ended up as two identities.
+#
+# Nesting alone does not prove a mistake — the pairs below are genuinely different
+# people who share a word — so this reports rather than fails. Anything appearing
+# here that is not on the reviewed list is an unexamined candidate for merging.
+REVIEWED_DISTINCT_IDENTITIES = {
+    frozenset({"Aaron Davis / Prowler", "Prowler (Hobie Brown)"}),
+    frozenset({"Miles G. Morales / Prowler (Earth-42)", "Prowler (Hobie Brown)"}),
+    frozenset({"Miles G. Morales / Prowler (Earth-42)", "Miles Morales"}),
+    frozenset({"Doctor Octopus", "Olivia Octavius / Doctor Octopus"}),
+    frozenset({"Hulk", "She-Hulk / Jennifer Walters"}),
+    frozenset({"Peter B. Parker / Spider-Man", "Peter Parker / Spider-Man"}),
+    frozenset({"Ben Reilly / Spider-Man Noir", "Spider-Man Noir"}),
+    frozenset({"Harry Osborn", "Venom / Harry Osborn (symbiote)"}),
+    frozenset({"Adriano Tumino / Vulture", "Vulture"}),
+    frozenset({"Jackson Brice / Shocker", "Shocker"}),
+    frozenset({"Mary Jane Parker", "Mary Parker"}),
+    frozenset({"Maria", "Maria Hill"}),
+    frozenset({"Nova", "Nova Moon"}),
+}
+_ident_tokens = []
+for _iid, _cname in cur.execute("SELECT id, canonical_name FROM character_identities"):
+    _t = frozenset(re.sub(r'[^a-z0-9]+', ' ', re.sub(r'\(.*?\)', '', _cname.lower())).split())
+    if _t:
+        _ident_tokens.append((_cname, _t))
+nested_identities = []
+for _i in range(len(_ident_tokens)):
+    for _j in range(_i + 1, len(_ident_tokens)):
+        _n1, _t1 = _ident_tokens[_i]
+        _n2, _t2 = _ident_tokens[_j]
+        if _t1 != _t2 and (_t1 <= _t2 or _t2 <= _t1):
+            if frozenset({_n1, _n2}) not in REVIEWED_DISTINCT_IDENTITIES:
+                nested_identities.append((_n1, _n2))
+if nested_identities:
+    print(f"  identities whose names nest, not yet reviewed ({len(nested_identities)}) "
+          f"— candidates for a missing merge:")
+    for _n1, _n2 in sorted(nested_identities):
+        print(f"    {_n1!r} <-> {_n2!r}")
+
 # work_characters records a cast list per *work*, and for a series a "work" is the
 # whole run — Ultimate Spider-Man's 104 episodes contribute one appearance, the same
 # weight as a single game. Nothing links a character to an episode. On top of that
@@ -1868,6 +2003,27 @@ if suspect_edges:
           f"({len(suspect_edges)}) — review, not auto-corrected:")
     for at, ay, rt, bt, by in suspect_edges:
         print(f"  {at} ({ay}) --{rt}--> {bt} ({by})")
+
+if contradictory_edges_dropped:
+    print(f"\nReciprocal ordering relations resolved by release order "
+          f"({len(contradictory_edges_dropped)} edge(s) dropped) — the research "
+          f"declared both directions and only one can hold:")
+    for e in contradictory_edges_dropped:
+        print(f"  dropped {e}")
+if undecidable_contradictions:
+    problems.append("reciprocal ordering relations release order cannot settle: "
+                    + "; ".join(undecidable_contradictions))
+
+# No ordering relation may survive in both directions.
+still_mutual = cur.execute(
+    """SELECT COUNT(*) FROM work_relations r
+       JOIN work_relations rev ON rev.work_a_id = r.work_b_id
+                              AND rev.work_b_id = r.work_a_id
+                              AND rev.relation_type = r.relation_type
+       WHERE r.relation_type IN (%s)""" % ",".join("?" * len(ANTISYMMETRIC_RELATION_ORDER)),
+    tuple(ANTISYMMETRIC_RELATION_ORDER)).fetchone()[0]
+if still_mutual:
+    problems.append(f"{still_mutual} ordering relation edges remain in both directions")
 
 bad_roles = studio_roles_seen - {
     'production', 'co_production', 'distributor', 'financing', 'in_association_with',

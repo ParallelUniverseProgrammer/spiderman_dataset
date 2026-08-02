@@ -1,166 +1,166 @@
 id,canonical_name,alignment,first_comic_title,first_comic_year,n_variants,merge_rule
-1,Aunt May,hero,Amazing Fantasy #15 (1962),1962,6,alias_map
+1,Aunt May,hero,Amazing Fantasy #15 (1962),1962,7,alias_map
 2,Ben Reilly / Scarlet Spider,hero,Amazing Spider-Man #149 (1975),1975,2,alias_map
 3,Black Cat,neutral,Amazing Spider-Man #194 (1979),1979,7,alias_map
-4,Captain America,hero,Captain America Comics #1,1941,3,alias_map
-5,Carnage,villain,Amazing Spider-Man #344 (1991),1991,6,alias_map
-6,Chameleon,villain,Amazing Spider-Man #1 (1963),1963,3,alias_map
-7,Daredevil,hero,Daredevil #1 (1964),1964,3,alias_map
-8,Doctor Doom,villain,The Fantastic Four #5,1962,3,alias_map
-9,Doctor Octopus,villain,Amazing Spider-Man #3 (1963),1963,5,alias_map
-10,Doctor Strange,hero,Strange Tales #110 (1963),1963,3,alias_map
-11,Eddie Brock / Venom,villain,Web of Spider-Man #18 (1986); ASM #300 (1988),1986,9,alias_map
-12,Electro,villain,Amazing Spider-Man #9 (1964),1964,8,alias_map
-13,Green Goblin / Norman Osborn,villain,Amazing Spider-Man #14 (1964),1964,7,alias_map
-14,Gwen Stacy,hero,Amazing Spider-Man #31 (1965),1965,5,alias_map
-15,Harry Osborn,villain,Amazing Spider-Man #31 (1965),1965,4,alias_map
-16,Hulk,hero,The Incredible Hulk #1 (1962),1962,3,alias_map
-17,Kingpin,villain,Amazing Spider-Man #50 (1967),1967,4,alias_map
-18,Kraven the Hunter,villain,Amazing Spider-Man #15 (1964),1964,4,alias_map
-19,Lizard,villain,Amazing Spider-Man #6 (1963),1963,6,alias_map
-20,Madame Web,neutral,Amazing Spider-Man #210 (1980),1980,3,alias_map
-21,Miles Morales,hero,Ultimate Fallout #4 (2011),2011,2,alias_map
-22,Mysterio,villain,Amazing Spider-Man #13 (1964),1964,4,alias_map
-23,Peter Parker / Spider-Man,hero,Amazing Fantasy #15 (1962),1962,15,alias_map
-24,Rhino,villain,Amazing Spider-Man #41 (1966),1966,4,alias_map
-25,Sandman,villain,Amazing Spider-Man #4 (1963),1963,4,alias_map
-26,Scorpion,villain,Amazing Spider-Man #20 (1965),1965,5,alias_map
-27,Shocker,villain,Amazing Spider-Man #46 (1967),1967,4,alias_map
-28,Shriek,villain,Spider-Man Unlimited #1 (1993),1993,2,alias_map
-29,Silk,hero,,,2,alias_map
-30,Silver Sable,neutral,Amazing Spider-Man #265,1985,2,alias_map
-31,Spider-Girl,hero,Spider-Girl #1 (1998),1998,2,alias_map
-32,Spider-Ham,hero,Marvel Tails (1983),1983,3,alias_map
-33,Spider-Man Noir,hero,Spider-Man Noir #1 (2009),2009,2,alias_map
-34,Spider-Punk,hero,Spider-Verse (2014),2014,2,alias_map
-35,Takuya Yamashiro / Spider-Man,hero,,,2,alias_map
-36,The Spot,villain,Amazing Spider-Man #589 (2009),1985,2,alias_map
-37,Tinkerer,villain,Amazing Spider-Man #2,1963,2,alias_map
-38,Tombstone,villain,Web of Spider-Man #36 (1988),1988,4,alias_map
-39,Uncle Ben,hero,Amazing Fantasy #15 (1962),1962,4,alias_map
-40,Vulture,villain,Amazing Spider-Man #2 (1963),1963,5,alias_map
-41,Wolverine,hero,Incredible Hulk #180,1974,5,alias_map
-42,Yuri Watanabe,antihero,Free Comic Book Day,2010,2,alias_map
-43,Aaron Davis / Prowler,villain,Amazing Spider-Man #78 (1969),1969,2,token_set
-44,Adriano Tumino / Vulture,villain,Amazing Spider-Man #2 (1963),1963,1,singleton
-45,Dr. Teddy Paine / Agony (symbiote),hero,,,1,singleton
-46,Al Rodriguez,hero,,,1,singleton
-47,Albert Moon,neutral,,,1,singleton
-48,Alistair Smythe,villain,Amazing Spider-Man #292 (1987),1987,1,singleton
-49,Amaria,neutral,,,1,singleton
-50,Amazoness,villain,,,1,singleton
-51,Anne Marie Hoag,hero,Damage Control #1 (1989),1989,1,singleton
-52,Anne Weying,hero,Amazing Spider-Man #375 (1993),1993,1,singleton
-53,Anya Corazon,hero,Amazing Fantasy #1,2004,1,singleton
-54,Anya Corazón (future Spider-Girl),hero,Amazing Fantasy #1 (2004),2004,1,singleton
-55,Ashley Kafka,neutral,Spectacular Spider-Man #178 (1991),1991,1,singleton
-56,Atrocity (Sloan/Anti-Venom/Octopus hybrid),villain,,,1,singleton
-57,Aunt May Parker,neutral,Amazing Fantasy #15,1962,1,singleton
-58,Bartender (MCU + SSU versions),neutral,,,1,singleton
-59,Batroc the Leaper (Georges Batroc),villain,,,1,singleton
-60,Beast (Hank McCoy),hero,X-Men #1,1963,1,singleton
-61,Beetle,villain,Strange Tales #123,1964,2,token_set
-62,Ben Reilly / Spider-Man Noir,hero,Spider-Man Noir #1 (2009),2009,1,singleton
-63,Betty Brant,hero,Amazing Spider-Man #4 (1963),1963,1,singleton
-64,Big Wheel,villain,,,1,singleton
-65,Black Panther / T'Challa,hero,,,1,singleton
-66,Black Widow / Natasha Romanova,neutral,Tales of Suspense #52,1964,1,singleton
-67,Blade,hero,,,1,singleton
-68,Bolivar Trask,villain,,,1,singleton
-69,Boomerang (Fred Myers),villain,,,1,singleton
-70,Brad Davis,neutral,,,1,singleton
-71,Jim / brown symbiote host,neutral,,,1,singleton
-72,Bruce Campbell,neutral,,,1,singleton
-73,Bullseye,villain,,,1,singleton
-74,Dennis Carradine / Burglar,villain,,,1,singleton
-75,Calypso,villain,,,1,singleton
-76,Calypso Ezili,hero,Amazing Spider-Man #209 (1980),1980,1,singleton
-77,Captain Marvel / Carol Danvers,hero,,,1,singleton
-78,Carlton Drake / Riot,villain,Venom: Lethal Protector #4 (1993),1993,1,singleton
-79,"""Carnom"" (Venom/Carnage fusion)",villain,,,1,singleton
-80,Carrion,villain,,,1,singleton
-81,Charles Zeider,villain,,,1,singleton
-82,Cletus Kasady / The Flame,villain,Amazing Spider-Man #344,1991,1,singleton
-83,Cloak and Dagger,hero,,,1,singleton
-84,Constance Webb,hero,,,1,singleton
-85,Cyclops (Scott Summers),hero,,,1,singleton
-86,Daemos,villain,,,1,singleton
-87,Dan Lewis,hero,,,1,singleton
-88,Danika Hart,neutral,Miles Morales: Spider-Man #1,2019,1,singleton
-89,Deadpool / Wade Wilson,neutral,,,1,singleton
-90,Deathlok,hero,,,1,singleton
-91,"Delilah (cameo, alternate universe)",neutral,,,1,singleton
-92,Demogoblin,villain,,,1,singleton
-93,Dimitri,hero,(Chameleon-inspired) Amazing Spider-Man #1 (1963),1963,1,singleton
-94,Doc Ock,villain,The Amazing Spider-Man #3,1963,1,singleton
-95,Olivia Octavius / Doctor Octopus,villain,Amazing Spider-Man #3 (1963),1963,1,singleton
-96,Donald Menken,villain,Web of Spider-Man #2 (1985),1985,1,singleton
-97,Doppelganger,villain,,,1,singleton
-98,Dora Skirth,hero,,,1,singleton
-99,Peni Parker / SP//dr,hero,Edge of Spider-Verse #5 (2014),2014,1,singleton
-100,Eduardo Lobo,villain,,,1,singleton
-101,Edward Byron (Guru),villain,,,1,singleton
-102,Juan-Carlos Estrada Sánchez / El Muerto,antihero,Friendly Neighborhood Spider-Man #6 (2006),2006,1,singleton
-103,Emil Nicholas,hero,Adventures into Fear #20 (1974),1974,1,singleton
-104,Emily Chan,hero,,,1,singleton
-105,Ezekiel Sims,villain,Amazing Spider-Man #30 vol.2 (2001),2001,1,singleton
-106,Farley Stillwell,villain,,,1,singleton
-107,Firestar,hero,Uncanny X-Men #193,1985,1,singleton
-108,Flash Thompson,neutral,Amazing Fantasy #15 (1962),1962,1,singleton
-109,Frank Castle / The Punisher,antihero,The Amazing Spider-Man #129 (1974),1974,1,singleton
-110,Galactus,villain,,,1,singleton
-111,Gambit (Remy LeBeau),hero,,,1,singleton
-112,Ganke Lee,neutral,Ultimate Spider-Man #2,2011,1,singleton
-113,Garia,hero,,,1,singleton
-114,George Stacy,hero,Amazing Spider-Man #56 (1968),1968,1,singleton
-115,Ghost Rider (Danny Ketch),hero,,,1,singleton
-116,Gold Goblin,villain,,,1,singleton
-117,Green Goblin 2099,villain,,,1,singleton
-118,Grey Gargoyle (Paul Duval),villain,,,1,singleton
-119,Gustav Fiers / The Gentleman,villain,,,1,singleton
-120,Hailey Cooper,neutral,,,1,singleton
-121,Hammerhead,villain,Amazing Spider-Man #113,1972,2,token_set
-122,Happy Hogan,hero,Tales of Suspense #45 (1963),1963,1,singleton
-123,Venom / Harry Osborn (symbiote),villain,Amazing Spider-Man #299 (1988) / #136,1974,1,singleton
-124,Hawkeye,hero,,,2,token_set
-125,High Evolutionary,villain,The Mighty Thor #134,1966,1,singleton
-126,Hobgoblin,villain,The Amazing Spider-Man #238,1983,2,token_set
-127,"Howard the Duck / ""Iron Duck""",hero,,,1,singleton
-128,Human Torch,hero,Strange Tales #52,1961,1,singleton
-129,Hydra,villain,,,1,singleton
-130,Hydro-Man,villain,,,2,token_set
-131,Iceman,hero,X-Men #1,1963,1,singleton
-132,Inheritors,villain,,,1,singleton
-133,Iron Cross Army / Sea-Devil,villain,,,1,singleton
-134,Iron Fist,hero,Marvel Premiere #15,1974,1,singleton
-135,Iron Man / Tony Stark,hero,Tales of Suspense #39 (1963),1963,2,token_set
-136,J. Jonah Jameson,neutral,Amazing Spider-Man #1 (1963),1963,3,token_set
-137,Jack O'Lantern,villain,,,1,singleton
-138,Jackal (Miles Warren),villain,Amazing Spider-Man #129,1974,1,singleton
-139,Jackson Brice / Shocker,villain,Spectacular Spider-Man #49 (1980),1980,1,singleton
-140,Jade Clark / violet symbiote host,neutral,,,1,singleton
-141,Janice Lincoln,villain,Thunderbolts #111 (2007) (different version),2007,1,singleton
-142,Jean DeWolfe,neutral,,,1,singleton
-143,Jefferson Davis,hero,Ultimate Comics Spider-Man #1 (2011),2011,2,token_set
-144,Jefferson Morales,hero,Ultimate Comics Spider-Man #1 (2011),2011,1,singleton
-145,She-Hulk / Jennifer Walters,hero,,,1,singleton
-146,Jennix,villain,,,1,singleton
-147,Jessica Andrews,neutral,,,1,singleton
-148,Jessica Drew / Spider-Woman,neutral,Marvel Spotlight #32 (1977),1977,2,token_set
-149,John Jameson,neutral,Amazing Spider-Man #1 (1963),1963,1,singleton
-150,Julia Cornwall (future Spider-Woman),hero,Secret Wars #6 (1984),1984,1,singleton
-151,Julie Masters,hero,,,1,singleton
-152,Julius Dell,hero,,,1,singleton
-153,Jūzō Mamiya,hero,,,1,singleton
-154,Kaine / Scarlet Spider,hero,,,1,singleton
-155,Ms. Marvel / Kamala Khan,hero,,,1,singleton
-156,Kang the Conqueror,villain,,,1,singleton
-157,Karen (suit AI),neutral,,,1,singleton
-158,Karn,villain,,,1,singleton
-159,Knull,villain,Venom #3 vol.4 (2018),2018,1,singleton
-160,"Sadie ""Christmas"" / Lasher (symbiote)",hero,Venom: Lethal Protector #4 (1993),1993,1,singleton
-161,Leopardon,hero,,,1,singleton
-162,Michael Morbius / Living Vampire,antihero,Amazing Spider-Man #101 (1971),1971,1,singleton
+4,Calypso,villain,Amazing Spider-Man #209 (1980),1980,2,alias_map
+5,Captain America,hero,Captain America Comics #1,1941,3,alias_map
+6,Carnage,villain,Amazing Spider-Man #344 (1991),1991,6,alias_map
+7,Chameleon,villain,Amazing Spider-Man #1 (1963),1963,3,alias_map
+8,Daredevil,hero,Daredevil #1 (1964),1964,3,alias_map
+9,Doctor Doom,villain,The Fantastic Four #5,1962,3,alias_map
+10,Doctor Octopus,villain,Amazing Spider-Man #3 (1963),1963,5,alias_map
+11,Doctor Strange,hero,Strange Tales #110 (1963),1963,3,alias_map
+12,Eddie Brock / Venom,villain,Web of Spider-Man #18 (1986); ASM #300 (1988),1986,9,alias_map
+13,Electro,villain,Amazing Spider-Man #9 (1964),1964,8,alias_map
+14,Frank Castle / The Punisher,antihero,The Amazing Spider-Man #129 (1974),1974,2,alias_map
+15,Green Goblin / Norman Osborn,villain,Amazing Spider-Man #14 (1964),1964,7,alias_map
+16,Gwen Stacy,hero,Amazing Spider-Man #31 (1965),1965,5,alias_map
+17,Harry Osborn,villain,Amazing Spider-Man #31 (1965),1965,4,alias_map
+18,Hulk,hero,The Incredible Hulk #1 (1962),1962,3,alias_map
+19,Kingpin,villain,Amazing Spider-Man #50 (1967),1967,4,alias_map
+20,Kraven the Hunter,villain,Amazing Spider-Man #15 (1964),1964,4,alias_map
+21,Lizard,villain,Amazing Spider-Man #6 (1963),1963,6,alias_map
+22,Madame Web,neutral,Amazing Spider-Man #210 (1980),1980,3,alias_map
+23,Michael Morbius / Living Vampire,antihero,Amazing Spider-Man #101 (1971),1971,2,alias_map
+24,Michelle Jones-Watson / MJ,hero,Amazing Spider-Man #42 (1966),1966,2,alias_map
+25,Miles Morales,hero,Ultimate Fallout #4 (2011),2011,2,alias_map
+26,Mysterio,villain,Amazing Spider-Man #13 (1964),1964,4,alias_map
+27,Peter Parker / Spider-Man,hero,Amazing Fantasy #15 (1962),1962,15,alias_map
+28,Rhino,villain,Amazing Spider-Man #41 (1966),1966,4,alias_map
+29,Sandman,villain,Amazing Spider-Man #4 (1963),1963,4,alias_map
+30,Scorpion,villain,Amazing Spider-Man #20 (1965),1965,5,alias_map
+31,Shocker,villain,Amazing Spider-Man #46 (1967),1967,4,alias_map
+32,Shriek,villain,Spider-Man Unlimited #1 (1993),1993,2,alias_map
+33,Silk,hero,,,2,alias_map
+34,Silver Sable,neutral,Amazing Spider-Man #265,1985,2,alias_map
+35,Spider-Girl,hero,Spider-Girl #1 (1998),1998,2,alias_map
+36,Spider-Ham,hero,Marvel Tails (1983),1983,3,alias_map
+37,Spider-Man Noir,hero,Spider-Man Noir #1 (2009),2009,2,alias_map
+38,Spider-Punk,hero,Spider-Verse (2014),2014,2,alias_map
+39,Stan Lee,neutral,,,2,alias_map
+40,Takuya Yamashiro / Spider-Man,hero,,,2,alias_map
+41,The Spot,villain,Amazing Spider-Man #589 (2009),1985,2,alias_map
+42,Tinkerer,villain,Amazing Spider-Man #2,1963,2,alias_map
+43,Tombstone,villain,Web of Spider-Man #36 (1988),1988,4,alias_map
+44,Uncle Ben,hero,Amazing Fantasy #15 (1962),1962,4,alias_map
+45,Vulture,villain,Amazing Spider-Man #2 (1963),1963,5,alias_map
+46,Wolverine,hero,Incredible Hulk #180,1974,5,alias_map
+47,Yuri Watanabe,antihero,Free Comic Book Day,2010,2,alias_map
+48,Aaron Davis / Prowler,villain,Amazing Spider-Man #78 (1969),1969,2,token_set
+49,Adriano Tumino / Vulture,villain,Amazing Spider-Man #2 (1963),1963,1,singleton
+50,Dr. Teddy Paine / Agony (symbiote),hero,,,1,singleton
+51,Al Rodriguez,hero,,,1,singleton
+52,Albert Moon,neutral,,,1,singleton
+53,Alistair Smythe,villain,Amazing Spider-Man #292 (1987),1987,1,singleton
+54,Amaria,neutral,,,1,singleton
+55,Amazoness,villain,,,1,singleton
+56,Anne Marie Hoag,hero,Damage Control #1 (1989),1989,1,singleton
+57,Anne Weying,hero,Amazing Spider-Man #375 (1993),1993,1,singleton
+58,Anya Corazon,hero,Amazing Fantasy #1,2004,1,singleton
+59,Anya Corazón (future Spider-Girl),hero,Amazing Fantasy #1 (2004),2004,1,singleton
+60,Ashley Kafka,neutral,Spectacular Spider-Man #178 (1991),1991,1,singleton
+61,Atrocity (Sloan/Anti-Venom/Octopus hybrid),villain,,,1,singleton
+62,Bartender (MCU + SSU versions),neutral,,,1,singleton
+63,Batroc the Leaper (Georges Batroc),villain,,,1,singleton
+64,Beast (Hank McCoy),hero,X-Men #1,1963,1,singleton
+65,Beetle,villain,Strange Tales #123,1964,2,token_set
+66,Ben Reilly / Spider-Man Noir,hero,Spider-Man Noir #1 (2009),2009,1,singleton
+67,Betty Brant,hero,Amazing Spider-Man #4 (1963),1963,1,singleton
+68,Big Wheel,villain,,,1,singleton
+69,Black Panther / T'Challa,hero,,,1,singleton
+70,Black Widow / Natasha Romanova,neutral,Tales of Suspense #52,1964,1,singleton
+71,Blade,hero,,,1,singleton
+72,Bolivar Trask,villain,,,1,singleton
+73,Boomerang (Fred Myers),villain,,,1,singleton
+74,Brad Davis,neutral,,,1,singleton
+75,Jim / brown symbiote host,neutral,,,1,singleton
+76,Bruce Campbell,neutral,,,1,singleton
+77,Bullseye,villain,,,1,singleton
+78,Dennis Carradine / Burglar,villain,,,1,singleton
+79,Captain Marvel / Carol Danvers,hero,,,1,singleton
+80,Carlton Drake / Riot,villain,Venom: Lethal Protector #4 (1993),1993,1,singleton
+81,"""Carnom"" (Venom/Carnage fusion)",villain,,,1,singleton
+82,Carrion,villain,,,1,singleton
+83,Charles Zeider,villain,,,1,singleton
+84,Cletus Kasady / The Flame,villain,Amazing Spider-Man #344,1991,1,singleton
+85,Cloak and Dagger,hero,,,1,singleton
+86,Constance Webb,hero,,,1,singleton
+87,Cyclops (Scott Summers),hero,,,1,singleton
+88,Daemos,villain,,,1,singleton
+89,Dan Lewis,hero,,,1,singleton
+90,Danika Hart,neutral,Miles Morales: Spider-Man #1,2019,1,singleton
+91,Deadpool / Wade Wilson,neutral,,,1,singleton
+92,Deathlok,hero,,,1,singleton
+93,"Delilah (cameo, alternate universe)",neutral,,,1,singleton
+94,Demogoblin,villain,,,1,singleton
+95,Dimitri,hero,(Chameleon-inspired) Amazing Spider-Man #1 (1963),1963,1,singleton
+96,Doc Ock,villain,The Amazing Spider-Man #3,1963,1,singleton
+97,Olivia Octavius / Doctor Octopus,villain,Amazing Spider-Man #3 (1963),1963,1,singleton
+98,Donald Menken,villain,Web of Spider-Man #2 (1985),1985,1,singleton
+99,Doppelganger,villain,,,1,singleton
+100,Dora Skirth,hero,,,1,singleton
+101,Peni Parker / SP//dr,hero,Edge of Spider-Verse #5 (2014),2014,1,singleton
+102,Eduardo Lobo,villain,,,1,singleton
+103,Edward Byron (Guru),villain,,,1,singleton
+104,Juan-Carlos Estrada Sánchez / El Muerto,antihero,Friendly Neighborhood Spider-Man #6 (2006),2006,1,singleton
+105,Emil Nicholas,hero,Adventures into Fear #20 (1974),1974,1,singleton
+106,Emily Chan,hero,,,1,singleton
+107,Ezekiel Sims,villain,Amazing Spider-Man #30 vol.2 (2001),2001,1,singleton
+108,Farley Stillwell,villain,,,1,singleton
+109,Firestar,hero,Uncanny X-Men #193,1985,1,singleton
+110,Flash Thompson,neutral,Amazing Fantasy #15 (1962),1962,1,singleton
+111,Galactus,villain,,,1,singleton
+112,Gambit (Remy LeBeau),hero,,,1,singleton
+113,Ganke Lee,neutral,Ultimate Spider-Man #2,2011,1,singleton
+114,Garia,hero,,,1,singleton
+115,George Stacy,hero,Amazing Spider-Man #56 (1968),1968,1,singleton
+116,Ghost Rider (Danny Ketch),hero,,,1,singleton
+117,Gold Goblin,villain,,,1,singleton
+118,Green Goblin 2099,villain,,,1,singleton
+119,Grey Gargoyle (Paul Duval),villain,,,1,singleton
+120,Gustav Fiers / The Gentleman,villain,,,1,singleton
+121,Hailey Cooper,neutral,,,1,singleton
+122,Hammerhead,villain,Amazing Spider-Man #113,1972,2,token_set
+123,Happy Hogan,hero,Tales of Suspense #45 (1963),1963,1,singleton
+124,Venom / Harry Osborn (symbiote),villain,Amazing Spider-Man #299 (1988) / #136,1974,1,singleton
+125,Hawkeye,hero,,,2,token_set
+126,High Evolutionary,villain,The Mighty Thor #134,1966,1,singleton
+127,Hobgoblin,villain,The Amazing Spider-Man #238,1983,2,token_set
+128,"Howard the Duck / ""Iron Duck""",hero,,,1,singleton
+129,Human Torch,hero,Strange Tales #52,1961,1,singleton
+130,Hydra,villain,,,1,singleton
+131,Hydro-Man,villain,,,2,token_set
+132,Iceman,hero,X-Men #1,1963,1,singleton
+133,Inheritors,villain,,,1,singleton
+134,Iron Cross Army / Sea-Devil,villain,,,1,singleton
+135,Iron Fist,hero,Marvel Premiere #15,1974,1,singleton
+136,Iron Man / Tony Stark,hero,Tales of Suspense #39 (1963),1963,2,token_set
+137,J. Jonah Jameson,neutral,Amazing Spider-Man #1 (1963),1963,3,token_set
+138,Jack O'Lantern,villain,,,1,singleton
+139,Jackal (Miles Warren),villain,Amazing Spider-Man #129,1974,1,singleton
+140,Jackson Brice / Shocker,villain,Spectacular Spider-Man #49 (1980),1980,1,singleton
+141,Jade Clark / violet symbiote host,neutral,,,1,singleton
+142,Janice Lincoln,villain,Thunderbolts #111 (2007) (different version),2007,1,singleton
+143,Jean DeWolfe,neutral,,,1,singleton
+144,Jefferson Davis,hero,Ultimate Comics Spider-Man #1 (2011),2011,2,token_set
+145,Jefferson Morales,hero,Ultimate Comics Spider-Man #1 (2011),2011,1,singleton
+146,She-Hulk / Jennifer Walters,hero,,,1,singleton
+147,Jennix,villain,,,1,singleton
+148,Jessica Andrews,neutral,,,1,singleton
+149,Jessica Drew / Spider-Woman,neutral,Marvel Spotlight #32 (1977),1977,2,token_set
+150,John Jameson,neutral,Amazing Spider-Man #1 (1963),1963,1,singleton
+151,Julia Cornwall (future Spider-Woman),hero,Secret Wars #6 (1984),1984,1,singleton
+152,Julie Masters,hero,,,1,singleton
+153,Julius Dell,hero,,,1,singleton
+154,Jūzō Mamiya,hero,,,1,singleton
+155,Kaine / Scarlet Spider,hero,,,1,singleton
+156,Ms. Marvel / Kamala Khan,hero,,,1,singleton
+157,Kang the Conqueror,villain,,,1,singleton
+158,Karen (suit AI),neutral,,,1,singleton
+159,Karn,villain,,,1,singleton
+160,Knull,villain,Venom #3 vol.4 (2018),2018,1,singleton
+161,"Sadie ""Christmas"" / Lasher (symbiote)",hero,Venom: Lethal Protector #4 (1993),1993,1,singleton
+162,Leopardon,hero,,,1,singleton
 163,Liz Allan,hero,Amazing Fantasy #15 (1962),1962,1,singleton
 164,Loki,villain,,,1,singleton
 165,Lucien / Milo Morbius,villain,Spider-Man #76 (1997),1997,1,singleton
@@ -182,90 +182,84 @@ id,canonical_name,alignment,first_comic_title,first_comic_year,n_variants,merge_
 181,Mary Parker,hero,Amazing Spider-Man Annual #5 (1968),1968,1,singleton
 182,Mattie Franklin (future Spider-Woman),hero,Spider-Woman #1 vol.3 (1999),1999,1,singleton
 183,Mendel Stromm,villain,Amazing Spider-Man #37 (1966),1966,1,singleton
-184,"Michelle ""MJ"" Jones-Watson",hero,Amazing Spider-Man #42 (1966),1966,1,singleton
-185,Miguel O'Hara / Spider-Man 2099,hero,Spider-Man 2099 #1 (1992),1992,2,token_set
-186,Miles G. Morales / Prowler (Earth-42),villain,,,1,singleton
-187,Miles' Peter Parker (blonde),hero,Amazing Fantasy #15 (1962),1962,1,singleton
-188,Mister Fantastic / Reed Richards,hero,,,1,singleton
-189,MJ (Michelle Jones-Watson),hero,Amazing Spider-Man #42 (1966),1966,1,singleton
-190,Monster-Ock,villain,,,1,singleton
-191,Moon Knight,hero,Werewolf by Night #32,1975,1,singleton
-192,Morbius,hero,,,1,singleton
-193,Morlun,villain,,,1,singleton
-194,Mr. Fox,villain,,,1,singleton
-195,Mr. White,villain,,,1,singleton
-196,Mrs. Chen,neutral,,,1,singleton
-197,Namor the Sub-Mariner,hero,,,1,singleton
-198,Natie (piranha cross-species),villain,,,1,singleton
-199,Ned Leeds,hero,Amazing Spider-Man #18 (1964),1964,1,singleton
-200,"New Enforcers: Dragon Man, Eel, Thermite, Blitz, Super-Adaptoid",villain,,,1,singleton
-201,Nick Fury,hero,Sgt. Fury #1 (1963) (MCU version),1963,1,singleton
-202,Nico Minoru,hero,Runaways #1,2003,1,singleton
-203,Nightcrawler (DS),hero,Giant-Size X-Men #1,1975,1,singleton
-204,Nikolai Kravinoff,villain,Kraven's Last Hunt (1987),1987,1,singleton
-205,Silver Surfer / Norrin Radd,neutral,,,1,singleton
-206,Nova,hero,Marvel Point One #1,2011,1,singleton
-207,Nova Moon,neutral,,,1,singleton
-208,O'Neil,hero,,,1,singleton
-209,Oddball,villain,,,1,singleton
-210,Patrick Mulligan / Toxin,neutral,Venom/Carnage #1 (2004),2004,1,singleton
-211,Pavitr Prabhakar / Spider-Man India,hero,Spider-Man India #1 (2005),2005,1,singleton
-212,Pepper Potts,hero,Tales of Suspense #45 (1963),1963,1,singleton
-213,Peter B. Parker / Spider-Man,hero,Amazing Fantasy #15 (1962),1962,1,singleton
-214,Star-Lord / Peter Quill,hero,,,1,singleton
-215,Power Man,hero,"Luke Cage, Hero for Hire #1",1972,1,singleton
-216,Professor Monster,villain,,,1,singleton
-217,Professor X,hero,X-Men #1,1963,1,singleton
-218,Prowler (Hobie Brown),hero,,,1,singleton
-219,Puma (Thomas Fireheart),villain,,,1,singleton
-220,Punisher,hero,Amazing Spider-Man #129,1974,1,singleton
-221,Queen Bee,villain,,,1,singleton
-222,R.H.I.N.O.,villain,,,1,singleton
-223,Rajit Ratha,neutral,,,1,singleton
-224,Rattan,villain,,,1,singleton
-225,Rex Strickland,hero,Venom #1 vol.4 (2018),2018,1,singleton
-226,Richard Parker,hero,Amazing Spider-Man Annual #5 (1968),1968,1,singleton
-227,Rick Mason,neutral,,,1,singleton
-228,Ringmaster (Maynard Tiboldt),villain,,,1,singleton
-229,Rio Morales,hero,Ultimate Comics Spider-Man #1 (2011),2011,1,singleton
-230,Rita Conway,hero,Amazing Spider-Man #140 (1974),1974,2,token_set
-231,Robbie Robertson,hero,Amazing Spider-Man #51 (1967),1967,1,singleton
-232,Roger Harrington,hero,,,1,singleton
-233,Rogue,hero,Avengers Annual #10,1981,1,singleton
-234,Roland Treece,villain,Venom: Lethal Protector (1993),1993,1,singleton
-235,Rosalie Octavius,hero,,,1,singleton
-236,"S-01, S-02, S-03 (Oscorp robots)",villain,,,1,singleton
-237,Santiago,hero,,,1,singleton
-238,Screwball,villain,Amazing Spider-Man #559,2008,1,singleton
-239,Semyon Chorney,villain,,,1,singleton
-240,Simon Krieger,villain,Iron Man #219,1987,1,singleton
-241,Simon Stroud,hero,Creatures on the Loose #30 (1974),1974,1,singleton
-242,Solus,villain,,,1,singleton
-243,Soren (Skrull),hero,,,1,singleton
-244,Speedball,hero,,,1,singleton
-245,Spencer Smythe (PS2/PSP),villain,,,1,singleton
-246,Spoiler,villain,,,1,singleton
-247,Stan (Stan Lee cameo),neutral,,,1,singleton
-248,Stan Lee,neutral,,,1,singleton
-249,Storm (Ororo Munroe),hero,,,1,singleton
-250,Talos (Skrull),hero,Fantastic Four #2 (1962) (MCU version),1962,1,singleton
-251,Taskmaster / Tony Masters,villain,Avengers #195,1980,1,singleton
-252,Thanos,villain,,,1,singleton
-253,The Foreigner,villain,Web of Spider-Man #15 (1986),1986,1,singleton
-254,The Jury,villain,,,1,singleton
-255,Thor,hero,Journey into Mystery #83,1962,1,singleton
-256,Thumper,villain,,,1,singleton
-257,Typhoid Mary,villain,,,1,singleton
-258,Vanisher,neutral,,,1,singleton
-259,Vermin,villain,,,1,singleton
-260,Videoman,neutral,,,1,singleton
-261,Walker Sloan,villain,,,1,singleton
-262,Walter Hardy,neutral,Amazing Spider-Man #1,1963,2,token_set
-263,Dr. Watts,neutral,,,1,singleton
-264,White Tiger,hero,Avengers Academy #20,2011,1,singleton
-265,Whitney Chang,neutral,,,1,singleton
-266,William Ginter Riva,villain,,,1,singleton
-267,Wong,hero,Strange Tales #64 (1964) (Sorcerer Supreme),1964,1,singleton
-268,X-51,hero,2001: A Space Odyssey #8,1977,1,singleton
-269,Zaran,villain,,,1,singleton
-270,Ömer Ozdemir,villain,,,1,singleton
+184,Miguel O'Hara / Spider-Man 2099,hero,Spider-Man 2099 #1 (1992),1992,2,token_set
+185,Miles G. Morales / Prowler (Earth-42),villain,,,1,singleton
+186,Miles' Peter Parker (blonde),hero,Amazing Fantasy #15 (1962),1962,1,singleton
+187,Mister Fantastic / Reed Richards,hero,,,1,singleton
+188,Monster-Ock,villain,,,1,singleton
+189,Moon Knight,hero,Werewolf by Night #32,1975,1,singleton
+190,Morlun,villain,,,1,singleton
+191,Mr. Fox,villain,,,1,singleton
+192,Mr. White,villain,,,1,singleton
+193,Mrs. Chen,neutral,,,1,singleton
+194,Namor the Sub-Mariner,hero,,,1,singleton
+195,Natie (piranha cross-species),villain,,,1,singleton
+196,Ned Leeds,hero,Amazing Spider-Man #18 (1964),1964,1,singleton
+197,"New Enforcers: Dragon Man, Eel, Thermite, Blitz, Super-Adaptoid",villain,,,1,singleton
+198,Nick Fury,hero,Sgt. Fury #1 (1963) (MCU version),1963,1,singleton
+199,Nico Minoru,hero,Runaways #1,2003,1,singleton
+200,Nightcrawler (DS),hero,Giant-Size X-Men #1,1975,1,singleton
+201,Nikolai Kravinoff,villain,Kraven's Last Hunt (1987),1987,1,singleton
+202,Silver Surfer / Norrin Radd,neutral,,,1,singleton
+203,Nova,hero,Marvel Point One #1,2011,1,singleton
+204,Nova Moon,neutral,,,1,singleton
+205,O'Neil,hero,,,1,singleton
+206,Oddball,villain,,,1,singleton
+207,Patrick Mulligan / Toxin,neutral,Venom/Carnage #1 (2004),2004,1,singleton
+208,Pavitr Prabhakar / Spider-Man India,hero,Spider-Man India #1 (2005),2005,1,singleton
+209,Pepper Potts,hero,Tales of Suspense #45 (1963),1963,1,singleton
+210,Peter B. Parker / Spider-Man,hero,Amazing Fantasy #15 (1962),1962,1,singleton
+211,Star-Lord / Peter Quill,hero,,,1,singleton
+212,Power Man,hero,"Luke Cage, Hero for Hire #1",1972,1,singleton
+213,Professor Monster,villain,,,1,singleton
+214,Professor X,hero,X-Men #1,1963,1,singleton
+215,Prowler (Hobie Brown),hero,,,1,singleton
+216,Puma (Thomas Fireheart),villain,,,1,singleton
+217,Queen Bee,villain,,,1,singleton
+218,R.H.I.N.O.,villain,,,1,singleton
+219,Rajit Ratha,neutral,,,1,singleton
+220,Rattan,villain,,,1,singleton
+221,Rex Strickland,hero,Venom #1 vol.4 (2018),2018,1,singleton
+222,Richard Parker,hero,Amazing Spider-Man Annual #5 (1968),1968,1,singleton
+223,Rick Mason,neutral,,,1,singleton
+224,Ringmaster (Maynard Tiboldt),villain,,,1,singleton
+225,Rio Morales,hero,Ultimate Comics Spider-Man #1 (2011),2011,1,singleton
+226,Rita Conway,hero,Amazing Spider-Man #140 (1974),1974,2,token_set
+227,Robbie Robertson,hero,Amazing Spider-Man #51 (1967),1967,1,singleton
+228,Roger Harrington,hero,,,1,singleton
+229,Rogue,hero,Avengers Annual #10,1981,1,singleton
+230,Roland Treece,villain,Venom: Lethal Protector (1993),1993,1,singleton
+231,Rosalie Octavius,hero,,,1,singleton
+232,"S-01, S-02, S-03 (Oscorp robots)",villain,,,1,singleton
+233,Santiago,hero,,,1,singleton
+234,Screwball,villain,Amazing Spider-Man #559,2008,1,singleton
+235,Semyon Chorney,villain,,,1,singleton
+236,Simon Krieger,villain,Iron Man #219,1987,1,singleton
+237,Simon Stroud,hero,Creatures on the Loose #30 (1974),1974,1,singleton
+238,Solus,villain,,,1,singleton
+239,Soren (Skrull),hero,,,1,singleton
+240,Speedball,hero,,,1,singleton
+241,Spencer Smythe (PS2/PSP),villain,,,1,singleton
+242,Spoiler,villain,,,1,singleton
+243,Storm (Ororo Munroe),hero,,,1,singleton
+244,Talos (Skrull),hero,Fantastic Four #2 (1962) (MCU version),1962,1,singleton
+245,Taskmaster / Tony Masters,villain,Avengers #195,1980,1,singleton
+246,Thanos,villain,,,1,singleton
+247,The Foreigner,villain,Web of Spider-Man #15 (1986),1986,1,singleton
+248,The Jury,villain,,,1,singleton
+249,Thor,hero,Journey into Mystery #83,1962,1,singleton
+250,Thumper,villain,,,1,singleton
+251,Typhoid Mary,villain,,,1,singleton
+252,Vanisher,neutral,,,1,singleton
+253,Vermin,villain,,,1,singleton
+254,Videoman,neutral,,,1,singleton
+255,Walker Sloan,villain,,,1,singleton
+256,Walter Hardy,neutral,Amazing Spider-Man #1,1963,2,token_set
+257,Dr. Watts,neutral,,,1,singleton
+258,White Tiger,hero,Avengers Academy #20,2011,1,singleton
+259,Whitney Chang,neutral,,,1,singleton
+260,William Ginter Riva,villain,,,1,singleton
+261,Wong,hero,Strange Tales #64 (1964) (Sorcerer Supreme),1964,1,singleton
+262,X-51,hero,2001: A Space Odyssey #8,1977,1,singleton
+263,Zaran,villain,,,1,singleton
+264,Ömer Ozdemir,villain,,,1,singleton
