@@ -40,7 +40,7 @@ id,name,alias,alignment,alignment_raw,first_comic_title,first_comic_year,identit
 39,Norman Osborn,Green Goblin,villain,villain,Amazing Spider-Man #14 (1964),1964,13
 40,Donald Menken,,villain,villain,Web of Spider-Man #2 (1985),1985,96
 41,Felicia Hardy,Black Cat,neutral,neutral,Amazing Spider-Man #194 (1979),1979,3
-42,Alistair Smythe,Spider-Slayer,villain,villain,Amazing Spider-Man #292 (1987),1987,48
+42,Alistair Smythe,Spider-Slayer,villain,villain,Amazing Spider-Man Annual #19 (1985),1985,48
 43,Ashley Kafka,,neutral,neutral,Spectacular Spider-Man #178 (1991),1991,55
 44,Gustav Fiers / The Gentleman,,villain,villain,,,119
 45,Adrian Toomes / Vulture,Vulture,villain,villain,Amazing Spider-Man #2 (1963),1963,40
@@ -54,7 +54,7 @@ id,name,alias,alignment,alignment_raw,first_comic_title,first_comic_year,identit
 53,Herman Schultz / Shocker,Shocker,villain,villain,Amazing Spider-Man #46 (1967),1967,27
 54,Anne Marie Hoag,,hero,hero,Damage Control #1 (1989),1989,51
 55,Mac Gargan,Scorpion,villain,villain,Amazing Spider-Man #20 (1965),1965,26
-56,Jackson Brice / Shocker,Shocker,villain,villain,Spectacular Spider-Man #49 (1980),1980,139
+56,Jackson Brice / Shocker,Shocker,villain,villain,Amazing Spider-Man #10 (1964),1964,139
 57,Karen (suit AI),,neutral,neutral,,,157
 58,Miles Morales / Spider-Man,Spider-Man,hero,hero,Ultimate Fallout #4 (2011),2011,21
 59,Peter B. Parker / Spider-Man,Spider-Man,hero,hero,Amazing Fantasy #15 (1962),1962,213
@@ -73,7 +73,7 @@ id,name,alias,alignment,alignment_raw,first_comic_title,first_comic_year,identit
 72,Miles' Peter Parker (blonde),Spider-Man,hero,hero,Amazing Fantasy #15 (1962),1962,187
 73,Quentin Beck / Mysterio,Mysterio,villain,villain,Amazing Spider-Man #13 (1964),1964,22
 74,Nick Fury,Nick Fury,hero,hero,Sgt. Fury #1 (1963) (MCU version),1963,201
-75,Maria Hill,,hero,hero,Marvel Spotlight #4 (1979),1979,174
+75,Maria Hill,,hero,hero,New Avengers #4 (2005),2005,174
 76,MJ (Michelle Jones-Watson),(composite of Mary Jane Watson),hero,hero,Amazing Spider-Man #42 (1966),1966,189
 77,Roger Harrington,,hero,hero,,,232
 78,Julius Dell,,hero,hero,,,152
@@ -87,12 +87,12 @@ id,name,alias,alignment,alignment_raw,first_comic_title,first_comic_year,identit
 86,Peter Parker / Spider-Man (Raimi-verse),Spider-Man,hero,hero,Amazing Fantasy #15 (1962),1962,23
 87,Peter Parker / Spider-Man (Webb-verse),Spider-Man,hero,hero,Amazing Fantasy #15 (1962),1962,23
 88,Stephen Strange / Doctor Strange,Doctor Strange,hero,hero,Strange Tales #110 (1963),1963,10
-89,Wong,,hero,hero,Strange Tales #64 (1964) (Sorcerer Supreme),1964,267
+89,Wong,,hero,hero,Strange Tales #110 (1963),1963,267
 90,Eddie Brock / Venom (SSU),Venom,neutral,neutral,Web of Spider-Man #18 (1986); ASM #300 (1988),1986,11
 91,Matt Murdock / Daredevil,Daredevil,hero,hero,Daredevil #1 (1964),1964,7
 92,Gwen Stacy (mentioned),,hero,hero,Amazing Spider-Man #31 (1965),1965,14
 93,Ben Parker (mentioned),,hero,hero,Amazing Fantasy #15 (1962),1962,39
-94,Johnathon Ohnn / The Spot,The Spot,villain,villain,Amazing Spider-Man #589 (2009),2009,36
+94,Johnathon Ohnn / The Spot,The Spot,villain,villain,"Peter Parker, The Spectacular Spider-Man #98 (1985)",1985,36
 95,Jessica Drew / Spider-Woman,Spider-Woman,neutral,neutral,Marvel Spotlight #32 (1977),1977,148
 96,Hobie Brown / Spider-Punk,Spider-Punk,hero,hero,Spider-Verse (2014),2014,34
 97,Pavitr Prabhakar / Spider-Man India,Spider-Man India,hero,hero,Spider-Man India #1 (2005),2005,211
@@ -254,7 +254,7 @@ id,name,alias,alignment,alignment_raw,first_comic_title,first_comic_year,identit
 253,Deathlok,,hero,hero,,,90
 254,Morbius,,hero,hero,,,192
 255,Beetle (Abner Jenkins),Beetle,villain,villain,Strange Tales #123,1964,61
-256,Human Torch,,hero,hero (cameo),Strange Tales #52,1961,128
+256,Human Torch,,hero,hero (cameo),The Fantastic Four #1,1961,128
 257,Speedball,,hero,hero (cameo),,,244
 258,The Jury,,villain,villains,,,254
 259,Ghost Rider (Danny Ketch),Ghost Rider,hero,hero (cameo),,,115
@@ -297,7 +297,7 @@ id,name,alias,alignment,alignment_raw,first_comic_title,first_comic_year,identit
 296,Green Goblin (Ultimate),Green Goblin,villain,villain,,,13
 297,Beetle,,villain,villain,,,61
 298,Bolivar Trask,,villain,villain,,,68
-299,New Goblin / Harry Osborn,New Goblin,villain,villain/antihero,Amazing Spider-Man #136,1974,15
+299,New Goblin / Harry Osborn,New Goblin,villain,villain/antihero,The Amazing Spider-Man #31,1965,15
 300,Sandman / Flint Marko,Sandman,villain,villain,Amazing Spider-Man #4,1963,25
 301,Lizard / Curt Connors,Lizard,villain,villain,,,19
 302,Scorpion / Mac Gargan,Scorpion,villain,villain,Amazing Spider-Man #20,1965,26
@@ -329,7 +329,7 @@ id,name,alias,alignment,alignment_raw,first_comic_title,first_comic_year,identit
 328,Spider-Man Noir / Peter Parker,Spider-Man Noir,hero,hero,Spider-Man Noir #1,2009,33
 329,Spider-Man 2099 / Miguel O'Hara,Spider-Man 2099,hero,hero,Spider-Man 2099 #1,1992,185
 330,Ultimate Spider-Man / Peter Parker,Ultimate Spider-Man,hero,hero,Ultimate Spider-Man #1,2000,23
-331,Anti-Venom / Eddie Brock,Anti-Venom,villain,villain,Amazing Spider-Man #630,2010,11
+331,Anti-Venom / Eddie Brock,Anti-Venom,villain,villain,Amazing Spider-Man #569,2008,11
 332,Walker Sloan,,villain,villain (game original),,,261
 333,Dr. Otto Octavius,,villain,villain,Amazing Spider-Man #3,1963,9
 334,Atrocity (Sloan/Anti-Venom/Octopus hybrid),Atrocity,villain,villain,,,56
@@ -410,7 +410,7 @@ id,name,alias,alignment,alignment_raw,first_comic_title,first_comic_year,identit
 409,Jefferson Davis (dream),Jefferson Davis,neutral,neutral,,,143
 410,Cindy Moon,,neutral,"neutral (cameo, post-credits)",,,29
 411,Albert Moon,,neutral,neutral (cameo),,,47
-412,"Scream / Mary Jane (symbiote, temporary)",Scream,villain,villain (temp),Web of Spider-Man #?,1986,180
+412,"Scream / Mary Jane (symbiote, temporary)",Scream,villain,villain (temp),Venom: Lethal Protector #4 (1993),1993,180
 413,"Delilah (cameo, alternate universe)",Delilah,neutral,neutral,,,91
 414,Black Cat / Felicia Hardy,Black Cat,antihero,antihero,Amazing Spider-Man #194,1979,3
 415,Walter Hardy,,neutral,neutral (reformed thief),Amazing Spider-Man #1,1963,262
