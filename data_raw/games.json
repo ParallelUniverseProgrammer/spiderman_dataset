@@ -2144,7 +2144,7 @@
         "name": "Human Torch",
         "alignment": "hero",
         "alias": null,
-        "first_comic_appearance": "Strange Tales #52",
+        "first_comic_appearance": "The Fantastic Four #1",
         "first_comic_year": 1961
       },
       {
@@ -3862,8 +3862,8 @@
         "name": "New Goblin / Harry Osborn",
         "alignment": "villain/antihero",
         "alias": "New Goblin",
-        "first_comic_appearance": "Amazing Spider-Man #136",
-        "first_comic_year": 1974
+        "first_comic_appearance": "The Amazing Spider-Man #31",
+        "first_comic_year": 1965
       },
       {
         "name": "Sandman / Flint Marko",
@@ -5171,8 +5171,8 @@
         "name": "Anti-Venom / Eddie Brock",
         "alignment": "villain",
         "alias": "Anti-Venom",
-        "first_comic_appearance": "Amazing Spider-Man #630",
-        "first_comic_year": 2010
+        "first_comic_appearance": "Amazing Spider-Man #569",
+        "first_comic_year": 2008
       },
       {
         "name": "Walker Sloan",
@@ -7210,8 +7210,8 @@
         "name": "Harry Osborn",
         "alignment": "neutral",
         "alias": null,
-        "first_comic_appearance": "Amazing Spider-Man #136",
-        "first_comic_year": 1974
+        "first_comic_appearance": "The Amazing Spider-Man #31",
+        "first_comic_year": 1965
       },
       {
         "name": "Yuri Watanabe",
@@ -7916,8 +7916,8 @@
         "name": "Harry Osborn",
         "alignment": "hero/villain (Venom host)",
         "alias": null,
-        "first_comic_appearance": "Amazing Spider-Man #136",
-        "first_comic_year": 1974
+        "first_comic_appearance": "The Amazing Spider-Man #31",
+        "first_comic_year": 1965
       },
       {
         "name": "Yuri Watanabe / Wraith",
@@ -8007,8 +8007,8 @@
         "name": "Scream / Mary Jane (symbiote, temporary)",
         "alignment": "villain (temp)",
         "alias": "Scream",
-        "first_comic_appearance": "Web of Spider-Man #?",
-        "first_comic_year": 1986
+        "first_comic_appearance": "Venom: Lethal Protector #4 (1993)",
+        "first_comic_year": 1993
       },
       {
         "name": "Delilah (cameo, alternate universe)",
@@ -8566,8 +8566,8 @@
         "name": "Alistair Smythe",
         "alias": "Spider-Slayer",
         "alignment": "villain",
-        "first_comic_appearance": "The Amazing Spider-Man #25",
-        "first_comic_year": 1965
+        "first_comic_appearance": "Amazing Spider-Man Annual #19",
+        "first_comic_year": 1985
       },
       {
         "name": "Scorpion",
