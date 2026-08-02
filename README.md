@@ -24,12 +24,12 @@ games (work_id, genre, engine, universe, notes)                 -- 43 rows
 
 --- Enrichment tables ---
 character_identities (id, canonical_name, alignment, first_comic_title,
-                      first_comic_year, n_variants, merge_rule)  -- 270 rows
+                      first_comic_year, n_variants, merge_rule)  -- 264 rows
 characters (id, name, alias, alignment, alignment_raw,
             first_comic_title, first_comic_year, identity_id)    -- 416 rows
       alignment CHECK IN (hero, villain, neutral, antihero); alignment_raw keeps
       the unnormalized research string. See "Characters vs credit strings" below:
-      416 credit strings name 270 distinct characters.
+      416 credit strings name 264 distinct characters.
 work_characters (work_id, character_id, actor_person_id, billing_order, notes) -- 801 rows
 cast_crew (work_id, person_id, role, character_name, credit_order)             -- 826 rows
 game_releases (id, game_work_id, platform_id, release_date, publisher,
@@ -63,7 +63,7 @@ episodes (id, show_work_id, season_number, episode_number, title, air_date,
       Only rows carrying an episode number. The research also supplies 31
       "Season N summary" placeholders and the 1977 pilot TV movie (already its
       own media_works row); none are episodes and the build drops them.
-work_relations (work_a_id, work_b_id, relation_type)                           -- 159 rows
+work_relations (work_a_id, work_b_id, relation_type)                           -- 157 rows
 source_material (id, work_id, comic_title, issue_range, comic_writer,
                  comic_year, storyline_arc)                                    -- 142 rows
 soundtracks (id, work_id, type, title, composer_or_performer, release_date,
@@ -89,8 +89,8 @@ v_review_by_publication   review scores with the outlet split from the platform
 Each research file uses its own convention — `Spider-Man / Peter Parker` in
 `games.json`, `Peter Parker / Spider-Man` in `movies.json`, `Peter Parker` in
 `tv.json` — so `UNIQUE(name)` enforces string uniqueness, not identity. **416
-credit strings name 270 distinct characters.** `identity_id` resolves each row to
-the person; 60 identities have more than one spelling.
+credit strings name 264 distinct characters.** `identity_id` resolves each row to
+the person; 61 identities have more than one spelling.
 
 Two merge rules, recorded per identity in `merge_rule`:
 
@@ -139,9 +139,19 @@ count is partly a measure of how thoroughly a work was catalogued, and totals ar
 **not comparable across media** — compare within a medium, or read the per-medium
 split rather than the total. The build prints this table on every run.
 
-Where a character's spellings disagreed on alignment (14 identities, e.g.
+Where a character's spellings disagreed on alignment (21 identities, e.g.
 `May Parker`=hero vs `Aunt May`=neutral), `character_identities.alignment` takes
 the majority; the per-row research values stay in `characters`.
+
+A spelling with no `/` and no parenthetical is a single indivisible token, so
+neither merge rule can reach inside it and it becomes its own identity unless
+`CHARACTER_IDENTITIES` lists it — this is what split `Aunt May Parker` from
+`Aunt May`, and `Punisher`, `MJ`, `Stan`, `Morbius` and `Calypso` from their
+fuller spellings. The build now reports any pair of identities whose canonical
+names nest inside one another, against a list of pairs already reviewed and
+judged genuinely distinct (`Doctor Octopus` vs `Olivia Octavius / Doctor
+Octopus`, `Hulk` vs `She-Hulk`, …), so a new unmerged spelling shows up instead
+of quietly inflating the character count.
 
 ### Reading `box_office`
 
@@ -189,9 +199,18 @@ other way: work_a is the DLC/remaster of work_b, and `dlc_of` edges are reorient
 at build time from the catalog's own evidence.
 
 The research declares some relations reciprocally and a few in the opposite
-direction. The build reports edges whose release order contradicts the declared
-direction rather than flipping them, because a prequel can legitimately ship after
-the work it precedes.
+direction. For a symmetric type (`same_universe`, `crossover`, `related`,
+`inspired`, `tie_in`) a reciprocal declaration is merely redundant and both edges
+stand. For an ordering type it is a contradiction — both *The Animated Series*
+and *Spider-Man Unlimited* named the other as their `sequel`, so the catalog
+answered "what is the sequel of *Spider-Man Unlimited*" with the series that
+preceded it — and the build now drops whichever half disagrees with release
+order, reporting what it removed. A pair release order cannot settle (equal or
+missing years) fails the build rather than being guessed at.
+
+A *single* edge running against release order is still only reported, never
+flipped, because a prequel can legitimately ship after the work it precedes
+(*Battle for New York*, 2006, is a narrative prequel to a 2005 game).
 
 ## Files
 
@@ -217,12 +236,12 @@ Every research item in `data_raw/` resolves to exactly one work: 23/23 movies,
 - **23 movies** (live-action + animated, including SSU spin-offs)
 - **15 TV shows** (4 live-action, 11 animated)
 - **43 games** (from 1982 Atari 2600 to 2023's Marvel's Spider-Man 2)
-- **270 distinct characters** across 416 credit strings, all with a normalized alignment
+- **264 distinct characters** across 416 credit strings, all with a normalized alignment
 - **801 work-character links**, 203 of them carrying an actor
 - **826 cast & crew entries** (actors, directors, writers, composers, designers)
 - **286 studio work links** with role
 - **270 review scores** across 30 works and 36 publications (128 raw source strings)
-- **159 work-relation edges**
+- **157 work-relation edges**
 - **50 TV episodes** with air dates and metadata, over 5 of the 15 series
 - **142 source material references** linking media to underlying comics
 - **367 people** resolved to TMDB, with verified IMDb and Wikidata IDs

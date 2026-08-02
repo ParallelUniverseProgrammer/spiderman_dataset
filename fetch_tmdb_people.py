@@ -120,27 +120,55 @@ def resolve_work(title, year, media_type, refresh=False):
     if not data or not data.get("results"):
         return None
 
+    # An exact title carries a work on its own, a partial title needs the year to
+    # corroborate it, and no amount of year agreement substitutes for a title that
+    # does not match at all. Summing the two into one score did not express that:
+    # an exact-year match scored 8 against a threshold of 8, so any film sharing a
+    # release year cleared the bar with no title agreement whatsoever, while an
+    # exactly-titled film whose year was off by more than one scored 10-4=6 and was
+    # rejected. Every work_credits match is only as sound as the work resolved here,
+    # so a wrong pick quietly attributes a stranger's birth date and IMDb id to one
+    # of our people. The rule is applied as a filter over candidates rather than a
+    # test on the top scorer, because a same-year/wrong-title result outscores an
+    # exactly-titled one and would shadow it before the test ran.
     want = norm_title(query)
-    best, best_score = None, -1
+    ranked = []
     for r in data["results"]:
         name = r.get("title") or r.get("name") or ""
         date = r.get("release_date") or r.get("first_air_date") or ""
         ryear = int(date[:4]) if date[:4].isdigit() else None
-        score = 0
         if norm_title(name) == want:
-            score += 10
+            title_score = 10
         elif want in norm_title(name) or norm_title(name) in want:
-            score += 4
-        if year and ryear == year:
-            score += 8
-        elif year and ryear and abs(ryear - year) <= 1:
-            score += 3
-        elif year and ryear:
-            score -= 4
-        if score > best_score:
-            best, best_score = r, score
-    # Demand real evidence: a title match, or a year match plus partial title.
-    return best["id"] if best and best_score >= 8 else None
+            title_score = 4
+        else:
+            continue                # no title agreement: never a match
+        if not year or not ryear:
+            year_score = 0
+        elif ryear == year:
+            year_score = 8
+        elif abs(ryear - year) <= 1:
+            year_score = 3
+        else:
+            year_score = -4
+        if title_score != 10 and year_score != 8:
+            continue
+        # Two results can both merely *contain* the query — searching "Spider-Man"
+        # for the 2017 series returns "Marvel's Spider-Man" and "Marvel's
+        # Spider-Man' Origin Short", identical on the coarse buckets above. The
+        # closer title is the better answer, so how much extra text the candidate
+        # carries breaks that tie.
+        ranked.append(((title_score + year_score, title_score,
+                        -abs(len(norm_title(name)) - len(want))), r["id"]))
+    if not ranked:
+        return None
+    top = max(k for k, _ in ranked)
+    winners = [i for k, i in ranked if k == top]
+    # A genuine tie is ambiguity, not a coin toss to be settled by result order or
+    # by whichever TMDB id happens to sort highest. Searching the unreleased "El
+    # Muerto" with no year returns three unrelated Spanish-language films all
+    # titled exactly that; picking one attributes its cast to our people.
+    return winners[0] if len(winners) == 1 else None
 
 
 def credit_names(tmdb_id, media_type, refresh=False):

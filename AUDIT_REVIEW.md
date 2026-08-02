@@ -262,3 +262,105 @@ in the README under Known Limitations:
 - Weekly box office beyond opening week, full per-episode listings, and review
   scores for films and series still require Box Office Mojo / RT / Metacritic
   scraping.
+---
+
+# Bug sweep — v5 (2026-08-02)
+
+A read-through of `build_db_v2.py` and `fetch_tmdb_people.py` against the built
+database. The v4 build reported no validation failures before or after these
+fixes; every defect below sat in a blind spot of the checks that existed.
+
+| # | Defect | Fix |
+|---|--------|-----|
+| 1 | Six characters split across two identities each | Spellings added to `CHARACTER_IDENTITIES`; nesting detector added |
+| 2 | `cast_crew` PK and `box_office` UNIQUE not enforced on NULL-tailed rows | Unique indexes over `COALESCE(...)` |
+| 3 | Ordering relations declared in both directions, both shipped | Contradicting half dropped by release order; residue fails the build |
+| 4 | `resolve_work` accepted a same-year candidate with no title agreement | Title evidence made mandatory; ties resolved or refused |
+
+## 1. Un-delimited spellings never merged
+
+`character_tokens` splits a credit string on `/` and strips a trailing
+parenthetical. A spelling containing neither is one token, so it merges only if
+`CHARACTER_IDENTITIES` names it outright. Six characters were therefore counted
+twice, three of them with contradictory alignments that never met the majority
+vote because the rows sat in different identities:
+
+| Spellings | Was | Now |
+|-----------|-----|-----|
+| `Aunt May Parker` / `Aunt May` (+4 more) | 2 identities | 1 |
+| `Punisher` (hero) / `Frank Castle / The Punisher` (antihero) | 2 | 1, antihero |
+| `MJ (Michelle Jones-Watson)` / `Michelle "MJ" Jones-Watson` | 2 | 1 |
+| `Stan (Stan Lee cameo)` / `Stan Lee` | 2 | 1 |
+| `Morbius` (hero) / `Michael Morbius / Living Vampire` (antihero) | 2 | 1, antihero |
+| `Calypso` (villain) / `Calypso Ezili` (hero) | 2 | 1, villain |
+
+`Lucien / Milo Morbius` is a different character and correctly stays separate:
+the research spells him `Milo Morbius`, its own token, which never matches the
+bare `morbius` mantle. Distinct characters: **270 → 264**.
+
+Every bare token added was first checked to occur in exactly one credit string
+across all three research files, so none can capture an unrelated character. A
+coverage or FK check cannot see this class of bug — the rows are present and
+well-formed, there are simply two of them — so the build now lists identity
+pairs whose canonical names nest, minus an allowlist of the 13 pairs reviewed
+and found genuinely distinct.
+
+## 2. A key ending in a nullable column stops being a key
+
+SQLite holds two NULLs to be distinct when testing uniqueness, so a composite key
+whose last column is NULL is not enforced for exactly those rows:
+
+- `cast_crew` PK `(work_id, person_id, role, character_name)` — `character_name`
+  is NULL on every crew credit, roughly 500 of 826 rows. `INSERT OR IGNORE` never
+  saw a conflict on any of them.
+- `box_office` UNIQUE `(work_id, scope, week_number)` — `week_number` is NULL on
+  all 16 `scope='lifetime'` rows, so `INSERT OR REPLACE` would have appended a
+  second lifetime total rather than replacing the first.
+
+Both tables were duplicate-free, so nothing was wrong in the data; the guard the
+loaders lean on simply was not there. Unique indexes folding the NULL to a
+sentinel restore it, with no change to stored values or to the CSV exports.
+
+## 3. Reciprocal ordering relations
+
+`sequel` and `spin_off` are antisymmetric, but the research states some relations
+from both ends, and the loader inserted both. Two contradictory pairs shipped:
+
+- `Spider-Man: The Animated Series (1994) --sequel--> Spider-Man Unlimited (1999)`
+  plus its exact reverse
+- `Spider-Man 3 (2007) --spin_off--> Venom (2018)` plus its exact reverse
+
+The v4 chronology check flagged only the backwards-in-time half, as a printed
+note, and left both edges live. The build now drops the half that disagrees with
+release order and reports it; a pair release order cannot settle is a validation
+failure. Edges: **159 → 157**. The one genuine single suspect edge (*Ultimate
+Spider-Man* 2005 `prequel` *Battle for New York* 2006) is untouched.
+
+## 4. `resolve_work` could match on the year alone
+
+Title and year evidence were summed into one number tested against a threshold of
+8. An exact-year match scored exactly 8, so **any same-year film cleared the bar
+with no title agreement whatsoever**, while an exactly-titled film whose year was
+off by more than one scored 10−4=6 and was rejected. The docstring described the
+intended rule correctly; the arithmetic did not implement it.
+
+The rule is now applied as a filter over candidates rather than a test on the
+top scorer, because a same-year/wrong-title result outscores an exactly-titled
+one and would shadow it before the test ran. Ties are resolved by which title
+carries the least extra text, and a remaining tie returns None.
+
+Replayed against the 808 cached TMDB responses, 37 of 38 works resolve
+identically. The one change is a false positive removed: unreleased **El Muerto**
+carries no year, and the search returns three unrelated Spanish-language films
+titled exactly that — v4 took the first (a 1991 film), the sweep returns None.
+That film's single credit matched none of our three El Muerto people, so no
+person record was ever affected and `people_external.json` is unchanged.
+
+## Not fixed
+
+- **`awards` PK omits `recipient_person_id`.** Two people nominated in the same
+  category for the same work would collapse to one row via `INSERT OR IGNORE`,
+  silently and uncounted. All three research files were checked: no such
+  collision exists today, so this is latent, not active.
+- **`budgets.is_primary` picks the highest figure.** Mechanical rather than
+  credibility-weighted; matters only if the ROI view is read as precise.
