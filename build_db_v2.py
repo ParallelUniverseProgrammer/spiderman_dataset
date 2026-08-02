@@ -712,8 +712,17 @@ def resolve_character_identities(cursor):
     # and 'neutral' in another purely because of which spelling was joined on.
     ALIGN_PRIORITY = {'villain': 0, 'antihero': 1, 'hero': 2, 'neutral': 3}
 
+    # Identity ids are assigned in this loop's order, so the sort key must not
+    # depend on set iteration order: a token_set key is a frozenset, and
+    # str(frozenset) varies with the process's string hash seed, which made every
+    # rebuild renumber character_identities.id (and characters.identity_id with
+    # it) even from identical inputs. Render the tokens in sorted order instead.
+    def sort_key(item):
+        rule, key = item[0]
+        return (rule, key if isinstance(key, str) else ' | '.join(sorted(key)))
+
     n_merged, conflicts = 0, []
-    for (rule, key), members in sorted(groups.items(), key=lambda kv: str(kv[0][1])):
+    for (rule, key), members in sorted(groups.items(), key=sort_key):
         aligns = [m[2] for m in members if m[2]]
         distinct = sorted(set(aligns))
         alignment = None
