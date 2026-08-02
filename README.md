@@ -27,7 +27,8 @@ to fall into. The build is offline, dependency-free and byte-for-byte reproducib
 | **Format** | SQLite (`spiderman.db`) + one CSV per table + a denormalized flat CSV |
 | **Provenance** | Wikipedia, Box Office Mojo, Rotten Tomatoes, Metacritic, IMDb, TMDB |
 
-**Contents** — [Quickstart](#quickstart) · [Example queries](#example-queries) ·
+**Contents** — [Quickstart](#quickstart) · [Browse it interactively](#browse-it-interactively) ·
+[Example queries](#example-queries) ·
 [Schema](#schema) · [Read this before you count](#read-this-before-you-count) ·
 [Files](#files) · [Reproducing the build](#reproducing-the-build) ·
 [Coverage & limitations](#coverage--limitations) · [Licence](#licence--attribution)
@@ -43,6 +44,9 @@ sqlite3 spiderman.db "SELECT title, release_year FROM media_works ORDER BY relea
 ```
 
 No build step and nothing to install — `spiderman.db` and the CSVs are committed.
+
+Or open `explorer/index.html` in a browser and click around instead — see
+[Browse it interactively](#browse-it-interactively).
 
 <details>
 <summary><b>pandas</b></summary>
@@ -66,6 +70,38 @@ denormalized single-row-per-work view with studios, platforms, budget, gross and
 review averages already joined. Good for a spreadsheet or a quick notebook; use
 the database when you need the character and credit relationships.
 </details>
+
+---
+
+## Browse it interactively
+
+```bash
+open explorer/index.html          # or just double-click it
+```
+
+A dependency-free static page — no server, no network calls, no build step. It
+reads `explorer/data.json` (the whole database, 438 KB) and gives you:
+
+- **Overview** — releases per year by medium, budget → worldwide gross per film,
+  review scores over time, and the most-adapted characters. Every mark is
+  clickable and every chart has a table view.
+- **Works / Characters / People** — sortable, filterable tables over all 81 works,
+  264 characters and 581 people.
+- **Detail pages** that cross-link in every direction: a film lists its cast,
+  characters, studios, comic sources, awards and connected works; a character
+  lists every work it appears in, who played it, and the credit spellings that
+  were collapsed into it; a person lists their whole filmography.
+- **Search** (press `/`) across works, characters and people at once.
+- **About the data** — the counting traps below, restated where you'd hit them.
+
+To regenerate the JSON after rebuilding the database:
+
+```bash
+python3 explorer/build_explorer_data.py
+```
+
+`explorer/smoke-test.html` drives the page in an iframe and reports pass/fail for
+every view, filter, sort and link; open it in a browser after changing the app.
 
 ---
 
@@ -389,6 +425,7 @@ than stored — an unresolved person is preferable to a confidently wrong one.
 | `fetch_tmdb_people.py` | Optional network step that regenerates `people_external.json` |
 | `build_db.py` | v1 build script, superseded — kept for history |
 | `AUDIT_REVIEW.md` | Historical QA audit of the v2 build; every issue listed is fixed |
+| `explorer/` | Interactive browser explorer — open `explorer/index.html` |
 
 Every research item in `data_raw/` resolves to exactly one work: 23/23 movies,
 15/15 TV series, 43/43 games.

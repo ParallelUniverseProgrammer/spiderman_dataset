@@ -1,0 +1,109 @@
+<!doctype html><html><body>
+<iframe id="f" src="index.html" style="width:1300px;height:900px"></iframe>
+<pre id="out"></pre>
+<script>
+const out = [];
+const log = (m) => out.push(m);
+const errs = [];
+window.addEventListener("error", (e) => errs.push("TOP " + e.message));
+const f = document.getElementById("f");
+const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+
+f.onload = async () => {
+  const w = f.contentWindow, d = f.contentDocument;
+  w.addEventListener("error", (e) => errs.push("IFRAME " + e.message + " @" + e.filename + ":" + e.lineno));
+  const q = (s) => d.querySelector(s);
+  const qa = (s) => [...d.querySelectorAll(s)];
+  const nav = async (h) => { w.location.hash = h; await wait(160); };
+  const check = (name, cond, extra) => log((cond ? "PASS " : "FAIL ") + name + (extra ? " :: " + extra : ""));
+
+  await wait(300);
+  check("overview charts", qa("figure.chart").length === 4, qa("figure.chart").length);
+  check("hero figure", q(".hero-fig .value")?.textContent === "81");
+
+  // table toggle on every chart
+  for (const fig of qa("figure.chart")) {
+    const btn = fig.querySelector(".toggle");
+    btn.click(); await wait(30);
+    const ok = !!fig.querySelector("table");
+    btn.click(); await wait(30);
+    check("table toggle " + fig.querySelector("h2").textContent.slice(0, 18), ok && !fig.querySelector("table"));
+  }
+
+  // click a year in the timeline -> works filtered
+  const bar = qa("figure.chart")[0].querySelectorAll("rect[role=button]");
+  let clicked = null;
+  for (const b of bar) { if (b.getAttribute("aria-label")?.startsWith("2018")) { clicked = b; break; } }
+  clicked.dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
+  await wait(200);
+  check("year drill-down", d.querySelector("h1").textContent === "Works" && q(".result-count").textContent.startsWith("4 of"), q(".result-count")?.textContent);
+
+  qa("nav.tabs a").find((a) => a.getAttribute("href") === "#/works").click(); await wait(200);
+  const total = qa("tbody tr").length;
+  check("works rows", total === 81, total);
+  // sort by gross desc
+  const heads = qa("thead th");
+  const grossTh = heads.find((h) => h.textContent.startsWith("Gross"));
+  grossTh.click(); await wait(120);
+  check("sort by gross", qa("tbody tr")[0].children[0].textContent.startsWith("Spider-Man: No Way Home"), qa("tbody tr")[0].children[0].textContent);
+  // filter chip
+  qa(".chips button").find((b) => b.textContent.startsWith("Games")).click(); await wait(120);
+  check("filter games", qa("tbody tr").length === 43, qa("tbody tr").length);
+  // text filter
+  const inp = q('.filters input[type="search"]');
+  inp.value = "venom"; inp.dispatchEvent(new w.Event("input", { bubbles: true })); await wait(150);
+  check("text filter", qa("tbody tr").length > 0 && qa("tbody tr").length < 10, qa("tbody tr").length);
+
+  await nav("#/work/13");
+  check("work detail title", d.querySelector("h1").textContent === "Spider-Man: No Way Home");
+  check("work detail sections", qa("section.block").length >= 8, qa("section.block").length);
+  // follow a character chip
+  q("section.block .chip").click(); await wait(180);
+  check("chip -> character", w.location.hash.startsWith("#/character/"), w.location.hash);
+
+  await nav("#/characters");
+  check("character rows", qa("tbody tr").length === 264, qa("tbody tr").length);
+  const bars = qa(".bar-cell .fill");
+  check("bar fills have height", bars.length && bars[0].getBoundingClientRect().height > 3, bars[0]?.getBoundingClientRect().height);
+  qa(".chips button").find((b) => b.textContent.startsWith("Villain")).click(); await wait(120);
+  check("filter villains", qa("tbody tr").length === 113, qa("tbody tr").length);
+
+  await nav("#/character/27");
+  check("character detail", d.querySelector("h1").textContent.includes("Peter Parker"));
+  check("appearances table", qa("tbody tr").length >= 60, qa("tbody tr").length);
+  check("variants listed", qa("section.block")[1].querySelectorAll(".chip").length > 5);
+
+  await nav("#/people");
+  check("people rows", qa("tbody tr").length === 581, qa("tbody tr").length);
+  await nav("#/person/35");
+  check("person detail", !!d.querySelector("h1").textContent);
+  check("person credits", qa("tbody tr").length > 0);
+
+  await nav("#/about");
+  check("about sections", qa("section.block").length === 6, qa("section.block").length);
+
+  // global search
+  await nav("#/overview");
+  const search = d.getElementById("search");
+  search.value = "octopus"; search.dispatchEvent(new w.Event("input", { bubbles: true })); await wait(120);
+  const hits = qa("#results button");
+  check("search finds Doctor Octopus", hits.some((b) => b.textContent.includes("Doctor Octopus")), hits.length + " hits");
+  hits[0].click(); await wait(180);
+  check("search navigates", w.location.hash !== "#/overview", w.location.hash);
+
+  // sticky header not overlapping first row
+  await nav("#/characters");
+  const th = q("thead th").getBoundingClientRect();
+  const tr = qa("tbody tr")[0].getBoundingClientRect();
+  check("header above first row", th.bottom <= tr.top + 1, th.bottom + " vs " + tr.top);
+
+  // no horizontal page overflow
+  check("no page h-overflow", d.documentElement.scrollWidth <= d.documentElement.clientWidth + 1,
+        d.documentElement.scrollWidth + " vs " + d.documentElement.clientWidth);
+
+  log(errs.length ? "FAIL js-errors :: " + errs.join(" | ") : "PASS no-js-errors");
+  document.getElementById("out").textContent = out.join("\n");
+  document.title = "DONE " + out.filter((l) => l.startsWith("FAIL")).length + " failures";
+};
+</script>
+</body></html>
