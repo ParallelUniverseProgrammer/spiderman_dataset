@@ -1,0 +1,58 @@
+# Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Copyright (c) 2026 <your name>
+
+This licence applies to the dataset files in this repository:
+
+- `spiderman.db`
+- `data/` (all CSV exports)
+- `data_raw/` (all source research JSON)
+
+The source code (`*.py`) is licensed separately under the MIT License; see LICENSE.
+
+## Summary
+
+You are free to:
+
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material for any purpose,
+  including commercially
+
+Under the following terms:
+
+- **Attribution** — You must give appropriate credit, provide a link to the
+  licence, and indicate if changes were made. You may do so in any reasonable
+  manner, but not in any way that suggests the licensor endorses you or your use.
+- **No additional restrictions** — You may not apply legal terms or technological
+  measures that legally restrict others from doing anything the licence permits.
+
+The full legal text is at <https://creativecommons.org/licenses/by/4.0/legalcode>
+and a plain-language summary at <https://creativecommons.org/licenses/by/4.0/>.
+The full text governs; the summary above is not a substitute for it.
+
+## Suggested attribution
+
+```
+Spider-Man Media Dataset, https://github.com/<your-user>/spiderman-dataset,
+licensed under CC BY 4.0.
+```
+
+## Third-party notices
+
+Person records (birth/death dates, birth places, IMDb / Wikidata / TMDB
+identifiers) are derived from **The Movie Database (TMDB)**. This product uses the
+TMDB API but is not endorsed or certified by TMDB. If you redistribute this
+dataset or a derivative of it, carry this notice forward. See
+<https://www.themoviedb.org/api-terms-of-use>.
+
+Factual records were compiled from Wikipedia (Spider-Man in film / television /
+video games), Box Office Mojo, Rotten Tomatoes, Metacritic and IMDb. This
+repository asserts no copyright over the underlying facts, which are not
+copyrightable subject matter; the licence above covers the compilation, schema,
+normalization and identity resolution work.
+
+Spider-Man and all related characters, names and marks are trademarks of Marvel
+Characters, Inc. This dataset is unaffiliated with and unendorsed by Marvel, Sony
+Pictures or any rights holder. It records factual information about published
+works and contains no copyrighted media — no images, audio, video or text of the
+works themselves.

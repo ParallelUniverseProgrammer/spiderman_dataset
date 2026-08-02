@@ -1,13 +1,175 @@
-# Spider-Man Media Dataset (v4)
+# Spider-Man Media Dataset
 
-A normalized SQLite database of Spider-Man movies, TV shows, and video games,
-with linked lookup/junction tables. CSV exports are also provided for every table.
+[![Data licence: CC BY 4.0](https://img.shields.io/badge/data-CC%20BY%204.0-blue.svg)](LICENSE-DATA)
+[![Code licence: MIT](https://img.shields.io/badge/code-MIT-green.svg)](LICENSE)
+[![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue.svg)](https://www.python.org/)
+[![Dependencies: none](https://img.shields.io/badge/dependencies-none-brightgreen.svg)](#reproducing-the-build)
 
-Build with `python3 build_db_v2.py`. The script is idempotent: it drops and
-rebuilds `spiderman.db` and every CSV from `data_raw/*.json`, then runs a
-validation pass and exits non-zero if any integrity, enum or export check fails.
+**Every Spider-Man movie, TV series and video game ever released — 1967 to 2026 —
+normalized into a 24-table SQLite database with cast, characters, studios, budgets,
+box office, review scores and comic sources.**
 
-## Database Schema
+Not a scraped CSV dump. Character names are resolved to *identities* (416 credit
+strings → 270 real characters), review scores are normalized onto a common 0–100
+scale, and every counting trap in the data is documented rather than left for you
+to fall into. The build is offline, dependency-free and byte-for-byte reproducible.
+
+```
+81 works  ·  270 characters  ·  581 people  ·  826 cast & crew credits
+24 tables  ·  4 analysis views  ·  25 CSV exports  ·  484 KB
+```
+
+| | |
+|---|---|
+| **Movies** | 23 — live-action and animated, 1977–2026, including the Sony spin-offs |
+| **TV shows** | 15 — 4 live-action, 11 animated, 1967–2026 |
+| **Games** | 43 — 1982 Atari 2600 through *Marvel's Spider-Man 2* (2023) |
+| **Format** | SQLite (`spiderman.db`) + one CSV per table + a denormalized flat CSV |
+| **Provenance** | Wikipedia, Box Office Mojo, Rotten Tomatoes, Metacritic, IMDb, TMDB |
+
+**Contents** — [Quickstart](#quickstart) · [Example queries](#example-queries) ·
+[Schema](#schema) · [Read this before you count](#read-this-before-you-count) ·
+[Files](#files) · [Reproducing the build](#reproducing-the-build) ·
+[Coverage & limitations](#coverage--limitations) · [Licence](#licence--attribution)
+
+---
+
+## Quickstart
+
+```bash
+git clone https://github.com/<your-user>/spiderman-dataset.git
+cd spiderman-dataset
+sqlite3 spiderman.db "SELECT title, release_year FROM media_works ORDER BY release_year LIMIT 5;"
+```
+
+No build step and nothing to install — `spiderman.db` and the CSVs are committed.
+
+<details>
+<summary><b>pandas</b></summary>
+
+```python
+import sqlite3, pandas as pd
+
+con = sqlite3.connect("spiderman.db")
+films = pd.read_sql("SELECT * FROM v_film_economics", con)
+
+# or skip SQL entirely — one row per work, 42 columns
+flat = pd.read_csv("data/spiderman_all_media_flat.csv")
+```
+</details>
+
+<details>
+<summary><b>Just the CSVs</b></summary>
+
+`data/` holds one CSV per table plus `spiderman_all_media_flat.csv`, a
+denormalized single-row-per-work view with studios, platforms, budget, gross and
+review averages already joined. Good for a spreadsheet or a quick notebook; use
+the database when you need the character and credit relationships.
+</details>
+
+---
+
+## Example queries
+
+Every query below is copy-pasteable and the output is real.
+
+<details open>
+<summary><b>Which films earned the most per dollar spent?</b></summary>
+
+```sql
+SELECT title, release_year, production_budget_usd, lifetime_worldwide_usd,
+       ROUND(gross_multiple, 2) AS multiple
+FROM v_film_economics
+WHERE gross_multiple IS NOT NULL
+ORDER BY gross_multiple DESC
+LIMIT 5;
+```
+
+| title | release_year | production_budget_usd | lifetime_worldwide_usd | multiple |
+|---|---|---|---|---|
+| Spider-Man: No Way Home | 2021 | 200000000 | 1921000000 | 9.61 |
+| Venom | 2018 | 100000000 | 856100000 | 8.56 |
+| Spider-Man: Far From Home | 2019 | 160000000 | 1133000000 | 7.08 |
+| Spider-Man: Across the Spider-Verse | 2023 | 100000000 | 690800000 | 6.91 |
+| Spider-Man | 2002 | 139000000 | 826800000 | 5.95 |
+</details>
+
+<details>
+<summary><b>Who are the most-adapted characters?</b></summary>
+
+```sql
+SELECT canonical_name, alignment, COUNT(*) AS works
+FROM v_character_work          -- spellings already collapsed to one identity
+GROUP BY identity_id
+ORDER BY works DESC
+LIMIT 8;
+```
+
+| canonical_name | alignment | works |
+|---|---|---|
+| Peter Parker / Spider-Man | hero | 70 |
+| Green Goblin / Norman Osborn | villain | 27 |
+| J. Jonah Jameson | neutral | 23 |
+| Eddie Brock / Venom | villain | 23 |
+| Doctor Octopus | villain | 23 |
+| Mary Jane Watson | hero | 20 |
+| Electro | villain | 18 |
+| Aunt May | hero | 18 |
+
+Query `v_character_work`, not `work_characters` — the raw table splits Spider-Man
+across 7 credit spellings. See [Characters vs credit strings](#characters-vs-credit-strings).
+</details>
+
+<details>
+<summary><b>How do outlets differ on the games?</b></summary>
+
+```sql
+SELECT publication, COUNT(*) AS scores, ROUND(AVG(score_pct), 1) AS avg_pct
+FROM v_review_by_publication   -- outlet split out from the reviewed platform
+GROUP BY publication
+HAVING scores >= 8
+ORDER BY avg_pct DESC;
+```
+
+| publication | scores | avg_pct |
+|---|---|---|
+| Game Informer | 14 | 76.8 |
+| IGN | 35 | 74.6 |
+| Destructoid | 8 | 73.1 |
+| GameSpot | 36 | 69.9 |
+| GameRankings | 28 | 68.7 |
+| Metacritic | 87 | 68.5 |
+
+`score_pct` normalizes every scale (10-point, 5-star, 100) onto 0–100 so outlets
+are comparable at all.
+</details>
+
+<details>
+<summary><b>How deeply is each medium catalogued?</b></summary>
+
+```sql
+SELECT media_type,
+       COUNT(DISTINCT identity_id) AS distinct_characters,
+       COUNT(*)                    AS appearances
+FROM v_character_work
+GROUP BY media_type;
+```
+
+| media_type | distinct_characters | appearances |
+|---|---|---|
+| game | 164 | 481 |
+| movie | 135 | 230 |
+| tv_show | 46 | 81 |
+
+Read this one as a caveat, not a finding — see
+[Counting appearances](#counting-appearances).
+</details>
+
+---
+
+## Schema
+
+24 tables, 4 views, 17 indexes. Row counts are current as of the committed build.
 
 ```
 franchises (id, name, description)                              -- 13 rows
@@ -28,8 +190,7 @@ character_identities (id, canonical_name, alignment, first_comic_title,
 characters (id, name, alias, alignment, alignment_raw,
             first_comic_title, first_comic_year, identity_id)    -- 416 rows
       alignment CHECK IN (hero, villain, neutral, antihero); alignment_raw keeps
-      the unnormalized research string. See "Characters vs credit strings" below:
-      416 credit strings name 270 distinct characters.
+      the unnormalized research string.
 work_characters (work_id, character_id, actor_person_id, billing_order, notes) -- 801 rows
 cast_crew (work_id, person_id, role, character_name, credit_order)             -- 826 rows
 game_releases (id, game_work_id, platform_id, release_date, publisher,
@@ -37,10 +198,9 @@ game_releases (id, game_work_id, platform_id, release_date, publisher,
 review_scores (work_id, source, publication, platform_scope, score, max_score,
                score_pct, review_count)                                        -- 270 rows
       max_score is inferred from the publication's known scale when the research
-      omits it; score_pct normalizes every score onto 0-100 for cross-source
-      comparison. source is the raw research string and embeds the reviewed
-      platform ("Metacritic (PS3)"), giving 128 distinct strings for 36 outlets;
-      GROUP BY publication, not source.
+      omits it; score_pct normalizes every score onto 0-100. source is the raw
+      research string and embeds the reviewed platform ("Metacritic (PS3)"),
+      giving 128 distinct strings for 36 outlets; GROUP BY publication, not source.
 studios (id, name, country, parent_company)                                    -- 104 rows
 work_studios (work_id, studio_id, role)                                        -- 286 rows
       PRIMARY KEY (work_id, studio_id, role) — a studio is often both developer
@@ -51,7 +211,7 @@ box_office (id, work_id, scope, week_number, week_start_date, domestic_usd,
             international_usd, worldwide_usd)                                  -- 20 rows
       UNIQUE (work_id, scope, week_number)
       scope CHECK IN (week, lifetime). 16 rows are full-run totals; 4 are a real
-      weekly series. See "Reading box_office" below.
+      weekly series.
 budgets (id, work_id, amount_usd, currency, component, inflation_adj_2024,
          source_year, is_primary, note)                                        -- 18 rows
       UNIQUE (work_id, component, amount_usd). A component may carry rival
@@ -60,9 +220,6 @@ budgets (id, work_id, amount_usd, currency, component, inflation_adj_2024,
 awards (work_id, award_body, year, category, result, recipient_person_id)      -- 21 rows
 episodes (id, show_work_id, season_number, episode_number, title, air_date,
           runtime_minutes, director, writer, us_viewers_millions)              -- 50 rows
-      Only rows carrying an episode number. The research also supplies 31
-      "Season N summary" placeholders and the 1977 pilot TV movie (already its
-      own media_works row); none are episodes and the build drops them.
 work_relations (work_a_id, work_b_id, relation_type)                           -- 159 rows
 source_material (id, work_id, comic_title, issue_range, comic_writer,
                  comic_year, storyline_arc)                                    -- 142 rows
@@ -75,13 +232,26 @@ game_platforms (game_id, platform_id)                                          -
 people (id, name, birth_date, death_date, birth_place, nationality,
         imdb_id, wikidata_id, tmdb_id, external_match_method)                  -- 581 rows
 work_people (work_id, person_id, role)                                         -- 517 rows
-
---- Analysis views ---
-v_character_appearances   work_characters resolved to character_identities
-v_character_work          one row per (character, work), spellings collapsed
-v_film_economics          lifetime gross vs primary production budget, + multiple
-v_review_by_publication   review scores with the outlet split from the platform
 ```
+
+### Analysis views
+
+Prefer these over the raw tables for anything you plan to aggregate.
+
+| View | Rows | What it does |
+|---|---|---|
+| `v_character_work` | 792 | One row per (character, work) with spellings collapsed to one identity. **Use this to count characters.** |
+| `v_character_appearances` | 801 | `work_characters` resolved to `character_identities`, keeping the actor and billing order. |
+| `v_film_economics` | 23 | Lifetime gross vs primary production budget, plus `gross_multiple`. |
+| `v_review_by_publication` | 270 | Review scores with the outlet split out from the reviewed platform. |
+
+---
+
+## Read this before you count
+
+The dataset is normalized, but a few tables carry traps that produce
+confident-looking wrong answers. Each one is described here and reported by the
+build on every run.
 
 ### Characters vs credit strings
 
@@ -116,8 +286,12 @@ how `Olivia Octavius / Doctor Octopus` avoids being merged into Otto. Prowler
 (Aaron Davis / Hobie Brown / Miles G. Morales) and Hobgoblin (Roderick Kingsley /
 Ned Leeds) have no dominant bearer and so have no default at all.
 
-Count characters with `v_character_work`, not `work_characters` — the latter
-splits Spider-Man across 7 rows and Doctor Octopus across 4.
+> **Count characters with `v_character_work`, not `work_characters`** — the latter
+> splits Spider-Man across 7 rows and Doctor Octopus across 4.
+
+Where a character's spellings disagreed on alignment (14 identities, e.g.
+`May Parker`=hero vs `Aunt May`=neutral), `character_identities.alignment` takes
+the majority; the per-row research values stay in `characters`.
 
 ### Counting appearances
 
@@ -135,13 +309,10 @@ The rosters are also not researched to equal depth per medium:
 | tv_show | 15 | 81 | 5.4 |
 
 Games hold **61%** of all character links, television **10%**. So an appearance
-count is partly a measure of how thoroughly a work was catalogued, and totals are
-**not comparable across media** — compare within a medium, or read the per-medium
-split rather than the total. The build prints this table on every run.
+count is partly a measure of how thoroughly a work was catalogued.
 
-Where a character's spellings disagreed on alignment (14 identities, e.g.
-`May Parker`=hero vs `Aunt May`=neutral), `character_identities.alignment` takes
-the majority; the per-row research values stay in `characters`.
+> **Appearance totals are not comparable across media.** Compare within a medium,
+> or read the per-medium split rather than the total.
 
 ### Reading `box_office`
 
@@ -150,34 +321,9 @@ Two different measurements share this table. 16 of the 17 films carry a single
 *Venom: The Last Dance* has a genuine week-by-week series. Reading every week-1
 row as an opening week compares one film's lifetime gross against another film's
 first seven days — the 2002 *Spider-Man* row alone would report a $403.7M
-"opening week". `scope` disambiguates, and the build rejects any row without one.
+"opening week".
 
-### People enrichment
-
-Birth/death dates and IMDb/Wikidata/TMDB ids come from TMDB, fetched by a separate
-script so the build itself stays offline and deterministic:
-
-```bash
-export TMDB_TOKEN='<your TMDB v4 read access token>'
-python3 fetch_tmdb_people.py          # writes data_raw/people_external.json
-python3 build_db_v2.py                # reads that file, no network needed
-```
-
-`external_match_method` records how each person was identified:
-
-- `work_credits` (351) — the name was found in the credit list of a film or series
-  it is credited on in this dataset. Correct by construction.
-- `search_verified` (16) — resolved by name search, then confirmed by checking that
-  the person's TMDB credits actually include a franchise title.
-
-A name search that returns exactly one person is *not* proof of identity: TMDB has
-a 1885-born Edward J. Montagne (the father, not the 1977 producer) and one John
-Digweed (the DJ). 90 such matches were rejected by the verification step rather
-than stored. The 214 unresolved people are mostly game developers and composers,
-whom TMDB does not index.
-
-`nationality` is left NULL — TMDB has no nationality field, and birth place is not
-a substitute for it.
+> **Filter on `scope`** (`lifetime` vs `week`). The build rejects any row without one.
 
 ### Reading `work_relations`
 
@@ -193,41 +339,77 @@ direction. The build reports edges whose release order contradicts the declared
 direction rather than flipping them, because a prequel can legitimately ship after
 the work it precedes.
 
+### People and external IDs
+
+`external_match_method` records how each person was identified:
+
+- `work_credits` (351) — the name was found in the credit list of a film or series
+  it is credited on in this dataset. Correct by construction.
+- `search_verified` (16) — resolved by name search, then confirmed by checking that
+  the person's TMDB credits actually include a franchise title.
+
+A name search that returns exactly one person is *not* proof of identity: TMDB has
+an 1885-born Edward J. Montagne (the father, not the 1977 producer) and one John
+Digweed (the DJ). 90 such matches were rejected by the verification step rather
+than stored — an unresolved person is preferable to a confidently wrong one.
+
+---
+
 ## Files
 
-| File | Description |
+| Path | Description |
 |------|-------------|
-| `spiderman.db` | SQLite database (primary, normalized) |
-| `build_db_v2.py` | Idempotent build script (rebuilds DB + CSVs, then validates) |
-| `fetch_tmdb_people.py` | Optional network step: resolves `people` against TMDB |
-| `build_db.py` | v1 legacy build script, superseded |
+| `spiderman.db` | SQLite database — the primary artifact |
+| `data/*.csv` | One CSV per table (24) |
+| `data/spiderman_all_media_flat.csv` | Denormalized one-row-per-work view (42 columns) |
+| `data_raw/movies.json` | Source research: 23 films |
+| `data_raw/games.json` | Source research: 43 games with per-platform releases |
+| `data_raw/tv.json` | Source research: 15 series, 82 episode rows |
 | `data_raw/people_external.json` | TMDB person data (367 people), consumed by the build |
-| `data_raw/movies.json` | Researched movie data (23 films) |
-| `data_raw/games.json` | Researched game data (43 games, per-platform releases) |
-| `data_raw/tv.json` | Researched TV data (15 series, 82 episode rows) |
-| `data/*.csv` | One CSV per table (24 CSVs) |
-| `data/spiderman_all_media_flat.csv` | Denormalized single-row-per-work view (42 columns) |
+| `build_db_v2.py` | The build: rebuilds the DB and every CSV, then validates |
+| `fetch_tmdb_people.py` | Optional network step that regenerates `people_external.json` |
+| `build_db.py` | v1 build script, superseded — kept for history |
+| `AUDIT_REVIEW.md` | Historical QA audit of the v2 build; every issue listed is fixed |
 
 Every research item in `data_raw/` resolves to exactly one work: 23/23 movies,
 15/15 TV series, 43/43 games.
 
-## Key Statistics
+---
 
-- **81 media works** across 13 franchises
-- **23 movies** (live-action + animated, including SSU spin-offs)
-- **15 TV shows** (4 live-action, 11 animated)
-- **43 games** (from 1982 Atari 2600 to 2023's Marvel's Spider-Man 2)
-- **270 distinct characters** across 416 credit strings, all with a normalized alignment
-- **801 work-character links**, 203 of them carrying an actor
-- **826 cast & crew entries** (actors, directors, writers, composers, designers)
-- **286 studio work links** with role
-- **270 review scores** across 30 works and 36 publications (128 raw source strings)
-- **159 work-relation edges**
-- **50 TV episodes** with air dates and metadata, over 5 of the 15 series
-- **142 source material references** linking media to underlying comics
-- **367 people** resolved to TMDB, with verified IMDb and Wikidata IDs
+## Reproducing the build
 
-Coverage of works with at least one enrichment row:
+```bash
+python3 build_db_v2.py
+```
+
+Python 3.9+, **standard library only** — no pip install, no network. The script
+drops and rebuilds `spiderman.db` and all 25 CSVs from `data_raw/*.json`, then runs
+a validation pass over foreign keys, enum constraints and export integrity, exiting
+non-zero if any check fails. It is deterministic: rebuilding from a clean checkout
+reproduces the committed artifacts byte for byte.
+
+The run also prints its own quality report — row counts, research match rate,
+per-table coverage, fully-NULL columns, dropped rows and every contradiction it
+found but chose not to silently correct.
+
+<details>
+<summary><b>Refreshing the TMDB person data (optional)</b></summary>
+
+Person birth/death dates and IMDb/Wikidata/TMDB ids come from TMDB, fetched by a
+separate script so the build itself stays offline and deterministic.
+
+```bash
+export TMDB_TOKEN='<your TMDB v4 read access token>'
+python3 fetch_tmdb_people.py   # writes data_raw/people_external.json
+python3 build_db_v2.py         # reads that file, no network needed
+```
+</details>
+
+---
+
+## Coverage & limitations
+
+Works with at least one enrichment row:
 
 | Table | Works covered |
 |-------|---------------|
@@ -237,8 +419,6 @@ Coverage of works with at least one enrichment row:
 | `cast_crew` | 70/81 (86%) |
 | `work_relations` | 68/81 (83%) |
 | `review_scores` | 30/81 (37%) |
-
-## Known Limitations
 
 These are data-availability gaps, not build defects. The build reports each one.
 
@@ -260,17 +440,35 @@ These are data-availability gaps, not build defects. The build reports each one.
 - **`episodes`** — 50 episodes over 5 of the 15 series, and complete only for
   those five. The other ten series have no episode-level data at all: what the
   research supplies for them is a per-season summary row, which the build drops
-  because it is not an episode. (v3 loaded those 31 placeholders, which is why it
-  reported 82 rows over 14 series.)
+  because it is not an episode.
 - **`review_scores`** — concentrated on games; most films and series have none.
 - **Unreleased works** (*Beyond the Spider-Verse*, *Brand New Day*, *El Muerto*,
   *Spider-Noir*, *Marvel's Spider-Man 3*) carry announced credits only, and no
   review, budget or box office figures.
 
-## Research Sources
+---
 
-Wikipedia (Spider-Man in film / television / video games articles),
-Box Office Mojo, Rotten Tomatoes, Metacritic, IMDb.
+## Licence & attribution
 
-Person records come from **The Movie Database (TMDB)**. This product uses the TMDB
-API but is not endorsed or certified by TMDB.
+- **Data** (`spiderman.db`, `data/`, `data_raw/`) — [CC BY 4.0](LICENSE-DATA).
+  Use it commercially, remix it, redistribute it; just credit the source.
+- **Code** (`*.py`) — [MIT](LICENSE).
+
+Suggested citation:
+
+```
+Spider-Man Media Dataset, https://github.com/<your-user>/spiderman-dataset,
+CC BY 4.0.
+```
+
+### Sources
+
+Factual records were compiled from Wikipedia (Spider-Man in film / television /
+video games), Box Office Mojo, Rotten Tomatoes, Metacritic and IMDb.
+
+Person records come from **The Movie Database (TMDB)**.
+*This product uses the TMDB API but is not endorsed or certified by TMDB.*
+
+Spider-Man and all related characters are trademarks of Marvel Characters, Inc.
+This is an unaffiliated dataset of factual information about published works, and
+contains no copyrighted media.
