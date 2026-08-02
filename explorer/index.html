@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spider-Man Media Dataset — explorer</title>
+<meta name="description" content="Interactive explorer for every Spider-Man movie, TV series and video game, 1967–2026, with cast, characters, studios, box office and review scores.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M12 2.6c1.4 0 2.7.5 3.6 1.3M12 2.6c-1.4 0-2.7.5-3.6 1.3M12 21.4c1.4 0 2.7-.5 3.6-1.3M12 21.4c-1.4 0-2.7-.5-3.6-1.3M2.6 8.3 7 10.4M2.6 15.7 7 13.6M21.4 8.3 17 10.4M21.4 15.7 17 13.6' fill='none' stroke='%23eb6834' stroke-width='1.6' stroke-linecap='round'/%3E%3Ccircle cx='12' cy='12' r='3.6' fill='none' stroke='%23eb6834' stroke-width='1.6'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="top">
+  <div class="top-inner">
+    <a class="brand" href="#/overview">Spider-Man dataset</a>
+    <nav class="tabs" aria-label="Sections">
+      <a href="#/overview">Overview</a>
+      <a href="#/works">Works</a>
+      <a href="#/characters">Characters</a>
+      <a href="#/people">People</a>
+      <a href="#/about">About the data</a>
+    </nav>
+    <div class="spacer"></div>
+    <div class="search-wrap">
+      <input id="search" type="search" placeholder="Search works, characters, people" autocomplete="off" aria-label="Search the dataset">
+      <span class="icon-slot"></span>
+      <kbd>/</kbd>
+      <div id="results" class="results" role="listbox" aria-label="Search results"></div>
+    </div>
+    <button id="theme-btn" class="icon-btn" type="button" aria-label="Toggle light and dark theme" title="Toggle theme"></button>
+  </div>
+</header>
+
+<main id="app"></main>
+
+<footer class="foot">
+  <p id="foot-line"></p>
+</footer>
+
+<!-- data.js assigns window.SPIDERMAN_DATA, so the page also opens straight from disk.
+     data.json holds the same payload for anyone who wants to fetch it. -->
+<script src="data.js"></script>
+<script src="app.js" defer></script>
+
+</body>
+</html>
