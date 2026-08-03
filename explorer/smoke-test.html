@@ -72,7 +72,8 @@ f.onload = async () => {
   await nav("#/character/27");
   check("character detail", d.querySelector("h1").textContent.includes("Peter Parker"));
   check("appearances table", qa("tbody tr").length >= 60, qa("tbody tr").length);
-  check("variants listed", qa("section.block")[1].querySelectorAll(".chip").length > 5);
+  const variantsSection = qa("section.block").find((s) => s.querySelector("h2").textContent.startsWith("Credit spellings collapsed"));
+  check("variants listed", !!variantsSection && variantsSection.querySelectorAll(".chip").length > 5);
 
   await nav("#/people");
   check("people rows", qa("tbody tr").length === 581, qa("tbody tr").length);
@@ -171,14 +172,15 @@ f.onload = async () => {
   await nav("#/overview");
   check("overview tiles link to dimensions", qa('.kpi[href="#/platforms"]').length === 1);
 
-  // Nothing should open a new browsing context — every link stays in this tab.
+  // Nothing should open a new browsing context except a genuine outbound link (IMDb,
+  // Wikipedia, …) — every internal hash route stays in this tab.
   const offenders = [];
   for (const h of ["#/overview", "#/works", "#/work/13", "#/person/35", "#/character/27",
                    "#/franchise/MCU", "#/studios", "#/platforms", "#/analysis", "#/about"]) {
     await nav(h);
-    for (const a of qa("a[target]")) offenders.push(h + " " + a.textContent.trim());
+    for (const a of qa("a[target]")) if (!/^https?:\/\//.test(a.getAttribute("href") || "")) offenders.push(h + " " + a.textContent.trim());
   }
-  check("no link opens a new tab", offenders.length === 0, offenders.join(", "));
+  check("no internal link opens a new tab", offenders.length === 0, offenders.join(", "));
 
   // Header links must not perform a real navigation — the viewer would spawn a tab.
   await nav("#/overview");
@@ -212,7 +214,7 @@ f.onload = async () => {
   const sectionTitles = () => qa("section.block h2").map((h) => h.textContent.replace(/\d+$/, "").trim());
 
   await nav("#/publications");
-  check("outlet rows", qa("tbody tr").length === 36, qa("tbody tr").length);
+  check("outlet rows", qa("tbody tr").length === 59, qa("tbody tr").length);
   qa("tbody .row-link")[0].click(); await wait(200);
   check("outlet detail", w.location.hash.startsWith("#/publication/") && sectionTitles().includes("Scores"), w.location.hash);
 
@@ -222,9 +224,9 @@ f.onload = async () => {
   check("comic detail", sectionTitles().includes("Adapted by"), sectionTitles().join("|"));
 
   await nav("#/awards");
-  check("award body rows", qa("tbody tr").length === 8, qa("tbody tr").length);
+  check("award body rows", qa("tbody tr").length === 24, qa("tbody tr").length);
   await nav("#/award/" + encodeURIComponent("Academy Awards"));
-  check("award detail", d.querySelector("h1").textContent === "Academy Awards" && qa("tbody tbody, tbody")[0].querySelectorAll("tr").length === 8, qa("tbody")[0].querySelectorAll("tr").length);
+  check("award detail", d.querySelector("h1").textContent === "Academy Awards" && qa("tbody tbody, tbody")[0].querySelectorAll("tr").length === 9, qa("tbody")[0].querySelectorAll("tr").length);
 
   await nav("#/roles");
   check("role rows", qa("tbody tr").length === 62, qa("tbody tr").length);

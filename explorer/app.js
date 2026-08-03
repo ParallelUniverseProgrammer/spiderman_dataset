@@ -92,6 +92,13 @@ for (const w of works) {
   w.platforms = w.platforms || [];
   w.sources = w.sources || [];
   w.soundtracks = w.soundtracks || [];
+  w.genres = w.genres || [];
+  w.countries = w.countries || [];
+  w.languages = w.languages || [];
+  w.content_ratings = w.content_ratings || [];
+  w.release_dates = w.release_dates || [];
+  w.places = w.places || [];
+  w.box_office_regions = w.box_office_regions || [];
   const scored = w.reviews.filter((r) => r.pct != null);
   w.avg_pct = scored.length ? scored.reduce((a, r) => a + r.pct, 0) / scored.length : null;
   w.gross = w.box_office?.worldwide ?? null;
@@ -107,12 +114,17 @@ for (const w of works) {
 for (const c of characters) {
   c.appearances = c.appearances || [];
   c.variants = c.variants || [];
+  c.external_ids = c.external_ids || [];
   c.n_works = c.n_works || 0;
   c.by_type = { movie: 0, tv_show: 0, game: 0 };
   for (const wid of new Set(c.appearances.map((a) => a.work_id))) c.by_type[workById.get(wid).type]++;
 }
 for (const p of people) {
   p.credits = p.credits || [];
+  p.occupations = p.occupations || [];
+  p.citizenships = p.citizenships || [];
+  p.awards = p.awards || [];
+  p.external_ids = p.external_ids || [];
   p.n_works = new Set(p.credits.map((c) => c.work_id)).size;
   p.roles = [...new Set(p.credits.map((c) => c.role))];
   p.is_actor = p.roles.some((r) => r === "actor" || r === "voice actor");
@@ -120,6 +132,10 @@ for (const p of people) {
 }
 
 const FRANCHISES = [...new Set(works.map((w) => w.franchise).filter(Boolean))].sort();
+const GENRES = [...new Set(works.flatMap((w) => w.genres))].sort();
+const COUNTRIES = [...new Set(works.flatMap((w) => w.countries))].sort();
+const LANGUAGES = [...new Set(works.flatMap((w) => w.languages))].sort();
+const NATIONALITIES = [...new Set(people.map((p) => p.nationality).filter(Boolean))].sort();
 
 /* ---------- derived indexes: dimensions the database holds but no single row names ---------- */
 
@@ -405,6 +421,9 @@ const FACETS = {
   "studio-role": { label: "Studio credit", title: (v) => `Works with a ${v.replace(/_/g, " ")} credit`, get: (w) => w.studios.map((st) => st.role) },
   relation: { label: "Work relation", title: (v) => `Works carrying a “${v}” link`, get: (w) => w.relations.map((r) => r.label) },
   "credited-as": { label: "Credit spelling", title: (v) => `Credited as “${v}”`, get: (w) => w.characters.map((c) => c.as) },
+  "content-genre": { label: "Genre", title: (v) => `${v} works`, get: (w) => w.genres },
+  country: { label: "Country", title: (v) => `Works made in ${v}`, get: (w) => w.countries },
+  language: { label: "Language", title: (v) => `Works in ${v}`, get: (w) => w.languages },
 };
 
 const facetCache = new Map();
@@ -438,8 +457,8 @@ function findEverywhere(q) {
   const add = (kind, hits) => hits.length && groups.push({ kind, hits });
 
   add("Works", works.filter((w) => has(w.title) || has(w.notes) || has(w.maker)).map((w) => ({ label: w.title, sub: `${yr(w)} · ${TYPE[w.type].one}`, hash: "#/work/" + w.id })));
-  add("Characters", characters.filter((c) => has(c.name) || c.variants.some(has) || has(c.first_comic)).map((c) => ({ label: c.name, sub: `${c.n_works} work${c.n_works === 1 ? "" : "s"}`, hash: "#/character/" + c.id })));
-  add("People", people.filter((p) => has(p.name) || has(p.place)).map((p) => ({ label: p.name, sub: p.roles.slice(0, 3).join(", "), hash: "#/person/" + p.id })));
+  add("Characters", characters.filter((c) => has(c.name) || c.variants.some(has) || has(c.first_comic) || has(c.gender) || has(c.publisher) || has(c.universe) || has(c.creators)).map((c) => ({ label: c.name, sub: `${c.n_works} work${c.n_works === 1 ? "" : "s"}`, hash: "#/character/" + c.id })));
+  add("People", people.filter((p) => has(p.name) || has(p.place) || has(p.gender) || has(p.nationality) || has(p.birth_country) || has(p.death_place) || has(p.birth_name) || p.occupations.some(has) || p.citizenships.some(has)).map((p) => ({ label: p.name, sub: p.roles.slice(0, 3).join(", "), hash: "#/person/" + p.id })));
   add("Franchises", [...franchiseIndex.values()].filter((g) => has(g.name) || has(g.description)).map((g) => ({ label: g.name, sub: `${g.n_works} works`, hash: "#/franchise/" + encodeURIComponent(g.name) })));
   add("Studios", [...studioIndex.values()].filter((g) => has(g.name)).map((g) => ({ label: g.name, sub: `${g.n_works} works`, hash: "#/studio/" + encodeURIComponent(g.name) })));
   add("Platforms", [...platformIndex.values()].filter((g) => has(g.name)).map((g) => ({ label: g.name, sub: `${g.n_works} games`, hash: "#/platform/" + encodeURIComponent(g.name) })));
@@ -474,9 +493,9 @@ function findEverywhere(q) {
 /* Every list view's filter defaults. Absent from the URL means "this value".
    `focus` is not a filter — it is the row a link asked us to point at. */
 const DEFAULTS = {
-  works: { type: "all", franchise: "all", era: "all", sort: "year", dir: 1, q: "", focus: "" },
+  works: { type: "all", franchise: "all", era: "all", genre: "all", country: "all", language: "all", sort: "year", dir: 1, q: "", focus: "" },
   characters: { align: "all", sort: "n_works", dir: -1, q: "", focus: "" },
-  people: { kind: "all", sort: "n_works", dir: -1, q: "", focus: "" },
+  people: { kind: "all", nationality: "all", sort: "n_works", dir: -1, q: "", focus: "" },
   franchises: { sort: "n_works", dir: -1, q: "" },
   studios: { sort: "n_works", dir: -1, q: "" },
   platforms: { sort: "n_works", dir: -1, q: "" },
@@ -693,6 +712,25 @@ function franchiseLink(name, maxLen) {
     title: name,
     onclick: () => go("#/franchise/" + encodeURIComponent(name)),
   });
+}
+
+const SOURCE_LABELS = {
+  wikidata: "Wikidata", imdb: "IMDb", tmdb_movie: "TMDB", tmdb_tv: "TMDB", tmdb_person: "TMDB",
+  rotten_tomatoes: "Rotten Tomatoes", metacritic: "Metacritic", letterboxd: "Letterboxd",
+  steam: "Steam", giant_bomb: "Giant Bomb", box_office_mojo: "Box Office Mojo",
+  the_numbers: "The Numbers", official_website: "Official site", commons_category: "Wikimedia Commons",
+  musicbrainz_artist: "MusicBrainz", comic_vine: "Comic Vine",
+};
+
+/* Real outbound links — a genuine <a href>, not a hash route, so they get the browser's
+   native new-tab / copy-link handling instead of the app's internal router. */
+function externalLinksRow(list) {
+  if (!list || !list.length) return null;
+  return el(
+    "div",
+    { class: "chip-list" },
+    list.map((x) => el("a", { class: "chip", href: x.url, target: "_blank", rel: "noopener", text: SOURCE_LABELS[x.source] || x.source }))
+  );
 }
 
 function dimChip(name, hash, sub) {
@@ -1441,6 +1479,9 @@ function viewWorks(_id, query) {
         if (w.year !== e) return false;
       } else if (!w.year || w.year < e || w.year >= e + 10) return false;
     }
+    if (f.genre !== "all" && !w.genres.includes(f.genre)) return false;
+    if (f.country !== "all" && !w.countries.includes(f.country)) return false;
+    if (f.language !== "all" && !w.languages.includes(f.language)) return false;
     if (f.q) {
       const hay = (w.title + " " + (w.franchise || "") + " " + (w.maker || "")).toLowerCase();
       if (!hay.includes(f.q.toLowerCase())) return false;
@@ -1503,6 +1544,30 @@ function viewWorks(_id, query) {
         f.franchise,
         (v) => applyFilters("works", { ...f, franchise: v })
       ),
+      GENRES.length
+        ? selectBox(
+            "Genre",
+            [{ value: "all", label: "All genres" }, ...GENRES.map((x) => ({ value: x, label: x }))],
+            f.genre,
+            (v) => applyFilters("works", { ...f, genre: v })
+          )
+        : null,
+      COUNTRIES.length
+        ? selectBox(
+            "Country",
+            [{ value: "all", label: "All countries" }, ...COUNTRIES.map((x) => ({ value: x, label: x }))],
+            f.country,
+            (v) => applyFilters("works", { ...f, country: v })
+          )
+        : null,
+      LANGUAGES.length
+        ? selectBox(
+            "Language",
+            [{ value: "all", label: "All languages" }, ...LANGUAGES.map((x) => ({ value: x, label: x }))],
+            f.language,
+            (v) => applyFilters("works", { ...f, language: v })
+          )
+        : null,
       filterInput("Filter titles…", f.q, (v) => applyFilters("works", { ...f, q: v })),
       resetButton("works", f),
       csvButton("spiderman-works.csv", () => tableNode),
@@ -1569,6 +1634,17 @@ function viewWork(id) {
     )
   );
 
+  if (w.summary?.text) {
+    frag.appendChild(
+      el(
+        "p",
+        { style: { color: "var(--text-secondary)", maxWidth: "78ch", marginTop: "10px" } },
+        w.summary.text,
+        w.summary.url ? el("a", { href: w.summary.url, target: "_blank", rel: "noopener", style: { marginLeft: "6px" }, text: "Wikipedia ↗" }) : null
+      )
+    );
+  }
+
   /* Stat tiles carry a destination wherever the catalogue can answer "compared with what?" —
      the ranked list, with this work pointed at. */
   const rank = (sort) => `#/works?sort=${sort}&dir=-1&focus=${w.id}`;
@@ -1618,6 +1694,104 @@ function viewWork(id) {
   if (w.box_office?.domestic) addFact("Domestic gross", softLink(money(w.box_office.domestic), rank("gross")));
   if (w.box_office?.international) addFact("International gross", softLink(money(w.box_office.international), rank("gross")));
   if (facts.length) frag.appendChild(section("Details", null, el("div", { class: "card deflist" }, facts)));
+
+  /* genre / country / language — columns in the source, not tables of their own, so they
+     ride the same facet mechanism as MPAA rating or network. */
+  if (w.genres.length || w.countries.length || w.languages.length) {
+    const row = (label, key, values) =>
+      values.length
+        ? el(
+            "div",
+            null,
+            el("div", { class: "k", text: label }),
+            el("div", { class: "chip-list", style: { marginTop: "4px" } }, values.map((v) => facetLink(key, v, v)))
+          )
+        : null;
+    frag.appendChild(
+      section(
+        "Classification",
+        null,
+        el(
+          "div",
+          { class: "card", style: { display: "grid", gap: "10px" } },
+          row("Genre", "content-genre", w.genres),
+          row("Country", "country", w.countries),
+          row("Language", "language", w.languages)
+        )
+      )
+    );
+  }
+
+  if (w.content_ratings.length) {
+    frag.appendChild(
+      section(
+        "Content ratings",
+        w.content_ratings.length,
+        table(
+          [
+            { key: "r", label: "Rating", cell: (r) => facetLink("rating", r.rating) },
+            { key: "c", label: "Country", wrap: true, cell: (r) => (r.country ? findLink(r.country) : dash()) },
+            { key: "n", label: "Reason", wrap: true, cell: (r) => r.reason || el("span", { class: "muted", text: "—" }) },
+          ],
+          w.content_ratings,
+          { plain: true }
+        )
+      )
+    );
+  }
+
+  if (w.release_dates.length > 1) {
+    frag.appendChild(
+      section(
+        "Release dates",
+        w.release_dates.length,
+        table(
+          [
+            { key: "d", label: "Date", cell: (r) => dateLink(r.date) },
+            { key: "p", label: "Place", wrap: true, cell: (r) => (r.place ? findLink(r.place) : dash()) },
+            { key: "e", label: "Event", wrap: true, cell: (r) => r.event || el("span", { class: "muted", text: "—" }) },
+          ],
+          [...w.release_dates].sort((a, b) => (a.date || "").localeCompare(b.date || "")),
+          { plain: true }
+        )
+      )
+    );
+  }
+
+  if (w.places.length) {
+    const byRole = { narrative: [], filming: [] };
+    for (const p of w.places) (byRole[p.role] || (byRole[p.role] = [])).push(p.place);
+    frag.appendChild(
+      section(
+        "Places",
+        w.places.length,
+        el(
+          "div",
+          { class: "card", style: { display: "grid", gap: "10px" } },
+          byRole.narrative?.length ? el("div", null, el("div", { class: "k", text: "Set in" }), el("div", { class: "chip-list", style: { marginTop: "4px" } }, byRole.narrative.map((p) => findLink(p)))) : null,
+          byRole.filming?.length ? el("div", null, el("div", { class: "k", text: "Filmed in" }), el("div", { class: "chip-list", style: { marginTop: "4px" } }, byRole.filming.map((p) => findLink(p)))) : null
+        )
+      )
+    );
+  }
+
+  if (w.box_office_regions.length) {
+    frag.appendChild(
+      section(
+        "Box office by territory",
+        w.box_office_regions.length,
+        table(
+          [
+            { key: "r", label: "Region", cell: (r) => findLink(r.region) },
+            { key: "a", label: "Gross", num: true, cell: (r) => money(r.amount) },
+            { key: "d", label: "As of", cell: (r) => dateLink(r.as_of) },
+          ],
+          w.box_office_regions,
+          { plain: true }
+        )
+      )
+    );
+  }
 
   /* characters */
   if (w.characters.length) {
@@ -1706,6 +1880,7 @@ function viewWork(id) {
 
   /* episodes */
   if (w.episodes.length) {
+    const hasSegments = w.episodes.some((e) => e.segments?.length > 1);
     frag.appendChild(
       section(
         "Episodes on record",
@@ -1715,11 +1890,20 @@ function viewWork(id) {
             { key: "s", label: "S", num: true, cell: (e) => (e.season == null ? "—" : String(e.season)) },
             { key: "e", label: "E", num: true, cell: (e) => (e.episode == null ? "—" : String(e.episode)) },
             { key: "t", label: "Title", wrap: true, cell: (e) => (e.title ? findLink(e.title) : dash()) },
+            hasSegments && {
+              key: "seg",
+              label: "Segments",
+              wrap: true,
+              cell: (e) =>
+                e.segments?.length > 1
+                  ? el("span", { class: "names" }, e.segments.flatMap((sg, i) => [i ? el("span", { class: "sep", text: "·" }) : null, sg.title ? findLink(sg.title) : dash()]).filter(Boolean))
+                  : dash(),
+            },
             { key: "a", label: "Air date", cell: (e) => dateLink(e.air_date) },
             { key: "d", label: "Director", wrap: true, cell: (e) => nameLinks(e.director) },
             { key: "wr", label: "Writer", wrap: true, cell: (e) => nameLinks(e.writer) },
             { key: "v", label: "US viewers", num: true, cell: (e) => (e.viewers_m == null ? dash() : e.viewers_m + "M") },
-          ],
+          ].filter(Boolean),
           w.episodes,
           { plain: true }
         ),
@@ -1946,6 +2130,10 @@ function viewWork(id) {
     );
   }
 
+  if (w.external_ids?.length) {
+    frag.appendChild(section("Elsewhere", w.external_ids.length, externalLinksRow(w.external_ids)));
+  }
+
   return frag;
 }
 
@@ -2128,6 +2316,15 @@ function viewCharacter(id) {
     )
   );
 
+  const cFacts = [];
+  const addCFact = (k, v) => v && cFacts.push(el("div", null, el("div", { class: "k", text: k }), el("div", { class: "v" }, v)));
+  addCFact("Gender", c.gender && findLink(c.gender));
+  addCFact("Publisher", c.publisher && findLink(c.publisher));
+  addCFact("Narrative universe", c.universe && findLink(c.universe));
+  addCFact("Creators", c.creators && nameLinks(c.creators));
+  addCFact("First appearance", c.first_appearance_title && el("span", { class: "names" }, findLink(c.first_appearance_title), c.first_appearance_year ? el("span", { class: "as", text: String(c.first_appearance_year) }) : null));
+  if (cFacts.length) frag.appendChild(section("Details", null, el("div", { class: "card deflist" }, cFacts)));
+
   const tiles = [statTile("Works", String(c.n_works), `#/characters?sort=n_works&dir=-1&focus=${c.id}`, "See it ranked against every character")];
   for (const t of ["movie", "tv_show", "game"]) if (c.by_type[t]) tiles.push(statTile(TYPE[t].label, String(c.by_type[t]), "#/works?type=" + t));
   if (c.first_media_year) tiles.push(statTile("First on screen", String(c.first_media_year), "#/year/" + c.first_media_year));
@@ -2256,6 +2453,10 @@ function viewCharacter(id) {
     );
   }
 
+  if (c.external_ids?.length) {
+    frag.appendChild(section("Elsewhere", c.external_ids.length, externalLinksRow(c.external_ids)));
+  }
+
   return frag;
 }
 
@@ -2290,6 +2491,7 @@ function viewPeople(_id, query) {
   const rows0 = people.filter((p) => {
     if (f.kind === "cast" && !p.is_actor) return false;
     if (f.kind === "crew" && p.is_actor) return false;
+    if (f.nationality !== "all" && p.nationality !== f.nationality) return false;
     if (f.q && !p.name.toLowerCase().includes(f.q.toLowerCase())) return false;
     return true;
   });
@@ -2300,6 +2502,7 @@ function viewPeople(_id, query) {
     credits: (p) => p.credits.length,
     first: (p) => p.years[0] ?? 9999,
     last: (p) => p.years[p.years.length - 1] ?? -1,
+    nationality: (p) => (p.nationality || "~").toLowerCase(),
   }[f.sort] || ((p) => p.n_works);
   const rows = sortRows(rows0, get, f.dir, (p) => p.name);
 
@@ -2327,6 +2530,14 @@ function viewPeople(_id, query) {
         f.kind,
         (v) => applyFilters("people", { ...f, kind: v })
       ),
+      NATIONALITIES.length
+        ? selectBox(
+            "Nationality",
+            [{ value: "all", label: "All nationalities" }, ...NATIONALITIES.map((x) => ({ value: x, label: x }))],
+            f.nationality,
+            (v) => applyFilters("people", { ...f, nationality: v })
+          )
+        : null,
       filterInput("Filter names…", f.q, (v) => applyFilters("people", { ...f, q: v })),
       resetButton("people", f),
       csvButton("spiderman-people.csv", () => tableNode),
@@ -2352,9 +2563,10 @@ function viewPeople(_id, query) {
         { key: "credits", label: "Credits", num: true, cell: (p) => String(p.credits.length) },
         { key: "first", label: "First", num: true, cell: (p) => yearLink(p.years[0]) },
         { key: "last", label: "Latest", num: true, cell: (p) => yearLink(p.years[p.years.length - 1]) },
+        { key: "nationality", label: "Nationality", cell: (p) => (p.nationality ? findLink(p.nationality) : dash()) },
       ],
       rows,
-      { onSort: sortHandler("people", f, ["name", "roles", "first", "last"]), sortKey: f.sort, dir: f.dir, scroll: true, focus: (p) => String(p.id) === String(f.focus) }
+      { onSort: sortHandler("people", f, ["name", "roles", "first", "last", "nationality"]), sortKey: f.sort, dir: f.dir, scroll: true, focus: (p) => String(p.id) === String(f.focus) }
     );
     frag.appendChild(tableNode);
     tableNode = tableNode.querySelector("table");
@@ -2383,11 +2595,24 @@ function viewPerson(id) {
           ? el("span", { class: "names" }, yearLink(Number(p.birth.slice(0, 4))), p.death ? el("span", { class: "sep", text: "–" }) : null, p.death ? yearLink(Number(p.death.slice(0, 4))) : null)
           : null,
         p.place ? findLink(p.place) : null,
+        p.nationality ? findLink(p.nationality) : null,
         p.imdb ? el("a", { class: "badge", href: "https://www.imdb.com/name/" + p.imdb + "/", text: "IMDb" }) : null,
         p.wikidata ? el("a", { class: "badge", href: "https://www.wikidata.org/wiki/" + p.wikidata, text: "Wikidata" }) : null
       )
     )
   );
+
+  const pFacts = [];
+  const addPFact = (k, v) => v && pFacts.push(el("div", null, el("div", { class: "k", text: k }), el("div", { class: "v" }, v)));
+  addPFact("Birth name", p.birth_name && p.birth_name !== p.name ? findLink(p.birth_name) : null);
+  addPFact("Gender", p.gender && findLink(p.gender));
+  addPFact("Birth country", p.birth_country && findLink(p.birth_country));
+  addPFact("Death place", p.death_place && findLink(p.death_place));
+  addPFact("Career span", p.work_start && el("span", { class: "names" }, String(p.work_start), p.work_end && p.work_end !== p.work_start ? el("span", { class: "sep", text: "–" }) : null, p.work_end && p.work_end !== p.work_start ? String(p.work_end) : null));
+  if (pFacts.length) frag.appendChild(section("Details", null, el("div", { class: "card deflist" }, pFacts)));
+
+  if (p.occupations.length) frag.appendChild(section("Occupations", p.occupations.length, el("div", { class: "chip-list" }, p.occupations.map((o) => findLink(o)))));
+  if (p.citizenships.length) frag.appendChild(section("Citizenships", p.citizenships.length, el("div", { class: "chip-list" }, p.citizenships.map((c) => findLink(c)))));
 
   frag.appendChild(
     el(
@@ -2521,6 +2746,31 @@ function viewPerson(id) {
       )
     )
   );
+
+  if (p.awards.length) {
+    const won = p.awards.filter((a) => a.result === "won").length;
+    frag.appendChild(
+      section(
+        "Awards",
+        p.awards.length,
+        table(
+          [
+            { key: "a", label: "Award", wrap: true, cell: (a) => findLink(a.award) },
+            { key: "r", label: "Result", cell: (a) => (a.result === "won" ? el("strong", { text: "Won" }) : el("span", { class: "muted", text: "Nominated" })) },
+            { key: "y", label: "Year", num: true, cell: (a) => yearLink(a.year) },
+            { key: "f", label: "For", wrap: true, cell: (a) => (a.for_work ? findLink(a.for_work) : dash()) },
+          ],
+          [...p.awards].sort((a, b) => (b.year ?? 0) - (a.year ?? 0)),
+          { plain: true }
+        ),
+        el("div", { class: "sub", style: { marginTop: "8px" }, text: `${won} won of ${p.awards.length} listed — including recognition for work outside this catalogue.` })
+      )
+    );
+  }
+
+  if (p.external_ids.length) {
+    frag.appendChild(section("Elsewhere", p.external_ids.length, externalLinksRow(p.external_ids)));
+  }
 
   return frag;
 }
@@ -3936,11 +4186,45 @@ function viewAbout() {
         "Wikipedia, Box Office Mojo, Rotten Tomatoes, Metacritic, IMDb and TMDB, assembled offline into a 24-table SQLite database. This page reads a single JSON file generated from that database by ",
         el("code", { text: "explorer/build_explorer_data.py" }),
         " — no server, no network calls. Data is licensed CC BY 4.0; the build code is MIT."
-      )
+      ),
+      DATA.meta.provenance?.length ? provenanceSection() : null
     )
   );
 
   return frag;
+}
+
+/* Every row a later enrichment pass touched, honestly: which table, which outside source,
+   and whether the row was new or an existing one filled in or corrected. Aggregated in the
+   exporter from the v3_provenance table — one row there per (table, key, action). */
+function provenanceSection() {
+  const bySource = new Map();
+  for (const r of DATA.meta.provenance) {
+    const g = groupInto(bySource, r.source, () => ({
+      name: r.source_name, url: r.source_url, licence: r.licence, retrieved: r.retrieved,
+      tables: new Set(), inserted: 0, filled: 0, corrected: 0,
+    }));
+    g.tables.add(r.table);
+    g[r.action === "insert" ? "inserted" : r.action === "fill" ? "filled" : "corrected"] += r.n;
+  }
+  return el(
+    "div",
+    { style: { display: "grid", gap: "10px" } },
+    el("div", { style: { maxWidth: "820px" } }, table(
+      [
+        { key: "s", label: "Source", cell: (g) => (g.url ? el("a", { href: g.url, target: "_blank", rel: "noopener", text: g.name }) : g.name) },
+        { key: "l", label: "Licence", cell: (g) => (g.licence ? findLink(g.licence) : dash()) },
+        { key: "t", label: "Tables touched", num: true, cell: (g) => String(g.tables.size) },
+        { key: "i", label: "New rows", num: true, cell: (g) => num(g.inserted) },
+        { key: "f", label: "Filled / corrected", num: true, cell: (g) => num(g.filled + g.corrected) },
+        { key: "r", label: "Retrieved", cell: (g) => g.retrieved || dash() },
+      ],
+      [...bySource.values()],
+      { plain: true }
+    )),
+    el("p", { style: { color: "var(--text-secondary)", maxWidth: "78ch", fontSize: "13.5px" } },
+      "“New rows” created a record the database did not have before — an award, an episode segment, a whole new join table. “Filled / corrected” means the row already existed and this source added a missing value or overwrote one.")
+  );
 }
 
 /* ============================================================
@@ -4108,6 +4392,32 @@ function boot() {
   setupTheme();
   window.addEventListener("hashchange", render);
   render();
+  loadDetails();
+}
+
+/* Outbound links, prose summaries and award lists live in a second file so the first
+   paint only pays for the works/characters/people tables every reader loads. It arrives
+   moments later and merges into the same objects the app already indexed, then
+   re-renders whatever is on screen. A <script> tag (not fetch) keeps this working from
+   a plain file:// open, exactly like data.js does. */
+function loadDetails() {
+  const tag = document.createElement("script");
+  tag.src = "data-details.js";
+  tag.onload = () => {
+    const d = window.SPIDERMAN_DETAILS;
+    if (!d) return;
+    const merge = (index, entries) => {
+      for (const [id, extra] of Object.entries(entries || {})) {
+        const target = index.get(Number(id));
+        if (target) Object.assign(target, extra);
+      }
+    };
+    merge(workById, d.works);
+    merge(personById, d.people);
+    merge(charById, d.characters);
+    rerenderInPlace();
+  };
+  document.body.appendChild(tag);
 }
 
 boot();

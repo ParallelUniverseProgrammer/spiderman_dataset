@@ -112,12 +112,19 @@ def main():
             "writer": s["comic_writer"], "year": s["comic_year"],
             "arc": s["storyline_arc"]})
 
+    segments_by_ep = {}
+    for sg in rows(con, "SELECT * FROM episode_segments ORDER BY show_work_id, season_number, episode_number, segment_index"):
+        key = (sg["show_work_id"], sg["season_number"], sg["episode_number"])
+        segments_by_ep.setdefault(key, []).append({
+            "title": sg["title"], "writer": sg["writer"], "director": sg["director"]})
+
     for e in rows(con, "SELECT * FROM episodes ORDER BY season_number, episode_number"):
         works[e["show_work_id"]]["episodes"].append({
             "season": e["season_number"], "episode": e["episode_number"],
             "title": e["title"], "air_date": e["air_date"],
             "runtime": e["runtime_minutes"], "director": e["director"],
-            "writer": e["writer"], "viewers_m": e["us_viewers_millions"]})
+            "writer": e["writer"], "viewers_m": e["us_viewers_millions"],
+            "segments": segments_by_ep.get((e["show_work_id"], e["season_number"], e["episode_number"]), [])})
 
     # (A, sequel, B) means B follows A; (A, prequel, B) means B precedes A.
     REL_LABELS = {
@@ -148,6 +155,7 @@ def main():
         people[p["id"]] = {
             "id": p["id"], "name": p["name"], "birth": p["birth_date"],
             "death": p["death_date"], "place": p["birth_place"],
+            "nationality": p["nationality"],
             "imdb": p["imdb_id"], "wikidata": p["wikidata_id"],
             "tmdb": p["tmdb_id"], "credits": []}
 
@@ -189,6 +197,100 @@ def main():
         ident["n_works"] = len({a["work_id"] for a in ident["appearances"]})
         ident["first_media_year"] = seen_years[0] if seen_years else None
 
+    # --- v3: additive fields the exporter previously left on the table ---
+
+    for ws_ in rows(con, "SELECT * FROM work_summaries"):
+        w = works.get(ws_["work_id"])
+        if w:
+            w["summary"] = {"title": ws_["wikipedia_title"], "url": ws_["url"], "text": ws_["summary"]}
+
+    for g in rows(con, "SELECT * FROM work_genres ORDER BY genre"):
+        works[g["work_id"]].setdefault("genres", []).append(g["genre"])
+    for c in rows(con, "SELECT * FROM work_countries ORDER BY country"):
+        works[c["work_id"]].setdefault("countries", []).append(c["country"])
+    for l in rows(con, "SELECT * FROM work_languages ORDER BY language"):
+        works[l["work_id"]].setdefault("languages", []).append(l["language"])
+
+    for r in rows(con, "SELECT * FROM work_content_ratings ORDER BY rating"):
+        works[r["work_id"]].setdefault("content_ratings", []).append(
+            {"rating": r["rating"], "country": r["country"], "reason": r["reason"]})
+
+    for r in rows(con, "SELECT * FROM work_release_dates ORDER BY release_date"):
+        works[r["work_id"]].setdefault("release_dates", []).append(
+            {"date": r["release_date"], "place": r["place"], "event": r["event"]})
+
+    for pl in rows(con, "SELECT * FROM work_places ORDER BY role, place"):
+        works[pl["work_id"]].setdefault("places", []).append(
+            {"place": pl["place"], "role": pl["role"]})
+
+    for r in rows(con, "SELECT * FROM box_office_regions ORDER BY amount_usd DESC"):
+        works[r["work_id"]].setdefault("box_office_regions", []).append(
+            {"region": r["region"], "amount": r["amount_usd"], "as_of": r["as_of"]})
+
+    for d in rows(con, "SELECT * FROM person_details"):
+        p = people.get(d["person_id"])
+        if p:
+            p.update({
+                "gender": d["gender"], "birth_name": d["birth_name"],
+                "birth_country": d["birth_country"], "death_place": d["death_place"],
+                "work_start": d["work_period_start"], "work_end": d["work_period_end"],
+                "wikipedia": d["wikipedia_title"]})
+
+    for o in rows(con, "SELECT * FROM person_occupations ORDER BY occupation"):
+        people[o["person_id"]].setdefault("occupations", []).append(o["occupation"])
+    for c in rows(con, "SELECT * FROM person_citizenships ORDER BY country"):
+        people[c["person_id"]].setdefault("citizenships", []).append(c["country"])
+    for a in rows(con, "SELECT * FROM person_awards ORDER BY year"):
+        people[a["person_id"]].setdefault("awards", []).append(
+            {"award": a["award"], "result": a["result"], "year": a["year"], "for_work": a["for_work"]})
+
+    for d in rows(con, "SELECT * FROM character_details"):
+        ident = identities.get(d["identity_id"])
+        if ident:
+            ident.update({
+                "gender": d["gender"], "publisher": d["publisher"],
+                "universe": d["narrative_universe"], "creators": d["creators"],
+                "first_appearance_title": d["first_appearance_title"],
+                "first_appearance_year": d["first_appearance_year"],
+                "wikipedia": d["wikipedia_title"]})
+
+    # Outbound links only — most external_ids rows are authority-file identifiers
+    # (VIAF, GND, LoC…) with no url to send a reader to.
+    for x in rows(con, "SELECT * FROM external_ids WHERE url IS NOT NULL ORDER BY entity_type, entity_id, source"):
+        entry = {"source": x["source"], "id": x["identifier"], "url": x["url"]}
+        target = {"work": works, "person": people, "character": identities}[x["entity_type"]].get(x["entity_id"])
+        if target is not None:
+            target.setdefault("external_ids", []).append(entry)
+
+    prov_sources = {r["source_key"]: r for r in rows(con, "SELECT * FROM v3_sources")}
+    provenance = []
+    for r in rows(con, "SELECT table_name, source_key, action, COUNT(*) n FROM v3_provenance "
+                       "GROUP BY table_name, source_key, action ORDER BY table_name, source_key, action"):
+        src = prov_sources.get(r["source_key"], {})
+        provenance.append({
+            "table": r["table_name"], "action": r["action"], "n": r["n"],
+            "source": r["source_key"], "source_name": src.get("name"),
+            "source_url": src.get("url"), "licence": src.get("licence"),
+            "retrieved": src.get("retrieved")})
+
+    # The heaviest v3 additions — outbound links, prose summaries, award lists — are
+    # furniture for a single detail page, never for a list or a filter. Splitting them
+    # into a second file fetched after first paint keeps the page every reader gets
+    # (the works/characters/people tables) at roughly its v2 weight.
+    details = {"works": {}, "people": {}, "characters": {}}
+    for wid, w in works.items():
+        d = {k: w.pop(k) for k in ("summary", "external_ids") if k in w}
+        if d:
+            details["works"][wid] = d
+    for pid, p in people.items():
+        d = {k: p.pop(k) for k in ("awards", "external_ids") if k in p}
+        if d:
+            details["people"][pid] = d
+    for cid, c in identities.items():
+        d = {k: c.pop(k) for k in ("external_ids",) if k in c}
+        if d:
+            details["characters"][cid] = d
+
     data = {
         "meta": {
             "title": "Spider-Man Media Dataset",
@@ -203,6 +305,8 @@ def main():
             },
             "year_min": min(w["year"] for w in works.values() if w["year"]),
             "year_max": max(w["year"] for w in works.values() if w["year"]),
+            "provenance": provenance,
+            "sources": sorted(prov_sources.values(), key=lambda s: s["name"]),
         },
         "franchises": [
             {"name": f["name"], "description": f["description"]}
@@ -218,8 +322,14 @@ def main():
     (OUT_DIR / "data.json").write_text(js + "\n", encoding="utf-8")
     (OUT_DIR / "data.js").write_text("window.SPIDERMAN_DATA=" + js + ";\n",
                                      encoding="utf-8")
-    print(f"data.json {len(js)/1024:.0f} KB · works={len(works)} "
-          f"characters={len(identities)} people={len(people)}")
+
+    details_js = json.dumps(prune(details), ensure_ascii=False, separators=(",", ":"))
+    (OUT_DIR / "data-details.json").write_text(details_js + "\n", encoding="utf-8")
+    (OUT_DIR / "data-details.js").write_text(
+        "window.SPIDERMAN_DETAILS=" + details_js + ";\n", encoding="utf-8")
+
+    print(f"data.json {len(js)/1024:.0f} KB + data-details.json {len(details_js)/1024:.0f} KB · "
+          f"works={len(works)} characters={len(identities)} people={len(people)}")
 
 
 if __name__ == "__main__":
