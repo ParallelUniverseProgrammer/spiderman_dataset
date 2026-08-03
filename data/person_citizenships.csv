@@ -1,0 +1,425 @@
+person_id,country
+1,United States
+10,United States
+100,United Kingdom
+101,United States
+102,United States
+103,Canada
+104,United States
+105,United States
+107,United States
+108,United States
+109,Japan
+109,Empire of Japan
+11,United States
+110,Japan
+111,Canada
+112,Canada
+113,United States
+114,Canada
+116,United States
+118,United States
+119,United States
+12,United States
+12,Germany
+120,United States
+122,United States
+123,Canada
+124,United States
+124,Canada
+125,Canada
+126,Canada
+126,United States
+127,United States
+128,United States
+129,United States
+13,United States
+130,United States
+131,United States
+132,United States
+133,United States
+134,United States
+135,United States
+136,United States
+137,United States
+138,United States
+139,United States
+14,United States
+140,United States
+141,United States
+142,United States
+144,United States
+145,United States
+147,United States
+148,United States
+149,United States
+15,United States
+15,Italy
+151,United States
+152,United States
+153,United Kingdom
+154,United Kingdom
+154,United States
+155,United States
+156,United States
+157,United States
+158,United States
+159,United States
+16,United States
+161,Canada
+162,United States
+163,United States
+164,United States
+167,United Kingdom
+169,United States
+17,United Kingdom
+17,United States
+170,United States
+171,United States
+172,United States
+173,United States
+174,United States
+177,United States
+178,United States
+179,Canada
+18,United Kingdom
+18,United States
+180,United States
+181,United States
+182,United States
+183,United States
+185,United States
+187,Japan
+187,Empire of Japan
+188,Japan
+188,Empire of Japan
+19,United States
+190,Japan
+190,Empire of Japan
+192,United States
+193,United States
+194,United States
+195,United States
+196,United States
+197,United Kingdom
+198,United States
+199,United States
+2,United States
+20,New Zealand
+20,Canada
+200,United States
+201,United States
+202,United States
+203,United States
+204,United States
+205,United Kingdom
+206,United States
+207,Israel
+207,United States
+208,United States
+209,United States
+21,United States
+210,United States
+211,United States
+212,United States
+213,United States
+214,United States
+214,Ireland
+215,United States
+216,United States
+216,South Africa
+217,United States
+218,United States
+219,United States
+22,United States
+220,United States
+221,United States
+222,United States
+224,Italy
+225,United States
+226,United States
+226,Mexico
+227,United States
+228,Germany
+228,United States
+23,United States
+230,South Africa
+230,United States
+231,United States
+232,United States
+233,United States
+234,United States
+235,United States
+236,United States
+238,United States
+239,United States
+24,United Kingdom
+24,United States
+240,United States
+241,United States
+242,United States
+243,United States
+244,United States
+246,United States
+247,United States
+248,United States
+249,United States
+25,United States
+250,United States
+251,United States
+253,United Kingdom
+255,Canada
+257,United Kingdom
+258,Italy
+258,United States
+259,United States
+26,United Kingdom
+260,United States
+261,United States
+261,Portugal
+262,United States
+265,United States
+266,United States
+267,United States
+268,United Kingdom
+269,Sweden
+27,United States
+270,United States
+271,United States
+272,United States
+273,United Kingdom
+274,United States
+275,United States
+276,United States
+278,United States
+279,Sweden
+28,United States
+28,Canada
+283,Sweden
+284,United Kingdom
+285,United States
+286,United States
+286,Peru
+287,Kenya
+287,United States
+288,United States
+289,United Kingdom
+29,United States
+291,Turkey
+292,United States
+293,Sweden
+294,Australia
+295,United Kingdom
+296,United Kingdom
+296,Ghana
+297,United States
+298,United States
+299,United States
+3,United States
+30,India
+300,United States
+302,United Kingdom
+303,France
+304,France
+305,United Kingdom
+306,United States
+307,United Kingdom
+308,Canada
+309,Mexico
+31,United States
+310,United States
+311,Germany
+312,United Kingdom
+313,United States
+314,United States
+315,United States
+316,Mexico
+318,United States
+319,United States
+32,United States
+320,United States
+321,United States
+322,United States
+323,United States
+324,United States
+325,United States
+326,Japan
+327,Japan
+329,Japan
+329,Empire of Japan
+33,United States
+331,United States
+332,Canada
+334,United States
+335,United States
+336,United States
+338,United States
+34,Canada
+34,United States
+340,United States
+343,United States
+344,United States
+345,United Kingdom
+346,United States
+347,United States
+348,United States
+349,United States
+35,United Kingdom
+352,United States
+353,United States
+354,Canada
+355,United States
+356,United States
+357,United States
+358,Israel
+358,United States
+36,United States
+360,United Kingdom
+361,United States
+362,United States
+363,United States
+366,United States
+367,United States
+368,United States
+369,United States
+37,United States
+370,United States
+372,United Kingdom
+374,United States
+375,United States
+376,United States
+377,United States
+378,United States
+38,United States
+380,United States
+382,United States
+383,United States
+384,United States
+385,United States
+386,United States
+387,United States
+388,United States
+389,United States
+39,United States
+390,United States
+391,United States
+396,United States
+4,United States
+40,United States
+400,United States
+401,United States
+406,United States
+408,United States
+409,Ireland
+41,United States
+410,United States
+411,United Kingdom
+412,United States
+414,United Kingdom
+415,United States
+417,United States
+42,United States
+43,United States
+431,United States
+432,United Kingdom
+438,United Kingdom
+439,United Kingdom
+44,United States
+448,United States
+45,United States
+455,Japan
+455,Empire of Japan
+458,United States
+459,United States
+46,United States
+466,United States
+47,United States
+48,United States
+480,United States
+488,Switzerland
+49,United States
+5,United States
+50,United States
+500,United States
+51,United States
+510,United States
+517,United States
+518,United States
+52,United States
+521,United States
+527,United States
+53,United States
+532,United States
+533,United States
+537,Canada
+538,Israel
+54,United States
+541,United States
+549,United States
+549,France
+55,United States
+55,Gabon
+550,United Kingdom
+558,United States
+56,Canada
+56,United States
+57,United States
+570,United States
+58,United States
+580,United States
+581,United States
+59,United States
+6,United States
+60,United Kingdom
+61,Guatemala
+61,United States
+62,United States
+63,United Kingdom
+64,United States
+64,India
+65,United States
+66,United States
+67,United States
+68,United States
+69,United Kingdom
+7,United States
+70,United States
+71,United Kingdom
+72,United States
+73,United States
+74,United States
+75,United States
+76,United States
+77,United Kingdom
+78,United States
+79,United Kingdom
+8,Japan
+80,United States
+81,United Kingdom
+82,United States
+83,United States
+84,United States
+85,France
+86,United States
+87,United States
+87,New Zealand
+88,United States
+89,Mexico
+9,Japan
+9,Empire of Japan
+90,United States
+91,United Kingdom
+92,United States
+93,United Kingdom
+93,United States
+93,Italy
+94,United States
+95,United States
+96,New Zealand
+96,Australia
+97,Germany
+98,Russia
+98,Canada
+98,Soviet Union
+99,United Kingdom
+99,Nigeria

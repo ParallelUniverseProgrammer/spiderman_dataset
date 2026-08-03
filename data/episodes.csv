@@ -49,3 +49,530 @@ id,show_work_id,season_number,episode_number,title,air_date,runtime_minutes,dire
 48,38,1,8,Tangled Web,2025-02-12,,Liza Singer,Charlie Neuner,
 49,38,1,9,Hero or Menace,2025-02-19,,Liza Singer,Jeff Trammell,
 50,38,1,10,If This Be My Destiny...,2025-02-19,,Stu Livingston,Charlie Neuner; Jeff Trammell,
+51,28,1,1,The Power of Dr Octopus / Sub-Zero for Spidey,1967-09-09,,,,
+52,28,1,2,"Where Crawls the Lizard / Electro, the Human Lightning Bolt",1967-09-16,,,,
+53,28,1,3,The Menace of Mysterio,1967-09-23,,,,
+54,28,1,4,The Sky is Falling / Captured by J. Jonah Jameson,1967-09-30,,,,
+55,28,1,5,Never Step on a Scorpion / Sands of Crime,1967-10-07,,,,
+56,28,1,6,Diet of Destruction / The Witching Hour,1967-10-14,,,,
+57,28,1,7,Kilowatt Kaper / The Peril of Parafino,1967-10-21,,,,
+58,28,1,8,Horn of the Rhino,1967-10-28,,,,
+59,28,1,9,The One-Eyed Idol / Fifth Avenue Phantom,1967-11-04,,,,
+60,28,1,10,The Revenge of Dr Magneto / The Sinister Prime Minister,1967-11-11,,,,
+61,28,1,11,The Night of the Villains / Here Comes Trubble,1967-11-18,,,,
+62,28,1,12,Spider-Man Meets Doctor Noah Boddy / The Fantastic Fakir,1967-11-25,,,,
+63,28,1,13,Return of the Flying Dutchman / Farewell Performance,1967-12-02,,,,
+64,28,1,14,The Golden Rhino / Blueprint for Crime,1967-12-09,,,,
+65,28,1,15,The Spider and the Fly / The Slippery Doctor Von Schlick,1967-12-16,,,,
+66,28,1,16,The Vulture's Prey / The Dark Terrors,1967-12-23,,,,
+67,28,1,17,The Terrible Triumph of Dr Octopus / Magic Malice,1967-12-30,,,,
+68,28,1,18,Fountain of Terror / Fiddler on the Loose,1968-01-06,,,,
+69,28,1,19,To Catch a Spider / Double Identity,1968-01-13,,,,
+70,28,1,20,Sting of the Scorpion / Trick or Treachery,1968-01-20,,,,
+71,28,2,1,The Origin of Spider-Man,1968-09-14,,,,
+72,28,2,2,King Pinned,1968-09-21,,,,
+73,28,2,3,Swing City,1968-09-28,,,,
+74,28,2,4,Criminals in the Clouds,1968-10-05,,,,
+75,28,2,5,Menace from the Bottom of the World,1968-10-12,,,,
+76,28,2,6,Diamond Dust,1968-10-19,,,,
+77,28,2,7,Spider-Man Battles the Molemen,1968-10-26,,,,
+78,28,2,8,Phantom from the Depths of Time,1968-11-02,,,,
+79,28,2,9,The Evil Sorcerer,1968-11-09,,,,
+80,28,2,10,Vine,1968-11-16,,,,
+81,28,2,11,Pardo Presents,1968-11-23,,,,
+82,28,2,12,Cloud City of Gold,1968-11-30,,,,
+83,28,2,13,Neptune's Nose Cone,1968-12-07,,,,
+84,28,2,14,Home,1968-12-14,,,,
+85,28,2,15,Blotto,1968-12-21,,,,
+86,28,2,16,Thunder Rumble,1968-12-28,,,,
+87,28,2,17,Spider-Man Meets Skyboy,1969-01-04,,,,
+88,28,2,18,Cold Storage,1969-01-11,,,,
+89,28,2,19,To Cage a Spider,1969-01-18,,,,
+90,28,3,1,The Winged Thing / Conner's Reptiles,1970-03-22,,,,
+91,28,3,2,Trouble With Snow / Spider-Man vs. Desperado,1970-03-29,,,,
+92,28,3,3,Sky Harbor / The Big Brainwasher,1970-04-05,,,,
+93,28,3,4,The Vanishing Doctor Vespasian / The Scourge of the Scarf,1970-04-12,,,,
+94,28,3,5,Super Swami / The Birth of Micro Man,1970-04-19,,,,
+95,28,3,6,Knight Must Fall / The Devious Dr Dumpty,1970-04-26,,,,
+96,28,3,7,Up from Nowhere,1970-05-03,,,,
+97,28,3,8,Rollarama,1970-05-10,,,,
+98,28,3,9,Rhino / The Madness of Mysterio,1970-05-17,,,,
+99,28,3,10,Revolt in the Fifth Dimension,1970-05-24,,,,
+100,28,3,11,Specialists and Slaves,1970-05-31,,,,
+101,28,3,12,Down to Earth,1970-06-07,,,,
+102,28,3,13,Trip to Tomorrow,1970-06-14,,,,
+103,24,,1,Spidey Meets the Spoiler,,,,,
+104,24,,2,A Night at the Movies,,,,,
+105,24,,3,Spider-Man Meets the Evil Dr. Fly,,,,,
+106,24,,4,Spidey Up Against the Wall,,,,,
+107,24,,5,Spider-Man Meets the Can Crusher,,,,,
+108,24,,6,Spidey Meets the Funny Bunny,,,,,
+109,24,,7,Spidey Meets Dr. Fright,,,,,
+110,24,,8,Meet Mr. Measles,,,,,
+111,24,,9,Spidey Jumps the Thumper,,,,,
+112,24,,10,Spidey and the Queen Bee,,,,,
+113,24,,11,Little Miss Muffett,,,,,
+114,24,,12,The Bookworm,,,,,
+115,24,,13,The Birthday Bandit,,,,,
+116,24,,14,Spidey Meets the Prankster,,,,,
+117,24,,15,Spidey Meets the Blowhard,,,,,
+118,24,,16,Who Stole the Show?,,,,,
+119,24,,17,Spidey Meets the Yeti,,,,,
+120,24,,18,Spidey Meets the Mouse,,,,,
+121,24,,19,Spidey Meets the Sitter,,,,,
+122,24,,20,Spidey Fixes the Hum,,,,,
+123,24,,21,Spidey Nabs the Sandman,,,,,
+124,24,,22,Spidey Meets the Tickler,,,,,
+125,24,,23,Spidey Gets the Old One-Two,,,,,
+126,24,,24,Spidey Meets Eye Patch,,,,,
+127,24,,25,Spidey Meets Silly Willy,,,,,
+128,24,,26,The Uninvited,,,,,
+129,24,,27,Spidey After the Fox,,,,,
+130,24,,28,Spidey Meets the Sack,,,,,
+131,26,,1,The Time of Revenge Has Come! Beat Down Iron Cross Group!!,1978-05-17,,Kōichi Takemoto,Shōzō Uehara,
+132,26,,2,Mysterious World! The Man Who Follows His Fate,1978-05-24,,Kōichi Takemoto,Susumu Takaku,
+133,26,,3,Phantom Thief 001 VS. Spider-Man,1978-05-31,,Katsuhiko Taguchi,Susumu Takaku,
+134,26,,4,The Terrifying Half Merman! The Miracle-Calling Silver Thread,1978-06-07,,Katsuhiko Taguchi,Shōzō Uehara,
+135,26,,5,Crash Machine GP-7! The Oath Siblings,1978-06-14,,Kōichi Takemoto,Susumu Takaku,
+136,26,,6,Shuddering Laboratory! Devilish Professor Monster,1978-06-21,,Kōichi Takemoto,Shōzō Uehara,
+137,26,,7,Fearful Hit Tune! Song Dancing Murder Rock,1978-06-28,,Katsuhiko Taguchi,Shōzō Uehara,
+138,26,,8,A Very Mysterious Folktale: The Cursed Cat Mound,1978-07-05,,Katsuhiko Taguchi,Susumu Takaku,
+139,26,,9,Motion Accessory Is a Loveful Beetle Insect Spy,1978-07-12,,Takaharu Saeki,Shōzō Uehara,
+140,26,,10,To the Flaming Hell: See the Tears of the Snake Woman,1978-07-19,,Takaharu Saeki,Shōzō Uehara,
+141,26,,11,Professor Monster's Ultra Poisoning,1978-07-26,,Kōichi Takemoto,Susumu Takaku,
+142,26,,12,Becoming Splendid: To the Murderous Machine of Transformation,1978-08-02,,Kōichi Takemoto,Shōzō Uehara,
+143,26,,13,The Skull Group VS. The Devilish Hearse,1978-08-09,,Kimio Hirayama,Susumu Takaku,
+144,26,,14,Dedicate to My Father the Song of a Brave Man Who Cannot Fight,1978-08-16,,Kimio Hirayama,Shōzō Uehara,
+145,26,,15,The Promise of Our Lives,1978-08-23,,Kōichi Takemoto,Susumu Takaku,
+146,26,,16,"Famous Dog, Run Back to Father!",1978-08-30,,Kōichi Takemoto,Shōzō Uehara,
+147,26,,17,Pro Wrestler Samson's Tears,1978-09-06,,Takaharu Saeki,Susumu Takaku,
+148,26,,18,In the Mother's Chest: Resurrect the Young Boys,1978-09-13,,Takaharu Saeki,Kuniaki Oshikawa,
+149,26,,19,The Boy Phantom: To the Villageless Map,1978-09-20,,Kōichi Takemoto,Shōzō Uehara,
+150,26,,20,Riddle: Calling the Riddle of My Secret Birth,1978-09-27,,Kōichi Takemoto,Hirohisa Soda,
+151,26,,21,Fall to the Great Skies: Father's Love,1978-10-04,,Kōichi Takemoto,Susumu Takaku,
+152,26,,22,Shedding Tears to the Dark Fate: Father and Child,1978-10-11,,Takaharu Saeki,Susumu Takaku,
+153,26,,23,To the Love Academy of the Homeless Children,1978-10-18,,Takaharu Saeki,Hirohisa Soda,
+154,26,,24,Cockroach Boy: Great War,1978-10-25,,Hideo Tanaka,Susumu Takaku,
+155,26,,25,"Treasure, Dog, and Double Grow Human",1978-11-01,,Hideo Tanaka,Mikio Matsushita,
+156,26,,26,To the Absolute Crisis: The Imitation Hero,1978-11-08,,Kōichi Takemoto,Kuniaki Oshikawa,
+157,26,,27,Farewell War Buddy: Beloved German Shepherd,1978-11-15,,Kōichi Takemoto,Susumu Takaku,
+158,26,,28,The Front of the Alley: Boys' Detective Group,1978-11-22,,Yoshiaki Kobayashi,Mikio Matsushita,
+159,26,,29,"Hurry, GP-7: Time of Stop Sign",1978-11-29,,Yoshiaki Kobayashi,Shōzō Uehara,
+160,26,,30,"Good Luck, Beautiful Police Officer",1978-12-06,,Takaharu Saeki,Hirohisa Soda,
+161,26,,31,There Is No Child-Taking Detective Tomorrow,1978-12-13,,Kōichi Takemoto,Shōzō Uehara,
+162,26,,32,Sweet Whispering Enchantress,1978-12-20,,Takaharu Saeki,Mikio Matsushita,
+163,26,,33,The Boy Teases the Horrible Wild Girl,1978-12-27,,Kōichi Takemoto,Susumu Takaku,
+164,26,,34,Surprising Camera: Murderous Event,1979-01-10,,Kōichi Takemoto,Hirohisa Soda,
+165,26,,35,From the Unexplored Amazon: Here Comes the Mummified Beautiful Woman,1979-01-17,,Yoshiaki Kobayashi,Susumu Takaku,
+166,26,,36,The Onion Silver Mask and the Boys' Detective Group,1979-01-31,,Yoshiaki Kobayashi,Shōzō Uehara,
+167,26,,37,From the Secret Messenger of Hell: Great King Enma,1979-02-07,,Takaharu Saeki,Susumu Takaku,
+168,26,,38,The First Tin Plate Evening Star and the Boys' Detective Group,1979-02-14,,Takaharu Saeki,Hirohisa Soda,
+169,26,,39,Sports World: One Great Meeting,1979-02-21,,Yoshiaki Kobayashi,Shōzō Uehara,
+170,26,,40,Farewell Zero Battle Tricks,1979-03-07,,Yoshiaki Kobayashi,Mikio Matsushita,
+171,26,,41,The Hero's Shining Hot Blood,1979-03-14,,Yoshiaki Kobayashi,Shōzō Uehara,
+172,29,,1,"Bubble, Bubble, Oil and Trouble",,,,,
+173,29,,2,"Dr. Doom, Master of the World",,,,,
+174,29,,3,"Lizards, Lizards, Everywhere",,,,,
+175,29,,4,Curiosity Killed the Spiderman,,,,,
+176,29,,5,The Sandman Is Coming,,,,,
+177,29,,6,When Magneto Speaks... People Listen,,,,,
+178,29,,7,The Pied Piper of New York Town,,,,,
+179,29,,8,The Doctor Prescribes Doom,,,,Larry Parr,
+180,29,,9,Carnival of Crime,,,,,
+181,29,,10,Revenge of the Green Goblin,,,,,
+182,29,,11,Triangle of Evil,,,,,
+183,29,,12,The A-B-C's of D-O-O-M,,,,Larry Parr,
+184,29,,13,The Sidewinder Strikes,,,,,
+185,29,,14,The Hunter and the Hunted,,,,Donald F. Glut,
+186,29,,15,The Incredible Shrinking Spider-Man,,,,,
+187,29,,16,The Unfathomable Professor Gizmo,,,,,
+188,29,,17,Canon of Doom,,,,Larry Parr,
+189,29,,18,The Capture of Captain America,,,,Donald F. Glut,
+190,29,,19,The Doom Report,,,,Larry Parr,
+191,29,,20,The Web of Nephilia,,,,Christy Marx,
+192,29,,21,Countdown to Doom,,,,Larry Parr,
+193,29,,22,Arsenic and Aunt May,,,,Donald F. Glut,
+194,29,,23,The Vulture Has Landed,,,,,
+195,29,,24,Wrath of the Sub-Mariner,,,,Donald F. Glut,
+196,29,,25,The Return of Kingpin,,,,,
+197,29,,26,Under the Wizard's Spell,,,,Christy Marx,
+198,30,1,1,Triumph of the Green Goblin,1981-09-12,,,Dennis Marks,
+199,30,1,2,The Crime of All Centuries,1981-09-19,,,Donald F. Glut,
+200,30,1,3,The Fantastic Mr. Frump!,1981-09-26,,,Christy Marx,
+201,30,1,4,Sunfire,1981-10-03,,,Christy Marx,
+202,30,1,5,Swarm,1981-10-10,,,Dennis Marks,
+203,30,1,6,7 Little Superheroes,1981-10-17,,,Doug Booth,
+204,30,1,7,Video-Man,1981-10-24,,,Christy Marx,
+205,30,1,8,The Prison Plot,1981-10-31,,,Francis FeighanJack Hanrahan,
+206,30,1,9,Spidey Goes Hollywood,1981-11-07,,,Christy Marx,
+207,30,1,10,The Vengeance of Loki!,1981-11-14,,,Donald F. Glut,
+208,30,1,11,Knights and Demons,1981-11-21,,,Donald F. Glut,
+209,30,1,12,Pawns of the Kingpin,1981-11-28,,,Donald F. Glut,
+210,30,1,13,The Quest of the Red Skull,1981-12-05,,,Dennis Marks,
+211,30,2,1,The Origin of the Iceman,1982-09-18,,,Donald F. Glut,
+212,30,2,2,A Fire-Star Is Born,1982-09-25,,,Christy Marx,
+213,30,2,3,Along Came Spidey,1982-10-02,,,Donald F. Glut,
+214,30,3,1,Spider-Man Unmasked!,1983-09-17,,,Michael Reaves,
+215,30,3,2,The Bride of Dracula!,1983-09-24,,,Jack Mendelsohn,
+216,30,3,3,The Education of a Superhero,1983-10-01,,,Dennis Marks,
+217,30,3,4,Attack of the Arachnoid,1983-10-08,,,Michael Reaves,
+218,30,3,5,The Origin of the Spider-Friends,1983-10-15,,,Donald Glut,
+219,30,3,6,Spidey Meets the Girl from Tomorrow,1983-10-22,,,Dennis Marks,
+220,30,3,7,The X-Men Adventure,1983-10-29,,,Michael Reaves,
+221,30,3,8,Mission: Save the Guardstar,1983-11-05,,,Dennis Marks,
+222,31,1,1,Night of the Lizard,1994-11-19,,Bob Richardson,"Gerry Conway,Stan Berkowitz& John Semper",
+223,31,1,2,The Spider Slayer,1995-02-04,,Bob Richardson,,
+224,31,1,3,Return of the Spider Slayers,1995-02-11,,Bob Richardson,,
+225,31,1,4,Doctor Octopus: Armed and Dangerous,1995-02-18,,Bob Richardson,,
+226,31,1,5,The Menace of Mysterio,1995-02-25,,Bob Richardson,Marv WolfmanStan Berkowitzand John Semper,
+227,31,1,6,The Sting of the Scorpion,1995-03-11,,Bob Richardson,,
+228,31,1,7,Kraven the Hunter,1995-04-01,,Bob Richardson,,
+229,31,1,8,"The Alien Costume, Part 1",1995-04-29,,Bob Richardson,,
+230,31,1,9,"The Alien Costume, Part 2",1995-05-06,,Bob Richardson,,
+231,31,1,10,"The Alien Costume, Part 3",1995-05-13,,Bob Richardson,,
+232,31,1,11,"The Hobgoblin, Part 1",1995-05-20,,Bob Richardson,,
+233,31,1,12,"The Hobgoblin, Part 2",1995-05-27,,Bob Richardson,Stan Berkowitz,
+234,31,1,13,Day of the Chameleon,1995-06-11,,Bob Richardson,John Semper,
+235,31,2,1,Chapter I: The Insidious Six,1995-09-09,,Bob Richardson,,
+236,31,2,2,Chapter II: Battle of the Insidious Six,1995-09-16,,Bob Richardson,,
+237,31,2,3,Chapter III: Hydro-Man,1995-09-23,,Bob Richardson,,
+238,31,2,4,Chapter IV: The Mutant Agenda,1995-09-30,,Bob Richardson,,
+239,31,2,5,Chapter V: Mutants' Revenge,1995-10-07,,Bob Richardson,,
+240,31,2,6,Chapter VI: Morbius,1995-10-28,,Bob Richardson,,
+241,31,2,7,Chapter VII: Enter the Punisher,1995-11-04,,Bob Richardson,,
+242,31,2,8,Chapter VIII: Duel of the Hunters,1995-11-11,,Bob Richardson,John Semper,
+243,31,2,9,"Chapter IX: Blade, the Vampire Hunter",1996-02-03,,Bob Richardson,"Stephanie Mathison, Mark Hoffmeier, and John Semper",
+244,31,2,10,Chapter X: The Immortal Vampire,1996-02-10,,Bob Richardson,John Semper and Meg McLaughlin,
+245,31,2,11,Chapter XI: Tablet of Time,1995-11-18,,Bob Richardson,"Mark Hoffmeier, Stan Berkowitz, and John Semper",
+246,31,2,12,Chapter XII: Ravages of Time,1995-11-25,,Bob Richardson,"Mark Hoffmeier, Stan Berkowitz and John Semper",
+247,31,2,13,Chapter XIII: Shriek of the Vulture,1996-02-17,,Bob Richardson,,
+248,31,2,14,Chapter XIV: The Final Nightmare,1996-02-24,,Bob Richardson,,
+249,31,3,1,Chapter I: Doctor Strange,1996-04-27,,Bob Richardson,,
+250,31,3,2,Chapter II: Make a Wish,1996-05-04,,Bob Richardson,,
+251,31,3,3,Chapter III: Attack of the Octobot,1996-05-11,,Bob Richardson,,
+252,31,3,4,Chapter IV: Enter the Green Goblin,1996-05-18,,Bob Richardson,,
+253,31,3,5,Chapter V: Rocket Racer,1996-09-14,,Bob Richardson,,
+254,31,3,6,Chapter VI: Framed,1996-09-21,,Bob Richardson,John Semper and Mark HoffmeierTeleplay by: Brooks Wachtel and Cynthia Harrison,
+255,31,3,7,Chapter VII: The Man Without Fear,1996-09-28,,Bob Richardson,,
+256,31,3,8,Chapter VIII: The Ultimate Slayer,1996-10-05,,Bob Richardson,,
+257,31,3,9,Chapter IX: Tombstone,1996-10-12,,Bob Richardson,,
+258,31,3,10,Chapter X: Venom Returns,1996-11-02,,Bob Richardson,"John SemperTeleplay by: Stan Berkowitz, Len Wein, and John Semper",
+259,31,3,11,Chapter XI: Carnage,1996-11-09,,Bob Richardson,,
+260,31,3,12,Chapter XII: The Spot,1996-10-26,,Bob Richardson,James Krieg,
+261,31,3,13,Chapter XIII: Goblin War!,1996-11-16,,Bob Richardson,,
+262,31,3,14,Chapter XIV: Turning Point,1996-11-23,,Bob Richardson,,
+263,31,4,1,Chapter I: Guilty,1997-02-01,,Bob Richardson,,
+264,31,4,2,Chapter II: The Cat,1997-02-08,,Bob Richardson,,
+265,31,4,3,Chapter III: The Black Cat,1997-02-15,,Bob Richardson,,
+266,31,4,4,Chapter IV: The Return of Kraven,1997-02-22,,Bob Richardson,Meg McLaughlin,
+267,31,4,5,Chapter V: Partners,1997-05-03,,Bob Richardson,,
+268,31,4,6,Chapter VI: The Awakening,1997-05-10,,Bob Richardson,,
+269,31,4,7,Chapter VII: The Vampire Queen,1997-05-17,,Bob Richardson,,
+270,31,4,8,Chapter VIII: The Return of the Green Goblin,1997-07-12,,Bob Richardson,Mark Hoffmeier,
+271,31,4,9,Chapter IX: The Haunting of Mary Jane Watson,1997-07-19,,Bob Richardson,,
+272,31,4,10,Chapter X: The Lizard King,1997-07-26,,Bob Richardson,,
+273,31,4,11,Chapter XI: The Prowler,1997-08-02,,Bob Richardson,,
+274,31,5,1,The Wedding,1997-09-12,,Bob Richardson,,
+275,31,5,2,Chapter I,1997-09-19,,Bob Richardson,John Semper,
+276,31,5,3,Chapter II: Unclaimed Legacy,1997-09-26,,Bob Richardson,John Semper,
+277,31,5,4,Chapter III: Secrets of the Six,1997-10-03,,Bob Richardson,John Semper,
+278,31,5,5,Chapter IV: The Six Fight Again,1997-10-10,,Bob Richardson,John Semper,
+279,31,5,6,Chapter V: The Price of Heroism,1997-10-17,,Bob Richardson,John Semper,
+280,31,5,7,Part 1,1997-10-24,,Bob Richardson,,
+281,31,5,8,Part 2,1997-10-31,,Bob Richardson,,
+282,31,5,9,Chapter I: Arrival,1997-11-07,,Bob Richardson,John Semper and Karen Milovich,
+283,31,5,10,Chapter II: The Gauntlet of the Red Skull,1997-11-14,,Bob Richardson,Virginia Roth,
+284,31,5,11,Chapter III: Doom,1997-11-21,,Bob Richardson,"John Semper, Mark Hoffmeier, and Ernie Altbacker",
+285,31,5,12,"Chapter I: I Really, Really Hate Clones",1998-01-31,,Bob Richardson,,
+286,31,5,13,"Chapter II: Farewell, Spider-Man",1998-01-31,,Bob Richardson,John Semper,
+287,34,1,1,Survival of the Fittest,2008-03-08,,Victor Cook,Greg Weisman,
+288,34,1,2,Interactions,2008-03-15,,Troy Adomitis,Kevin Hopps,
+289,34,1,3,Natural Selection,2008-03-22,,Dave Bullock,Matt Wayne,
+290,34,1,4,Market Forces,2008-03-29,,Dan Fausett,Andrew Robinson,
+291,34,1,5,Competition,2008-04-05,,Troy Adomitis,Kevin Hopps,
+292,34,1,6,The Invisible Hand,2008-04-12,,Dave Bullock,Matt Wayne,
+293,34,1,7,Catalysts,2008-04-26,,Victor Cook,Andrew Robinson,
+294,34,1,8,Reaction,2008-05-03,,Jennifer Coyle,Randy Jandt,
+295,34,1,9,The Uncertainty Principle,2008-05-10,,Dave Bullock,Kevin Hopps,
+296,34,1,10,Persona,2008-05-17,,Dan Fausett,Matt Wayne,
+297,34,1,11,Group Therapy,2008-05-31,,Dave Bullock and Jennifer Coyle,Andrew Robinson and Greg Weisman,
+298,34,1,12,Intervention,2008-06-07,,Dave Bullock,Greg Weisman,
+299,34,1,13,Nature vs. Nurture,2008-06-14,,Victor Cook,Kevin Hopps,
+300,34,2,1,Blueprints,2009-06-22,,Jennifer Coyle,Kevin Hopps,
+301,34,2,2,Destructive Testing,2009-06-22,,Kevin Altieri,Matt Wayne,
+302,34,2,3,Reinforcement,2009-06-29,,Mike Goguen,Andrew Robinson,
+303,34,2,4,Shear Strength,2009-07-06,,Jennifer Coyle,Randy Jandt,
+304,34,2,5,First Steps,2009-07-13,,Kevin Altieri,Kevin Hopps,
+305,34,2,6,Growing Pains,2009-07-20,,Mike Goguen,Nicole Dubuc,
+306,34,2,7,Identity Crisis,2009-07-27,,Jennifer Coyle,Andrew Robinson,
+307,34,2,8,Accomplices,2009-10-07,,Kevin Altieri,Nicole Dubuc,
+308,34,2,9,Probable Cause,2009-10-14,,Mike Goguen,Kevin Hopps,
+309,34,2,10,Gangland,2009-10-21,,Jennifer Coyle,Andrew Robinson,
+310,34,2,11,Subtext,2009-11-04,,Kevin Altieri,Nicole Dubuc,
+311,34,2,12,Opening Night,2009-11-18,,Mike Goguen,Greg Weisman,
+312,34,2,13,Final Curtain,2009-11-18,,Victor Cook,Kevin Hopps,
+313,35,1,1,Great Power,2012-04-01,,"Alex Soto, Phil Pignotti & Tim Eldered",Paul Dini,0.98
+314,35,1,2,Great Responsibility,2012-04-01,,"Alex Soto, Phil Pignotti & Tim Eldered",Paul Dini,0.96
+315,35,1,3,Doomed!,2012-04-08,,Gary Hartle & Jeff Allen,Man of Action,
+316,35,1,4,Venom,2012-04-15,,Alex Soto,Man of Action & James Felder,
+317,35,1,5,Flight of the Iron Spider,2012-04-22,,Phil Pignotti,Man of Action,
+318,35,1,6,Why I Hate Gym,2012-04-29,,Jeff Allen & Gary Hartle,Man of Action & Joe Fallon,
+319,35,1,7,Exclusive,2012-05-06,,Alex Soto,Man of Action & Dani Wolff,
+320,35,1,8,Back in Black,2012-05-13,,Phil Pignotti,Man of Action,
+321,35,1,9,Field Trip,2012-05-20,,Alex Soto,Man of Action & Eugene Son,
+322,35,1,10,Freaky,2012-06-17,,Jeff Allen,Brian Michael Bendis,
+323,35,1,11,Venomous (“Venom Attack” on Disney+),2012-06-24,,Phil Pignotti,Man of Action,
+324,35,1,12,Me Time,2012-07-01,,Alex Soto,Man of Action & Jacob Semahn,
+325,35,1,13,Strange,2012-07-08,,Jeff Allen,Man of Action & James Felder,
+326,35,1,14,Awesome,2012-07-15,,Phil Pignotti,Man of Action & Eugene Son,
+327,35,1,15,For Your Eye Only,2012-07-22,,Jeff Allen,Brian Michael Bendis,1.48
+328,35,1,16,Beetle Mania,2012-07-29,,Alex Soto,Man of Action & Scott Mosier,
+329,35,1,17,Snow Day,2012-08-05,,Phil Pignotti,Man of Action & Rich Fogel,
+330,35,1,18,Damage,2012-08-19,,Jeff Allen,Man of Action & Scott Mosier,
+331,35,1,19,Home Sick Hulk,2012-09-09,,Alex Soto,Danielle Wolff & Man of Action,
+332,35,1,20,Run Pig Run,2012-09-16,,Phil Pignotti,Man of Action & Eugene Son,
+333,35,1,21,I Am Spider-Man,2012-09-23,,Jeff Allen,Man of Action & Joe Fallon,
+334,35,1,22,The Iron Octopus,2012-09-30,,Alex Soto,Man of Action & Frank Tieri,
+335,35,1,23,Not a Toy,2012-10-07,,Phil Pignotti,Brian Michael Bendis,
+336,35,1,24,The Attack of the Beetle,2012-10-14,,Jeff Allen,Man of Action & Scott Mosier,
+337,35,1,25,Revealed,2012-10-28,,Alex Soto,Man of Action & Eugene Son,
+338,35,1,26,The Rise of the Goblin,2012-10-28,,Phil Pignotti,Man of Action & Jacob Semahn,
+339,35,2,1,The Lizard,2013-01-21,,Roy Burdine & Phil Pignotti,"Man of Action, Jacob Semahn & Eugene Son",
+340,35,2,2,Electro,2013-01-21,,Roy Burdine & Phil Pignotti,"Man of Action, Jacob Semahn & Eugene Son",
+341,35,2,3,The Rhino,2013-01-21,,Tim Maltby,Man of Action & Ed Valentine,
+342,35,2,4,Kraven the Hunter,2013-02-03,,Roy Burdine,Man of Action & Danielle Wolff,
+343,35,2,5,Hawkeye,2013-02-10,,Phil Pignotti,Man of Action & Scott Mosier,
+344,35,2,6,The Sinister Six,2013-02-17,,Tim Maltby,Man of Action & Scott Mosier,
+345,35,2,7,Spidah-Man!,2013-03-17,,Roy Burdine,Story by: Joe QuesadaTeleplay by: Man of Action & Jimmy Palmiotti,
+346,35,2,8,Carnage,2013-03-31,,Phil Pignotti,Man of Action & Paul Giacoppo,
+347,35,2,9,House Arrest,2013-04-07,,Tim Maltby,Man of Action & Eugene Son,
+348,35,2,10,The Man-Wolf,2013-04-14,,Roy Burdine,Man of Action & Danielle Wolff,
+349,35,2,11,Swarm,2013-06-11,,Phil Pignotti and Tim Maltby,"Man of Action, Scott Mosier, Kevin Burke & Chris Doc Wyatt",
+350,35,2,12,Itsy Bitsy Spider-Man,2013-06-12,,Phil Pignotti and Tim Maltby,"Man of Action, Scott Mosier, Kevin Burke & Chris Doc Wyatt",
+351,35,2,13,Journey of the Iron Fist,2013-06-13,,Roy Burdine,Man of Action & Jacob Semahn,
+352,35,2,14,The Incredible Spider-Hulk,2013-06-14,,Phil Pignotti,Brian Michael Bendis,
+353,35,2,15,Stan By Me,2013-06-17,,Tim Maltby,Man of Action & Joe Fallon,
+354,35,2,16,Ultimate Deadpool,2013-06-18,,Roy Burdine,Man of Action & Ed Valentine,
+355,35,2,17,Venom Bomb,2013-06-19,,Phil Pignotti,Man of Action & Scott Mosier,
+356,35,2,18,Guardians of the Galaxy,2013-06-20,,Tim Maltby,Brian Michael Bendis,
+357,35,2,19,The Parent Trap,2013-06-21,,Roy Burdine,Man of Action & Kaita Mpambara,
+358,35,2,20,Game Over,2013-06-24,,Phil Pignotti,Man of Action & Jacob Semahn,0.57
+359,35,2,21,Blade,2013-08-05,,Roy Burdine & Phil Pignotti,"Man of Action, Kevin Burke, & Chris Doc Wyatt",2.31
+360,35,2,22,The Howling Commandos,2013-08-06,,Roy Burdine & Phil Pignotti,"Man of Action, Kevin Burke, & Chris Doc Wyatt",2.31
+361,35,2,23,Second Chance Hero,2013-06-28,,Tim Maltby,"Man of Action, Kevin Burke, & Chris Doc Wyatt",0.5
+362,35,2,24,Sandman Returns,2013-06-27,,Roy Burdine,Man of Action & Danielle Wolff,0.53
+363,35,2,25,Return of the Sinister Six,2013-06-25,,Phil Pignotti,Man of Action & Scott Mosier,0.35
+364,35,2,26,Ultimate,2013-06-26,,Tim Maltby,Man of Action & Jacob Semahn,0.64
+365,35,3,3,Agent Venom,2014-06-19,,Kalvin Lee,Eugene Son,
+366,35,3,4,Cloak and Dagger,2014-07-08,,Roy Burdine,Danielle Wolff,
+367,35,3,5,The Next Iron Spider,2013-08-07,,Tim Maltby,Kevin Burke & Chris Doc Wyatt,
+368,35,3,6,The Vulture,2014-06-19,,Kalvin Lee,Henry Gilroy & Marty Isenberg,
+369,35,3,7,The Savage Spider-Man,2014-07-03,,Roy Burdine,Jim McCann,
+370,35,3,8,New Warriors,2014-07-15,,Tim Maltby,Eugene Son,
+371,35,3,12,The Avenging Spider-Man,2014-06-13,,Roy BurdineTim Maltby,Paul Dini,
+372,35,3,13,The Return of the Guardians of the Galaxy,2014-09-24,,Roy Burdine,Brian Michael Bendis,
+373,35,3,14,S.H.I.E.L.D. Academy,2015-08-08,,Tim Maltby,Marty Isenberg,0.41
+374,35,3,15,The Rampaging Rhino,2015-04-27,,Kalvin Lee,Marty Isenberg,0.41
+375,35,3,16,Ant-Man,2015-05-11,,Roy Burdine,Tom Pugsley,
+376,35,3,17,Burrito Run,2015-05-18,,Tim Maltby,Mairghread Scott,0.43
+377,35,3,18,Inhumanity,2015-04-25,,Kalvin Lee,Geoffrey Thorne,0.37
+378,35,3,19,Attack of the Synthezoids,2015-08-11,,Roy Burdine,Andrew R. Robinson,0.31
+379,35,3,20,The Revenge of Arnim Zola,2015-08-18,,Tim Maltby,Brandon Auman,0.36
+380,35,3,21,Halloween Night at the Museum,2014-10-10,,Kalvin Lee,Danielle Wolff,2.28
+381,35,3,22,Nightmare on Christmas,2014-12-03,,Roy Burdine,Eugene Son,
+382,35,3,9101112,The Spider-Verse,2014-08-31,,Kalvin LeeRoy BurdineTim MaltbyKalvin Lee,Danielle WolffPaul DiniKevin Burke & Chris Doc WyattEugene Son,
+383,35,3,23242526,Contest of Champions,2015-09-08,,Tim MaltbyKalvin LeeRoy BurdineTim Maltby,Thomas F. ZahlerMatt WayneMarty IsenbergEugene Son,
+384,35,4,3,Miles From Home,2016-02-27,,Roy Burdine,Kevin Burke & Chris Doc Wyatt,0.47
+385,35,4,4,Iron Vulture,2016-03-05,,Young Ki Yoon,Jacob Semahn,0.53
+386,35,4,5,Lizards,2016-03-12,,Jae Woo Kim,Paul Giacoppo,0.57
+387,35,4,6,Double Agent Venom,2016-03-19,,Roy Burdine,Mairghread Scott,0.52
+388,35,4,7,Beached,2016-03-26,,Young Ki Yoon,Geoffrey Thorne,0.45
+389,35,4,8,Anti-Venom,2016-04-02,,Jae Woo Kim,Matt Wayne,0.48
+390,35,4,9,Force of Nature,2016-04-09,,Roy Burdine,Gavin Hignight,0.59
+391,35,4,12,Hydra Attacks / Agent Web,2016-02-21,,Young Ki YoonJae Woo Kim,Kevin Burke & Chris Doc Wyatt,0.36
+392,35,4,20,Strange Little Halloween,2016-06-28,,Young Ki Yoon,Henry Gilroy,0.3
+393,35,4,24,The Moon Knight Before Christmas,2016-07-05,,Jae Woo Kim,Elliott Casey,0.38
+394,35,4,1011,The New Sinister Six,2016-06-07,,Young Ki YoonJae Woo Kim,Jacob SemahnKevin Burke & Chris Doc Wyatt,0.54
+395,35,4,2526,Graduation Day,2016-09-20,,Young Ki YoonJae Woo Kim,Kevin Burke & Chris Doc Wyatt,0.36
+396,35,4,131415,The Symbiote Saga,2016-07-03,,Roy BurdineYoung Ki YoonJae Woo Kim,Joshua FineJacob SemahnKevin Burke & Chris Doc Wyatt,0.43
+397,35,4,212223,The Spider Slayers,2016-08-30,,Young Ki YoonJae Woo KimRoy Burdine,Paul GiacoppoJoshua Hale FialkovMarty Isenberg,0.34
+398,35,4,16171819,Return to the Spider-Verse,2016-08-02,,Roy BurdineYoung Ki YoonJae Woo KimRoy Burdine,Andrew RobinsonKevin Burke & Chris Doc WyattHenry GilroyKevin Burke & Chris Doc Wyatt,0.35
+399,36,1,1,Origins,2017-07-24,,Dan Duncan,Kevin Shinick,
+400,36,1,2,Horizon High: Part 1,2017-08-19,,Philip Pignotti,Kevin Shinick,0.19
+401,36,1,3,Horizon High: Part 2,2017-08-19,,Philip Pignotti,Kevin Shinick,0.2
+402,36,1,4,Osborn Academy,2017-08-26,,Sol Choi,Kevin Shinick,
+403,36,1,5,A Day in the Life,2017-09-02,,Dan Duncan,Mike Fasolo,0.2
+404,36,1,6,Party Animals,2017-09-02,,Sol Choi,Sterling Gates,0.2
+405,36,1,7,Sandman,2017-09-16,,Dan Duncan,J.T. Krul,0.25
+406,36,1,8,Symbiotic Relationship,2017-09-16,,Sol Choi,Kevin Burke and Chris Doc Wyatt,0.27
+407,36,1,9,Stark Expo,2017-09-16,,Dan Duncan,Kevin Shinick,0.29
+408,36,1,10,Ultimate Spider-Man,2017-09-23,,Dan Duncan,Kevin Shinick,0.31
+409,36,1,11,Kraven's Amazing Hunt,2017-09-30,,Sol Choi,Chris Cox and Kevin Shinick,0.25
+410,36,1,12,Halloween Moon,2017-10-07,,Dan Duncan,Kevin Burke and Chris Doc Wyatt,
+411,36,1,13,Spider-Man on Ice,2017-10-14,,Sol Choi,Sterling Gates,
+412,36,1,14,Venom,2017-10-21,,Dan Duncan,Kevin Shinick and Paul Giacoppo,0.16
+413,36,1,15,Screwball Live,2017-10-28,,Sol Choi,Ben Joseph,
+414,36,1,16,The Rise of Doc Ock: Part 1,2018-01-21,,Sol Choi,Kevin Burke and Chris Doc Wyatt,0.25
+415,36,1,17,The Rise of Doc Ock: Part 2,2018-01-21,,Dan Duncan,Mike Fasolo,0.28
+416,36,1,18,The Rise of Doc Ock: Part 3,2018-01-28,,Sol Choi,Kevin Shinick,0.31
+417,36,1,19,The Rise of Doc Ock: Part 4,2018-01-28,,Dan Duncan,Sterling Gates,0.33
+418,36,1,20,Spider-Island: Part 1,2018-02-04,,Sol Choi,Chris Cox and Kevin Shinick,0.28
+419,36,1,21,Spider-Island: Part 2,2018-02-04,,Dan Duncan,Kevin Burke and Chris Doc Wyatt,0.34
+420,36,1,22,Spider-Island: Part 3,2018-02-11,,Sol Choi,Jacob Semahn,0.25
+421,36,1,23,Spider-Island: Part 4,2018-02-11,,Dan Duncan,Zach Craley,0.31
+422,36,1,24,Spider-Island: Part 5,2018-02-11,,Sol Choi,Kevin Shinick,0.31
+423,36,1,25,The Hobgoblin: Part 1,2018-02-18,,Dan Duncan,Kevin Burke and Chris Doc Wyatt,0.21
+424,36,1,26,The Hobgoblin: Part 2,2018-02-18,,Sol Choi,Kevin Shinick,0.22
+425,36,2,1,How I Thwipped My Summer Vacation,2018-06-18,,Dan Duncan,Kevin Burke and Chris Doc Wyatt,0.12
+426,36,2,2,Take Two,2018-06-18,,Sol Choi,Kevin Burke and Chris Doc Wyatt,0.13
+427,36,2,3,Between an Ock and a Hard Place,2018-06-25,,Dan Duncan,Kevin Burke and Chris Doc Wyatt,0.11
+428,36,2,4,Rise Above It All,2018-07-02,,Sol Choi,Mark Hoffmeier,
+429,36,2,5,School of Hard Knocks,2018-07-09,,Dan Duncan,Josh Haber,0.22
+430,36,2,6,Dead Man's Party (Part 1),2018-07-16,,Sol Choi,Jacob Semahn,
+431,36,2,7,Venom Returns (Part 2),2018-07-23,,Dan Duncan,Kevin Burke and Chris Doc Wyatt,0.18
+432,36,2,8,Bring on the Bad Guys: Part 1,2018-07-30,,Sol Choi,J.M. DeMatteis,0.16
+433,36,2,9,Bring on the Bad Guys: Part 2,2018-07-30,,Dan Duncan,Jacob Semahn,0.16
+434,36,2,10,Bring on the Bad Guys: Part 3,2018-08-06,,Sol Choi,Gavin Hignight,
+435,36,2,11,Bring on the Bad Guys: Part 4,2018-08-06,,Dan Duncan,Jennifer Muro,0.18
+436,36,2,12,Brain Drain,2018-08-13,,Sol Choi,Jacob Semahn,0.14
+437,36,2,13,The Living Brain,2018-08-13,,Dan Duncan,Kevin Burke and Chris Doc Wyatt,0.16
+438,36,2,14,The Day Without Spider-Man,2019-09-08,,Sol Choi,Danielle Wolff,
+439,36,2,15,My Own Worst Enemy,2019-09-15,,Dan Duncan,Kevin Burke and Chris Doc Wyatt,
+440,36,2,16,Critical Update,2019-09-22,,Sol Choi,Grant Moran,
+441,36,2,17,A Troubled Mind,2019-09-29,,Dan Duncan,Jacob Semahn,
+442,36,2,18,Cloak and Dagger,2019-10-06,,Sol Choi,Jacob Semahn,
+443,36,2,19,Superior (Part 5),2019-10-13,,Dan Duncan and Eric Elrod,Kevin Burke and Chris Doc Wyatt,
+444,36,2,20,Brand New Day,2019-10-20,,Sol Choi,Liza Palmer,
+445,36,2,21,The Cellar,2019-10-27,,Eric Elrod,Shannon Eric Denton,
+446,36,2,22,The Road to Goblin War,2019-11-03,,Sol Choi,J. M. DeMatteis,
+447,36,2,23,Goblin War: Part 1,2019-11-10,,Eric Elrod,Gavin Hignight,
+448,36,2,24,Goblin War: Part 2,2019-11-17,,Sol Choi,Jacob Semahn,
+449,36,2,25,Goblin War: Part 3,2019-11-24,,Eric Elrod,Kevin Burke and Chris Doc Wyatt,
+450,36,2,26,Goblin War: Part 4,2019-12-01,,Sol Choi,Kevin Burke and Chris Doc Wyatt,
+451,36,3,1,Web of Venom,2020-04-19,,Tim Eldred and Sol Choi,Kevin Burke and Chris Doc Wyatt,
+452,36,3,2,Amazing Friends,2020-05-17,,Tim Eldred and Sol Choi,Merrill Hagan and Denise Downer,
+453,36,3,3,Vengeance of Venom,2020-06-21,,Tim Eldred and Sol Choi,Zach Craley and J. M. DeMatteis,0.13
+454,36,3,4,Spider-Man Unmasked,2020-08-16,,Tim Eldred and Sol Choi,Jim Martin and Gavin Hignight,
+455,36,3,5,Generations,2020-09-27,,Tim Eldred and Sol Choi,Marty Isenberg and Mae Catt,
+456,36,3,6,Maximum Venom,2020-10-25,,Tim Eldred and Sol Choi,Kevin Burke and Chris Doc Wyatt,0.09
+457,37,1,1,Spidey to the Power of Three / Panther Patience / WEB-STER,2021-08-06,,,Ashley Mendoza / Sib Ventress,0.36
+458,37,1,2,Superhero Hiccups / Lost and Found / S.O.S. Kitty,2021-08-06,,,Ken Kristensen / Henry Gifford,0.36
+459,37,1,3,Doc Ock's Super Octopus / Attack of the Green Giggles / Spidey Mystery,2021-08-13,,,Kent Redeker / Henry Gifford,0.39
+460,37,1,4,Bug in the System / Test Your Super Strength / A Helping Hulk,2021-08-20,,,Mark Drop / Josh Haber,0.28
+461,37,1,5,Pecking Prankster Pigeons / Green Thumb / Spidey Surprise,2021-08-27,,,Kent Redeker / Henry Gifford,0.3
+462,37,1,6,Mother's Day Mayhem / Not-So-Fun House / Rock-a-Bye Rhino,2021-09-03,,,Kerri Grant / Josh Haber,0.19
+463,37,1,7,Camping Conundrum / The Great Green Crime Spree / Stop Doc Ock,2021-09-10,,,Liza Palmer / Robert Vargas,0.32
+464,37,1,8,Rocket Rhino! / Trick or TRACE-E / The Spidey Team,2021-10-01,,,Mark Drop / Jonathan Hurwitz,0.19
+465,37,1,9,Gob-zilla / Speedy Spidey Delivery / Monkeying Around,2021-10-08,,,Liza Palmer / Claudia Silver,0.3
+466,37,1,10,Good Guy Gobby / Spider Monkey / Power Practice,2021-10-22,,,Liza Palmer / Claudia Silver,0.2
+467,37,1,11,CAT-astrophe / Swing With a Stomp / Road Raging Rhino,2021-11-12,,,Jonathan Hurwitz / Baljeet Rai,0.31
+468,37,1,12,A Very Spidey Christmas / Gobby on Ice,2021-11-27,,,Robert Vargas & Mike Kubat / Robert Vargas,0.28
+469,37,1,13,Going Green / Coming Clean,2021-12-03,,,Baljeet Rai / Gene Laufenberg,0.2
+470,37,1,14,Web Beard's Treasure / Washed Away,2021-12-10,,,Henry Gifford & Claudia Silver / Gene Laufenberg & Claudia Silver,0.27
+471,37,1,15,Spin Rushes In / Bridge Bandit,2022-01-07,,,Henry Gifford,0.25
+472,37,1,16,Art Attack! / Puppy Pandemonium,2022-01-28,,,Claudia Silver / Mike Kubat,0.19
+473,37,1,17,Goblin Island / Doc Ock and the Shocktobots,2022-02-18,,,Mike Kubat,0.24
+474,37,1,18,Peter's Pendant Predicament / TWIST-E,2022-02-25,,,Mike Kubat / Bart Jennett,0.18
+475,37,1,19,Itsy-Bitsy Spiders / Gobby's Rotten Pumpkin Hunt,2022-03-11,,,Henry Gifford / Baljeet Rai,0.26
+476,37,1,20,The Wozzlesnook / Superhero Switcheroo,2022-03-18,,,Mike Kubat / Claudia Silver,0.21
+477,37,1,21,Aunt May's Mess / Foam Sweet Foam,2022-03-25,,,Claudia Silver / Mike Kubat,0.2
+478,37,1,22,Freeze! It's Team Spidey / A Sticky Situation,2022-04-15,,,Mike Kubat / Bart Jennett,0.24
+479,37,1,23,Rhinoctopus / A Pumpkin Problem,2022-05-06,,,Claudia Silver / Mike Kubat,0.19
+480,37,1,24,Catch and Release / Construction Destruction,2022-06-17,,,Baljeet Rai & Claudia Silver / Henry Gifford,
+481,37,1,25,Parade Panic / The Case of the Burgling Book Bandit,2022-07-08,,,Alexa Harzan,0.32
+482,37,2,1,Electro's Gotta Glow / Black Cat Chaos / Spidey Team Transport to the Rescue,2022-08-19,,,Mike Kubat,0.2
+483,37,2,2,Lights Out! / Sandman Won't Share! / Iron Man Lends a Hand,2022-08-26,,,Mike Kubat,0.12
+484,37,2,3,Bootsie's Day Out / Trouble at Tony's / A Teeny Tiny Solution,2022-09-02,,,Claudia Silver / Sib Ventress,0.22
+485,37,2,4,Sonic Boom Boom / Mini Golf Goof / A Dino Mite Friend,2022-09-16,,,Mike Kubat / Alexa Harzan,0.14
+486,37,2,5,Li'l Hulk / Surprise Party Surprise / Hulk's Hangout,2022-09-30,,,Claudia Silver / Mike Kubat,0.16
+487,37,2,6,Can't Stop Dancing / The Ant Thief / Red Light Green Light,2022-10-14,,,Bart Jennett,0.18
+488,37,2,7,Sand Trapped / Too Much Fun / Hi Felicia,2022-10-21,,,Mike Kubat / Claudia Silver,0.13
+489,37,2,8,Halted Holiday / Merry Spidey Christmas / When Ghosty Met TWIRL-E,2022-11-11,,,Alexa Harzan,0.17
+490,37,2,9,An Egg-Cellent Adventure / The Hangout Headache / Practice Makes You Better,2022-12-09,,,Claudia Silver / Mike Kubat,0.16
+491,37,2,10,Follow That Sea Monster! / It's Bad to be Gooed / Webs Up,2022-12-16,,,Claudia Silver,0.15
+492,37,2,11,Liberty on the Loose / Green Goblin's Dino Disaster,2023-01-06,,,Alexa Harzan / Mike Kubat,0.13
+493,37,2,12,"Spidey Tidies Up / Oh No, Tomatoes!",2023-01-27,,,,0.13
+494,37,2,13,Clean Power / Doc Ock & The Rocktobots,2023-02-10,,,,0.14
+495,37,2,14,Pirate Plunder Blunder / Bad Bot,2023-02-24,,,Claudia Silver,0.19
+496,37,2,15,Spin Saves the Day / Water Woes,2023-03-17,,,Mike Kubat,0.11
+497,37,2,16,Tunnel Trouble / Mystery on Goblin Island,2023-03-24,,,,0.15
+498,37,2,17,The Maltese Kitten / A Day With Black Panther,2023-04-14,,,Claudia Silver,0.22
+499,37,2,18,The New Villain in Town / Spidey Cat,2023-04-28,,,Mike Kubat / Claudia Silver,0.19
+500,37,2,19,"A Syrupy Solution / Little Ant, Big Problem",2023-05-12,,,Mike Kubat,0.13
+501,37,2,20,Ock Tower / Outsmarted by Art,2023-05-26,,,Claudia Silver / Mike Kubat,0.11
+502,37,2,21,Super Scooter / The Lost Web Shooter,2023-06-09,,,,0.15
+503,37,2,22,Catnap Caper / Bunny Bonanza,2023-07-07,,,Daka Hermon,
+504,37,2,23,Dino-Rama / Daytime at Nighttime,2023-08-11,,,,
+505,37,2,24,Stolen WEB-Quarters / Spideys in Space!,2023-08-18,,,,
+506,37,2,25,Hide & Seek / Whale of a Time,2023-08-25,,,Daka Hermon,
+507,37,2,26,Rollin Rhino / The Octopus and the Kitty Cat,2023-09-01,,,Mike Kubat,
+508,37,2,27,Go With the Lava Flow / An UnBEElievable Rosh Hashanah,2023-09-15,,,Mike Kubat / Alexa Harzan,
+509,37,2,28,"Bootsie's Haunted Adventure / Too Many Tricks, Not Enough Treats",2023-09-29,,,Mike Kubat / Bart Jennett,
+510,37,2,29,How to Train Your Doggy / Dome Alone,2023-11-10,,,Claudia Silver / Daka Hermon,
+511,37,3,1,"The Friendly Neighborhood / Flight of the Butterflies / Tricks for You, Treats for Me",2024-01-08,,,Greg Johnson,
+512,37,3,2,Ock's Obey Ray / Lemur At Large / The New WQ,2024-01-09,,,Alexa Harzan,
+513,37,3,3,Tree Trouble / Stuck In Space / Zola Song,2024-01-10,,,Daka Hermon,
+514,37,3,4,"Antarctic Adventure / Let It Snowball, Let It Snowball, Let It Snowball / Web-Spinner Suits",2024-01-11,,,Alexa Harzan,
+515,37,3,5,Bubble Trouble / Rainy River Run / Thing and Herbie,2024-01-12,,,Daka Hermon / Greg Johnson,
+516,37,3,6,The Rhino and the Goose / Dog vs Cat / Web-Spinner Song,2024-01-19,,,Alexa Harzan,
+517,37,3,7,Journey Through Zola / Villaintine's Day / Do the Spidey,2024-01-26,,,Greg Johnson / Alexa Harzan,
+518,37,3,8,"Now You See Me, Now You Don't / Meet Squirrel Girl / Go Dino-Webs Go",2024-02-16,,,,
+519,37,3,9,Car-Tastrophe / Sandman and the Tortoise / Meet Lizard,2024-02-23,,,Greg Johnson / Daka Hermon,
+520,37,3,10,Tiny Car Caper / Tooth Fairy Tricks / Welcome White Tiger,2024-03-15,,,Alexa Harzan,
+521,37,3,11,Picture Perfect Pandemonium / Catch That Panther Pod / The Treehouse Twist,2024-04-12,,,Daka Hermon / Greg Johnson,
+522,37,3,12,Iron Zola / Aunt May's Birthday Blowout,2024-04-26,,,Alexa Harzan,
+523,37,3,13,"Freeze, It's Dock Ock! / Go, Go, Jeff",2024-05-10,,,Greg Johnson / Daka Hermon,
+524,37,3,14,Zola's Novel Idea / Greatest Hits,2024-06-07,,,Alexa Harzan,
+525,37,3,15,Go Dino-Webs Go! / Ghost in the Museum,2024-08-02,,,Greg Johnson,
+526,37,3,16,Grow Webs Grow / Rio In Space,2024-08-09,,,Alexa Harzan,
+527,37,3,17,The Goblin and the Geyser / Skeleton Stomp,2024-08-16,,,Greg Johnson / Alexa Harzan,
+528,37,3,18,Fool's Gold / The Sundae Save,2024-08-23,,,Claudia Silver / Danielle Kreger,
+529,37,3,19,Adventures in Fossil Hunting / Lizard's Buggy Bonanza,2024-08-30,,,Greg Johnson / Daka Hermon,
+530,37,3,20,Odd Bot Team Up / The Lost King,2024-09-27,,,Greg Johnson,
+531,37,3,21,The Curse of the Corn Dog King / Zola's Halloween Heist,2024-10-03,,,Daka Hermon,
+532,37,3,22,Too Many Zolas / Electro's Glow Show,2024-10-11,,,Peter Gaffney / Daka Hermon,
+533,37,3,23,Robo-Spideys / Saber-Toothed Kitten,2024-11-01,,,Greg Johnson / Alexa Harzan,
+534,37,3,24,Tree House Takeover / The Incredible Shrinking Zola,2024-11-08,,,Claudia Silver / Daka Hermon,
+535,37,3,25,Moon Girl and the Dino Dilemma / Hulk's Squirrely Switch,2024-11-15,,,Daka Hermon,
+536,37,3,26,A Snow Day for Aunt May / Hanukkah Heist,2024-12-03,,,Greg Johnson,
+537,37,3,27,Tricky Tricky Trapster / Tractor Beam Trouble,2025-01-17,,,Alexa Harzan / Greg Johnson,
+538,37,3,28,The Campout Mystery / Gobby's Metal Menace,2025-02-14,,,Daka Hermon / Claudia Silver,
+539,37,3,29,Dinosaurs on the Loose / WEB-STER'S Big Bad Bug,2025-03-14,,,Greg Johnson,
+540,37,3,30,Groundhog's Day Out / Ploofy Power,2025-04-11,,,Danielle Kreger,
+541,37,4,1,Voyage to Spider Island / Superhero Soak / Spidey Pirate Ship,2025-06-16,,,,
+542,37,4,2,Giant-Sized Lizard / Rhino's Wild Bunch / Webs Ahoy!,2025-06-17,,,Alexa Harzan,
+543,37,4,3,The Bots vs. Ock / The Battery Boost / Spidey Island!,2025-06-18,,,Danielle Kreger,
+544,37,4,4,King Lizard / Go Rhino Go / Wondeful Water-Webs,2025-06-19,,,,
+545,37,4,5,Campout Chaos / Panther Pod to the Rescue / Captain America Lends a Hand,2025-06-20,,,Daka Hermon,
+546,37,4,6,Two Teleporters Too Many / Dinos Are Forever / Meet Hydro-Man,2025-06-27,,,Greg Johnson / Alexa Harzan,
+547,37,4,7,The Lost Lair of Web-Beard / Captain Gobby / Pirate Gobby,2025-07-18,,,Greg Johnson,
+548,37,4,8,Mixing Up Trouble / To Catch a Cat / Doc Ock's Marine Mischief,2025-08-15,,,Daka Hermon,
+549,37,4,9,How to Catch a Caterpillar / A Jellyfish Tale / Underwater Rescue,2025-09-12,,,Daka Hermon / Claudia Silver,
+550,37,4,10,Night of the Goblins / Bat Attitude / It's Jeff,2025-10-02,,,Alexa Harzan,
+551,37,4,11,Saving Spider Island / A Ribbiting Rescue,2025-11-07,,,Greg Johnson / Alexa Harzan,
+552,37,4,12,A Squirrel Girl and Tippy Toe Pirate Adventure / Knight at the Museum,2025-11-14,,,Daka Hermon,
+553,37,4,13,The Greedy Goose / Playpen Pandemonium,2025-11-21,,,Becca Topol & Alexa Harzan / Greg Johnson,
+554,37,4,14,The Candlelight Christmas Walk / The Santa Trap,2025-12-01,,,,
+555,37,4,15,"The Treasure of Billie the Pirate / Big City, Little Land Shark",2026-01-02,,,Daka Hermon,
+556,37,4,16,A Helping Handful / Adventures Down the Drain,2026-01-09,,,Alexa Harzan & Bart Jennett / Greg Johnson,
+557,37,4,17,Dolphin Rescue / Gobby's Trash Day Takeover,2026-01-16,,,Claudia Silver / Daka Hermon,
+558,37,4,18,Motorcycle Madness / Oops! I Shrank WEB-Quarters,2026-04-03,,,Greg Johnson / {{nowrap|}},
+559,37,4,19,The Return of Web-Beard / Sandman vs Hydro-Man,2026-05-01,,,,
+560,37,5,1,"Lights, Sirens, Action / Symbie's Slimy Scheme / Meet Symbie!",2026-07-13,,,{{nowrap|}} / Claudia Silver,
+561,37,5,2,One Fantastic Surprise Party / Kitty Cat Chaos / Symbie Likes Crash-Crash,2026-07-13,,,Sib Ventress / Danielle Kreger,
+562,37,5,3,Remote Controlled Zola / Super Cat / Rocket and Groot Are Here to Help,2026-07-13,,,Greg Johnson,
+563,37,5,4,Sandman's Mountain Mayhem / Pufferfish Problems / The Fantastic Mr. Fantastic,2026-07-13,,,Claudia Silver,
+564,37,5,5,Aunt May's Flying House / Spiders vs Flies! / Along Came Silk,2026-07-13,,,Greg Johnson,
+565,37,5,6,Mighty May! / Electro Overland / Rescue-Webs Go!,2026-08-07,,,,
+566,37,5,7,Symbie's Blobbies / Gobby's Barnyard Blaster / Rescue-Webs Firetruck,2026-08-14,,,,
+567,37,5,8,Gobby's Leprechaun Caper / Kitty Cat Thief / Rescue-Webs Boat and Spin Cycle,2026-08-21,,,,
+568,37,5,9,Groot Meets Jeff the Land Shark,2026-06-09,,,,
+569,37,5,10,Rescue-Webs Copter,2026-06-09,,,,
+570,27,,1,Step Into My Office,2026-05-25,,Harry Bradbeer,Oren Uziel,
+571,27,,2,Tread Lightly,2026-05-25,,Harry Bradbeer,Christopher Chen,
+572,27,,3,Double Cross,2026-05-25,,Nzingha Stewart,Megan Liao & Steve Lightfoot,
+573,27,,4,A Mistake I'll Never Make Again,2026-05-25,,Nzingha Stewart,Tori Sampson,
+574,27,,5,Betrayal,2026-05-25,,Alethea Jones,Jennifer Frazin & Steve Lightfoot,
+575,27,,6,Nightmare on a Gurney,2026-05-25,,Alethea Jones,Jack Henderson,
+576,27,,7,Nobody's Hero,2026-05-25,,Greg Yaitanes,Bruce Marshall Romans,
+577,27,,8,The Man in the Mask,2026-05-25,,Greg Yaitanes,Oren Uziel,

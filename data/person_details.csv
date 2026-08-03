@@ -1,0 +1,422 @@
+person_id,gender,birth_name,birth_country,death_place,work_period_start,work_period_end,wikipedia_title
+1,male,,United States,,,,Nicholas Hammond
+2,male,,United States,North Hollywood,1950,,David White (actor)
+3,male,,United States,Tarzana,,,Robert F. Simon
+4,male,Alphonso Giuseppe Giovanni Roberto D'Abruzzo,United States,Los Angeles,1935,,Robert Alda
+5,female,,United States,,,,Ellen Bry
+6,female,,United States,,1970,,Rosalind Chao
+7,male,John Richard Erdmann,United States,Los Angeles,1944,,Richard Erdman
+8,male,Kenichi Mochizuki,Japan,,,,
+9,male,,Japan,Minato,,,Noboru Nakaya
+10,male,Tobias Vincent Maguire,United States,,1989,,Tobey Maguire
+11,male,William James Dafoe,United States,,1979,,Willem Dafoe
+12,female,Kirsten Caroline Dunst,United States,,1988,,Kirsten Dunst
+13,male,James Edward Franco,United States,,1997,,James Franco
+14,male,Jonathan Kimble Simmons,United States,,1986,,J. K. Simmons
+15,male,,United States,,1999,,Joe Manganiello
+16,male,William Goldwyn Nunn III,United States,Pittsburgh,1976,,Bill Nunn
+17,male,Alfredo Molina,United Kingdom,,1978,,Alfred Molina
+18,female,,United Kingdom,,1948,,Rosemary Harris
+19,female,,United States,,1979,,Donna Murphy
+20,male,Daniel Joshua Gillies,Canada,,1998,,Daniel Gillies
+21,male,Thomas Richard McMillen,United States,,1980,,Thomas Haden Church
+22,female,,United States,,1989,,Bryce Dallas Howard
+23,male,James Oliver Cromwell,United States,,1974,,James Cromwell
+24,male,Andrew Russell Garfield,United States,,2005,,Andrew Garfield
+25,female,Emily Jean Stone,United States,,2004,,Emma Stone
+26,male,Rhys Owain Evans,United Kingdom,,1990,,Rhys Ifans
+27,male,Denis Colin Leary,United States,,1987,,Denis Leary
+28,male,,United States,,1986,,Campbell Scott
+29,male,,United States,,2008,,Chris Zylka
+30,male,,India,Mumbai,1988,2020,Irrfan Khan
+31,male,Eric Marlon Bishop,United States,,1989,,Jamie Foxx
+32,male,,United States,,2008,,Dane DeHaan
+33,male,,United States,,1989,,Paul Giamatti
+34,male,,United States,,1981,,Colm Feore
+35,male,Thomas Stanley Holland,United Kingdom,,2008,,Tom Holland
+36,male,Michael John Douglas,United States,,1975,,Michael Keaton
+37,male,Robert John Downey,United States,,1970,,Robert Downey Jr.
+38,female,,United States,,1983,,Marisa Tomei
+39,male,Jonathan Favreau,United States,,1992,,Jon Favreau
+40,female,Gwyneth Kate Paltrow,United States,,1989,,Gwyneth Paltrow
+41,male,Anthony Quiñonez,United States,,2004,,Tony Revolori
+42,male,,United States,,1993,,Bokeem Woodbine
+43,female,Ellen Tyne Daly,United States,,1967,,Tyne Daly
+44,male,,United States,,2011,,Shameik Moore
+45,male,Mark Jake Johnson Weinberger,United States,,2006,,Jake Johnson
+46,female,Hailee Puring Steinfeld,United States,,2007,,Hailee Steinfeld
+47,male,,United States,,2009,,Brian Tyree Henry
+48,female,,United States,,1994,,Lauren Vélez
+49,female,Mary Jean Tomlin,United States,,1965,,Lily Tomlin
+50,male,,United States,,2002,,John Mulaney
+51,female,Kimiko Elizabeth Glenn,United States,,2008,,Kimiko Glenn
+52,male,Nicholas Kim Coppola,United States,,1981,,Nicolas Cage
+53,male,,United States,,1993,,Liev Schreiber
+54,male,Jacob Benjamin Gyllenhaal,United States,,1991,,Jake Gyllenhaal
+55,male,Samuel Leroy Jackson,United States,,1972,,Samuel L. Jackson
+56,female,Jacoba Francisca Maria Smulders,Canada,,2002,,Cobie Smulders
+57,male,,United States,,2016,,Jacob Batalon
+58,male,,United States,,1992,,Martin Starr
+59,male,Jerry Angelo Brooks,United States,,1995,,J. B. Smoove
+60,male,,United Kingdom,,1992,,Benedict Wong
+61,male,Óscar Isaac Hernández Estrada,Guatemala,,1998,,Oscar Isaac
+62,male,,United States,,1998,,Jason Schwartzman
+63,male,,United Kingdom,,2006,,Daniel Kaluuya
+64,male,,India,,2010,,Karan Soni
+65,female,,United States,,1994,,Lauren Vélez
+66,male,,United States,,1997,,Shea Whigham
+67,male,Mahershalalhashbaz Gilmore,United States,,2001,,Mahershala Ali
+68,male,,United States,,2016,,Jharrel Jerome
+69,male,Edward Thomas Hardy,United Kingdom,,2001,,Tom Hardy
+70,female,Michelle Ingrid Williams,United States,,1989,,Michelle Williams (actress)
+71,male,,United Kingdom,,2006,,Riz Ahmed
+72,male,,United States,,2005,,Scott Haze
+73,female,Jenny Sarah Slate,United States,,2005,,Jenny Slate
+74,male,Woodrow Tracy Harrelson,United States,,1985,,Woody Harrelson
+75,female,,,,,,Peggy Lu
+76,female,,Saudi Arabia,,1975,,Melora Walters
+77,female,Naomie Melanie Harris,United Kingdom,,1987,,Naomie Harris
+78,male,Reid Scott Weiner,United States,,,,Reid Scott (actor)
+79,male,,United Kingdom,,2003,,Matt Smith
+80,female,Adria Arjona,United States,,2012,,Adria Arjona
+81,male,Jared Francis Harris,United Kingdom,,1989,,Jared Harris
+82,male,Tyrese Darnell Gibson,United States,,1994,,Tyrese Gibson
+83,male,Alessandro Liborio Madrigal,United States,,,,Al Madrigal
+84,female,Dakota Mayi Johnson,United States,,1999,,Dakota Johnson
+85,male,,France,,2005,,Tahar Rahim
+86,female,Emma Rose Roberts,United States,,2001,,Emma Roberts
+87,female,,New Zealand,,2007,,Kerry Bishé
+88,male,Michael Elliot Epps,United States,,1989,,Mike Epps
+89,male,,Mexico,,1995,,José María Yazpik
+90,female,Zosia Russell Mamet,United States,,1994,,Zosia Mamet
+91,male,Aaron Perry Johnson,United Kingdom,,2000,,Aaron Taylor-Johnson
+92,male,,United States,,2018,,Fred Hechinger
+93,male,Alessandro Antine Nivola,United States,,1995,,Alessandro Nivola
+94,female,,United States,,2009,,Ariana DeBose
+95,male,,United States,,2008,,Christopher Abbott
+96,male,Russell Ira Crowe,New Zealand,,1985,,Russell Crowe
+97,male,,Germany,,,,
+98,male,,Russia,,1994,,Yuri Kolokolnikov
+99,male,,United Kingdom,,1995,,Chiwetel Ejiofor
+100,male,Andrew Clement Serkis,United Kingdom,,1989,,Andy Serkis
+101,female,,United States,,1990,,Alanna Ubach
+102,male,Jonathan Edward Bernthal,United States,,2002,,Jon Bernthal
+103,male,,Canada,,2000,,Michael Mando
+104,male,,,,2003,,Krondon
+105,male,Mark Alan Ruffalo,United States,,1989,,Mark Ruffalo
+107,male,,United States,Little River,,,Danny Seagren
+108,female,,United States,,,,Chip Fields
+109,male,,Japan,,,,
+110,female,,Japan,,,,
+111,male,,Canada,Toronto,,,Paul Soles
+112,male,,Romania,Toronto,1952,,Paul Kligman
+113,female,,Canada,,,,Peg Dixon
+114,male,,Canada,Keswick,,,Len Carlson
+116,male,,United States,San Bernardino,1928,,Bill Woodson
+118,male,,United States,,1975,,Dan Gilvezan
+119,male,,United States,,1967,,Frank Welker
+120,male,,United States,,1981,,Christopher Daniel Barnes
+122,male,,United States,Los Angeles,1960,,Roscoe Lee Browne
+123,male,,Canada,,1989,,Rino Romano
+124,male,,United States,,1970,,Richard Newman (actor)
+125,male,,Canada,,1992,,Brian Drummond
+126,male,Michael David Donovan,Canada,,1984,,Michael Donovan
+127,male,,United States,,1987,,Neil Patrick Harris
+128,female,Lisa Anne Loeb,United States,,1989,,Lisa Loeb
+129,male,,United States,Los Angeles,1995,,Michael Clarke Duncan
+130,male,,United States,,1987,,Josh Keaton
+131,female,Lacey Nicole Chabert,United States,,1991,,Lacey Chabert
+132,male,,United States,Los Angeles,1975,2023,Alan Rachins
+133,male,Jared Drake Bell,United States,,1994,,Drake Bell
+134,male,,United States,,1998,,Logan Miller
+135,female,,United States,,2006,,Caitlyn Taylor Love
+136,male,Gregory Michael Cipes,United States,,,,Greg Cipes
+137,male,,United States,,1990,,Ogie Banks
+138,male,Thomas James Kenny,United States,,1981,,Tom Kenny
+139,male,Nadji Anthony Jeter,United States,,,,Nadji Jeter
+140,female,Laura Dawn Bailey,United States,,2000,,Laura Bailey
+141,female,,United States,,,,
+142,male,,United States,,2013,,Max Mittelman
+144,male,Jakari Fraser,United States,,2018,,
+145,female,Lily Rose Sanfelippo,United States,,2013,,
+147,genderqueer,John Paul Karliak,United States,,2007,,J. P. Karliak
+148,male,,,,,,Hudson Thames
+149,female,Kari Khabira Wahlgren,United States,,1987,,Kari Wahlgren
+151,male,,United States,,1986,,Eugene Byrd
+152,male,,United States,,1995,,Colman Domingo
+153,male,Hugh Michael Horace Dancy,United Kingdom,,1998,,Hugh Dancy
+154,male,Charles Thomas Cox,United Kingdom,,2002,,Charlie Cox
+155,male,,Ohio,North Hollywood,1958,,Michael Pataki
+156,female,,Saudi Arabia,,1969,,Lisa Eilbacher
+157,female,,United States,Hollywood,1942,,Jeff Donnell
+158,male,,United States,,,,Hilly Hicks
+159,male,,United States,New York City,1950,,Thayer David
+161,male,,Canada,Sherman Oaks,1986,,Ivor Francis
+162,male,,United States,Berlin,1961,,E. W. Swackhamer
+163,male,,United States,New York City,1945,,Alvin Boretz
+164,male,,United States,,,,Charles Fries (producer)
+166,male,,United Kingdom,,,,Edward J. Montagne
+167,male,,,,,,Johnnie Spence
+168,male,,,,,,
+169,male,,United States,Los Angeles,,,Aaron Stell
+170,female,,United States,Oahu,1969,1980,Joanna Cameron
+171,male,,United States,,1965,,Randolph Powell
+172,male,,United States,,,,Lawrence P. Casey
+173,male,,United States,United States,1952,,Simon Scott (actor)
+174,male,,United States,St. Petersburg,,,
+175,male,,,,,,
+177,male,,United States,Los Angeles,1936,,Benson Fong
+178,male,,United States,Santa Monica,1955,,John Milford
+179,male,,United Kingdom,Vancouver,,,Hagan Beggs
+180,male,Edward Bridge Danson III,United States,,1975,,Ted Danson
+181,male,,United States,,1951,,Don McDougall (director)
+182,male,,United States,Montreal,,,
+183,male,,United States,,,,Dana Kaproff
+185,male,,United States,,,,
+186,,,Germany,Klinga,,,
+187,male,,,,,,
+188,male,,Japan,,,,
+189,,,,,,,Saburo Yatsude
+190,male,,Japan,Kanagawa Prefecture,1958,1997,
+192,male,Clifford Parker Robertson III,United States,Stony Brook,1943,2007,Cliff Robertson
+193,male,,United States,,1988,,Michael Papajohn
+194,male,,United States,,1977,,Sam Raimi
+195,male,,United States,,1988,,David Koepp
+196,female,,United States,Santa Monica,1976,,Laura Ziskin
+197,male,,United Kingdom,,,,Ian Bryce
+198,male,Daniel Robert Elfman,United States,,1972,,Danny Elfman
+199,male,Don Michael Burgess,United States,,,,Don Burgess (cinematographer)
+200,male,,United States,,1989,,Bob Murawski
+201,male,,United States,,,,
+202,male,,United States,,1986,,Dylan Baker
+203,male,,United States,Seattle,1956,,Alvin Sargent
+204,male,,United States,,,,Alfred Gough
+205,male,,United Kingdom,,1997,,Miles Millar
+206,male,,United States,,1987,,Michael Chabon
+207,male,,Israel,,1993,,Avi Arad
+208,male,,United States,,,,Bill Pope
+209,male,,United States,,,,
+210,male,,United States,,1998,,Topher Grace
+211,male,,United States,,,,Ivan Raimi
+212,male,,United States,,1997,,Grant Curtis
+213,male,,United States,,1982,,Christopher Young
+214,male,Ramon Antonio Gerardo Estevez,United States,,1959,,Martin Sheen
+215,female,Sally Margaret Field,United States,,1962,,Sally Field
+216,female,,United States,,1989,,Embeth Davidtz
+217,male,,United States,,1996,,Marc Webb
+218,male,,United States,,2003,,James Vanderbilt
+219,male,Stephen Keith Kloves,United States,,1984,,Steve Kloves
+220,male,,United States,,,,Matt Tolmach
+221,male,James Roy Horner,United States,Los Padres National Forest,1978,2015,James Horner
+222,male,,United States,,,,John Schwartzman
+223,male,,United States,,,,Alan Edward Bell
+224,male,,Italy,,,,Pietro Scalia
+225,male,,United States,,1996,,Alex Kurtzman
+226,male,Roberto Gaston Orci,Mexico,Los Angeles,1997,2025,Roberto Orci
+227,male,,United States,,1996,,Jeff Pinkner
+228,male,Hans Florian Zimmer,Germany,,1977,,Hans Zimmer
+230,male,,South Africa,,1992,,Dan Mindel
+231,female,Zendaya Maree Stoermer Coleman,United States,,2009,,Zendaya
+232,female,,United States,,2013,,Laura Harrier
+233,male,,United States,,2005,,Donald Glover
+234,male,,United States,,2014,,Jon Watts
+235,male,,United States,,1999,,Jonathan Goldstein (filmmaker)
+236,male,,United States,,1999,,John Francis Daley
+237,male,,,,,,Christopher Ford (screenwriter)
+238,male,,,,,,Chris McKenna (writer)
+239,male,,United States,,1999,,Erik Sommers
+240,male,,United States,,2000,,Kevin Feige
+241,female,Amy Beth Pascal,United States,,,,Amy Pascal
+242,male,,United States,,1994,,Michael Giacchino
+243,male,,United States,,1994,,Salvatore Totino
+244,male,,United States,,,,Dan Lebental
+245,female,,South Africa,,,,Debbie Berman
+246,male,Christopher Whitelaw Pine,United States,,2002,,Chris Pine
+247,male,,United States,,,,Bob Persichetti
+248,male,,United States,,,,Peter Ramsey
+249,male,,United States,,,,Rodney Rothman
+250,male,Philip A. Lord,United States,,2003,,Phil Lord
+251,male,Christopher Robert Miller,United States,,,,Christopher Miller (filmmaker)
+252,female,,,,,,
+253,male,,United Kingdom,,,,Daniel Pemberton
+254,male,,,,,,
+255,male,,Canada,,,,
+256,female,,,,,,
+257,male,Benedict Timothy Carlton Cumberbatch,United Kingdom,,2001,,Benedict Cumberbatch
+258,male,,Italy,,1986,,Mauro Fiore
+259,male,,United States,,,,Jeffrey Ford (film editor)
+260,female,,United States,,2011,,Issa Rae
+261,male,,Portugal,,,,Joaquim Dos Santos
+262,male,,United States,,2012,,Kemp Powers
+263,male,,,,,,Justin K. Thompson
+265,male,,,,,,
+266,male,,United States,,2000,,Ruben Fleischer
+267,male,,United States,,1992,,Scott Rosenberg
+268,female,,United Kingdom,,,,Kelly Marcel
+269,male,Ludwig Emil Tomas Göransson,Sweden,,2008,,Ludwig Göransson
+270,male,,United States,,,,Matthew Libatique
+271,female,,United States,,,,Maryann Brandon
+272,male,,United States,,,,Alan Baumgarten
+273,male,Stephen Graham Kelly,United Kingdom,,1990,,Stephen Graham
+274,male,Joseph Hutchison Parker,,,,,
+275,male,Marco Edward Beltrami,United States,,1994,,Marco Beltrami
+276,male,,United States,,1982,,Robert Richardson (cinematographer)
+277,male,,,,,,Stan Salfas
+278,male,Jared Joseph Leto,United States,,1998,,Jared Leto
+279,male,,Sweden,,2000,,Daniel Espinosa
+280,male,,,,,,Matt Sazama
+281,male,,,,,,Burk Sharpless
+282,male,,United States,,,,Lucas Foster
+283,male,,Sweden,,,,Jon Ekstrand
+284,male,,United Kingdom,Los Angeles,1967,2023,Oliver Wood (cinematographer)
+285,female,Sydney Bernice Sweeney,United States,,2009,,Sydney Sweeney
+286,female,Isabela Yolanda Moner,United States,,2013,,Isabela Merced
+287,non-binary,,Kenya,,2017,,Celeste O'Connor
+288,male,Adam Paul Scott,United States,,1994,,Adam Scott
+289,female,,United Kingdom,,1999,,S. J. Clarkson
+291,male,,,,,,
+292,male,,United States,,,,Lorenzo di Bonaventura
+293,male,Ulf Johan Söderqvist,Sweden,,1991,,Johan Söderqvist
+294,male,Levi Zane Miller,Australia,,2010,,Levi Miller
+295,male,,United Kingdom,,2016,,Billy Barratt
+296,female,,,,,,Diaana Babnicova
+297,male,,United States,,2002,,J. C. Chandor
+298,male,,United States,,,,
+299,male,,United States,,,,
+300,male,,United States,,,,Richard Wenk
+302,male,,United Kingdom,,2003,,Benjamin Wallfisch
+303,male,,Russia,,1999,,Evgueni Galperine
+304,male,,Russia,,,,Sacha Galperine
+305,male,,United Kingdom,,1984,,Ben Davis (cinematographer)
+306,male,,United States,,,,Chris Lebenzon
+307,female,Juno Violet Temple,United Kingdom,,1997,,Juno Temple
+308,female,,Canada,,,,Clark Backo
+309,male,,Mexico,,,,Cristo Fernández
+310,male,,United States,,2003,,Dan Deacon
+311,male,,Germany,,2004,,Fabian Wagner
+312,male,,United Kingdom,,,,Mark Sanger
+313,female,Sadie Elizabeth Sink,United States,,2012,,Sadie Sink
+314,female,Liza Colón,United States,,1994,,Liza Colón-Zayas
+315,male,,United States,,2002,,Destin Daniel Cretton
+316,male,,Mexico,,2007,,Jonás Cuarón
+317,male,,,,,,
+318,male,Morgan Freeman,United States,,1964,,Morgan Freeman
+319,male,,United States,,1963,,Skip Hinnant
+320,female,,United States,,1970,,Judy Graubart
+321,male,,United States,New York City,,,Jim Boyd (actor)
+322,male,Stanley Martin Lieber,United States,Cedars-Sinai Medical Center,1940,,Stan Lee
+323,male,Stephen John Ditko,United States,New York City,,,Steve Ditko
+324,male,,United States,,,,Gary William Friedman
+325,male,Stuart Phillips,United States,,1958,,Stu Phillips (composer)
+326,female,,Japan,,,,Rika Miura
+327,female,,Japan,,,,
+329,male,,Japan,,,,
+331,male,,,,,,
+332,male,,Canada,,,,Bernard Cowan
+334,male,,Israel,,1959,,Ralph Bakshi
+335,male,,United States,Encino,1935,1996,Ray Patterson (animator)
+336,male,,United States,Beverly Hills,,,Paul Francis Webster
+338,male,Raymond Spencer Ellis,,,,,Ray Ellis
+339,female,,,,,,Morgan Lofting
+340,female,Mona M. Ianotti,United States,,1972,,Mona Marshall
+341,male,,,,,,Lee Bailey (writer)
+343,male,David Hudson DePatie,United States,Gig Harbor,1957,,David H. DePatie
+344,male,,United States,Woodland Hills,,,Lee Gunther
+345,male,,,,,,Johnny Douglas (conductor)
+346,male,,United States,,1950,,Wally Burr
+347,female,,United States,,1952,,Kathy Garver
+348,female,June Luisi,United States,Los Angeles,1937,2014,June Foray
+349,male,,United States,Los Angeles,1945,,Dick Tufeld
+350,,,,,,,
+352,male,Eddie Asner,United States,Tarzana,1957,2021,Ed Asner
+353,male,,United States,,,,Rodney Saulsberry
+354,female,Jennifer R. Hale,Canada,,1988,,Jennifer Hale
+355,male,,United States,,,,Gary Imhoff
+356,male,,,,,,John Semper
+357,male,,,,,,Bob Richardson (animator)
+358,male,,Israel,,,,Shuki Levy
+360,male,,United Kingdom,,,,John Payne (voice actor)
+361,male,,,,,,Will Meugniot
+362,male,,,,,,
+363,male,,,,,,
+365,male,,,,,,
+366,male,,United States,,1981,,Ian Ziering
+367,male,Keith Ian Carradine,United States,,1971,,Keith Carradine
+368,female,,United States,,1994,,Angelle Brooks
+369,male,,United States,,,,Brian Michael Bendis
+370,male,,,,,,Morgan Gendel
+372,male,Thomas John Digweed,United Kingdom,,1989,,John Digweed
+373,male,,,,1992,,Nick Muir
+374,male,,United States,,1987,,James Arnold Taylor
+375,male,Daran Morrison Nordland,United States,,1988,,Daran Norris
+376,female,,United States,,1994,,Vanessa Marshall
+377,male,Gregory David Weisman,United States,,1983,,Greg Weisman
+378,male,,Japan,,,,Victor Cook
+380,male,,United States,,1994,,Kristopher Carter
+382,female,,United States,,,,Lolita Ritmanis
+383,male,,United States,,2004,,Matt Lanter
+384,male,,United States,,1981,,Paul Dini
+385,male,,,,,,Joe Kelly (comics writer)
+386,male,,United States,,,,Steven T. Seagle
+387,male,,United States,Springfield,,,Alex Soto
+388,male,,United States,,,,Kevin Manthei
+389,male,,United States,,2010,,Robbie Daymond
+390,male,Scott David Menville,United States,,,,Scott Menville
+391,male,,United States,,,,Kevin Shinick
+392,male,,,,,,
+396,male,,United States,,1993,,Dee Bradley Baker
+400,male,Patrick Martin Stumph,United States,,2001,,Patrick Stump
+401,male,Zeno Anthony Robinson,United States,,2008,,Zeno Robinson
+405,male,,,,,,
+406,male,,,,,,Leo Birenberg
+408,male,,United States,,2002,,Lamorne Morris
+409,male,,Ireland,,1989,,Brendan Gleeson
+410,female,,People's Republic of China,,2004,,Li Jun Li
+411,male,Jack Alexander Huston,United Kingdom,,2004,,Jack Huston
+412,male,,United States,,,,Oren Uziel
+413,male,,,,,,Steve Lightfoot
+414,male,,,,,,Harry Bradbeer
+415,female,,United States,,,,Laura Nikolich
+417,male,,United States,,,,Al Milgrom
+430,male,,,,,,
+431,male,,,,,,Spencer Nilsen
+432,male,,United Kingdom,England,,,David Young (guitarist)
+438,male,,United Kingdom,,,,David Whittaker (video game composer)
+439,male,,,,1985,,Tim Follin
+440,male,,,,,,
+447,male,,,,,,
+448,male,Samuel Edward Williams,United States,New York City,1953,,Tony Williams (singer)
+455,male,,Japan,,1952,,
+456,,,,,,,
+458,male,,Germany,,,,Mark Bagley
+459,male,,United States,,,,Karl Kesel
+460,male,,,,,,Paul Mounts
+466,male,,,,,,
+480,male,,United States,,1991,,Tommy Tallarico
+488,male,,Austria,Locarno,,,
+500,male,,United States,,,,
+510,male,,,,,,Tobias Enhus
+511,male,,,,,,
+517,male,,United States,,,,James L. Venable
+518,male,,United States,,,,Jamie Christopherson
+520,,,,,,,
+521,female,,,,,,
+525,male,,,,,,
+526,,,,,,,
+527,male,,United States,,,,Dan Slott
+532,male,,United States,East Patchogue,1985,2025,Peter David
+533,male,,United States,,,,Gerard Marino
+537,male,,Canada,,,,
+538,male,,Israel,,1994,,Inon Zur
+541,male,,United States,,2001,,Christos Gage
+542,male,,,,,,
+546,male,,,,,,Jerome Chen (visual effects supervisor)
+549,male,Thomas Floyd Johnson,United States,11th arrondissement of Paris,,,Tom Johnson (composer)
+550,male,,United Kingdom,,1989,,Jon Burton
+558,male,,United States,,,,Kurt Busiek
+560,male,,,,,,Ryan Smith (baseball)
+563,,,,,,,
+570,male,,United States,,1997,,John Paesano
+574,,,,,,,
+580,male,,United States,Abilene,,,Walt Williams (baseball)
+581,male,,United States,,1998,,Yuri Lowenthal

@@ -1,0 +1,3524 @@
+{
+ "works": [
+  {
+   "media_type": "movie",
+   "page": "Spider-Man (1977 film)",
+   "prose_scores": [],
+   "title": "Spider-Man",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 1
+  },
+  {
+   "media_type": "movie",
+   "page": "Spider-Man Strikes Back",
+   "prose_scores": [],
+   "title": "Spider-Man Strikes Back",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 2
+  },
+  {
+   "media_type": "movie",
+   "page": "Spider-Man: The Dragon's Challenge",
+   "prose_scores": [],
+   "title": "Spider-Man: The Dragon's Challenge",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 3
+  },
+  {
+   "media_type": "movie",
+   "page": "Spider-Man (1978 film)",
+   "prose_scores": [],
+   "title": "Spider-Man (Toei)",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 4
+  },
+  {
+   "media_type": "movie",
+   "page": "Spider-Man (2002 film)",
+   "prose_scores": [
+    {
+     "max_score": 100.0,
+     "publication": "Metacritic",
+     "review_count": 38,
+     "score": 73.0,
+     "score_pct": 73.0,
+     "source_template": "Metacritic film prose"
+    },
+    {
+     "context": "== Reception == ===Critical response=== Audiences polled by CinemaScore gave the film an average grade of \"A−\" on an A+ to F scale. Eric Harrison of the ''Houston Chron",
+     "grade": "A",
+     "publication": "CinemaScore"
+    }
+   ],
+   "title": "Spider-Man",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 5
+  },
+  {
+   "media_type": "movie",
+   "page": "Spider-Man 2",
+   "prose_scores": [
+    {
+     "context": "eviews, indicating \"universal acclaim\". Audiences polled by CinemaScore gave the film an average grade of \"A−\" on an A+ to F scale, the same grade earned by the previou",
+     "grade": "A",
+     "publication": "CinemaScore"
+    }
+   ],
+   "title": "Spider-Man 2",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 6
+  },
+  {
+   "media_type": "movie",
+   "page": "Spider-Man 3",
+   "prose_scores": [
+    {
+     "context": "n 3'' nonetheless isn't quite as refined as the first two.\" Metacritic, which uses a weighted average, assigned the film a score of 59 out of 100 based on 40 critics. Audiences polled by CinemaScore gave the film an average g",
+     "max_score": 100.0,
+     "publication": "Metacritic",
+     "review_count": 40,
+     "score": 59.0,
+     "score_pct": 59.0
+    },
+    {
+     "context": "e of 59 out of 100 based on 40 critics. Audiences polled by CinemaScore gave the film an average grade of \"B+\" on an A+ to F scale. Roger Friedman of Fox News called the",
+     "grade": "B+",
+     "publication": "CinemaScore"
+    }
+   ],
+   "title": "Spider-Man 3",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 7
+  },
+  {
+   "media_type": "movie",
+   "page": "The Amazing Spider-Man (film)",
+   "prose_scores": [
+    {
+     "context": "n April 21, 2023. == Reception == === Critical response === Metacritic, which uses a weighted average, assigns the film a score of 66 out of 100, based on 42 critics. Audiences polled by CinemaScore gave the film an \"A−\" on a",
+     "max_score": 100.0,
+     "publication": "Metacritic",
+     "review_count": 42,
+     "score": 66.0,
+     "score_pct": 66.0
+    }
+   ],
+   "title": "The Amazing Spider-Man",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 8
+  },
+  {
+   "media_type": "movie",
+   "page": "The Amazing Spider-Man 2",
+   "prose_scores": [
+    {
+     "context": "egator Rotten Tomatoes, ''The Amazing Spider-Man 2'' has an approval rating of 50% based on 312 reviews, and an average rating of . The site's critical consensus r",
+     "max_score": 100.0,
+     "publication": "Rotten Tomatoes",
+     "review_count": 312,
+     "score": 50.0,
+     "score_pct": 50.0
+    },
+    {
+     "context": "unfocused narrative and an overabundance of characters.\" On Metacritic, the film has a weighted average score of 53 out of 100 based on 50 critics. Audiences polled by CinemaScore gave the film an average g",
+     "max_score": 100.0,
+     "publication": "Metacritic",
+     "review_count": 50,
+     "score": 53.0,
+     "score_pct": 53.0
+    },
+    {
+     "context": "e of 53 out of 100 based on 50 critics. Audiences polled by CinemaScore gave the film an average grade of \"B+\" on an A+ to F scale. Kim Newman of ''Empire'' called the fi",
+     "grade": "B+",
+     "publication": "CinemaScore"
+    }
+   ],
+   "title": "The Amazing Spider-Man 2",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 9
+  },
+  {
+   "media_type": "movie",
+   "page": "Spider-Man: Homecoming",
+   "prose_scores": [],
+   "title": "Spider-Man: Homecoming",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 10
+  },
+  {
+   "media_type": "movie",
+   "page": "Spider-Man: Into the Spider-Verse",
+   "prose_scores": [
+    {
+     "context": ". It is the best-reviewed superhero film on the website. On Metacritic, the film has a weighted average score of 87 out of 100 based on reviews from 50 critics, indicating \"universal acclaim\". Audiences polled by Cinema",
+     "max_score": 100.0,
+     "publication": "Metacritic",
+     "review_count": 50,
+     "score": 87.0,
+     "score_pct": 87.0
+    },
+    {
+     "context": "ritics, indicating \"universal acclaim\". Audiences polled by CinemaScore gave the film a rare grade of \"A+\" on an A+ to F scale, and those at PostTrak gave it a 90% ov",
+     "grade": "A+",
+     "publication": "CinemaScore"
+    }
+   ],
+   "title": "Spider-Man: Into the Spider-Verse",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 11
+  },
+  {
+   "media_type": "movie",
+   "page": "Spider-Man: Far From Home",
+   "prose_scores": [
+    {
+     "context": "gan on location in Hertfordshire, England, on July 2, 2018, Metacritic, which uses a weighted average, assigned the film a score of 69 out of 100 based on reviews from 55 critics, indicating \"generally favorable\" reviews. Audiences polled",
+     "max_score": 100.0,
+     "publication": "Metacritic",
+     "review_count": 55,
+     "score": 69.0,
+     "score_pct": 69.0
+    },
+    {
+     "context": "dicating \"generally favorable\" reviews. Audiences polled by CinemaScore gave the film an average grade of \"A\" on an A+ to F scale, Adam Graham of ''The Detroit News'' ga",
+     "grade": "A",
+     "publication": "CinemaScore"
+    }
+   ],
+   "title": "Spider-Man: Far From Home",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 12
+  },
+  {
+   "media_type": "movie",
+   "page": "Spider-Man: No Way Home",
+   "prose_scores": [
+    {
+     "context": "O NOT LIST RELEASE FORMATS WITHOUT EXPLICIT SOURCING!--> On Metacritic, the film has a weighted average score of 71 out of 100, based on 60 critics, indicating \"generally favorable\" reviews. Audiences polled",
+     "max_score": 100.0,
+     "publication": "Metacritic",
+     "review_count": 60,
+     "score": 71.0,
+     "score_pct": 71.0
+    }
+   ],
+   "title": "Spider-Man: No Way Home",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 13
+  },
+  {
+   "media_type": "movie",
+   "page": "Spider-Man: Across the Spider-Verse",
+   "prose_scores": [
+    {
+     "average_rating": 8.6,
+     "max_score": 100.0,
+     "publication": "Rotten Tomatoes",
+     "review_count": 386,
+     "score": 95.0,
+     "score_pct": 95.0,
+     "source_template": "Rotten Tomatoes prose"
+    },
+    {
+     "max_score": 100.0,
+     "publication": "Metacritic",
+     "review_count": 60,
+     "score": 86.0,
+     "score_pct": 86.0,
+     "source_template": "Metacritic film prose"
+    }
+   ],
+   "title": "Spider-Man: Across the Spider-Verse",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 14
+  },
+  {
+   "media_type": "movie",
+   "page": "Spider-Man: Beyond the Spider-Verse",
+   "prose_scores": [],
+   "title": "Spider-Man: Beyond the Spider-Verse",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 15
+  },
+  {
+   "media_type": "movie",
+   "page": "Spider-Man: Brand New Day",
+   "prose_scores": [
+    {
+     "context": "lly, the film earned $573&nbsp;million its opening weekend, Metacritic, which uses a weighted average, assigned the film a score of 66 out of 100 based on 56 critics, indicating \"generally favorable\" reviews. Audiences polled",
+     "max_score": 100.0,
+     "publication": "Metacritic",
+     "review_count": 56,
+     "score": 66.0,
+     "score_pct": 66.0
+    },
+    {
+     "context": "dicating \"generally favorable\" reviews. Audiences polled by CinemaScore gave the film an average grade of \"A\" on an A+ to F scale, while 88% of those surveyed by PostTra",
+     "grade": "A",
+     "publication": "CinemaScore"
+    }
+   ],
+   "title": "Spider-Man: Brand New Day",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 16
+  },
+  {
+   "media_type": "movie",
+   "page": "Venom (2018 film)",
+   "prose_scores": [
+    {
+     "context": "s to join the film in August 2017, By October, Jenny Slate, Metacritic, which uses a weighted average, assigned the film a score of 35 out of 100, based on 46 critics, indicating \"generally unfavorable reviews\". Critics genera",
+     "max_score": 100.0,
+     "publication": "Metacritic",
+     "review_count": 46,
+     "score": 35.0,
+     "score_pct": 35.0
+    }
+   ],
+   "title": "Venom",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 17
+  },
+  {
+   "media_type": "movie",
+   "page": "Venom: Let There Be Carnage",
+   "prose_scores": [
+    {
+     "context": ", The review aggregation website Rotten Tomatoes reports an approval rating of 58% based on 283 reviews, with an average rating of 5.4/10. The website's critical c",
+     "max_score": 100.0,
+     "publication": "Rotten Tomatoes",
+     "review_count": 283,
+     "score": 58.0,
+     "score_pct": 58.0
+    },
+    {
+     "context": "e Carnage'' eagerly embraces the franchise's sillier side.\" Metacritic assigned the film a weighted average score of 49 out of 100, based on 48 critics, indicating \"mixed or average reviews\". Audiences polled by",
+     "max_score": 100.0,
+     "publication": "Metacritic",
+     "review_count": 48,
+     "score": 49.0,
+     "score_pct": 49.0
+    },
+    {
+     "context": "indicating \"mixed or average reviews\". Audiences polled by CinemaScore gave the film an average grade of \"B+\" on an A+ to F scale, the same as the first film, while thos",
+     "grade": "B+",
+     "publication": "CinemaScore"
+    }
+   ],
+   "title": "Venom: Let There Be Carnage",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 18
+  },
+  {
+   "media_type": "movie",
+   "page": "Morbius (film)",
+   "prose_scores": [
+    {
+     "context": "nks as the 18th worst-reviewed superhero movie on the site. Metacritic assigned the film a weighted average score of 35 out of 100 based on 55 critics, indicating \"generally unfavorable reviews\". Indo-Asian New",
+     "max_score": 100.0,
+     "publication": "Metacritic",
+     "review_count": 55,
+     "score": 35.0,
+     "score_pct": 35.0
+    },
+    {
+     "context": "ceive some praise for his performance\". Audiences polled by CinemaScore gave the film an average grade of \"C+\" on an A+ to F scale, while those at PostTrak gave it a 62%",
+     "grade": "C+",
+     "publication": "CinemaScore"
+    }
+   ],
+   "title": "Morbius",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 19
+  },
+  {
+   "media_type": "movie",
+   "page": "Madame Web (film)",
+   "prose_scores": [
+    {
+     "max_score": 100.0,
+     "publication": "Metacritic",
+     "review_count": 51,
+     "score": 26.0,
+     "score_pct": 26.0,
+     "source_template": "Metacritic film prose"
+    }
+   ],
+   "title": "Madame Web",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 20
+  },
+  {
+   "media_type": "movie",
+   "page": "Kraven the Hunter (film)",
+   "prose_scores": [
+    {
+     "average_rating": 4.0,
+     "max_score": 100.0,
+     "publication": "Rotten Tomatoes",
+     "review_count": 158,
+     "score": 15.0,
+     "score_pct": 15.0,
+     "source_template": "Rotten Tomatoes prose"
+    },
+    {
+     "max_score": 100.0,
+     "publication": "Metacritic",
+     "review_count": 41,
+     "score": 35.0,
+     "score_pct": 35.0,
+     "source_template": "Metacritic film prose"
+    }
+   ],
+   "title": "Kraven the Hunter",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 21
+  },
+  {
+   "media_type": "movie",
+   "page": "Venom: The Last Dance",
+   "prose_scores": [
+    {
+     "average_rating": 4.7,
+     "max_score": 100.0,
+     "publication": "Rotten Tomatoes",
+     "review_count": 219,
+     "score": 40.0,
+     "score_pct": 40.0,
+     "source_template": "Rotten Tomatoes prose"
+    },
+    {
+     "max_score": 100.0,
+     "publication": "Metacritic",
+     "review_count": 47,
+     "score": 41.0,
+     "score_pct": 41.0,
+     "source_template": "Metacritic film prose"
+    },
+    {
+     "context": "er ''Red One''. ===Critical response=== Audiences polled by CinemaScore gave the film an average grade of \"B–\" on an A+ to F scale (the lowest of the trilogy), while th",
+     "grade": "B",
+     "publication": "CinemaScore"
+    }
+   ],
+   "title": "Venom: The Last Dance",
+   "v2_rows": 2,
+   "video_game_reviews": [],
+   "work_id": 22
+  },
+  {
+   "media_type": "movie",
+   "page": "El Muerto",
+   "prose_scores": [],
+   "title": "El Muerto",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 23
+  },
+  {
+   "media_type": "tv_show",
+   "page": "Spidey Super Stories",
+   "prose_scores": [],
+   "title": "Spidey Super Stories",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 24
+  },
+  {
+   "media_type": "tv_show",
+   "page": "The Amazing Spider-Man (TV series)",
+   "prose_scores": [],
+   "title": "The Amazing Spider-Man",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 25
+  },
+  {
+   "media_type": "tv_show",
+   "page": "Spider-Man (Japanese TV series)",
+   "prose_scores": [],
+   "title": "Spider-Man (Japanese TV series)",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 26
+  },
+  {
+   "media_type": "tv_show",
+   "page": "Spider-Noir",
+   "prose_scores": [
+    {
+     "max_score": 100.0,
+     "publication": "Metacritic",
+     "review_count": 28,
+     "score": 72.0,
+     "score_pct": 72.0,
+     "source_template": "Metacritic film prose"
+    }
+   ],
+   "title": "Spider-Noir",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 27
+  },
+  {
+   "media_type": "tv_show",
+   "page": "Spider-Man (1967 TV series)",
+   "prose_scores": [],
+   "title": "Spider-Man (1967 TV series)",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 28
+  },
+  {
+   "media_type": "tv_show",
+   "page": "Spider-Man (1981 TV series)",
+   "prose_scores": [],
+   "title": "Spider-Man (1981 TV series)",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 29
+  },
+  {
+   "media_type": "tv_show",
+   "page": "Spider-Man and His Amazing Friends",
+   "prose_scores": [],
+   "title": "Spider-Man and His Amazing Friends",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 30
+  },
+  {
+   "media_type": "tv_show",
+   "page": "Spider-Man: The Animated Series",
+   "prose_scores": [],
+   "title": "Spider-Man: The Animated Series",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 31
+  },
+  {
+   "media_type": "tv_show",
+   "page": "Spider-Man Unlimited",
+   "prose_scores": [],
+   "title": "Spider-Man Unlimited",
+   "v2_rows": 1,
+   "video_game_reviews": [],
+   "work_id": 32
+  },
+  {
+   "media_type": "tv_show",
+   "page": "Spider-Man: The New Animated Series",
+   "prose_scores": [],
+   "title": "Spider-Man: The New Animated Series",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 33
+  },
+  {
+   "media_type": "tv_show",
+   "page": "The Spectacular Spider-Man (TV series)",
+   "prose_scores": [
+    {
+     "context": "assic stories from the comics. On review aggregator website Rotten Tomatoes, the series holds a 100% rating based on 9 reviews. Before the series premiere, Matt Sernaker of ComicsOnline",
+     "max_score": 100.0,
+     "publication": "Rotten Tomatoes",
+     "review_count": 9,
+     "score": 100.0,
+     "score_pct": 100.0
+    }
+   ],
+   "title": "The Spectacular Spider-Man",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 34
+  },
+  {
+   "media_type": "tv_show",
+   "page": "Ultimate Spider-Man (TV series)",
+   "prose_scores": [],
+   "title": "Ultimate Spider-Man",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 35
+  },
+  {
+   "media_type": "tv_show",
+   "page": "Spider-Man (2017 TV series)",
+   "prose_scores": [],
+   "title": "Spider-Man (2017 TV series)",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 36
+  },
+  {
+   "media_type": "tv_show",
+   "page": "Spidey and His Amazing Friends",
+   "prose_scores": [],
+   "title": "Spidey and His Amazing Friends",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 37
+  },
+  {
+   "media_type": "tv_show",
+   "page": "Your Friendly Neighborhood Spider-Man",
+   "prose_scores": [
+    {
+     "context": "atic Universe's (MCU) main timeline, within the multiverse, Metacritic, which uses a weighted average, assigned a score of 77 out of 100 based on 10 critics, indicating \"generally favorable\" reviews. === Accolades ==",
+     "max_score": 100.0,
+     "publication": "Metacritic",
+     "review_count": 10,
+     "score": 77.0,
+     "score_pct": 77.0
+    }
+   ],
+   "title": "Your Friendly Neighborhood Spider-Man",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 38
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man (1982 video game)",
+   "prose_scores": [],
+   "title": "Spider-Man (1982 video game)",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 39
+  },
+  {
+   "media_type": "game",
+   "page": "Questprobe featuring Spider-Man",
+   "prose_scores": [],
+   "title": "Questprobe featuring Spider-Man",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 40
+  },
+  {
+   "media_type": "game",
+   "page": "The Amazing Spider-Man and Captain America in Dr. Doom's Revenge!",
+   "prose_scores": [],
+   "title": "The Amazing Spider-Man and Captain America in Dr. Doom's Revenge!",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 41
+  },
+  {
+   "media_type": "game",
+   "page": "The Amazing Spider-Man (1990 video game)",
+   "prose_scores": [],
+   "title": "The Amazing Spider-Man (1990 computer)",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 42
+  },
+  {
+   "media_type": "game",
+   "page": "The Amazing Spider-Man (handheld video game)",
+   "prose_scores": [],
+   "title": "The Amazing Spider-Man (1990 Game Boy)",
+   "v2_rows": 0,
+   "video_game_reviews": [
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Electronic Gaming Monthly",
+     "raw": "8/10, 7/10, 7/10, 7/10",
+     "score": 8.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 20.0,
+     "platform_scope": null,
+     "publication": "GamePro",
+     "raw": "14.5/20",
+     "score": 14.5,
+     "score_pct": 72.5
+    },
+    {
+     "max_score": 20.0,
+     "platform_scope": null,
+     "publication": "Nintendo Power",
+     "raw": "11.1/20",
+     "score": 11.1,
+     "score_pct": 55.5
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "GB Action",
+     "raw": "80%",
+     "score": 80.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Power Play",
+     "raw": "44%",
+     "score": 44.0,
+     "score_pct": 44.0
+    }
+   ],
+   "work_id": 43
+  },
+  {
+   "media_type": "game",
+   "page": "The Punisher: The Ultimate Payback!",
+   "prose_scores": [],
+   "title": "The Punisher: The Ultimate Payback!",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 44
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man vs. The Kingpin",
+   "prose_scores": [],
+   "title": "Spider-Man vs. The Kingpin",
+   "v2_rows": 1,
+   "video_game_reviews": [
+    {
+     "max_score": 100.0,
+     "platform_scope": "Sega CD",
+     "publication": "Hyper",
+     "raw": "73%",
+     "score": 73.0,
+     "score_pct": 73.0
+    }
+   ],
+   "work_id": 45
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man: The Video Game",
+   "prose_scores": [],
+   "title": "Spider-Man: The Video Game",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 46
+  },
+  {
+   "media_type": "game",
+   "page": "The Amazing Spider-Man 2 (1992 video game)",
+   "prose_scores": [],
+   "title": "The Amazing Spider-Man 2 (1992)",
+   "v2_rows": 0,
+   "video_game_reviews": [
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Electronic Gaming Monthly",
+     "raw": "8/10, 7/10, 7/10, 7/10",
+     "score": 8.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 20.0,
+     "platform_scope": null,
+     "publication": "GamePro",
+     "raw": "14.5/20",
+     "score": 14.5,
+     "score_pct": 72.5
+    },
+    {
+     "max_score": 20.0,
+     "platform_scope": null,
+     "publication": "Nintendo Power",
+     "raw": "11.1/20",
+     "score": 11.1,
+     "score_pct": 55.5
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "GB Action",
+     "raw": "80%",
+     "score": 80.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Power Play",
+     "raw": "44%",
+     "score": 44.0,
+     "score_pct": 44.0
+    }
+   ],
+   "work_id": 47
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man: Return of the Sinister Six",
+   "prose_scores": [],
+   "title": "Spider-Man: Return of the Sinister Six",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 48
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man and the X-Men in Arcade's Revenge",
+   "prose_scores": [],
+   "title": "Spider-Man and the X-Men in Arcade's Revenge",
+   "v2_rows": 1,
+   "video_game_reviews": [
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "Allgame",
+     "raw": "SGG: 2/5",
+     "score": 2.0,
+     "score_pct": 40.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Computer and Video Games",
+     "raw": "GB: 60/100",
+     "score": 60.0,
+     "score_pct": 60.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Computer and Video Games",
+     "raw": "SGG: 88/100",
+     "score": 88.0,
+     "score_pct": 88.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Computer and Video Games",
+     "raw": "SNES: 81/100",
+     "score": 81.0,
+     "score_pct": 81.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Electronic Gaming Monthly",
+     "raw": "SGG: 6/10{{efn|Electronic Gaming Monthlys review of the Game Gear port was by five critics with different ratings; three gave it a 6/10, one 5/10, another 7/10.}}",
+     "score": 6.0,
+     "score_pct": 60.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Electronic Gaming Monthly",
+     "raw": "SNES: 6.75/10{{efn|Electronic Gaming Monthlys review of the SNES version was by four critics that scored it differently; two rated it 6/10, one 7/10, another 8/10.}}",
+     "score": 6.75,
+     "score_pct": 67.5
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "GamePro",
+     "raw": "GB: 3.125/5",
+     "score": 3.125,
+     "score_pct": 62.5
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "GamePro",
+     "raw": "SGG: 3.25/5",
+     "score": 3.25,
+     "score_pct": 65.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "GamePro",
+     "raw": "SMD: 4.75/5",
+     "score": 4.75,
+     "score_pct": 95.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Hyper",
+     "raw": "SMD & SNES: 62%",
+     "score": 62.0,
+     "score_pct": 62.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "Nintendo Power",
+     "raw": "GB: 3.15/5",
+     "score": 3.15,
+     "score_pct": 63.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "Nintendo Power",
+     "raw": "SNES: 3.55/5",
+     "score": 3.55,
+     "score_pct": 71.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Official Nintendo Magazine",
+     "raw": "SNES: 89/100",
+     "score": 89.0,
+     "score_pct": 89.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Game Players",
+     "raw": "SNES: 6/10",
+     "score": 6.0,
+     "score_pct": 60.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "N-Force",
+     "raw": "SNES: 75/100",
+     "score": 75.0,
+     "score_pct": 75.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Play Time (magazine)",
+     "raw": "SNES: 78%",
+     "score": 78.0,
+     "score_pct": 78.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Sega Magazine",
+     "raw": "SGG: 51/100",
+     "score": 51.0,
+     "score_pct": 51.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": "SNES",
+     "publication": "GameRankings",
+     "raw": "70.17%",
+     "score": 70.17,
+     "score_pct": 70.17
+    }
+   ],
+   "work_id": 49
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man 3: Invasion of the Spider-Slayers",
+   "prose_scores": [],
+   "title": "The Amazing Spider-Man 3: Invasion of the Spider-Slayers",
+   "v2_rows": 0,
+   "video_game_reviews": [
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Electronic Gaming Monthly",
+     "raw": "8/10, 7/10, 7/10, 7/10",
+     "score": 8.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 20.0,
+     "platform_scope": null,
+     "publication": "GamePro",
+     "raw": "14.5/20",
+     "score": 14.5,
+     "score_pct": 72.5
+    },
+    {
+     "max_score": 20.0,
+     "platform_scope": null,
+     "publication": "Nintendo Power",
+     "raw": "11.1/20",
+     "score": 11.1,
+     "score_pct": 55.5
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "GB Action",
+     "raw": "80%",
+     "score": 80.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Power Play",
+     "raw": "44%",
+     "score": 44.0,
+     "score_pct": 44.0
+    }
+   ],
+   "work_id": 50
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man and Venom: Maximum Carnage",
+   "prose_scores": [],
+   "title": "Spider-Man and Venom: Maximum Carnage",
+   "v2_rows": 2,
+   "video_game_reviews": [
+    {
+     "max_score": 100.0,
+     "platform_scope": "SNES",
+     "publication": "GameRankings",
+     "raw": "66.33%",
+     "score": 66.33,
+     "score_pct": 66.33
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": "Genesis",
+     "publication": "GameRankings",
+     "raw": "80%",
+     "score": 80.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": "SNES",
+     "publication": "Electronic Gaming Monthly",
+     "raw": "5/10, 5/10, 5/10, 5/10, 5/10",
+     "score": 5.0,
+     "score_pct": 50.0
+    }
+   ],
+   "work_id": 51
+  },
+  {
+   "media_type": "game",
+   "page": "The Amazing Spider-Man: Lethal Foes",
+   "prose_scores": [],
+   "title": "The Amazing Spider-Man: Lethal Foes",
+   "v2_rows": 1,
+   "video_game_reviews": [],
+   "work_id": 52
+  },
+  {
+   "media_type": "game",
+   "page": "Venom/Spider-Man: Separation Anxiety",
+   "prose_scores": [],
+   "title": "Venom/Spider-Man: Separation Anxiety",
+   "v2_rows": 5,
+   "video_game_reviews": [
+    {
+     "max_score": 10.0,
+     "platform_scope": "GEN",
+     "publication": "Electronic Gaming Monthly",
+     "raw": "4.75/10",
+     "score": 4.75,
+     "score_pct": 47.5
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": "SNES",
+     "publication": "GameRankings",
+     "raw": "61.50%",
+     "score": 61.5,
+     "score_pct": 61.5
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": "GEN",
+     "publication": "GameRankings",
+     "raw": "35.85%",
+     "score": 35.85,
+     "score_pct": 35.85
+    }
+   ],
+   "work_id": 53
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man (1995 video game)",
+   "prose_scores": [],
+   "title": "Spider-Man (1995 video game)",
+   "v2_rows": 3,
+   "video_game_reviews": [],
+   "work_id": 54
+  },
+  {
+   "media_type": "game",
+   "page": "The Amazing Spider-Man: Web of Fire",
+   "prose_scores": [],
+   "title": "The Amazing Spider-Man: Web of Fire",
+   "v2_rows": 2,
+   "video_game_reviews": [
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Game Informer",
+     "raw": "5/10",
+     "score": 5.0,
+     "score_pct": 50.0
+    },
+    {
+     "grade": "B+",
+     "platform_scope": null,
+     "publication": "Manci Games",
+     "raw": "B+"
+    }
+   ],
+   "work_id": 55
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man: The Sinister Six",
+   "prose_scores": [],
+   "title": "Spider-Man: The Sinister Six",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 56
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man (2000 video game)",
+   "prose_scores": [],
+   "title": "Spider-Man (2000 video game)",
+   "v2_rows": 19,
+   "video_game_reviews": [],
+   "work_id": 57
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man 2: The Sinister Six",
+   "prose_scores": [],
+   "title": "Spider-Man 2: The Sinister Six",
+   "v2_rows": 0,
+   "video_game_reviews": [
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "GameRankings",
+     "raw": "70.29%",
+     "score": 70.29,
+     "score_pct": 70.29
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "Allgame",
+     "raw": "3.5/5",
+     "score": 3.5,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "GamePro",
+     "raw": "4.5/5",
+     "score": 4.5,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "6.6/10",
+     "score": 6.6,
+     "score_pct": 66.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "9/10",
+     "score": 9.0,
+     "score_pct": 90.0
+    }
+   ],
+   "work_id": 58
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man 2: Enter: Electro",
+   "prose_scores": [],
+   "title": "Spider-Man 2: Enter: Electro",
+   "v2_rows": 11,
+   "video_game_reviews": [
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "74/100",
+     "score": 74.0,
+     "score_pct": 74.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "Allgame",
+     "raw": "3.5/5",
+     "score": 3.5,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Electronic Gaming Monthly",
+     "raw": "5.83/10",
+     "score": 5.83,
+     "score_pct": 58.3
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Eurogamer",
+     "raw": "4/10",
+     "score": 4.0,
+     "score_pct": 40.0
+    },
+    {
+     "max_score": 40.0,
+     "platform_scope": null,
+     "publication": "Famitsu",
+     "raw": "27/40",
+     "score": 27.0,
+     "score_pct": 67.5
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Game Informer",
+     "raw": "8.5/10",
+     "score": 8.5,
+     "score_pct": 85.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "GamePro",
+     "raw": "4/5",
+     "score": 4.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "7.1/10",
+     "score": 7.1,
+     "score_pct": 71.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "5.5/10",
+     "score": 5.5,
+     "score_pct": 55.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "Official PlayStation Magazine",
+     "raw": "3.5/5",
+     "score": 3.5,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Maxim",
+     "raw": "8/10",
+     "score": 8.0,
+     "score_pct": 80.0
+    }
+   ],
+   "work_id": 59
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man: Mysterio's Menace",
+   "prose_scores": [],
+   "title": "Spider-Man: Mysterio's Menace",
+   "v2_rows": 11,
+   "video_game_reviews": [
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "84/100",
+     "score": 84.0,
+     "score_pct": 84.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "Allgame",
+     "raw": "3.5/5",
+     "score": 3.5,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Electronic Gaming Monthly",
+     "raw": "6/10",
+     "score": 6.0,
+     "score_pct": 60.0
+    },
+    {
+     "max_score": 40.0,
+     "platform_scope": null,
+     "publication": "Famitsu",
+     "raw": "28/40",
+     "score": 28.0,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Game Informer",
+     "raw": "7.5/10",
+     "score": 7.5,
+     "score_pct": 75.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "GamePro",
+     "raw": "4.5/5",
+     "score": 4.5,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "8.5/10",
+     "score": 8.5,
+     "score_pct": 85.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "8.5/10",
+     "score": 8.5,
+     "score_pct": 85.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "Nintendo Power",
+     "raw": "4.5/5",
+     "score": 4.5,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Nintendo World Report",
+     "raw": "9/10",
+     "score": 9.0,
+     "score_pct": 90.0
+    }
+   ],
+   "work_id": 60
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man (2002 video game)",
+   "prose_scores": [],
+   "title": "Spider-Man (2002 video game)",
+   "v2_rows": 19,
+   "video_game_reviews": [],
+   "work_id": 61
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man 2 (2004 video game)",
+   "prose_scores": [],
+   "title": "Spider-Man 2 (2004 video game)",
+   "v2_rows": 21,
+   "video_game_reviews": [
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(Xbox) 83/100",
+     "score": 83.0,
+     "score_pct": 83.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(PS2) 80/100",
+     "score": 80.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(GC) 80/100",
+     "score": 80.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(PSP) 67/100",
+     "score": 67.0,
+     "score_pct": 67.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(GBA) 65/100",
+     "score": 65.0,
+     "score_pct": 65.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(DS) 61/100",
+     "score": 61.0,
+     "score_pct": 61.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(N-Gage) 61/100",
+     "score": 61.0,
+     "score_pct": 61.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(PC) 42/100",
+     "score": 42.0,
+     "score_pct": 42.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Edge",
+     "raw": "6/10",
+     "score": 6.0,
+     "score_pct": 60.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Electronic Gaming Monthly",
+     "raw": "7/10",
+     "score": 7.0,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Electronic Gaming Monthly",
+     "raw": "(PSP) 6.33/10",
+     "score": 6.33,
+     "score_pct": 63.3
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Electronic Gaming Monthly",
+     "raw": "(DS) 4.83/10",
+     "score": 4.83,
+     "score_pct": 48.3
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Eurogamer",
+     "raw": "(Xbox) 7/10",
+     "score": 7.0,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Eurogamer",
+     "raw": "(PSP) 5/10",
+     "score": 5.0,
+     "score_pct": 50.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Game Informer",
+     "raw": "8/10",
+     "score": 8.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Game Informer",
+     "raw": "(PSP) 7.25/10",
+     "score": 7.25,
+     "score_pct": 72.5
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Game Informer",
+     "raw": "(GBA) 7/10",
+     "score": 7.0,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Game Informer",
+     "raw": "(N-Gage) 6.75/10",
+     "score": 6.75,
+     "score_pct": 67.5
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Game Informer",
+     "raw": "(DS) 6/10",
+     "score": 6.0,
+     "score_pct": 60.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "GamePro",
+     "raw": "4.5/5",
+     "score": 4.5,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "GamePro",
+     "raw": "(GBA & PSP) 3.5/5",
+     "score": 3.5,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "GamePro",
+     "raw": "(DS) 2/5",
+     "score": 2.0,
+     "score_pct": 40.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "(GBA) 7.3/10",
+     "score": 7.3,
+     "score_pct": 73.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "(GC/PS2) 7.2/10",
+     "score": 7.2,
+     "score_pct": 72.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "(PSP) 6.9/10",
+     "score": 6.9,
+     "score_pct": 69.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "(DS) 6/10",
+     "score": 6.0,
+     "score_pct": 60.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "(N-Gage) 5.2/10",
+     "score": 5.2,
+     "score_pct": 52.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "(PC) 5/10",
+     "score": 5.0,
+     "score_pct": 50.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "(Xbox) 9/10",
+     "score": 9.0,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "(PS2) 8.8/10",
+     "score": 8.8,
+     "score_pct": 88.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "(DS) 7.5/10",
+     "score": 7.5,
+     "score_pct": 75.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "(N-Gage) 7.1/10",
+     "score": 7.1,
+     "score_pct": 71.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "(PSP) 7/10",
+     "score": 7.0,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "(GBA) 6.5/10",
+     "score": 6.5,
+     "score_pct": 65.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "(PC) 4.5/10",
+     "score": 4.5,
+     "score_pct": 45.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "Nintendo Power",
+     "raw": "(GC) 3.8/5",
+     "score": 3.8,
+     "score_pct": 76.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "Nintendo Power",
+     "raw": "(DS) 3.5/5",
+     "score": 3.5,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "Nintendo Power",
+     "raw": "(GBA) 3.4/5",
+     "score": 3.4,
+     "score_pct": 68.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "Official PlayStation Magazine",
+     "raw": "3.5/5",
+     "score": 3.5,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Official Xbox Magazine",
+     "raw": "8.6/10",
+     "score": 8.6,
+     "score_pct": 86.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "PC Gamer US",
+     "raw": "25%",
+     "score": 25.0,
+     "score_pct": 25.0
+    }
+   ],
+   "work_id": 62
+  },
+  {
+   "media_type": "game",
+   "page": "Ultimate Spider-Man (video game)",
+   "prose_scores": [],
+   "title": "Ultimate Spider-Man (2005 video game)",
+   "v2_rows": 13,
+   "video_game_reviews": [
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(DS) 78/100",
+     "score": 78.0,
+     "score_pct": 78.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(GBA) 62/100",
+     "score": 62.0,
+     "score_pct": 62.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(GC) 76/100",
+     "score": 76.0,
+     "score_pct": 76.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(PC) 75/100",
+     "score": 75.0,
+     "score_pct": 75.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(PS2) 74/100",
+     "score": 74.0,
+     "score_pct": 74.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(Xbox) 77/100",
+     "score": 77.0,
+     "score_pct": 77.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Edge",
+     "raw": "5/10",
+     "score": 5.0,
+     "score_pct": 50.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Eurogamer",
+     "raw": "6/10",
+     "score": 6.0,
+     "score_pct": 60.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Game Informer",
+     "raw": "8/10",
+     "score": 8.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "GamePro",
+     "raw": "4/5",
+     "score": 4.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "7.1/10",
+     "score": 7.1,
+     "score_pct": 71.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "(PC) 7/10",
+     "score": 7.0,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameTrailers",
+     "raw": "8.9/10",
+     "score": 8.9,
+     "score_pct": 89.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "8.4/10",
+     "score": 8.4,
+     "score_pct": 84.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "(PS2) 8.3/10",
+     "score": 8.3,
+     "score_pct": 83.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "(DS) 8/10",
+     "score": 8.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Nintendo Power",
+     "raw": "(GC) 9/10",
+     "score": 9.0,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Nintendo Power",
+     "raw": "(DS) 6.5/10",
+     "score": 6.5,
+     "score_pct": 65.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Nintendo Power",
+     "raw": "(GBA) 6/10",
+     "score": 6.0,
+     "score_pct": 60.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "Official PlayStation Magazine",
+     "raw": "3.5/5",
+     "score": 3.5,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Official Xbox Magazine",
+     "raw": "6.4/10",
+     "score": 6.4,
+     "score_pct": 64.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "PC Gamer US",
+     "raw": "81%",
+     "score": 81.0,
+     "score_pct": 81.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "CiN Weekly",
+     "raw": "88/100",
+     "score": 88.0,
+     "score_pct": 88.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "The Sydney Morning Herald",
+     "raw": "3.5/5",
+     "score": 3.5,
+     "score_pct": 70.0
+    }
+   ],
+   "work_id": 63
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man: Battle for New York",
+   "prose_scores": [],
+   "title": "Spider-Man: Battle for New York",
+   "v2_rows": 0,
+   "video_game_reviews": [
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(DS) 68/100",
+     "score": 68.0,
+     "score_pct": 68.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(GBA) 41/100",
+     "score": 41.0,
+     "score_pct": 41.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "(DS) 7/10",
+     "score": 7.0,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "(GBA) 4/10",
+     "score": 4.0,
+     "score_pct": 40.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "4.5/10",
+     "score": 4.5,
+     "score_pct": 45.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Nintendo Power",
+     "raw": "6/10",
+     "score": 6.0,
+     "score_pct": 60.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Nintendo World Report",
+     "raw": "6.5/10",
+     "score": 6.5,
+     "score_pct": 65.0
+    }
+   ],
+   "work_id": 64
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man 3 (video game)",
+   "prose_scores": [],
+   "title": "Spider-Man 3 (2007 video game)",
+   "v2_rows": 16,
+   "video_game_reviews": [],
+   "work_id": 65
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man: Friend or Foe",
+   "prose_scores": [],
+   "title": "Spider-Man: Friend or Foe",
+   "v2_rows": 15,
+   "video_game_reviews": [
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "GameRankings",
+     "raw": "(PS2) 63.64%",
+     "score": 63.64,
+     "score_pct": 63.64
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "GameRankings",
+     "raw": "(Wii) 61.52%",
+     "score": 61.52,
+     "score_pct": 61.52
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "GameRankings",
+     "raw": "(PSP) 60.80%",
+     "score": 60.8,
+     "score_pct": 60.8
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "GameRankings",
+     "raw": "(X360) 60.35%",
+     "score": 60.35,
+     "score_pct": 60.35
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "GameRankings",
+     "raw": "(PC) 59.62%",
+     "score": 59.62,
+     "score_pct": 59.62
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "GameRankings",
+     "raw": "(DS) 55.04%",
+     "score": 55.04,
+     "score_pct": 55.04
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(PS2) 62/100",
+     "score": 62.0,
+     "score_pct": 62.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(X360) 60/100",
+     "score": 60.0,
+     "score_pct": 60.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(Wii) 59/100",
+     "score": 59.0,
+     "score_pct": 59.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(PSP) 58/100",
+     "score": 58.0,
+     "score_pct": 58.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(PC) 57/100",
+     "score": 57.0,
+     "score_pct": 57.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(DS) 55/100",
+     "score": 55.0,
+     "score_pct": 55.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Eurogamer",
+     "raw": "3/10",
+     "score": 3.0,
+     "score_pct": 30.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Game Informer",
+     "raw": "4.5/10",
+     "score": 4.5,
+     "score_pct": 45.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "GamePro",
+     "raw": "3.5/5",
+     "score": 3.5,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "7/10",
+     "score": 7.0,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameTrailers",
+     "raw": "5.8/10",
+     "score": 5.8,
+     "score_pct": 58.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "4.9/10",
+     "score": 4.9,
+     "score_pct": 49.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Official Xbox Magazine",
+     "raw": "6/10",
+     "score": 6.0,
+     "score_pct": 60.0
+    }
+   ],
+   "work_id": 66
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man: Web of Shadows",
+   "prose_scores": [],
+   "title": "Spider-Man: Web of Shadows",
+   "v2_rows": 17,
+   "video_game_reviews": [
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "GameRankings",
+     "raw": "DS: 79%",
+     "score": 79.0,
+     "score_pct": 79.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "GameRankings",
+     "raw": "PC: 54%",
+     "score": 54.0,
+     "score_pct": 54.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "GameRankings",
+     "raw": "PS2: 69%",
+     "score": 69.0,
+     "score_pct": 69.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "GameRankings",
+     "raw": "PS3: 70%",
+     "score": 70.0,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "GameRankings",
+     "raw": "PSP: 77%",
+     "score": 77.0,
+     "score_pct": 77.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "GameRankings",
+     "raw": "WII: 65%",
+     "score": 65.0,
+     "score_pct": 65.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "GameRankings",
+     "raw": "X360: 68%",
+     "score": 68.0,
+     "score_pct": 68.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "DS: 77/100",
+     "score": 77.0,
+     "score_pct": 77.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "PC: 52/100",
+     "score": 52.0,
+     "score_pct": 52.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "PS2: 69/100",
+     "score": 69.0,
+     "score_pct": 69.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "PS3: 67/100",
+     "score": 67.0,
+     "score_pct": 67.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "WII: 63/100",
+     "score": 63.0,
+     "score_pct": 63.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "X360: 68/100",
+     "score": 68.0,
+     "score_pct": 68.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Eurogamer",
+     "raw": "5/10",
+     "score": 5.0,
+     "score_pct": 50.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Game Informer",
+     "raw": "6.5/10",
+     "score": 6.5,
+     "score_pct": 65.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "GamePro",
+     "raw": "3.5/5",
+     "score": 3.5,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "PS3/X360: 8/10",
+     "score": 8.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "DS: 7/10",
+     "score": 7.0,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "WII: 6/10",
+     "score": 6.0,
+     "score_pct": 60.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameTrailers",
+     "raw": "6.3/10",
+     "score": 6.3,
+     "score_pct": 63.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "DS: 8/10",
+     "score": 8.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "PS2/PSP: 7/10",
+     "score": 7.0,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "PS3/X360 (AU): 6.7/10",
+     "score": 6.7,
+     "score_pct": 67.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "X360 (US): 5.7/10",
+     "score": 5.7,
+     "score_pct": 57.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "PS3 (US): 5.5/10",
+     "score": 5.5,
+     "score_pct": 55.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "PC: 5.3/10",
+     "score": 5.3,
+     "score_pct": 53.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "WII: 5.2/10",
+     "score": 5.2,
+     "score_pct": 52.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Nintendo Power",
+     "raw": "6.5/10",
+     "score": 6.5,
+     "score_pct": 65.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Official Nintendo Magazine",
+     "raw": "68%",
+     "score": 68.0,
+     "score_pct": 68.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Official Xbox Magazine",
+     "raw": "8/10",
+     "score": 8.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "PC Gamer US",
+     "raw": "48%",
+     "score": 48.0,
+     "score_pct": 48.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "Common Sense Media",
+     "raw": "3/5",
+     "score": 3.0,
+     "score_pct": 60.0
+    }
+   ],
+   "work_id": 67
+  },
+  {
+   "media_type": "game",
+   "page": "Ultimate Spider-Man: Total Mayhem",
+   "prose_scores": [],
+   "title": "Ultimate Spider-Man: Total Mayhem",
+   "v2_rows": 0,
+   "video_game_reviews": [
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "85/100",
+     "score": 85.0,
+     "score_pct": 85.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Eurogamer",
+     "raw": "5/10",
+     "score": 5.0,
+     "score_pct": 50.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "8.5/10",
+     "score": 8.5,
+     "score_pct": 85.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "VideoGamer.com",
+     "raw": "6/10",
+     "score": 6.0,
+     "score_pct": 60.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "Pocket Gamer",
+     "raw": "4.5/5",
+     "score": 4.5,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "AppSpy",
+     "raw": "5/5",
+     "score": 5.0,
+     "score_pct": 100.0
+    }
+   ],
+   "work_id": 68
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man: Shattered Dimensions",
+   "prose_scores": [],
+   "title": "Spider-Man: Shattered Dimensions",
+   "v2_rows": 12,
+   "video_game_reviews": [
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "DS: 73/100",
+     "score": 73.0,
+     "score_pct": 73.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "PS3: 74/100",
+     "score": 74.0,
+     "score_pct": 74.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "WII: 75/100",
+     "score": 75.0,
+     "score_pct": 75.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "X360: 76/100",
+     "score": 76.0,
+     "score_pct": 76.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "PC: 68/100",
+     "score": 68.0,
+     "score_pct": 68.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Destructoid",
+     "raw": "6/10",
+     "score": 6.0,
+     "score_pct": 60.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Eurogamer",
+     "raw": "7/10",
+     "score": 7.0,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Game Informer",
+     "raw": "8.5/10",
+     "score": 8.5,
+     "score_pct": 85.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "GamePro",
+     "raw": "4.5/5",
+     "score": 4.5,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "7.5/10",
+     "score": 7.5,
+     "score_pct": 75.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameTrailers",
+     "raw": "7/10",
+     "score": 7.0,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "8/10",
+     "score": 8.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "DS/WII: 7.5/10",
+     "score": 7.5,
+     "score_pct": 75.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Nintendo Power",
+     "raw": "WII: 8/10",
+     "score": 8.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Nintendo Power",
+     "raw": "DS: 7/10",
+     "score": 7.0,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Official Xbox Magazine",
+     "raw": "7.5/10",
+     "score": 7.5,
+     "score_pct": 75.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "PC Gamer US",
+     "raw": "50%",
+     "score": 50.0,
+     "score_pct": 50.0
+    },
+    {
+     "grade": "B+",
+     "platform_scope": null,
+     "publication": "The A.V. Club",
+     "raw": "B+"
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "The Escapist",
+     "raw": "3/5",
+     "score": 3.0,
+     "score_pct": 60.0
+    }
+   ],
+   "work_id": 69
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man: Edge of Time",
+   "prose_scores": [],
+   "title": "Spider-Man: Edge of Time",
+   "v2_rows": 12,
+   "video_game_reviews": [
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "3DS: 50/100",
+     "score": 50.0,
+     "score_pct": 50.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "DS: 50/100",
+     "score": 50.0,
+     "score_pct": 50.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "PS3: 58/100",
+     "score": 58.0,
+     "score_pct": 58.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "WII: 62/100",
+     "score": 62.0,
+     "score_pct": 62.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "X360: 57/100",
+     "score": 57.0,
+     "score_pct": 57.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "4.5/10",
+     "score": 4.5,
+     "score_pct": 45.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "6/10",
+     "score": 6.0,
+     "score_pct": 60.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Destructoid",
+     "raw": "5/10",
+     "score": 5.0,
+     "score_pct": 50.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "GamesRadar+",
+     "raw": "3/5",
+     "score": 3.0,
+     "score_pct": 60.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": "3DS",
+     "publication": "Nintendo World Report",
+     "raw": "4.5/10",
+     "score": 4.5,
+     "score_pct": 45.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": "DS",
+     "publication": "Nintendo World Report",
+     "raw": "6/10",
+     "score": 6.0,
+     "score_pct": 60.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Game Informer",
+     "raw": "6.5/10",
+     "score": 6.5,
+     "score_pct": 65.0
+    }
+   ],
+   "work_id": 70
+  },
+  {
+   "media_type": "game",
+   "page": "The Amazing Spider-Man (2012 video game)",
+   "prose_scores": [],
+   "title": "The Amazing Spider-Man (2012 video game)",
+   "v2_rows": 14,
+   "video_game_reviews": [],
+   "work_id": 71
+  },
+  {
+   "media_type": "game",
+   "page": "The Amazing Spider-Man 2 (2014 video game)",
+   "prose_scores": [],
+   "title": "The Amazing Spider-Man 2 (2014 video game)",
+   "v2_rows": 17,
+   "video_game_reviews": [
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "iOS: 58/100",
+     "score": 58.0,
+     "score_pct": 58.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "PC: 57/100",
+     "score": 57.0,
+     "score_pct": 57.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "PS3: 57/100",
+     "score": 57.0,
+     "score_pct": 57.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "PS4: 49/100",
+     "score": 49.0,
+     "score_pct": 49.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "WIIU: 58/100",
+     "score": 58.0,
+     "score_pct": 58.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "X360: 55/100",
+     "score": 55.0,
+     "score_pct": 55.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "XONE: 46/100",
+     "score": 46.0,
+     "score_pct": 46.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Destructoid",
+     "raw": "6/10",
+     "score": 6.0,
+     "score_pct": 60.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Eurogamer",
+     "raw": "2/10",
+     "score": 2.0,
+     "score_pct": 20.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "5/10",
+     "score": 5.0,
+     "score_pct": 50.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "GamesRadar+",
+     "raw": "3/5",
+     "score": 3.0,
+     "score_pct": 60.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameTrailers",
+     "raw": "5.3/10",
+     "score": 5.3,
+     "score_pct": 53.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "5.4/10",
+     "score": 5.4,
+     "score_pct": 54.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Official Xbox Magazine",
+     "raw": "7/10",
+     "score": 7.0,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "PC Gamer UK",
+     "raw": "55/100",
+     "score": 55.0,
+     "score_pct": 55.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Polygon",
+     "raw": "6/10",
+     "score": 6.0,
+     "score_pct": 60.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "TouchArcade",
+     "raw": "iOS: 2/5",
+     "score": 2.0,
+     "score_pct": 40.0
+    }
+   ],
+   "work_id": 72
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man Unlimited (video game)",
+   "prose_scores": [],
+   "title": "Spider-Man Unlimited (2014 video game)",
+   "v2_rows": 4,
+   "video_game_reviews": [
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "79/100",
+     "score": 79.0,
+     "score_pct": 79.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "148Apps",
+     "raw": "4/5",
+     "score": 4.0,
+     "score_pct": 80.0
+    }
+   ],
+   "work_id": 73
+  },
+  {
+   "media_type": "game",
+   "page": "Lego Marvel Super Heroes",
+   "prose_scores": [],
+   "title": "LEGO Marvel Super Heroes",
+   "v2_rows": 11,
+   "video_game_reviews": [
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(PS4) 83/100",
+     "score": 83.0,
+     "score_pct": 83.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(PC) 78/100",
+     "score": 78.0,
+     "score_pct": 78.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(X360) 80/100",
+     "score": 80.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(PS3) 82/100",
+     "score": 82.0,
+     "score_pct": 82.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(Wii U) 82/100",
+     "score": 82.0,
+     "score_pct": 82.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "Allgame",
+     "raw": "4.5/5",
+     "score": 4.5,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Computer and Video Games",
+     "raw": "7/10",
+     "score": 7.0,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Destructoid",
+     "raw": "8.5/10",
+     "score": 8.5,
+     "score_pct": 85.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Game Informer",
+     "raw": "9/10",
+     "score": 9.0,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "7/10",
+     "score": 7.0,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "9/10",
+     "score": 9.0,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Polygon",
+     "raw": "8.5/10",
+     "score": 8.5,
+     "score_pct": 85.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "The Escapist",
+     "raw": "4/5",
+     "score": 4.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Eurogamer",
+     "raw": "9/10",
+     "score": 9.0,
+     "score_pct": 90.0
+    }
+   ],
+   "work_id": 74
+  },
+  {
+   "media_type": "game",
+   "page": "Lego Marvel Super Heroes 2",
+   "prose_scores": [],
+   "title": "LEGO Marvel Super Heroes 2",
+   "v2_rows": 10,
+   "video_game_reviews": [
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(XONE) 76/100",
+     "score": 76.0,
+     "score_pct": 76.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(NS) 75/100",
+     "score": 75.0,
+     "score_pct": 75.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "(PS4) 73/100",
+     "score": 73.0,
+     "score_pct": 73.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "8/10",
+     "score": 8.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Polygon",
+     "raw": "6/10",
+     "score": 6.0,
+     "score_pct": 60.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "GamesRadar+",
+     "raw": "4/5",
+     "score": 4.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "7/10",
+     "score": 7.0,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Game Informer",
+     "raw": "6/10",
+     "score": 6.0,
+     "score_pct": 60.0
+    }
+   ],
+   "work_id": 75
+  },
+  {
+   "media_type": "game",
+   "page": "Marvel's Spider-Man (video game)",
+   "prose_scores": [],
+   "title": "Marvel's Spider-Man",
+   "v2_rows": 7,
+   "video_game_reviews": [
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "87/100",
+     "score": 87.0,
+     "score_pct": 87.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": "Remaster",
+     "publication": "OpenCritic",
+     "raw": "98% recommend",
+     "score": 98.0,
+     "score_pct": 98.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Destructoid",
+     "raw": "9/10",
+     "score": 9.0,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Electronic Gaming Monthly",
+     "raw": "9/10",
+     "score": 9.0,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Game Informer",
+     "raw": "9.5/10",
+     "score": 9.5,
+     "score_pct": 95.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "9/10",
+     "score": 9.0,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "GamesRadar+",
+     "raw": "4.5/5",
+     "score": 4.5,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "8.7/10",
+     "score": 8.7,
+     "score_pct": 87.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "PC Gamer US",
+     "raw": "75/100",
+     "score": 75.0,
+     "score_pct": 75.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "VideoGamer.com",
+     "raw": "8/10",
+     "score": 8.0,
+     "score_pct": 80.0
+    }
+   ],
+   "work_id": 76
+  },
+  {
+   "media_type": "game",
+   "page": "Marvel's Spider-Man: The City That Never Sleeps",
+   "prose_scores": [],
+   "title": "Marvel's Spider-Man: The City That Never Sleeps",
+   "v2_rows": 3,
+   "video_game_reviews": [],
+   "work_id": 77
+  },
+  {
+   "media_type": "game",
+   "page": "Spider-Man: Remastered",
+   "prose_scores": [],
+   "title": "Marvel's Spider-Man Remastered",
+   "v2_rows": 1,
+   "video_game_reviews": [
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "87/100",
+     "score": 87.0,
+     "score_pct": 87.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": "Remaster",
+     "publication": "OpenCritic",
+     "raw": "98% recommend",
+     "score": 98.0,
+     "score_pct": 98.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Destructoid",
+     "raw": "9/10",
+     "score": 9.0,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Electronic Gaming Monthly",
+     "raw": "9/10",
+     "score": 9.0,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Game Informer",
+     "raw": "9.5/10",
+     "score": 9.5,
+     "score_pct": 95.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "9/10",
+     "score": 9.0,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "GamesRadar+",
+     "raw": "4.5/5",
+     "score": 4.5,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "8.7/10",
+     "score": 8.7,
+     "score_pct": 87.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "PC Gamer US",
+     "raw": "75/100",
+     "score": 75.0,
+     "score_pct": 75.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "VideoGamer.com",
+     "raw": "8/10",
+     "score": 8.0,
+     "score_pct": 80.0
+    }
+   ],
+   "work_id": 78
+  },
+  {
+   "media_type": "game",
+   "page": "Marvel's Spider-Man: Miles Morales",
+   "prose_scores": [],
+   "title": "Marvel's Spider-Man: Miles Morales",
+   "v2_rows": 12,
+   "video_game_reviews": [
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "PS4: 84/100",
+     "score": 84.0,
+     "score_pct": 84.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "PS5: 85/100",
+     "score": 85.0,
+     "score_pct": 85.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "PC: 88/100",
+     "score": 88.0,
+     "score_pct": 88.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "OpenCritic",
+     "raw": "94% recommend",
+     "score": 94.0,
+     "score_pct": 94.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Destructoid",
+     "raw": "9/10",
+     "score": 9.0,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Game Informer",
+     "raw": "9/10",
+     "score": 9.0,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "7/10",
+     "score": 7.0,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "9/10",
+     "score": 9.0,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Edge",
+     "raw": "7/10",
+     "score": 7.0,
+     "score_pct": 70.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "Electronic Gaming Monthly",
+     "raw": "5/5",
+     "score": 5.0,
+     "score_pct": 100.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "VideoGamer.com",
+     "raw": "4/5",
+     "score": 4.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "GamesRadar+",
+     "raw": "4/5",
+     "score": 4.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "PC Gamer US",
+     "raw": "84/100",
+     "score": 84.0,
+     "score_pct": 84.0
+    }
+   ],
+   "work_id": 79
+  },
+  {
+   "media_type": "game",
+   "page": "Marvel's Spider-Man 2",
+   "prose_scores": [],
+   "title": "Marvel's Spider-Man 2",
+   "v2_rows": 7,
+   "video_game_reviews": [
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "PS5: 90/100",
+     "score": 90.0,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "Metacritic",
+     "raw": "PC: 76/100",
+     "score": 76.0,
+     "score_pct": 76.0
+    },
+    {
+     "max_score": 100.0,
+     "platform_scope": null,
+     "publication": "OpenCritic",
+     "raw": "91% recommend",
+     "score": 91.0,
+     "score_pct": 91.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Destructoid",
+     "raw": "9/10",
+     "score": 9.0,
+     "score_pct": 90.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "Eurogamer",
+     "raw": "4/5",
+     "score": 4.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 40.0,
+     "platform_scope": null,
+     "publication": "Famitsu",
+     "raw": "38/40",
+     "score": 38.0,
+     "score_pct": 95.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "Game Informer",
+     "raw": "9.5/10",
+     "score": 9.5,
+     "score_pct": 95.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "GameSpot",
+     "raw": "8/10",
+     "score": 8.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "GamesRadar+",
+     "raw": "5/5",
+     "score": 5.0,
+     "score_pct": 100.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "IGN",
+     "raw": "8/10",
+     "score": 8.0,
+     "score_pct": 80.0
+    },
+    {
+     "max_score": 5.0,
+     "platform_scope": null,
+     "publication": "VideoGamer.com",
+     "raw": "5/5",
+     "score": 5.0,
+     "score_pct": 100.0
+    },
+    {
+     "max_score": 10.0,
+     "platform_scope": null,
+     "publication": "VideoGamer.com",
+     "raw": "10/10",
+     "score": 10.0,
+     "score_pct": 100.0
+    }
+   ],
+   "work_id": 80
+  },
+  {
+   "media_type": "game",
+   "page": "Marvel's Spider-Man 3",
+   "prose_scores": [],
+   "title": "Marvel's Spider-Man 3",
+   "v2_rows": 0,
+   "video_game_reviews": [],
+   "work_id": 81
+  }
+ ]
+}

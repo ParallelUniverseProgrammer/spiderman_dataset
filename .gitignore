@@ -1,3 +1,8 @@
 # TMDB response cache written by fetch_tmdb_people.py — regenerable, not source data
 data_raw/.tmdb_cache/
 __pycache__/
+
+# Wikidata/Wikipedia response cache written by the v3 fetch_* scripts —
+# regenerable, ~180 MB, not source data. The fetchers' *output*
+# (data_raw/v3/*.json) is committed, because the build reads it offline.
+data_raw/.wd_cache/
