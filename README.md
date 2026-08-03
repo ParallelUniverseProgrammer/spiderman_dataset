@@ -80,19 +80,29 @@ open explorer/index.html          # or just double-click it
 ```
 
 A dependency-free static page — no server, no network calls, no build step. It
-reads `explorer/data.json` (the whole database, 438 KB) and gives you:
+reads `explorer/data.json` (the whole database, ~440 KB) and gives you:
 
 - **Overview** — releases per year by medium, budget → worldwide gross per film,
   review scores over time, and the most-adapted characters. Every mark is
   clickable and every chart has a table view.
 - **Works / Characters / People** — sortable, filterable tables over all 81 works,
-  264 characters and 581 people.
+  264 characters and 581 people. Filters live in the URL, so any view is a link
+  you can share, and any view downloads as CSV.
+- **Franchises / Studios / Platforms** — three dimensions the database only holds
+  implicitly, grouped out of the join tables: 13 franchises, 104 studios and
+  66 platforms, each with its own page.
+- **Analysis** — how the 13 review outlets differ on a common 0–100 scale, how
+  long a comic waits before it is adapted (122 source records, median 28 years),
+  which storylines the screen keeps going back to, and every award on record.
 - **Detail pages** that cross-link in every direction: a film lists its cast,
-  characters, studios, comic sources, awards and connected works; a character
-  lists every work it appears in, who played it, and the credit spellings that
-  were collapsed into it; a person lists their whole filmography.
-- **Search** (press `/`) across works, characters and people at once.
-- **About the data** — the counting traps below, restated where you'd hit them.
+  characters, studios, platforms, comic sources, awards, competing budget
+  estimates and connected works; a character gets a release strip, the characters
+  it most often shares a work with, and the credit spellings collapsed into it;
+  a person gets a career strip, frequent collaborators and their role mix.
+- **Search** (press `/`) across works, characters, people, franchises, studios
+  and platforms at once.
+- **About the data** — the counting traps below, restated where you'd hit them,
+  plus which figures are read from the database and which are derived in the page.
 
 To regenerate the JSON after rebuilding the database:
 

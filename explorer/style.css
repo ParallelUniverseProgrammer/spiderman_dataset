@@ -97,7 +97,7 @@ header.top {
   padding: 10px 20px;
   display: flex;
   align-items: center;
-  gap: 16px;
+  gap: 12px;
   flex-wrap: wrap;
 }
 
@@ -121,7 +121,7 @@ header.top {
 nav.tabs { display: flex; gap: 2px; flex-wrap: wrap; }
 
 nav.tabs a {
-  padding: 5px 11px;
+  padding: 5px 9px;
   border-radius: 7px;
   text-decoration: none;
   color: var(--text-secondary);
@@ -134,7 +134,7 @@ nav.tabs a[aria-current="page"] { background: var(--hover); color: var(--text-pr
 
 .spacer { flex: 1 1 auto; }
 
-.search-wrap { position: relative; width: min(320px, 100%); }
+.search-wrap { position: relative; width: min(270px, 100%); }
 
 #search {
   width: 100%;
@@ -267,7 +267,7 @@ h2 {
 }
 
 .grid { display: grid; gap: 14px; }
-.cols-2 { grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); }
+.cols-2 { grid-template-columns: repeat(auto-fit, minmax(340px, 1fr)); align-items: start; }
 /* Without this a chart's min-width would widen the grid track and scroll the page. */
 .grid > *, figure.chart, .table-wrap { min-width: 0; }
 
