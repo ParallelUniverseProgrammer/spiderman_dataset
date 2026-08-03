@@ -1932,8 +1932,8 @@ function viewPerson(id) {
         { class: "meta-line" },
         p.birth ? el("span", { text: p.birth.slice(0, 4) + (p.death ? "–" + p.death.slice(0, 4) : "") }) : null,
         p.place ? el("span", { text: p.place }) : null,
-        p.imdb ? el("a", { class: "badge", href: "https://www.imdb.com/name/" + p.imdb + "/", target: "_blank", rel: "noopener", text: "IMDb" }) : null,
-        p.wikidata ? el("a", { class: "badge", href: "https://www.wikidata.org/wiki/" + p.wikidata, target: "_blank", rel: "noopener", text: "Wikidata" }) : null
+        p.imdb ? el("a", { class: "badge", href: "https://www.imdb.com/name/" + p.imdb + "/", text: "IMDb" }) : null,
+        p.wikidata ? el("a", { class: "badge", href: "https://www.wikidata.org/wiki/" + p.wikidata, text: "Wikidata" }) : null
       )
     )
   );
@@ -3027,6 +3027,19 @@ function boot() {
   document.getElementById("foot-line").textContent =
     `${c.works} works · ${c.characters} characters · ${c.people} people · ${c.credits} credits, ` +
     `${DATA.meta.year_min}–${DATA.meta.year_max}. Generated from spiderman.db. Data CC BY 4.0, code MIT.`;
+  // The header nav, the brand and the overview tiles are real anchors, for keyboard and
+  // copy-link semantics. Some embedded viewers treat any anchor navigation — even a
+  // same-document fragment one — as a request for a new tab, so intercept internal
+  // links and route them through the same hash navigation every button already uses.
+  // Modified clicks are left alone, so opening a new tab on purpose still works.
+  document.addEventListener("click", (e) => {
+    if (e.defaultPrevented || e.button !== 0 || e.metaKey || e.ctrlKey || e.shiftKey || e.altKey) return;
+    const a = e.target.closest('a[href^="#"]');
+    if (!a) return;
+    e.preventDefault();
+    go(a.getAttribute("href"));
+  });
+
   setupSearch();
   setupTheme();
   window.addEventListener("hashchange", render);
