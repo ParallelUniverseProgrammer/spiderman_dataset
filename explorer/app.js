@@ -1535,11 +1535,6 @@ function viewWorks(_id, query) {
   return frag;
 }
 
-function trunc(v, n) {
-  if (!v) return el("span", { class: "muted", text: "—" });
-  return v.length > n ? v.slice(0, n - 1) + "…" : v;
-}
-
 /* ---------- work detail ---------- */
 
 function viewWork(id) {
