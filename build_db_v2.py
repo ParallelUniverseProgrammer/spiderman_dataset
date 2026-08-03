@@ -1654,6 +1654,23 @@ else:
 conn.commit()
 
 # ===========================================================================
+# OPTIONAL v3 ENRICHMENT LAYER
+#
+# Inert unless SPIDERMAN_V3_LAYER names an importable module — running this
+# script on its own produces exactly the v2 database it always did. build_db_v3.py
+# sets the variable so that its additional rows are in place *before* the CSV
+# export below, which is the only way the per-table CSVs and the flat CSV can
+# stay in step with the database they are exported from.
+# ===========================================================================
+_v3_layer = os.environ.get("SPIDERMAN_V3_LAYER", "").strip()
+if _v3_layer:
+    import importlib
+
+    _added = importlib.import_module(_v3_layer).apply(conn, cur)
+    conn.commit()
+    print(f"  v3 layer '{_v3_layer}' applied: {_added} rows added or filled")
+
+# ===========================================================================
 # CSV EXPORT
 # ===========================================================================
 def dump_table(table, path):

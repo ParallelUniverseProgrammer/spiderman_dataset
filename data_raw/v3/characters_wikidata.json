@@ -1,0 +1,7681 @@
+{
+ "characters": {
+  "1": {
+   "enwiki": "Aunt May",
+   "external_ids": {
+    "comic_vine": "4005-1780",
+    "commons_category": "Aunt May",
+    "fandom_article": "marvel:Maybelle_Parker_(Earth-616)",
+    "freebase": "/m/0127r1"
+   },
+   "first_appearance_qid": "Q118419196",
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Aunt May",
+   "props": {
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q688263",
+     "Q138333079",
+     "Q25340029"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2453332"
+  },
+  "10": {
+   "enwiki": "Doctor Octopus",
+   "external_ids": {
+    "comic_vine": "4005-1485",
+    "commons_category": "Doctor Octopus",
+    "fandom_article": "marvel:Otto_Octavius_(Earth-616)",
+    "freebase": "/m/01ttxw"
+   },
+   "first_appearance_qid": "Q111795406",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Doctor Octopus",
+   "props": {
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "performer": [
+     "Q531718"
+    ],
+    "present_in_work": [
+     "Q138333079",
+     "Q288296",
+     "Q25340029"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q578094"
+  },
+  "100": {
+   "enwiki": null,
+   "external_ids": {
+    "comic_vine": "4005-151182"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": "2018",
+   "label": "Dora Skirth",
+   "props": {
+    "narrative_universe": [
+     "Q55537283"
+    ],
+    "performer": [
+     "Q744166"
+    ],
+    "present_in_work": [
+     "Q23006268"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q57395910"
+  },
+  "101": {
+   "enwiki": "Peni Parker",
+   "external_ids": {
+    "comic_vine": "4005-108612",
+    "fandom_article": "marvel:SP//dr"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": "2014",
+   "label": "Peni Parker",
+   "props": {
+    "creator": [
+     "Q204132"
+    ],
+    "present_in_work": [
+     "Q29588607"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q59483750"
+  },
+  "104": {
+   "enwiki": "El Muerto (Marvel Comics)",
+   "external_ids": {
+    "comic_vine": "4005-41881",
+    "fandom_article": "marvel:Juan-Carlos_Sanchez_(Earth-616)"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "El Muerto",
+   "props": {
+    "creator": [
+     "Q1351554",
+     "Q7358053"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q13474373"
+    ],
+    "present_in_work": [
+     "Q1142052"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q111729691"
+  },
+  "107": {
+   "enwiki": "Ezekiel Sims",
+   "external_ids": {
+    "comic_vine": "4005-17615",
+    "freebase": "/m/062cbc"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Ezekiel",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q126941",
+     "Q2570"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q43845"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q923391"
+  },
+  "108": {
+   "enwiki": "Farley Stillwell",
+   "external_ids": {
+    "comic_vine": "4005-80299",
+    "fandom_article": "marvel:Farley_Stillwell_(Earth-616)",
+    "freebase": "/m/04zyqkd"
+   },
+   "first_appearance_qid": "Q112229108",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Farley Stillwell",
+   "props": {
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q5435440"
+  },
+  "109": {
+   "enwiki": "Firestar (Marvel Comics)",
+   "external_ids": {
+    "comic_vine": "4005-2101",
+    "fandom_article": "marvel:Angelica_Jones_(Earth-616)",
+    "freebase": "/m/0btlz"
+   },
+   "first_appearance_qid": "Q124882349",
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Firestar",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q631369",
+     "Q2570"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q188784",
+     "Q48282"
+    ],
+    "present_in_work": [
+     "Q1365411",
+     "Q1399747"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q578279"
+  },
+  "11": {
+   "enwiki": "Doctor Strange",
+   "external_ids": {
+    "britannica": "topic/Dr-Strange",
+    "comic_vine": "4005-1456",
+    "commons_category": "Doctor Strange",
+    "fandom_article": "marvel:Stephen_Strange_(Earth-616)",
+    "freebase": "/m/0139tx",
+    "tv_tropes": "Franchise/DoctorStrange"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": "1963-04",
+   "label": "Doctor Strange",
+   "props": {
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "followers": [
+     {
+      "amount": "+1961452",
+      "unit": "1"
+     },
+     {
+      "amount": "+1146545",
+      "unit": "1"
+     },
+     {
+      "amount": "+1080366",
+      "unit": "1"
+     },
+     {
+      "amount": "+1634430",
+      "unit": "1"
+     }
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q9385011",
+     "Q148401",
+     "Q138656374"
+    ],
+    "present_in_work": [
+     "Q1115055",
+     "Q115422697",
+     "Q1606284",
+     "Q2320247"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q907767"
+  },
+  "110": {
+   "enwiki": "Flash Thompson",
+   "external_ids": {
+    "comic_vine": "4005-1489",
+    "fandom_article": "marvel:Eugene_Thompson_(Earth-616)",
+    "freebase": "/m/030t_m"
+   },
+   "first_appearance_qid": "Q118419196",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Flash Thompson",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q4991371",
+     "Q48282"
+    ],
+    "present_in_work": [
+     "Q688263",
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q552000"
+  },
+  "111": {
+   "enwiki": "Galactus",
+   "external_ids": {
+    "comic_vine": "4005-2149",
+    "commons_category": "Cosplay of Galactus",
+    "fandom_article": "marvel:Galan_(Earth-616)",
+    "freebase": "/m/03ff9"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Galactus",
+   "props": {
+    "creator": [
+     "Q181900",
+     "Q311607"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "performer": [
+     "Q2708142",
+     "Q313266"
+    ],
+    "present_in_work": [
+     "Q115424329"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1429836"
+  },
+  "112": {
+   "enwiki": "Gambit (Marvel Comics)",
+   "external_ids": {
+    "comic_vine": "4005-1499",
+    "commons_category": "Gambit (comics)",
+    "fandom_article": "marvel:Remy_LeBeau_(Earth-616)",
+    "freebase": "/m/01htk9"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Gambit",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q631369",
+     "Q6846365",
+     "Q357776"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q3562775",
+     "Q188784"
+    ],
+    "performer": [
+     "Q335880",
+     "Q212064"
+    ],
+    "present_in_work": [
+     "Q383700",
+     "Q134208"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2639150"
+  },
+  "115": {
+   "enwiki": "George Stacy",
+   "external_ids": {
+    "comic_vine": "4005-2479",
+    "fandom_article": "marvel:George_Stacy_(Earth-616)",
+    "freebase": "/m/06ztwhx"
+   },
+   "first_appearance_qid": "Q123401577",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "George Stacy",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q384593"
+    ],
+    "performer": [
+     "Q299483",
+     "Q310283"
+    ],
+    "present_in_work": [
+     "Q138333079",
+     "Q182212",
+     "Q229808"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q7879740"
+  },
+  "116": {
+   "enwiki": "Ghost Rider (Johnny Blaze)",
+   "external_ids": {
+    "comic_vine": "4005-6108",
+    "freebase": "/m/027h42y"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Johnny Blaze",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q981976",
+     "Q93938",
+     "Q3313499"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q17307272",
+     "Q326653"
+    ],
+    "part_of": [
+     "Q868958"
+    ],
+    "performer": [
+     "Q42869"
+    ],
+    "present_in_work": [
+     "Q41754",
+     "Q41854"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q836748"
+  },
+  "117": {
+   "enwiki": "Norman Osborn",
+   "external_ids": {
+    "comic_vine": "4005-58812",
+    "fandom_article": "marvel:Norman_Osborn_(Earth-616)",
+    "freebase": "/m/012645"
+   },
+   "first_appearance_qid": "Q111991841",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Norman Osborn",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q5589126",
+     "Q2159907",
+     "Q43845"
+    ],
+    "performer": [
+     "Q188772",
+     "Q273208"
+    ],
+    "present_in_work": [
+     "Q138333079",
+     "Q484442",
+     "Q2539517",
+     "Q190145",
+     "Q182212",
+     "Q4254026"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q17090877"
+  },
+  "119": {
+   "enwiki": "Grey Gargoyle",
+   "external_ids": {
+    "comic_vine": "4005-6816",
+    "fandom_article": "marvel:Paul_Duval_(Earth-616)",
+    "freebase": "/m/07yzvh"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Grey Gargoyle",
+   "props": {
+    "creator": [
+     "Q181900",
+     "Q311607"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q2270826"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q287489"
+  },
+  "12": {
+   "enwiki": "Venom (character)",
+   "external_ids": {
+    "comic_vine": "4005-1486",
+    "commons_category": "Venom (character)",
+    "freebase": "/m/026f6fx"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Venom",
+   "props": {
+    "creator": [
+     "Q352292"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "performer": [
+     "Q277978",
+     "Q202056",
+     "Q837676",
+     "Q723021",
+     "Q3290793"
+    ],
+    "present_in_work": [
+     "Q182212",
+     "Q2337769",
+     "Q288296",
+     "Q2415823",
+     "Q383700",
+     "Q27971937"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1621261"
+  },
+  "122": {
+   "enwiki": "Hammerhead (character)",
+   "external_ids": {
+    "comic_vine": "4005-6817",
+    "freebase": "/m/03d2wt"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Hammerhead",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q4947495",
+     "Q1975715",
+     "Q378770",
+     "Q24962806"
+    ],
+    "performer": [
+     "Q837676",
+     "Q313266",
+     "Q203205",
+     "Q310292"
+    ],
+    "present_in_work": [
+     "Q3133608",
+     "Q729212",
+     "Q29959076",
+     "Q460707",
+     "Q569934",
+     "Q401601"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2719607"
+  },
+  "123": {
+   "enwiki": "Happy Hogan (character)",
+   "external_ids": {
+    "comic_vine": "4005-4262",
+    "freebase": "/m/0cnfsp"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Happy Hogan",
+   "props": {
+    "creator": [
+     "Q181900"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q851436"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1319498"
+  },
+  "124": {
+   "enwiki": "Venom (character)",
+   "external_ids": {
+    "comic_vine": "4005-1486",
+    "commons_category": "Venom (character)",
+    "freebase": "/m/026f6fx"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Venom",
+   "props": {
+    "creator": [
+     "Q352292"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "performer": [
+     "Q277978",
+     "Q202056",
+     "Q837676",
+     "Q723021",
+     "Q3290793"
+    ],
+    "present_in_work": [
+     "Q182212",
+     "Q2337769",
+     "Q288296",
+     "Q2415823",
+     "Q383700",
+     "Q27971937"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1621261"
+  },
+  "125": {
+   "enwiki": "Hawkeye (Clint Barton)",
+   "external_ids": {
+    "britannica": "topic/Hawkeye",
+    "comic_vine": "4005-1475",
+    "commons_category": "Hawkeye (comics)",
+    "freebase": "/m/034qd2"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Hawkeye",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q890527"
+    ],
+    "performer": [
+     "Q23365"
+    ],
+    "present_in_work": [
+     "Q782363"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q19095"
+  },
+  "126": {
+   "enwiki": "High Evolutionary",
+   "external_ids": {
+    "comic_vine": "4005-13346",
+    "fandom_article": "marvel:Herbert_Wyndham_(Earth-616)",
+    "freebase": "/m/03434h"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "High Evolutionary",
+   "props": {
+    "citizenship": [
+     "Q145"
+    ],
+    "creator": [
+     "Q181900",
+     "Q311607"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q3126128",
+     "Q205375"
+    ],
+    "present_in_work": [
+     "Q115411239"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2568013"
+  },
+  "127": {
+   "enwiki": "Jason Macendale",
+   "external_ids": {
+    "comic_vine": "4005-26374",
+    "fandom_article": "marvel:Jason_Macendale_Jr._(Earth-616)",
+    "freebase": "/m/03by27g"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Jason Macendale",
+   "props": {
+    "creator": [
+     "Q703897",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q178197",
+     "Q2159907",
+     "Q24962806",
+     "Q5589126",
+     "Q618694",
+     "Q4991371"
+    ],
+    "present_in_work": [
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q6163022"
+  },
+  "128": {
+   "enwiki": "Howard the Duck",
+   "external_ids": {
+    "comic_vine": "4005-6803",
+    "fandom_article": "disney:Howard_the_Duck",
+    "freebase": "/m/02ch7k"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Howard the Duck",
+   "props": {
+    "creator": [
+     "Q2569995",
+     "Q7909115"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "performer": [
+     "Q768685",
+     "Q488335",
+     "Q3413417",
+     "Q7807376",
+     "Q549290",
+     "Q41635663",
+     "Q186757"
+    ],
+    "present_in_work": [
+     "Q5887360",
+     "Q1146570",
+     "Q20001199",
+     "Q401601",
+     "Q1138582"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2708105"
+  },
+  "129": {
+   "enwiki": "Human Torch",
+   "external_ids": {
+    "britannica": "topic/Human-Torch",
+    "comic_vine": "4005-2120",
+    "fandom_article": "marvel:Jonathan_Storm_(Earth-616)",
+    "freebase": "/m/01j66t"
+   },
+   "first_appearance_qid": "Q115424368",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Human Torch",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q311607",
+     "Q181900"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q33999",
+     "Q11631",
+     "Q188784",
+     "Q107711",
+     "Q623268",
+     "Q327029",
+     "Q10349745",
+     "Q17307272",
+     "Q45787133"
+    ],
+    "performer": [
+     "Q3163273",
+     "Q178348",
+     "Q3308007"
+    ],
+    "present_in_work": [
+     "Q115424329"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q584585"
+  },
+  "13": {
+   "enwiki": "Electro (Marvel Comics)",
+   "external_ids": {
+    "comic_vine": "4005-3228",
+    "commons_category": "Electro",
+    "fandom_article": "marvel:Maxwell_Dillon_(Earth-616)",
+    "freebase": "/m/01n470"
+   },
+   "first_appearance_qid": "Q111838198",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Electro",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q2159907",
+     "Q691225"
+    ],
+    "performer": [
+     "Q171905",
+     "Q837676",
+     "Q1140193",
+     "Q2536187"
+    ],
+    "present_in_work": [
+     "Q138333079",
+     "Q3133608",
+     "Q4254026",
+     "Q16152567",
+     "Q2583842",
+     "Q460707"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2297886"
+  },
+  "131": {
+   "enwiki": "Hydro-Man",
+   "external_ids": {
+    "comic_vine": "4005-4457",
+    "fandom_article": "marvel:Morris_Bench_(Earth-616)",
+    "freebase": "/m/01x0ww"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Hydro-Man",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q1189414",
+     "Q2570"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q2159907",
+     "Q703534",
+     "Q5184855"
+    ],
+    "present_in_work": [
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1990090"
+  },
+  "132": {
+   "enwiki": "Iceman (Marvel Comics)",
+   "external_ids": {
+    "comic_vine": "4005-1464",
+    "commons_category": "Iceman (comics)",
+    "fandom_article": "marvel:Robert_Drake_(Earth-616)",
+    "freebase": "/m/03zw5"
+   },
+   "first_appearance_qid": "Q111312491",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Iceman",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q311607"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q326653",
+     "Q37226",
+     "Q48282",
+     "Q188784"
+    ],
+    "performer": [
+     "Q313579"
+    ],
+    "present_in_work": [
+     "Q1399747",
+     "Q2307558",
+     "Q1365411",
+     "Q1340065",
+     "Q369286",
+     "Q1990905",
+     "Q1509756",
+     "Q106182",
+     "Q219776",
+     "Q221168",
+     "Q4985891",
+     "Q134208",
+     "Q383700",
+     "Q111550483"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q838088"
+  },
+  "135": {
+   "enwiki": "Iron Fist (character)",
+   "external_ids": {
+    "britannica": "topic/Iron-Fist",
+    "comic_vine": "4005-1492",
+    "commons_category": "Iron Fist (comics)",
+    "fandom_article": "marvel:Daniel_Rand_(Earth-616)",
+    "freebase": "/m/02rj2p"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Iron Fist",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q981976",
+     "Q1365108",
+     "Q1837116"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q851436",
+     "Q1058617",
+     "Q11124885",
+     "Q188784",
+     "Q9352089",
+     "Q3190387"
+    ],
+    "performer": [
+     "Q368090"
+    ],
+    "present_in_work": [
+     "Q3850391"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1194243"
+  },
+  "136": {
+   "enwiki": "Iron Man",
+   "external_ids": {
+    "britannica": "topic/Iron-Man-comic-book-character",
+    "comic_vine": "4005-1455",
+    "commons_category": "Iron Man",
+    "fandom_article": "marvel:Anthony_Stark_(Earth-616)",
+    "freebase": "/m/0hnws",
+    "tv_tropes": "Franchise/IronMan"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": "1963-03",
+   "label": "Iron Man",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q2009797",
+     "Q2548090",
+     "Q311607"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q205375",
+     "Q43845",
+     "Q188784"
+    ],
+    "present_in_work": [
+     "Q782363",
+     "Q115466677",
+     "Q115456059",
+     "Q1369354",
+     "Q268679",
+     "Q2604486",
+     "Q27971937",
+     "Q134208",
+     "Q383700"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q180704"
+  },
+  "137": {
+   "enwiki": "J. Jonah Jameson",
+   "external_ids": {
+    "comic_vine": "4005-1487",
+    "commons_category": "J. Jonah Jameson",
+    "fandom_article": "marvel:John_Jonah_Jameson_(Earth-616)",
+    "freebase": "/m/011lmc"
+   },
+   "first_appearance_qid": "Q111794074",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "J. Jonah Jameson",
+   "props": {
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q42909",
+     "Q2516866",
+     "Q589298",
+     "Q484876",
+     "Q12362622"
+    ],
+    "performer": [
+     "Q150482",
+     "Q837676",
+     "Q723021"
+    ],
+    "present_in_work": [
+     "Q138333079",
+     "Q2337769"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1992523"
+  },
+  "138": {
+   "enwiki": "Jason Macendale",
+   "external_ids": {
+    "comic_vine": "4005-26374",
+    "fandom_article": "marvel:Jason_Macendale_Jr._(Earth-616)",
+    "freebase": "/m/03by27g"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Jason Macendale",
+   "props": {
+    "creator": [
+     "Q703897",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q178197",
+     "Q2159907",
+     "Q24962806",
+     "Q5589126",
+     "Q618694",
+     "Q4991371"
+    ],
+    "present_in_work": [
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q6163022"
+  },
+  "139": {
+   "enwiki": "Ben Reilly",
+   "external_ids": {
+    "comic_vine": "4005-6286",
+    "fandom_article": "es.doblaje:Ben_Reilly",
+    "freebase": "/m/02jftv"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Ben Reilly",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q525314"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q157195",
+     "Q2070313",
+     "Q851436",
+     "Q188784",
+     "Q3190387",
+     "Q2159907",
+     "Q901",
+     "Q156839",
+     "Q808266",
+     "Q1090219",
+     "Q327029",
+     "Q205375",
+     "Q2251335",
+     "Q33231"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2343504"
+  },
+  "14": {
+   "enwiki": "Punisher",
+   "external_ids": {
+    "comic_vine": "4005-1525",
+    "commons_category": "Punisher",
+    "freebase": "/m/01t8z1"
+   },
+   "first_appearance_qid": "Q29098265",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Punisher",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q525314",
+     "Q1484216",
+     "Q1372857"
+    ],
+    "ethnic_group": [
+     "Q7507476"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q47064",
+     "Q3190387",
+     "Q777952",
+     "Q4991371"
+    ],
+    "performer": [
+     "Q181678",
+     "Q18938",
+     "Q372947",
+     "Q362616"
+    ],
+    "present_in_work": [
+     "Q16977365",
+     "Q27089570",
+     "Q569934",
+     "Q1509756",
+     "Q15971587",
+     "Q16153372",
+     "Q1153794",
+     "Q909802",
+     "Q1065829",
+     "Q4051248",
+     "Q20858225",
+     "Q28126678",
+     "Q2633916",
+     "Q2635546",
+     "Q4051247",
+     "Q113244935"
+    ],
+    "religion": [
+     "Q1841",
+     "Q1069127"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q729150"
+  },
+  "140": {
+   "enwiki": "Shocker (character)",
+   "external_ids": {
+    "comic_vine": "4005-4825",
+    "commons_category": "Shocker (character)",
+    "fandom_article": "marvel:Herman_Schultz_(Earth-616)",
+    "freebase": "/m/01x05q"
+   },
+   "first_appearance_qid": "Q118120049",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Shocker",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q1484216"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q3562775",
+     "Q378770"
+    ],
+    "present_in_work": [
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2015743"
+  },
+  "142": {
+   "enwiki": "Janice Lincoln",
+   "external_ids": {
+    "freebase": "/m/0_1jgsh"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Janice Lincoln",
+   "props": {
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q25221879"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q16203548"
+  },
+  "144": {
+   "enwiki": null,
+   "external_ids": {
+    "fandom_article": "marvel:Jefferson_Davis_(Earth-1610)"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Jefferson Davis",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "occupation": [
+     "Q384593"
+    ],
+    "present_in_work": [
+     "Q25340029",
+     "Q29588607",
+     "Q76448600",
+     "Q119411066"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q115534083"
+  },
+  "145": {
+   "enwiki": null,
+   "external_ids": {
+    "fandom_article": "marvel:Jefferson_Davis_(Earth-1610)"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Jefferson Davis",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "occupation": [
+     "Q384593"
+    ],
+    "present_in_work": [
+     "Q25340029",
+     "Q29588607",
+     "Q76448600",
+     "Q119411066"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q115534083"
+  },
+  "146": {
+   "enwiki": "She-Hulk",
+   "external_ids": {
+    "comic_vine": "4005-1449",
+    "commons_category": "She-Hulk",
+    "freebase": "/m/03t6vv"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "She-Hulk",
+   "props": {
+    "creator": [
+     "Q181900",
+     "Q1395905"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q40348",
+     "Q188784"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q677627"
+  },
+  "149": {
+   "enwiki": "Spider-Woman (Gwen Stacy)",
+   "external_ids": {
+    "commons_category": "Spider-Gwen",
+    "fandom_article": "marvel:Gwendolyn_Stacy_(Earth-65)"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Spider-Woman",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q6162935"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q188784",
+     "Q3190387",
+     "Q639669",
+     "Q48282"
+    ],
+    "part_of": [
+     "Q2922722"
+    ],
+    "present_in_work": [
+     "Q17630593",
+     "Q401601",
+     "Q28207200"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q20979395"
+  },
+  "15": {
+   "enwiki": "Harry Osborn",
+   "external_ids": {
+    "comic_vine": "4005-2478",
+    "fandom_article": "marvel:Harold_Osborn_(Earth-616)",
+    "freebase": "/m/025xc3"
+   },
+   "first_appearance_qid": "Q115383692",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Harry Osborn",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q43845"
+    ],
+    "part_of": [
+     "Q735721"
+    ],
+    "performer": [
+     "Q306403",
+     "Q860876"
+    ],
+    "present_in_work": [
+     "Q138333079",
+     "Q484442",
+     "Q4254026",
+     "Q190145",
+     "Q182212"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1779361"
+  },
+  "150": {
+   "enwiki": "John Jameson (character)",
+   "external_ids": {
+    "comic_vine": "4005-4456",
+    "fandom_article": "marvel:John_Jonah_Jameson_III_(Earth-616)",
+    "freebase": "/m/057r94"
+   },
+   "first_appearance_qid": "Q111794074",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "John Jameson",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q11631",
+     "Q2095549"
+    ],
+    "performer": [
+     "Q512006"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2423326"
+  },
+  "151": {
+   "enwiki": "Julia Carpenter",
+   "external_ids": {
+    "comic_vine": "4005-16197",
+    "fandom_article": "marvel:Julia_Carpenter_(Earth-616)",
+    "freebase": "/m/08091r"
+   },
+   "first_appearance_qid": "Q117199052",
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Julia Carpenter",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q1476318",
+     "Q731726"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q5589126",
+     "Q5125402"
+    ],
+    "present_in_work": [
+     "Q472166"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2276597"
+  },
+  "153": {
+   "enwiki": null,
+   "external_ids": {
+    "fandom_article": "marvelcinematicuniverse:Julius_Dell"
+   },
+   "first_appearance_qid": "Q27985819",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Julius Dell",
+   "props": {
+    "narrative_universe": [
+     "Q642878"
+    ],
+    "performer": [
+     "Q3778264"
+    ],
+    "present_in_work": [
+     "Q27985819",
+     "Q68934496"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q66198297"
+  },
+  "155": {
+   "enwiki": "Kaine Parker",
+   "external_ids": {
+    "comic_vine": "4005-8667",
+    "freebase": "/m/054thp"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Kaine",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q7704593",
+     "Q7614525"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q378770",
+     "Q188784",
+     "Q3190387",
+     "Q3126128"
+    ],
+    "present_in_work": [
+     "Q1915633"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2000166"
+  },
+  "156": {
+   "enwiki": "Carol Danvers",
+   "external_ids": {
+    "comic_vine": "4005-21561",
+    "commons_category": "Carol Danvers",
+    "freebase": "/m/03xscn"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Carol Danvers",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q2095549",
+     "Q589298",
+     "Q1930187"
+    ],
+    "present_in_work": [
+     "Q1211225",
+     "Q3896442",
+     "Q2337304",
+     "Q2627580",
+     "Q3662198",
+     "Q19866549",
+     "Q18920891",
+     "Q27971937",
+     "Q29959076"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q726756"
+  },
+  "157": {
+   "enwiki": "Kang the Conqueror",
+   "external_ids": {
+    "comic_vine": "4005-2264",
+    "fandom_article": "marvel:Nathaniel_Richards_(Kang)_(Earth-6311)",
+    "freebase": "/m/022_9h"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Kang the Conqueror",
+   "props": {
+    "creator": [
+     "Q181900",
+     "Q311607"
+    ],
+    "narrative_universe": [
+     "Q2246088",
+     "Q111746321"
+    ],
+    "occupation": [
+     "Q60661987"
+    ],
+    "present_in_work": [
+     "Q115466677"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1982051"
+  },
+  "16": {
+   "enwiki": "Gwen Stacy",
+   "external_ids": {
+    "comic_vine": "4005-1480",
+    "commons_category": "Cosplay of Gwen Stacy",
+    "fandom_article": "marvel:Gwendolyne_Stacy_(Earth-616)",
+    "freebase": "/m/0127rw"
+   },
+   "first_appearance_qid": "Q115383692",
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Gwen Stacy",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q48282"
+    ],
+    "performer": [
+     "Q229775",
+     "Q147077",
+     "Q231726"
+    ],
+    "present_in_work": [
+     "Q138333079",
+     "Q569934",
+     "Q460707",
+     "Q28207200",
+     "Q182212",
+     "Q229808",
+     "Q4254026"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q945817"
+  },
+  "160": {
+   "enwiki": "Knull",
+   "external_ids": {
+    "comic_vine": "4005-149552",
+    "fandom_article": "marvel:Knull_(Earth-616)"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Knull",
+   "props": {
+    "creator": [
+     "Q63633751",
+     "Q7384552"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "performer": [
+     "Q206922"
+    ],
+    "present_in_work": [
+     "Q110819299"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q85774745"
+  },
+  "161": {
+   "enwiki": "Lasher (comics)",
+   "external_ids": {
+    "fandom_article": "marvel:Lasher_(Symbiote)_(Earth-616)",
+    "freebase": "/m/09x9y3"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Lasher",
+   "props": {
+    "creator": [
+     "Q352292",
+     "Q1322947"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q7920166",
+     "Q111589326"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2578146"
+  },
+  "163": {
+   "enwiki": "Liz Allan",
+   "external_ids": {
+    "comic_vine": "4005-15408",
+    "fandom_article": "marvel:Elizabeth_Allan_(Earth-616)",
+    "freebase": "/m/0468zl"
+   },
+   "first_appearance_qid": "Q118419196",
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Liz Allan",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q484876"
+    ],
+    "present_in_work": [
+     "Q688263",
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1132203"
+  },
+  "164": {
+   "enwiki": "Loki (Marvel Comics)",
+   "external_ids": {
+    "comic_vine": "4005-4324",
+    "commons_category": "Loki (Marvel Comics)",
+    "fandom_article": "marvel:Loki_Laufeyson_(Earth-616)",
+    "freebase": "/m/05pnb1"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q18116794",
+   "inception": null,
+   "label": "Loki",
+   "props": {
+    "citizenship": [
+     "Q2611772",
+     "Q204102"
+    ],
+    "creator": [
+     "Q181900"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q2270826",
+     "Q115411239",
+     "Q115466677"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1147326"
+  },
+  "166": {
+   "enwiki": "Luke Cage",
+   "external_ids": {
+    "britannica": "topic/Luke-Cage",
+    "comic_vine": "4005-1450",
+    "commons_category": "Luke Cage and his cast",
+    "fandom_article": "marvel:Luke_Cage_(Earth-616)",
+    "freebase": "/m/029n63"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Luke Cage",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q633841",
+     "Q1484216",
+     "Q2053669"
+    ],
+    "ethnic_group": [
+     "Q817393"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q188784",
+     "Q851436",
+     "Q178197",
+     "Q1058617"
+    ],
+    "performer": [
+     "Q1058675"
+    ],
+    "present_in_work": [
+     "Q111610075",
+     "Q20646602",
+     "Q111609754",
+     "Q111609745",
+     "Q111609719",
+     "Q111609575"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2267760"
+  },
+  "167": {
+   "enwiki": "Luke Carlyle",
+   "external_ids": {
+    "freebase": "/m/02qk1mf"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Luke Carlyle",
+   "props": {
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q10591707"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q6701876"
+  },
+  "169": {
+   "enwiki": "Machete (comics)",
+   "external_ids": {
+    "freebase": "/m/0g_lrq"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": null,
+   "inception": null,
+   "label": "Machete",
+   "props": {
+    "narrative_universe": [
+     "Q2246088"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q6723503"
+  },
+  "17": {
+   "enwiki": "Harry Osborn",
+   "external_ids": {
+    "comic_vine": "4005-2478",
+    "fandom_article": "marvel:Harold_Osborn_(Earth-616)",
+    "freebase": "/m/025xc3"
+   },
+   "first_appearance_qid": "Q115383692",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Harry Osborn",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q43845"
+    ],
+    "part_of": [
+     "Q735721"
+    ],
+    "performer": [
+     "Q306403",
+     "Q860876"
+    ],
+    "present_in_work": [
+     "Q138333079",
+     "Q484442",
+     "Q4254026",
+     "Q190145",
+     "Q182212"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1779361"
+  },
+  "171": {
+   "enwiki": "Magneto (Marvel Comics)",
+   "external_ids": {
+    "comic_vine": "4005-1441",
+    "commons_category": "Magneto (comics)",
+    "fandom_article": "marvel:Max_Eisenhardt_(Earth-616)",
+    "freebase": "/m/01_kmm"
+   },
+   "first_appearance_qid": "Q111312491",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Magneto",
+   "props": {
+    "citizenship": [
+     "Q183"
+    ],
+    "creator": [
+     "Q181900",
+     "Q311607"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q1097498",
+     "Q1056391",
+     "Q9352089",
+     "Q12177489"
+    ],
+    "performer": [
+     "Q170510",
+     "Q57147",
+     "Q902800",
+     "Q2708142",
+     "Q2536187",
+     "Q2305700"
+    ],
+    "present_in_work": [
+     "Q1399747",
+     "Q947661",
+     "Q1157151",
+     "Q1365411",
+     "Q2253667",
+     "Q1340065",
+     "Q369286",
+     "Q1990905",
+     "Q1509756",
+     "Q347947",
+     "Q15984059",
+     "Q106182",
+     "Q219776",
+     "Q221168",
+     "Q223596",
+     "Q197491",
+     "Q4985891",
+     "Q17042878",
+     "Q31188935",
+     "Q1957004",
+     "Q2627580",
+     "Q134208",
+     "Q2073725",
+     "Q788134",
+     "Q2608244",
+     "Q383700"
+    ],
+    "religion": [
+     "Q9268"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q840291"
+  },
+  "172": {
+   "enwiki": "Spider-Byte",
+   "external_ids": {
+    "fandom_article": "marvel:Margo_Kess_(Earth-22191)"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Spider-Byte",
+   "props": {
+    "present_in_work": [
+     "Q76448600"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q119020176"
+  },
+  "174": {
+   "enwiki": "Maria Hill",
+   "external_ids": {
+    "comic_vine": "4005-40824",
+    "fandom_article": "disney:Maria_Hill",
+    "freebase": "/m/0cq261"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Maria Hill",
+   "props": {
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q392651",
+     "Q4991371"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1319784"
+  },
+  "175": {
+   "enwiki": "Mister Negative",
+   "external_ids": {
+    "comic_vine": "4005-49969",
+    "commons_category": "Mister Negative",
+    "fandom_article": "marvel:Mister_Negative_(Earth-616)",
+    "freebase": "/m/03m6w12"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Mister Negative",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q3013218",
+     "Q2086261"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q12362622",
+     "Q4947495"
+    ],
+    "present_in_work": [
+     "Q25340029"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q3316968"
+  },
+  "178": {
+   "enwiki": "Mary Jane Watson",
+   "external_ids": {
+    "comic_vine": "4005-13380",
+    "commons_category": "Mary Jane Watson",
+    "fandom_article": "marvel:Mary_Jane_Watson_(Earth-616)",
+    "freebase": "/m/01ppxz"
+   },
+   "first_appearance_qid": "Q115357829",
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Mary Jane Watson",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q1484216"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q33999",
+     "Q4610556",
+     "Q947873",
+     "Q2259451"
+    ],
+    "performer": [
+     "Q76478",
+     "Q4029",
+     "Q272919",
+     "Q231058"
+    ],
+    "present_in_work": [
+     "Q138333079",
+     "Q484442",
+     "Q190145",
+     "Q182212",
+     "Q4254026",
+     "Q2660542",
+     "Q2337769",
+     "Q288296",
+     "Q25340029"
+    ],
+    "religion": [
+     "Q5043"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q27810"
+  },
+  "179": {
+   "enwiki": "Mary Jane Watson",
+   "external_ids": {
+    "comic_vine": "4005-13380",
+    "commons_category": "Mary Jane Watson",
+    "fandom_article": "marvel:Mary_Jane_Watson_(Earth-616)",
+    "freebase": "/m/01ppxz"
+   },
+   "first_appearance_qid": "Q115357829",
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Mary Jane Watson",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q1484216"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q33999",
+     "Q4610556",
+     "Q947873",
+     "Q2259451"
+    ],
+    "performer": [
+     "Q76478",
+     "Q4029",
+     "Q272919",
+     "Q231058"
+    ],
+    "present_in_work": [
+     "Q138333079",
+     "Q484442",
+     "Q190145",
+     "Q182212",
+     "Q4254026",
+     "Q2660542",
+     "Q2337769",
+     "Q288296",
+     "Q25340029"
+    ],
+    "religion": [
+     "Q5043"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q27810"
+  },
+  "18": {
+   "enwiki": "Hulk",
+   "external_ids": {
+    "britannica": "topic/Incredible-Hulk",
+    "comic_vine": "4005-2267",
+    "commons_category": "Hulk",
+    "fandom_article": "marvel:Bruce_Banner_(Earth-616)",
+    "freebase": "/m/07rgn"
+   },
+   "first_appearance_qid": "Q115453680",
+   "gender_qid": "Q6581097",
+   "inception": "1962-05",
+   "label": "Hulk",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "color": [
+     "Q3133"
+    ],
+    "creator": [
+     "Q181900",
+     "Q311607"
+    ],
+    "followers": [
+     {
+      "amount": "+682705",
+      "unit": "1"
+     },
+     {
+      "amount": "+391683",
+      "unit": "1"
+     },
+     {
+      "amount": "+601105",
+      "unit": "1"
+     }
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q901"
+    ],
+    "performer": [
+     "Q498503",
+     "Q4440",
+     "Q313306"
+    ],
+    "present_in_work": [
+     "Q115453642",
+     "Q115466677",
+     "Q383700"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q188760"
+  },
+  "181": {
+   "enwiki": "Mary Parker (comics)",
+   "external_ids": {
+    "comic_vine": "4005-15262",
+    "fandom_article": "marvel:Mary_Fitzpatrick_(Earth-616)"
+   },
+   "first_appearance_qid": "Q138019256",
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Mary Parker",
+   "props": {
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "part_of": [
+     "Q667544"
+    ],
+    "present_in_work": [
+     "Q112032159"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q102268990"
+  },
+  "182": {
+   "enwiki": "Mattie Franklin",
+   "external_ids": {
+    "comic_vine": "4005-41988",
+    "freebase": "/m/08092f"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Mattie Franklin",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q475618",
+     "Q7282183"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q48282",
+     "Q188784"
+    ],
+    "part_of": [
+     "Q2922722"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2095786"
+  },
+  "183": {
+   "enwiki": "Mendel Stromm",
+   "external_ids": {
+    "comic_vine": "4005-31354",
+    "fandom_article": "marvel:Mendel_Stromm_(Earth-616)",
+    "freebase": "/m/0frt35"
+   },
+   "first_appearance_qid": "Q115407131",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Mendel Stromm",
+   "props": {
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2585537"
+  },
+  "184": {
+   "enwiki": "Spider-Man 2099",
+   "external_ids": {
+    "comic_vine": "4005-40524",
+    "commons_category": "Spider-Man 2099",
+    "freebase": "/m/062f9y"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Spider-Man 2099",
+   "props": {
+    "citizenship": [
+     "Q96"
+    ],
+    "creator": [
+     "Q1351554",
+     "Q7331547"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q3126128",
+     "Q484876",
+     "Q3190387",
+     "Q188784"
+    ],
+    "present_in_work": [
+     "Q29588607"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2092660"
+  },
+  "186": {
+   "enwiki": "Spider-Man",
+   "external_ids": {
+    "britannica": "topic/Spider-Man-comic-book-character",
+    "comic_vine": "4005-1443",
+    "commons_category": "Spider-Man",
+    "fandom_article": "ru.marvel:Питер_Паркер_(616)",
+    "freebase": "/m/06ys2"
+   },
+   "first_appearance_qid": "Q118419196",
+   "gender_qid": "Q6581097",
+   "inception": "1962-08",
+   "label": "Spider-Man",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "followers": [
+     {
+      "amount": "+2446201",
+      "unit": "1"
+     },
+     {
+      "amount": "+769298",
+      "unit": "1"
+     },
+     {
+      "amount": "+606676",
+      "unit": "1"
+     },
+     {
+      "amount": "+1857159",
+      "unit": "1"
+     }
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q33231",
+     "Q901",
+     "Q37226",
+     "Q188784",
+     "Q205375",
+     "Q43845"
+    ],
+    "performer": [
+     "Q165524",
+     "Q2023710",
+     "Q23891",
+     "Q266520"
+    ],
+    "present_in_work": [
+     "Q25340029",
+     "Q138333079",
+     "Q569934",
+     "Q190145",
+     "Q182212",
+     "Q2337769",
+     "Q4254026",
+     "Q229808",
+     "Q383700",
+     "Q2633998",
+     "Q729212",
+     "Q27971937",
+     "Q1093923",
+     "Q68934496",
+     "Q27985819",
+     "Q113244935"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q79037"
+  },
+  "187": {
+   "enwiki": "Mister Fantastic",
+   "external_ids": {
+    "britannica": "topic/Mr-Fantastic",
+    "comic_vine": "4005-2151",
+    "fandom_article": "marvel:Reed_Richards_(Earth-616)",
+    "freebase": "/m/013m9w"
+   },
+   "first_appearance_qid": "Q115424368",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Mister Fantastic",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q311607"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q11900058",
+     "Q2873500",
+     "Q121594",
+     "Q48282"
+    ],
+    "performer": [
+     "Q2641365",
+     "Q295974",
+     "Q267330"
+    ],
+    "present_in_work": [
+     "Q115424329"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q865017"
+  },
+  "189": {
+   "enwiki": "Moon Knight",
+   "external_ids": {
+    "comic_vine": "4005-1493",
+    "fandom_article": "marvel:Marc_Spector_(Earth-616)",
+    "freebase": "/m/03l8d6",
+    "tv_tropes": "ComicBook/MoonKnight"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": "1975-08",
+   "label": "Moon Knight",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "ethnic_group": [
+     "Q678551"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1037532"
+  },
+  "19": {
+   "enwiki": "Kingpin (character)",
+   "external_ids": {
+    "britannica": "topic/Kingpin",
+    "comic_vine": "4005-1483",
+    "commons_category": "Cosplay of Kingpin",
+    "fandom_article": "marvel:Wilson_Fisk_(Earth-616)",
+    "freebase": "/m/022f26"
+   },
+   "first_appearance_qid": "Q119006532",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Kingpin",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q1484216"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q43845",
+     "Q10384029",
+     "Q4947495",
+     "Q2462658",
+     "Q2159907"
+    ],
+    "performer": [
+     "Q16455",
+     "Q483148",
+     "Q320052"
+    ],
+    "present_in_work": [
+     "Q138333079",
+     "Q25340029",
+     "Q751805",
+     "Q2337769",
+     "Q2635988"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1753322"
+  },
+  "190": {
+   "enwiki": "Morlun",
+   "external_ids": {
+    "comic_vine": "4005-17613",
+    "fandom_article": "marvel:Morlun_(Earth-001)",
+    "freebase": "/m/097xlf"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Morlun",
+   "props": {
+    "creator": [
+     "Q126941",
+     "Q2570"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1425172"
+  },
+  "194": {
+   "enwiki": "Namor",
+   "external_ids": {
+    "britannica": "topic/Sub-Mariner",
+    "comic_vine": "4005-1476",
+    "commons_category": "Namor",
+    "fandom_article": "marvel:Namor_McKenzie_(Earth-616)",
+    "freebase": "/m/01p0sx"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Namor",
+   "props": {
+    "citizenship": [
+     "Q84084213"
+    ],
+    "creator": [
+     "Q1837116"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q6917754"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q613067"
+  },
+  "196": {
+   "enwiki": "Ned Leeds",
+   "external_ids": {
+    "comic_vine": "4005-12354",
+    "fandom_article": "marvel:Edward_Leeds_(Earth-616)",
+    "freebase": "/m/030vjt"
+   },
+   "first_appearance_qid": "Q112227815",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Ned Leeds",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q42909"
+    ],
+    "present_in_work": [
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q3337686"
+  },
+  "198": {
+   "enwiki": "Nick Fury",
+   "external_ids": {
+    "comic_vine": "4005-3202",
+    "commons_category": "Nick Fury",
+    "fandom_article": "marvel:Nicholas_Fury_(Earth-616)",
+    "freebase": "/m/02lw8w"
+   },
+   "first_appearance_qid": "Q115456440",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Nick Fury",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q311607"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q9352089",
+     "Q4991371",
+     "Q777952",
+     "Q11338576",
+     "Q7581768"
+    ],
+    "performer": [
+     "Q172678",
+     "Q201927"
+    ],
+    "present_in_work": [
+     "Q4049343",
+     "Q28408151"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q975100"
+  },
+  "199": {
+   "enwiki": "Nico Minoru",
+   "external_ids": {
+    "freebase": "/m/06kt13"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Nico Minoru",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q849628",
+     "Q3605602"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q2140112",
+     "Q28746336"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q9049926"
+  },
+  "2": {
+   "enwiki": "Ben Reilly",
+   "external_ids": {
+    "comic_vine": "4005-6286",
+    "fandom_article": "es.doblaje:Ben_Reilly",
+    "freebase": "/m/02jftv"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Ben Reilly",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q525314"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q157195",
+     "Q2070313",
+     "Q851436",
+     "Q188784",
+     "Q3190387",
+     "Q2159907",
+     "Q901",
+     "Q156839",
+     "Q808266",
+     "Q1090219",
+     "Q327029",
+     "Q205375",
+     "Q2251335",
+     "Q33231"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2343504"
+  },
+  "20": {
+   "enwiki": "Kraven the Hunter",
+   "external_ids": {
+    "comic_vine": "4005-2475",
+    "commons_category": "Kraven the Hunter",
+    "fandom_article": "marvel:Sergei_Kravinoff_(Earth-616)",
+    "freebase": "/m/01ttp0"
+   },
+   "first_appearance_qid": "Q111993510",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Kraven the Hunter",
+   "props": {
+    "citizenship": [
+     "Q159"
+    ],
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q1714828",
+     "Q178197"
+    ],
+    "performer": [
+     "Q45923",
+     "Q18581761"
+    ],
+    "present_in_work": [
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q654588"
+  },
+  "200": {
+   "enwiki": "Nightcrawler (character)",
+   "external_ids": {
+    "comic_vine": "4005-1461",
+    "commons_category": "Nightcrawler",
+    "fandom_article": "marvel:Kurt_Wagner_(Earth-616)",
+    "freebase": "/m/01wdm_"
+   },
+   "first_appearance_qid": "Q534208",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Nightcrawler",
+   "props": {
+    "citizenship": [
+     "Q183"
+    ],
+    "creator": [
+     "Q631369",
+     "Q902536"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q17307272",
+     "Q188784",
+     "Q250867"
+    ],
+    "performer": [
+     "Q316629",
+     "Q716251"
+    ],
+    "present_in_work": [
+     "Q534208",
+     "Q1399747",
+     "Q1365411",
+     "Q2253667",
+     "Q1340065",
+     "Q369286",
+     "Q1990905",
+     "Q1436867",
+     "Q219776",
+     "Q17042878",
+     "Q31188935",
+     "Q25431158",
+     "Q134208",
+     "Q109558622"
+    ],
+    "religion": [
+     "Q1841"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q5342183"
+  },
+  "202": {
+   "enwiki": "Silver Surfer",
+   "external_ids": {
+    "britannica": "topic/Silver-Surfer",
+    "comic_vine": "4005-2502",
+    "commons_category": "Silver Surfer",
+    "fandom_article": "marvel:Norrin_Radd_(Earth-616)",
+    "freebase": "/m/079qw"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": "1966",
+   "label": "Silver Surfer",
+   "props": {
+    "creator": [
+     "Q311607"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q11063",
+     "Q188784",
+     "Q11900058",
+     "Q20826540",
+     "Q696819",
+     "Q60661987"
+    ],
+    "performer": [
+     "Q461309",
+     "Q193048",
+     "Q2536187",
+     "Q6849459"
+    ],
+    "present_in_work": [
+     "Q390063",
+     "Q3235008"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q95153"
+  },
+  "203": {
+   "enwiki": "Nova (Sam Alexander)",
+   "external_ids": {
+    "comic_vine": "4005-82858",
+    "commons_category": "Nova (comics)",
+    "fandom_article": "marvel:Samuel_Alexander_(Earth-616)",
+    "freebase": "/m/0k3gwlv"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": "2011",
+   "label": "Sam Alexander",
+   "props": {
+    "creator": [
+     "Q1372513",
+     "Q729414"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "part_of": [
+     "Q13146780"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q7063995"
+  },
+  "206": {
+   "enwiki": "Oddball (character)",
+   "external_ids": {
+    "freebase": "/m/026npdt"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": null,
+   "inception": null,
+   "label": "Oddball",
+   "props": {
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q17307272"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q7077466"
+  },
+  "207": {
+   "enwiki": "Eddie Brock",
+   "external_ids": {
+    "comic_vine": "4005-6733",
+    "fandom_article": "marvel:Edward_Brock_(Earth-616)",
+    "freebase": "/m/01_82p"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Eddie Brock",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q352292",
+     "Q352460"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q42909",
+     "Q3190387",
+     "Q5589126",
+     "Q188784"
+    ],
+    "performer": [
+     "Q723021",
+     "Q202056",
+     "Q952156"
+    ],
+    "present_in_work": [
+     "Q125253864"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2604715"
+  },
+  "208": {
+   "enwiki": "Spider-Man (Pavitr Prabhakar)",
+   "external_ids": {
+    "comic_vine": "4005-72885"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Spider-Man",
+   "props": {
+    "citizenship": [
+     "Q668"
+    ],
+    "narrative_universe": [
+     "Q132393876"
+    ],
+    "present_in_work": [
+     "Q18154235",
+     "Q76448600",
+     "Q836822"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q48732969"
+  },
+  "209": {
+   "enwiki": "Pepper Potts (Marvel Cinematic Universe)",
+   "external_ids": {
+    "fandom_article": "marvel:Virginia_Potts_(Earth-199999)"
+   },
+   "first_appearance_qid": "Q192724",
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Pepper Potts",
+   "props": {
+    "narrative_universe": [
+     "Q642878"
+    ],
+    "performer": [
+     "Q34460"
+    ],
+    "present_in_work": [
+     "Q192724",
+     "Q205028",
+     "Q182218",
+     "Q209538",
+     "Q23010088",
+     "Q23781155",
+     "Q23780914"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q23895000"
+  },
+  "21": {
+   "enwiki": "Lizard (character)",
+   "external_ids": {
+    "comic_vine": "4005-1488",
+    "commons_category": "Lizard (Marvel Comics)",
+    "fandom_article": "marvel:Curtis_Connors_(Earth-616)",
+    "freebase": "/m/01x02p"
+   },
+   "first_appearance_qid": "Q111803014",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Lizard",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q864503",
+     "Q10855616"
+    ],
+    "performer": [
+     "Q726128",
+     "Q215017",
+     "Q298255",
+     "Q2461148",
+     "Q837676",
+     "Q50808735",
+     "Q965261",
+     "Q1691318",
+     "Q1343823",
+     "Q952156",
+     "Q2536187",
+     "Q579804"
+    ],
+    "present_in_work": [
+     "Q138333079",
+     "Q190145",
+     "Q182212",
+     "Q229808",
+     "Q2660542",
+     "Q2337769",
+     "Q2625129",
+     "Q777406"
+    ],
+    "religion": [
+     "Q1841"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q19382"
+  },
+  "210": {
+   "enwiki": "Spider-Man",
+   "external_ids": {
+    "britannica": "topic/Spider-Man-comic-book-character",
+    "comic_vine": "4005-1443",
+    "commons_category": "Spider-Man",
+    "fandom_article": "ru.marvel:Питер_Паркер_(616)",
+    "freebase": "/m/06ys2"
+   },
+   "first_appearance_qid": "Q118419196",
+   "gender_qid": "Q6581097",
+   "inception": "1962-08",
+   "label": "Spider-Man",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "followers": [
+     {
+      "amount": "+2446201",
+      "unit": "1"
+     },
+     {
+      "amount": "+769298",
+      "unit": "1"
+     },
+     {
+      "amount": "+606676",
+      "unit": "1"
+     },
+     {
+      "amount": "+1857159",
+      "unit": "1"
+     }
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q33231",
+     "Q901",
+     "Q37226",
+     "Q188784",
+     "Q205375",
+     "Q43845"
+    ],
+    "performer": [
+     "Q165524",
+     "Q2023710",
+     "Q23891",
+     "Q266520"
+    ],
+    "present_in_work": [
+     "Q25340029",
+     "Q138333079",
+     "Q569934",
+     "Q190145",
+     "Q182212",
+     "Q2337769",
+     "Q4254026",
+     "Q229808",
+     "Q383700",
+     "Q2633998",
+     "Q729212",
+     "Q27971937",
+     "Q1093923",
+     "Q68934496",
+     "Q27985819",
+     "Q113244935"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q79037"
+  },
+  "211": {
+   "enwiki": "Kitty Pryde",
+   "external_ids": {
+    "comic_vine": "4005-3548",
+    "commons_category": "Kitty Pryde",
+    "fandom_article": "marvel:Katherine_Pryde_(Earth-616)",
+    "freebase": "/m/02321x"
+   },
+   "first_appearance_qid": "Q111658456",
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Kitty Pryde",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q631369",
+     "Q475618"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q2095549",
+     "Q808266",
+     "Q17307272",
+     "Q37226",
+     "Q5589126",
+     "Q188784"
+    ],
+    "performer": [
+     "Q452347",
+     "Q173399",
+     "Q516421"
+    ],
+    "present_in_work": [
+     "Q1399747",
+     "Q1365411",
+     "Q2253667",
+     "Q369286",
+     "Q1990905",
+     "Q106182",
+     "Q219776",
+     "Q221168",
+     "Q4985891",
+     "Q4020703"
+    ],
+    "religion": [
+     "Q9268"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q547306"
+  },
+  "212": {
+   "enwiki": "Luke Cage",
+   "external_ids": {
+    "britannica": "topic/Luke-Cage",
+    "comic_vine": "4005-1450",
+    "commons_category": "Luke Cage and his cast",
+    "fandom_article": "marvel:Luke_Cage_(Earth-616)",
+    "freebase": "/m/029n63"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Luke Cage",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q633841",
+     "Q1484216",
+     "Q2053669"
+    ],
+    "ethnic_group": [
+     "Q817393"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q188784",
+     "Q851436",
+     "Q178197",
+     "Q1058617"
+    ],
+    "performer": [
+     "Q1058675"
+    ],
+    "present_in_work": [
+     "Q111610075",
+     "Q20646602",
+     "Q111609754",
+     "Q111609745",
+     "Q111609719",
+     "Q111609575"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2267760"
+  },
+  "214": {
+   "enwiki": "Professor X",
+   "external_ids": {
+    "comic_vine": "4005-1505",
+    "commons_category": "Professor X",
+    "fandom_article": "marvel:Charles_Xavier_(Earth-616)",
+    "freebase": "/m/025fh"
+   },
+   "first_appearance_qid": "Q111312491",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Professor X",
+   "props": {
+    "citizenship": [
+     "Q145"
+    ],
+    "creator": [
+     "Q181900"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q1056391",
+     "Q901"
+    ],
+    "performer": [
+     "Q16296",
+     "Q193659"
+    ],
+    "present_in_work": [
+     "Q1399747",
+     "Q534208",
+     "Q106182",
+     "Q219776",
+     "Q221168",
+     "Q1957004",
+     "Q134208",
+     "Q217552",
+     "Q223596",
+     "Q197491",
+     "Q24053263",
+     "Q4985891",
+     "Q17042878",
+     "Q25431158",
+     "Q3133608",
+     "Q2443162",
+     "Q4021195"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q838076"
+  },
+  "215": {
+   "enwiki": "Prowler (Marvel Comics)",
+   "external_ids": {
+    "freebase": "/m/08zx6c"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": null,
+   "inception": null,
+   "label": "Prowler",
+   "props": {
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2274942"
+  },
+  "22": {
+   "enwiki": "Julia Carpenter",
+   "external_ids": {
+    "comic_vine": "4005-16197",
+    "fandom_article": "marvel:Julia_Carpenter_(Earth-616)",
+    "freebase": "/m/08091r"
+   },
+   "first_appearance_qid": "Q117199052",
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Julia Carpenter",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q1476318",
+     "Q731726"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q5589126",
+     "Q5125402"
+    ],
+    "present_in_work": [
+     "Q472166"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2276597"
+  },
+  "222": {
+   "enwiki": "Richard Parker (comics)",
+   "external_ids": {
+    "comic_vine": "4005-15261",
+    "fandom_article": "marvel:Richard_Parker_(Earth-616)"
+   },
+   "first_appearance_qid": "Q138019256",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Richard Parker",
+   "props": {
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "part_of": [
+     "Q667544"
+    ],
+    "present_in_work": [
+     "Q112032159"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q102268961"
+  },
+  "224": {
+   "enwiki": "Ringmaster (comics)",
+   "external_ids": {
+    "comic_vine": "4005-3803",
+    "fandom_article": "marvel:Maynard_Tiboldt_(Earth-616)",
+    "freebase": "/m/0b9fng"
+   },
+   "first_appearance_qid": "Q115454003",
+   "gender_qid": null,
+   "inception": null,
+   "label": "Ringmaster",
+   "props": {
+    "creator": [
+     "Q181900",
+     "Q311607"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q115453642"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q7334931"
+  },
+  "225": {
+   "enwiki": null,
+   "external_ids": {},
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Rio Morales",
+   "props": {
+    "present_in_work": [
+     "Q76448600",
+     "Q29588607",
+     "Q25340029",
+     "Q96216165",
+     "Q108479502",
+     "Q1199721"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q60825677"
+  },
+  "227": {
+   "enwiki": "Robbie Robertson (character)",
+   "external_ids": {
+    "comic_vine": "4005-1782",
+    "fandom_article": "marvel:Joseph_Robertson_(Earth-616)",
+    "freebase": "/m/05tyg5"
+   },
+   "first_appearance_qid": "Q119007618",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Robbie Robertson",
+   "props": {
+    "creator": [
+     "Q181900",
+     "Q1484216"
+    ],
+    "ethnic_group": [
+     "Q49085"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q17351648"
+    ],
+    "performer": [
+     "Q279834",
+     "Q500628"
+    ],
+    "present_in_work": [
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q944573"
+  },
+  "228": {
+   "enwiki": null,
+   "external_ids": {
+    "fandom_article": "marvel:Roger_Harrington_(Earth-199999)"
+   },
+   "first_appearance_qid": "Q466611",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Roger Harrington",
+   "props": {
+    "narrative_universe": [
+     "Q642878"
+    ],
+    "performer": [
+     "Q716343"
+    ],
+    "present_in_work": [
+     "Q466611",
+     "Q23010088",
+     "Q27985819"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q66192435"
+  },
+  "229": {
+   "enwiki": "Rogue (Marvel Comics)",
+   "external_ids": {
+    "comic_vine": "4005-1446",
+    "commons_category": "Rogue (comics)",
+    "fandom_article": "marvel:Anna_Marie_LeBeau_(Earth-616)",
+    "freebase": "/m/015jby"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Rogue",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q631369",
+     "Q1927569"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q327029",
+     "Q157195",
+     "Q12414919",
+     "Q188784"
+    ],
+    "performer": [
+     "Q199884"
+    ],
+    "present_in_work": [
+     "Q1340065",
+     "Q369286",
+     "Q1990905",
+     "Q106182",
+     "Q219776",
+     "Q221168",
+     "Q4985891",
+     "Q134208"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q838097"
+  },
+  "23": {
+   "enwiki": "Morbius",
+   "external_ids": {
+    "comic_vine": "4005-6722",
+    "commons_category": "Morbius, the Living Vampire",
+    "fandom_article": "marvel:Michael_Morbius_(Earth-616)",
+    "freebase": "/m/05yp12"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Morbius",
+   "props": {
+    "citizenship": [
+     "Q41"
+    ],
+    "creator": [
+     "Q981976",
+     "Q1365108"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q2919046",
+     "Q3144914"
+    ],
+    "performer": [
+     "Q484523",
+     "Q2870023",
+     "Q3290793"
+    ],
+    "present_in_work": [
+     "Q138333079",
+     "Q55405369"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1087722"
+  },
+  "231": {
+   "enwiki": null,
+   "external_ids": {},
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": "2004",
+   "label": "Rosalie Octavius",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q449238"
+    ],
+    "narrative_universe": [
+     "Q63728626"
+    ],
+    "performer": [
+     "Q439457",
+     "Q3978226"
+    ],
+    "present_in_work": [
+     "Q190145",
+     "Q2660542"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q56244178"
+  },
+  "234": {
+   "enwiki": "Screwball (character)",
+   "external_ids": {
+    "fandom_article": "marvel:Screwball_(Earth-616)"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Screwball",
+   "props": {
+    "creator": [
+     "Q3013218",
+     "Q6757886"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q125252681"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q55643365"
+  },
+  "236": {
+   "enwiki": "Simon Krieger",
+   "external_ids": {
+    "fandom_article": "marvel:Simon_Krieger_(Earth-616)"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Simon Krieger",
+   "props": {
+    "creator": [
+     "Q971041",
+     "Q1570218"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q110852301"
+  },
+  "237": {
+   "enwiki": null,
+   "external_ids": {},
+   "first_appearance_qid": "Q55405369",
+   "gender_qid": "Q6581097",
+   "inception": "2020",
+   "label": "Simon Stroud",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "narrative_universe": [
+     "Q55537283"
+    ],
+    "performer": [
+     "Q311232"
+    ],
+    "present_in_work": [
+     "Q55405369"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q86941895"
+  },
+  "239": {
+   "enwiki": null,
+   "external_ids": {
+    "fandom_article": "marvel:Soren_(Earth-199999)"
+   },
+   "first_appearance_qid": "Q23781129",
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Soren",
+   "props": {
+    "narrative_universe": [
+     "Q642878"
+    ],
+    "performer": [
+     "Q20857836"
+    ],
+    "present_in_work": [
+     "Q23781129",
+     "Q27985819"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q66189494"
+  },
+  "24": {
+   "enwiki": "MJ (Marvel Cinematic Universe)",
+   "external_ids": {
+    "fandom_article": "marvel:Michelle_Jones_(Earth-199999)"
+   },
+   "first_appearance_qid": "Q23010088",
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Michelle Jones",
+   "props": {
+    "narrative_universe": [
+     "Q642878"
+    ],
+    "performer": [
+     "Q189489"
+    ],
+    "present_in_work": [
+     "Q23010088",
+     "Q27985819",
+     "Q68934496",
+     "Q113244935"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q23894605"
+  },
+  "240": {
+   "enwiki": "Robbie Baldwin",
+   "external_ids": {
+    "freebase": "/m/036smt"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Robbie Baldwin",
+   "props": {
+    "narrative_universe": [
+     "Q2246088"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2276949"
+  },
+  "241": {
+   "enwiki": "Spencer Smythe",
+   "external_ids": {
+    "comic_vine": "4005-17632",
+    "fandom_article": "marvel:Spencer_Smythe_(Earth-616)",
+    "freebase": "/m/0b11b2"
+   },
+   "first_appearance_qid": "Q115357829",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Spencer Smythe",
+   "props": {
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q3080800"
+  },
+  "243": {
+   "enwiki": "Storm (Marvel Comics)",
+   "external_ids": {
+    "comic_vine": "4005-1444",
+    "fandom_article": "marvel:Ororo_Munroe_(Earth-616)",
+    "freebase": "/m/01htfz"
+   },
+   "first_appearance_qid": "Q534208",
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Storm",
+   "props": {
+    "citizenship": [
+     "Q30",
+     "Q766099"
+    ],
+    "creator": [
+     "Q51057",
+     "Q902536"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q482999",
+     "Q48282",
+     "Q3562775",
+     "Q188784"
+    ],
+    "performer": [
+     "Q1033016",
+     "Q14914898"
+    ],
+    "present_in_work": [
+     "Q534208",
+     "Q1399747",
+     "Q1340065",
+     "Q369286",
+     "Q1990905",
+     "Q1509756",
+     "Q1436867",
+     "Q2461966",
+     "Q1365411",
+     "Q2253667",
+     "Q569934",
+     "Q15984059",
+     "Q106182",
+     "Q219776",
+     "Q221168",
+     "Q4985891",
+     "Q17042878",
+     "Q31188935",
+     "Q25431158",
+     "Q383700",
+     "Q2608244"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q632212"
+  },
+  "244": {
+   "enwiki": null,
+   "external_ids": {
+    "fandom_article": "marvel:Talos_(Earth-199999)"
+   },
+   "first_appearance_qid": "Q23781129",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Talos",
+   "props": {
+    "narrative_universe": [
+     "Q642878"
+    ],
+    "performer": [
+     "Q816565"
+    ],
+    "present_in_work": [
+     "Q23781129",
+     "Q27985819",
+     "Q108441863"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q66189316"
+  },
+  "245": {
+   "enwiki": "Taskmaster (character)",
+   "external_ids": {
+    "comic_vine": "4005-4578",
+    "fandom_article": "marvel:Anthony_Masters_(Earth-616)",
+    "freebase": "/m/03ktd7"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Taskmaster",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q352292",
+     "Q1375856"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q5307556",
+     "Q178197",
+     "Q37226"
+    ],
+    "present_in_work": [
+     "Q115466677"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2532044"
+  },
+  "246": {
+   "enwiki": "Thanos",
+   "external_ids": {
+    "comic_vine": "4005-7607",
+    "commons_category": "Thanos",
+    "fandom_article": "marvel:Thanos_(Earth-616)",
+    "freebase": "/m/033_fk"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Thanos",
+   "props": {
+    "creator": [
+     "Q1376982",
+     "Q19031",
+     "Q298025"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q3896442",
+     "Q20649425",
+     "Q3130597",
+     "Q1083528",
+     "Q3850389",
+     "Q27971937",
+     "Q349375",
+     "Q2559819",
+     "Q383700"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2276627"
+  },
+  "247": {
+   "enwiki": "Foreigner (character)",
+   "external_ids": {
+    "comic_vine": "4005-13381",
+    "freebase": "/m/09jv7h"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Foreigner",
+   "props": {
+    "creator": [
+     "Q1351554"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q378770",
+     "Q178197"
+    ],
+    "performer": [
+     "Q5111829"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q3545603"
+  },
+  "249": {
+   "enwiki": "Thor (Marvel Comics)",
+   "external_ids": {
+    "comic_vine": "4005-2268",
+    "commons_category": "Thor (Marvel Comics)",
+    "fandom_article": "marvel:Thor_Odinson_(Earth-616)",
+    "freebase": "/m/0fl9gg"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Thor",
+   "props": {
+    "citizenship": [
+     "Q2611772"
+    ],
+    "creator": [
+     "Q181900",
+     "Q311607",
+     "Q2009797"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "performer": [
+     "Q5108470",
+     "Q3603",
+     "Q922264",
+     "Q16455",
+     "Q5228378",
+     "Q2791343",
+     "Q2403592",
+     "Q1176644"
+    ],
+    "present_in_work": [
+     "Q2270826",
+     "Q115411239",
+     "Q115466677"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q717588"
+  },
+  "25": {
+   "enwiki": "Miles Morales",
+   "external_ids": {
+    "comic_vine": "4005-79420",
+    "commons_category": "Spider-Man and his cast",
+    "freebase": "/m/0h1gcrk"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Miles Morales",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q720012",
+     "Q6392527"
+    ],
+    "ethnic_group": [
+     "Q49085",
+     "Q893594"
+    ],
+    "narrative_universe": [
+     "Q116671834"
+    ],
+    "occupation": [
+     "Q188784",
+     "Q48282"
+    ],
+    "performer": [
+     "Q16236922"
+    ],
+    "present_in_work": [
+     "Q25340029",
+     "Q29588607",
+     "Q76448600",
+     "Q119411066"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q59826"
+  },
+  "251": {
+   "enwiki": "Typhoid Mary (character)",
+   "external_ids": {
+    "comic_vine": "4005-1536",
+    "commons_category": "Cosplay of Typhoid Mary (comics)",
+    "fandom_article": "marvel:Mary_Walker_(Earth-616)",
+    "freebase": "/m/05gfwz"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Typhoid Mary",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q2850412",
+     "Q2570"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q14915751",
+     "Q1153622"
+    ],
+    "performer": [
+     "Q235677"
+    ],
+    "present_in_work": [
+     "Q128797955"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2625935"
+  },
+  "252": {
+   "enwiki": "Vanisher",
+   "external_ids": {
+    "comic_vine": "4005-6756",
+    "freebase": "/m/07ywfd"
+   },
+   "first_appearance_qid": "Q111312519",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Vanisher",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q311607"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q2159907"
+    ],
+    "performer": [
+     "Q35332"
+    ],
+    "present_in_work": [
+     "Q1399747",
+     "Q1990905",
+     "Q25431158"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1168830"
+  },
+  "253": {
+   "enwiki": "Vermin (character)",
+   "external_ids": {
+    "comic_vine": "4005-6818",
+    "freebase": "/m/06ftnk"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Vermin",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q703534"
+    ],
+    "present_in_work": [
+     "Q25221879"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q4010081"
+  },
+  "256": {
+   "enwiki": "Walter Hardy",
+   "external_ids": {
+    "comic_vine": "4005-34187",
+    "freebase": "/m/0dpjfy"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Walter Hardy",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q1333734",
+     "Q3194762"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q3562775"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q7965074"
+  },
+  "258": {
+   "enwiki": "White Tiger (Angela del Toro)",
+   "external_ids": {
+    "comic_vine": "4005-1925",
+    "fandom_article": "marvel:Angela_Del_Toro_(Earth-616)",
+    "freebase": "/m/02pnk4d"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "White Tiger",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q720012",
+     "Q4717426"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q188784",
+     "Q2655853"
+    ],
+    "present_in_work": [
+     "Q128797956"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q7995468"
+  },
+  "26": {
+   "enwiki": "Mysterio",
+   "external_ids": {
+    "comic_vine": "4005-4333",
+    "commons_category": "Mysterio",
+    "fandom_article": "marvel:Mysterio",
+    "freebase": "/m/01tv2_",
+    "tv_tropes": "ComicBook/Mysterio"
+   },
+   "first_appearance_qid": "Q111794273",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Mysterio",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "performer": [
+     "Q723021",
+     "Q2536187"
+    ],
+    "present_in_work": [
+     "Q138333079",
+     "Q2660542",
+     "Q1093923",
+     "Q288296"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2283843"
+  },
+  "260": {
+   "enwiki": null,
+   "external_ids": {
+    "fandom_article": "marvel:William_Ginter_Riva_(Earth-199999)"
+   },
+   "first_appearance_qid": "Q192724",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "William Ginter Riva",
+   "props": {
+    "narrative_universe": [
+     "Q642878"
+    ],
+    "occupation": [
+     "Q901"
+    ],
+    "performer": [
+     "Q3376457"
+    ],
+    "present_in_work": [
+     "Q192724",
+     "Q27985819"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q23750514"
+  },
+  "261": {
+   "enwiki": "Wong (Marvel Cinematic Universe)",
+   "external_ids": {
+    "fandom_article": "marvel:Wong_(Earth-199999)"
+   },
+   "first_appearance_qid": "Q18406872",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Wong",
+   "props": {
+    "narrative_universe": [
+     "Q642878"
+    ],
+    "occupation": [
+     "Q148401"
+    ],
+    "performer": [
+     "Q3329808"
+    ],
+    "present_in_work": [
+     "Q18406872",
+     "Q23780914",
+     "Q23781155",
+     "Q64211112"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q24045752"
+  },
+  "262": {
+   "enwiki": "Machine Man",
+   "external_ids": {
+    "comic_vine": "4005-7242",
+    "freebase": "/m/06pzbq"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Machine Man",
+   "props": {
+    "creator": [
+     "Q311607"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q4598403"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2601925"
+  },
+  "263": {
+   "enwiki": "Zaran",
+   "external_ids": {
+    "comic_vine": "4005-2494"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Zaran",
+   "props": {
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q6498903"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q368056"
+  },
+  "27": {
+   "enwiki": "Spider-Man",
+   "external_ids": {
+    "britannica": "topic/Spider-Man-comic-book-character",
+    "comic_vine": "4005-1443",
+    "commons_category": "Spider-Man",
+    "fandom_article": "ru.marvel:Питер_Паркер_(616)",
+    "freebase": "/m/06ys2"
+   },
+   "first_appearance_qid": "Q118419196",
+   "gender_qid": "Q6581097",
+   "inception": "1962-08",
+   "label": "Spider-Man",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "followers": [
+     {
+      "amount": "+2446201",
+      "unit": "1"
+     },
+     {
+      "amount": "+769298",
+      "unit": "1"
+     },
+     {
+      "amount": "+606676",
+      "unit": "1"
+     },
+     {
+      "amount": "+1857159",
+      "unit": "1"
+     }
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q33231",
+     "Q901",
+     "Q37226",
+     "Q188784",
+     "Q205375",
+     "Q43845"
+    ],
+    "performer": [
+     "Q165524",
+     "Q2023710",
+     "Q23891",
+     "Q266520"
+    ],
+    "present_in_work": [
+     "Q25340029",
+     "Q138333079",
+     "Q569934",
+     "Q190145",
+     "Q182212",
+     "Q2337769",
+     "Q4254026",
+     "Q229808",
+     "Q383700",
+     "Q2633998",
+     "Q729212",
+     "Q27971937",
+     "Q1093923",
+     "Q68934496",
+     "Q27985819",
+     "Q113244935"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q79037"
+  },
+  "28": {
+   "enwiki": "Rhino (character)",
+   "external_ids": {
+    "comic_vine": "4005-2126",
+    "commons_category": "Rhino (character)",
+    "fandom_article": "marvel:Aleksei_Sytsevich_(Earth-616)",
+    "freebase": "/m/01ttzc"
+   },
+   "first_appearance_qid": "Q115411171",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Rhino",
+   "props": {
+    "citizenship": [
+     "Q159"
+    ],
+    "creator": [
+     "Q181900",
+     "Q1484216"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q2159907"
+    ],
+    "performer": [
+     "Q208649",
+     "Q350424"
+    ],
+    "present_in_work": [
+     "Q138333079",
+     "Q4254026",
+     "Q288296",
+     "Q2660542",
+     "Q2583842",
+     "Q1093923"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q572626"
+  },
+  "29": {
+   "enwiki": "Sandman (Marvel Comics)",
+   "external_ids": {
+    "comic_vine": "4005-3544",
+    "commons_category": "Sandman (character)",
+    "fandom_article": "marvel:William_Baker_(Earth-616)",
+    "freebase": "/m/0253r3"
+   },
+   "first_appearance_qid": "Q111795445",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Sandman",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q2159907",
+     "Q188784"
+    ],
+    "performer": [
+     "Q311615",
+     "Q837676"
+    ],
+    "present_in_work": [
+     "Q138333079",
+     "Q3133608",
+     "Q182212",
+     "Q2337769",
+     "Q3662198",
+     "Q1093923"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1049890"
+  },
+  "3": {
+   "enwiki": "Black Cat (Marvel Comics)",
+   "external_ids": {
+    "comic_vine": "4005-1479",
+    "commons_category": "Black Cat",
+    "fandom_article": "marvel:Felicia_Hardy_(Earth-616)",
+    "freebase": "/m/030vb0"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Black Cat",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q1333734",
+     "Q3194762"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q1058617",
+     "Q4947495",
+     "Q2159907",
+     "Q188784",
+     "Q842782",
+     "Q621613",
+     "Q19788920"
+    ],
+    "performer": [
+     "Q234447",
+     "Q4820188",
+     "Q4029",
+     "Q195041",
+     "Q230335",
+     "Q13938",
+     "Q229021"
+    ],
+    "present_in_work": [
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q912640"
+  },
+  "30": {
+   "enwiki": "Mac Gargan",
+   "external_ids": {
+    "comic_vine": "4005-4484",
+    "fandom_article": "marvel:MacDonald_Gargan_(Earth-616)",
+    "freebase": "/m/01tv3w"
+   },
+   "first_appearance_qid": "Q112228343",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Mac Gargan",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q1058617",
+     "Q5589126",
+     "Q2159907",
+     "Q378770"
+    ],
+    "part_of": [
+     "Q2289795"
+    ],
+    "performer": [
+     "Q723021",
+     "Q837676"
+    ],
+    "present_in_work": [
+     "Q138333079",
+     "Q288296",
+     "Q2539517",
+     "Q2337769"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2917078"
+  },
+  "31": {
+   "enwiki": "Shocker (character)",
+   "external_ids": {
+    "comic_vine": "4005-4825",
+    "commons_category": "Shocker (character)",
+    "fandom_article": "marvel:Herman_Schultz_(Earth-616)",
+    "freebase": "/m/01x05q"
+   },
+   "first_appearance_qid": "Q118120049",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Shocker",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q1484216"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q3562775",
+     "Q378770"
+    ],
+    "present_in_work": [
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2015743"
+  },
+  "32": {
+   "enwiki": "Shriek (character)",
+   "external_ids": {
+    "fandom_article": "marvel:Shriek",
+    "freebase": "/m/06bs52"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Shriek",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q1322947",
+     "Q599109",
+     "Q723984",
+     "Q703897",
+     "Q6183261",
+     "Q7704593"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q484188",
+     "Q10384029"
+    ],
+    "present_in_work": [
+     "Q4049922"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2087326"
+  },
+  "33": {
+   "enwiki": "Silk (character)",
+   "external_ids": {
+    "comic_vine": "4005-101483",
+    "commons_category": "Cosplay of Silk",
+    "fandom_article": "marvel:Cindy_Moon_(Earth-616)",
+    "freebase": "/m/012lzypm"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Silk",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q3013218",
+     "Q388589"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q188784",
+     "Q3190387",
+     "Q315625",
+     "Q48282"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q18754954"
+  },
+  "34": {
+   "enwiki": "Silver Sable",
+   "external_ids": {
+    "comic_vine": "4005-7608",
+    "freebase": "/m/05s1b5"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Silver Sable",
+   "props": {
+    "citizenship": [
+     "Q2481163"
+    ],
+    "creator": [
+     "Q703897",
+     "Q355775"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q178197",
+     "Q43845"
+    ],
+    "performer": [
+     "Q195041"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1877130"
+  },
+  "35": {
+   "enwiki": "Mayday Parker",
+   "external_ids": {
+    "comic_vine": "4005-3365",
+    "commons_category": "Spider-Girl",
+    "freebase": "/m/02j47c"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Spider-Girl",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q703897",
+     "Q355775"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q48282",
+     "Q188784"
+    ],
+    "part_of": [
+     "Q60719010"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2186500"
+  },
+  "36": {
+   "enwiki": "Spider-Ham",
+   "external_ids": {
+    "comic_vine": "4005-8682",
+    "commons_category": "Spider-Ham",
+    "fandom_article": "marvel:Spider-Ham",
+    "freebase": "/m/072wch"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Spider-Ham",
+   "props": {
+    "performer": [
+     "Q6249723"
+    ],
+    "present_in_work": [
+     "Q29588607"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q3966700"
+  },
+  "37": {
+   "enwiki": "Spider-Man Noir",
+   "external_ids": {
+    "comic_vine": "4005-162256",
+    "fandom_article": "marvel:Peter_Parker_(Earth-90214)"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Spider-Man Noir",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q2686882",
+     "Q8329271",
+     "Q3660360",
+     "Q2756616"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q842782",
+     "Q188784",
+     "Q1058617",
+     "Q3190387"
+    ],
+    "performer": [
+     "Q42869"
+    ],
+    "present_in_work": [
+     "Q2597757",
+     "Q729212",
+     "Q29588607",
+     "Q76448600",
+     "Q123956515"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q3966701"
+  },
+  "38": {
+   "enwiki": "Spider-Punk",
+   "external_ids": {
+    "comic_vine": "4005-150279",
+    "fandom_article": "marvel:Spider-Punk"
+   },
+   "first_appearance_qid": "Q125252682",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Spider-Punk",
+   "props": {
+    "creator": [
+     "Q3013218",
+     "Q3350928"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q901"
+    ],
+    "present_in_work": [
+     "Q18154235",
+     "Q43401852",
+     "Q17630593",
+     "Q55391886",
+     "Q401601"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q63975143"
+  },
+  "4": {
+   "enwiki": "Calypso (comics)",
+   "external_ids": {
+    "comic_vine": "4005-15494",
+    "fandom_article": "marvel:Calypso_Ezili_(Earth-616)",
+    "freebase": "/m/07h3nk"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Calypso",
+   "props": {
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "performer": [
+     "Q27733932"
+    ],
+    "present_in_work": [
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2934584"
+  },
+  "40": {
+   "enwiki": "Spider-Man",
+   "external_ids": {
+    "britannica": "topic/Spider-Man-comic-book-character",
+    "comic_vine": "4005-1443",
+    "commons_category": "Spider-Man",
+    "fandom_article": "ru.marvel:Питер_Паркер_(616)",
+    "freebase": "/m/06ys2"
+   },
+   "first_appearance_qid": "Q118419196",
+   "gender_qid": "Q6581097",
+   "inception": "1962-08",
+   "label": "Spider-Man",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "followers": [
+     {
+      "amount": "+2446201",
+      "unit": "1"
+     },
+     {
+      "amount": "+769298",
+      "unit": "1"
+     },
+     {
+      "amount": "+606676",
+      "unit": "1"
+     },
+     {
+      "amount": "+1857159",
+      "unit": "1"
+     }
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q33231",
+     "Q901",
+     "Q37226",
+     "Q188784",
+     "Q205375",
+     "Q43845"
+    ],
+    "performer": [
+     "Q165524",
+     "Q2023710",
+     "Q23891",
+     "Q266520"
+    ],
+    "present_in_work": [
+     "Q25340029",
+     "Q138333079",
+     "Q569934",
+     "Q190145",
+     "Q182212",
+     "Q2337769",
+     "Q4254026",
+     "Q229808",
+     "Q383700",
+     "Q2633998",
+     "Q729212",
+     "Q27971937",
+     "Q1093923",
+     "Q68934496",
+     "Q27985819",
+     "Q113244935"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q79037"
+  },
+  "42": {
+   "enwiki": "Tinkerer (Marvel Comics)",
+   "external_ids": {
+    "comic_vine": "4005-3144",
+    "fandom_article": "marvel:Phineas_Mason_(Earth-616)",
+    "freebase": "/m/07p9fs"
+   },
+   "first_appearance_qid": "Q111794273",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Tinkerer",
+   "props": {
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2623764"
+  },
+  "43": {
+   "enwiki": "Tombstone (character)",
+   "external_ids": {
+    "comic_vine": "4005-3161",
+    "freebase": "/m/06jcbn"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Tombstone",
+   "props": {
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q1915633"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q59643"
+  },
+  "44": {
+   "enwiki": "Uncle Ben",
+   "external_ids": {
+    "comic_vine": "4005-3114",
+    "fandom_article": "marvel:Benjamin_Parker_(Earth-616)",
+    "freebase": "/m/0129mg"
+   },
+   "first_appearance_qid": "Q118419196",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Uncle Ben",
+   "props": {
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2299139"
+  },
+  "45": {
+   "enwiki": "Vulture (Marvel Comics)",
+   "external_ids": {
+    "comic_vine": "4005-4459",
+    "commons_category": "Vulture (Marvel Comics)",
+    "fandom_article": "marvel:Adrian_Toomes_(Earth-616)",
+    "freebase": "/m/01tj6m"
+   },
+   "first_appearance_qid": "Q111794273",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Vulture",
+   "props": {
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2296291"
+  },
+  "46": {
+   "enwiki": "Wolverine (character)",
+   "external_ids": {
+    "britannica": "topic/Wolverine-fictional-character",
+    "comic_vine": "4005-1440",
+    "commons_category": "Wolverine and his cast",
+    "fandom_article": "marvel:James_Howlett_(Earth-616)",
+    "freebase": "/m/01s283",
+    "tv_tropes": "Franchise/Wolverine"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Wolverine",
+   "props": {
+    "citizenship": [
+     "Q57662949"
+    ],
+    "creator": [
+     "Q51057",
+     "Q1484216"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q47064",
+     "Q777952",
+     "Q808266",
+     "Q10860242",
+     "Q9352089",
+     "Q178197",
+     "Q45199",
+     "Q820037",
+     "Q188784"
+    ],
+    "performer": [
+     "Q952156",
+     "Q1388258",
+     "Q210447"
+    ],
+    "present_in_work": [
+     "Q24053263",
+     "Q106182",
+     "Q217552",
+     "Q219776",
+     "Q221168",
+     "Q133992",
+     "Q4985891",
+     "Q17042878",
+     "Q223596",
+     "Q197491",
+     "Q16386325",
+     "Q1990905",
+     "Q8030537",
+     "Q3569743",
+     "Q4021199",
+     "Q2446057",
+     "Q1365411",
+     "Q2253667",
+     "Q1340065",
+     "Q569934",
+     "Q369286",
+     "Q1509756",
+     "Q2461966",
+     "Q1436867",
+     "Q1211225",
+     "Q401601",
+     "Q5935752",
+     "Q1515854",
+     "Q2564665",
+     "Q3108064",
+     "Q339571",
+     "Q2234957",
+     "Q2748343",
+     "Q692715",
+     "Q2709391",
+     "Q2608244",
+     "Q2415823",
+     "Q2443162",
+     "Q383700",
+     "Q2311359",
+     "Q2337304",
+     "Q2627580",
+     "Q3662198",
+     "Q18643731",
+     "Q9283458",
+     "Q2073725",
+     "Q788134",
+     "Q2583842",
+     "Q2635988",
+     "Q134208",
+     "Q534208",
+     "Q1399747"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q186422"
+  },
+  "47": {
+   "enwiki": "Wraith (Yuri Watanabe)",
+   "external_ids": {},
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Wraith",
+   "publisher_qid": null,
+   "qid": "Q104842695"
+  },
+  "48": {
+   "enwiki": "Prowler (Marvel Comics)",
+   "external_ids": {
+    "freebase": "/m/08zx6c"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": null,
+   "inception": null,
+   "label": "Prowler",
+   "props": {
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2274942"
+  },
+  "49": {
+   "enwiki": "Vulture (Marvel Comics)",
+   "external_ids": {
+    "comic_vine": "4005-4459",
+    "commons_category": "Vulture (Marvel Comics)",
+    "fandom_article": "marvel:Adrian_Toomes_(Earth-616)",
+    "freebase": "/m/01tj6m"
+   },
+   "first_appearance_qid": "Q111794273",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Vulture",
+   "props": {
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2296291"
+  },
+  "5": {
+   "enwiki": "Captain America",
+   "external_ids": {
+    "britannica": "topic/Captain-America",
+    "comic_vine": "4005-1442",
+    "fandom_article": "marvel:Steven_Rogers_(Earth-616)",
+    "freebase": "/m/025dp"
+   },
+   "first_appearance_qid": "Q115460094",
+   "gender_qid": "Q6581097",
+   "inception": "1941-03",
+   "label": "Captain America",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q311607",
+     "Q725384"
+    ],
+    "followers": [
+     {
+      "amount": "+3112520",
+      "unit": "1"
+     },
+     {
+      "amount": "+2994284",
+      "unit": "1"
+     }
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q47064"
+    ],
+    "performer": [
+     "Q5273293",
+     "Q3182914",
+     "Q178348"
+    ],
+    "present_in_work": [
+     "Q115460037",
+     "Q27971937",
+     "Q383700"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q190679"
+  },
+  "53": {
+   "enwiki": "Alistair Smythe",
+   "external_ids": {
+    "comic_vine": "4005-6292",
+    "fandom_article": "marvel:Alistaire_Smythe_(Earth-616)",
+    "freebase": "/m/06m38h"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Alistair Smythe",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q469794"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q205375",
+     "Q901"
+    ],
+    "performer": [
+     "Q459925"
+    ],
+    "present_in_work": [
+     "Q112032159",
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2837209"
+  },
+  "56": {
+   "enwiki": "Anne Marie Hoag",
+   "external_ids": {
+    "freebase": "/m/0gyll0l"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Anne Marie Hoag",
+   "props": {
+    "narrative_universe": [
+     "Q2246088"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q33100684"
+  },
+  "57": {
+   "enwiki": "Anne Weying",
+   "external_ids": {
+    "comic_vine": "4005-17636",
+    "freebase": "/m/07ykj1"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Anne Weying",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q352292",
+     "Q599109"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q6498903",
+     "Q188784",
+     "Q40348"
+    ],
+    "performer": [
+     "Q156796"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q14475812"
+  },
+  "58": {
+   "enwiki": "Anya Corazon",
+   "external_ids": {
+    "comic_vine": "4005-40598",
+    "commons_category": "Araña (Anya Corazon)",
+    "freebase": "/m/04cz00"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Anya Corazón",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q3072707",
+     "Q3849448"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q48282",
+     "Q315625",
+     "Q1714828",
+     "Q188784"
+    ],
+    "part_of": [
+     "Q60719010"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2604744"
+  },
+  "59": {
+   "enwiki": "Anya Corazon",
+   "external_ids": {
+    "comic_vine": "4005-40598",
+    "commons_category": "Araña (Anya Corazon)",
+    "freebase": "/m/04cz00"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Anya Corazón",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q3072707",
+     "Q3849448"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q48282",
+     "Q315625",
+     "Q1714828",
+     "Q188784"
+    ],
+    "part_of": [
+     "Q60719010"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2604744"
+  },
+  "6": {
+   "enwiki": "Carnage (character)",
+   "external_ids": {
+    "comic_vine": "4005-1490",
+    "commons_category": "Carnage",
+    "freebase": "/m/01ttpd"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Carnage",
+   "props": {
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q484188"
+    ],
+    "performer": [
+     "Q201279"
+    ],
+    "present_in_work": [
+     "Q23006268",
+     "Q288296",
+     "Q2627580"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1753328"
+  },
+  "60": {
+   "enwiki": "Ashley Kafka",
+   "external_ids": {
+    "comic_vine": "4005-24143",
+    "freebase": "/m/010fc3jp"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Ashley Kafka",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q354298",
+     "Q723788"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q212980"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q16385069"
+  },
+  "63": {
+   "enwiki": "Batroc the Leaper",
+   "external_ids": {
+    "comic_vine": "4005-1529",
+    "fandom_article": "marvel:Georges_Batroc_(Earth-616)",
+    "freebase": "/m/0585yc"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Batroc the Leaper",
+   "props": {
+    "citizenship": [
+     "Q142"
+    ],
+    "creator": [
+     "Q181900",
+     "Q311607"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q782363"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2308669"
+  },
+  "64": {
+   "enwiki": "Beast (Marvel Comics)",
+   "external_ids": {
+    "comic_vine": "4005-1462",
+    "commons_category": "Beast (comics)",
+    "fandom_article": "marvel:Henry_McCoy_(Earth-616)",
+    "freebase": "/m/022wf3"
+   },
+   "first_appearance_qid": "Q111312491",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Beast",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q311607"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q3126128",
+     "Q2919046",
+     "Q1622272",
+     "Q188784"
+    ],
+    "performer": [
+     "Q196560",
+     "Q2038188",
+     "Q298347",
+     "Q837676"
+    ],
+    "present_in_work": [
+     "Q1399747",
+     "Q2307558",
+     "Q1365411",
+     "Q1340065",
+     "Q569934",
+     "Q369286",
+     "Q1990905",
+     "Q2461966",
+     "Q15984059",
+     "Q219776",
+     "Q221168",
+     "Q223596",
+     "Q4985891",
+     "Q17042878",
+     "Q25431158",
+     "Q31188935",
+     "Q3133608",
+     "Q4021195",
+     "Q1957004",
+     "Q111550483"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q302186"
+  },
+  "65": {
+   "enwiki": "Beetle (comics)",
+   "external_ids": {
+    "freebase": "/m/026gmqx"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": null,
+   "inception": null,
+   "label": "Beetle",
+   "props": {
+    "creator": [
+     "Q181900"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "performer": [
+     "Q723021"
+    ],
+    "present_in_work": [
+     "Q1115055"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1168065"
+  },
+  "66": {
+   "enwiki": "Spider-Man Noir",
+   "external_ids": {
+    "comic_vine": "4005-162256",
+    "fandom_article": "marvel:Peter_Parker_(Earth-90214)"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Spider-Man Noir",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q2686882",
+     "Q8329271",
+     "Q3660360",
+     "Q2756616"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q842782",
+     "Q188784",
+     "Q1058617",
+     "Q3190387"
+    ],
+    "performer": [
+     "Q42869"
+    ],
+    "present_in_work": [
+     "Q2597757",
+     "Q729212",
+     "Q29588607",
+     "Q76448600",
+     "Q123956515"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q3966701"
+  },
+  "67": {
+   "enwiki": "Betty Brant",
+   "external_ids": {
+    "comic_vine": "4005-2484",
+    "fandom_article": "marvel:Elizabeth_Brant_(Earth-616)",
+    "freebase": "/m/02__12"
+   },
+   "first_appearance_qid": "Q111795445",
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Betty Brant",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q42909",
+     "Q80687"
+    ],
+    "performer": [
+     "Q219373"
+    ],
+    "present_in_work": [
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2628255"
+  },
+  "68": {
+   "enwiki": "Big Wheel (character)",
+   "external_ids": {
+    "comic_vine": "4005-34615",
+    "fandom_article": "marvel:Jackson_Weele_(Earth-616)",
+    "freebase": "/m/0cdkr0"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Big Wheel",
+   "props": {
+    "creator": [
+     "Q1333734",
+     "Q1372857"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2902368"
+  },
+  "69": {
+   "enwiki": "Black Panther (character)",
+   "external_ids": {
+    "britannica": "topic/Black-Panther-comic-book-character",
+    "comic_vine": "4005-1477",
+    "commons_category": "Black Panther",
+    "fandom_article": "marvel:T'Challa_(Earth-616)",
+    "freebase": "/m/044l2v"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Black Panther",
+   "props": {
+    "citizenship": [
+     "Q766099"
+    ],
+    "creator": [
+     "Q181900",
+     "Q311607"
+    ],
+    "ethnic_group": [
+     "Q817393"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q188784"
+    ],
+    "present_in_work": [
+     "Q115424329"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q998220"
+  },
+  "7": {
+   "enwiki": "Chameleon (character)",
+   "external_ids": {
+    "comic_vine": "4005-4458",
+    "fandom_article": "marvel:Dmitri_Smerdyakov_(Earth-616)",
+    "freebase": "/m/01tjb6"
+   },
+   "first_appearance_qid": "Q111794074",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Chameleon",
+   "props": {
+    "citizenship": [
+     "Q159"
+    ],
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q33999",
+     "Q2159907",
+     "Q4947495",
+     "Q9352089"
+    ],
+    "performer": [
+     "Q104902570"
+    ],
+    "present_in_work": [
+     "Q138333079"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q521305"
+  },
+  "70": {
+   "enwiki": "Black Widow (Natasha Romanova)",
+   "external_ids": {
+    "comic_vine": "4005-3200",
+    "commons_category": "Black Widow",
+    "fandom_article": "marvel:Natalia_Romanova_(Earth-616)",
+    "freebase": "/m/034qgf"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Black Widow",
+   "props": {
+    "creator": [
+     "Q181900",
+     "Q3035892",
+     "Q2548090"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q9352089",
+     "Q2251335",
+     "Q3501317",
+     "Q4070300",
+     "Q188784"
+    ],
+    "part_of": [
+     "Q287541"
+    ],
+    "present_in_work": [
+     "Q782363"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q369197"
+  },
+  "71": {
+   "enwiki": "Blade (character)",
+   "external_ids": {
+    "comic_vine": "4005-7570",
+    "commons_category": "Blade and his cast",
+    "fandom_article": "cosplay:Blade",
+    "freebase": "/m/02jfzz"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Blade",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q1058307",
+     "Q11397897",
+     "Q11124885"
+    ],
+    "performer": [
+     "Q189694",
+     "Q704742"
+    ],
+    "present_in_work": [
+     "Q175011",
+     "Q3429263",
+     "Q159638",
+     "Q217008",
+     "Q583870",
+     "Q569934",
+     "Q2461966",
+     "Q401601",
+     "Q5935752",
+     "Q15984059"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q881024"
+  },
+  "72": {
+   "enwiki": "Bolivar Trask",
+   "external_ids": {
+    "comic_vine": "4005-15923",
+    "fandom_article": "marvel:Bolivar_Trask_(Earth-616)",
+    "freebase": "/m/07lfdr"
+   },
+   "first_appearance_qid": "Q111333192",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Bolivar Trask",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q4773904",
+     "Q205375"
+    ],
+    "performer": [
+     "Q310937"
+    ],
+    "present_in_work": [
+     "Q1399747"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q3641739"
+  },
+  "74": {
+   "enwiki": null,
+   "external_ids": {
+    "fandom_article": "marvel:Brad_Davis_(Earth-199999)"
+   },
+   "first_appearance_qid": "Q27985819",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Brad Davis",
+   "props": {
+    "narrative_universe": [
+     "Q642878"
+    ],
+    "performer": [
+     "Q16225873"
+    ],
+    "present_in_work": [
+     "Q27985819"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q66192354"
+  },
+  "77": {
+   "enwiki": "Bullseye (Marvel Comics)",
+   "external_ids": {
+    "comic_vine": "4005-4647",
+    "fandom_article": "marvel:Bullseye_(Lester)_(Earth-616)",
+    "freebase": "/m/03fm80"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Bullseye",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q1333734",
+     "Q1484216"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q5589126",
+     "Q378770",
+     "Q3562775",
+     "Q1048902",
+     "Q178197"
+    ],
+    "performer": [
+     "Q172035"
+    ],
+    "present_in_work": [
+     "Q128797955",
+     "Q751805"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q388316"
+  },
+  "78": {
+   "enwiki": "Burglar (character)",
+   "external_ids": {
+    "comic_vine": "4005-15279",
+    "fandom_article": "marvel:Burglar_(Earth-616)",
+    "freebase": "/m/02r5j77"
+   },
+   "first_appearance_qid": "Q118419196",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Burglar",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q2159907"
+    ],
+    "performer": [
+     "Q948751",
+     "Q24953981"
+    ],
+    "present_in_work": [
+     "Q484442",
+     "Q2539517",
+     "Q182212"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q606569"
+  },
+  "79": {
+   "enwiki": "Carol Danvers",
+   "external_ids": {
+    "comic_vine": "4005-21561",
+    "commons_category": "Carol Danvers",
+    "freebase": "/m/03xscn"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581072",
+   "inception": null,
+   "label": "Carol Danvers",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q2095549",
+     "Q589298",
+     "Q1930187"
+    ],
+    "present_in_work": [
+     "Q1211225",
+     "Q3896442",
+     "Q2337304",
+     "Q2627580",
+     "Q3662198",
+     "Q19866549",
+     "Q18920891",
+     "Q27971937",
+     "Q29959076"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q726756"
+  },
+  "8": {
+   "enwiki": "Daredevil (Marvel Comics character)",
+   "external_ids": {
+    "britannica": "topic/Daredevil-comic-book-superhero",
+    "comic_vine": "4005-24694",
+    "commons_category": "Daredevil",
+    "fandom_article": "marvel:Matthew_Murdock_(Earth-616)",
+    "freebase": "/m/02cyt"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Daredevil",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q1837116"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q40348",
+     "Q188784",
+     "Q9402",
+     "Q11124885",
+     "Q3190387"
+    ],
+    "performer": [
+     "Q941984",
+     "Q483118",
+     "Q454231"
+    ],
+    "present_in_work": [
+     "Q128797955",
+     "Q16977365",
+     "Q1199736",
+     "Q751805",
+     "Q27985819"
+    ],
+    "religion": [
+     "Q1841"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q327553"
+  },
+  "80": {
+   "enwiki": "Riot (comics)",
+   "external_ids": {
+    "fandom_article": "marvel:Riot_(Symbiote)_(Earth-616)",
+    "freebase": "/m/08ph5m"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q505371",
+   "inception": null,
+   "label": "Riot",
+   "props": {
+    "creator": [
+     "Q352292",
+     "Q1322947"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q7920166",
+     "Q111589326"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q507241"
+  },
+  "82": {
+   "enwiki": "Carrion (comics)",
+   "external_ids": {
+    "comic_vine": "4005-86390",
+    "freebase": "/m/07ms1m"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Carrion",
+   "props": {
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "present_in_work": [
+     "Q139960375"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2555885"
+  },
+  "84": {
+   "enwiki": "Carnage (character)",
+   "external_ids": {
+    "comic_vine": "4005-1490",
+    "commons_category": "Carnage",
+    "freebase": "/m/01ttpd"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Carnage",
+   "props": {
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q484188"
+    ],
+    "performer": [
+     "Q201279"
+    ],
+    "present_in_work": [
+     "Q23006268",
+     "Q288296",
+     "Q2627580"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1753328"
+  },
+  "87": {
+   "enwiki": "Cyclops (Marvel Comics)",
+   "external_ids": {
+    "comic_vine": "4005-1459",
+    "commons_category": "Cyclops (comics)",
+    "fandom_article": "marvel:Scott_Summers_(Earth-616)",
+    "freebase": "/m/0kl3p"
+   },
+   "first_appearance_qid": "Q111312491",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Cyclops",
+   "props": {
+    "citizenship": [
+     "Q30"
+    ],
+    "creator": [
+     "Q181900",
+     "Q311607"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q2095549",
+     "Q1056391",
+     "Q48282",
+     "Q1371925",
+     "Q188784"
+    ],
+    "performer": [
+     "Q485901",
+     "Q773060",
+     "Q760896"
+    ],
+    "present_in_work": [
+     "Q1399747",
+     "Q2307558",
+     "Q1365411",
+     "Q2253667",
+     "Q1340065",
+     "Q569934",
+     "Q369286",
+     "Q1990905",
+     "Q1509756",
+     "Q1436867",
+     "Q2461966",
+     "Q15984059",
+     "Q106182",
+     "Q219776",
+     "Q221168",
+     "Q217552",
+     "Q4985891",
+     "Q17042878",
+     "Q31188935",
+     "Q25431158",
+     "Q134208",
+     "Q111550483"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q857921"
+  },
+  "9": {
+   "enwiki": "Doctor Doom",
+   "external_ids": {
+    "britannica": "topic/Doctor-Doom",
+    "comic_vine": "4005-1468",
+    "commons_category": "Doctor Doom",
+    "fandom_article": "marvel:Victor_von_Doom_(Earth-616)",
+    "freebase": "/m/0cs4m"
+   },
+   "first_appearance_qid": "Q115438213",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Doctor Doom",
+   "props": {
+    "citizenship": [
+     "Q2415171"
+    ],
+    "creator": [
+     "Q181900",
+     "Q311607"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q1097498",
+     "Q2873500",
+     "Q148401"
+    ],
+    "performer": [
+     "Q15479218",
+     "Q4223",
+     "Q719359",
+     "Q2557451",
+     "Q3178896"
+    ],
+    "present_in_work": [
+     "Q115424329",
+     "Q224130",
+     "Q390063",
+     "Q2360769",
+     "Q3235008",
+     "Q16795448",
+     "Q2559819",
+     "Q383700",
+     "Q19363451"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q430178"
+  },
+  "91": {
+   "enwiki": "Deadpool",
+   "external_ids": {
+    "comic_vine": "4005-7606",
+    "commons_category": "Deadpool and his cast",
+    "fandom_article": "marvel:Wade_Wilson_(Earth-616)",
+    "freebase": "/m/01960s"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Deadpool",
+   "props": {
+    "citizenship": [
+     "Q16"
+    ],
+    "creator": [
+     "Q2061990",
+     "Q1994601"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q4991371",
+     "Q178197"
+    ],
+    "performer": [
+     "Q192682",
+     "Q2056174",
+     "Q952156",
+     "Q1147104",
+     "Q1582689",
+     "Q28310"
+    ],
+    "present_in_work": [
+     "Q217552",
+     "Q19347291",
+     "Q25431158",
+     "Q30544658",
+     "Q2446057",
+     "Q2337304",
+     "Q2627580",
+     "Q2073725",
+     "Q788134",
+     "Q729212",
+     "Q401601",
+     "Q134208",
+     "Q43401852"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1631090"
+  },
+  "92": {
+   "enwiki": "Deathlok",
+   "external_ids": {
+    "comic_vine": "4005-7258",
+    "freebase": "/m/02m2jh"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Deathlok",
+   "props": {
+    "narrative_universe": [
+     "Q2246088"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q2526966"
+  },
+  "94": {
+   "enwiki": "Demogoblin",
+   "external_ids": {
+    "comic_vine": "4005-15272",
+    "fandom_article": "marvel:Demogoblin_(Earth-616)",
+    "freebase": "/m/04nkyj"
+   },
+   "first_appearance_qid": null,
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Demogoblin",
+   "props": {
+    "creator": [
+     "Q5920281",
+     "Q2563084"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "occupation": [
+     "Q15883433"
+    ],
+    "present_in_work": [
+     "Q138333079",
+     "Q139960492",
+     "Q1915633"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q1812152"
+  },
+  "95": {
+   "enwiki": null,
+   "external_ids": {
+    "fandom_article": "marvelcinematicuniverse:Dimitri_Smerdyakov"
+   },
+   "first_appearance_qid": "Q27985819",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Dimitri Smerdyakov",
+   "props": {
+    "narrative_universe": [
+     "Q642878"
+    ],
+    "performer": [
+     "Q1151023"
+    ],
+    "present_in_work": [
+     "Q27985819"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q66198367"
+  },
+  "96": {
+   "enwiki": "Doctor Octopus",
+   "external_ids": {
+    "comic_vine": "4005-1485",
+    "commons_category": "Doctor Octopus",
+    "fandom_article": "marvel:Otto_Octavius_(Earth-616)",
+    "freebase": "/m/01ttxw"
+   },
+   "first_appearance_qid": "Q111795406",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Doctor Octopus",
+   "props": {
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "performer": [
+     "Q531718"
+    ],
+    "present_in_work": [
+     "Q138333079",
+     "Q288296",
+     "Q25340029"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q578094"
+  },
+  "97": {
+   "enwiki": "Doctor Octopus",
+   "external_ids": {
+    "comic_vine": "4005-1485",
+    "commons_category": "Doctor Octopus",
+    "fandom_article": "marvel:Otto_Octavius_(Earth-616)",
+    "freebase": "/m/01ttxw"
+   },
+   "first_appearance_qid": "Q111795406",
+   "gender_qid": "Q6581097",
+   "inception": null,
+   "label": "Doctor Octopus",
+   "props": {
+    "creator": [
+     "Q181900",
+     "Q355652"
+    ],
+    "narrative_universe": [
+     "Q2246088"
+    ],
+    "performer": [
+     "Q531718"
+    ],
+    "present_in_work": [
+     "Q138333079",
+     "Q288296",
+     "Q25340029"
+    ]
+   },
+   "publisher_qid": null,
+   "qid": "Q578094"
+  }
+ },
+ "first_appearances": {
+  "Q111312491": {
+   "series": "Uncanny X-Men",
+   "title": "X-Men #1",
+   "year": 1963
+  },
+  "Q111312519": {
+   "series": "Uncanny X-Men",
+   "title": "X-Men #2",
+   "year": 1963
+  },
+  "Q111333192": {
+   "series": "Uncanny X-Men",
+   "title": "X-Men #14",
+   "year": 1965
+  },
+  "Q111658456": {
+   "series": "Uncanny X-Men",
+   "title": "X-Men #129",
+   "year": 1980
+  },
+  "Q111794074": {
+   "series": "The Amazing Spider-Man",
+   "title": "The Amazing Spider-Man #1",
+   "year": 1963
+  },
+  "Q111794273": {
+   "series": "The Amazing Spider-Man",
+   "title": "The Amazing Spider-Man #2",
+   "year": 1963
+  },
+  "Q111795406": {
+   "series": "The Amazing Spider-Man",
+   "title": "The Amazing Spider-Man #3",
+   "year": 1963
+  },
+  "Q111795445": {
+   "series": "The Amazing Spider-Man",
+   "title": "The Amazing Spider-Man #4",
+   "year": 1963
+  },
+  "Q111803014": {
+   "series": "The Amazing Spider-Man",
+   "title": "The Amazing Spider-Man #6",
+   "year": 1963
+  },
+  "Q111838198": {
+   "series": "The Amazing Spider-Man",
+   "title": "The Amazing Spider-Man #9",
+   "year": 1964
+  },
+  "Q111991841": {
+   "series": "The Amazing Spider-Man",
+   "title": "The Amazing Spider-Man #14",
+   "year": 1964
+  },
+  "Q111993510": {
+   "series": "The Amazing Spider-Man",
+   "title": "The Amazing Spider-Man #15",
+   "year": 1964
+  },
+  "Q112227815": {
+   "series": "The Amazing Spider-Man",
+   "title": "The Amazing Spider-Man #18",
+   "year": 1964
+  },
+  "Q112228343": {
+   "series": "The Amazing Spider-Man",
+   "title": "The Amazing Spider-Man #19",
+   "year": 1964
+  },
+  "Q112229108": {
+   "series": "The Amazing Spider-Man",
+   "title": "The Amazing Spider-Man #20",
+   "year": 1965
+  },
+  "Q115357829": {
+   "series": "The Amazing Spider-Man",
+   "title": "The Amazing Spider-Man #25",
+   "year": 1965
+  },
+  "Q115383692": {
+   "series": "The Amazing Spider-Man",
+   "title": "The Amazing Spider-Man #31",
+   "year": 1965
+  },
+  "Q115407131": {
+   "series": "The Amazing Spider-Man",
+   "title": "The Amazing Spider-Man #37",
+   "year": 1966
+  },
+  "Q115411171": {
+   "series": "The Amazing Spider-Man",
+   "title": "The Amazing Spider-Man #41",
+   "year": 1966
+  },
+  "Q115424368": {
+   "series": "Fantastic Four",
+   "title": "Fantastic Four #1",
+   "year": 1961
+  },
+  "Q115438213": {
+   "series": "Fantastic Four",
+   "title": "Fantastic Four #5",
+   "year": 1962
+  },
+  "Q115453680": {
+   "series": "Incredible Hulk",
+   "title": "Incredible Hulk #1",
+   "year": 1962
+  },
+  "Q115454003": {
+   "series": "Incredible Hulk",
+   "title": "Incredible Hulk #3",
+   "year": 1962
+  },
+  "Q115456440": {
+   "series": "Sgt. Fury and his Howling Commandos",
+   "title": "Sgt. Fury and his Howling Commandos #1",
+   "year": 1963
+  },
+  "Q115460094": {
+   "series": "Captain America Comics",
+   "title": "Captain America Comics #1",
+   "year": 1941
+  },
+  "Q117199052": {
+   "series": "Secret Wars",
+   "title": "Marvel Super Heroes Secret Wars #6",
+   "year": 1984
+  },
+  "Q118120049": {
+   "series": "The Amazing Spider-Man",
+   "title": "The Amazing Spider-Man #46",
+   "year": 1967
+  },
+  "Q118419196": {
+   "series": "Amazing Fantasy",
+   "title": "Amazing Fantasy #15",
+   "year": 1962
+  },
+  "Q119006532": {
+   "series": "The Amazing Spider-Man",
+   "title": "The Amazing Spider-Man #50",
+   "year": 1967
+  },
+  "Q119007618": {
+   "series": "The Amazing Spider-Man",
+   "title": "The Amazing Spider-Man #51",
+   "year": 1967
+  },
+  "Q123401577": {
+   "series": "The Amazing Spider-Man",
+   "title": "The Amazing Spider-Man #56",
+   "year": 1968
+  },
+  "Q124882349": {
+   "series": "Uncanny X-Men",
+   "title": "Uncanny X-Men #193",
+   "year": 1985
+  },
+  "Q125252682": {
+   "title": "Amazing Spider-Man"
+  },
+  "Q138019256": {
+   "series": "The Amazing Spider-Man Annual",
+   "title": "The Amazing Spider-Man Annual #5",
+   "year": 1968
+  },
+  "Q18406872": {
+   "series": "Doctor Strange",
+   "title": "Doctor Strange",
+   "year": 2016
+  },
+  "Q192724": {
+   "series": "Marvel Cinematic Universe",
+   "title": "Iron Man",
+   "year": 2008
+  },
+  "Q23010088": {
+   "series": "Spider-Man",
+   "title": "Spider-Man: Homecoming",
+   "year": 2017
+  },
+  "Q23781129": {
+   "series": "The Infinity Saga",
+   "title": "Captain Marvel",
+   "year": 2019
+  },
+  "Q27985819": {
+   "series": "Spider-Man",
+   "title": "Spider-Man: Far From Home",
+   "year": 2019
+  },
+  "Q29098265": {
+   "series": "The Amazing Spider-Man",
+   "title": "The Amazing Spider-Man #129",
+   "year": 1974
+  },
+  "Q466611": {
+   "series": "The Infinity Saga",
+   "title": "The Incredible Hulk",
+   "year": 2008
+  },
+  "Q534208": {
+   "title": "Giant-Size X-Men #1",
+   "year": 1975
+  },
+  "Q55405369": {
+   "series": "Sony's Spider-Man Universe",
+   "title": "Morbius",
+   "year": 2022
+  }
+ },
+ "labels": {
+  "Q1033016": "Halle Berry",
+  "Q10349745": "racing automobile driver",
+  "Q10384029": "drug trafficker",
+  "Q1048902": "pitcher",
+  "Q104902570": "Fred Hechinger",
+  "Q1056391": "head teacher",
+  "Q1058307": "vampire hunter",
+  "Q1058617": "private investigator",
+  "Q1058675": "Mike Colter",
+  "Q10591707": "con artist",
+  "Q106182": "X-Men",
+  "Q1065829": "Punisher: War Zone",
+  "Q1069127": "lapsed Catholic",
+  "Q107711": "firefighter",
+  "Q1083528": "Heroscape",
+  "Q108441863": "Secret Invasion",
+  "Q108479502": null,
+  "Q10855616": "medical officer",
+  "Q10860242": "bouncer",
+  "Q1090219": "janitor",
+  "Q1093923": "Spider-Man: Friend or Foe",
+  "Q109558622": "X-Men '97",
+  "Q1097498": "ruler",
+  "Q11063": "astronomer",
+  "Q110819299": "Venom",
+  "Q11124885": "martial artist",
+  "Q111312491": "X-Men #1",
+  "Q111312519": "X-Men #2",
+  "Q111333192": "X-Men #14",
+  "Q1115055": "Strange Tales",
+  "Q111550483": "X-Factor",
+  "Q111589326": "Carnage, U.S.A.",
+  "Q111609575": "Spider-Man, Storm, and Cage Battle Smokescreen",
+  "Q111609719": "The New Avengers: Luke Cage",
+  "Q111609745": "Avengers Origins: Luke Cage",
+  "Q111609754": "Luke Cage Noir",
+  "Q111610075": "Luke Cage",
+  "Q111658456": "X-Men #129",
+  "Q111746321": "Earth-6311",
+  "Q111794074": "The Amazing Spider-Man #1",
+  "Q111794273": "The Amazing Spider-Man #2",
+  "Q111795406": "The Amazing Spider-Man #3",
+  "Q111795445": "The Amazing Spider-Man #4",
+  "Q111803014": "The Amazing Spider-Man #6",
+  "Q111838198": "The Amazing Spider-Man #9",
+  "Q111991841": "The Amazing Spider-Man #14",
+  "Q111993510": "The Amazing Spider-Man #15",
+  "Q112032159": "The Amazing Spider-Man Annual",
+  "Q112227815": "The Amazing Spider-Man #18",
+  "Q112228343": "The Amazing Spider-Man #19",
+  "Q112229108": "The Amazing Spider-Man #20",
+  "Q113244935": "Spider-Man: Brand New Day",
+  "Q11338576": "boxer",
+  "Q1138582": "The Transmigration of Timothy Archer",
+  "Q11397897": "swordfighter",
+  "Q1140193": "Crispin Freeman",
+  "Q1142052": "Friendly Neighborhood Spider-Man",
+  "Q1146570": "Howard the Duck",
+  "Q1147104": "Nolan North",
+  "Q1151023": "Numan Acar",
+  "Q115357829": "The Amazing Spider-Man #25",
+  "Q1153622": "kunoichi",
+  "Q1153794": "The Punisher",
+  "Q115383692": "The Amazing Spider-Man #31",
+  "Q115407131": "The Amazing Spider-Man #37",
+  "Q115411171": "The Amazing Spider-Man #41",
+  "Q115411239": "Thor",
+  "Q115422697": "Doctor Strange",
+  "Q115424329": "Fantastic Four",
+  "Q115424368": "Fantastic Four #1",
+  "Q115438213": "Fantastic Four #5",
+  "Q115453642": "Incredible Hulk",
+  "Q115453680": "Incredible Hulk #1",
+  "Q115454003": "Incredible Hulk #3",
+  "Q115456059": "Iron Man",
+  "Q115456440": "Sgt. Fury and his Howling Commandos #1",
+  "Q115460037": "Captain America Comics",
+  "Q115460094": "Captain America Comics #1",
+  "Q115466677": "Avengers",
+  "Q1157151": "Spider-Man",
+  "Q11631": "astronaut",
+  "Q116671834": null,
+  "Q117199052": "Marvel Super Heroes Secret Wars #6",
+  "Q1176644": "Michael Adamthwaite",
+  "Q118120049": "The Amazing Spider-Man #46",
+  "Q118419196": "Amazing Fantasy #15",
+  "Q1189414": "Dennis O'Neil",
+  "Q11900058": "explorer",
+  "Q119006532": "The Amazing Spider-Man #50",
+  "Q119007618": "The Amazing Spider-Man #51",
+  "Q119411066": "The Spider Within: A Spider-Verse Story",
+  "Q1199721": "Ultimate Spider-Man",
+  "Q1199736": "The Trial of the Incredible Hulk",
+  "Q1211225": "The Avengers: Earth's Mightiest Heroes",
+  "Q121594": "professor",
+  "Q12177489": "orderly",
+  "Q123401577": "The Amazing Spider-Man #56",
+  "Q12362622": "philanthropist",
+  "Q123956515": "Spider-Noir",
+  "Q12414919": "terrorist",
+  "Q124882349": "Uncanny X-Men #193",
+  "Q125252681": "Amazing Spider-Man",
+  "Q125252682": "Amazing Spider-Man",
+  "Q125253864": "Web of Spider-Man",
+  "Q126941": "J. Michael Straczynski",
+  "Q128797955": "Daredevil",
+  "Q128797956": "Daredevil",
+  "Q13146780": "Nova (comics)",
+  "Q1322947": "Ron Lim",
+  "Q132393876": null,
+  "Q1333734": "Marv Wolfman",
+  "Q133992": "X2: Wolverine's Revenge",
+  "Q1340065": "X-Men",
+  "Q134208": "X-Men Legends II: Rise of Apocalypse",
+  "Q1343823": "Joseph Campanella",
+  "Q13474373": "professional wrestler",
+  "Q1351554": "Peter David",
+  "Q1365108": "Gil Kane",
+  "Q1365411": "Spider-Man and His Amazing Friends",
+  "Q1369354": "Iron Man",
+  "Q1371925": "announcer",
+  "Q1372513": "Jeph Loeb",
+  "Q1372857": "Ross Andru",
+  "Q1375856": "George Pérez",
+  "Q1376982": "Jim Starlin",
+  "Q138019256": "The Amazing Spider-Man Annual #5",
+  "Q138333079": "The Amazing Spider-Man",
+  "Q138656374": "Dimension Traveler",
+  "Q1388258": "Keith Szarabajka",
+  "Q13938": "Grey DeLisle",
+  "Q1395905": "John Buscema",
+  "Q139960375": "Peter Parker, The Spectacular Spider-Man",
+  "Q139960492": "The Spectacular Spider-Man",
+  "Q1399747": "Uncanny X-Men",
+  "Q142": "France",
+  "Q1436867": "Black Panther",
+  "Q145": "United Kingdom",
+  "Q147077": "Emma Stone",
+  "Q1476318": null,
+  "Q148401": "magician",
+  "Q1484216": "John Romita Sr.",
+  "Q14914898": "Alexandra Shipp",
+  "Q14915751": "prostitute",
+  "Q150482": "J. K. Simmons",
+  "Q1509756": "The Super Hero Squad Show",
+  "Q1515854": "Marvel Super Heroes 4D",
+  "Q15479218": "Joseph Culp",
+  "Q156796": "Michelle Williams",
+  "Q156839": "cook",
+  "Q1570218": "Patrick Zircher",
+  "Q157195": "waiter",
+  "Q1582689": "John Kassir",
+  "Q15883433": "mass murderer",
+  "Q159": "Russia",
+  "Q159638": "Blade II",
+  "Q15971587": "Iron Man: Rise of Technovore",
+  "Q15984059": "Marvel Disk Wars: The Avengers",
+  "Q16": "Canada",
+  "Q1606284": "Dr. Strange",
+  "Q16152567": "The Amazing Spider-Man 2",
+  "Q16153372": "Avengers Confidential: Black Widow & Punisher",
+  "Q1622272": "university teacher",
+  "Q16225873": "Remy Hii",
+  "Q16236922": "Shameik Moore",
+  "Q16296": "Patrick Stewart",
+  "Q16386325": "The Incredible Hulk",
+  "Q16455": "John Rhys-Davies",
+  "Q165524": "Tobey Maguire",
+  "Q16795448": "Fantastic Four",
+  "Q1691318": "Joe Alaskey",
+  "Q16977365": "Daredevil",
+  "Q17042878": "X-Men: Apocalypse",
+  "Q170510": "Ian McKellen",
+  "Q1714828": "hunter",
+  "Q171905": "Jamie Foxx",
+  "Q172035": "Colin Farrell",
+  "Q172678": "Samuel L. Jackson",
+  "Q17307272": "circus performer",
+  "Q173399": "Elliot Page",
+  "Q17351648": "newspaper editor",
+  "Q175011": "The Tomb of Dracula",
+  "Q17630593": "Spider-Verse",
+  "Q178197": "mercenary",
+  "Q178348": "Chris Evans",
+  "Q18116794": "genderfluid",
+  "Q18154235": "Spider-Man Unlimited",
+  "Q181678": "Dolph Lundgren",
+  "Q181900": "Stan Lee",
+  "Q182212": "Spider-Man 3",
+  "Q182218": "The Avengers",
+  "Q183": "Germany",
+  "Q1837116": "Bill Everett",
+  "Q18406872": "Doctor Strange",
+  "Q1841": "Catholicism",
+  "Q18581761": "Levi Miller",
+  "Q18643731": "Marvel Contest of Champions",
+  "Q186757": "Seth Green",
+  "Q188772": "Willem Dafoe",
+  "Q188784": "superhero",
+  "Q18920891": "Lego Marvel's Avengers",
+  "Q18938": "Thomas Jane",
+  "Q189489": "Zendaya",
+  "Q189694": "Wesley Snipes",
+  "Q190145": "Spider-Man 2",
+  "Q19031": "Zak Penn",
+  "Q1915633": "Web of Spider-Man",
+  "Q192682": "Ryan Reynolds",
+  "Q192724": "Iron Man",
+  "Q1927569": "Michael Golden",
+  "Q1930187": "journalist",
+  "Q193048": "Laurence Fishburne",
+  "Q19347291": "Deadpool",
+  "Q19363451": "Secret Wars",
+  "Q193659": "James McAvoy",
+  "Q195041": "Jennifer Hale",
+  "Q1957004": "X-Men Legends",
+  "Q196560": "Kelsey Grammer",
+  "Q197491": "The Wolverine",
+  "Q1975715": "loan shark",
+  "Q19788920": "righteous thief",
+  "Q19866549": "Marvel Puzzle Quest",
+  "Q1990905": "Wolverine and the X-Men",
+  "Q1994601": "Fabian Nicieza",
+  "Q199884": "Anna Paquin",
+  "Q20001199": "Guardians of the Galaxy Vol. 2",
+  "Q2009797": "Larry Lieber",
+  "Q201279": "Woody Harrelson",
+  "Q201927": "David Hasselhoff",
+  "Q202056": "Hank Azaria",
+  "Q2023710": "Tom Holland",
+  "Q203205": "Jon Polito",
+  "Q2038188": "Steve Bacic",
+  "Q204102": "Jotunheim",
+  "Q204132": "Gerard Way",
+  "Q205028": "Iron Man 2",
+  "Q2053669": "George Tuska",
+  "Q205375": "inventor",
+  "Q2056174": "Will Friedle",
+  "Q2061990": "Rob Liefeld",
+  "Q20646602": "Luke Cage",
+  "Q20649425": "Guardians of the Galaxy",
+  "Q206922": "Andy Serkis",
+  "Q2070313": "teaching assistant",
+  "Q2073725": "Ultimate Marvel vs. Capcom 3",
+  "Q20826540": "scholar",
+  "Q20857836": "Sharon Blynn",
+  "Q20858225": "The Punisher",
+  "Q2086261": "Phil Jimenez",
+  "Q208649": "Paul Giamatti",
+  "Q209538": "Iron Man 3",
+  "Q2095549": "aircraft pilot",
+  "Q210447": "Mark Hamill",
+  "Q212064": "Channing Tatum",
+  "Q212980": "psychologist",
+  "Q2140112": "Runaways",
+  "Q215017": "Rhys Ifans",
+  "Q2159907": "criminal",
+  "Q217008": "Blade: Trinity",
+  "Q217552": "X-Men Origins: Wolverine",
+  "Q219373": "Elizabeth Banks",
+  "Q219776": "X2",
+  "Q221168": "X-Men: The Last Stand",
+  "Q2234957": "X-Men: Madness in Murderworld",
+  "Q223596": "X-Men: First Class",
+  "Q224130": "Fantastic Four",
+  "Q2246088": "Earth-616",
+  "Q2251335": "school teacher",
+  "Q2253667": "X-Men: Pryde of the X-Men",
+  "Q2259451": "stage actor",
+  "Q2270826": "Journey into Mystery",
+  "Q2289795": "Scorpion",
+  "Q229021": "Tricia Helfer",
+  "Q229775": "Bryce Dallas Howard",
+  "Q229808": "The Amazing Spider-Man",
+  "Q23006268": "Venom",
+  "Q23010088": "Spider-Man: Homecoming",
+  "Q230335": "Katee Sackhoff",
+  "Q2305700": "Tom Kane",
+  "Q2307558": "The Marvel Super Heroes",
+  "Q231058": "Shailene Woodley",
+  "Q2311359": "X-Men: Reign of Apocalypse",
+  "Q231726": "Hailee Steinfeld",
+  "Q2320247": "Doctor Strange: The Sorcerer Supreme",
+  "Q23365": "Jeremy Renner",
+  "Q2337304": "Marvel: Ultimate Alliance",
+  "Q2337769": "Spider-Man 3",
+  "Q234447": "Felicity Jones",
+  "Q235677": "Natassia Malthe",
+  "Q2360769": "Fantastic Four",
+  "Q23780914": "Avengers: Infinity War",
+  "Q23781129": "Captain Marvel",
+  "Q23781155": "Avengers: Endgame",
+  "Q23891": "Andrew Garfield",
+  "Q2403592": "Travis Willingham",
+  "Q24053263": "Logan",
+  "Q2415171": "Latveria",
+  "Q2415823": "Marvel vs. Capcom: Clash of Super Heroes",
+  "Q2443162": "X-Men: Mutant Academy",
+  "Q2446057": "X-Men Origins: Wolverine",
+  "Q2461148": "Roger L. Jackson",
+  "Q2461966": "Marvel Anime",
+  "Q2462658": "manager",
+  "Q2481163": "Symkaria",
+  "Q24953981": "Leif Gantvoort",
+  "Q24962806": "mob enforcer",
+  "Q250867": "Catholic priest",
+  "Q2516866": "publisher",
+  "Q25221879": "Captain America",
+  "Q25340029": "Spider-Man",
+  "Q2536187": "James Arnold Taylor",
+  "Q2539517": "Spider-Man",
+  "Q25431158": "Deadpool 2",
+  "Q2548090": "Don Heck",
+  "Q2557451": "Charlie Adler",
+  "Q2559819": "Marvel Super Heroes",
+  "Q2563084": "Alex Saviuk",
+  "Q2564665": "Hulk Vs",
+  "Q2569995": "Steve Gerber",
+  "Q2570": null,
+  "Q2583842": "Ultimate Spider-Man",
+  "Q2597757": null,
+  "Q2604486": null,
+  "Q2608244": "X-Men vs. Street Fighter",
+  "Q2611772": "Asgard",
+  "Q2625129": "The Amazing Spider-Man",
+  "Q2627580": "Marvel: Ultimate Alliance 2",
+  "Q2633916": "The Punisher",
+  "Q2633998": "Spider-Man: Edge of Time",
+  "Q2635546": "The Punisher",
+  "Q2635988": "Spider-Man: Web of Shadows",
+  "Q2641365": "Alex Hyde-White",
+  "Q2655853": "special agent",
+  "Q2660542": "Spider-Man 2",
+  "Q266520": "Nicholas Hammond",
+  "Q267330": "Miles Teller",
+  "Q268679": "Iron Man",
+  "Q2686882": "David Hine",
+  "Q2708142": "Tony Jay",
+  "Q27089570": "The Punisher",
+  "Q2709391": "X-Men: Mutant Apocalypse",
+  "Q272919": "Kari Wahlgren",
+  "Q273208": "Chris Cooper",
+  "Q2748343": "Spider-Man and the X-Men in Arcade's Revenge",
+  "Q2756616": "Marko Djurdjević",
+  "Q27733932": "Ariana DeBose",
+  "Q277978": "Topher Grace",
+  "Q2791343": "Rick D. Wasserman",
+  "Q27971937": "Marvel vs. Capcom: Infinite",
+  "Q279834": "Bill Nunn",
+  "Q27985819": "Spider-Man: Far From Home",
+  "Q28126678": "The Punisher: The Ultimate Payback!",
+  "Q28207200": "Marvel's Spider-Man",
+  "Q28310": "Scott Adkins",
+  "Q28408151": "Fury of S.H.I.E.L.D.",
+  "Q2850412": "Ann Nocenti",
+  "Q2870023": "Nick Jameson",
+  "Q2873500": "adventurer",
+  "Q28746336": "Runaways",
+  "Q287541": "Black Widow",
+  "Q288296": "Spider-Man",
+  "Q29098265": "The Amazing Spider-Man #129",
+  "Q2919046": "biochemist",
+  "Q2922722": "Spider-Woman",
+  "Q29588607": "Spider-Man: Into the Spider-Verse",
+  "Q295974": "Ioan Gruffudd",
+  "Q298025": "Joss Whedon",
+  "Q298255": "Rob Zombie",
+  "Q298347": "Nicholas Hoult",
+  "Q299483": "James Cromwell",
+  "Q29959076": "Lego Marvel Super Heroes 2",
+  "Q30": "United States",
+  "Q3013218": "Dan Slott",
+  "Q3035892": "Don Rico",
+  "Q30544658": "No Good Deed",
+  "Q306403": "James Franco",
+  "Q3072707": "Fiona Avery",
+  "Q310283": "Denis Leary",
+  "Q310292": "Jim Cummings",
+  "Q3108064": "X-Men",
+  "Q310937": "Peter Dinklage",
+  "Q311232": "Tyrese Gibson",
+  "Q311607": "Jack Kirby",
+  "Q311615": "Thomas Haden Church",
+  "Q31188935": "Dark Phoenix",
+  "Q3126128": "geneticist",
+  "Q3130597": "Marvel Super Heroes in War of the Gems",
+  "Q313266": "John DiMaggio",
+  "Q3133": "green",
+  "Q313306": "Lou Ferrigno",
+  "Q3133608": "Spider-Man 2: Enter: Electro",
+  "Q313579": "Shawn Ashmore",
+  "Q3144914": "hematologist",
+  "Q315625": "intern",
+  "Q3163273": "Jay Underwood",
+  "Q316629": "Alan Cumming",
+  "Q3178896": "Jim Meskimen",
+  "Q3182914": "Matt Salinger",
+  "Q3190387": "vigilante",
+  "Q3194762": "Keith Pollard",
+  "Q320052": "Vincent D'Onofrio",
+  "Q3235008": "Fantastic Four: Rise of the Silver Surfer",
+  "Q326653": "accountant",
+  "Q327029": "mechanic",
+  "Q3290793": "Ben Diskin",
+  "Q3308007": "Michael B. Jordan",
+  "Q3313499": "Mike Ploog",
+  "Q33231": "photographer",
+  "Q3329808": "Benedict Wong",
+  "Q3350928": "Olivier Coipel",
+  "Q335880": "Taylor Kitsch",
+  "Q3376457": "Peter Billingsley",
+  "Q339571": "X-Men 2: Clone Wars",
+  "Q33999": "actor",
+  "Q3413417": "Chip Zien",
+  "Q3429263": "Blade",
+  "Q34460": "Gwyneth Paltrow",
+  "Q347947": "Iron Man: Armored Adventures",
+  "Q349375": null,
+  "Q3501317": "fashion designer",
+  "Q350424": "Alessandro Nivola",
+  "Q352292": "David Michelinie",
+  "Q352460": "Todd McFarlane",
+  "Q35332": "Brad Pitt",
+  "Q354298": "J. M. DeMatteis",
+  "Q355652": "Steve Ditko",
+  "Q355775": "Ron Frenz",
+  "Q3562775": "thief",
+  "Q3569743": "Wolverine: Adamantium Rage",
+  "Q357776": "Jim Lee",
+  "Q3603": "Jack Angel",
+  "Q3605602": "Adrian Alphona",
+  "Q362616": "Jon Bernthal",
+  "Q3660360": "Carmine Di Giandomenico",
+  "Q3662198": "Lego Marvel Super Heroes",
+  "Q368090": "Finn Jones",
+  "Q369286": "X-Men: Evolution",
+  "Q37226": "teacher",
+  "Q372947": "Ray Stevenson",
+  "Q3778264": "J. B. Smoove",
+  "Q378770": "contract killer",
+  "Q383700": "Marvel vs. Capcom 2: New Age of Heroes",
+  "Q384593": "police officer",
+  "Q3849448": "Mark Brooks",
+  "Q3850389": "Marvel Super Hero Squad: The Infinity Gauntlet",
+  "Q3850391": "Marvel Premiere",
+  "Q388589": "Humberto Ramos",
+  "Q3896442": "Marvel's Avengers Assemble",
+  "Q390063": "Fantastic Four: Rise of the Silver Surfer",
+  "Q392651": "intelligence agent",
+  "Q3978226": "Susan Egan",
+  "Q401601": "Ultimate Spider-Man",
+  "Q4020703": "Wolverine and the X-Men",
+  "Q4021195": "X-Men: Mutant Academy 2",
+  "Q4021199": "X-Men: Wolverine's Rage",
+  "Q4029": "Tara Strong",
+  "Q40348": "lawyer",
+  "Q4049343": "Sgt. Fury and his Howling Commandos",
+  "Q4049922": "Spider-Man Unlimited",
+  "Q4051247": "The Punisher: No Mercy",
+  "Q4051248": "The Punisher",
+  "Q4070300": "ballerina",
+  "Q41": "Greece",
+  "Q41635663": "Peter Baird",
+  "Q41754": "Ghost Rider",
+  "Q41854": "Ghost Rider: Spirit of Vengeance",
+  "Q4223": "Julian McMahon",
+  "Q4254026": "The Amazing Spider-Man 2",
+  "Q42869": "Nicolas Cage",
+  "Q42909": "reporter",
+  "Q43401852": "Marvel Strike Force",
+  "Q43845": "businessperson",
+  "Q439457": "Donna Murphy",
+  "Q4440": "Eric Bana",
+  "Q449238": "Alvin Sargent",
+  "Q45199": "sailor",
+  "Q452347": "Katie Stuart",
+  "Q454231": "Charlie Cox",
+  "Q45787133": "motorcyclist",
+  "Q45923": "Aaron Taylor-Johnson",
+  "Q4598403": "2001: A Space Odyssey (comics)",
+  "Q459925": "B. J. Novak",
+  "Q460707": "The Spectacular Spider-Man",
+  "Q4610556": "model",
+  "Q461309": "Doug Jones",
+  "Q466611": "The Incredible Hulk",
+  "Q469794": "Louise Simonson",
+  "Q47064": "military personnel",
+  "Q4717426": "Alex Maleev",
+  "Q472166": "Secret Wars",
+  "Q475618": "John Byrne",
+  "Q4773904": "anthropologist",
+  "Q4820188": "Audrey Wasilewski",
+  "Q48282": "student",
+  "Q482999": "gladiator",
+  "Q483118": "Ben Affleck",
+  "Q483148": "Michael Clarke Duncan",
+  "Q484188": "serial killer",
+  "Q484442": "Spider-Man",
+  "Q484523": "Jared Leto",
+  "Q484876": "chief executive officer",
+  "Q485901": "James Marsden",
+  "Q488335": "Kevin Michael Richardson",
+  "Q49085": "African Americans",
+  "Q4947495": "crime boss",
+  "Q498503": "Bill Bixby",
+  "Q4985891": "X-Men: Days of Future Past",
+  "Q4991371": "soldier",
+  "Q500628": "Lamorne Morris",
+  "Q5043": "Christianity",
+  "Q505371": "agender",
+  "Q50808735": "Nathan Carlson",
+  "Q51057": "Len Wein",
+  "Q5108470": "Chris Wiggins",
+  "Q5111829": "Christopher Abbott",
+  "Q512006": "Daniel Gillies",
+  "Q5125402": "clairvoyant",
+  "Q516421": "Sumela Kay",
+  "Q5184855": "crew member",
+  "Q5228378": "Dave Boat",
+  "Q525314": "Gerry Conway",
+  "Q5273293": "Dick Purcell",
+  "Q5307556": "drill instructor",
+  "Q531718": "Efrem Zimbalist Jr.",
+  "Q534208": "Giant-Size X-Men #1",
+  "Q549290": "Jordan Prentice",
+  "Q55391886": "Spider-Geddon",
+  "Q55405369": "Morbius",
+  "Q55537283": "Sony's Spider-Man Universe",
+  "Q5589126": "government agent",
+  "Q569934": "Spider-Man",
+  "Q57147": "Michael Fassbender",
+  "Q57662949": "Canada",
+  "Q579804": "Yuri Lowenthal",
+  "Q583870": "Blade: The Series",
+  "Q5887360": "Guardians of the Galaxy",
+  "Q589298": "editor-in-chief",
+  "Q5920281": "Howard Mackie",
+  "Q5935752": "Hulk and the Agents of S.M.A.S.H.",
+  "Q599109": "Mark Bagley",
+  "Q60661987": "time traveller",
+  "Q60719010": "Spider-Girl",
+  "Q6162935": "Jason Latour",
+  "Q6183261": "Jerry Bingham",
+  "Q618694": "fighter pilot",
+  "Q621613": "bounty hunter",
+  "Q623268": "chief financial officer",
+  "Q6249723": "John Mulaney",
+  "Q631369": "Chris Claremont",
+  "Q633841": "Archie Goodwin",
+  "Q63633751": "Donny Cates",
+  "Q63728626": "Earth-96283",
+  "Q6392527": "Sara Pichelli",
+  "Q639669": "musician",
+  "Q64211112": "Doctor Strange in the Multiverse of Madness",
+  "Q642878": "Marvel Cinematic Universe",
+  "Q6498903": "supervillain",
+  "Q6581072": "female",
+  "Q6581097": "male",
+  "Q667544": "Richard and Mary Parker",
+  "Q668": "India",
+  "Q6757886": "Marcos Martín",
+  "Q678551": "American Jews",
+  "Q6846365": "Mike Collins",
+  "Q6849459": "Mikey Kelley",
+  "Q688263": "Amazing Fantasy",
+  "Q68934496": "Spider-Man: No Way Home",
+  "Q691225": "lineworker",
+  "Q6917754": "Motion Picture Funnies Weekly",
+  "Q692715": "X-Men: Children of the Atom",
+  "Q696819": "herald",
+  "Q703534": "employee",
+  "Q703897": "Tom DeFalco",
+  "Q704742": "Sticky Fingaz",
+  "Q716251": "Kodi Smit-McPhee",
+  "Q716343": "Martin Starr",
+  "Q719359": "Toby Kebbell",
+  "Q720012": "Brian Michael Bendis",
+  "Q723021": "Daran Norris",
+  "Q723788": "Sal Buscema",
+  "Q723984": "Mike W. Barr",
+  "Q725384": "Joe Simon",
+  "Q726128": "Dylan Baker",
+  "Q7282183": "Rafael Kayanan",
+  "Q729212": "Spider-Man: Shattered Dimensions",
+  "Q729414": "Ed McGuinness",
+  "Q731726": "Mike Zeck",
+  "Q7331547": "Rick Leonardi",
+  "Q735721": "Green Goblin",
+  "Q7358053": "Roger Cruz",
+  "Q7384552": "Ryan Stegman",
+  "Q744166": "Jenny Slate",
+  "Q7507476": "Sicilian Americans",
+  "Q751805": "Daredevil",
+  "Q7581768": "spymaster",
+  "Q760896": "Tye Sheridan",
+  "Q7614525": "Steven Butler",
+  "Q76448600": "Spider-Man: Across the Spider-Verse",
+  "Q76478": "Kirsten Dunst",
+  "Q766099": "Wakanda",
+  "Q768685": "Ed Gale",
+  "Q7704593": "Terry Kavanagh",
+  "Q773060": "Tim Pocock",
+  "Q777406": "Spider-Man: The New Animated Series",
+  "Q777952": "instructor",
+  "Q7807376": "Timothy M. Rose",
+  "Q782363": "Tales of Suspense",
+  "Q788134": "Marvel vs. Capcom 3: Fate of Two Worlds",
+  "Q7909115": null,
+  "Q7920166": "Venom: Lethal Protector",
+  "Q8030537": "Wolverine",
+  "Q80687": "secretary",
+  "Q808266": "bartender",
+  "Q816565": "Ben Mendelsohn",
+  "Q817393": "black people",
+  "Q820037": "miner",
+  "Q8329271": "Fabrice Sapolsky",
+  "Q836822": "Spider-Man: India",
+  "Q837676": "Dee Bradley Baker",
+  "Q84084213": "Atlantis",
+  "Q842782": "detective",
+  "Q849628": "Brian K. Vaughan",
+  "Q851436": "bodyguard",
+  "Q860876": "Dane DeHaan",
+  "Q864503": "biologist",
+  "Q868958": "Ghost Rider",
+  "Q890527": "archer",
+  "Q893594": "Puerto Ricans",
+  "Q901": "scientist",
+  "Q902536": "Dave Cockrum",
+  "Q902800": "Bill Milner",
+  "Q909802": "The Punisher",
+  "Q922264": "Eric Allan Kramer",
+  "Q9268": "Judaism",
+  "Q9283458": "Marvel Heroes",
+  "Q9352089": "spy",
+  "Q9385011": "neurosurgeon",
+  "Q93938": "Gary Friedrich",
+  "Q9402": "ninja",
+  "Q941984": "Rex Smith",
+  "Q947661": "The Fantastic Four",
+  "Q947873": "television presenter",
+  "Q948751": "Michael Papajohn",
+  "Q952156": "Steve Blum",
+  "Q96": "Mexico",
+  "Q96216165": "Spider-Man: Miles Morales",
+  "Q965261": "Corey Burton",
+  "Q971041": "Kurt Busiek",
+  "Q981976": "Roy Thomas"
+ },
+ "unresolved": [
+  {
+   "id": 39,
+   "name": "Stan Lee"
+  },
+  {
+   "id": 41,
+   "name": "The Spot"
+  },
+  {
+   "id": 50,
+   "name": "Dr. Teddy Paine / Agony (symbiote)"
+  },
+  {
+   "id": 51,
+   "name": "Al Rodriguez"
+  },
+  {
+   "id": 52,
+   "name": "Albert Moon"
+  },
+  {
+   "id": 54,
+   "name": "Amaria"
+  },
+  {
+   "id": 55,
+   "name": "Amazoness"
+  },
+  {
+   "id": 61,
+   "name": "Atrocity (Sloan/Anti-Venom/Octopus hybrid)"
+  },
+  {
+   "id": 62,
+   "name": "Bartender (MCU + SSU versions)"
+  },
+  {
+   "id": 73,
+   "name": "Boomerang (Fred Myers)"
+  },
+  {
+   "id": 75,
+   "name": "Jim / brown symbiote host"
+  },
+  {
+   "id": 76,
+   "name": "Bruce Campbell"
+  },
+  {
+   "id": 81,
+   "name": "\"Carnom\" (Venom/Carnage fusion)"
+  },
+  {
+   "id": 83,
+   "name": "Charles Zeider"
+  },
+  {
+   "id": 85,
+   "name": "Cloak and Dagger"
+  },
+  {
+   "id": 86,
+   "name": "Constance Webb"
+  },
+  {
+   "id": 88,
+   "name": "Daemos"
+  },
+  {
+   "id": 89,
+   "name": "Dan Lewis"
+  },
+  {
+   "id": 90,
+   "name": "Danika Hart"
+  },
+  {
+   "id": 93,
+   "name": "Delilah (cameo, alternate universe)"
+  },
+  {
+   "id": 98,
+   "name": "Donald Menken"
+  },
+  {
+   "id": 99,
+   "name": "Doppelganger"
+  },
+  {
+   "id": 102,
+   "name": "Eduardo Lobo"
+  },
+  {
+   "id": 103,
+   "name": "Edward Byron (Guru)"
+  },
+  {
+   "id": 105,
+   "name": "Emil Nicholas"
+  },
+  {
+   "id": 106,
+   "name": "Emily Chan"
+  },
+  {
+   "id": 113,
+   "name": "Ganke Lee"
+  },
+  {
+   "id": 114,
+   "name": "Garia"
+  },
+  {
+   "id": 118,
+   "name": "Green Goblin 2099"
+  },
+  {
+   "id": 120,
+   "name": "Gustav Fiers / The Gentleman"
+  },
+  {
+   "id": 121,
+   "name": "Hailey Cooper"
+  },
+  {
+   "id": 130,
+   "name": "Hydra"
+  },
+  {
+   "id": 133,
+   "name": "Inheritors"
+  },
+  {
+   "id": 134,
+   "name": "Iron Cross Army / Sea-Devil"
+  },
+  {
+   "id": 141,
+   "name": "Jade Clark / violet symbiote host"
+  },
+  {
+   "id": 143,
+   "name": "Jean DeWolfe"
+  },
+  {
+   "id": 147,
+   "name": "Jennix"
+  },
+  {
+   "id": 148,
+   "name": "Jessica Andrews"
+  },
+  {
+   "id": 152,
+   "name": "Julie Masters"
+  },
+  {
+   "id": 154,
+   "name": "Jūzō Mamiya"
+  },
+  {
+   "id": 158,
+   "name": "Karen (suit AI)"
+  },
+  {
+   "id": 159,
+   "name": "Karn"
+  },
+  {
+   "id": 162,
+   "name": "Leopardon"
+  },
+  {
+   "id": 165,
+   "name": "Lucien / Milo Morbius"
+  },
+  {
+   "id": 168,
+   "name": "Lyla"
+  },
+  {
+   "id": 170,
+   "name": "Maggia crime families"
+  },
+  {
+   "id": 173,
+   "name": "Maria"
+  },
+  {
+   "id": 176,
+   "name": "Martin Moon"
+  },
+  {
+   "id": 177,
+   "name": "Martine Bancroft"
+  },
+  {
+   "id": 180,
+   "name": "Scream / Mary Jane (symbiote, temporary)"
+  },
+  {
+   "id": 185,
+   "name": "Miles G. Morales / Prowler (Earth-42)"
+  },
+  {
+   "id": 188,
+   "name": "Monster-Ock"
+  },
+  {
+   "id": 191,
+   "name": "Mr. Fox"
+  },
+  {
+   "id": 192,
+   "name": "Mr. White"
+  },
+  {
+   "id": 193,
+   "name": "Mrs. Chen"
+  },
+  {
+   "id": 195,
+   "name": "Natie (piranha cross-species)"
+  },
+  {
+   "id": 197,
+   "name": "New Enforcers: Dragon Man, Eel, Thermite, Blitz, Super-Adaptoid"
+  },
+  {
+   "id": 201,
+   "name": "Nikolai Kravinoff"
+  },
+  {
+   "id": 204,
+   "name": "Nova Moon"
+  },
+  {
+   "id": 205,
+   "name": "O'Neil"
+  },
+  {
+   "id": 213,
+   "name": "Professor Monster"
+  },
+  {
+   "id": 216,
+   "name": "Puma (Thomas Fireheart)"
+  },
+  {
+   "id": 217,
+   "name": "Queen Bee"
+  },
+  {
+   "id": 218,
+   "name": "R.H.I.N.O."
+  },
+  {
+   "id": 219,
+   "name": "Rajit Ratha"
+  },
+  {
+   "id": 220,
+   "name": "Rattan"
+  },
+  {
+   "id": 221,
+   "name": "Rex Strickland"
+  },
+  {
+   "id": 223,
+   "name": "Rick Mason"
+  },
+  {
+   "id": 226,
+   "name": "Rita Conway"
+  },
+  {
+   "id": 230,
+   "name": "Roland Treece"
+  },
+  {
+   "id": 232,
+   "name": "S-01, S-02, S-03 (Oscorp robots)"
+  },
+  {
+   "id": 233,
+   "name": "Santiago"
+  },
+  {
+   "id": 235,
+   "name": "Semyon Chorney"
+  },
+  {
+   "id": 238,
+   "name": "Solus"
+  },
+  {
+   "id": 242,
+   "name": "Spoiler"
+  },
+  {
+   "id": 248,
+   "name": "The Jury"
+  },
+  {
+   "id": 250,
+   "name": "Thumper"
+  },
+  {
+   "id": 254,
+   "name": "Videoman"
+  },
+  {
+   "id": 255,
+   "name": "Walker Sloan"
+  },
+  {
+   "id": 257,
+   "name": "Dr. Watts"
+  },
+  {
+   "id": 259,
+   "name": "Whitney Chang"
+  },
+  {
+   "id": 264,
+   "name": "Ömer Ozdemir"
+  }
+ ]
+}

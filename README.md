@@ -16,8 +16,14 @@ to fall into. The build is offline, dependency-free and byte-for-byte reproducib
 
 ```
 81 works  ·  264 characters  ·  581 people  ·  826 cast & crew credits
-24 tables  ·  4 analysis views  ·  25 CSV exports  ·  484 KB
+41 tables  ·  8 analysis views  ·  42 CSV exports  ·  3.4 MB
 ```
+
+**v3** is an additive enrichment release. Every v2 table keeps its columns in the
+same order and no value v2 wrote was overwritten — it just has a lot more in it:
+review scores now cover 56 works rather than 30, every series has an episode
+guide rather than five of them, and `people.nationality` is populated for the
+first time. See [What v3 added](#what-v3-added).
 
 | | |
 |---|---|
@@ -25,9 +31,9 @@ to fall into. The build is offline, dependency-free and byte-for-byte reproducib
 | **TV shows** | 15 — 4 live-action, 11 animated, 1967–2026 |
 | **Games** | 43 — 1982 Atari 2600 through *Marvel's Spider-Man 2* (2023) |
 | **Format** | SQLite (`spiderman.db`) + one CSV per table + a denormalized flat CSV |
-| **Provenance** | Wikipedia, Box Office Mojo, Rotten Tomatoes, Metacritic, IMDb, TMDB |
+| **Provenance** | Wikipedia, Wikidata, Box Office Mojo, Rotten Tomatoes, Metacritic, IMDb, TMDB |
 
-**Contents** — [Quickstart](#quickstart) · [Browse it interactively](#browse-it-interactively) ·
+**Contents** — [Quickstart](#quickstart) · [What v3 added](#what-v3-added) · [Browse it interactively](#browse-it-interactively) ·
 [Example queries](#example-queries) ·
 [Schema](#schema) · [Read this before you count](#read-this-before-you-count) ·
 [Files](#files) · [Reproducing the build](#reproducing-the-build) ·
@@ -70,6 +76,86 @@ denormalized single-row-per-work view with studios, platforms, budget, gross and
 review averages already joined. Good for a spreadsheet or a quick notebook; use
 the database when you need the character and credit relationships.
 </details>
+
+---
+
+## What v3 added
+
+v3 does one thing: it fills the holes v2 documented, from two sources that need no
+API key — [Wikidata](https://www.wikidata.org/) and the English Wikipedia. It adds
+**11,683 rows**, fills **845 columns that were NULL** on rows that already existed,
+and corrects **2 stale values**. Everything it touched is listed row by row in the
+new `v3_provenance` table, so the delta can be audited or filtered back out:
+
+```sql
+SELECT table_name, action, COUNT(*) FROM v3_provenance GROUP BY 1, 2 ORDER BY 3 DESC;
+```
+
+### Gaps closed
+
+| | v2 | v3 |
+|---|---|---|
+| Works with a review score | 30 / 81 | **56 / 81** |
+| Films with a review score | 1 / 23 | **17 / 23** |
+| Series with an episode guide | 5 / 15 | **15 / 15** |
+| Series with a review score | 1 / 15 | **4 / 15** |
+| Episode rows | 50 | **577** |
+| Works with an award on record | 7 | **17** |
+| People with a nationality | 0 / 581 | **382 / 581** |
+| People with a birth date | 318 / 581 | **394 / 581** |
+| People with an IMDb ID | 365 / 581 | **416 / 581** |
+| Characters with a first comic appearance | 139 / 264 | **157 / 264** |
+
+### New tables
+
+Seventeen, all new — no v2 table changed shape.
+
+| Table | Rows | |
+|---|---|---|
+| `external_ids` | 5,998 | IMDb, Rotten Tomatoes, Metacritic, TMDB, Letterboxd, Steam, Wikidata … for works, people and characters |
+| `person_occupations`, `person_citizenships` | 2,268 | what each person does, and where they are from |
+| `person_awards` | 1,022 | awards a person holds in their own right, including for work outside this dataset |
+| `person_details` | 421 | gender, birth name, active period |
+| `episode_segments` | 324 | both titles for the shows that air two shorts per slot |
+| `work_release_dates` | 196 | territory-by-territory release |
+| `work_genres` | 186 | |
+| `character_details` | 182 | creators, narrative universe, first appearance |
+| `work_places` | 114 | narrative and filming locations |
+| `work_countries`, `work_languages` | 122 | |
+| `work_summaries` | 79 | a paragraph of prose per work — the dataset had none |
+| `work_content_ratings` | 17 | MPAA / ESRB / BBFC certificates |
+| `box_office_regions` | 9 | gross in territories the two-column `box_office` cannot express |
+| `v3_provenance`, `v3_sources` | 12,536 | what came from where |
+
+Plus four views: `v_work_reception`, `v_person_profile`, `v_episode_guide`,
+`v_work_identifiers`.
+
+### Two judgement calls worth knowing about
+
+**Rotten Tomatoes publishes two numbers and Wikidata records both** against the
+same reviewer — the Tomatometer (`90%`) and the mean of the rated reviews
+(`7.6/10`). They are different measurements. Only the percentage is stored; taking
+whichever statement came first would have reported *Spider-Man* (2002) as scoring
+76 rather than 90. The two are told apart by the statement's determination method
+(P459), which is also what identifies the outlet on the Metascores, none of which
+carry a reviewer qualifier.
+
+**Two `tv_shows` values were corrected rather than left alone.** *Spidey and His
+Amazing Friends* declared 103 episodes over 4 seasons; it has since aired 113 over
+5\. This is the only place v3 overwrites something v2 wrote, both changes are
+recorded in `v3_provenance` with `action='correct'`, and `--check` reports them
+instead of failing on them.
+
+### Verifying the compatibility claim
+
+```bash
+python3 build_db_v3.py --check
+```
+
+This builds v2 on its own into a temporary directory and diffs it against the v3
+database: every v2 table must have the same columns in the same order, every row
+v2 wrote must still be there with the same values (except NULLs that were filled),
+the four v2 views must still run, and the flat CSV must keep its 42 columns.
 
 ---
 
@@ -227,7 +313,9 @@ Read this one as a caveat, not a finding — see
 
 ## Schema
 
-24 tables, 4 views, 17 indexes. Row counts are current as of the committed build.
+41 tables, 8 views. Row counts are current as of the committed build. The 24 v2
+tables below are unchanged in shape; the 17 tables v3 adds are listed under
+[What v3 added](#what-v3-added).
 
 ```
 franchises (id, name, description)                              -- 13 rows
@@ -437,14 +525,20 @@ than stored — an unresolved person is preferable to a confidently wrong one.
 | Path | Description |
 |------|-------------|
 | `spiderman.db` | SQLite database — the primary artifact |
-| `data/*.csv` | One CSV per table (24) |
+| `data/*.csv` | One CSV per table (41) |
 | `data/spiderman_all_media_flat.csv` | Denormalized one-row-per-work view (42 columns) |
 | `data_raw/movies.json` | Source research: 23 films |
 | `data_raw/games.json` | Source research: 43 games with per-platform releases |
 | `data_raw/tv.json` | Source research: 15 series, 82 episode rows |
 | `data_raw/people_external.json` | TMDB person data (367 people), consumed by the build |
-| `build_db_v2.py` | The build: rebuilds the DB and every CSV, then validates |
+| `data_raw/v3/*.json` | Wikidata and Wikipedia enrichment, consumed by the v3 layer |
+| `build_db_v3.py` | **The build.** Runs v2, applies the v3 layer, validates, exports |
+| `v3_layer.py` | The additive v3 layer itself — every row it adds and why |
+| `build_db_v2.py` | The v2 build; still produces exactly the v2 database on its own |
+| `wdlib.py` | Cached, rate-limited Wikidata / Wikipedia / MusicBrainz access |
+| `fetch_wikidata_*.py`, `fetch_episodes.py`, `fetch_reception.py`, `fetch_summaries.py` | Optional network steps that regenerate `data_raw/v3/` |
 | `fetch_tmdb_people.py` | Optional network step that regenerates `people_external.json` |
+| `explorer/TODO-v3.md` | What the explorer still needs in order to show the v3 data |
 | `build_db.py` | v1 build script, superseded — kept for history |
 | `AUDIT_REVIEW.md` | Historical QA audit of the v2 build; every issue listed is fixed |
 | `explorer/` | Interactive browser explorer — open `explorer/index.html` |
@@ -457,14 +551,23 @@ Every research item in `data_raw/` resolves to exactly one work: 23/23 movies,
 ## Reproducing the build
 
 ```bash
-python3 build_db_v2.py
+python3 build_db_v3.py           # v2 base + the v3 enrichment layer
+python3 build_db_v3.py --check   # ... and prove v2 compatibility
 ```
 
-Python 3.9+, **standard library only** — no pip install, no network. The script
-drops and rebuilds `spiderman.db` and all 25 CSVs from `data_raw/*.json`, then runs
-a validation pass over foreign keys, enum constraints and export integrity, exiting
-non-zero if any check fails. It is deterministic: rebuilding from a clean checkout
-reproduces the committed artifacts byte for byte.
+Python 3.9+, **standard library only** — no pip install, no network. `build_db_v3.py`
+runs `build_db_v2.py` unchanged and hands it `v3_layer`, which adds its rows before
+the CSVs are exported so the CSVs match the database they came from. Both stages
+validate: v2 over foreign keys, enums and export integrity, v3 over the same plus
+its own referential and scale checks. Either exiting non-zero fails the build.
+
+`python3 build_db_v2.py` on its own still produces exactly the v2 database it always
+did — the v3 hook is inert unless `SPIDERMAN_V3_LAYER` is set, which only
+`build_db_v3.py` does.
+
+Both are deterministic: the v3 layer reads `data_raw/v3/*.json` written by the
+fetch scripts below, so the build itself never touches the network and rebuilding
+from a clean checkout reproduces the committed artifacts byte for byte.
 
 The run also prints its own quality report — row counts, research match rate,
 per-table coverage, fully-NULL columns, dropped rows and every contradiction it
@@ -483,46 +586,90 @@ python3 build_db_v2.py         # reads that file, no network needed
 ```
 </details>
 
+<details>
+<summary><b>Refreshing the v3 data (optional)</b></summary>
+
+The v3 fetchers write `data_raw/v3/*.json`, which the build then reads offline.
+None of them needs an API key or an account — Wikidata's SPARQL endpoint and the
+MediaWiki Action API are open. Responses are cached under `data_raw/.wd_cache/`,
+so a re-run costs no requests, and every request passes a per-host rate limiter.
+
+```bash
+python3 fetch_wikidata_works.py       # resolve 81 works -> Wikidata; reviews, money, awards, ids
+python3 fetch_wikidata_people.py      # biography, nationality, occupations, awards
+python3 fetch_wikidata_characters.py  # first appearance, creators, universe
+python3 fetch_episodes.py             # episode guides from the Wikipedia episode lists
+python3 fetch_reception.py            # review scores Wikidata does not carry
+python3 fetch_summaries.py            # a paragraph of prose per work
+python3 build_db_v3.py --check
+```
+
+Each script reports what it could not resolve rather than guessing: one work
+(*Marvel's Spider-Man 3*, announced but not made) has no Wikidata item, 160 people
+and 82 character identities could not be resolved to one unambiguous entity, and
+they are left alone rather than matched to a plausible-looking wrong one.
+</details>
+
 ---
 
 ## Coverage & limitations
 
 Works with at least one enrichment row:
 
-| Table | Works covered |
-|-------|---------------|
-| `work_characters` | 81/81 (100%) |
-| `work_studios` | 81/81 (100%) |
-| `source_material` | 73/81 (90%) |
-| `cast_crew` | 70/81 (86%) |
-| `work_relations` | 68/81 (83%) |
-| `review_scores` | 30/81 (37%) |
+| Table | Works covered | |
+|-------|---------------|---|
+| `work_characters` | 81/81 (100%) | |
+| `work_studios` | 81/81 (100%) | |
+| `external_ids` | 80/81 (99%) | v3 |
+| `work_summaries` | 79/81 (98%) | v3 |
+| `work_genres` | 76/81 (94%) | v3 |
+| `source_material` | 73/81 (90%) | |
+| `cast_crew` | 70/81 (86%) | |
+| `work_relations` | 68/81 (83%) | |
+| `review_scores` | 56/81 (69%) | was 30/81 in v2 |
 
 These are data-availability gaps, not build defects. The build reports each one.
 
-- **`people` external IDs** — 367 of 581 people are resolved (318 with a birth
-  date, 365 with an IMDb ID). The remaining 214 are chiefly game developers,
-  designers and composers, who are outside TMDB's coverage; a MobyGames or
-  Wikidata join would be needed for them.
-- **Fully-NULL columns (8)** — nothing in the pipeline populates
-  `box_office.week_start_date`, `budgets.inflation_adj_2024`, `people.nationality`,
-  `soundtracks.release_date`, `soundtracks.chart_peak_uk`, `studios.country`,
-  `studios.parent_company` or `work_characters.notes`. The build lists them on
-  every run, so a column that quietly stops being filled cannot go unnoticed.
-  `nationality` has no TMDB equivalent and birth place is not a substitute for it.
+- **`review_scores`** — 35 of 43 games, 17 of 23 films, 4 of 15 series. What is
+  left is largely unreviewable rather than unresearched: the six films without a
+  score are the three 1970s TV movies, the 1978 Toei film, and two that have not
+  been released. The animated series are the real remaining gap — most were never
+  covered by an aggregator.
+- **`people` external IDs** — 421 of 581 people resolve to a Wikidata item, 394
+  have a birth date and 416 an IMDb ID. The unresolved 160 are chiefly game
+  developers, designers and composers with no Wikidata item, or names common
+  enough that no single candidate could be confirmed. They are recorded as
+  unresolved rather than matched to a likely-looking wrong person.
+- **Characters** — 182 of 264 identities resolve to a Wikidata item, and 157 now
+  have a first comic appearance. The remaining 82 are mostly one-off credit
+  spellings and background parts that have no item anywhere.
+- **Fully-NULL columns (12)** — nothing populates `work_characters.notes`,
+  `studios.country`, `studios.parent_company`, `box_office.week_start_date`,
+  `budgets.inflation_adj_2024`, `soundtracks.release_date`,
+  `soundtracks.chart_peak_uk`, `work_content_ratings.country`,
+  `work_content_ratings.reason`, `work_release_dates.event`,
+  `box_office_regions.as_of` or `character_details.publisher`. The build lists them
+  on every run, so a column that quietly stops being filled cannot go unnoticed.
+  (`people.nationality` was on this list in v2 and is now filled for 382 of 581.)
 - **`box_office`** — 20 rows over 17 films: 16 lifetime totals and one genuine
-  4-week run (*Venom: The Last Dance*). No film has both, so a film's opening
-  week and its final gross are never both known.
-- **`budgets`** — 18 rows over 16 films, production component only for most.
-- **`awards`** — 21 rows, movies only.
-- **`episodes`** — 50 episodes over 5 of the 15 series, and complete only for
-  those five. The other ten series have no episode-level data at all: what the
-  research supplies for them is a per-season summary row, which the build drops
-  because it is not an episode.
-- **`review_scores`** — concentrated on games; most films and series have none.
-- **Unreleased works** (*Beyond the Spider-Verse*, *Brand New Day*, *El Muerto*,
-  *Spider-Noir*, *Marvel's Spider-Man 3*) carry announced credits only, and no
-  review, budget or box office figures.
+  4-week run (*Venom: The Last Dance*). No film has both, so a film's opening week
+  and its final gross are never both known. v3 adds nine per-territory figures in
+  `box_office_regions` but found no film that was missing a total altogether — the
+  six films without one are TV movies and unreleased titles that have no gross.
+- **`budgets`** — 23 rows over 17 films; v3 added five, four of them competing
+  estimates filed against a film that already had one (`is_primary = 0`).
+- **`awards`** — 67 rows over 17 works (11 films and, new in v3, 6 games). A win
+  and its matching nomination are one row, not two; see
+  [What v3 added](#what-v3-added).
+- **`episodes`** — 577 rows over all 15 series. Two caveats: shows that air two
+  shorts per slot (the 1967 series, *Spidey and His Amazing Friends*) get one row
+  per broadcast slot with the segment titles joined by `/`, and both segments
+  separately in `episode_segments`; and *Ultimate Spider-Man* yields 86 rows
+  against a declared 104, because its episode list does not itemise the rest.
+- **Unreleased works** (*Beyond the Spider-Verse*, *El Muerto*, *Marvel's
+  Spider-Man 3*) carry announced credits only, and no review, budget or box office
+  figures. *Brand New Day* and *Spider-Noir* have since released and now carry
+  review scores.
 
 ---
 
@@ -546,6 +693,13 @@ video games), Box Office Mojo, Rotten Tomatoes, Metacritic and IMDb.
 
 Person records come from **The Movie Database (TMDB)**.
 *This product uses the TMDB API but is not endorsed or certified by TMDB.*
+
+The v3 enrichment comes from **Wikidata** (CC0 1.0) and the **English Wikipedia**
+(CC BY-SA 4.0), accessed through their public SPARQL and Action APIs. Which of the
+two each v3 row came from is recorded in `v3_provenance`; `v3_sources` holds the
+licence and the retrieval date. Text carried over verbatim — the work summaries in
+`work_summaries` — is Wikipedia's and remains under CC BY-SA 4.0, which is more
+restrictive than this dataset's CC BY 4.0; attribute accordingly if you reuse it.
 
 Spider-Man and all related characters are trademarks of Marvel Characters, Inc.
 This is an unaffiliated dataset of factual information about published works, and

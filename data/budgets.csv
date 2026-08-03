@@ -17,3 +17,8 @@ id,work_id,amount_usd,currency,component,inflation_adj_2024,source_year,is_prima
 16,20,100000000,USD,production,,2024,1,highest published estimate
 17,21,110000000,USD,production,,2024,1,
 18,22,110000000,USD,production,,2024,1,
+19,16,225000000,USD,production,,,1,Wikidata
+20,17,140000000,USD,production,,,0,competing estimate (Wikidata)
+21,19,83000000,USD,production,,,0,competing estimate (Wikidata)
+22,22,120000000,USD,production,,,0,competing estimate (Wikidata)
+23,8,230000000,USD,production,,,0,competing estimate (Wikidata)

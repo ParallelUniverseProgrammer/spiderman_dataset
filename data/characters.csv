@@ -9,7 +9,7 @@ id,name,alias,alignment,alignment_raw,first_comic_title,first_comic_year,identit
 8,Julie Masters,,hero,hero,,,152
 9,Emily Chan,,hero,hero,,,106
 10,Charles Zeider,,villain,villain,,,83
-11,Takuya Yamashiro / Spider-Man,Spider-Man,hero,hero,,,40
+11,Takuya Yamashiro / Spider-Man,Spider-Man,hero,hero,Amazing Fantasy #15,1962,40
 12,Jūzō Mamiya,,hero,hero,,,154
 13,Iron Cross Army / Sea-Devil,,villain,villain,,,134
 14,Norman Osborn / Green Goblin,Green Goblin,villain,villain,Amazing Spider-Man #14 (1964),1964,15
@@ -75,12 +75,12 @@ id,name,alias,alignment,alignment_raw,first_comic_title,first_comic_year,identit
 74,Nick Fury,Nick Fury,hero,hero,Sgt. Fury #1 (1963) (MCU version),1963,198
 75,Maria Hill,,hero,hero,New Avengers #4 (2005),2005,174
 76,MJ (Michelle Jones-Watson),(composite of Mary Jane Watson),hero,hero,Amazing Spider-Man #42 (1966),1966,24
-77,Roger Harrington,,hero,hero,,,228
-78,Julius Dell,,hero,hero,,,153
+77,Roger Harrington,,hero,hero,The Incredible Hulk,2008,228
+78,Julius Dell,,hero,hero,Spider-Man: Far From Home,2019,153
 79,Talos (Skrull),Skrull,hero,hero,Fantastic Four #2 (1962) (MCU version),1962,244
-80,Soren (Skrull),Skrull,hero,hero,,,239
-81,William Ginter Riva,,villain,villain,,,260
-82,Brad Davis,,neutral,neutral,,,74
+80,Soren (Skrull),Skrull,hero,hero,Captain Marvel,2019,239
+81,William Ginter Riva,,villain,villain,Iron Man,2008,260
+82,Brad Davis,,neutral,neutral,Spider-Man: Far From Home,2019,74
 83,Dimitri,,hero,hero,(Chameleon-inspired) Amazing Spider-Man #1 (1963),1963,95
 84,Janice Lincoln,Beetle,villain,villain,Thunderbolts #111 (2007) (different version),2007,142
 85,Peter Parker / Spider-Man (MCU),Spider-Man,hero,hero,Amazing Fantasy #15 (1962),1962,27
@@ -166,7 +166,7 @@ id,name,alias,alignment,alignment_raw,first_comic_title,first_comic_year,identit
 165,Thumper,Thumper,villain,villain,,,250
 166,Peter Parker,Spider-Man,hero,hero,Amazing Fantasy #15,1962,27
 167,Rita Conway,,neutral,neutral,,,226
-168,Takuya Yamashiro,Spider-Man,hero,hero,,,40
+168,Takuya Yamashiro,Spider-Man,hero,hero,Amazing Fantasy #15,1962,40
 169,Professor Monster,,villain,villain,,,213
 170,Amazoness,Saeko Yoshida,villain,villain,,,55
 171,Garia,,hero,hero,,,114
@@ -201,33 +201,33 @@ id,name,alias,alignment,alignment_raw,first_comic_title,first_comic_year,identit
 200,Lonnie Lincoln,Tombstone,neutral,neutral,Web of Spider-Man #36,1988,43
 201,Daredevil,Matt Murdock,hero,hero,Daredevil #1,1964,8
 202,Ben Reilly / Spider-Man Noir,Spider-Man Noir,hero,hero,Spider-Man Noir #1 (2009),2009,66
-203,Spider-Man (Peter Parker),Spider-Man,hero,hero,,,27
-204,Green Goblin (Norman Osborn),Green Goblin,villain,villain,,,15
-205,Sandman (Flint Marko),Sandman,villain,villain,,,29
+203,Spider-Man (Peter Parker),Spider-Man,hero,hero,Amazing Fantasy #15,1962,27
+204,Green Goblin (Norman Osborn),Green Goblin,villain,villain,The Amazing Spider-Man #31,1965,15
+205,Sandman (Flint Marko),Sandman,villain,villain,The Amazing Spider-Man #4,1963,29
 206,Hydro-Man (Morris Bench),Hydro-Man,villain,villain,,,131
-207,Ringmaster (Maynard Tiboldt),Ringmaster,villain,villain,,,224
-208,Madame Web (Cassandra Webb),Madame Web,neutral,neutral,,,22
-209,Lizard (Curt Connors),Lizard,villain,villain,,,21
-210,Captain America (Steve Rogers),Captain America,hero,hero,,,5
-211,Doctor Doom (Victor von Doom),Doctor Doom,villain,villain,,,9
+207,Ringmaster (Maynard Tiboldt),Ringmaster,villain,villain,Incredible Hulk #3,1962,224
+208,Madame Web (Cassandra Webb),Madame Web,neutral,neutral,Marvel Super Heroes Secret Wars #6,1984,22
+209,Lizard (Curt Connors),Lizard,villain,villain,The Amazing Spider-Man #6,1963,21
+210,Captain America (Steve Rogers),Captain America,hero,hero,Captain America Comics #1,1941,5
+211,Doctor Doom (Victor von Doom),Doctor Doom,villain,villain,Fantastic Four #5,1962,9
 212,Eduardo Lobo,,villain,villain,,,102
 213,Grey Gargoyle (Paul Duval),Grey Gargoyle,villain,villain,,,119
 214,Machete,,villain,villain,,,169
 215,Boomerang (Fred Myers),Boomerang,villain,villain,,,73
 216,Oddball,,villain,villain,,,206
-217,Electro (Max Dillon),Electro,villain,villain,,,13
+217,Electro (Max Dillon),Electro,villain,villain,The Amazing Spider-Man #9,1964,13
 218,Hobgoblin (Roderick Kingsley),Hobgoblin,villain,villain,,,127
-219,Rhino (Aleksei Sytsevich),Rhino,villain,villain,,,28
+219,Rhino (Aleksei Sytsevich),Rhino,villain,villain,The Amazing Spider-Man #41,1966,28
 220,Batroc the Leaper (Georges Batroc),Batroc the Leaper,villain,villain,,,63
 221,Zaran,,villain,villain,,,263
 222,Rattan,,villain,villain,,,220
-223,Hulk (Bruce Banner),Hulk,neutral,neutral/boss illusion,,,18
-224,Mysterio (Quentin Beck),Mysterio,villain,villain,,,26
-225,Kingpin (Wilson Fisk),Kingpin,villain,villain,,,19
+223,Hulk (Bruce Banner),Hulk,neutral,neutral/boss illusion,Incredible Hulk #1,1962,18
+224,Mysterio (Quentin Beck),Mysterio,villain,villain,The Amazing Spider-Man #2,1963,26
+225,Kingpin (Wilson Fisk),Kingpin,villain,villain,The Amazing Spider-Man #50,1967,19
 226,Sandman,Flint Marko,villain,villain,Amazing Spider-Man #4,1963,29
 227,Lizard,,villain,villain,Amazing Spider-Man #6,1963,21
 228,Hobgoblin,,villain,villain,The Amazing Spider-Man #238,1983,127
-229,Vulture (Adrian Toomes),Vulture,villain,villain,,,45
+229,Vulture (Adrian Toomes),Vulture,villain,villain,The Amazing Spider-Man #2,1963,45
 230,Mysterio,Quentin Beck,villain,villain,Amazing Spider-Man #13,1964,26
 231,Venom (Eddie Brock),Venom,villain,villain,,,12
 232,Doctor Strange,,hero,hero (cameo MS),,,11
@@ -237,11 +237,11 @@ id,name,alias,alignment,alignment_raw,first_comic_title,first_comic_year,identit
 236,Namor the Sub-Mariner,,hero,hero,,,194
 237,Hawkeye (Clint Barton),Hawkeye,hero,hero,,,125
 238,Vulture,Adrian Toomes,villain,villain,Amazing Spider-Man #2,1963,45
-239,Cyclops (Scott Summers),Cyclops,hero,hero,,,87
-240,Storm (Ororo Munroe),Storm,hero,hero,,,243
+239,Cyclops (Scott Summers),Cyclops,hero,hero,X-Men #1,1963,87
+240,Storm (Ororo Munroe),Storm,hero,hero,Giant-Size X-Men #1,1975,243
 241,Wolverine (Logan),Wolverine,hero,hero,,,46
 242,Gambit (Remy LeBeau),Gambit,hero,hero,,,112
-243,Spider-Man (playable),Spider-Man,hero,hero,,,27
+243,Spider-Man (playable),Spider-Man,hero,hero,Amazing Fantasy #15,1962,27
 244,Venom / Eddie Brock (playable),Venom,antihero,antihero,,,12
 245,Carnage (Cletus Kasady),Carnage,villain,villain,,,6
 246,Shriek,,villain,villain,,,32
@@ -261,7 +261,7 @@ id,name,alias,alignment,alignment_raw,first_comic_title,first_comic_year,identit
 260,Hawkeye,,hero,hero (cameo),,,125
 261,Hydra,,villain,villains (org),,,130
 262,"New Enforcers: Dragon Man, Eel, Thermite, Blitz, Super-Adaptoid",,villain,villains,,,197
-263,Vanisher,,neutral,neutral/villain,,,252
+263,Vanisher,,neutral,neutral/villain,X-Men #2,1963,252
 264,Spider-Man / Peter Parker,Spider-Man,hero,hero (playable),Amazing Fantasy #15,1962,27
 265,Scorpion,Mac Gargan,villain,villain,Amazing Spider-Man #20,1965,30
 266,Venom / Eddie Brock,Venom,villain,villain,Amazing Spider-Man #299,1988,12
@@ -279,33 +279,33 @@ id,name,alias,alignment,alignment_raw,first_comic_title,first_comic_year,identit
 278,Beast (Hank McCoy),Beast,hero,hero,X-Men #1,1963,64
 279,Rogue,,hero,hero,Avengers Annual #10,1981,229
 280,Professor X,,hero,hero,X-Men #1,1963,214
-281,Mysterio / Quentin Beck,Mysterio,villain,villain,,,26
+281,Mysterio / Quentin Beck,Mysterio,villain,villain,The Amazing Spider-Man #2,1963,26
 282,Big Wheel,,villain,villain,,,68
 283,Green Goblin / Norman Osborn,Green Goblin,villain,villain,Amazing Spider-Man #14,1964,15
-284,Uncle Ben,,neutral,neutral,,,44
+284,Uncle Ben,,neutral,neutral,Amazing Fantasy #15,1962,44
 285,Kraven the Hunter,Sergei Kravinoff,villain,villain (Xbox only),The Amazing Spider-Man #15,1964,20
 286,Bruce Campbell,,neutral,narrator (himself),,,76
 287,Aunt May,May Parker,neutral,neutral,Amazing Fantasy #15,1962,1
 288,Puma (Thomas Fireheart),Puma,villain,villain (PC),,,216
 289,Calypso,,villain,villain (post-game bonus),,,4
-290,Spider-Man / Peter Parker (Ultimate),Spider-Man,hero,hero (playable),,,27
+290,Spider-Man / Peter Parker (Ultimate),Spider-Man,hero,hero (playable),Amazing Fantasy #15,1962,27
 291,Venom / Eddie Brock (Ultimate),Venom,antihero,antihero (playable),,,12
 292,Wolverine (Ultimate),Wolverine,hero,hero,,,46
 293,R.H.I.N.O.,,villain,villain,,,218
 294,Silver Sable,,neutral,neutral,,,34
-295,Electro (Ultimate),Electro,villain,villain,,,13
-296,Green Goblin (Ultimate),Green Goblin,villain,villain,,,15
+295,Electro (Ultimate),Electro,villain,villain,The Amazing Spider-Man #9,1964,13
+296,Green Goblin (Ultimate),Green Goblin,villain,villain,The Amazing Spider-Man #31,1965,15
 297,Beetle,,villain,villain,,,65
-298,Bolivar Trask,,villain,villain,,,72
+298,Bolivar Trask,,villain,villain,X-Men #14,1965,72
 299,New Goblin / Harry Osborn,New Goblin,villain,villain/antihero,The Amazing Spider-Man #31,1965,17
 300,Sandman / Flint Marko,Sandman,villain,villain,Amazing Spider-Man #4,1963,29
-301,Lizard / Curt Connors,Lizard,villain,villain,,,21
+301,Lizard / Curt Connors,Lizard,villain,villain,The Amazing Spider-Man #6,1963,21
 302,Scorpion / Mac Gargan,Scorpion,villain,villain,Amazing Spider-Man #20,1965,30
 303,Luke Carlyle / Mad Bomber,Luke Carlyle,villain,villain,,,167
 304,Jean DeWolfe,,neutral,neutral,,,143
 305,Kingpin / Wilson Fisk,Kingpin,villain,villain,Amazing Spider-Man #50,1967,19
 306,Jessica Andrews,,neutral,neutral (game original),,,148
-307,Farley Stillwell,,villain,villain,,,108
+307,Farley Stillwell,,villain,villain,The Amazing Spider-Man #20,1965,108
 308,Blade,,hero,hero,,,71
 309,Prowler (Hobie Brown),Prowler,hero,hero,,,215
 310,Luke Cage,,hero,hero (summon),Hero for Hire #1,1972,166
@@ -314,8 +314,8 @@ id,name,alias,alignment,alignment_raw,first_comic_title,first_comic_year,identit
 313,Black Widow / Natasha Romanova,Black Widow,neutral,neutral,Tales of Suspense #52,1964,70
 314,Tinkerer / Phineas Mason,Tinkerer,villain,villain,Amazing Spider-Man #2,1963,42
 315,Wolverine (Symbiote),Wolverine,villain,villain,,,46
-316,Electro (Symbiote),Electro,villain,villain,,,13
-317,Vulture (Symbiote),Vulture,villain,villain,,,45
+316,Electro (Symbiote),Electro,villain,villain,The Amazing Spider-Man #9,1964,13
+317,Vulture (Symbiote),Vulture,villain,villain,The Amazing Spider-Man #2,1963,45
 318,Black Cat (Symbiote),Black Cat,villain,villain,,,3
 319,Jackal (Miles Warren),Jackal,villain,villain (PS2/PSP),Amazing Spider-Man #129,1974,139
 320,Spider-Woman / Jessica Drew (PS2/PSP),Spider-Woman,neutral,neutral,Marvel Spotlight #32,1977,149
@@ -323,7 +323,7 @@ id,name,alias,alignment,alignment_raw,first_comic_title,first_comic_year,identit
 322,Nightcrawler (DS),Nightcrawler,hero,hero,Giant-Size X-Men #1,1975,200
 323,Green Goblin / Norman Osborn (DS),Green Goblin,neutral,neutral,Amazing Spider-Man #14,1964,15
 324,Shocker (PS2/PSP),Shocker,villain,villain,Amazing Spider-Man #46,1967,31
-325,Spencer Smythe (PS2/PSP),Spencer Smythe,villain,villain,,,241
+325,Spencer Smythe (PS2/PSP),Spencer Smythe,villain,villain,The Amazing Spider-Man #25,1965,241
 326,J. Jonah Jameson (PS2/PSP),J. Jonah Jameson,neutral,neutral,Amazing Spider-Man #1,1963,137
 327,Amazing Spider-Man / Peter Parker,Amazing Spider-Man,hero,hero,Amazing Fantasy #15,1962,27
 328,Spider-Man Noir / Peter Parker,Spider-Man Noir,hero,hero,Spider-Man Noir #1,2009,37
@@ -333,23 +333,23 @@ id,name,alias,alignment,alignment_raw,first_comic_title,first_comic_year,identit
 332,Walker Sloan,,villain,villain (game original),,,255
 333,Dr. Otto Octavius,,villain,villain,Amazing Spider-Man #3,1963,10
 334,Atrocity (Sloan/Anti-Venom/Octopus hybrid),Atrocity,villain,villain,,,61
-335,Peter Parker (future CEO),Peter Parker,villain,villain,,,27
+335,Peter Parker (future CEO),Peter Parker,villain,villain,Amazing Fantasy #15,1962,27
 336,Stan (Stan Lee cameo),Stan,neutral,neutral,,,39
 337,Whitney Chang,,neutral,neutral (game original),,,259
 338,Vermin,,villain,villain,,,253
 339,Felicia Hardy / Black Cat,Felicia Hardy,neutral,neutral,Amazing Spider-Man #194,1979,3
 340,"S-01, S-02, S-03 (Oscorp robots)","S-01, S-02, S-03",villain,villains,,,232
 341,Natie (piranha cross-species),Natie,villain,villain,,,195
-342,Dennis Carradine / Burglar,Dennis Carradine,villain,villain,,,78
+342,Dennis Carradine / Burglar,Dennis Carradine,villain,villain,Amazing Fantasy #15,1962,78
 343,Cletus Kasady / Carnage Killer / Carnage,Cletus Kasady,villain,villain,,,6
-344,Chameleon / Dmitri Smerdyakov,Chameleon,villain,villain (post-credits),,,7
+344,Chameleon / Dmitri Smerdyakov,Chameleon,villain,villain (post-credits),The Amazing Spider-Man #1,1963,7
 345,Spider-Girl / Mayday Parker,Spider-Girl,hero,hero,,,35
 346,Spider-Ham / Peter Porker,Spider-Ham,hero,hero,,,36
-347,Spider-Gwen / Gwen Stacy,Spider-Gwen,hero,hero,,,16
+347,Spider-Gwen / Gwen Stacy,Spider-Gwen,hero,hero,The Amazing Spider-Man #31,1965,16
 348,Silk / Cindy Moon,Silk,hero,hero,,,33
-349,Spider-Punk / Hobart Brown,Spider-Punk,hero,hero,,,38
+349,Spider-Punk / Hobart Brown,Spider-Punk,hero,hero,Amazing Spider-Man,,38
 350,Kaine / Scarlet Spider,Kaine,hero,hero,,,155
-351,Gold Goblin,,villain,villain,,,117
+351,Gold Goblin,,villain,villain,The Amazing Spider-Man #14,1964,117
 352,Morlun,,villain,villain,,,190
 353,Karn,,villain,villain,,,159
 354,Daemos,,villain,villain,,,88
@@ -360,20 +360,20 @@ id,name,alias,alignment,alignment_raw,first_comic_title,first_comic_year,identit
 359,Hydro-Man,,villain,villain,,,131
 360,Thanos,,villain,villain (event),,,246
 361,Iron Man / Tony Stark,Iron Man,hero,hero,,,136
-362,Hulk / Bruce Banner,Hulk,hero,hero,,,18
-363,Captain America / Steve Rogers,Captain America,hero,hero,,,5
+362,Hulk / Bruce Banner,Hulk,hero,hero,Incredible Hulk #1,1962,18
+363,Captain America / Steve Rogers,Captain America,hero,hero,Captain America Comics #1,1941,5
 364,Wolverine / Logan,Wolverine,hero,hero,,,46
-365,Mister Fantastic / Reed Richards,Mister Fantastic,hero,hero,,,187
+365,Mister Fantastic / Reed Richards,Mister Fantastic,hero,hero,Fantastic Four #1,1961,187
 366,Loki,,villain,villain,,,164
-367,Doctor Doom / Victor von Doom,Doctor Doom,villain,villain,,,9
-368,Magneto,,villain,villain,,,171
+367,Doctor Doom / Victor von Doom,Doctor Doom,villain,villain,Fantastic Four #5,1962,9
+368,Magneto,,villain,villain,X-Men #1,1963,171
 369,Galactus,,villain,villain,,,111
 370,Silver Surfer / Norrin Radd,Silver Surfer,neutral,neutral,,,202
 371,Deadpool / Wade Wilson,Deadpool,neutral,narrator/bonus,,,91
 372,"""Carnom"" (Venom/Carnage fusion)","""Carnom""",villain,villain,,,81
 373,Green Goblin 2099,,villain,villain,,,118
 374,Captain Marvel / Carol Danvers,Captain Marvel,hero,hero,,,79
-375,Star-Lord / Peter Quill,Star-Lord,hero,hero,,,211
+375,Star-Lord / Peter Quill,Star-Lord,hero,hero,X-Men #129,1980,211
 376,Doctor Strange / Stephen Strange,Doctor Strange,hero,hero,,,11
 377,Black Panther / T'Challa,Black Panther,hero,hero,,,69
 378,Daredevil / Matt Murdock,Daredevil,hero,hero,,,8
@@ -396,7 +396,7 @@ id,name,alias,alignment,alignment_raw,first_comic_title,first_comic_year,identit
 395,Hammerhead (DLC),Hammerhead,villain,villain,Amazing Spider-Man #113,1972,122
 396,Walter Hardy (DLC),Walter Hardy,neutral,neutral,Amazing Spider-Man #1,1963,256
 397,Ganke Lee,,neutral,neutral,Ultimate Spider-Man #2,2011,113
-398,Phin Mason / Tinkerer,Phin Mason,villain,villain,,,42
+398,Phin Mason / Tinkerer,Phin Mason,villain,villain,The Amazing Spider-Man #2,1963,42
 399,Simon Krieger,,villain,villain,Iron Man #219,1987,236
 400,Danika Hart,,neutral,neutral,Miles Morales: Spider-Man #1,2019,90
 401,Hailey Cooper,,neutral,neutral,,,121

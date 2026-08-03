@@ -1,421 +1,421 @@
 id,name,birth_date,death_date,birth_place,nationality,imdb_id,wikidata_id,tmdb_id,external_match_method
-1,Nicholas Hammond,1950-05-15,,"Washington, D.C., USA",,nm0358749,Q266520,29095,work_credits
-2,David White,1916-04-04,1990-11-27,"Denver, Colorado, USA",,nm0924668,Q535967,141694,work_credits
-3,Robert F. Simon,1908-12-02,1992-11-29,"Mansfield, Ohio, USA",,nm0800359,Q3435069,106506,work_credits
-4,Robert Alda,1914-02-26,1986-05-03,"New York City, New York, USA",,nm0017376,Q2061166,95732,work_credits
-5,Ellen Bry,1951-02-13,,"New York City, New York, USA",,nm0116885,Q5364770,1216952,work_credits
-6,Rosalind Chao,1957-09-23,,"Los Angeles, California, USA",,nm0001034,Q253578,74073,work_credits
-7,Richard Erdman,1925-06-01,2019-03-16,"Enid, Oklahoma, USA",,nm0258757,Q2149430,9110,work_credits
-8,Shinji Tōdō,1955-03-01,,"Kanagawa Prefecture, Japan",,nm0443226,Q11623715,1621846,search_verified
-9,Noboru Nakaya,1929-05-04,2006-11-16,"Minato, Tokyo, Japan",,nm0620407,Q11378599,140106,search_verified
-10,Tobey Maguire,1975-06-27,,"Santa Monica, California, USA",,nm0001497,Q165524,2219,work_credits
-11,Willem Dafoe,1955-07-22,,"Appleton, Wisconsin, USA",,nm0000353,Q188772,5293,work_credits
-12,Kirsten Dunst,1982-04-30,,"Point Pleasant, New Jersey, USA",,nm0000379,Q76478,205,work_credits
-13,James Franco,1978-04-19,,"Palo Alto, California, USA",,nm0290556,Q306403,17051,work_credits
-14,J. K. Simmons,1955-01-09,,"Detroit, Michigan, USA",,nm0799777,Q150482,18999,work_credits
-15,Joe Manganiello,1976-12-28,,"Pittsburgh, Pennsylvania, USA",,nm0542133,Q470005,20580,work_credits
-16,Bill Nunn,1953-10-20,2016-09-24,"Pittsburgh, Pennsylvania, USA",,nm0638056,Q279834,5502,work_credits
-17,Alfred Molina,1953-05-24,,"London, England, UK",,nm0000547,Q296028,658,work_credits
-18,Rosemary Harris,1927-09-19,,"Suffolk, England, UK",,nm0365281,Q234195,18998,work_credits
-19,Donna Murphy,1959-03-07,,"Corona, New York, USA",,nm0614220,Q439457,2517,work_credits
-20,Daniel Gillies,1976-03-14,,"Winnipeg, Manitoba, Canada",,nm0319171,Q512006,19154,work_credits
-21,Thomas Haden Church,1960-06-17,,"Yolo County, California, USA",,nm0002006,Q311615,19159,work_credits
-22,Bryce Dallas Howard,1981-03-02,,"Los Angeles, California, USA",,nm0397171,Q229775,18997,work_credits
-23,James Cromwell,1940-01-27,,"Los Angeles, California, USA",,nm0000342,Q299483,2505,work_credits
-24,Andrew Garfield,1983-08-20,,"Los Angeles, California, USA",,nm1940449,Q23891,37625,work_credits
-25,Emma Stone,1988-11-06,,"Scottsdale, Arizona, USA",,nm1297015,Q147077,54693,work_credits
-26,Rhys Ifans,1967-07-22,,"Haverfordwest, Pembrokeshire, Wales, UK",,nm0406975,Q215017,7026,work_credits
-27,Denis Leary,1957-08-18,,"Worcester, Massachusetts, USA",,nm0001459,Q310283,5724,work_credits
-28,Campbell Scott,1961-07-19,,"New York City, New York, USA",,nm0001714,Q528527,55152,work_credits
-29,Chris Zylka,1985-05-09,,"Warren, Ohio, USA",,nm3024712,Q507888,231547,work_credits
-30,Irrfan Khan,1967-01-07,2020-04-29,"Jaipur, Rajasthan, India",,nm0451234,Q360927,76793,work_credits
-31,Jamie Foxx,1967-12-13,,"Terrell, Texas, USA",,nm0004937,Q171905,134,work_credits
-32,Dane DeHaan,1986-02-06,,"Allentown, Pennsylvania, USA ",,nm2851530,Q860876,122889,work_credits
-33,Paul Giamatti,1967-06-06,,"New Haven, Connecticut, USA",,nm0316079,Q208649,13242,work_credits
-34,Colm Feore,1958-08-22,,"Boston, Massachusetts, USA",,nm0272173,Q449679,10132,work_credits
-35,Tom Holland,1996-06-01,,"Kingston upon Thames, London, England, UK",,nm4043618,Q2023710,1136406,work_credits
-36,Michael Keaton,1951-09-05,,"Coraopolis, Pennsylvania, USA",,nm0000474,Q138005,2232,work_credits
-37,Robert Downey Jr.,1965-04-04,,"New York City, New York, USA",,nm0000375,Q165219,3223,work_credits
-38,Marisa Tomei,1964-12-04,,"Brooklyn, New York City, New York, USA",,nm0000673,Q191828,3141,work_credits
-39,Jon Favreau,1966-10-19,,"Queens, New York City, New York, USA",,nm0269463,Q295964,15277,work_credits
-40,Gwyneth Paltrow,1972-09-27,,"Los Angeles, California, USA",,nm0000569,Q34460,12052,work_credits
-41,Tony Revolori,1996-04-28,,"Anaheim, California, USA",,nm1727825,Q16237562,1291350,work_credits
-42,Bokeem Woodbine,1973-04-13,,"Harlem, New York City, New York, USA",,nm0940158,Q1139685,71913,work_credits
-43,Tyne Daly,1946-02-21,,"Madison, Wisconsin, USA",,nm0002033,Q255651,66221,work_credits
-44,Shameik Moore,1995-05-04,,"Atlanta, Georgia, USA",,nm4271336,Q16236922,587506,work_credits
-45,Jake Johnson,1978-05-28,,"Evanston, Illinois, USA",,nm2159926,Q171525,543505,work_credits
-46,Hailee Steinfeld,1996-12-11,,"Tarzana, Los Angeles, California, USA",,nm2794962,Q231726,130640,work_credits
-47,Brian Tyree Henry,1982-03-31,,"Fayetteville, North Carolina, USA",,nm3109964,Q26924801,226366,work_credits
-48,Luna Lauren Vélez,1964-11-02,,"Brooklyn, New York City, New York, USA",,nm0904967,Q235359,141610,work_credits
-49,Lily Tomlin,1939-09-01,,"Detroit, Michigan, USA",,nm0005499,Q229271,10437,work_credits
-50,John Mulaney,1982-08-26,,"Chicago, Illinois, USA",,nm1825214,Q6249723,933558,work_credits
-51,Kimiko Glenn,1989-06-27,,"Phoenix, Arizona, USA",,nm4733752,Q17581497,1443708,work_credits
-52,Nicolas Cage,1964-01-07,,"Long Beach, California, USA",,nm0000115,Q42869,2963,work_credits
-53,Liev Schreiber,1967-10-04,,"San Francisco, California, USA",,nm0000630,Q298368,23626,work_credits
-54,Jake Gyllenhaal,1980-12-19,,"Los Angeles, California, USA",,nm0350453,Q133313,131,work_credits
-55,Samuel L. Jackson,1948-12-21,,"Washington, D.C., USA",,nm0000168,Q172678,2231,work_credits
-56,Cobie Smulders,1982-04-03,,"Vancouver, British Columbia, Canada",,nm1130627,Q200566,71189,work_credits
-57,Jacob Batalon,1996-10-09,,"Honolulu, Hawaii, USA",,nm8188622,Q26213909,1649152,work_credits
-58,Martin Starr,1982-07-30,,"Santa Monica, California, USA",,nm0771414,Q716343,41089,work_credits
-59,J. B. Smoove,,,,,,,,
-60,Benedict Wong,1971-07-03,,"Eccles, Salford, Greater Manchester, England, UK",,nm0938950,Q3329808,30082,work_credits
-61,Oscar Isaac,1979-03-09,,"Guatemala City, Guatemala",,nm1209966,Q336788,25072,work_credits
-62,Jason Schwartzman,1980-06-26,,"Los Angeles, California, USA",,nm0005403,Q313705,17881,work_credits
-63,Daniel Kaluuya,1989-02-24,,"London, England, UK",,nm2257207,Q510970,206919,work_credits
-64,Karan Soni,1989-01-08,,"New Delhi, India",,nm4175221,Q22815258,1109702,work_credits
-65,Lauren Vélez,,,,,,,,
-66,Shea Whigham,1969-01-05,,"Tallahassee, Florida, USA",,nm0924154,Q3959303,74242,work_credits
-67,Mahershala Ali,1974-02-16,,"Oakland, California, USA",,nm0991810,Q360531,932967,work_credits
-68,Jharrel Jerome,1997-10-09,,"The Bronx, New York City, New York, USA",,nm7851611,Q27442165,1664716,work_credits
-69,Tom Hardy,1977-09-15,,"Hammersmith, London, England, UK",,nm0362766,Q208026,2524,work_credits
-70,Michelle Williams,1980-09-09,,"Kalispell, Montana, USA",,nm0931329,Q156796,1812,work_credits
-71,Riz Ahmed,1982-12-01,,"Wembley, London, England, UK",,nm1981893,Q1861917,53240,work_credits
-72,Scott Haze,1983-06-28,,"Dallas, Texas, USA",,nm2020278,Q7436480,87954,work_credits
-73,Jenny Slate,1982-03-25,,"Milton, Massachusetts, USA",,nm2809577,Q744166,213001,work_credits
-74,Woody Harrelson,1961-07-23,,"Midland, Texas, USA",,nm0000437,Q201279,57755,work_credits
-75,Peggy Lu,1963-02-22,,"New York City, New York, USA",,nm0523742,Q109986660,2141479,work_credits
-76,Melora Walters,1959-10-21,,"Dhahran, Saudi Arabia",,nm0001828,Q242763,4766,work_credits
-77,Naomie Harris,1976-09-06,,"Islington, London, England, UK",,nm0365140,Q156586,2038,work_credits
-78,Reid Scott,1977-11-19,,"Albany, New York, USA",,nm1169428,Q2139900,81316,work_credits
-79,Matt Smith,1982-10-28,,"Northampton, Northamptonshire, England, UK",,nm1741002,Q312385,136532,work_credits
-80,Adria Arjona,1992-04-25,,"San Juan, Puerto Rico",,nm5245722,Q18684239,1371297,work_credits
-81,Jared Harris,1961-08-24,,"London, England, UK",,nm0364813,Q362500,15440,work_credits
-82,Tyrese Gibson,1978-12-30,,"Los Angeles, California, USA",,nm0879085,Q311232,8169,work_credits
-83,Al Madrigal,1971-07-04,,"San Francisco, California, USA",,nm1371339,Q4704337,90534,work_credits
-84,Dakota Johnson,1989-10-04,,"Austin, Texas, USA",,nm0424848,Q2315802,118545,work_credits
-85,Tahar Rahim,1981-07-04,,"Belfort, Territoire de Belfort, France",,nm2588665,Q981690,81051,work_credits
-86,Emma Roberts,1991-02-10,,"Rhinebeck, New York, USA",,nm0731075,Q228598,34847,work_credits
-87,Kerry Bishé,1984-05-01,,New Zealand,,nm2628935,Q465200,58356,work_credits
-88,Mike Epps,1970-11-18,,"Indianapolis, Indiana, USA",,nm0258402,Q311962,51944,work_credits
-89,José María Yazpik,1970-11-30,,"Mexico City, Mexico",,nm0946962,Q5943686,72128,work_credits
-90,Zosia Mamet,1988-02-02,,"Randolph, Vermont, USA",,nm0541082,Q4965286,206966,work_credits
-91,Aaron Taylor-Johnson,1990-06-13,,"High Wycombe, Buckinghamshire, England, UK",,nm1093951,Q45923,27428,work_credits
-92,Fred Hechinger,1999-12-02,,"New York City, New York, USA",,nm9538520,Q104902570,2099497,work_credits
-93,Alessandro Nivola,1972-06-28,,"Boston, Massachusetts, USA",,nm0005273,Q350424,4941,work_credits
-94,Ariana DeBose,1991-01-25,,"North Carolina, USA",,nm3663196,Q27733932,1437491,work_credits
-95,Christopher Abbott,1986-02-10,,"Greenwich, Connecticut, USA",,nm3571592,Q5111829,984629,work_credits
-96,Russell Crowe,1964-04-07,,"Wellington, North Island, New Zealand",,nm0000128,Q129817,934,work_credits
-97,Murat Seven,1980-01-01,,"Berlin, Germany",,nm2103298,Q1953548,1638603,work_credits
-98,Yuri Kolokolnikov,1980-12-15,,"Moscow, Russian SFSR, USSR [now Russia]",,nm0464305,Q4228271,238130,work_credits
-99,Chiwetel Ejiofor,1977-07-10,,"Forest Gate, London, England, UK",,nm0252230,Q317343,5294,work_credits
-100,Andy Serkis,1964-04-20,,"Ruislip, Middlesex, England, UK",,nm0785227,Q206922,1333,work_credits
-101,Alanna Ubach,1975-10-03,,"Downey, California, USA",,nm0005513,Q2830641,10402,work_credits
-102,Jon Bernthal,1976-09-20,,"Washington, District of Columbia, USA",,nm1256532,Q362616,19498,work_credits
-103,Michael Mando,1981-07-13,,"Québec City, Québec, Canada",,nm3103126,Q6832484,829372,work_credits
-104,Marvin Jones III,1976-07-09,,"California, USA",,nm3993304,Q47467682,1962692,work_credits
-105,Mark Ruffalo,1967-11-22,,"Kenosha, Wisconsin, USA",,nm0749263,Q41422,103,work_credits
+1,Nicholas Hammond,1950-05-15,,"Washington, D.C., USA",United States,nm0358749,Q266520,29095,work_credits
+2,David White,1916-04-04,1990-11-27,"Denver, Colorado, USA",United States,nm0924668,Q535967,141694,work_credits
+3,Robert F. Simon,1908-12-02,1992-11-29,"Mansfield, Ohio, USA",United States,nm0800359,Q3435069,106506,work_credits
+4,Robert Alda,1914-02-26,1986-05-03,"New York City, New York, USA",United States,nm0017376,Q2061166,95732,work_credits
+5,Ellen Bry,1951-02-13,,"New York City, New York, USA",United States,nm0116885,Q5364770,1216952,work_credits
+6,Rosalind Chao,1957-09-23,,"Los Angeles, California, USA",United States,nm0001034,Q253578,74073,work_credits
+7,Richard Erdman,1925-06-01,2019-03-16,"Enid, Oklahoma, USA",United States,nm0258757,Q2149430,9110,work_credits
+8,Shinji Tōdō,1955-03-01,,"Kanagawa Prefecture, Japan",Japan,nm0443226,Q11623715,1621846,search_verified
+9,Noboru Nakaya,1929-05-04,2006-11-16,"Minato, Tokyo, Japan",Japan; Empire of Japan,nm0620407,Q11378599,140106,search_verified
+10,Tobey Maguire,1975-06-27,,"Santa Monica, California, USA",United States,nm0001497,Q165524,2219,work_credits
+11,Willem Dafoe,1955-07-22,,"Appleton, Wisconsin, USA",United States,nm0000353,Q188772,5293,work_credits
+12,Kirsten Dunst,1982-04-30,,"Point Pleasant, New Jersey, USA",United States; Germany,nm0000379,Q76478,205,work_credits
+13,James Franco,1978-04-19,,"Palo Alto, California, USA",United States,nm0290556,Q306403,17051,work_credits
+14,J. K. Simmons,1955-01-09,,"Detroit, Michigan, USA",United States,nm0799777,Q150482,18999,work_credits
+15,Joe Manganiello,1976-12-28,,"Pittsburgh, Pennsylvania, USA",United States; Italy,nm0542133,Q470005,20580,work_credits
+16,Bill Nunn,1953-10-20,2016-09-24,"Pittsburgh, Pennsylvania, USA",United States,nm0638056,Q279834,5502,work_credits
+17,Alfred Molina,1953-05-24,,"London, England, UK",United Kingdom; United States,nm0000547,Q296028,658,work_credits
+18,Rosemary Harris,1927-09-19,,"Suffolk, England, UK",United Kingdom; United States,nm0365281,Q234195,18998,work_credits
+19,Donna Murphy,1959-03-07,,"Corona, New York, USA",United States,nm0614220,Q439457,2517,work_credits
+20,Daniel Gillies,1976-03-14,,"Winnipeg, Manitoba, Canada",New Zealand; Canada,nm0319171,Q512006,19154,work_credits
+21,Thomas Haden Church,1960-06-17,,"Yolo County, California, USA",United States,nm0002006,Q311615,19159,work_credits
+22,Bryce Dallas Howard,1981-03-02,,"Los Angeles, California, USA",United States,nm0397171,Q229775,18997,work_credits
+23,James Cromwell,1940-01-27,,"Los Angeles, California, USA",United States,nm0000342,Q299483,2505,work_credits
+24,Andrew Garfield,1983-08-20,,"Los Angeles, California, USA",United Kingdom; United States,nm1940449,Q23891,37625,work_credits
+25,Emma Stone,1988-11-06,,"Scottsdale, Arizona, USA",United States,nm1297015,Q147077,54693,work_credits
+26,Rhys Ifans,1967-07-22,,"Haverfordwest, Pembrokeshire, Wales, UK",United Kingdom,nm0406975,Q215017,7026,work_credits
+27,Denis Leary,1957-08-18,,"Worcester, Massachusetts, USA",United States,nm0001459,Q310283,5724,work_credits
+28,Campbell Scott,1961-07-19,,"New York City, New York, USA",United States; Canada,nm0001714,Q528527,55152,work_credits
+29,Chris Zylka,1985-05-09,,"Warren, Ohio, USA",United States,nm3024712,Q507888,231547,work_credits
+30,Irrfan Khan,1967-01-07,2020-04-29,"Jaipur, Rajasthan, India",India,nm0451234,Q360927,76793,work_credits
+31,Jamie Foxx,1967-12-13,,"Terrell, Texas, USA",United States,nm0004937,Q171905,134,work_credits
+32,Dane DeHaan,1986-02-06,,"Allentown, Pennsylvania, USA ",United States,nm2851530,Q860876,122889,work_credits
+33,Paul Giamatti,1967-06-06,,"New Haven, Connecticut, USA",United States,nm0316079,Q208649,13242,work_credits
+34,Colm Feore,1958-08-22,,"Boston, Massachusetts, USA",Canada; United States,nm0272173,Q449679,10132,work_credits
+35,Tom Holland,1996-06-01,,"Kingston upon Thames, London, England, UK",United Kingdom,nm4043618,Q2023710,1136406,work_credits
+36,Michael Keaton,1951-09-05,,"Coraopolis, Pennsylvania, USA",United States,nm0000474,Q138005,2232,work_credits
+37,Robert Downey Jr.,1965-04-04,,"New York City, New York, USA",United States,nm0000375,Q165219,3223,work_credits
+38,Marisa Tomei,1964-12-04,,"Brooklyn, New York City, New York, USA",United States,nm0000673,Q191828,3141,work_credits
+39,Jon Favreau,1966-10-19,,"Queens, New York City, New York, USA",United States,nm0269463,Q295964,15277,work_credits
+40,Gwyneth Paltrow,1972-09-27,,"Los Angeles, California, USA",United States,nm0000569,Q34460,12052,work_credits
+41,Tony Revolori,1996-04-28,,"Anaheim, California, USA",United States,nm1727825,Q16237562,1291350,work_credits
+42,Bokeem Woodbine,1973-04-13,,"Harlem, New York City, New York, USA",United States,nm0940158,Q1139685,71913,work_credits
+43,Tyne Daly,1946-02-21,,"Madison, Wisconsin, USA",United States,nm0002033,Q255651,66221,work_credits
+44,Shameik Moore,1995-05-04,,"Atlanta, Georgia, USA",United States,nm4271336,Q16236922,587506,work_credits
+45,Jake Johnson,1978-05-28,,"Evanston, Illinois, USA",United States,nm2159926,Q171525,543505,work_credits
+46,Hailee Steinfeld,1996-12-11,,"Tarzana, Los Angeles, California, USA",United States,nm2794962,Q231726,130640,work_credits
+47,Brian Tyree Henry,1982-03-31,,"Fayetteville, North Carolina, USA",United States,nm3109964,Q26924801,226366,work_credits
+48,Luna Lauren Vélez,1964-11-02,,"Brooklyn, New York City, New York, USA",United States,nm0904967,Q235359,141610,work_credits
+49,Lily Tomlin,1939-09-01,,"Detroit, Michigan, USA",United States,nm0005499,Q229271,10437,work_credits
+50,John Mulaney,1982-08-26,,"Chicago, Illinois, USA",United States,nm1825214,Q6249723,933558,work_credits
+51,Kimiko Glenn,1989-06-27,,"Phoenix, Arizona, USA",United States,nm4733752,Q17581497,1443708,work_credits
+52,Nicolas Cage,1964-01-07,,"Long Beach, California, USA",United States,nm0000115,Q42869,2963,work_credits
+53,Liev Schreiber,1967-10-04,,"San Francisco, California, USA",United States,nm0000630,Q298368,23626,work_credits
+54,Jake Gyllenhaal,1980-12-19,,"Los Angeles, California, USA",United States,nm0350453,Q133313,131,work_credits
+55,Samuel L. Jackson,1948-12-21,,"Washington, D.C., USA",United States; Gabon,nm0000168,Q172678,2231,work_credits
+56,Cobie Smulders,1982-04-03,,"Vancouver, British Columbia, Canada",Canada; United States,nm1130627,Q200566,71189,work_credits
+57,Jacob Batalon,1996-10-09,,"Honolulu, Hawaii, USA",United States,nm8188622,Q26213909,1649152,work_credits
+58,Martin Starr,1982-07-30,,"Santa Monica, California, USA",United States,nm0771414,Q716343,41089,work_credits
+59,J. B. Smoove,1965-12-16,,"Plymouth, United States",United States,nm1356578,Q3778264,65920,
+60,Benedict Wong,1971-07-03,,"Eccles, Salford, Greater Manchester, England, UK",United Kingdom,nm0938950,Q3329808,30082,work_credits
+61,Oscar Isaac,1979-03-09,,"Guatemala City, Guatemala",Guatemala; United States,nm1209966,Q336788,25072,work_credits
+62,Jason Schwartzman,1980-06-26,,"Los Angeles, California, USA",United States,nm0005403,Q313705,17881,work_credits
+63,Daniel Kaluuya,1989-02-24,,"London, England, UK",United Kingdom,nm2257207,Q510970,206919,work_credits
+64,Karan Soni,1989-01-08,,"New Delhi, India",United States; India,nm4175221,Q22815258,1109702,work_credits
+65,Lauren Vélez,1964-11-02,,"Brooklyn, United States",United States,nm0904967,Q235359,141610,
+66,Shea Whigham,1969-01-05,,"Tallahassee, Florida, USA",United States,nm0924154,Q3959303,74242,work_credits
+67,Mahershala Ali,1974-02-16,,"Oakland, California, USA",United States,nm0991810,Q360531,932967,work_credits
+68,Jharrel Jerome,1997-10-09,,"The Bronx, New York City, New York, USA",United States,nm7851611,Q27442165,1664716,work_credits
+69,Tom Hardy,1977-09-15,,"Hammersmith, London, England, UK",United Kingdom,nm0362766,Q208026,2524,work_credits
+70,Michelle Williams,1980-09-09,,"Kalispell, Montana, USA",United States,nm0931329,Q156796,1812,work_credits
+71,Riz Ahmed,1982-12-01,,"Wembley, London, England, UK",United Kingdom,nm1981893,Q1861917,53240,work_credits
+72,Scott Haze,1983-06-28,,"Dallas, Texas, USA",United States,nm2020278,Q7436480,87954,work_credits
+73,Jenny Slate,1982-03-25,,"Milton, Massachusetts, USA",United States,nm2809577,Q744166,213001,work_credits
+74,Woody Harrelson,1961-07-23,,"Midland, Texas, USA",United States,nm0000437,Q201279,57755,work_credits
+75,Peggy Lu,1963-02-22,,"New York City, New York, USA",United States,nm0523742,Q109986660,2141479,work_credits
+76,Melora Walters,1959-10-21,,"Dhahran, Saudi Arabia",United States,nm0001828,Q242763,4766,work_credits
+77,Naomie Harris,1976-09-06,,"Islington, London, England, UK",United Kingdom,nm0365140,Q156586,2038,work_credits
+78,Reid Scott,1977-11-19,,"Albany, New York, USA",United States,nm1169428,Q2139900,81316,work_credits
+79,Matt Smith,1982-10-28,,"Northampton, Northamptonshire, England, UK",United Kingdom,nm1741002,Q312385,136532,work_credits
+80,Adria Arjona,1992-04-25,,"San Juan, Puerto Rico",United States,nm5245722,Q18684239,1371297,work_credits
+81,Jared Harris,1961-08-24,,"London, England, UK",United Kingdom,nm0364813,Q362500,15440,work_credits
+82,Tyrese Gibson,1978-12-30,,"Los Angeles, California, USA",United States,nm0879085,Q311232,8169,work_credits
+83,Al Madrigal,1971-07-04,,"San Francisco, California, USA",United States,nm1371339,Q4704337,90534,work_credits
+84,Dakota Johnson,1989-10-04,,"Austin, Texas, USA",United States,nm0424848,Q2315802,118545,work_credits
+85,Tahar Rahim,1981-07-04,,"Belfort, Territoire de Belfort, France",France,nm2588665,Q981690,81051,work_credits
+86,Emma Roberts,1991-02-10,,"Rhinebeck, New York, USA",United States,nm0731075,Q228598,34847,work_credits
+87,Kerry Bishé,1984-05-01,,New Zealand,United States; New Zealand,nm2628935,Q465200,58356,work_credits
+88,Mike Epps,1970-11-18,,"Indianapolis, Indiana, USA",United States,nm0258402,Q311962,51944,work_credits
+89,José María Yazpik,1970-11-30,,"Mexico City, Mexico",Mexico,nm0946962,Q5943686,72128,work_credits
+90,Zosia Mamet,1988-02-02,,"Randolph, Vermont, USA",United States,nm0541082,Q4965286,206966,work_credits
+91,Aaron Taylor-Johnson,1990-06-13,,"High Wycombe, Buckinghamshire, England, UK",United Kingdom,nm1093951,Q45923,27428,work_credits
+92,Fred Hechinger,1999-12-02,,"New York City, New York, USA",United States,nm9538520,Q104902570,2099497,work_credits
+93,Alessandro Nivola,1972-06-28,,"Boston, Massachusetts, USA",United Kingdom; United States; Italy,nm0005273,Q350424,4941,work_credits
+94,Ariana DeBose,1991-01-25,,"North Carolina, USA",United States,nm3663196,Q27733932,1437491,work_credits
+95,Christopher Abbott,1986-02-10,,"Greenwich, Connecticut, USA",United States,nm3571592,Q5111829,984629,work_credits
+96,Russell Crowe,1964-04-07,,"Wellington, North Island, New Zealand",New Zealand; Australia,nm0000128,Q129817,934,work_credits
+97,Murat Seven,1980-01-01,,"Berlin, Germany",Germany,nm2103298,Q1953548,1638603,work_credits
+98,Yuri Kolokolnikov,1980-12-15,,"Moscow, Russian SFSR, USSR [now Russia]",Russia; Canada; Soviet Union,nm0464305,Q4228271,238130,work_credits
+99,Chiwetel Ejiofor,1977-07-10,,"Forest Gate, London, England, UK",United Kingdom; Nigeria,nm0252230,Q317343,5294,work_credits
+100,Andy Serkis,1964-04-20,,"Ruislip, Middlesex, England, UK",United Kingdom,nm0785227,Q206922,1333,work_credits
+101,Alanna Ubach,1975-10-03,,"Downey, California, USA",United States,nm0005513,Q2830641,10402,work_credits
+102,Jon Bernthal,1976-09-20,,"Washington, District of Columbia, USA",United States,nm1256532,Q362616,19498,work_credits
+103,Michael Mando,1981-07-13,,"Québec City, Québec, Canada",Canada,nm3103126,Q6832484,829372,work_credits
+104,Marvin Jones III,1976-07-09,,"California, USA",United States,nm3993304,Q47467682,1962692,work_credits
+105,Mark Ruffalo,1967-11-22,,"Kenosha, Wisconsin, USA",United States,nm0749263,Q41422,103,work_credits
 106,Benito Antonio Martínez Ocasio,,,,,,,,
-107,Danny Seagren,1943-11-15,,"Hennepin County, Minnesota, USA",,nm0780480,Q137101462,2541828,work_credits
-108,Chip Fields,1951-08-05,,USA,,nm0276209,Q5101498,127737,work_credits
-109,Mitsuo Andō,,,,,,,,
-110,Yukie Kagawa,1948-02-01,,"Suginami, Tokyo, Japan",,nm0434600,Q11634899,142408,search_verified
-111,Paul Soles,1930-08-11,2021-05-26,"Toronto, Ontario, Canada",,nm0813015,Q3372216,1215283,work_credits
-112,Paul Kligman,1923-01-21,1985-08-29,,,nm0459470,Q3371581,1012146,work_credits
-113,Peg Dixon,1923-08-29,2015-10-01,"Winnipeg, Manitoba, Canada",,nm0228944,Q3374208,1012147,work_credits
-114,Len Carlson,1937-09-02,2006-01-26,"Keswick, Ontario, Canada",,nm0137965,Q2358361,1218561,work_credits
+107,Danny Seagren,1943-11-15,2025-11-10,"Hennepin County, Minnesota, USA",United States,nm0780480,Q137101462,2541828,work_credits
+108,Chip Fields,1951-08-05,,USA,United States,nm0276209,Q5101498,127737,work_credits
+109,Mitsuo Andō,1928-08-26,1997,"Tokyo, Japan",Japan; Empire of Japan,nm0027990,Q11451254,1322280,
+110,Yukie Kagawa,1948-02-01,,"Suginami, Tokyo, Japan",Japan,nm0434600,Q11634899,142408,search_verified
+111,Paul Soles,1930-08-11,2021-05-26,"Toronto, Ontario, Canada",Canada,nm0813015,Q3372216,1215283,work_credits
+112,Paul Kligman,1923-01-21,1985-08-29,Romania,Canada,nm0459470,Q3371581,1012146,work_credits
+113,Peg Dixon,1923-08-29,2015-10-01,"Winnipeg, Manitoba, Canada",United States,nm0228944,Q3374208,1012147,work_credits
+114,Len Carlson,1937-09-02,2006-01-26,"Keswick, Ontario, Canada",Canada,nm0137965,Q2358361,1218561,work_credits
 115,Ted Schwartz,,,,,,,,
-116,William Woodson,1917-07-16,2017-02-22,"San Bernadino, California, USA",,nm0940880,Q3569039,153322,work_credits
+116,William Woodson,1917-07-16,2017-02-22,"San Bernadino, California, USA",United States,nm0940880,Q3569039,153322,work_credits
 117,Brad Crandall,,,,,,,,
-118,Dan Gilvezan,1950-10-26,,"St. Louis, Missouri, USA",,nm0319737,Q3013086,81847,work_credits
-119,Frank Welker,1946-03-12,,"Denver, Colorado, USA",,nm0919798,Q296577,15831,work_credits
-120,Christopher Daniel Barnes,1972-11-07,,"Portland, Maine, USA",,nm0055549,Q1086631,31468,work_credits
+118,Dan Gilvezan,1950-10-26,,"St. Louis, Missouri, USA",United States,nm0319737,Q3013086,81847,work_credits
+119,Frank Welker,1946-03-12,,"Denver, Colorado, USA",United States,nm0919798,Q296577,15831,work_credits
+120,Christopher Daniel Barnes,1972-11-07,,"Portland, Maine, USA",United States,nm0055549,Q1086631,31468,work_credits
 121,Sara Ballantine,,,,,nm0050547,,127971,work_credits
-122,Roscoe Lee Browne,1922-05-02,2007-04-11,"Woodbury, New Jersey, USA",,nm0001975,Q499063,24368,work_credits
-123,Rino Romano,1969-07-01,,"Toronto, Ontario, Canada",,nm0738951,Q2707980,110799,work_credits
-124,Richard Newman,1946-11-02,,"Chicago, Illinois, USA",,nm0628236,Q2069543,46995,work_credits
-125,Brian Drummond,1969-08-10,,"Salmon Arm, British Columbia, Canada",,nm0238546,Q26741,74364,work_credits
-126,Michael Donovan,1953-06-12,," Vancouver, British Columbia, Canada",,nm0233036,Q4115621,175854,work_credits
-127,Neil Patrick Harris,1973-06-15,,"Albuquerque, New Mexico, USA",,nm0000439,Q485310,41686,work_credits
-128,Lisa Loeb,1968-03-11,,"Bethesda, Maryland, USA",,nm0005160,Q237654,98879,work_credits
-129,Michael Clarke Duncan,1957-12-10,2012-09-03,"Chicago, Illinois, USA",,nm0003817,Q483148,61981,work_credits
-130,Josh Keaton,1979-02-08,,"South Pasadena, California, USA",,nm0005079,Q2467799,20903,work_credits
-131,Lacey Chabert,1982-09-30,,"Purvis, Mississippi, USA",,nm0000327,Q232910,22082,work_credits
-132,Alan Rachins,1942-10-03,2024-11-02,"Cambridge, Massachusetts, USA",,nm0705118,Q770059,105626,work_credits
-133,Drake Bell,1986-06-27,,"Santa Ana, California, USA ",,nm0068166,Q261812,3272,work_credits
-134,Logan Miller,1992-02-18,,"Englewood, Colorado, USA",,nm2383250,Q128828,116088,work_credits
-135,Caitlyn Taylor Love,1994-06-16,,"Corpus Christi, Texas, USA",,nm3552639,Q152020,1248290,work_credits
-136,Greg Cipes,1980-01-04,,"Coral Springs, Florida, USA",,nm0996651,Q2700668,60227,work_credits
-137,Ogie Banks,1973-06-13,,"Los Angeles, California, USA",,nm1014417,Q7080030,174466,work_credits
-138,Tom Kenny,1962-07-13,,"Syracuse, New York, USA",,nm0444786,Q299282,78798,work_credits
-139,Nadji Jeter,1996-10-18,,"Atlanta, Georgia, USA",,nm2684036,Q17403382,587035,work_credits
-140,Laura Bailey,1981-05-28,,"Biloxi, Mississippi, USA",,nm1154161,Q2364867,75037,work_credits
-141,Melanie Minichino,1983-10-27,,"New York City, New York, USA",,nm1977134,Q6811321,1544176,work_credits
-142,Max Mittelman,1990-09-05,,"Los Angeles, California, USA",,nm5489754,Q20974018,1379386,work_credits
+122,Roscoe Lee Browne,1922-05-02,2007-04-11,"Woodbury, New Jersey, USA",United States,nm0001975,Q499063,24368,work_credits
+123,Rino Romano,1969-07-01,,"Toronto, Ontario, Canada",Canada,nm0738951,Q2707980,110799,work_credits
+124,Richard Newman,1946-11-02,,"Chicago, Illinois, USA",United States; Canada,nm0628236,Q2069543,46995,work_credits
+125,Brian Drummond,1969-08-10,,"Salmon Arm, British Columbia, Canada",Canada,nm0238546,Q26741,74364,work_credits
+126,Michael Donovan,1953-06-12,," Vancouver, British Columbia, Canada",Canada; United States,nm0233036,Q4115621,175854,work_credits
+127,Neil Patrick Harris,1973-06-15,,"Albuquerque, New Mexico, USA",United States,nm0000439,Q485310,41686,work_credits
+128,Lisa Loeb,1968-03-11,,"Bethesda, Maryland, USA",United States,nm0005160,Q237654,98879,work_credits
+129,Michael Clarke Duncan,1957-12-10,2012-09-03,"Chicago, Illinois, USA",United States,nm0003817,Q483148,61981,work_credits
+130,Josh Keaton,1979-02-08,,"South Pasadena, California, USA",United States,nm0005079,Q2467799,20903,work_credits
+131,Lacey Chabert,1982-09-30,,"Purvis, Mississippi, USA",United States,nm0000327,Q232910,22082,work_credits
+132,Alan Rachins,1942-10-03,2024-11-02,"Cambridge, Massachusetts, USA",United States,nm0705118,Q770059,105626,work_credits
+133,Drake Bell,1986-06-27,,"Santa Ana, California, USA ",United States,nm0068166,Q261812,3272,work_credits
+134,Logan Miller,1992-02-18,,"Englewood, Colorado, USA",United States,nm2383250,Q128828,116088,work_credits
+135,Caitlyn Taylor Love,1994-06-16,,"Corpus Christi, Texas, USA",United States,nm3552639,Q152020,1248290,work_credits
+136,Greg Cipes,1980-01-04,,"Coral Springs, Florida, USA",United States,nm0996651,Q2700668,60227,work_credits
+137,Ogie Banks,1973-06-13,,"Los Angeles, California, USA",United States,nm1014417,Q7080030,174466,work_credits
+138,Tom Kenny,1962-07-13,,"Syracuse, New York, USA",United States,nm0444786,Q299282,78798,work_credits
+139,Nadji Jeter,1996-10-18,,"Atlanta, Georgia, USA",United States,nm2684036,Q17403382,587035,work_credits
+140,Laura Bailey,1981-05-28,,"Biloxi, Mississippi, USA",United States,nm1154161,Q2364867,75037,work_credits
+141,Melanie Minichino,1983-10-27,,"New York City, New York, USA",United States,nm1977134,Q6811321,1544176,work_credits
+142,Max Mittelman,1990-09-05,,"Los Angeles, California, USA",United States,nm5489754,Q20974018,1379386,work_credits
 143,Benjamin Valic,,,,,nm10243649,,2623517,work_credits
-144,Jakari Fraser,,,,,nm7989041,,2003778,work_credits
-145,Lily Sanfelippo,,,"Los Angeles, California, USA",,nm5468824,Q133890927,2765442,work_credits
+144,Jakari Fraser,2010-07-18,,"Los Angeles, United States",United States,nm7989041,Q133934477,2003778,work_credits
+145,Lily Sanfelippo,2007-05-09,,"Los Angeles, California, USA",United States,nm5468824,Q133890927,2765442,work_credits
 146,Kelly Ohanian,,,,,nm8230520,,2991389,work_credits
-147,J. P. Karliak,,,,,,,,
-148,Hudson Thames,1994-03-19,,"Los Angeles, California, USA",,nm1997794,Q131875786,1820720,work_credits
-149,Kari Wahlgren,1977-07-13,,"Hoisington, Kansas, USA",,nm1312566,Q272919,116315,work_credits
+147,J. P. Karliak,1981-05-11,,"Scranton, United States",United States,nm2765391,Q107598247,1541380,
+148,Hudson Thames,1994-03-19,,"Los Angeles, California, USA",United States,nm1997794,Q131875786,1820720,work_credits
+149,Kari Wahlgren,1977-07-13,,"Hoisington, Kansas, USA",United States,nm1312566,Q272919,116315,work_credits
 150,Grace Song,2001-03-30,,"Los Angeles, California, USA",,nm7372075,,2189912,work_credits
-151,Eugene Byrd,1975-08-28,,"Philadelphia, Pennsylvania, USA",,nm0126021,Q1319913,342,work_credits
-152,Colman Domingo,1969-11-28,,"Philadelphia, Pennsylvania, USA",,nm0231458,Q5147723,91671,work_credits
-153,Hugh Dancy,1975-06-19,,"Staffordshire, England, UK",,nm0199215,Q314603,12791,work_credits
-154,Charlie Cox,1982-12-15,,"London, England, UK",,nm1214435,Q454231,23458,work_credits
-155,Michael Pataki,1938-01-16,2010-04-15,"Youngstown, Ohio, USA",,nm0329029,Q959750,15993,work_credits
-156,Lisa Eilbacher,1956-05-05,,"Dhahran, Saudi Arabia",,nm0002060,Q261797,779,work_credits
-157,Jeff Donnell,1921-07-10,1988-04-11,"Windham, Maine, USA",,nm0232655,Q275769,14576,work_credits
-158,Hilly Hicks,1950-05-04,,"Los Angeles, California, USA",,nm0382859,Q5764205,1213887,work_credits
-159,Thayer David,1927-03-04,1978-07-17,"Medford, Massachusetts, USA",,nm0203076,Q738838,16524,work_credits
+151,Eugene Byrd,1975-08-28,,"Philadelphia, Pennsylvania, USA",United States,nm0126021,Q1319913,342,work_credits
+152,Colman Domingo,1969-11-28,,"Philadelphia, Pennsylvania, USA",United States,nm0231458,Q5147723,91671,work_credits
+153,Hugh Dancy,1975-06-19,,"Staffordshire, England, UK",United Kingdom,nm0199215,Q314603,12791,work_credits
+154,Charlie Cox,1982-12-15,,"London, England, UK",United Kingdom; United States,nm1214435,Q454231,23458,work_credits
+155,Michael Pataki,1938-01-16,2010-04-15,"Youngstown, Ohio, USA",United States,nm0329029,Q959750,15993,work_credits
+156,Lisa Eilbacher,1956-05-05,,"Dhahran, Saudi Arabia",United States,nm0002060,Q261797,779,work_credits
+157,Jeff Donnell,1921-07-10,1988-04-11,"Windham, Maine, USA",United States,nm0232655,Q275769,14576,work_credits
+158,Hilly Hicks,1950-05-04,,"Los Angeles, California, USA",United States,nm0382859,Q5764205,1213887,work_credits
+159,Thayer David,1927-03-04,1978-07-17,"Medford, Massachusetts, USA",United States,nm0203076,Q738838,16524,work_credits
 160,Robert Hastings,,,,,,,,
-161,Ivor Francis,1918-10-26,1986-10-22," Toronto, Ontario, Canada",,nm0290179,Q15455578,84327,work_credits
-162,E. W. Swackhamer,1927-01-17,1994-12-05,"Middletown, New Jersey, USA",,nm0841416,Q3045749,133115,work_credits
-163,Alvin Boretz,,,,,nm0096395,Q15435251,1221571,work_credits
-164,Charles W. Fries,1953-09-15,,,,nm0295594,Q5083197,48806,work_credits
+161,Ivor Francis,1918-10-26,1986-10-22," Toronto, Ontario, Canada",Canada,nm0290179,Q15455578,84327,work_credits
+162,E. W. Swackhamer,1927-01-17,1994-12-05,"Middletown, New Jersey, USA",United States,nm0841416,Q3045749,133115,work_credits
+163,Alvin Boretz,1919-06-15,2010-07-22,"New York City, United States",United States,nm0096395,Q15435251,1221571,work_credits
+164,Charles W. Fries,1953-09-15,2021-04-22,"Cincinnati, United States",United States,nm0295594,Q5083197,48806,work_credits
 165,Daniel R. Goodman,,,,,,,,
-166,Edward J. Montagne,,,,,,,,
-167,Johnnie Spence,,,,,,,,
+166,Edward J. Montagne,1885-05-18,1932-09-15,"London, United Kingdom",,nm0002771,Q104865611,1811820,
+167,Johnnie Spence,1936-02-04,1977-08-15,,United Kingdom,nm0817787,Q45852887,,
 168,Fred Jackman Jr.,1913-01-08,1982-12-09,"Los Angeles, California, USA",,nm0005747,Q123496266,52759,work_credits
-169,Aaron Stell,1911-03-26,1996-01-07,"Pennsylvania, USA",,nm0824473,Q14920558,8484,work_credits
-170,Joanna Cameron,1948-09-20,2021-10-15,"Aspen, Colorado, USA",,nm0131622,Q10307042,130327,work_credits
-171,Randy Powell,1950-04-14,,"Iowa City, Iowa, USA",,nm0694277,Q3418834,1222004,work_credits
-172,Lawrence P. Casey,1940-11-08,,"New York City, New York, USA",,nm0143472,Q2384502,1425467,work_credits
-173,Simon Scott,1920-09-21,1991-12-11,"Monterey Park, California, USA",,nm0779794,Q3484444,1221841,work_credits
-174,Ron Satlof,1938-10-27,2018-07-02,"New York City, New York, USA",,nm0766191,Q3441449,120837,work_credits
-175,Robert Janes,1940-07-07,,"Tulsa, Oklahoma, USA",,,,1672659,work_credits
+169,Aaron Stell,1911-03-26,1996-01-07,"Pennsylvania, USA",United States,nm0824473,Q14920558,8484,work_credits
+170,Joanna Cameron,1948-09-20,2021-10-15,"Aspen, Colorado, USA",United States,nm0131622,Q10307042,130327,work_credits
+171,Randy Powell,1950-04-14,,"Iowa City, Iowa, USA",United States,nm0694277,Q3418834,1222004,work_credits
+172,Lawrence P. Casey,1940-11-08,,"New York City, New York, USA",United States,nm0143472,Q2384502,1425467,work_credits
+173,Simon Scott,1920-09-21,1991-12-11,"Monterey Park, California, USA",United States,nm0779794,Q3484444,1221841,work_credits
+174,Ron Satlof,1938-10-27,2018-07-02,"New York City, New York, USA",United States,nm0766191,Q3441449,120837,work_credits
+175,Robert Janes,1940-07-07,,"Tulsa, Oklahoma, USA",,,Q139124602,1672659,work_credits
 176,Jack Whitman,1908-01-18,1998-05-07,,,nm0926146,,1377141,work_credits
-177,Benson Fong,1916-10-10,1987-08-01,"Sacramento, California",,nm0284538,Q2896707,91254,work_credits
-178,John Milford,1927-09-07,2000-08-14,"Johnstown, New York, USA",,nm0587333,Q3182090,151547,work_credits
-179,Hagan Beggs,1937-03-19,2016-09-16,"Belfast, Northern Ireland, UK",,nm0066732,Q27110343,27126,work_credits
-180,Ted Danson,1947-12-29,,"San Diego, California, USA",,nm0001101,Q381203,12836,work_credits
-181,Don McDougall,1917-09-28,1991-02-07,"San Francisco, California, USA",,nm0568228,Q3035839,15702,work_credits
-182,Lionel E. Siegel,1927-11-30,,,,nm0796971,Q131321954,40379,work_credits
-183,Dana Kaproff,1954-04-24,,"Los Angeles, California, USA",,nm0006149,Q1159227,96286,work_credits
+177,Benson Fong,1916-10-10,1987-08-01,"Sacramento, California",United States,nm0284538,Q2896707,91254,work_credits
+178,John Milford,1927-09-07,2000-08-14,"Johnstown, New York, USA",United States,nm0587333,Q3182090,151547,work_credits
+179,Hagan Beggs,1937-03-19,2016-09-16,"Belfast, Northern Ireland, UK",Canada,nm0066732,Q27110343,27126,work_credits
+180,Ted Danson,1947-12-29,,"San Diego, California, USA",United States,nm0001101,Q381203,12836,work_credits
+181,Don McDougall,1917-09-28,1991-02-07,"San Francisco, California, USA",United States,nm0568228,Q3035839,15702,work_credits
+182,Lionel E. Siegel,1927-11-30,2013-07-25,"Chicago, United States",United States,nm0796971,Q131321954,40379,work_credits
+183,Dana Kaproff,1954-04-24,,"Los Angeles, California, USA",United States,nm0006149,Q1159227,96286,work_credits
 184,Vincent A. Martinelli,,,,,nm0553391,,1309766,work_credits
-185,Erwin Dumbrille,1930-10-18,2013-01-29,"Traverse City, Michigan, USA",,nm0241524,Q19502250,930561,work_credits
-186,Fred Roth,,,,,nm0744848,,578935,work_credits
-187,Kōichi Takemoto,1928-06-01,1993-03-18,"Wakayama, Japan",,nm0847544,Q11599160,1621872,search_verified
-188,Susumu Takaku,,,,,,,,
+185,Erwin Dumbrille,1930-10-18,2013-01-29,"Traverse City, Michigan, USA",United States,nm0241524,Q19502250,930561,work_credits
+186,Fred Roth,1941-02-27,2002-04-18,"Chemnitz, Germany",,nm0744848,Q133718521,578935,work_credits
+187,Kōichi Takemoto,1928-06-01,1993-03-18,"Wakayama, Japan",Japan; Empire of Japan,nm0847544,Q11599160,1621872,search_verified
+188,Susumu Takaku,1933-01-11,2009-07-22,"Fukushima Prefecture, Japan",Japan; Empire of Japan,nm2952841,Q11668666,85283,
 189,Saburo Yatsude,,,,,nm2120520,Q568876,1096135,search_verified
-190,Susumu Yoshikawa,,,,,,,,
+190,Susumu Yoshikawa,1935-10-13,2020-07-10,"Setagaya, Japan",Japan; Empire of Japan,nm0948993,Q11413104,1322283,
 191,Michiaki Watanabe (Chumei Watanabe),,,,,,,,
-192,Cliff Robertson,1923-09-09,2011-09-10,"Los Angeles, California, USA",,nm0731772,Q181899,19153,work_credits
-193,Michael Papajohn,1964-11-07,,"Birmingham, Alabama, USA",,nm0660244,Q948751,20582,work_credits
-194,Sam Raimi,1959-10-23,,"Royal Oak, Michigan, USA",,nm0000600,Q275402,7623,work_credits
-195,David Koepp,1963-06-09,,"Pewaukee, Wisconsin, USA",,nm0462895,Q270178,508,work_credits
-196,Laura Ziskin,1950-03-03,2011-06-12,,,nm0957205,Q270533,7627,work_credits
-197,Ian Bryce,1956-11-30,,"Totnes, Devon, England, UK",,nm0117290,Q536964,9987,work_credits
-198,Danny Elfman,1953-05-29,,"Los Angeles, California, USA",,nm0000384,Q193338,531,work_credits
-199,Don Burgess,1956-05-28,,"Santa Monica, California, USA",,nm0121281,Q484980,36,work_credits
-200,Bob Murawski,1964-06-14,,,,nm0613657,Q888156,7712,work_credits
-201,Arthur Coburn,,,,,nm0167986,Q28704998,800,work_credits
-202,Dylan Baker,1959-10-07,,"Syracuse, New York, USA",,nm0048414,Q726128,19152,work_credits
-203,Alvin Sargent,1927-04-12,2019-05-09,"Philadelphia, Pennsylvania, USA",,nm0765091,Q449238,7630,work_credits
-204,Alfred Gough,1967-08-22,,"Leonardtown, Maryland, USA",,nm0332184,Q622651,18924,work_credits
-205,Miles Millar,1967-01-01,,UK,,nm0587692,Q1074029,18923,work_credits
-206,Michael Chabon,1963-05-24,,"Washington, District of Columbia, USA",,nm0149290,Q313466,67758,work_credits
-207,Avi Arad,1948-08-01,,"Givatayim, Israel",,nm0032696,Q545394,7626,work_credits
-208,Bill Pope,1952-06-19,,"Bowling Green, Kentucky, USA",,nm0691084,Q795025,9341,work_credits
-209,Neil Spisak,,,,,nm0819105,Q18224176,11411,work_credits
-210,Topher Grace,1978-07-12,,"New York City, New York, USA",,nm0333410,Q277978,17052,work_credits
-211,Ivan Raimi,1956-06-21,,"Michigan, USA",,nm0706898,Q1134855,7629,work_credits
-212,Grant Curtis,,,,,nm0193344,Q1027954,7628,work_credits
-213,Christopher Young,1957-04-28,,"Redbank, New Jersey, USA",,nm0002366,Q504078,19155,work_credits
-214,Martin Sheen,1940-08-03,,"Dayton, Ohio, USA",,nm0000640,Q184572,8349,work_credits
-215,Sally Field,1946-11-06,,"Pasadena, California, USA",,nm0000398,Q187033,35,work_credits
-216,Embeth Davidtz,1965-08-11,,"Lafayette, Indiana, USA",,nm0001110,Q260622,6368,work_credits
-217,Marc Webb,1974-08-31,,"Bloomington, Indiana, USA",,nm1989536,Q357998,87742,work_credits
-218,James Vanderbilt,1975-11-17,,"Norwalk, Connecticut, USA",,nm0888743,Q919049,20204,work_credits
-219,Steve Kloves,1960-03-18,,"Austin, Texas, USA",,nm0460141,Q362061,10967,work_credits
-220,Matt Tolmach,1964-01-01,,"New York City, New York, USA",,nm0866157,Q42898094,977941,work_credits
-221,James Horner,1953-08-14,2015-06-22,"Los Angeles, California, USA",,nm0000035,Q106221,1729,work_credits
-222,John Schwartzman,1960-10-18,,"Los Angeles, California, USA",,nm0006701,Q1370528,892,work_credits
-223,Alan Edward Bell,,,,,nm0068008,,66519,work_credits
-224,Pietro Scalia,1960-03-17,,"Catania, Sicily, Italy",,nm0768817,Q1970454,950,work_credits
-225,Alex Kurtzman,1973-09-07,,"Los Angeles, California, USA",,nm0476064,Q432598,15345,work_credits
-226,Roberto Orci,1973-07-20,2025-02-25,"Mexico City, Distrito Federal, Mexico [now Mexico City, Mexico]",,nm0649460,Q467500,15346,work_credits
-227,Jeff Pinkner,1964-11-16,,USA,,nm0684374,Q3267145,168309,work_credits
-228,Hans Zimmer,1957-09-12,,"Frankfurt am Main, Germany",,nm0001877,Q76364,947,work_credits
+192,Cliff Robertson,1923-09-09,2011-09-10,"Los Angeles, California, USA",United States,nm0731772,Q181899,19153,work_credits
+193,Michael Papajohn,1964-11-07,,"Birmingham, Alabama, USA",United States,nm0660244,Q948751,20582,work_credits
+194,Sam Raimi,1959-10-23,,"Royal Oak, Michigan, USA",United States,nm0000600,Q275402,7623,work_credits
+195,David Koepp,1963-06-09,,"Pewaukee, Wisconsin, USA",United States,nm0462895,Q270178,508,work_credits
+196,Laura Ziskin,1950-03-03,2011-06-12,"San Fernando Valley, United States",United States,nm0957205,Q270533,7627,work_credits
+197,Ian Bryce,1956-11-30,,"Totnes, Devon, England, UK",United Kingdom,nm0117290,Q536964,9987,work_credits
+198,Danny Elfman,1953-05-29,,"Los Angeles, California, USA",United States,nm0000384,Q193338,531,work_credits
+199,Don Burgess,1956-05-28,,"Santa Monica, California, USA",United States,nm0121281,Q484980,36,work_credits
+200,Bob Murawski,1964-06-14,,"Detroit, United States",United States,nm0613657,Q888156,7712,work_credits
+201,Arthur Coburn,1955-07-06,,"New Jersey, United States",United States,nm0167986,Q28704998,800,work_credits
+202,Dylan Baker,1959-10-07,,"Syracuse, New York, USA",United States,nm0048414,Q726128,19152,work_credits
+203,Alvin Sargent,1927-04-12,2019-05-09,"Philadelphia, Pennsylvania, USA",United States,nm0765091,Q449238,7630,work_credits
+204,Alfred Gough,1967-08-22,,"Leonardtown, Maryland, USA",United States,nm0332184,Q622651,18924,work_credits
+205,Miles Millar,1967-01-01,,UK,United Kingdom,nm0587692,Q1074029,18923,work_credits
+206,Michael Chabon,1963-05-24,,"Washington, District of Columbia, USA",United States,nm0149290,Q313466,67758,work_credits
+207,Avi Arad,1948-08-01,,"Givatayim, Israel",Israel; United States,nm0032696,Q545394,7626,work_credits
+208,Bill Pope,1952-06-19,,"Bowling Green, Kentucky, USA",United States,nm0691084,Q795025,9341,work_credits
+209,Neil Spisak,1956-02-07,,United States,United States,nm0819105,Q18224176,11411,work_credits
+210,Topher Grace,1978-07-12,,"New York City, New York, USA",United States,nm0333410,Q277978,17052,work_credits
+211,Ivan Raimi,1956-06-21,,"Michigan, USA",United States,nm0706898,Q1134855,7629,work_credits
+212,Grant Curtis,1972,,"Warrensburg, United States",United States,nm0193344,Q1027954,7628,work_credits
+213,Christopher Young,1957-04-28,,"Redbank, New Jersey, USA",United States,nm0002366,Q504078,19155,work_credits
+214,Martin Sheen,1940-08-03,,"Dayton, Ohio, USA",United States; Ireland,nm0000640,Q184572,8349,work_credits
+215,Sally Field,1946-11-06,,"Pasadena, California, USA",United States,nm0000398,Q187033,35,work_credits
+216,Embeth Davidtz,1965-08-11,,"Lafayette, Indiana, USA",United States; South Africa,nm0001110,Q260622,6368,work_credits
+217,Marc Webb,1974-08-31,,"Bloomington, Indiana, USA",United States,nm1989536,Q357998,87742,work_credits
+218,James Vanderbilt,1975-11-17,,"Norwalk, Connecticut, USA",United States,nm0888743,Q919049,20204,work_credits
+219,Steve Kloves,1960-03-18,,"Austin, Texas, USA",United States,nm0460141,Q362061,10967,work_credits
+220,Matt Tolmach,1964-01-01,,"New York City, New York, USA",United States,nm0866157,Q42898094,977941,work_credits
+221,James Horner,1953-08-14,2015-06-22,"Los Angeles, California, USA",United States,nm0000035,Q106221,1729,work_credits
+222,John Schwartzman,1960-10-18,,"Los Angeles, California, USA",United States,nm0006701,Q1370528,892,work_credits
+223,Alan Edward Bell,,,"Los Angeles, United States",,nm0068008,Q95855736,66519,work_credits
+224,Pietro Scalia,1960-03-17,,"Catania, Sicily, Italy",Italy,nm0768817,Q1970454,950,work_credits
+225,Alex Kurtzman,1973-09-07,,"Los Angeles, California, USA",United States,nm0476064,Q432598,15345,work_credits
+226,Roberto Orci,1973-07-20,2025-02-25,"Mexico City, Distrito Federal, Mexico [now Mexico City, Mexico]",United States; Mexico,nm0649460,Q467500,15346,work_credits
+227,Jeff Pinkner,1964-11-16,,USA,United States,nm0684374,Q3267145,168309,work_credits
+228,Hans Zimmer,1957-09-12,,"Frankfurt am Main, Germany",Germany; United States,nm0001877,Q76364,947,work_credits
 229,The Magnificent Six,,,,,,,,
-230,Dan Mindel,1958-05-27,,"Johannesburg, South Africa",,nm0591053,Q969766,15348,work_credits
-231,Zendaya,1996-09-01,,"Oakland, California, USA",,nm3918035,Q189489,505710,work_credits
-232,Laura Harrier,1990-03-28,,"Chicago, Illinois, USA",,nm5637553,Q23894602,1606394,work_credits
-233,Donald Glover,1983-09-25,,"Stone Mountain, Georgia, USA",,nm2255973,Q1239933,119589,work_credits
-234,Jon Watts,1981-06-28,,"Fountain, Colorado, USA",,nm1218281,Q18519749,1293994,work_credits
-235,Jonathan Goldstein,1969-01-01,,"New York City, New York, USA",,nm0326246,Q6273224,1236679,work_credits
-236,John Francis Daley,1985-07-20,,"Wheeling, Illinois, USA",,nm0197855,Q342636,52935,work_credits
+230,Dan Mindel,1958-05-27,,"Johannesburg, South Africa",South Africa; United States,nm0591053,Q969766,15348,work_credits
+231,Zendaya,1996-09-01,,"Oakland, California, USA",United States,nm3918035,Q189489,505710,work_credits
+232,Laura Harrier,1990-03-28,,"Chicago, Illinois, USA",United States,nm5637553,Q23894602,1606394,work_credits
+233,Donald Glover,1983-09-25,,"Stone Mountain, Georgia, USA",United States,nm2255973,Q1239933,119589,work_credits
+234,Jon Watts,1981-06-28,,"Fountain, Colorado, USA",United States,nm1218281,Q18519749,1293994,work_credits
+235,Jonathan Goldstein,1969-01-01,,"New York City, New York, USA",United States,nm0326246,Q6273224,1236679,work_credits
+236,John Francis Daley,1985-07-20,,"Wheeling, Illinois, USA",United States,nm0197855,Q342636,52935,work_credits
 237,Christopher Ford,,,,,nm1755986,Q26268901,101814,work_credits
-238,Chris McKenna,1969-12-03,,"Santa Monica, California, USA",,nm0571344,Q5107425,1246890,work_credits
-239,Erik Sommers,1976-12-16,,"Syracuse, New York, USA",,nm1273099,Q26268915,1350918,work_credits
-240,Kevin Feige,1973-06-02,,"Boston, Massachusetts, USA",,nm0270559,Q515161,10850,work_credits
-241,Amy Pascal,1958-03-25,,"Los Angeles, California, USA",,nm1166871,Q481925,1425616,work_credits
-242,Michael Giacchino,1967-10-10,,"Riverside, New Jersey, USA",,nm0315974,Q155124,15347,work_credits
-243,Salvatore Totino,1964-01-10,,"Brooklyn, New York, USA",,nm0869379,Q782204,8408,work_credits
-244,Dan Lebental,,,USA,,nm0495603,Q3013121,11455,work_credits
+238,Chris McKenna,1969-12-03,,"Santa Monica, California, USA",United States,nm0571344,Q5107425,1246890,work_credits
+239,Erik Sommers,1976-12-16,,"Syracuse, New York, USA",United States,nm1273099,Q26268915,1350918,work_credits
+240,Kevin Feige,1973-06-02,,"Boston, Massachusetts, USA",United States,nm0270559,Q515161,10850,work_credits
+241,Amy Pascal,1958-03-25,,"Los Angeles, California, USA",United States,nm1166871,Q481925,1425616,work_credits
+242,Michael Giacchino,1967-10-10,,"Riverside, New Jersey, USA",United States,nm0315974,Q155124,15347,work_credits
+243,Salvatore Totino,1964-01-10,,"Brooklyn, New York, USA",United States,nm0869379,Q782204,8408,work_credits
+244,Dan Lebental,1970-08-06,,USA,United States,nm0495603,Q3013121,11455,work_credits
 245,Debbie Berman,1978-12-28,,"Johannesburg, South Africa",,nm1651766,Q67005543,71270,work_credits
-246,Chris Pine,1980-08-26,,"Los Angeles, California, USA",,nm1517976,Q23466,62064,work_credits
-247,Bob Persichetti,1970-09-28,,"Los Angeles County, California, USA",,nm2130108,Q60784779,936670,work_credits
-248,Peter Ramsey,1962-12-23,,"Los Angeles, California, USA",,nm0709056,Q7176523,151007,work_credits
-249,Rodney Rothman,1974-01-01,,"Los Angeles, California, USA",,nm0745247,Q7357051,59918,work_credits
-250,Phil Lord,1975-07-12,,"Miami, Florida, USA",,nm0520488,Q3378803,107446,work_credits
-251,Christopher Miller,1975-09-23,,"Everett, Washington, USA",,nm0588087,Q13638984,155267,work_credits
+246,Chris Pine,1980-08-26,,"Los Angeles, California, USA",United States,nm1517976,Q23466,62064,work_credits
+247,Bob Persichetti,1970-09-28,,"Los Angeles County, California, USA",United States,nm2130108,Q60784779,936670,work_credits
+248,Peter Ramsey,1962-12-23,,"Los Angeles, California, USA",United States,nm0709056,Q7176523,151007,work_credits
+249,Rodney Rothman,1974-01-01,,"Los Angeles, California, USA",United States,nm0745247,Q7357051,59918,work_credits
+250,Phil Lord,1975-07-12,,"Miami, Florida, USA",United States,nm0520488,Q3378803,107446,work_credits
+251,Christopher Miller,1975-09-23,,"Everett, Washington, USA",United States,nm0588087,Q13638984,155267,work_credits
 252,Christina Steinberg,,,,,nm0825730,Q25266001,35666,work_credits
-253,Daniel Pemberton,1977-11-03,,UK,,nm1207404,Q5218424,582922,work_credits
+253,Daniel Pemberton,1977-11-03,,UK,United Kingdom,nm1207404,Q5218424,582922,work_credits
 254,Robert Fisher Jr.,,,,,nm0279352,Q63920578,993265,work_credits
-255,Matthew J. Lloyd,,,Canada ,,nm2028938,Q28914993,1094152,work_credits
+255,Matthew J. Lloyd,1984,,Canada ,Canada,nm2028938,Q28914993,1094152,work_credits
 256,Leigh Folsom Boyd,,,,,nm0284404,Q28020099,1204244,work_credits
-257,Benedict Cumberbatch,1976-07-19,,"Hammersmith, London, England, UK",,nm1212722,Q244674,71580,work_credits
-258,Mauro Fiore,1964-11-17,,"Marzi, Calabria, Italy",,nm0278475,Q926054,18265,work_credits
-259,Jeffrey Ford,1968-02-16,,"Novato, California, USA",,nm0285701,Q11309299,35176,work_credits
-260,Issa Rae,1985-01-12,,"Los Angeles, California, USA",,nm4793987,Q13560267,1455336,work_credits
-261,Joaquim Dos Santos,1977-06-22,,"Lisbon, Portugal",,nm1690966,Q3247370,89596,work_credits
-262,Kemp Powers,1973-10-30,,"Brooklyn, New York City, New York, USA",,nm5358492,Q79360684,2451598,work_credits
+257,Benedict Cumberbatch,1976-07-19,,"Hammersmith, London, England, UK",United Kingdom,nm1212722,Q244674,71580,work_credits
+258,Mauro Fiore,1964-11-17,,"Marzi, Calabria, Italy",Italy; United States,nm0278475,Q926054,18265,work_credits
+259,Jeffrey Ford,1968-02-16,,"Novato, California, USA",United States,nm0285701,Q11309299,35176,work_credits
+260,Issa Rae,1985-01-12,,"Los Angeles, California, USA",United States,nm4793987,Q13560267,1455336,work_credits
+261,Joaquim Dos Santos,1977-06-22,,"Lisbon, Portugal",United States; Portugal,nm1690966,Q3247370,89596,work_credits
+262,Kemp Powers,1973-10-30,,"Brooklyn, New York City, New York, USA",United States,nm5358492,Q79360684,2451598,work_credits
 263,Justin K. Thompson,1981-01-09,,"New York City, New York, USA",,nm1042511,Q119243833,1046497,work_credits
 264,Dave Callaham,,,,,,,,
-265,Michael Andrews,,,,,nm0028788,Q32920702,1546437,work_credits
-266,Ruben Fleischer,1974-10-31,,"Washington, D.C., USA",,nm0281508,Q521691,91268,work_credits
-267,Scott Rosenberg,1963-04-24,,"Needham, Massachusetts, USA",,nm0003298,Q3476302,3228,work_credits
-268,Kelly Marcel,1974-01-10,,"London, England, UK",,nm0545150,Q6386180,940376,work_credits
-269,Ludwig Göransson,1984-09-01,,"Linköping, Sweden",,nm3234869,Q1358202,928158,work_credits
-270,Matthew Libatique,1968-07-19,,"Queens, New York City, New York, USA",,nm0508732,Q617690,4867,work_credits
-271,Maryann Brandon,,,USA,,nm0104783,Q3850525,15349,work_credits
-272,Alan Baumgarten,1957-02-01,,,,nm0062328,Q15782002,10393,work_credits
-273,Stephen Graham,1973-08-03,,"Kirkby, England, UK",,nm0334318,Q442547,1115,work_credits
-274,Hutch Parker,1963-11-19,,"Philadelphia, Pennsylvania, USA",,nm0404446,Q63197006,584598,work_credits
-275,Marco Beltrami,1966-10-07,,"Long Island, New York, USA",,nm0001937,Q465754,7229,work_credits
-276,Robert Richardson,1955-08-27,,"Hyannis, Massachusetts, USA",,nm0724744,Q364017,149,work_credits
-277,Stan Salfas,,,,,nm0758159,,181856,work_credits
-278,Jared Leto,1971-12-26,,"Bossier City, Louisiana, USA",,nm0001467,Q484523,7499,work_credits
-279,Daniel Espinosa,1977-03-23,,"Trångsund, Sweden",,nm1174251,Q977624,125738,work_credits
+265,Michael Andrews,,,,United States,nm0028788,Q32920702,1546437,work_credits
+266,Ruben Fleischer,1974-10-31,,"Washington, D.C., USA",United States,nm0281508,Q521691,91268,work_credits
+267,Scott Rosenberg,1963-04-24,,"Needham, Massachusetts, USA",United States,nm0003298,Q3476302,3228,work_credits
+268,Kelly Marcel,1974-01-10,,"London, England, UK",United Kingdom,nm0545150,Q6386180,940376,work_credits
+269,Ludwig Göransson,1984-09-01,,"Linköping, Sweden",Sweden,nm3234869,Q1358202,928158,work_credits
+270,Matthew Libatique,1968-07-19,,"Queens, New York City, New York, USA",United States,nm0508732,Q617690,4867,work_credits
+271,Maryann Brandon,2000-01-01,,USA,United States,nm0104783,Q3850525,15349,work_credits
+272,Alan Baumgarten,1957-02-01,,"Los Angeles, United States",United States,nm0062328,Q15782002,10393,work_credits
+273,Stephen Graham,1973-08-03,,"Kirkby, England, UK",United Kingdom,nm0334318,Q442547,1115,work_credits
+274,Hutch Parker,1963-11-19,,"Philadelphia, Pennsylvania, USA",United States,nm0404446,Q63197006,584598,work_credits
+275,Marco Beltrami,1966-10-07,,"Long Island, New York, USA",United States,nm0001937,Q465754,7229,work_credits
+276,Robert Richardson,1955-08-27,,"Hyannis, Massachusetts, USA",United States,nm0724744,Q364017,149,work_credits
+277,Stan Salfas,,,,,nm0758159,Q136344793,181856,work_credits
+278,Jared Leto,1971-12-26,,"Bossier City, Louisiana, USA",United States,nm0001467,Q484523,7499,work_credits
+279,Daniel Espinosa,1977-03-23,,"Trångsund, Sweden",Sweden,nm1174251,Q977624,125738,work_credits
 280,Matt Sazama,,,USA,,nm1948885,Q27061530,1167472,work_credits
 281,Burk Sharpless,,,USA,,nm2332952,Q27061532,1167473,work_credits
-282,Lucas Foster,,,,,nm0287946,Q24049005,11695,work_credits
-283,Jon Ekstrand,,,,,nm0252528,Q1584183,1077404,work_credits
-284,Oliver Wood,1942-02-21,2023-02-13,"London, England",,nm0005929,Q1449586,11409,work_credits
-285,Sydney Sweeney,1997-09-12,,"Spokane, Washington, USA",,nm2858875,Q49561909,115440,work_credits
-286,Isabela Merced,2001-07-10,,"Cleveland, Ohio, USA",,nm5097044,Q20830731,1428070,work_credits
-287,Celeste O'Connor,1998-12-02,,"Nairobi, Kenya",,nm9305936,Q97065529,1972881,work_credits
-288,Adam Scott,1973-04-03,,"Santa Cruz, California, USA",,nm0004395,Q201842,36801,work_credits
-289,S. J. Clarkson,,,,,,,,
+282,Lucas Foster,1984-06-08,,"New York City, United States",,nm0287946,Q24049005,11695,work_credits
+283,Jon Ekstrand,1976-12-14,,"Tumba, Sweden",Sweden,nm0252528,Q1584183,1077404,work_credits
+284,Oliver Wood,1942-02-21,2023-02-13,"London, England",United Kingdom,nm0005929,Q1449586,11409,work_credits
+285,Sydney Sweeney,1997-09-12,,"Spokane, Washington, USA",United States,nm2858875,Q49561909,115440,work_credits
+286,Isabela Merced,2001-07-10,,"Cleveland, Ohio, USA",United States; Peru,nm5097044,Q20830731,1428070,work_credits
+287,Celeste O'Connor,1998-12-02,,"Nairobi, Kenya",Kenya; United States,nm9305936,Q97065529,1972881,work_credits
+288,Adam Scott,1973-04-03,,"Santa Cruz, California, USA",United States,nm0004395,Q201842,36801,work_credits
+289,S. J. Clarkson,1970,,"England, United Kingdom",United Kingdom,nm1237416,Q7387197,223551,
 290,Claire Parker,,,,,nm1491771,,125252,work_credits
-291,Kerem Sanga,,,,,nm2596636,Q113740346,1327643,work_credits
-292,Lorenzo di Bonaventura,1957-01-13,,"New York City, New York, USA",,nm0225146,Q636664,10952,work_credits
-293,Johan Söderqvist,1966-02-11,,"Täby, Stockholms län, Sweden",,nm0845542,Q957964,32717,work_credits
-294,Levi Miller,2002-09-30,,"Brisbane, Queensland, Australia",,nm5920962,Q18581761,1313583,work_credits
-295,Billy Barratt,2007-06-16,,"Brixton, London, England, UK",,nm7811397,Q78747611,1840063,work_credits
-296,Diaana Babnicova,2009-06-01,,"Manchester, Greater Manchester, England, UK",,nm10996873,Q106724678,2812421,work_credits
-297,J.C. Chandor,1973-11-24,,,,nm1170855,Q1676295,556172,work_credits
-298,Art Marcum,,,,,nm1436466,Q15069840,18873,work_credits
-299,Matt Holloway,,,,,nm0391344,Q15069853,18875,work_credits
-300,Richard Wenk,,,"Plainfield, New Jersey, USA",,nm0921013,Q3934894,22814,work_credits
+291,Kerem Sanga,,,,Turkey,nm2596636,Q113740346,1327643,work_credits
+292,Lorenzo di Bonaventura,1957-01-13,,"New York City, New York, USA",United States,nm0225146,Q636664,10952,work_credits
+293,Johan Söderqvist,1966-02-11,,"Täby, Stockholms län, Sweden",Sweden,nm0845542,Q957964,32717,work_credits
+294,Levi Miller,2002-09-30,,"Brisbane, Queensland, Australia",Australia,nm5920962,Q18581761,1313583,work_credits
+295,Billy Barratt,2007-06-16,,"Brixton, London, England, UK",United Kingdom,nm7811397,Q78747611,1840063,work_credits
+296,Diaana Babnicova,2009-06-01,,"Manchester, Greater Manchester, England, UK",United Kingdom; Ghana,nm10996873,Q106724678,2812421,work_credits
+297,J.C. Chandor,1973-11-24,,"Morristown, United States",United States,nm1170855,Q1676295,556172,work_credits
+298,Art Marcum,1950,,United States,United States,nm1436466,Q15069840,18873,work_credits
+299,Matt Holloway,1953-01-01,,United States,United States,nm0391344,Q15069853,18875,work_credits
+300,Richard Wenk,1956-01-01,,"Plainfield, New Jersey, USA",United States,nm0921013,Q3934894,22814,work_credits
 301,David Householter,,,,,,,,
-302,Benjamin Wallfisch,1979-01-01,,"London, England, UK",,nm1818744,Q6056440,40825,work_credits
-303,Evgueni Galperine,1974-01-01,,"Tcheliabinsk, Ural, Russia",,nm1342398,Q3061565,41572,work_credits
-304,Sacha Galperine,1980-05-02,,"Tcheliabinsk, Ural, Russia",,nm3601893,Q23926436,1180402,work_credits
-305,Ben Davis,1962-01-01,,"London, England, UK",,nm1023204,Q4885518,22161,work_credits
-306,Chris Lebenzon,,,,,,,,
-307,Juno Temple,1989-07-21,,"Hammersmith, London, England, UK",,nm1017334,Q234434,36594,work_credits
-308,Clark Backo,1993-09-05,,"Montréal, Québec, Canada",,nm5318871,Q64869409,1861573,work_credits
-309,Cristo Fernández,1991-01-27,,"Guadalajara, Jalisco, Mexico",,nm9434831,Q110273210,2627590,work_credits
-310,Dan Deacon,1981-08-28,,"West Babylon, New York, USA",,nm3247266,Q2279286,583871,work_credits
-311,Fabian Wagner,1978-04-25,,"München, Germany",,nm1234835,Q15507934,1345974,work_credits
-312,Mark Sanger,1974-01-13,,"Hemel Hempstead, Hertfordshire, England, UK",,nm0002747,Q15694643,1084741,work_credits
-313,Sadie Sink,2002-04-16,,"Brenham, Texas, USA",,nm5584750,Q27452406,1590797,work_credits
-314,Liza Colón-Zayas,1972-07-15,,"Bronx, New York City, New York, USA",,nm1154919,Q11833191,59693,work_credits
-315,Destin Daniel Cretton,1978-11-23,,"Haiku, Hawaii, USA",,nm2308774,Q15972939,1144604,work_credits
-316,Jonás Cuarón,,,,,,,,
-317,Gareth Dunnet-Alcocer,,,,,,,,
-318,Morgan Freeman,1937-06-01,,"Memphis, Tennessee, USA",,nm0000151,Q48337,192,work_credits
-319,Skip Hinnant,1940-11-12,," Chincoteague Island, Virginia U.S.",,nm0385830,Q15503273,73029,work_credits
-320,Judy Graubart,,,,,nm0336103,Q6304468,1236512,work_credits
-321,Jim Boyd,1933-11-11,2013-01-02,"Philadelphia, Pennsylvania, USA",,nm2398206,Q2900257,1236513,work_credits
-322,Stan Lee,1922-12-28,2018-11-12,"New York City, New York, USA",,nm0498278,Q181900,7624,work_credits
-323,Steve Ditko,1927-11-02,2018-06-29,"Johnstown, Pennsylvania, USA",,nm0228492,Q355652,7625,search_verified
-324,Gary William Friedman,,,,,,,,
-325,Stu Phillips,1929-09-09,,USA,,nm0006225,Q1534615,32779,search_verified
-326,Rika Miura,1958-11-15,,"Iwaizumi, Japan",,,Q3543875,1621867,search_verified
-327,Izumi Ōyama,,,,,,,,
+302,Benjamin Wallfisch,1979-01-01,,"London, England, UK",United Kingdom,nm1818744,Q6056440,40825,work_credits
+303,Evgueni Galperine,1974-01-01,,"Tcheliabinsk, Ural, Russia",France,nm1342398,Q3061565,41572,work_credits
+304,Sacha Galperine,1980-05-02,,"Tcheliabinsk, Ural, Russia",France,nm3601893,Q23926436,1180402,work_credits
+305,Ben Davis,1962-01-01,,"London, England, UK",United Kingdom,nm1023204,Q4885518,22161,work_credits
+306,Chris Lebenzon,1953-10-29,,"Redwood City, United States",United States,nm0495605,Q1077467,541,
+307,Juno Temple,1989-07-21,,"Hammersmith, London, England, UK",United Kingdom,nm1017334,Q234434,36594,work_credits
+308,Clark Backo,1993-09-05,,"Montréal, Québec, Canada",Canada,nm5318871,Q64869409,1861573,work_credits
+309,Cristo Fernández,1991-01-27,,"Guadalajara, Jalisco, Mexico",Mexico,nm9434831,Q110273210,2627590,work_credits
+310,Dan Deacon,1981-08-28,,"West Babylon, New York, USA",United States,nm3247266,Q2279286,583871,work_credits
+311,Fabian Wagner,1978-04-25,,"München, Germany",Germany,nm1234835,Q15507934,1345974,work_credits
+312,Mark Sanger,1974-01-13,,"Hemel Hempstead, Hertfordshire, England, UK",United Kingdom,nm0002747,Q15694643,1084741,work_credits
+313,Sadie Sink,2002-04-16,,"Brenham, Texas, USA",United States,nm5584750,Q27452406,1590797,work_credits
+314,Liza Colón-Zayas,1972-07-15,,"Bronx, New York City, New York, USA",United States,nm1154919,Q11833191,59693,work_credits
+315,Destin Daniel Cretton,1978-11-23,,"Haiku, Hawaii, USA",United States,nm2308774,Q15972939,1144604,work_credits
+316,Jonás Cuarón,1981-12-01,,"Mexico City, Mexico",Mexico,nm0190861,Q15142000,1003190,
+317,Gareth Dunnet-Alcocer,1990-01-09,,,,nm3722546,Q121463264,1578121,
+318,Morgan Freeman,1937-06-01,,"Memphis, Tennessee, USA",United States,nm0000151,Q48337,192,work_credits
+319,Skip Hinnant,1940-11-12,," Chincoteague Island, Virginia U.S.",United States,nm0385830,Q15503273,73029,work_credits
+320,Judy Graubart,1943-10-05,,"Fort Worth, United States",United States,nm0336103,Q6304468,1236512,work_credits
+321,Jim Boyd,1933-11-11,2013-01-02,"Philadelphia, Pennsylvania, USA",United States,nm2398206,Q2900257,1236513,work_credits
+322,Stan Lee,1922-12-28,2018-11-12,"New York City, New York, USA",United States,nm0498278,Q181900,7624,work_credits
+323,Steve Ditko,1927-11-02,2018-06-29,"Johnstown, Pennsylvania, USA",United States,nm0228492,Q355652,7625,search_verified
+324,Gary William Friedman,1901,,"Brooklyn, United States",United States,nm0295218,Q5526164,1020067,
+325,Stu Phillips,1929-09-09,,USA,United States,nm0006225,Q1534615,32779,search_verified
+326,Rika Miura,1958-11-15,,"Iwaizumi, Japan",Japan,,Q3543875,1621867,search_verified
+327,Izumi Ōyama,1957-05-01,,"Sapporo, Japan",Japan,,Q27150671,,
 328,Yoshiharu Yabuki,,,,,,,,
-329,Shōzō Uehara,1937-02-06,2020-01-02,"Okinawa-ken, Okinawa, Japan",,nm1063074,Q11358600,1197207,search_verified
+329,Shōzō Uehara,1937-02-06,2020-01-02,"Okinawa-ken, Okinawa, Japan",Japan; Empire of Japan,nm1063074,Q11358600,1197207,search_verified
 330,Michiaki Watanabe,,,,,,,,
-331,Gene Pelc,,,,,,,,
-332,Bernard Cowan,1922-06-11,1990-07-17," Vancouver, British Columbia, Canada",,nm0184526,Q2897726,1334112,work_credits
+331,Gene Pelc,1944-04-16,,,United States,nm2086273,Q132192637,,
+332,Bernard Cowan,1922-06-11,1990-07-17," Vancouver, British Columbia, Canada",Canada,nm0184526,Q2897726,1334112,work_credits
 333,Robert L. Lawrence,,,,,,,,
-334,Ralph Bakshi,1938-10-29,,"Haifa, Mandatory Palestine [now Israel]",,nm0000835,Q315441,16384,work_credits
-335,Ray Patterson,,,,,,,,
-336,Paul Francis Webster,,,,,,,,
+334,Ralph Bakshi,1938-10-29,,"Haifa, Mandatory Palestine [now Israel]",United States,nm0000835,Q315441,16384,work_credits
+335,Ray Patterson,1911-11-23,2001-12-30,"Hollywood, United States",United States,nm0666362,Q3930636,117060,
+336,Paul Francis Webster,1907-12-20,1984-03-18,"New York City, United States",United States,nm0916990,Q1620897,19103,
 337,Bob Harris,,,,,,,,
-338,Ray Ellis,,,,,,,,
-339,Morgan Lofting,1949-02-15,,"Cincinnati, Ohio, USA",,nm0517456,Q131380236,1236185,work_credits
-340,Mona Marshall,1947-08-31,,"Los Angeles, California, USA",,nm0551065,Q261865,111466,work_credits
-341,Lee Bailey,,,,,,,,
+338,Ray Ellis,1923-07-28,2008-10-27,,United States,nm0086417,Q7297449,33536,
+339,Morgan Lofting,1949-02-15,2024-11-27,"Cincinnati, Ohio, USA",,nm0517456,Q131380236,1236185,work_credits
+340,Mona Marshall,1947-08-31,,"Los Angeles, California, USA",United States,nm0551065,Q261865,111466,work_credits
+341,Lee Bailey,1926-11-15,2003-10-16,,,,Q39039593,,
 342,Arthur Vitello,,,,,,,,
-343,David H. DePatie,1929-12-24,2021-09-23,"Los Angeles, California, USA",,nm0220039,Q543171,34732,work_credits
-344,Lee Gunther,1935-05-30,1998-08-25,"Los Angeles, California, USA",,nm0348383,Q6513738,1088275,work_credits
-345,Johnny Douglas,1920-06-19,2003-04-20," London, England, UK",,nm0235127,Q1702312,33779,work_credits
-346,Wally Burr,,,,,,,,
-347,Kathy Garver,1945-12-13,,"Long Beach, California, USA",,nm0308744,Q6377230,1214463,work_credits
-348,June Foray,1917-09-18,2017-07-26,"Springfield, Massachusetts, USA",,nm0004931,Q241646,15098,work_credits
-349,Dick Tufeld,1926-12-11,2012-01-22,"Los Angeles, California, USA",,nm0876185,Q5273483,165898,work_credits
-350,Don Jurwich,,,,,,,,
+343,David H. DePatie,1929-12-24,2021-09-23,"Los Angeles, California, USA",United States,nm0220039,Q543171,34732,work_credits
+344,Lee Gunther,1935-05-30,1998-08-25,"Los Angeles, California, USA",United States,nm0348383,Q6513738,1088275,work_credits
+345,Johnny Douglas,1920-06-19,2003-04-20," London, England, UK",United Kingdom,nm0235127,Q1702312,33779,work_credits
+346,Wally Burr,1924-06-02,2017-07-09,"Chicago, United States",United States,nm0123030,Q7963313,1236184,
+347,Kathy Garver,1945-12-13,,"Long Beach, California, USA",United States,nm0308744,Q6377230,1214463,work_credits
+348,June Foray,1917-09-18,2017-07-26,"Springfield, Massachusetts, USA",United States,nm0004931,Q241646,15098,work_credits
+349,Dick Tufeld,1926-12-11,2012-01-22,"Los Angeles, California, USA",United States,nm0876185,Q5273483,165898,work_credits
+350,Don Jurwich,1934-01-01,2021-07-13,,,nm0433034,Q116272535,81825,
 351,Dennis Marks,,,,,,,,
-352,Ed Asner,1929-11-15,2021-08-29,"Kansas City, Missouri, USA",,nm0000799,Q154421,68812,work_credits
-353,Rodney Saulsberry,1956-07-11,,"Detroit, Michigan, USA",,nm0766697,Q3438239,159068,work_credits
-354,Jennifer Hale,1972-01-01,,"Goose Bay, Newfoundland, Canada",,nm0354937,Q195041,81667,work_credits
-355,Gary Imhoff,1952-08-27,,"Milwaukee, Wisconsin, USA",,nm0408189,Q5525287,148116,work_credits
-356,John Semper,,,,,,,,
-357,Bob Richardson,,,,,nm0724436,Q16735198,87170,work_credits
-358,Shuki Levy,1947-06-03,,"Tel Aviv, Israel",,nm0506619,Q2056096,50099,search_verified
+352,Ed Asner,1929-11-15,2021-08-29,"Kansas City, Missouri, USA",United States,nm0000799,Q154421,68812,work_credits
+353,Rodney Saulsberry,1956-07-11,,"Detroit, Michigan, USA",United States,nm0766697,Q3438239,159068,work_credits
+354,Jennifer Hale,1972-01-01,,"Goose Bay, Newfoundland, Canada",Canada,nm0354937,Q195041,81667,work_credits
+355,Gary Imhoff,1952-08-27,,"Milwaukee, Wisconsin, USA",United States,nm0408189,Q5525287,148116,work_credits
+356,John Semper,1950,,,United States,nm0783889,Q6257284,1220904,
+357,Bob Richardson,1901,,,United States,nm0724436,Q16735198,87170,work_credits
+358,Shuki Levy,1947-06-03,,"Tel Aviv, Israel",Israel; United States,nm0506619,Q2056096,50099,search_verified
 359,Kussa Mahchi,,,,,,,,
-360,John Payne,1960-05-17,,"Leicester, Leicestershire, England, UK",,nm0668362,Q6252337,94168,work_credits
-361,Will Meugniot,,,,,nm0582798,Q8002972,87177,work_credits
-362,Patrick Archibald,,,,,nm0033773,Q11886879,1242435,work_credits
-363,Jeremy Sweet,,,,,,,,
+360,John Payne,1960-05-17,,"Leicester, Leicestershire, England, UK",United Kingdom,nm0668362,Q6252337,94168,work_credits
+361,Will Meugniot,1951-07-24,,,United States,nm0582798,Q8002972,87177,work_credits
+362,Patrick Archibald,,,,United States,nm0033773,Q11886879,1242435,work_credits
+363,Jeremy Sweet,1950,,,United States,nm0842268,Q3177353,,
 364,Ian Nickus,,,,,,,,
-365,Eric S. Rollman,,,,,nm0738472,,69664,work_credits
-366,Ian Ziering,1964-03-30,,"Newark, New Jersey, USA",,nm0005575,Q352233,19146,work_credits
-367,Keith Carradine,1949-08-08,,"San Mateo, California, USA",,nm0001018,Q433417,30613,work_credits
-368,Angelle Brooks,1967-08-11,,"Miami, Florida, USA",,nm0111860,Q4762810,92931,work_credits
-369,Brian Michael Bendis,1967-08-18,,"Cleveland, Ohio, USA",,nm1144314,Q720012,1382000,work_credits
-370,Morgan Gendel,1952-01-01,,,,nm0312663,Q6911671,157839,work_credits
+365,Eric S. Rollman,,,,,nm0738472,Q11290947,69664,work_credits
+366,Ian Ziering,1964-03-30,,"Newark, New Jersey, USA",United States,nm0005575,Q352233,19146,work_credits
+367,Keith Carradine,1949-08-08,,"San Mateo, California, USA",United States,nm0001018,Q433417,30613,work_credits
+368,Angelle Brooks,1967-08-11,,"Miami, Florida, USA",United States,nm0111860,Q4762810,92931,work_credits
+369,Brian Michael Bendis,1967-08-18,,"Cleveland, Ohio, USA",United States,nm1144314,Q720012,1382000,work_credits
+370,Morgan Gendel,1952-01-01,,,United States,nm0312663,Q6911671,157839,work_credits
 371,Marsha Griffin,,,,,nm0341297,,1237907,work_credits
-372,John Digweed,,,,,,,,
-373,Nick Muir,,,,,,,,
-374,James Arnold Taylor,1969-07-22,,"Santa Barbara, California, USA",,nm0852517,Q2536187,19506,work_credits
-375,Daran Norris,1964-11-01,,"Ferndale, Washington, USA",,nm0358460,Q723021,31162,work_credits
-376,Vanessa Marshall,1969-10-19,,"Los Angeles, California, USA",,nm0551223,Q2259686,81663,work_credits
-377,Greg Weisman,1963-09-28,,"Woodland Hills, Los Angeles, California, USA",,nm0918852,Q1544996,106827,work_credits
-378,Victor Cook,,,,,nm0177328,Q3557235,56851,work_credits
+372,John Digweed,1967-01-01,,"Hastings, United Kingdom",United Kingdom,nm0226613,Q303847,,
+373,Nick Muir,,,,,,Q7027583,,
+374,James Arnold Taylor,1969-07-22,,"Santa Barbara, California, USA",United States,nm0852517,Q2536187,19506,work_credits
+375,Daran Norris,1964-11-01,,"Ferndale, Washington, USA",United States,nm0358460,Q723021,31162,work_credits
+376,Vanessa Marshall,1969-10-19,,"Los Angeles, California, USA",United States,nm0551223,Q2259686,81663,work_credits
+377,Greg Weisman,1963-09-28,,"Woodland Hills, Los Angeles, California, USA",United States,nm0918852,Q1544996,106827,work_credits
+378,Victor Cook,1960,,"Saitama, Japan",United States,nm0177328,Q3557235,56851,work_credits
 379,Diane A. Crea,,,,,,,,
-380,Kristopher Carter,1972-02-05,,"San Antonio, Texas, USA",,nm0141766,Q950086,497701,work_credits
+380,Kristopher Carter,1972-02-05,,"San Antonio, Texas, USA",United States,nm0141766,Q950086,497701,work_credits
 381,Michael McCuistion,,,,,nm0567090,,1521139,work_credits
-382,Lolita Ritmanis,1962-11-01,,"Portland, Oregon, USA",,nm0728667,Q512322,1376311,work_credits
-383,Matt Lanter,1983-04-01,,"Massillon, Ohio, USA",,nm1782667,Q312535,34202,work_credits
-384,Paul Dini,1957-08-07,,"New York City, New York, USA",,nm0227704,Q636303,1211813,work_credits
-385,Joe Kelly,,,,,nm2399856,Q730076,207269,work_credits
-386,Steven T. Seagle,,,,,,,,
-387,Alex Soto,,,,,,,,
-388,Kevin Manthei,,,,,nm0543663,Q4280641,1464806,work_credits
-389,Robbie Daymond,1982-03-11,,"Chesterfield, Missouri, USA",,nm2837894,Q17581437,229434,work_credits
-390,Scott Menville,1971-02-12,,"Malibu, California, USA",,nm0579914,Q3090527,113916,work_credits
-391,Kevin Shinick,1969-03-19,,"Merrick, New York, USA",,nm1161949,Q3195805,1219677,work_credits
-392,Philip Pignotti,,,,,,,,
+382,Lolita Ritmanis,1962-11-01,,"Portland, Oregon, USA",United States,nm0728667,Q512322,1376311,work_credits
+383,Matt Lanter,1983-04-01,,"Massillon, Ohio, USA",United States,nm1782667,Q312535,34202,work_credits
+384,Paul Dini,1957-08-07,,"New York City, New York, USA",United States,nm0227704,Q636303,1211813,work_credits
+385,Joe Kelly,1971-09-01,,,United States,nm2399856,Q730076,207269,work_credits
+386,Steven T. Seagle,1965-03-31,,"Colorado Springs, United States",United States,nm2400268,Q7615312,1237903,
+387,Alex Soto,1965-07-29,2015-04-09,"San Juan, United States",United States,,Q19801028,,
+388,Kevin Manthei,1970-01-01,,"Maplewood, United States",United States,nm0543663,Q4280641,1464806,work_credits
+389,Robbie Daymond,1982-03-11,,"Chesterfield, Missouri, USA",United States,nm2837894,Q17581437,229434,work_credits
+390,Scott Menville,1971-02-12,,"Malibu, California, USA",United States,nm0579914,Q3090527,113916,work_credits
+391,Kevin Shinick,1969-03-19,,"Merrick, New York, USA",United States,nm1161949,Q3195805,1219677,work_credits
+392,Philip Pignotti,,,,,nm0683094,Q29032897,,
 393,Dan Duncan,,,,,nm5363370,,1896378,work_credits
 394,Collette Sunderman,,,,,,,,
 395,Kris Zimmerman-Salter,,,,,,,,
-396,Dee Bradley Baker,1962-08-31,,"Bloomington, Indiana, USA",,nm0048389,Q837676,23680,work_credits
+396,Dee Bradley Baker,1962-08-31,,"Bloomington, Indiana, USA",United States,nm0048389,Q837676,23680,work_credits
 397,Harrison Wilcox,,,,,,,,
 398,Darren Bachynski,,,,,,,,
 399,Mitch Stookey,,,,,,,,
-400,Patrick Stump,1984-04-27,,"Glenview, Illinois, USA",,nm2079998,Q314877,135980,work_credits
-401,Zeno Robinson,1993-10-25,,"Los Angeles, California, USA",,nm0954900,Q108032920,2135035,work_credits
+400,Patrick Stump,1984-04-27,,"Glenview, Illinois, USA",United States,nm2079998,Q314877,135980,work_credits
+401,Zeno Robinson,1993-10-25,,"Los Angeles, California, USA",United States,nm0954900,Q108032920,2135035,work_credits
 402,Jeff Trammell,1990-03-11,,"Detroit, Michigan, USA",,nm8905315,,2746207,work_credits
 403,Mel Zwyer,,,,,,,,
 404,Liza Singer,,,,,nm10055988,,3326237,work_credits
-405,Stu Livingston,,,,,,,,
-406,Leo Birenberg,1988-01-01,,"Kentucky, USA",,nm3681192,Q36745238,1272997,work_credits
+405,Stu Livingston,,,,,nm3574280,Q113572926,,
+406,Leo Birenberg,1988-01-01,,"Kentucky, USA",United States,nm3681192,Q36745238,1272997,work_credits
 407,Zach Robinson,,,,,nm0733195,,1433463,work_credits
-408,Lamorne Morris,1983-08-14,,"Chicago, Illinois, USA",,nm2031358,Q500628,1181327,work_credits
-409,Brendan Gleeson,1955-03-29,,"Dublin, Ireland",,nm0322407,Q206659,2039,work_credits
-410,Li Jun Li,,,"Shanghai, China",,nm4050835,Q27864073,1321015,work_credits
-411,Jack Huston,1982-12-07,,"London, England, UK",,nm1658935,Q1190693,54738,work_credits
-412,Oren Uziel,1974-06-28,,"Evanston, Illinois, USA",,nm3349927,Q30337128,1090787,work_credits
+408,Lamorne Morris,1983-08-14,,"Chicago, Illinois, USA",United States,nm2031358,Q500628,1181327,work_credits
+409,Brendan Gleeson,1955-03-29,,"Dublin, Ireland",Ireland,nm0322407,Q206659,2039,work_credits
+410,Li Jun Li,1983,,"Shanghai, China",United States,nm4050835,Q27864073,1321015,work_credits
+411,Jack Huston,1982-12-07,,"London, England, UK",United Kingdom,nm1658935,Q1190693,54738,work_credits
+412,Oren Uziel,1974-06-28,,"Evanston, Illinois, USA",United States,nm3349927,Q30337128,1090787,work_credits
 413,Steve Lightfoot,,,,,nm1208415,Q18385505,1240816,work_credits
-414,Harry Bradbeer,,,,,nm0102873,Q97455101,173847,work_credits
-415,Laura Nikolich,,,,,,,,
+414,Harry Bradbeer,,,,United Kingdom,nm0102873,Q97455101,173847,work_credits
+415,Laura Nikolich,1954-06-25,2024-07-04,"Charleston, United States",United States,,Q64707932,,
 416,Scott Adams,,,,,,,,
-417,Al Milgrom,,,,,,,,
+417,Al Milgrom,1950-03-06,,"Detroit, United States",United States,,Q1723117,,
 418,Teoman Irmak,,,,,,,,
 419,Mark E. Seremet,,,,,,,,
 420,Thomas J. Holmes,,,,,,,,
@@ -428,43 +428,43 @@ id,name,birth_date,death_date,birth_place,nationality,imdb_id,wikidata_id,tmdb_i
 427,Douglas Herring,,,,,,,,
 428,Lisa Sands,,,,,,,,
 429,Jonathan Miller,,,,,,,,
-430,Paul Hutchinson,,,,,,,,
-431,Spencer Nilsen,,,,,,,,
-432,David Young,,,,,,,,
+430,Paul Hutchinson,,,,,,Q102140105,,
+431,Spencer Nilsen,1961-04-09,,,United States,nm1446007,Q4118577,,
+432,David Young,1949-05-02,2022-08-31,"London, United Kingdom",United Kingdom,nm15263371,Q11774421,,
 433,Mark Miller,,,,,,,,
 434,John Karr,,,,,,,,
 435,David Javelosa,,,,,,,,
 436,Roppyaku Tsurumi,,,,,,,,
 437,Kazuhiko Nagai,,,,,,,,
-438,David Whittaker,,,,,,,,
-439,Tim Follin,,,,,,,,
-440,Geoff Follin,,,,,,,,
+438,David Whittaker,1957-04-24,,"Bury, United Kingdom",United Kingdom,nm0926423,Q3019000,,
+439,Tim Follin,1970-12-19,,,United Kingdom,nm0284345,Q3063482,3414607,
+440,Geoff Follin,1966,2024-05,,,nm1705905,Q5735425,,
 441,John Romita,,,,,,,,
 442,John Pickford,,,,,,,,
 443,Mark Flitman,,,,,,,,
 444,Chun Wah Kong,,,,,,,,
 445,Paul Murray,,,,,,,,
 446,Chris Jojo,,,,,,,,
-447,Green Jellÿ,,,,,,,,
-448,Tony Williams,,,,,,,,
+447,Green Jellÿ,,,,,nm1393935,Q111701040,2548278,
+448,Tony Williams,1928-04-05,1992-08-14,"Elizabeth, United States",United States,nm0931840,Q2442928,,
 449,Paul Tonge,,,,,,,,
 450,Takaki Kobayashi,,,,,,,,
 451,Akira Ohtaka,,,,,,,,
 452,Keita Abe,,,,,,,,
 453,Shinobu Nakabachi,,,,,,,,
 454,Shoji Tomii,,,,,,,,
-455,Minoru Endo,,,,,,,,
-456,Makoto Igarashi,,,,,,,,
+455,Minoru Endo,1932-07-06,2008-12-06,"Tokyo, Japan",Japan; Empire of Japan,nm5325240,Q7582610,,
+456,Makoto Igarashi,,,,,,Q117285467,,
 457,Daisuke Inoue,,,,,,,,
-458,Mark Bagley,1957-08-07,,"Frankfurt, West Germany [now Germany]",,nm4987357,Q599109,2476524,search_verified
-459,Karl Kesel,,,,,,,,
-460,Paul Mounts,,,,,,,,
+458,Mark Bagley,1957-08-07,,"Frankfurt, West Germany [now Germany]",United States,nm4987357,Q599109,2476524,search_verified
+459,Karl Kesel,1959-01-07,,"Victor, United States",United States,nm4587620,Q351436,3210419,
+460,Paul Mounts,1964-05-07,,,,nm1738923,Q7152640,,
 461,Tyrone Miller,,,,,,,,
 462,Marc Wilding,,,,,,,,
 463,Danny Curley,,,,,,,,
 464,Chun Wah Kong (as Chrono),,,,,,,,
 465,Suddi Raval,,,,,,,,
-466,Fletcher Beasley,,,,,,,,
+466,Fletcher Beasley,,,,United States,nm1144869,Q5458762,,
 467,Jerry Huber,,,,,,,,
 468,Jerry Markota,,,,,,,,
 469,Brian Belfield,,,,,,,,
@@ -478,7 +478,7 @@ id,name,birth_date,death_date,birth_place,nationality,imdb_id,wikidata_id,tmdb_i
 477,Kendall Harrison,,,,,,,,
 478,Matt Duncan,,,,,,,,
 479,Chris Ward,,,,,,,,
-480,Tommy Tallarico,,,,,,,,
+480,Tommy Tallarico,1968-02-18,,"Springfield, United States",United States,nm0848118,Q2467615,216090,
 481,Howard Ulyate,,,,,,,,
 482,Todd Quincey Jefferson,,,,,,,,
 483,Brent Boylen,,,,,,,,
@@ -486,7 +486,7 @@ id,name,birth_date,death_date,birth_place,nationality,imdb_id,wikidata_id,tmdb_i
 485,David Calvin,,,,,,,,
 486,Dmitriy Buluchevskiy,,,,,,,,
 487,Yaming Di,,,,,,,,
-488,Carl Schell,,,,,,,,
+488,Carl Schell,1927-11-14,2019-06-06,"Wolfsberg, Austria",Switzerland,nm0770709,Q120875,591921,
 489,Todd Masten,,,,,,,,
 490,Chris Soares,,,,,,,,
 491,Jonathan Zamkoff,,,,,,,,
@@ -498,7 +498,7 @@ id,name,birth_date,death_date,birth_place,nationality,imdb_id,wikidata_id,tmdb_i
 497,KMFDM,,,,,,,,
 498,Jamie Fristrom,,,,,,,,
 499,Chris Busse,,,,,,,,
-500,Brian Reed,,,,,,,,
+500,Brian Reed,1973-07-01,,"Anderson, United States",United States,nm1669477,Q2924984,,
 501,Richard Bisso,,,,,,,,
 502,Steve McNally,,,,,,,,
 503,Jonathan Mintz,,,,,,,,
@@ -508,47 +508,47 @@ id,name,birth_date,death_date,birth_place,nationality,imdb_id,wikidata_id,tmdb_i
 507,Travis Eastepp,,,,,,,,
 508,Jonathan Lauf,,,,,,,,
 509,Manuel Salazar,,,,,,,,
-510,Tobias Enhus,,,,,,,,
-511,Jason Carr,,,,,,,,
+510,Tobias Enhus,,,,United States,nm1054892,Q7811623,62701,
+511,Jason Carr,,,,,,Q134889540,,
 512,Brandon Gill,,,,,,,,
 513,Jeff King,,,,,,,,
 514,Steven Brekelmans,,,,,,,,
 515,Dave Forshaw,,,,,,,,
 516,Barret Chapman,,,,,,,,
-517,James L. Venable,1967-05-19,,"Santa Monica, California, U.S.",,nm0892868,Q525390,23739,search_verified
-518,Jamie Christopherson,,,,,,,,
+517,James L. Venable,1967-05-19,,"Santa Monica, California, U.S.",United States,nm0892868,Q525390,23739,search_verified
+518,Jamie Christopherson,1975-01-01,,"Scottsdale, United States",United States,nm0160646,Q6146720,1283653,
 519,Nathaniel Papadakis,,,,,,,,
-520,Keith Arem,,,,,,,,
-521,Valerie Arem,,,,,,,,
+520,Keith Arem,,,,,nm0034229,Q115272146,1418227,
+521,Valerie Arem,1969-12-12,,,United States,nm0034230,Q125421549,3059286,
 522,Kody Sabourin,,,,,,,,
 523,Pablo Gonzalez,,,,,,,,
 524,Meghan Morgan,,,,,,,,
 525,Mark Hoffmeier,,,,,nm0389280,Q120596665,179239,search_verified
-526,Daniel Strange,,,,,,,,
-527,Dan Slott,1967-07-03,,USA,,nm2739541,Q3013218,2647893,search_verified
+526,Daniel Strange,,,,,nm0833353,Q117859651,,
+527,Dan Slott,1967-07-03,,USA,United States,nm2739541,Q3013218,2647893,search_verified
 528,Jim Dooley,,,,,,,,
 529,Gérard Lehiany,,,,,,,,
 530,Ramiro Belanger,,,,,,,,
 531,Brant Nicholas,,,,,,,,
-532,Peter David,,,,,,,,
-533,Gerard Marino,,,,,,,,
+532,Peter David,1956-09-23,2025-05-24,"Fort Meade, United States",United States,nm0203035,Q1351554,156223,
+533,Gerard Marino,1968-04-01,,United States,United States,nm0547776,Q3760914,1096369,
 534,Benjamin Schirtz,,,,,,,,
 535,Seamus Kevin Fahey,,,,,,,,
 536,John Zurhellen,,,,,,,,
-537,Maxime Goulet,,,,,,,,
-538,Inon Zur,,,,,,,,
+537,Maxime Goulet,1980-06-07,,"Montreal, Canada",Canada,,Q91888470,,
+538,Inon Zur,1965-07-04,,Israel,Israel,nm0958735,Q933777,1116136,
 539,Thomas Wilson,,,,,,,,
 540,Stephane Gravel,,,,,,,,
-541,Christos Gage,,,,,,,,
-542,Samuel Laflamme,,,,,,,,
+541,Christos Gage,1977-01-01,,"New York City, United States",United States,nm0300800,Q5113550,73701,
+542,Samuel Laflamme,,,,,,Q111722517,,
 543,Baptiste Marmey,,,,,,,,
 544,Steve Melanson,,,,,,,,
 545,Corentin Delprat,,,,,,,,
-546,Jerome Chen,,,,,nm0155259,Q16203762,42261,search_verified
+546,Jerome Chen,1963-04-18,,,,nm0155259,Q16203762,42261,search_verified
 547,Pascal Dion,,,,,,,,
 548,Arthur Parsons,,,,,,,,
-549,Tom Johnson,,,,,,,,
-550,Jon Burton,,,,,,,,
+549,Tom Johnson,1939-11-18,2024-12-31,"Greeley, United States",United States; France,,Q1364087,,
+550,Jon Burton,1969-08-27,,"Winchester, United Kingdom",United Kingdom,nm2095224,Q6270460,1159663,
 551,Steve Harding,,,,,,,,
 552,Leon Warren,,,,,,,,
 553,Rob Westwood,,,,,,,,
@@ -556,27 +556,27 @@ id,name,birth_date,death_date,birth_place,nationality,imdb_id,wikidata_id,tmdb_i
 555,Jennifer Burbeck,,,,,,,,
 556,David Geeson,,,,,,,,
 557,Toby Jennings,,,,,,,,
-558,Kurt Busiek,,,,,,,,
+558,Kurt Busiek,1960-09-16,,"Boston, United States",United States,nm1598146,Q971041,1381997,
 559,Ian Livingstone,,,,,,,,
-560,Ryan Smith,,,,,,,,
+560,Ryan Smith,1997-08-13,,,,,Q125688208,,
 561,Brian Horton,,,,,,,,
 562,Bryan Intihar,,,,,,,,
-563,Marcus Smith,,,,,,,,
+563,Marcus Smith,,,,,,Q92927551,,
 564,Joe Valenzuela,,,,,,,,
 565,Jacinda Chew,,,,,,,,
 566,Grant Hollis,,,,,,,,
 567,Jon Paquette,,,,,,,,
 568,Benjamin Arfmann,,,,,,,,
 569,Kelsey Beachum,,,,,,,,
-570,John Paesano,,,,,,,,
+570,John Paesano,1977-02-20,,"Birmingham, United States",United States,nm1373352,Q16734003,77949,
 571,Jess Read,,,,,,,,
 572,Cameron Christian,,,,,,,,
 573,Joel Bartley,,,,,,,,
-574,Ross McIntosh,,,,,,,,
+574,Ross McIntosh,,,,,,Q86078755,,
 575,Doug Sheahan,,,,,,,,
 576,Jason Hickey,,,,,,,,
 577,Gavin Goulden,,,,,,,,
 578,Ben Arfmann,,,,,,,,
 579,Mary Kenney,,,,,,,,
-580,Walt Williams,,,,,,,,
-581,Yuri Lowenthal,1971-03-05,,"Alliance, Ohio, USA",,nm0523180,Q579804,127387,search_verified
+580,Walt Williams,1943-12-19,2016-01-23,"Brownwood, United States",United States,,Q7964090,,
+581,Yuri Lowenthal,1971-03-05,,"Alliance, Ohio, USA",United States,nm0523180,Q579804,127387,search_verified

@@ -1,0 +1,187 @@
+work_id,genre
+1,action film
+10,superhero film
+10,action film
+11,action film
+11,adventure film
+11,science fiction film
+11,superhero film
+11,drama film
+11,comedy film
+12,action film
+12,adventure film
+12,science fiction film
+12,superhero film
+12,speculative fiction film
+13,superhero film
+13,action film
+13,adventure film
+13,science fiction film
+13,technofantasy
+14,action comedy film
+14,superhero film
+14,action film
+14,comedy film
+14,drama fiction
+15,action film
+15,adventure film
+15,superhero film
+16,adventure film
+16,fantasy film
+16,action film
+16,science fiction film
+16,superhero film
+17,superhero film
+17,thriller film
+18,action film
+18,superhero film
+19,horror film
+19,science fiction film
+19,action film
+19,superhero film
+19,adventure film
+19,speculative fiction film
+19,drama film
+19,thriller film
+19,vampire film
+2,science fiction film
+20,superhero film
+20,action film
+21,science fiction film
+21,action film
+22,superhero film
+22,action film
+22,science fiction film
+22,thriller film
+23,superhero film
+23,action film
+25,science fiction television series
+25,superhero television program
+26,tokusatsu
+27,superhero television program
+27,adventure television series
+27,crime television series
+27,noir fiction
+27,detective and mystery television program
+28,action television series
+3,action film
+30,science fiction television series
+30,superhero television program
+31,fantasy television series
+31,adventure television series
+31,action television series
+31,science fiction television series
+31,superhero television program
+31,children's television series
+32,action television series
+32,superhero television program
+33,superhero television program
+33,science fiction
+33,action television series
+33,mystery fiction
+33,action-adventure television series
+34,science fiction television series
+34,comedy television series
+35,fantasy television series
+35,adventure television series
+35,action television series
+35,science fiction television series
+35,comedy television series
+35,children's television series
+35,superhero television program
+36,action television series
+36,adventure television series
+37,children's television series
+38,superhero television program
+39,action-adventure game
+4,action film
+41,arcade
+42,platformer
+43,beat 'em up
+43,action game
+44,shoot 'em up
+45,action-adventure game
+45,action game
+46,fighting game
+47,platformer
+48,action-adventure game
+49,action game
+49,platformer
+49,crossover fiction
+5,science fiction film
+5,drama film
+5,coming-of-age film
+5,superhero film
+5,action film
+50,platformer
+51,beat 'em up
+52,platformer
+53,beat 'em up
+54,platformer
+55,action-adventure game
+57,beat 'em up
+58,action game
+59,beat 'em up
+6,action film
+6,thriller film
+6,superhero film
+6,science fiction film
+6,drama film
+60,action game
+61,action-adventure game
+62,action-adventure game
+62,action game
+63,action-adventure game
+63,beat 'em up
+63,action game
+64,action-adventure game
+64,platformer
+65,action-adventure game
+66,action-adventure game
+66,adventure video game
+66,beat 'em up
+66,platformer
+67,Metroidvania
+68,action-adventure game
+69,Metroidvania
+69,neo-noir video game
+69,crossover fiction
+69,cyberpunk video game
+7,action film
+7,thriller film
+7,superhero film
+7,science fiction film
+7,drama film
+70,action-adventure game
+70,crossover fiction
+70,cyberpunk video game
+71,action-adventure game
+71,platformer
+72,action-adventure game
+73,endless runner game
+74,action-adventure game
+74,crossover fiction
+75,action-adventure game
+76,action-adventure game
+76,superhero video game
+76,science fiction video game
+77,science fiction video game
+77,action-adventure game
+77,superhero video game
+78,action-adventure game
+78,action game
+79,action-adventure game
+79,Christmas video game
+8,action film
+8,thriller film
+8,teen film
+8,superhero film
+8,science fiction film
+8,biopunk
+80,action-adventure game
+9,action film
+9,thriller film
+9,teen film
+9,superhero film
+9,science fiction film
+9,biopunk

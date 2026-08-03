@@ -269,3 +269,177 @@ work_id,source,publication,platform_scope,score,max_score,score_pct,review_count
 77,Metacritic (Turf Wars),Metacritic,Turf Wars,70.0,100.0,70.0,
 77,Metacritic (Silver Lining),Metacritic,Silver Lining,75.0,100.0,75.0,
 78,Metacritic (PC),Metacritic,PC,87.0,100.0,87.0,
+10,Rotten Tomatoes (critic),Rotten Tomatoes,critic,92.0,100.0,92.0,396
+10,Metacritic (critic),Metacritic,critic,73.0,100.0,73.0,51
+11,Moviefone.com,Moviefone.com,,84.0,100.0,84.0,16430
+11,eiga.com,eiga.com,,4.3,5.0,86.0,387
+11,Metacritic (critic),Metacritic,critic,87.0,100.0,87.0,50
+11,Rotten Tomatoes (critic),Rotten Tomatoes,critic,97.0,100.0,97.0,399
+12,Rotten Tomatoes (critic),Rotten Tomatoes,critic,91.0,100.0,91.0,454
+12,Metacritic (critic),Metacritic,critic,69.0,100.0,69.0,55
+13,Rotten Tomatoes (critic),Rotten Tomatoes,critic,93.0,100.0,93.0,429
+13,Metacritic (critic),Metacritic,critic,71.0,100.0,71.0,60
+14,Rotten Tomatoes (critic),Rotten Tomatoes,critic,95.0,100.0,95.0,385
+14,Metacritic (critic),Metacritic,critic,86.0,100.0,86.0,60
+16,Rotten Tomatoes (critic),Rotten Tomatoes,critic,90.0,100.0,90.0,326
+17,Rotten Tomatoes (critic),Rotten Tomatoes,critic,30.0,100.0,30.0,365
+17,Metacritic (critic),Metacritic,critic,35.0,100.0,35.0,46
+18,Rotten Tomatoes (critic),Rotten Tomatoes,critic,57.0,100.0,57.0,275
+18,Metacritic (critic),Metacritic,critic,49.0,100.0,49.0,48
+19,Rotten Tomatoes (critic),Rotten Tomatoes,critic,15.0,100.0,15.0,287
+19,Metacritic (critic),Metacritic,critic,35.0,100.0,35.0,55
+19,IMDb,IMDb,,5.1,10.0,51.0,172000
+20,Rotten Tomatoes (critic),Rotten Tomatoes,critic,11.0,100.0,11.0,246
+20,Metacritic (critic),Metacritic,critic,26.0,100.0,26.0,51
+21,Rotten Tomatoes (critic),Rotten Tomatoes,critic,15.0,100.0,15.0,158
+21,Metacritic (critic),Metacritic,critic,35.0,100.0,35.0,41
+21,IMDb,IMDb,,5.5,10.0,55.0,83000
+48,Electronic Games (Nintendo Entertainment System),Electronic Games,Nintendo Entertainment System,72.0,100.0,72.0,
+5,Rotten Tomatoes (critic),Rotten Tomatoes,critic,90.0,100.0,90.0,249
+5,Metacritic (critic),Metacritic,critic,73.0,100.0,73.0,38
+6,Metacritic (critic),Metacritic,critic,83.0,100.0,83.0,41
+6,Rotten Tomatoes (critic),Rotten Tomatoes,critic,93.0,100.0,93.0,276
+7,Rotten Tomatoes (critic),Rotten Tomatoes,critic,63.0,100.0,63.0,263
+7,Metacritic (critic),Metacritic,critic,59.0,100.0,59.0,40
+76,Gameblog.fr (Microsoft Windows),Gameblog.fr,Microsoft Windows,8.0,10.0,80.0,
+79,Gameblog.fr (Microsoft Windows),Gameblog.fr,Microsoft Windows,9.0,10.0,90.0,
+8,Rotten Tomatoes (critic),Rotten Tomatoes,critic,71.0,100.0,71.0,339
+8,Metacritic (critic),Metacritic,critic,66.0,100.0,66.0,42
+9,Rotten Tomatoes (critic),Rotten Tomatoes,critic,50.0,100.0,50.0,313
+9,Metacritic (critic),Metacritic,critic,53.0,100.0,53.0,50
+16,Metacritic (critic),Metacritic,critic,66.0,100.0,66.0,56
+27,Metacritic (critic),Metacritic,critic,72.0,100.0,72.0,28
+34,Rotten Tomatoes (critic),Rotten Tomatoes,critic,100.0,100.0,100.0,9
+38,Metacritic (critic),Metacritic,critic,77.0,100.0,77.0,10
+43,Electronic Gaming Monthly,Electronic Gaming Monthly,,8.0,10.0,80.0,
+43,GamePro,GamePro,,14.5,20.0,72.5,
+43,Nintendo Power,Nintendo Power,,11.1,20.0,55.5,
+43,GB Action,GB Action,,80.0,100.0,80.0,
+43,Power Play,Power Play,,44.0,100.0,44.0,
+47,Electronic Gaming Monthly,Electronic Gaming Monthly,,8.0,10.0,80.0,
+47,GamePro,GamePro,,14.5,20.0,72.5,
+47,Nintendo Power,Nintendo Power,,11.1,20.0,55.5,
+47,GB Action,GB Action,,80.0,100.0,80.0,
+47,Power Play,Power Play,,44.0,100.0,44.0,
+49,Allgame,Allgame,,2.0,5.0,40.0,
+49,Computer and Video Games,Computer and Video Games,,60.0,100.0,60.0,
+49,Electronic Gaming Monthly,Electronic Gaming Monthly,,6.0,10.0,60.0,
+49,GamePro,GamePro,,3.125,5.0,62.5,
+49,Hyper,Hyper,,62.0,100.0,62.0,
+49,Nintendo Power,Nintendo Power,,3.15,5.0,63.0,
+49,Official Nintendo Magazine,Official Nintendo Magazine,,89.0,100.0,89.0,
+49,Game Players,Game Players,,6.0,10.0,60.0,
+49,N-Force,N-Force,,75.0,100.0,75.0,
+49,Play Time (magazine),Play Time (magazine),,78.0,100.0,78.0,
+49,Sega Magazine,Sega Magazine,,51.0,100.0,51.0,
+50,Electronic Gaming Monthly,Electronic Gaming Monthly,,8.0,10.0,80.0,
+50,GamePro,GamePro,,14.5,20.0,72.5,
+50,Nintendo Power,Nintendo Power,,11.1,20.0,55.5,
+50,GB Action,GB Action,,80.0,100.0,80.0,
+50,Power Play,Power Play,,44.0,100.0,44.0,
+51,Electronic Gaming Monthly (SNES),Electronic Gaming Monthly,SNES,5.0,10.0,50.0,
+58,GameRankings,GameRankings,,70.29,100.0,70.29,
+58,Allgame,Allgame,,3.5,5.0,70.0,
+58,GamePro,GamePro,,4.5,5.0,90.0,
+58,GameSpot,GameSpot,,6.6,10.0,66.0,
+58,IGN,IGN,,9.0,10.0,90.0,
+59,Allgame,Allgame,,3.5,5.0,70.0,
+59,Official PlayStation Magazine,Official PlayStation Magazine,,3.5,5.0,70.0,
+60,Allgame,Allgame,,3.5,5.0,70.0,
+62,Metacritic,Metacritic,,83.0,100.0,83.0,
+62,Edge,Edge,,6.0,10.0,60.0,
+62,Electronic Gaming Monthly,Electronic Gaming Monthly,,7.0,10.0,70.0,
+62,Eurogamer,Eurogamer,,7.0,10.0,70.0,
+62,Game Informer,Game Informer,,8.0,10.0,80.0,
+62,GamePro,GamePro,,4.5,5.0,90.0,
+62,GameSpot,GameSpot,,7.3,10.0,73.0,
+62,IGN,IGN,,9.0,10.0,90.0,
+62,Nintendo Power,Nintendo Power,,3.8,5.0,76.0,
+62,Official PlayStation Magazine,Official PlayStation Magazine,,3.5,5.0,70.0,
+62,Official Xbox Magazine,Official Xbox Magazine,,8.6,10.0,86.0,
+62,PC Gamer US,PC Gamer US,,25.0,100.0,25.0,
+63,Metacritic,Metacritic,,78.0,100.0,78.0,
+63,Edge,Edge,,5.0,10.0,50.0,
+63,Eurogamer,Eurogamer,,6.0,10.0,60.0,
+63,GamePro,GamePro,,4.0,5.0,80.0,
+63,Nintendo Power,Nintendo Power,,9.0,10.0,90.0,
+63,Official PlayStation Magazine,Official PlayStation Magazine,,3.5,5.0,70.0,
+63,Official Xbox Magazine,Official Xbox Magazine,,6.4,10.0,64.0,
+63,PC Gamer US,PC Gamer US,,81.0,100.0,81.0,
+63,CiN Weekly,CiN Weekly,,88.0,100.0,88.0,
+63,The Sydney Morning Herald,The Sydney Morning Herald,,3.5,5.0,70.0,
+64,Metacritic,Metacritic,,68.0,100.0,68.0,
+64,GameSpot,GameSpot,,7.0,10.0,70.0,
+64,IGN,IGN,,4.5,10.0,45.0,
+64,Nintendo Power,Nintendo Power,,6.0,10.0,60.0,
+64,Nintendo World Report,Nintendo World Report,,6.5,10.0,65.0,
+66,GameRankings,GameRankings,,63.64,100.0,63.64,
+66,Metacritic,Metacritic,,62.0,100.0,62.0,
+66,Eurogamer,Eurogamer,,3.0,10.0,30.0,
+66,Game Informer,Game Informer,,4.5,10.0,45.0,
+66,GamePro,GamePro,,3.5,5.0,70.0,
+66,GameTrailers,GameTrailers,,5.8,10.0,58.0,
+66,Official Xbox Magazine,Official Xbox Magazine,,6.0,10.0,60.0,
+67,GameRankings,GameRankings,,79.0,100.0,79.0,
+67,Metacritic,Metacritic,,77.0,100.0,77.0,
+67,Eurogamer,Eurogamer,,5.0,10.0,50.0,
+67,GamePro,GamePro,,3.5,5.0,70.0,
+67,GameSpot,GameSpot,,8.0,10.0,80.0,
+67,GameTrailers,GameTrailers,,6.3,10.0,63.0,
+67,IGN,IGN,,8.0,10.0,80.0,
+67,Nintendo Power,Nintendo Power,,6.5,10.0,65.0,
+67,Official Nintendo Magazine,Official Nintendo Magazine,,68.0,100.0,68.0,
+67,Official Xbox Magazine,Official Xbox Magazine,,8.0,10.0,80.0,
+67,PC Gamer US,PC Gamer US,,48.0,100.0,48.0,
+67,Common Sense Media,Common Sense Media,,3.0,5.0,60.0,
+68,Metacritic,Metacritic,,85.0,100.0,85.0,
+68,Eurogamer,Eurogamer,,5.0,10.0,50.0,
+68,IGN,IGN,,8.5,10.0,85.0,
+68,VideoGamer.com,VideoGamer.com,,6.0,10.0,60.0,
+68,Pocket Gamer,Pocket Gamer,,4.5,5.0,90.0,
+68,AppSpy,AppSpy,,5.0,5.0,100.0,
+69,Metacritic,Metacritic,,73.0,100.0,73.0,
+69,Nintendo Power,Nintendo Power,,8.0,10.0,80.0,
+69,Official Xbox Magazine,Official Xbox Magazine,,7.5,10.0,75.0,
+69,PC Gamer US,PC Gamer US,,50.0,100.0,50.0,
+69,The Escapist,The Escapist,,3.0,5.0,60.0,
+70,Metacritic,Metacritic,,50.0,100.0,50.0,
+70,Nintendo World Report (3DS),Nintendo World Report,3DS,4.5,10.0,45.0,
+70,Nintendo World Report (DS),Nintendo World Report,DS,6.0,10.0,60.0,
+72,Metacritic,Metacritic,,58.0,100.0,58.0,
+72,IGN,IGN,,5.4,10.0,54.0,
+72,Official Xbox Magazine,Official Xbox Magazine,,7.0,10.0,70.0,
+72,PC Gamer UK,PC Gamer UK,,55.0,100.0,55.0,
+72,TouchArcade,TouchArcade,,2.0,5.0,40.0,
+73,Metacritic,Metacritic,,79.0,100.0,79.0,
+74,Metacritic,Metacritic,,83.0,100.0,83.0,
+74,Allgame,Allgame,,4.5,5.0,90.0,
+74,Computer and Video Games,Computer and Video Games,,7.0,10.0,70.0,
+74,The Escapist,The Escapist,,4.0,5.0,80.0,
+75,Metacritic,Metacritic,,76.0,100.0,76.0,
+76,Metacritic,Metacritic,,87.0,100.0,87.0,
+76,OpenCritic (Remaster),OpenCritic,Remaster,98.0,100.0,98.0,
+76,Electronic Gaming Monthly,Electronic Gaming Monthly,,9.0,10.0,90.0,
+76,GamesRadar+,GamesRadar+,,4.5,5.0,90.0,
+76,PC Gamer US,PC Gamer US,,75.0,100.0,75.0,
+76,VideoGamer.com,VideoGamer.com,,8.0,10.0,80.0,
+78,Metacritic,Metacritic,,87.0,100.0,87.0,
+78,OpenCritic (Remaster),OpenCritic,Remaster,98.0,100.0,98.0,
+78,Destructoid,Destructoid,,9.0,10.0,90.0,
+78,Electronic Gaming Monthly,Electronic Gaming Monthly,,9.0,10.0,90.0,
+78,Game Informer,Game Informer,,9.5,10.0,95.0,
+78,GameSpot,GameSpot,,9.0,10.0,90.0,
+78,GamesRadar+,GamesRadar+,,4.5,5.0,90.0,
+78,IGN,IGN,,8.7,10.0,87.0,
+78,PC Gamer US,PC Gamer US,,75.0,100.0,75.0,
+78,VideoGamer.com,VideoGamer.com,,8.0,10.0,80.0,
+79,Metacritic,Metacritic,,84.0,100.0,84.0,
+79,Edge,Edge,,7.0,10.0,70.0,
+79,VideoGamer.com,VideoGamer.com,,4.0,5.0,80.0,
+79,PC Gamer US,PC Gamer US,,84.0,100.0,84.0,
+80,Metacritic,Metacritic,,90.0,100.0,90.0,
+80,OpenCritic,OpenCritic,,91.0,100.0,91.0,
+80,Eurogamer,Eurogamer,,4.0,5.0,80.0,
+80,Famitsu,Famitsu,,38.0,40.0,95.0,
+80,GamesRadar+,GamesRadar+,,5.0,5.0,100.0,
+80,VideoGamer.com,VideoGamer.com,,5.0,5.0,100.0,

@@ -1,0 +1,183 @@
+identity_id,gender,publisher,narrative_universe,creators,first_appearance_title,first_appearance_year,wikipedia_title
+1,female,,Earth-616,Stan Lee; Steve Ditko,Amazing Fantasy #15,1962,Aunt May
+2,male,,Earth-616,Gerry Conway,,,Ben Reilly
+3,female,,Earth-616,Marv Wolfman; Keith Pollard,,,Black Cat (Marvel Comics)
+4,female,,Earth-616,,,,Calypso (comics)
+5,male,,Earth-616,Jack Kirby; Joe Simon,Captain America Comics #1,1941,Captain America
+6,male,,Earth-616,,,,Carnage (character)
+7,male,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #1,1963,Chameleon (character)
+8,male,,Earth-616,Stan Lee; Bill Everett,,,Daredevil (Marvel Comics character)
+9,male,,Earth-616,Stan Lee; Jack Kirby,Fantastic Four #5,1962,Doctor Doom
+10,male,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #3,1963,Doctor Octopus
+11,male,,Earth-616,Stan Lee; Steve Ditko,,,Doctor Strange
+12,male,,Earth-616,David Michelinie,,,Venom (character)
+13,male,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #9,1964,Electro (Marvel Comics)
+14,male,,Earth-616,Gerry Conway; John Romita Sr.; Ross Andru,The Amazing Spider-Man #129,1974,Punisher
+15,male,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #31,1965,Harry Osborn
+16,female,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #31,1965,Gwen Stacy
+17,male,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #31,1965,Harry Osborn
+18,male,,Earth-616,Stan Lee; Jack Kirby,Incredible Hulk #1,1962,Hulk
+19,male,,Earth-616,Stan Lee; John Romita Sr.,The Amazing Spider-Man #50,1967,Kingpin (character)
+20,male,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #15,1964,Kraven the Hunter
+21,male,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #6,1963,Lizard (character)
+22,female,,Earth-616,Mike Zeck,Marvel Super Heroes Secret Wars #6,1984,Julia Carpenter
+23,male,,Earth-616,Roy Thomas; Gil Kane,,,Morbius
+24,female,,Marvel Cinematic Universe,,Spider-Man: Homecoming,2017,MJ (Marvel Cinematic Universe)
+25,male,,,Brian Michael Bendis; Sara Pichelli,,,Miles Morales
+26,male,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #2,1963,Mysterio
+27,male,,Earth-616,Stan Lee; Steve Ditko,Amazing Fantasy #15,1962,Spider-Man
+28,male,,Earth-616,Stan Lee; John Romita Sr.,The Amazing Spider-Man #41,1966,Rhino (character)
+29,male,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #4,1963,Sandman (Marvel Comics)
+30,male,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #19,1964,Mac Gargan
+31,male,,Earth-616,Stan Lee; John Romita Sr.,The Amazing Spider-Man #46,1967,Shocker (character)
+32,female,,Earth-616,Ron Lim; Mark Bagley; Mike W. Barr; Tom DeFalco; Jerry Bingham; Terry Kavanagh,,,Shriek (character)
+33,female,,Earth-616,Dan Slott; Humberto Ramos,,,Silk (character)
+34,female,,Earth-616,Tom DeFalco; Ron Frenz,,,Silver Sable
+35,female,,Earth-616,Tom DeFalco; Ron Frenz,,,Mayday Parker
+36,male,,,,,,Spider-Ham
+37,male,,Earth-616,David Hine; Fabrice Sapolsky; Carmine Di Giandomenico; Marko Djurdjević,,,Spider-Man Noir
+38,male,,Earth-616,Dan Slott; Olivier Coipel,Amazing Spider-Man,,Spider-Punk
+40,male,,Earth-616,Stan Lee; Steve Ditko,Amazing Fantasy #15,1962,Spider-Man
+42,male,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #2,1963,Tinkerer (Marvel Comics)
+43,male,,Earth-616,,,,Tombstone (character)
+44,male,,Earth-616,Stan Lee; Steve Ditko,Amazing Fantasy #15,1962,Uncle Ben
+45,male,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #2,1963,Vulture (Marvel Comics)
+46,male,,Earth-616,Len Wein; John Romita Sr.,,,Wolverine (character)
+47,female,,,,,,Wraith (Yuri Watanabe)
+48,,,Earth-616,,,,Prowler (Marvel Comics)
+49,male,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #2,1963,Vulture (Marvel Comics)
+53,male,,Earth-616,Louise Simonson,,,Alistair Smythe
+56,female,,Earth-616,,,,Anne Marie Hoag
+57,female,,Earth-616,David Michelinie; Mark Bagley,,,Anne Weying
+58,female,,Earth-616,Fiona Avery; Mark Brooks,,,Anya Corazon
+59,female,,Earth-616,Fiona Avery; Mark Brooks,,,Anya Corazon
+60,female,,Earth-616,J. M. DeMatteis; Sal Buscema,,,Ashley Kafka
+63,male,,Earth-616,Stan Lee; Jack Kirby,,,Batroc the Leaper
+64,male,,Earth-616,Stan Lee; Jack Kirby,X-Men #1,1963,Beast (Marvel Comics)
+65,,,Earth-616,Stan Lee,,,Beetle (comics)
+66,male,,Earth-616,David Hine; Fabrice Sapolsky; Carmine Di Giandomenico; Marko Djurdjević,,,Spider-Man Noir
+67,female,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #4,1963,Betty Brant
+68,male,,Earth-616,Marv Wolfman; Ross Andru,,,Big Wheel (character)
+69,male,,Earth-616,Stan Lee; Jack Kirby,,,Black Panther (character)
+70,female,,Earth-616,Stan Lee; Don Rico; Don Heck,,,Black Widow (Natasha Romanova)
+71,male,,Earth-616,,,,Blade (character)
+72,male,,Earth-616,,X-Men #14,1965,Bolivar Trask
+74,male,,Marvel Cinematic Universe,,Spider-Man: Far From Home,2019,
+77,male,,Earth-616,Marv Wolfman; John Romita Sr.,,,Bullseye (Marvel Comics)
+78,male,,Earth-616,Stan Lee; Steve Ditko,Amazing Fantasy #15,1962,Burglar (character)
+79,female,,Earth-616,,,,Carol Danvers
+80,agender,,Earth-616,David Michelinie; Ron Lim,,,Riot (comics)
+82,male,,Earth-616,,,,Carrion (comics)
+84,male,,Earth-616,,,,Carnage (character)
+87,male,,Earth-616,Stan Lee; Jack Kirby,X-Men #1,1963,Cyclops (Marvel Comics)
+91,male,,Earth-616,Rob Liefeld; Fabian Nicieza,,,Deadpool
+92,male,,Earth-616,,,,Deathlok
+94,male,,Earth-616,Howard Mackie; Alex Saviuk,,,Demogoblin
+95,male,,Marvel Cinematic Universe,,Spider-Man: Far From Home,2019,
+96,male,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #3,1963,Doctor Octopus
+97,male,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #3,1963,Doctor Octopus
+100,female,,Sony's Spider-Man Universe,,,,
+101,female,,,Gerard Way,,,Peni Parker
+104,male,,Earth-616,Peter David; Roger Cruz,,,El Muerto (Marvel Comics)
+107,male,,Earth-616,J. Michael Straczynski,,,Ezekiel Sims
+108,male,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #20,1965,Farley Stillwell
+109,female,,Earth-616,Chris Claremont,Uncanny X-Men #193,1985,Firestar (Marvel Comics)
+110,male,,Earth-616,Stan Lee; Steve Ditko,Amazing Fantasy #15,1962,Flash Thompson
+111,male,,Earth-616,Stan Lee; Jack Kirby,,,Galactus
+112,male,,Earth-616,Chris Claremont; Mike Collins; Jim Lee,,,Gambit (Marvel Comics)
+115,male,,Earth-616,Stan Lee,The Amazing Spider-Man #56,1968,George Stacy
+116,male,,Earth-616,Roy Thomas; Gary Friedrich; Mike Ploog,,,Ghost Rider (Johnny Blaze)
+117,male,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #14,1964,Norman Osborn
+119,male,,Earth-616,Stan Lee; Jack Kirby,,,Grey Gargoyle
+122,male,,Earth-616,,,,Hammerhead (character)
+123,male,,Earth-616,Stan Lee,,,Happy Hogan (character)
+124,male,,Earth-616,David Michelinie,,,Venom (character)
+125,male,,Earth-616,,,,Hawkeye (Clint Barton)
+126,male,,Earth-616,Stan Lee; Jack Kirby,,,High Evolutionary
+127,male,,Earth-616,Tom DeFalco; Steve Ditko,,,Jason Macendale
+128,male,,Earth-616,Steve Gerber,,,Howard the Duck
+129,male,,Earth-616,Jack Kirby; Stan Lee,Fantastic Four #1,1961,Human Torch
+131,male,,Earth-616,Dennis O'Neil,,,Hydro-Man
+132,male,,Earth-616,Stan Lee; Jack Kirby,X-Men #1,1963,Iceman (Marvel Comics)
+135,male,,Earth-616,Roy Thomas; Gil Kane; Bill Everett,,,Iron Fist (character)
+136,male,,Earth-616,Stan Lee; Larry Lieber; Don Heck; Jack Kirby,,,Iron Man
+137,male,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #1,1963,J. Jonah Jameson
+138,male,,Earth-616,Tom DeFalco; Steve Ditko,,,Jason Macendale
+139,male,,Earth-616,Gerry Conway,,,Ben Reilly
+140,male,,Earth-616,Stan Lee; John Romita Sr.,The Amazing Spider-Man #46,1967,Shocker (character)
+142,female,,Earth-616,,,,Janice Lincoln
+144,male,,,,,,
+145,male,,,,,,
+146,female,,Earth-616,Stan Lee; John Buscema,,,She-Hulk
+149,female,,Earth-616,Jason Latour,,,Spider-Woman (Gwen Stacy)
+150,male,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #1,1963,John Jameson (character)
+151,female,,Earth-616,Mike Zeck,Marvel Super Heroes Secret Wars #6,1984,Julia Carpenter
+153,male,,Marvel Cinematic Universe,,Spider-Man: Far From Home,2019,
+155,male,,Earth-616,Terry Kavanagh; Steven Butler,,,Kaine Parker
+156,female,,Earth-616,,,,Carol Danvers
+157,male,,Earth-616; Earth-6311,Stan Lee; Jack Kirby,,,Kang the Conqueror
+160,male,,Earth-616,Donny Cates; Ryan Stegman,,,Knull
+161,male,,Earth-616,David Michelinie; Ron Lim,,,Lasher (comics)
+163,female,,Earth-616,Stan Lee; Steve Ditko,Amazing Fantasy #15,1962,Liz Allan
+164,genderfluid,,Earth-616,Stan Lee,,,Loki (Marvel Comics)
+166,male,,Earth-616,Archie Goodwin; John Romita Sr.; George Tuska,,,Luke Cage
+167,male,,Earth-616,,,,Luke Carlyle
+169,,,Earth-616,,,,Machete (comics)
+171,male,,Earth-616,Stan Lee; Jack Kirby,X-Men #1,1963,Magneto (Marvel Comics)
+172,female,,,,,,Spider-Byte
+174,female,,Earth-616,,,,Maria Hill
+175,male,,Earth-616,Dan Slott; Phil Jimenez,,,Mister Negative
+178,female,,Earth-616,Stan Lee; John Romita Sr.,The Amazing Spider-Man #25,1965,Mary Jane Watson
+179,female,,Earth-616,Stan Lee; John Romita Sr.,The Amazing Spider-Man #25,1965,Mary Jane Watson
+181,female,,Earth-616,,The Amazing Spider-Man Annual #5,1968,Mary Parker (comics)
+182,female,,Earth-616,John Byrne; Rafael Kayanan,,,Mattie Franklin
+183,male,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #37,1966,Mendel Stromm
+184,male,,Earth-616,Peter David; Rick Leonardi,,,Spider-Man 2099
+186,male,,Earth-616,Stan Lee; Steve Ditko,Amazing Fantasy #15,1962,Spider-Man
+187,male,,Earth-616,Stan Lee; Jack Kirby,Fantastic Four #1,1961,Mister Fantastic
+189,male,,Earth-616,,,,Moon Knight
+190,male,,Earth-616,J. Michael Straczynski,,,Morlun
+194,male,,Earth-616,Bill Everett,,,Namor
+196,male,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #18,1964,Ned Leeds
+198,male,,Earth-616,Stan Lee; Jack Kirby,Sgt. Fury and his Howling Commandos #1,1963,Nick Fury
+199,female,,Earth-616,Brian K. Vaughan; Adrian Alphona,,,Nico Minoru
+200,male,,Earth-616,Chris Claremont; Dave Cockrum,Giant-Size X-Men #1,1975,Nightcrawler (character)
+202,male,,Earth-616,Jack Kirby,,,Silver Surfer
+203,male,,Earth-616,Jeph Loeb; Ed McGuinness,,,Nova (Sam Alexander)
+206,,,Earth-616,,,,Oddball (character)
+207,male,,Earth-616,David Michelinie; Todd McFarlane,,,Eddie Brock
+208,male,,,,,,Spider-Man (Pavitr Prabhakar)
+209,female,,Marvel Cinematic Universe,,Iron Man,2008,Pepper Potts (Marvel Cinematic Universe)
+210,male,,Earth-616,Stan Lee; Steve Ditko,Amazing Fantasy #15,1962,Spider-Man
+211,female,,Earth-616,Chris Claremont; John Byrne,X-Men #129,1980,Kitty Pryde
+212,male,,Earth-616,Archie Goodwin; John Romita Sr.; George Tuska,,,Luke Cage
+214,male,,Earth-616,Stan Lee,X-Men #1,1963,Professor X
+215,,,Earth-616,,,,Prowler (Marvel Comics)
+222,male,,Earth-616,,The Amazing Spider-Man Annual #5,1968,Richard Parker (comics)
+224,,,Earth-616,Stan Lee; Jack Kirby,Incredible Hulk #3,1962,Ringmaster (comics)
+225,female,,,,,,
+227,male,,Earth-616,Stan Lee; John Romita Sr.,The Amazing Spider-Man #51,1967,Robbie Robertson (character)
+228,male,,Marvel Cinematic Universe,,The Incredible Hulk,2008,
+229,female,,Earth-616,Chris Claremont; Michael Golden,,,Rogue (Marvel Comics)
+231,female,,Earth-96283,Alvin Sargent,,,
+234,female,,Earth-616,Dan Slott; Marcos Martín,,,Screwball (character)
+236,male,,Earth-616,Kurt Busiek; Patrick Zircher,,,Simon Krieger
+237,male,,Sony's Spider-Man Universe,,Morbius,2022,
+239,female,,Marvel Cinematic Universe,,Captain Marvel,2019,
+240,male,,Earth-616,,,,Robbie Baldwin
+241,male,,Earth-616,Stan Lee; Steve Ditko,The Amazing Spider-Man #25,1965,Spencer Smythe
+243,female,,Earth-616,Len Wein; Dave Cockrum,Giant-Size X-Men #1,1975,Storm (Marvel Comics)
+244,male,,Marvel Cinematic Universe,,Captain Marvel,2019,
+245,male,,Earth-616,David Michelinie; George Pérez,,,Taskmaster (character)
+246,male,,Earth-616,Jim Starlin; Zak Penn; Joss Whedon,,,Thanos
+247,male,,Earth-616,Peter David,,,Foreigner (character)
+249,male,,Earth-616,Stan Lee; Jack Kirby; Larry Lieber,,,Thor (Marvel Comics)
+251,female,,Earth-616,Ann Nocenti,,,Typhoid Mary (character)
+252,male,,Earth-616,Stan Lee; Jack Kirby,X-Men #2,1963,Vanisher
+253,male,,Earth-616,,,,Vermin (character)
+256,male,,Earth-616,Marv Wolfman; Keith Pollard,,,Walter Hardy
+258,female,,Earth-616,Brian Michael Bendis; Alex Maleev,,,White Tiger (Angela del Toro)
+260,male,,Marvel Cinematic Universe,,Iron Man,2008,
+261,male,,Marvel Cinematic Universe,,Doctor Strange,2016,Wong (Marvel Cinematic Universe)
+262,male,,Earth-616,Jack Kirby,,,Machine Man
+263,male,,Earth-616,,,,Zaran
