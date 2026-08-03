@@ -171,6 +171,43 @@ f.onload = async () => {
   await nav("#/overview");
   check("overview tiles link to dimensions", qa('.kpi[href="#/platforms"]').length === 1);
 
+  // Nothing should open a new browsing context — every link stays in this tab.
+  const offenders = [];
+  for (const h of ["#/overview", "#/works", "#/work/13", "#/person/35", "#/character/27",
+                   "#/franchise/MCU", "#/studios", "#/platforms", "#/analysis", "#/about"]) {
+    await nav(h);
+    for (const a of qa("a[target]")) offenders.push(h + " " + a.textContent.trim());
+  }
+  check("no link opens a new tab", offenders.length === 0, offenders.join(", "));
+
+  // Header links must not perform a real navigation — the viewer would spawn a tab.
+  await nav("#/overview");
+  const navA = qa("nav.tabs a").find((a) => a.getAttribute("href") === "#/studios");
+  const ev = new w.MouseEvent("click", { bubbles: true, cancelable: true });
+  navA.dispatchEvent(ev);
+  await wait(200);
+  check("header link default is prevented", ev.defaultPrevented);
+  check("header link still navigates", w.location.hash === "#/studios", w.location.hash);
+
+  const brand = q("a.brand");
+  const ev2 = new w.MouseEvent("click", { bubbles: true, cancelable: true });
+  brand.dispatchEvent(ev2);
+  await wait(200);
+  check("brand link handled in page", ev2.defaultPrevented && w.location.hash === "#/overview", w.location.hash);
+
+  const tile = q('.kpi[href="#/platforms"]');
+  const ev3 = new w.MouseEvent("click", { bubbles: true, cancelable: true });
+  tile.dispatchEvent(ev3);
+  await wait(200);
+  check("overview tile handled in page", ev3.defaultPrevented && w.location.hash === "#/platforms", w.location.hash);
+
+  // A ctrl-click is still the user asking for a new tab, so leave it to the browser.
+  await nav("#/overview");
+  const ev4 = new w.MouseEvent("click", { bubbles: true, cancelable: true, ctrlKey: true });
+  qa("nav.tabs a").find((a) => a.getAttribute("href") === "#/works").dispatchEvent(ev4);
+  await wait(120);
+  check("modified click left to the browser", !ev4.defaultPrevented);
+
   log(errs.length ? "FAIL js-errors :: " + errs.join(" | ") : "PASS no-js-errors");
  } catch (e) {
   log("FAIL harness-threw :: " + (e && e.stack ? e.stack.split("\n").slice(0, 3).join(" / ") : e));
