@@ -315,6 +315,7 @@ h2 {
 a.kpi:hover { border-color: var(--border-strong); }
 .kpi .label { font-size: 12px; color: var(--text-secondary); display: flex; align-items: center; gap: 6px; }
 .kpi .value { font-size: 25px; font-weight: 640; letter-spacing: -0.02em; margin-top: 2px; }
+.kpi .kpi-note { font-size: 11.5px; color: var(--text-muted); margin-top: 2px; }
 
 /* ---------- chart figure ---------- */
 
@@ -520,6 +521,38 @@ td.muted, .muted { color: var(--text-muted); }
 }
 
 .row-link:hover { text-decoration: underline; text-underline-offset: 2px; }
+
+/* A link that has to sit inside running text or a dense cell without shouting. The dotted
+   rule is the whole point: a value that leads somewhere has to look like one. */
+.row-link.soft {
+  font-weight: 400;
+  color: var(--text-secondary);
+  text-decoration: underline dotted var(--axis);
+  text-underline-offset: 3px;
+}
+.row-link.soft:hover { color: var(--text-primary); text-decoration: underline solid var(--series-1); }
+.row-link .as { color: var(--text-muted); font-size: 12px; margin-left: 4px; }
+
+.names { display: inline-flex; align-items: baseline; gap: 5px; flex-wrap: nowrap; }
+td.wrap .names, .deflist .names { flex-wrap: wrap; }
+.names .sep { color: var(--text-muted); }
+
+/* Badges and dot labels that navigate — same look, plus a pointer. */
+.link-quiet {
+  background: none;
+  border: 0;
+  padding: 0;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  text-align: left;
+}
+.link-quiet:hover { color: var(--text-primary); text-decoration: underline; text-underline-offset: 2px; }
+.badge.link-quiet { border: 1px solid var(--border); }
+
+/* The row a link asked us to point at, after a jump into a ranked list. */
+tbody tr.row-focus { background: var(--hover); box-shadow: inset 3px 0 0 var(--series-1); }
+tbody tr.row-focus:hover { background: var(--hover); }
 
 .dot-label { display: inline-flex; align-items: center; gap: 6px; }
 .dot-label .dot { width: 8px; height: 8px; border-radius: 50%; flex: none; }

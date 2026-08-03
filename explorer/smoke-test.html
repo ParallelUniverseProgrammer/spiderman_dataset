@@ -1,4 +1,4 @@
-<!doctype html><html><body>
+<!doctype html><html><head><meta charset="utf-8"></head><body>
 <iframe id="f" src="index.html" style="width:1300px;height:900px"></iframe>
 <pre id="out"></pre>
 <script>
@@ -37,7 +37,7 @@ f.onload = async () => {
   for (const b of bar) { if (b.getAttribute("aria-label")?.startsWith("2018")) { clicked = b; break; } }
   clicked.dispatchEvent(new w.MouseEvent("click", { bubbles: true }));
   await wait(200);
-  check("year drill-down", d.querySelector("h1").textContent === "Works" && q(".result-count").textContent.startsWith("4 of"), q(".result-count")?.textContent);
+  check("year drill-down", w.location.hash === "#/year/2018" && d.querySelector("h1").textContent === "2018", w.location.hash);
 
   qa("nav.tabs a").find((a) => a.getAttribute("href") === "#/works").click(); await wait(200);
   const total = qa("tbody tr").length;
@@ -124,7 +124,7 @@ f.onload = async () => {
 
   await nav("#/analysis");
   check("analysis charts", qa("figure.chart").length === 4, qa("figure.chart").length);
-  check("analysis tables", qa("section.block").length === 2, qa("section.block").length);
+  check("analysis tables", qa("section.block").length === 3, qa("section.block").length);
   for (const fig of qa("figure.chart")) {
     const btn = fig.querySelector(".toggle");
     btn.click(); await wait(30);
@@ -207,6 +207,116 @@ f.onload = async () => {
   qa("nav.tabs a").find((a) => a.getAttribute("href") === "#/works").dispatchEvent(ev4);
   await wait(120);
   check("modified click left to the browser", !ev4.defaultPrevented);
+
+  // ---- cross-links: the dimensions that only exist as columns in the source ----
+  const sectionTitles = () => qa("section.block h2").map((h) => h.textContent.replace(/\d+$/, "").trim());
+
+  await nav("#/publications");
+  check("outlet rows", qa("tbody tr").length === 36, qa("tbody tr").length);
+  qa("tbody .row-link")[0].click(); await wait(200);
+  check("outlet detail", w.location.hash.startsWith("#/publication/") && sectionTitles().includes("Scores"), w.location.hash);
+
+  await nav("#/comics");
+  check("comic rows", qa("tbody tr").length > 40, qa("tbody tr").length);
+  await nav("#/comic/" + encodeURIComponent("The Amazing Spider-Man"));
+  check("comic detail", sectionTitles().includes("Adapted by"), sectionTitles().join("|"));
+
+  await nav("#/awards");
+  check("award body rows", qa("tbody tr").length === 8, qa("tbody tr").length);
+  await nav("#/award/" + encodeURIComponent("Academy Awards"));
+  check("award detail", d.querySelector("h1").textContent === "Academy Awards" && qa("tbody tbody, tbody")[0].querySelectorAll("tr").length === 8, qa("tbody")[0].querySelectorAll("tr").length);
+
+  await nav("#/roles");
+  check("role rows", qa("tbody tr").length === 62, qa("tbody tr").length);
+  await nav("#/role/actor");
+  check("role detail", d.querySelector("h1").textContent === "actor" && qa("figure.chart").length === 1, qa("figure.chart").length);
+
+  // ---- a year, an attribute and the lookup of last resort ----
+  await nav("#/year/2002");
+  check("year page", d.querySelector("h1").textContent === "2002" && qa("tbody tr").length > 0, qa("tbody tr").length);
+  check("year page cross-sections", sectionTitles().some((t) => t.startsWith("Released this year")), sectionTitles().join("|"));
+
+  await nav("#/facet/rating/PG-13");
+  check("facet page", qa("tbody tr").length === 13, qa("tbody tr").length);
+  check("facet siblings", sectionTitles().some((t) => t.startsWith("Other mpaa")) || qa(".chip").length > 0);
+
+  await nav("#/find/" + encodeURIComponent("Stan Lee"));
+  check("find page", qa("section.block").length >= 2 && qa(".chip").length > 2, qa("section.block").length + " groups");
+  await nav("#/find/" + encodeURIComponent("zzzznotathing"));
+  check("find page empty state", !!q(".empty-state"));
+
+  // ---- the person -> character -> performer loop the whole thing hangs on ----
+  await nav("#/person/35");
+  const played = qa("section.block").find((s) => s.querySelector("h2").textContent.startsWith("Characters played"));
+  check("person lists characters played", !!played);
+  check("characters played carries dates", played && /\d{4}/.test(played.querySelector("tbody tr").textContent), played?.querySelector("tbody tr")?.textContent.slice(0, 60));
+  played.querySelector("tbody .row-link").click(); await wait(200);
+  check("character reached from person", w.location.hash.startsWith("#/character/"), w.location.hash);
+  const playedBy = qa("section.block").find((s) => s.querySelector("h2").textContent.startsWith("Played by"));
+  check("character lists its performers", !!playedBy);
+  playedBy.querySelector("tbody .row-link").click(); await wait(200);
+  check("person reached from character", w.location.hash.startsWith("#/person/"), w.location.hash);
+
+  // ---- overlap sections, and ranked-list drill-down with a focused row ----
+  await nav("#/work/13");
+  check("work overlaps section", sectionTitles().some((t) => t.startsWith("Overlaps with")), sectionTitles().join("|"));
+  const grossTile = qa(".kpi").find((k) => k.textContent.includes("Worldwide gross"));
+  check("gross tile links to the ranking", grossTile?.getAttribute("href")?.includes("focus=13"), grossTile?.getAttribute("href"));
+  grossTile.dispatchEvent(new w.MouseEvent("click", { bubbles: true, cancelable: true })); await wait(250);
+  check("focused row highlighted", qa("tr.row-focus").length === 1 && q("tr.row-focus").textContent.includes("No Way Home"), qa("tr.row-focus").length);
+
+  // ---- free-text names resolve to people, studios or the lookup ----
+  await nav("#/work/9");
+  const deflist = qa(".deflist .v");
+  check("every fact is a link", deflist.length > 0 && deflist.every((v) => v.querySelector("button, a")), deflist.filter((v) => !v.querySelector("button, a")).map((v) => v.textContent).join(" | "));
+  await nav("#/work/40");
+  const relTable = qa("section.block").find((s) => s.querySelector("h2").textContent.startsWith("Releases"));
+  check("release rows link out", relTable.querySelectorAll("tbody tr td button").length >= relTable.querySelectorAll("tbody tr").length);
+
+  // ---- the promise: no cell of data is a dead end ----
+  // Text that is a measurement, a verdict or a placeholder is allowed to be inert; anything
+  // that names a thing has to be clickable.
+  const INERT = /^(—|–|Won|Nominated|yes|no|n\/a|score|song|[+\-–]?[\d.,]+(\s*(min|M|K|×|yrs|\/\s*[\d.,]+|out of \d+))?|\$[\d.,]+[KMB]?|\d{4}\s*[–-]\s*\d{4}|\d+\s*\/\s*\d+)$/i;
+  const dead = [];
+  for (const h of ["#/works", "#/characters", "#/people", "#/work/13", "#/work/28", "#/work/40",
+                   "#/character/27", "#/person/35", "#/franchise/MCU", "#/studio/" + encodeURIComponent("Columbia Pictures"),
+                   "#/platform/" + encodeURIComponent("PlayStation 2"), "#/publication/IGN", "#/award/Academy%20Awards",
+                   "#/role/composer", "#/year/2002", "#/facet/rating/PG-13", "#/analysis"]) {
+    await nav(h);
+    for (const td of qa("td, .deflist .v")) {
+      const t = td.textContent.trim().replace(/\s+/g, " ");
+      if (!t || INERT.test(t)) continue;
+      if (td.querySelector("button, a, .chip")) continue;
+      dead.push(h + " :: " + t.slice(0, 40));
+    }
+  }
+  check("no cell of data is a dead end", dead.length === 0, dead.slice(0, 12).join(" | ") + (dead.length > 12 ? ` (+${dead.length - 12})` : ""));
+
+  // The new pages must not push the page sideways either.
+  const wide = [];
+  for (const h of ["#/publications", "#/comics", "#/roles", "#/publication/IGN", "#/comic/" + encodeURIComponent("The Amazing Spider-Man"),
+                   "#/role/actor", "#/year/2002", "#/facet/rating/PG-13", "#/find/" + encodeURIComponent("Stan Lee"), "#/person/35", "#/character/27"]) {
+    await nav(h);
+    if (d.documentElement.scrollWidth > d.documentElement.clientWidth + 1) wide.push(h + " " + d.documentElement.scrollWidth);
+  }
+  check("no h-overflow on the new pages", wide.length === 0, wide.join(", "));
+
+  // Follow the links rather than trusting them: every value-level link has to land on a
+  // real page, not an "Unknown …" stub.
+  const broken = [];
+  for (const page of ["#/work/40", "#/work/28", "#/person/35", "#/character/27", "#/year/2002"]) {
+    await nav(page);
+    const n = Math.min(qa(".row-link.soft").length, 14);
+    for (let i = 0; i < n; i++) {
+      await nav(page);
+      const link = qa(".row-link.soft")[i];
+      const label = link.textContent.trim().slice(0, 24);
+      link.click(); await wait(140);
+      const landed = q("h1") && !q(".empty-state");
+      if (!landed) broken.push(page + " → " + label + " → " + w.location.hash);
+    }
+  }
+  check("every value link lands somewhere real", broken.length === 0, broken.slice(0, 6).join(" | "));
 
   log(errs.length ? "FAIL js-errors :: " + errs.join(" | ") : "PASS no-js-errors");
  } catch (e) {
