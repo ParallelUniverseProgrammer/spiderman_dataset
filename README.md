@@ -88,19 +88,31 @@ reads `explorer/data.json` (the whole database, ~440 KB) and gives you:
 - **Works / Characters / People** — sortable, filterable tables over all 81 works,
   264 characters and 581 people. Filters live in the URL, so any view is a link
   you can share, and any view downloads as CSV.
-- **Franchises / Studios / Platforms** — three dimensions the database only holds
-  implicitly, grouped out of the join tables: 13 franchises, 104 studios and
-  66 platforms, each with its own page.
-- **Analysis** — how the 13 review outlets differ on a common 0–100 scale, how
+- **Franchises / Studios / Platforms / Outlets / Comic sources / Awarding bodies /
+  Credit roles / Years** — eight dimensions the database only holds implicitly,
+  grouped out of the columns that name them: 13 franchises, 104 studios,
+  66 platforms, 36 outlets, 102 comic sources, 8 awarding bodies, 62 credit roles
+  and every year on the 1967–2026 span, each with its own page.
+- **Analysis** — how the review outlets differ on a common 0–100 scale, how
   long a comic waits before it is adapted (122 source records, median 28 years),
   which storylines the screen keeps going back to, and every award on record.
 - **Detail pages** that cross-link in every direction: a film lists its cast,
   characters, studios, platforms, comic sources, awards, competing budget
-  estimates and connected works; a character gets a release strip, the characters
-  it most often shares a work with, and the credit spellings collapsed into it;
-  a person gets a career strip, frequent collaborators and their role mix.
-- **Search** (press `/`) across works, characters, people, franchises, studios
-  and platforms at once.
+  estimates, connected works and the works it overlaps with by shared people or
+  shared characters; a character gets a release strip, its co-appearances, every
+  performer who has played it with the years they played it, and the credit
+  spellings collapsed into it; a person gets a career strip, frequent
+  collaborators, the characters they have played and when, and who else has
+  played them.
+- **Nothing is a dead end.** Every value on screen leads somewhere: names resolve
+  to their person or studio page, years to a page for that year, attributes like
+  an MPAA rating or a game engine to the works sharing them, and free text the
+  catalogue holds no record for — a comic artist, an episode title — to a
+  cross-column lookup that finds every row mentioning it. The smoke test asserts
+  this: it walks 17 pages and fails on any cell of data that cannot be followed.
+- **Search** (press `/`) across works, characters, people, franchises, studios,
+  platforms, outlets, comic sources, awarding bodies, credit roles and years at
+  once, with a "search every column" fallback for anything the index misses.
 - **About the data** — the counting traps below, restated where you'd hit them,
   plus which figures are read from the database and which are derived in the page.
 

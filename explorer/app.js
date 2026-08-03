@@ -257,16 +257,233 @@ function collaborators(person) {
     .sort((a, b) => b.n - a.n || a.person.name.localeCompare(b.person.name));
 }
 
+/* Works nearest to this one by overlap — the same faces, or the same characters. Neither
+   relation is stored anywhere; both fall out of the join tables. */
+function neighbourWorks(w, pick) {
+  const mine = new Set(pick(w));
+  if (!mine.size) return [];
+  const counts = new Map();
+  for (const other of works) {
+    if (other === w) continue;
+    let n = 0;
+    for (const k of new Set(pick(other))) if (mine.has(k)) n++;
+    if (n) counts.set(other, n);
+  }
+  return [...counts.entries()]
+    .map(([work, n]) => ({ work, n }))
+    .sort((a, b) => b.n - a.n || (a.work.year ?? 9999) - (b.work.year ?? 9999));
+}
+
+const castKeys = (w) => [...w.cast, ...w.crew].map((c) => c.person_id);
+const charKeys = (w) => w.characters.map((c) => c.identity_id);
+
+/* ---------- more derived dimensions ---------- */
+
+/* Outlets, comic storylines, awarding bodies and credit roles are all things the source
+   names over and over without ever giving any of them a row. Each is shaped exactly like a
+   franchise or a studio here — a name, the works behind it, a span — so one list view, one
+   set of tiles and one works table serve all of them. */
+
+for (const g of publicationIndex.values()) {
+  g.works = [...new Set(g.scores.map((r) => r.work))];
+  summarise(g);
+}
+
+for (const g of comicIndex.values()) {
+  g.name = g.title;
+  g.works = [...new Set(g.uses.map((u) => u.work))];
+  summarise(g);
+}
+
+for (const g of awardBodies.values()) {
+  g.works = [...new Set(g.rows.map((a) => a.work))];
+  g.categories = [...new Set(g.rows.map((a) => a.category))].sort();
+  summarise(g);
+}
+
+/* Every credit role in the catalogue — "actor", "composer", "programmer" — as a dimension
+   you can stand on and look back out at the people and works holding it. */
+const roleIndex = new Map();
+for (const w of works) {
+  for (const c of [...w.cast, ...w.crew]) {
+    const g = groupInto(roleIndex, c.role, (n) => ({ name: n, works: [], credits: [], people: new Set() }));
+    g.credits.push({ ...c, work: w });
+    g.people.add(c.person_id);
+    if (!g.works.includes(w)) g.works.push(w);
+  }
+}
+for (const g of roleIndex.values()) {
+  summarise(g);
+  g.n_people = g.people.size;
+  g.is_cast = g.name === "actor" || g.name === "voice actor";
+}
+
+/* One year, from every angle the catalogue can see it. */
+const yearIndex = new Map();
+const yearBucket = (y) =>
+  y == null || !Number.isFinite(Number(y))
+    ? null
+    : groupInto(yearIndex, Number(y), (n) => ({ year: n, works: [], born: [], died: [], debuts: [], comics: [], awards: [], releases: [] }));
+for (const w of works) {
+  yearBucket(w.year)?.works.push(w);
+  for (const a of w.awards) yearBucket(a.year)?.awards.push({ ...a, work: w });
+  for (const src of w.sources) if (src.comic) yearBucket(src.year)?.comics.push({ ...src, work: w });
+  for (const r of w.game_releases) if (r.date) yearBucket(String(r.date).slice(0, 4))?.releases.push({ ...r, work: w });
+}
+for (const c of characters) if (c.first_media_year) yearBucket(c.first_media_year)?.debuts.push(c);
+for (const p of people) {
+  if (p.birth) yearBucket(String(p.birth).slice(0, 4))?.born.push(p);
+  if (p.death) yearBucket(String(p.death).slice(0, 4))?.died.push(p);
+}
+const yearHas = (y) => {
+  const b = yearIndex.get(Number(y));
+  return b && (b.works.length || b.born.length || b.died.length || b.debuts.length || b.comics.length || b.awards.length || b.releases.length);
+};
+
+/* ---------- name resolution ---------- */
+
+const normName = (s) => String(s).toLowerCase().replace(/[.'’]/g, "").replace(/\s+/g, " ").trim();
+const personByName = new Map();
+for (const p of people) if (!personByName.has(normName(p.name))) personByName.set(normName(p.name), p);
+const studioByName = new Map([...studioIndex.keys()].map((n) => [normName(n), n]));
+const comicByTitle = new Map([...comicIndex.keys()].map((n) => [normName(n), n]));
+
+/* Half the names in the source sit in free-text fields — a director column, a head-writer
+   string, a "Beenox / Griptonite Games" developer credit. Each field may hold several names
+   at once, so they are split apart and resolved one at a time. */
+const NAME_SPLIT = /\s*(?:;|\/|&|\band\b)\s*|,\s+(?!(?:Jr|Sr|II|III|Inc|LLC|Ltd|Co)\b)/;
+
+function splitNames(str) {
+  return String(str)
+    .split(NAME_SPLIT)
+    .map((x) => x.trim())
+    .filter(Boolean)
+    .map((raw) => {
+      const m = raw.match(/^(.*?)\s*\(([^)]*)\)$/);
+      return m && m[1].trim() ? { name: m[1].trim(), note: m[2] } : { name: raw, note: null };
+    });
+}
+
+/* A name we hold a record for goes to that record; a name we do not goes to the lookup,
+   which is never empty — the string came out of this data in the first place. */
+function nameLink(name, kind, note) {
+  const p = personByName.get(normName(name));
+  const st = studioByName.get(normName(name));
+  const first = kind === "studio" ? st && "#/studio/" + encodeURIComponent(st) : p && "#/person/" + p.id;
+  const second = kind === "studio" ? p && "#/person/" + p.id : st && "#/studio/" + encodeURIComponent(st);
+  const hash = first || second || findHash(name);
+  return softLink(name, hash, {
+    note,
+    title: first || second ? name : `Find “${name}” everywhere in the data`,
+  });
+}
+
+function nameLinks(str, kind = "person") {
+  if (!str) return dash();
+  const parts = splitNames(str);
+  if (!parts.length) return dash();
+  const out = [];
+  parts.forEach((part, i) => {
+    if (i) out.push(el("span", { class: "sep", text: "·" }));
+    out.push(nameLink(part.name, kind, part.note));
+  });
+  return el("span", { class: "names" }, out);
+}
+
+/* ---------- facets: attributes many works share, with no table of their own ---------- */
+
+const FACETS = {
+  rating: { label: "MPAA rating", title: (v) => `Films rated ${v}`, get: (w) => w.movie?.mpaa_rating },
+  esrb: { label: "ESRB rating", title: (v) => `Games rated ${v}`, get: (w) => w.game_releases.map((r) => r.esrb) },
+  genre: { label: "Genre", title: (v) => `${v} games`, get: (w) => w.game?.genre },
+  universe: { label: "Game universe", title: (v) => v, get: (w) => w.game?.universe },
+  engine: { label: "Engine", title: (v) => `Built on ${v}`, get: (w) => w.game?.engine },
+  network: { label: "Network", title: (v) => `Aired on ${v}`, get: (w) => w.tv?.network },
+  format: { label: "Format", title: (v) => v, get: (w) => w.tv?.format },
+  status: { label: "Status", title: (v) => `Series marked ${v}`, get: (w) => w.tv?.status },
+  kind: { label: "Kind", title: (v) => `${v} works`, get: (w) => w.movie?.sub_type || w.tv?.sub_type },
+  "studio-role": { label: "Studio credit", title: (v) => `Works with a ${v.replace(/_/g, " ")} credit`, get: (w) => w.studios.map((st) => st.role) },
+  relation: { label: "Work relation", title: (v) => `Works carrying a “${v}” link`, get: (w) => w.relations.map((r) => r.label) },
+  "credited-as": { label: "Credit spelling", title: (v) => `Credited as “${v}”`, get: (w) => w.characters.map((c) => c.as) },
+};
+
+const facetCache = new Map();
+function facetIndex(key) {
+  if (facetCache.has(key)) return facetCache.get(key);
+  const map = new Map();
+  const get = FACETS[key].get;
+  for (const w of works) {
+    const raw = get(w);
+    for (const v of (Array.isArray(raw) ? raw : [raw]).filter(Boolean)) {
+      if (!map.has(v)) map.set(v, []);
+      if (!map.get(v).includes(w)) map.get(v).push(w);
+    }
+  }
+  facetCache.set(key, map);
+  return map;
+}
+
+const facetHash = (key, value) => "#/facet/" + key + "/" + encodeURIComponent(value);
+const findHash = (text) => "#/find/" + encodeURIComponent(String(text).trim());
+
+/* ---------- the lookup of last resort ---------- */
+
+/* Anything that resolves to no record links here instead of sitting inert: every row in the
+   dataset that mentions the string, whichever column it was hiding in. */
+function findEverywhere(q) {
+  const needle = q.toLowerCase().trim();
+  if (!needle) return [];
+  const has = (v) => v != null && String(v).toLowerCase().includes(needle);
+  const groups = [];
+  const add = (kind, hits) => hits.length && groups.push({ kind, hits });
+
+  add("Works", works.filter((w) => has(w.title) || has(w.notes) || has(w.maker)).map((w) => ({ label: w.title, sub: `${yr(w)} · ${TYPE[w.type].one}`, hash: "#/work/" + w.id })));
+  add("Characters", characters.filter((c) => has(c.name) || c.variants.some(has) || has(c.first_comic)).map((c) => ({ label: c.name, sub: `${c.n_works} work${c.n_works === 1 ? "" : "s"}`, hash: "#/character/" + c.id })));
+  add("People", people.filter((p) => has(p.name) || has(p.place)).map((p) => ({ label: p.name, sub: p.roles.slice(0, 3).join(", "), hash: "#/person/" + p.id })));
+  add("Franchises", [...franchiseIndex.values()].filter((g) => has(g.name) || has(g.description)).map((g) => ({ label: g.name, sub: `${g.n_works} works`, hash: "#/franchise/" + encodeURIComponent(g.name) })));
+  add("Studios", [...studioIndex.values()].filter((g) => has(g.name)).map((g) => ({ label: g.name, sub: `${g.n_works} works`, hash: "#/studio/" + encodeURIComponent(g.name) })));
+  add("Platforms", [...platformIndex.values()].filter((g) => has(g.name)).map((g) => ({ label: g.name, sub: `${g.n_works} games`, hash: "#/platform/" + encodeURIComponent(g.name) })));
+  add("Outlets", [...publicationIndex.values()].filter((g) => has(g.name)).map((g) => ({ label: g.name, sub: `${g.n} scores`, hash: "#/publication/" + encodeURIComponent(g.name) })));
+  add("Comics", [...comicIndex.values()].filter((g) => has(g.title) || has(g.writer)).map((g) => ({ label: g.title, sub: [g.writer, g.year].filter(Boolean).join(" · "), hash: "#/comic/" + encodeURIComponent(g.title) })));
+  add("Awarding bodies", [...awardBodies.values()].filter((g) => has(g.name) || g.categories.some(has)).map((g) => ({ label: g.name, sub: `${g.won} won, ${g.nominated} nominated`, hash: "#/award/" + encodeURIComponent(g.name) })));
+  add("Credit roles", [...roleIndex.values()].filter((g) => has(g.name)).map((g) => ({ label: g.name, sub: `${g.n_people} people`, hash: "#/role/" + encodeURIComponent(g.name) })));
+
+  /* Rows that live inside a work, and are reachable only through it. */
+  const inner = [];
+  for (const w of works) {
+    const at = (what) => ({ label: what, sub: `${w.title} (${yr(w)})`, hash: "#/work/" + w.id });
+    for (const e of w.episodes) {
+      if (has(e.title)) inner.push(at(`Episode “${e.title}”`));
+      if (has(e.director)) inner.push(at(`Directed episode ${e.title ? "“" + e.title + "”" : "#" + e.episode}`));
+      if (has(e.writer)) inner.push(at(`Wrote episode ${e.title ? "“" + e.title + "”" : "#" + e.episode}`));
+    }
+    for (const t of w.soundtracks) if (has(t.title) || has(t.by)) inner.push(at(`${t.type === "song" ? "Song" : "Score"} ${t.title ? "“" + t.title + "”" : ""} ${t.by ? "— " + t.by : ""}`.trim()));
+    for (const a of w.awards) if (has(a.category) || has(a.body)) inner.push(at(`${a.result === "won" ? "Won" : "Nominated"}: ${a.category}`));
+    for (const src of w.sources) if (has(src.writer) || has(src.arc) || has(src.issues)) inner.push(at(`Source: ${[src.comic, src.issues, src.arc].filter(Boolean).join(" · ")}`));
+    for (const r of w.game_releases) if (has(r.publisher) || has(r.developer) || has(r.date)) inner.push(at(`${r.platform || "Release"}${r.date ? " " + r.date : ""} — ${[r.developer, r.publisher].filter(Boolean).join(" / ")}`));
+    for (const c of [...w.cast, ...w.crew]) if (has(c.character)) inner.push(at(`Credited as “${c.character}”`));
+    const strings = [w.movie?.director, w.movie?.producer, w.movie?.distributor, w.tv?.head_writer, w.tv?.voice_actor_spider_man, w.tv?.network, w.game?.engine, w.game?.universe].filter(has);
+    for (const v of strings) inner.push(at(String(v)));
+  }
+  add("Mentioned inside a work", inner.slice(0, 60));
+  return groups;
+}
+
 /* ---------- routing ---------- */
 
-/* Every list view's filter defaults. Absent from the URL means "this value". */
+/* Every list view's filter defaults. Absent from the URL means "this value".
+   `focus` is not a filter — it is the row a link asked us to point at. */
 const DEFAULTS = {
-  works: { type: "all", franchise: "all", era: "all", sort: "year", dir: 1, q: "" },
-  characters: { align: "all", sort: "n_works", dir: -1, q: "" },
-  people: { kind: "all", sort: "n_works", dir: -1, q: "" },
+  works: { type: "all", franchise: "all", era: "all", sort: "year", dir: 1, q: "", focus: "" },
+  characters: { align: "all", sort: "n_works", dir: -1, q: "", focus: "" },
+  people: { kind: "all", sort: "n_works", dir: -1, q: "", focus: "" },
   franchises: { sort: "n_works", dir: -1, q: "" },
   studios: { sort: "n_works", dir: -1, q: "" },
   platforms: { sort: "n_works", dir: -1, q: "" },
+  publications: { sort: "avg_pct", dir: -1, q: "" },
+  comics: { sort: "n_works", dir: -1, q: "" },
+  awards: { sort: "n_awards", dir: -1, q: "" },
+  roles: { sort: "n_people", dir: -1, q: "" },
 };
 
 function go(hash) {
@@ -310,7 +527,7 @@ function filterHash(view, filters, defaults) {
 /* ---------- shell ---------- */
 
 const app = document.getElementById("app");
-const LIST_VIEWS = ["works", "characters", "people", "franchises", "studios", "platforms"];
+const LIST_VIEWS = ["works", "characters", "people", "franchises", "studios", "platforms", "publications", "comics", "awards", "roles"];
 const LAST_LIST = {};
 const listHash = (view) => LAST_LIST[view] || "#/" + view;
 
@@ -319,6 +536,10 @@ function render() {
   const TAB_OF = {
     work: "works", character: "characters", person: "people",
     franchise: "franchises", studio: "studios", platform: "platforms",
+    // The four dimensions the Analysis page opens up keep that tab lit.
+    publication: "analysis", publications: "analysis", comic: "analysis", comics: "analysis",
+    award: "analysis", awards: "analysis", role: "analysis", roles: "analysis",
+    facet: "works",
   };
   const activeTab = TAB_OF[view] || view;
   document.querySelectorAll("nav.tabs a").forEach((a) => {
@@ -342,6 +563,17 @@ function render() {
     studio: viewStudio,
     platforms: viewPlatforms,
     platform: viewPlatform,
+    publications: viewPublications,
+    publication: viewPublication,
+    comics: viewComics,
+    comic: viewComic,
+    awards: viewAwards,
+    award: viewAward,
+    roles: viewRoles,
+    role: viewRole,
+    year: viewYear,
+    facet: viewFacet,
+    find: viewFind,
     analysis: viewAnalysis,
     about: viewAbout,
   };
@@ -364,19 +596,79 @@ function backLink(label, hash) {
   return el("button", { class: "back", onclick: () => go(hash) }, icon("back", 13), label);
 }
 
-function statTile(label, value, hash) {
-  const inner = [el("div", { class: "label" }, label), el("div", { class: "value", text: value })];
+function statTile(label, value, hash, note) {
+  const inner = [
+    el("div", { class: "label" }, label),
+    el("div", { class: "value", text: value }),
+    note ? el("div", { class: "kpi-note", text: note }) : null,
+  ];
   return hash
-    ? el("a", { class: "kpi", href: hash }, inner)
+    ? el("a", { class: "kpi", href: hash, title: note || null }, inner)
     : el("div", { class: "kpi" }, inner);
+}
+
+const dash = () => el("span", { class: "muted", text: "—" });
+
+/* A link at body weight, for a value sitting inside a sentence, a cell or a fact list. */
+function softLink(text, hash, opts = {}) {
+  return el(
+    "button",
+    { class: "row-link soft", title: opts.title || null, onclick: () => go(hash) },
+    text,
+    opts.note ? el("span", { class: "as", text: "(" + opts.note + ")" }) : null
+  );
+}
+
+/* The small linkable atoms every table cell is built from. */
+const yearLink = (y, label) =>
+  y == null ? dash() : yearHas(y) ? softLink(label ?? String(y), "#/year/" + y) : el("span", { text: label ?? String(y) });
+
+const dateLink = (d) => {
+  if (!d) return dash();
+  const y = String(d).slice(0, 4);
+  return yearHas(y) ? softLink(String(d), "#/year/" + Number(y)) : el("span", { text: String(d) });
+};
+
+const facetLink = (key, value, label) => (value ? softLink(label ?? String(value), facetHash(key, value)) : dash());
+const roleLink = (role) => (role ? softLink(role, "#/role/" + encodeURIComponent(role)) : dash());
+const findLink = (text, label) => (text ? softLink(label ?? String(text), findHash(text), { title: `Find “${text}” everywhere in the data` }) : dash());
+const comicLink = (title, label) => {
+  if (!title) return dash();
+  const hit = comicByTitle.get(normName(title));
+  return hit ? softLink(label ?? title, "#/comic/" + encodeURIComponent(hit)) : findLink(title, label);
+};
+const publicationLink = (name, label) =>
+  publicationIndex.has(name) ? softLink(label ?? name, "#/publication/" + encodeURIComponent(name)) : findLink(name, label);
+const mediumLink = (type) =>
+  el("button", { class: "dot-label link-quiet", onclick: () => go("#/works?type=" + type) },
+    el("span", { class: "dot", style: { background: TYPE[type].color } }), TYPE[type].one);
+const alignLink = (alignment) => {
+  const a = ALIGN[alignment] || ALIGN.neutral;
+  return el("button", { class: "dot-label link-quiet", onclick: () => go("#/characters?align=" + (alignment || "neutral")) },
+    el("span", { class: "dot", style: { background: a.color } }), a.label);
+};
+
+/* Character link that survives the two ways the data names a character: by identity, and by
+   the exact string a work credited. */
+function characterLink(identity_id, label) {
+  const c = charById.get(identity_id);
+  if (!c) return label ? findLink(label) : dash();
+  return softLink(label ?? c.name, "#/character/" + c.id, { title: c.name });
+}
+
+function creditedAsLink(work, credited) {
+  if (!credited) return dash();
+  const match = work.characters.find((wc) => wc.as === credited);
+  return match ? characterLink(match.identity_id, credited) : facetLink("credited-as", credited);
 }
 
 function dotLabel(color, label) {
   return el("span", { class: "dot-label" }, el("span", { class: "dot", style: { background: color } }), label);
 }
 
+/* The medium marker is the same everywhere, and everywhere it is a way into that medium. */
 function typeBadge(type) {
-  return dotLabel(TYPE[type].color, TYPE[type].one);
+  return mediumLink(type);
 }
 
 function workLink(w, extra) {
@@ -396,8 +688,7 @@ function personLink(pid) {
 
 function franchiseLink(name, maxLen) {
   return el("button", {
-    class: "row-link",
-    style: { fontWeight: "400" },
+    class: "row-link soft",
     text: maxLen && name.length > maxLen ? name.slice(0, maxLen - 1) + "\u2026" : name,
     title: name,
     onclick: () => go("#/franchise/" + encodeURIComponent(name)),
@@ -450,21 +741,30 @@ function table(cols, rows, opts = {}) {
       )
     )
   );
-  const body = rows.map((r) =>
-    el(
+  let focused = null;
+  const body = rows.map((r) => {
+    const tr = el(
       "tr",
       null,
       cols.map((c) => {
         const v = c.cell(r);
         return el("td", { class: (c.num ? "num " : "") + (c.wrap ? "wrap " : "") + (c.cls || "") }, v);
       })
-    )
-  );
-  return el(
+    );
+    // A link can ask for one row to be pointed at — "here is where this sits in the ranking".
+    if (opts.focus && opts.focus(r)) {
+      tr.classList.add("row-focus");
+      focused = tr;
+    }
+    return tr;
+  });
+  const wrap = el(
     "div",
     { class: "table-wrap" + (opts.plain ? " plain" : "") },
     el("table", null, el("thead", null, head), el("tbody", null, body))
   );
+  if (focused) requestAnimationFrame(() => focused.scrollIntoView({ block: "center" }));
+  return wrap;
 }
 
 function chips(options, current, onPick) {
@@ -573,6 +873,30 @@ function legendBox(items, shape = "rect") {
   );
 }
 
+/* Every dimension the catalogue can be entered through, in one place, so nothing is
+   reachable only by stumbling onto the right cell. */
+function browseSection(title = "Every way into the data") {
+  const items = [
+    { label: "Works", hash: "#/works", n: works.length },
+    { label: "Characters", hash: "#/characters", n: characters.length },
+    { label: "People", hash: "#/people", n: people.length },
+    { label: "Franchises", hash: "#/franchises", n: franchiseIndex.size },
+    { label: "Studios", hash: "#/studios", n: studioIndex.size },
+    { label: "Platforms", hash: "#/platforms", n: platformIndex.size },
+    { label: "Outlets", hash: "#/publications", n: publicationIndex.size },
+    { label: "Comic sources", hash: "#/comics", n: comicIndex.size },
+    { label: "Awarding bodies", hash: "#/awards", n: awardBodies.size },
+    { label: "Credit roles", hash: "#/roles", n: roleIndex.size },
+    { label: "Years", hash: "#/year/" + DATA.meta.year_max, n: yearIndex.size },
+  ];
+  return section(
+    title,
+    null,
+    el("div", { class: "chip-list" }, items.map((it) => dimChip(it.label, it.hash, String(it.n)))),
+    el("div", { class: "sub", style: { marginTop: "8px" }, text: "Outlets, comic sources, awarding bodies, credit roles and years are not tables in the source — they are grouped here out of the columns that name them, so each becomes somewhere you can stand." })
+  );
+}
+
 /* ============================================================
    OVERVIEW
    ============================================================ */
@@ -641,6 +965,8 @@ function viewOverview() {
     el("div", { class: "grid cols-2", style: { marginTop: "14px" } }, economicsChart(), receptionChart())
   );
   frag.appendChild(el("div", { class: "grid", style: { marginTop: "14px" } }, topCharactersChart()));
+
+  frag.appendChild(browseSection());
 
   frag.appendChild(
     el(
@@ -734,7 +1060,7 @@ function timelineChart() {
     hit.addEventListener("focus", showTip);
     hit.addEventListener("pointerleave", () => tip.hide());
     hit.addEventListener("blur", () => tip.hide());
-    if (total) hit.addEventListener("click", () => go(`#/works?era=${y}`));
+    if (total) hit.addEventListener("click", () => go(`#/year/${y}`));
     g.appendChild(hit);
   });
 
@@ -753,7 +1079,7 @@ function timelineChart() {
     tableFn: () =>
       table(
         [
-          { key: "year", label: "Year", num: true, cell: (r) => String(r.year) },
+          { key: "year", label: "Year", num: true, cell: (r) => yearLink(r.year) },
           { key: "movie", label: "Movies", num: true, cell: (r) => String(r.movie) },
           { key: "tv", label: "TV series", num: true, cell: (r) => String(r.tv_show) },
           { key: "game", label: "Games", num: true, cell: (r) => String(r.game) },
@@ -1188,17 +1514,17 @@ function viewWorks(_id, query) {
     tableNode = table(
       [
         { key: "title", label: "Title", cell: (w) => workLink(w, false) },
-        { key: "year", label: "Year", num: true, cell: (w) => yr(w) },
+        { key: "year", label: "Year", num: true, cell: (w) => yearLink(w.year, yr(w)) },
         { key: "type", label: "Medium", cell: (w) => typeBadge(w.type) },
-        { key: "franchise", label: "Franchise", cell: (w) => (w.franchise ? franchiseLink(w.franchise, 24) : el("span", { class: "muted", text: "—" })) },
-        { key: "maker", label: "Made by", cell: (w) => trunc(w.maker, 22) },
+        { key: "franchise", label: "Franchise", cell: (w) => (w.franchise ? franchiseLink(w.franchise, 24) : dash()) },
+        { key: "maker", label: "Made by", cell: (w) => (w.maker ? nameLinks(w.maker) : dash()) },
         { key: "score", label: "Score", num: true, cell: (w) => (w.avg_pct == null ? el("span", { class: "muted", text: "—" }) : pct(w.avg_pct)) },
         { key: "gross", label: "Gross", num: true, cell: (w) => (w.gross == null ? el("span", { class: "muted", text: "—" }) : money(w.gross)) },
         { key: "chars", label: "Chars", num: true, cell: (w) => String(w.characters.length) },
         { key: "credits", label: "Credits", num: true, cell: (w) => String(w.n_credits) },
       ],
       rows,
-      { onSort: sortHandler("works", f, ["title", "year", "type", "franchise", "maker"]), sortKey: f.sort, dir: f.dir, scroll: true }
+      { onSort: sortHandler("works", f, ["title", "year", "type", "franchise", "maker"]), sortKey: f.sort, dir: f.dir, scroll: true, focus: (w) => String(w.id) === String(f.focus) }
     );
     frag.appendChild(tableNode);
     tableNode = tableNode.querySelector("table");
@@ -1207,11 +1533,6 @@ function viewWorks(_id, query) {
   }
 
   return frag;
-}
-
-function trunc(v, n) {
-  if (!v) return el("span", { class: "muted", text: "—" });
-  return v.length > n ? v.slice(0, n - 1) + "…" : v;
 }
 
 /* ---------- work detail ---------- */
@@ -1223,6 +1544,7 @@ function viewWork(id) {
   frag.appendChild(backLink("All works", listHash("works")));
 
   const sub = w.type === "movie" ? w.movie?.sub_type : w.type === "tv_show" ? w.tv?.sub_type : w.game?.genre;
+  const subKey = w.type === "game" ? "genre" : "kind";
   frag.appendChild(
     el(
       "div",
@@ -1231,9 +1553,10 @@ function viewWork(id) {
       el(
         "div",
         { class: "meta-line" },
-        el("span", { class: "badge" }, el("span", { class: "dot", style: { background: TYPE[w.type].color } }), TYPE[w.type].one),
-        el("span", { text: w.date || String(yr(w)) }),
-        sub ? el("span", { text: sub }) : null,
+        el("button", { class: "badge link-quiet", onclick: () => go("#/works?type=" + w.type) },
+          el("span", { class: "dot", style: { background: TYPE[w.type].color } }), TYPE[w.type].one),
+        w.date ? dateLink(w.date) : yearLink(w.year, yr(w)),
+        sub ? facetLink(subKey, sub) : null,
         w.franchise
           ? el("button", {
               class: "linkish",
@@ -1246,44 +1569,54 @@ function viewWork(id) {
     )
   );
 
-  /* stat tiles */
+  /* Stat tiles carry a destination wherever the catalogue can answer "compared with what?" —
+     the ranked list, with this work pointed at. */
+  const rank = (sort) => `#/works?sort=${sort}&dir=-1&focus=${w.id}`;
   const tiles = [];
-  if (w.avg_pct != null) tiles.push(statTile("Mean review score", pct(w.avg_pct) + " / 100"));
-  if (w.budget_usd) tiles.push(statTile("Production budget", money(w.budget_usd)));
-  if (w.gross) tiles.push(statTile("Worldwide gross", money(w.gross)));
-  if (w.budget_usd && w.gross) tiles.push(statTile("Return on budget", (w.gross / w.budget_usd).toFixed(2) + "×"));
+  if (w.avg_pct != null) tiles.push(statTile("Mean review score", pct(w.avg_pct) + " / 100", rank("score"), "See it ranked against every scored work"));
+  if (w.budget_usd) tiles.push(statTile("Production budget", money(w.budget_usd), "#/analysis"));
+  if (w.gross) tiles.push(statTile("Worldwide gross", money(w.gross), rank("gross"), "See it ranked against every work on record"));
+  if (w.budget_usd && w.gross) tiles.push(statTile("Return on budget", (w.gross / w.budget_usd).toFixed(2) + "×", "#/analysis"));
   if (w.movie?.runtime_minutes) tiles.push(statTile("Runtime", w.movie.runtime_minutes + " min"));
   if (w.tv?.episodes) tiles.push(statTile("Episodes", num(w.tv.episodes)));
   if (w.tv?.seasons) tiles.push(statTile("Seasons", String(w.tv.seasons)));
-  if (w.characters.length) tiles.push(statTile("Characters", String(w.characters.length)));
-  if (w.n_credits) tiles.push(statTile("Credited people", String(w.n_credits)));
+  if (w.characters.length) tiles.push(statTile("Characters", String(w.characters.length), rank("chars")));
+  if (w.n_credits) tiles.push(statTile("Credited people", String(w.n_credits), rank("credits")));
   if (tiles.length) frag.appendChild(el("div", { class: "kpis", style: { marginTop: "16px" } }, tiles));
 
-  /* facts */
+  /* facts — every value here names something the catalogue holds elsewhere */
   const facts = [];
   const addFact = (k, v) => v && facts.push(el("div", null, el("div", { class: "k", text: k }), el("div", { class: "v" }, v)));
   if (w.type === "movie" && w.movie) {
-    addFact("Director", w.movie.director);
-    addFact("Producer", w.movie.producer);
-    addFact("Distributor", w.movie.distributor);
-    addFact("Rating", w.movie.mpaa_rating);
+    addFact("Director", w.movie.director && nameLinks(w.movie.director));
+    addFact("Producer", w.movie.producer && nameLinks(w.movie.producer));
+    addFact("Distributor", w.movie.distributor && nameLinks(w.movie.distributor, "studio"));
+    addFact("Rating", w.movie.mpaa_rating && facetLink("rating", w.movie.mpaa_rating));
   }
   if (w.type === "tv_show" && w.tv) {
-    addFact("Network", w.tv.network);
-    addFact("Format", w.tv.format);
-    addFact("Ran", [w.tv.start_year, w.tv.end_year].filter(Boolean).join("–"));
-    addFact("Head writer", w.tv.head_writer);
-    addFact("Spider-Man voice", w.tv.voice_actor_spider_man);
-    addFact("Status", w.tv.status);
+    addFact("Network", w.tv.network && facetLink("network", w.tv.network));
+    addFact("Format", w.tv.format && facetLink("format", w.tv.format));
+    addFact(
+      "Ran",
+      w.tv.start_year &&
+        el("span", { class: "names" }, yearLink(w.tv.start_year), w.tv.end_year && w.tv.end_year !== w.tv.start_year ? el("span", { class: "sep", text: "–" }) : null, w.tv.end_year && w.tv.end_year !== w.tv.start_year ? yearLink(w.tv.end_year) : null)
+    );
+    addFact("Head writer", w.tv.head_writer && nameLinks(w.tv.head_writer));
+    addFact("Spider-Man voice", w.tv.voice_actor_spider_man && nameLinks(w.tv.voice_actor_spider_man));
+    addFact("Status", w.tv.status && facetLink("status", w.tv.status));
   }
   if (w.type === "game" && w.game) {
-    addFact("Genre", w.game.genre);
-    addFact("Universe", w.game.universe);
-    addFact("Engine", w.game.engine);
-    addFact("Platforms", w.platforms.join(", "));
+    addFact("Genre", w.game.genre && facetLink("genre", w.game.genre));
+    addFact("Universe", w.game.universe && facetLink("universe", w.game.universe));
+    addFact("Engine", w.game.engine && facetLink("engine", w.game.engine));
+    addFact(
+      "Platforms",
+      w.platforms.length &&
+        el("span", { class: "names" }, [...w.platforms].sort().flatMap((n, i) => [i ? el("span", { class: "sep", text: "·" }) : null, softLink(n, "#/platform/" + encodeURIComponent(n))]).filter(Boolean))
+    );
   }
-  if (w.box_office?.domestic) addFact("Domestic gross", money(w.box_office.domestic));
-  if (w.box_office?.international) addFact("International gross", money(w.box_office.international));
+  if (w.box_office?.domestic) addFact("Domestic gross", softLink(money(w.box_office.domestic), rank("gross")));
+  if (w.box_office?.international) addFact("International gross", softLink(money(w.box_office.international), rank("gross")));
   if (facts.length) frag.appendChild(section("Details", null, el("div", { class: "card deflist" }, facts)));
 
   /* characters */
@@ -1307,8 +1640,8 @@ function viewWork(id) {
         table(
           [
             { key: "p", label: "Person", cell: (c) => personLink(c.person_id) },
-            { key: "c", label: "Credited as", wrap: true, cell: (c) => c.character || el("span", { class: "muted", text: "—" }) },
-            { key: "r", label: "Role", cell: (c) => el("span", { class: "muted", text: c.role }) },
+            { key: "c", label: "Credited as", wrap: true, cell: (c) => creditedAsLink(w, c.character) },
+            { key: "r", label: "Role", cell: (c) => roleLink(c.role) },
           ],
           w.cast,
           { plain: true }
@@ -1325,7 +1658,7 @@ function viewWork(id) {
         w.crew.length,
         table(
           [
-            { key: "r", label: "Role", cell: (c) => c.role },
+            { key: "r", label: "Role", cell: (c) => roleLink(c.role) },
             { key: "p", label: "Person", cell: (c) => personLink(c.person_id) },
           ],
           [...w.crew].sort((a, b) => a.role.localeCompare(b.role)),
@@ -1344,7 +1677,7 @@ function viewWork(id) {
         w.reviews.length,
         table(
           [
-            { key: "s", label: "Source", wrap: true, cell: (r) => r.source },
+            { key: "s", label: "Source", wrap: true, cell: (r) => publicationLink(r.publication, r.source) },
             { key: "raw", label: "Raw", num: true, cell: (r) => (r.max ? `${r.score} / ${r.max}` : String(r.score)) },
             {
               key: "n",
@@ -1381,10 +1714,11 @@ function viewWork(id) {
           [
             { key: "s", label: "S", num: true, cell: (e) => (e.season == null ? "—" : String(e.season)) },
             { key: "e", label: "E", num: true, cell: (e) => (e.episode == null ? "—" : String(e.episode)) },
-            { key: "t", label: "Title", wrap: true, cell: (e) => e.title || el("span", { class: "muted", text: "—" }) },
-            { key: "a", label: "Air date", cell: (e) => e.air_date || el("span", { class: "muted", text: "—" }) },
-            { key: "d", label: "Director", wrap: true, cell: (e) => e.director || el("span", { class: "muted", text: "—" }) },
-            { key: "v", label: "US viewers", num: true, cell: (e) => (e.viewers_m == null ? el("span", { class: "muted", text: "—" }) : e.viewers_m + "M") },
+            { key: "t", label: "Title", wrap: true, cell: (e) => (e.title ? findLink(e.title) : dash()) },
+            { key: "a", label: "Air date", cell: (e) => dateLink(e.air_date) },
+            { key: "d", label: "Director", wrap: true, cell: (e) => nameLinks(e.director) },
+            { key: "wr", label: "Writer", wrap: true, cell: (e) => nameLinks(e.writer) },
+            { key: "v", label: "US viewers", num: true, cell: (e) => (e.viewers_m == null ? dash() : e.viewers_m + "M") },
           ],
           w.episodes,
           { plain: true }
@@ -1404,12 +1738,12 @@ function viewWork(id) {
         w.game_releases.length,
         table(
           [
-            { key: "p", label: "Platform", cell: (r) => r.platform || "—" },
-            { key: "d", label: "Date", cell: (r) => r.date || el("span", { class: "muted", text: "—" }) },
-            { key: "pub", label: "Publisher", wrap: true, cell: (r) => r.publisher || el("span", { class: "muted", text: "—" }) },
-            { key: "dev", label: "Developer", wrap: true, cell: (r) => r.developer || el("span", { class: "muted", text: "—" }) },
-            { key: "m", label: "Metacritic", num: true, cell: (r) => (r.metacritic == null ? el("span", { class: "muted", text: "—" }) : String(r.metacritic)) },
-            { key: "e", label: "ESRB", cell: (r) => r.esrb || el("span", { class: "muted", text: "—" }) },
+            { key: "p", label: "Platform", cell: (r) => (r.platform ? softLink(r.platform, "#/platform/" + encodeURIComponent(r.platform)) : dash()) },
+            { key: "d", label: "Date", cell: (r) => dateLink(r.date) },
+            { key: "pub", label: "Publisher", wrap: true, cell: (r) => nameLinks(r.publisher, "studio") },
+            { key: "dev", label: "Developer", wrap: true, cell: (r) => nameLinks(r.developer, "studio") },
+            { key: "m", label: "Metacritic", num: true, cell: (r) => (r.metacritic == null ? dash() : String(r.metacritic)) },
+            { key: "e", label: "ESRB", cell: (r) => (r.esrb ? facetLink("esrb", r.esrb) : dash()) },
           ],
           w.game_releases,
           { plain: true }
@@ -1450,9 +1784,9 @@ function viewWork(id) {
         w.budgets.length,
         table(
           [
-            { key: "c", label: "Component", cell: (b) => b.component || "—" },
+            { key: "c", label: "Component", cell: (b) => (b.component ? findLink(b.component) : dash()) },
             { key: "a", label: "Amount", num: true, cell: (b) => money(b.amount) },
-            { key: "y", label: "Source year", num: true, cell: (b) => (b.source_year ?? el("span", { class: "muted", text: "—" })) },
+            { key: "y", label: "Source year", num: true, cell: (b) => yearLink(b.source_year) },
             { key: "p", label: "Used above", cell: (b) => (b.primary ? "yes" : el("span", { class: "muted", text: "no" })) },
             { key: "n", label: "Note", wrap: true, cell: (b) => b.note || el("span", { class: "muted", text: "—" }) },
           ],
@@ -1476,11 +1810,11 @@ function viewWork(id) {
         w.sources.length,
         table(
           [
-            { key: "c", label: "Comic", wrap: true, cell: (r) => r.comic || el("span", { class: "muted", text: "—" }) },
-            { key: "i", label: "Issues", wrap: true, cell: (r) => r.issues || el("span", { class: "muted", text: "—" }) },
-            { key: "w", label: "Writer", wrap: true, cell: (r) => r.writer || el("span", { class: "muted", text: "—" }) },
-            { key: "y", label: "Year", num: true, cell: (r) => (r.year == null ? el("span", { class: "muted", text: "—" }) : String(r.year)) },
-            { key: "a", label: "Arc", wrap: true, cell: (r) => r.arc || el("span", { class: "muted", text: "—" }) },
+            { key: "c", label: "Comic", wrap: true, cell: (r) => comicLink(r.comic) },
+            { key: "i", label: "Issues", wrap: true, cell: (r) => (r.issues ? findLink(r.issues) : dash()) },
+            { key: "w", label: "Writer", wrap: true, cell: (r) => nameLinks(r.writer) },
+            { key: "y", label: "Year", num: true, cell: (r) => yearLink(r.year) },
+            { key: "a", label: "Arc", wrap: true, cell: (r) => (r.arc ? findLink(r.arc) : dash()) },
           ],
           w.sources,
           { plain: true }
@@ -1497,11 +1831,11 @@ function viewWork(id) {
         w.awards.length,
         table(
           [
-            { key: "b", label: "Body", cell: (a) => a.body },
-            { key: "y", label: "Year", num: true, cell: (a) => (a.year == null ? "—" : String(a.year)) },
-            { key: "c", label: "Category", wrap: true, cell: (a) => a.category },
+            { key: "b", label: "Body", cell: (a) => softLink(a.body, "#/award/" + encodeURIComponent(a.body)) },
+            { key: "y", label: "Year", num: true, cell: (a) => yearLink(a.year) },
+            { key: "c", label: "Category", wrap: true, cell: (a) => findLink(a.category) },
             { key: "r", label: "Result", cell: (a) => (a.result === "won" ? el("strong", { text: "Won" }) : el("span", { class: "muted", text: "Nominated" })) },
-            { key: "p", label: "Recipient", cell: (a) => (a.person_id ? personLink(a.person_id) : el("span", { class: "muted", text: "—" })) },
+            { key: "p", label: "Recipient", cell: (a) => (a.person_id ? personLink(a.person_id) : dash()) },
           ],
           w.awards,
           { plain: true }
@@ -1518,11 +1852,11 @@ function viewWork(id) {
         w.soundtracks.length,
         table(
           [
-            { key: "t", label: "Type", cell: (t) => t.type },
-            { key: "n", label: "Title", wrap: true, cell: (t) => t.title || el("span", { class: "muted", text: "—" }) },
-            { key: "b", label: "By", wrap: true, cell: (t) => t.by || el("span", { class: "muted", text: "—" }) },
-            { key: "us", label: "US peak", num: true, cell: (t) => t.peak_us || el("span", { class: "muted", text: "—" }) },
-            { key: "uk", label: "UK peak", num: true, cell: (t) => t.peak_uk || el("span", { class: "muted", text: "—" }) },
+            { key: "t", label: "Type", cell: (t) => findLink(t.type) },
+            { key: "n", label: "Title", wrap: true, cell: (t) => (t.title ? findLink(t.title) : dash()) },
+            { key: "b", label: "By", wrap: true, cell: (t) => nameLinks(t.by) },
+            { key: "us", label: "US peak", num: true, cell: (t) => t.peak_us || dash() },
+            { key: "uk", label: "UK peak", num: true, cell: (t) => t.peak_uk || dash() },
           ],
           w.soundtracks,
           { plain: true }
@@ -1549,7 +1883,7 @@ function viewWork(id) {
             el(
               "div",
               null,
-              el("div", { class: "k", style: { fontSize: "12px", color: "var(--text-muted)", marginBottom: "5px" }, text: label }),
+              el("div", { class: "k", style: { fontSize: "12px", color: "var(--text-muted)", marginBottom: "5px" } }, facetLink("relation", label)),
               el(
                 "div",
                 { class: "chip-list" },
@@ -1568,6 +1902,46 @@ function viewWork(id) {
             )
           )
         )
+      )
+    );
+  }
+
+  /* Nothing in the source links these works — the overlap does. */
+  const byPeople = neighbourWorks(w, castKeys).slice(0, 12);
+  const byChars = neighbourWorks(w, charKeys).slice(0, 12);
+  if (byPeople.length || byChars.length) {
+    const strand = (label, list, one, many) =>
+      list.length
+        ? el(
+            "div",
+            null,
+            el("div", { class: "k", style: { fontSize: "12px", color: "var(--text-muted)", marginBottom: "5px" }, text: label }),
+            el(
+              "div",
+              { class: "chip-list" },
+              list.map((x) =>
+                el(
+                  "button",
+                  { class: "chip", onclick: () => go("#/work/" + x.work.id) },
+                  el("span", { class: "dot", style: { background: TYPE[x.work.type].color } }),
+                  x.work.title,
+                  el("span", { class: "as", text: `${x.n} ${x.n === 1 ? one : many}` })
+                )
+              )
+            )
+          )
+        : null;
+    frag.appendChild(
+      section(
+        "Overlaps with",
+        byPeople.length + byChars.length,
+        el(
+          "div",
+          { class: "card", style: { display: "grid", gap: "12px" } },
+          strand("Shares credited people with", byPeople, "person", "people"),
+          strand("Shares characters with", byChars, "character", "characters")
+        ),
+        el("div", { class: "sub", style: { marginTop: "8px" }, text: "Computed from the credit and character tables, not from any stored relation — these are works this one happens to have people or characters in common with." })
       )
     );
   }
@@ -1702,7 +2076,7 @@ function viewCharacters(_id, query) {
     tableNode = table(
       [
         { key: "name", label: "Character", cell: (c) => el("button", { class: "row-link", text: c.name, onclick: () => go("#/character/" + c.id) }) },
-        { key: "align", label: "Alignment", cell: (c) => dotLabel((ALIGN[c.alignment] || ALIGN.neutral).color, (ALIGN[c.alignment] || ALIGN.neutral).label) },
+        { key: "align", label: "Alignment", cell: (c) => alignLink(c.alignment) },
         {
           key: "n_works",
           label: "Appears in",
@@ -1714,12 +2088,12 @@ function viewCharacters(_id, query) {
               el("span", { class: "track" }, el("span", { class: "fill", style: { width: (c.n_works / maxWorks) * 100 + "%" } }))
             ),
         },
-        { key: "first_media_year", label: "First on screen", num: true, cell: (c) => (c.first_media_year ?? "—") },
-        { key: "first_year", label: "First in comics", num: true, cell: (c) => (c.first_year ?? el("span", { class: "muted", text: "—" })) },
+        { key: "first_media_year", label: "First on screen", num: true, cell: (c) => yearLink(c.first_media_year) },
+        { key: "first_year", label: "First in comics", num: true, cell: (c) => yearLink(c.first_year) },
         { key: "variants", label: "Spellings", num: true, cell: (c) => String(c.variants.length) },
       ],
       rows,
-      { onSort: sortHandler("characters", f, ["name", "align", "first_year", "first_media_year"]), sortKey: f.sort, dir: f.dir, scroll: true }
+      { onSort: sortHandler("characters", f, ["name", "align", "first_year", "first_media_year"]), sortKey: f.sort, dir: f.dir, scroll: true, focus: (c) => String(c.id) === String(f.focus) }
     );
     frag.appendChild(tableNode);
     tableNode = tableNode.querySelector("table");
@@ -1745,15 +2119,19 @@ function viewCharacter(id) {
       el(
         "div",
         { class: "meta-line" },
-        el("span", { class: "badge" }, el("span", { class: "dot", style: { background: a.color } }), a.label),
-        c.first_comic ? el("span", { text: "First appeared in " + c.first_comic }) : null
+        el("button", { class: "badge link-quiet", onclick: () => go("#/characters?align=" + (c.alignment || "neutral")) },
+          el("span", { class: "dot", style: { background: a.color } }), a.label),
+        c.first_comic ? el("span", { class: "names" }, "First appeared in ", comicLink(c.first_comic)) : null,
+        // The comic string usually carries its own year; don't print it twice.
+        c.first_year && !String(c.first_comic || "").includes(String(c.first_year)) ? yearLink(c.first_year) : null
       )
     )
   );
 
-  const tiles = [statTile("Works", String(c.n_works))];
-  for (const t of ["movie", "tv_show", "game"]) if (c.by_type[t]) tiles.push(statTile(TYPE[t].label, String(c.by_type[t])));
-  if (c.first_media_year) tiles.push(statTile("First on screen", String(c.first_media_year)));
+  const tiles = [statTile("Works", String(c.n_works), `#/characters?sort=n_works&dir=-1&focus=${c.id}`, "See it ranked against every character")];
+  for (const t of ["movie", "tv_show", "game"]) if (c.by_type[t]) tiles.push(statTile(TYPE[t].label, String(c.by_type[t]), "#/works?type=" + t));
+  if (c.first_media_year) tiles.push(statTile("First on screen", String(c.first_media_year), "#/year/" + c.first_media_year));
+  if (c.first_year) tiles.push(statTile("First in comics", String(c.first_year), yearHas(c.first_year) ? "#/year/" + c.first_year : null));
   frag.appendChild(el("div", { class: "kpis", style: { marginTop: "16px" } }, tiles));
 
   const rows = c.appearances
@@ -1797,10 +2175,11 @@ function viewCharacter(id) {
       table(
         [
           { key: "w", label: "Work", cell: (r) => workLink(r.w, false) },
-          { key: "y", label: "Year", num: true, cell: (r) => yr(r.w) },
+          { key: "y", label: "Year", num: true, cell: (r) => yearLink(r.w.year, yr(r.w)) },
           { key: "t", label: "Medium", cell: (r) => typeBadge(r.w.type) },
-          { key: "as", label: "Credited as", wrap: true, cell: (r) => (r.as === c.name ? el("span", { class: "muted", text: r.as }) : r.as) },
-          { key: "a", label: "Played by", cell: (r) => (r.actor_person_id ? personLink(r.actor_person_id) : el("span", { class: "muted", text: "—" })) },
+          { key: "f", label: "Franchise", cell: (r) => (r.w.franchise ? franchiseLink(r.w.franchise, 22) : dash()) },
+          { key: "as", label: "Credited as", wrap: true, cell: (r) => facetLink("credited-as", r.as) },
+          { key: "a", label: "Played by", cell: (r) => (r.actor_person_id ? personLink(r.actor_person_id) : dash()) },
         ],
         rows,
         { plain: true }
@@ -1808,37 +2187,98 @@ function viewCharacter(id) {
     )
   );
 
-  if (c.variants.length > 1) {
-    frag.appendChild(
-      section(
-        "Credit spellings collapsed into this identity",
-        c.variants.length,
-        el("div", { class: "chip-list" }, c.variants.map((v) => el("span", { class: "chip", text: v }))),
-        el("div", { class: "sub", style: { marginTop: "8px" }, text: "These are the exact strings the source research used. Counting the raw credit table instead of this identity would split this character across every spelling above." })
-      )
-    );
+  /* Who has played this character, and when — the question the appearance table answers only
+     one row at a time. */
+  const byActor = new Map();
+  for (const r of rows) {
+    if (!r.actor_person_id) continue;
+    const g = groupInto(byActor, r.actor_person_id, (pid) => ({ person: personById.get(pid), works: [] }));
+    g.works.push(r.w);
   }
-
-  const actors = [...new Set(c.appearances.map((ap) => ap.actor_person_id).filter(Boolean))];
-  if (actors.length > 1) {
+  const performers = [...byActor.values()].filter((g) => g.person);
+  if (performers.length) {
+    for (const g of performers) {
+      const ys = g.works.map((w) => w.year).filter(Boolean).sort();
+      g.from = ys[0] ?? null;
+      g.to = ys[ys.length - 1] ?? null;
+    }
+    performers.sort((x, y) => (x.from ?? 9999) - (y.from ?? 9999));
     frag.appendChild(
       section(
-        "Performers",
-        actors.length,
-        el(
-          "div",
-          { class: "chip-list" },
-          actors
-            .map((pid) => personById.get(pid))
-            .filter(Boolean)
-            .sort((x, y) => (x.years[0] ?? 9999) - (y.years[0] ?? 9999))
-            .map((p) => el("button", { class: "chip", onclick: () => go("#/person/" + p.id) }, p.name))
+        "Played by",
+        performers.length,
+        table(
+          [
+            { key: "p", label: "Performer", cell: (g) => personLink(g.person.id) },
+            { key: "y", label: "When", cell: (g) => (g.from == null ? dash() : g.from === g.to ? yearLink(g.from) : el("span", { class: "names" }, yearLink(g.from), el("span", { class: "sep", text: "–" }), yearLink(g.to))) },
+            { key: "n", label: "Works", num: true, cell: (g) => String(g.works.length) },
+            { key: "w", label: "In", wrap: true, cell: (g) => el("span", { class: "chip-list" }, g.works.map((w) => el("button", { class: "chip", onclick: () => go("#/work/" + w.id) }, el("span", { class: "dot", style: { background: TYPE[w.type].color } }), w.title))) },
+            { key: "r", label: "Also plays", wrap: true, cell: (g) => {
+              const others = charactersPlayedBy(g.person).filter((x) => x.character.id !== c.id);
+              return others.length
+                ? el("span", { class: "chip-list" }, others.slice(0, 4).map((x) => el("button", { class: "chip", onclick: () => go("#/character/" + x.character.id) }, x.character.name)))
+                : dash();
+            } },
+          ],
+          performers,
+          { plain: true }
         )
       )
     );
   }
 
+  const franchises = [...new Set(uniqueWorks.map((w) => w.franchise).filter(Boolean))].sort();
+  if (franchises.length) {
+    frag.appendChild(
+      section(
+        "Franchises this character has crossed",
+        franchises.length,
+        el(
+          "div",
+          { class: "chip-list" },
+          franchises.map((n) => {
+            const n_here = uniqueWorks.filter((w) => w.franchise === n).length;
+            return dimChip(n, "#/franchise/" + encodeURIComponent(n), `${n_here} work${n_here === 1 ? "" : "s"}`);
+          })
+        )
+      )
+    );
+  }
+
+  if (c.variants.length > 1) {
+    frag.appendChild(
+      section(
+        "Credit spellings collapsed into this identity",
+        c.variants.length,
+        el("div", { class: "chip-list" }, c.variants.map((v) => dimChip(v, facetHash("credited-as", v)))),
+        el("div", { class: "sub", style: { marginTop: "8px" }, text: "These are the exact strings the source research used, and each one opens the works that used it. Counting the raw credit table instead of this identity would split this character across every spelling above." })
+      )
+    );
+  }
+
   return frag;
+}
+
+/* Every identity a person has been credited as, with the works behind each. */
+function charactersPlayedBy(person) {
+  const byChar = new Map();
+  for (const cr of person.credits) {
+    const w = workById.get(cr.work_id);
+    for (const wc of w.characters) {
+      const isMatch = wc.actor_person_id === person.id || (cr.character && wc.as === cr.character);
+      if (!isMatch) continue;
+      const g = groupInto(byChar, wc.identity_id, (id) => ({ character: charById.get(id), works: [], as: new Set() }));
+      if (!g.works.includes(w)) g.works.push(w);
+      if (wc.as) g.as.add(wc.as);
+    }
+  }
+  return [...byChar.values()]
+    .filter((g) => g.character)
+    .map((g) => {
+      const ys = g.works.map((w) => w.year).filter(Boolean).sort();
+      return { ...g, from: ys[0] ?? null, to: ys[ys.length - 1] ?? null };
+    })
+    .sort((a, b) => (a.from ?? 9999) - (b.from ?? 9999) || a.character.name.localeCompare(b.character.name));
 }
 
 /* ============================================================
@@ -1898,14 +2338,23 @@ function viewPeople(_id, query) {
     tableNode = table(
       [
         { key: "name", label: "Name", cell: (p) => el("button", { class: "row-link", text: p.name, onclick: () => go("#/person/" + p.id) }) },
-        { key: "roles", label: "Roles", wrap: true, cell: (p) => trunc(p.roles.join(", "), 46) },
+        {
+          key: "roles",
+          label: "Roles",
+          wrap: true,
+          cell: (p) =>
+            el("span", { class: "names" }, [
+              ...p.roles.slice(0, 4).flatMap((r, i) => [i ? el("span", { class: "sep", text: "·" }) : null, roleLink(r)]),
+              p.roles.length > 4 ? el("span", { class: "muted", text: ` +${p.roles.length - 4}` }) : null,
+            ].filter(Boolean)),
+        },
         { key: "n_works", label: "Works", num: true, cell: (p) => String(p.n_works) },
         { key: "credits", label: "Credits", num: true, cell: (p) => String(p.credits.length) },
-        { key: "first", label: "First", num: true, cell: (p) => (p.years[0] ?? el("span", { class: "muted", text: "—" })) },
-        { key: "last", label: "Latest", num: true, cell: (p) => (p.years[p.years.length - 1] ?? el("span", { class: "muted", text: "—" })) },
+        { key: "first", label: "First", num: true, cell: (p) => yearLink(p.years[0]) },
+        { key: "last", label: "Latest", num: true, cell: (p) => yearLink(p.years[p.years.length - 1]) },
       ],
       rows,
-      { onSort: sortHandler("people", f, ["name", "roles", "first", "last"]), sortKey: f.sort, dir: f.dir, scroll: true }
+      { onSort: sortHandler("people", f, ["name", "roles", "first", "last"]), sortKey: f.sort, dir: f.dir, scroll: true, focus: (p) => String(p.id) === String(f.focus) }
     );
     frag.appendChild(tableNode);
     tableNode = tableNode.querySelector("table");
@@ -1930,8 +2379,10 @@ function viewPerson(id) {
       el(
         "div",
         { class: "meta-line" },
-        p.birth ? el("span", { text: p.birth.slice(0, 4) + (p.death ? "–" + p.death.slice(0, 4) : "") }) : null,
-        p.place ? el("span", { text: p.place }) : null,
+        p.birth
+          ? el("span", { class: "names" }, yearLink(Number(p.birth.slice(0, 4))), p.death ? el("span", { class: "sep", text: "–" }) : null, p.death ? yearLink(Number(p.death.slice(0, 4))) : null)
+          : null,
+        p.place ? findLink(p.place) : null,
         p.imdb ? el("a", { class: "badge", href: "https://www.imdb.com/name/" + p.imdb + "/", text: "IMDb" }) : null,
         p.wikidata ? el("a", { class: "badge", href: "https://www.wikidata.org/wiki/" + p.wikidata, text: "Wikidata" }) : null
       )
@@ -1942,9 +2393,9 @@ function viewPerson(id) {
     el(
       "div",
       { class: "kpis", style: { marginTop: "16px" } },
-      statTile("Works", String(p.n_works)),
-      statTile("Credits", String(p.credits.length)),
-      p.years.length ? statTile("Active", p.years[0] === p.years[p.years.length - 1] ? String(p.years[0]) : p.years[0] + "–" + p.years[p.years.length - 1]) : null
+      statTile("Works", String(p.n_works), `#/people?sort=n_works&dir=-1&focus=${p.id}`, "See it ranked against everyone"),
+      statTile("Credits", String(p.credits.length), `#/people?sort=credits&dir=-1&focus=${p.id}`),
+      p.years.length ? statTile("Active", p.years[0] === p.years[p.years.length - 1] ? String(p.years[0]) : p.years[0] + "–" + p.years[p.years.length - 1], "#/year/" + p.years[0]) : null
     )
   );
 
@@ -1952,13 +2403,7 @@ function viewPerson(id) {
     .map((c) => ({ ...c, w: workById.get(c.work_id) }))
     .sort((a, b) => (a.w.year ?? 9999) - (b.w.year ?? 9999));
 
-  const charFor = (r) => {
-    if (!r.character) return el("span", { class: "muted", text: "—" });
-    const match = r.w.characters.find((wc) => wc.as === r.character);
-    return match
-      ? el("button", { class: "row-link", style: { fontWeight: "400" }, text: r.character, onclick: () => go("#/character/" + match.identity_id) })
-      : r.character;
-  };
+  const charFor = (r) => creditedAsLink(r.w, r.character);
 
   const careerWorks = [...new Map(rows.map((r) => [r.w.id, r.w])).values()];
   if (careerWorks.length > 1) {
@@ -1992,7 +2437,40 @@ function viewPerson(id) {
     );
   }
 
-  if (p.roles.length > 1) {
+  /* The characters this person has played, when, and who else has played them. */
+  const played = charactersPlayedBy(p);
+  if (played.length) {
+    frag.appendChild(
+      section(
+        "Characters played",
+        played.length,
+        table(
+          [
+            { key: "c", label: "Character", cell: (g) => characterLink(g.character.id) },
+            { key: "a", label: "Alignment", cell: (g) => alignLink(g.character.alignment) },
+            { key: "y", label: "When", cell: (g) => (g.from == null ? dash() : g.from === g.to ? yearLink(g.from) : el("span", { class: "names" }, yearLink(g.from), el("span", { class: "sep", text: "\u2013" }), yearLink(g.to))) },
+            { key: "w", label: "In", wrap: true, cell: (g) => el("span", { class: "chip-list" }, g.works.map((w) => el("button", { class: "chip", onclick: () => go("#/work/" + w.id) }, el("span", { class: "dot", style: { background: TYPE[w.type].color } }), w.title, el("span", { class: "as", text: String(yr(w)) })))) },
+            {
+              key: "o",
+              label: "Also played by",
+              wrap: true,
+              cell: (g) => {
+                const others = [...new Set(g.character.appearances.map((ap) => ap.actor_person_id).filter((id) => id && id !== p.id))];
+                return others.length
+                  ? el("span", { class: "chip-list" }, others.slice(0, 5).map((id) => el("button", { class: "chip", onclick: () => go("#/person/" + id), text: personById.get(id)?.name || "\u2014" })))
+                  : dash();
+              },
+            },
+          ],
+          played,
+          { plain: true }
+        ),
+        el("div", { class: "sub", style: { marginTop: "8px" }, text: "Matched from the character table by performer, and by the exact string the work credited \u2014 so a role credited under a spelling this catalogue collapses still lands on the right identity." })
+      )
+    );
+  }
+
+  if (p.roles.length) {
     const mix = new Map();
     for (const c of p.credits) mix.set(c.role, (mix.get(c.role) || 0) + 1);
     frag.appendChild(
@@ -2002,11 +2480,29 @@ function viewPerson(id) {
         el(
           "div",
           { class: "chip-list" },
-          [...mix.entries()].sort((a, b) => b[1] - a[1]).map(([r, n]) => el("span", { class: "chip" }, r, el("span", { class: "as", text: "\u00d7" + n })))
+          [...mix.entries()].sort((a, b) => b[1] - a[1]).map(([r, n]) => dimChip(r, "#/role/" + encodeURIComponent(r), "\u00d7" + n))
         )
       )
     );
   }
+
+  /* Where this career sits in the rest of the catalogue's furniture. */
+  const pStudios = new Map();
+  const pFranchises = new Map();
+  for (const w of careerWorks) {
+    for (const st of w.studios) pStudios.set(st.name, (pStudios.get(st.name) || 0) + 1);
+    if (w.franchise) pFranchises.set(w.franchise, (pFranchises.get(w.franchise) || 0) + 1);
+  }
+  const countChips = (map, hashFor) =>
+    el(
+      "div",
+      { class: "chip-list" },
+      [...map.entries()]
+        .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+        .map(([n, k]) => dimChip(n, hashFor(n), `${k} work${k === 1 ? "" : "s"}`))
+    );
+  if (pFranchises.size) frag.appendChild(section("Franchises", pFranchises.size, countChips(pFranchises, (n) => "#/franchise/" + encodeURIComponent(n))));
+  if (pStudios.size) frag.appendChild(section("Studios behind those works", pStudios.size, countChips(pStudios, (n) => "#/studio/" + encodeURIComponent(n))));
 
   frag.appendChild(
     section(
@@ -2015,9 +2511,9 @@ function viewPerson(id) {
       table(
         [
           { key: "w", label: "Work", cell: (r) => workLink(r.w, false) },
-          { key: "y", label: "Year", num: true, cell: (r) => yr(r.w) },
+          { key: "y", label: "Year", num: true, cell: (r) => yearLink(r.w.year, yr(r.w)) },
           { key: "t", label: "Medium", cell: (r) => typeBadge(r.w.type) },
-          { key: "r", label: "Role", cell: (r) => r.role },
+          { key: "r", label: "Role", cell: (r) => roleLink(r.role) },
           { key: "c", label: "As", wrap: true, cell: charFor },
         ],
         rows,
@@ -2189,9 +2685,9 @@ function yearStrip(entries, { title, sub, onPick }) {
     tableFn: () =>
       table(
         [
-          { key: "y", label: "Year", num: true, cell: (e) => (e.year ?? "—") },
-          { key: "t", label: "Work", cell: (e) => (e.work ? workLink(e.work, false) : e.title) },
-          { key: "m", label: "Medium", cell: (e) => (e.type ? typeBadge(e.type) : "—") },
+          { key: "y", label: "Year", num: true, cell: (e) => yearLink(e.year) },
+          { key: "t", label: "Work", cell: (e) => (e.work ? workLink(e.work, false) : findLink(e.title)) },
+          { key: "m", label: "Medium", cell: (e) => (e.type ? typeBadge(e.type) : dash()) },
         ],
         [...entries].sort((a, b) => (a.year ?? 9999) - (b.year ?? 9999)),
         { plain: true }
@@ -2292,7 +2788,13 @@ const viewStudios = dimensionListView({
     }),
   columns: [
     { key: "name", label: "Studio", asc: true, value: (g) => g.name.toLowerCase(), cell: (g) => el("button", { class: "row-link", text: g.name, onclick: () => go("#/studio/" + encodeURIComponent(g.name)) }) },
-    { key: "roles", label: "Credited as", asc: true, value: (g) => [...g.roles].sort().join(", "), cell: (g) => [...g.roles].sort().join(", ") },
+    {
+      key: "roles",
+      label: "Credited as",
+      asc: true,
+      value: (g) => [...g.roles].sort().join(", "),
+      cell: (g) => el("span", { class: "names" }, [...g.roles].sort().flatMap((r, i) => [i ? el("span", { class: "sep", text: "·" }) : null, facetLink("studio-role", r, r.replace(/_/g, " "))]).filter(Boolean)),
+    },
     { key: "n_works", label: "Works", num: true, value: (g) => g.n_works, cell: (g) => String(g.n_works) },
     { key: "span", label: "Span", num: true, asc: true, value: (g) => g.first_year ?? 9999, cell: (g) => spanText(g) },
     { key: "gross", label: "Gross", num: true, value: (g) => g.gross ?? -1, cell: (g) => (g.gross ? money(g.gross) : el("span", { class: "muted", text: "—" })) },
@@ -2348,9 +2850,9 @@ function worksOfTable(list, { showFranchise = true } = {}) {
   return table(
     [
       { key: "t", label: "Title", cell: (w) => workLink(w, false) },
-      { key: "y", label: "Year", num: true, cell: (w) => yr(w) },
+      { key: "y", label: "Year", num: true, cell: (w) => yearLink(w.year, yr(w)) },
       { key: "m", label: "Medium", cell: (w) => typeBadge(w.type) },
-      showFranchise && { key: "f", label: "Franchise", cell: (w) => (w.franchise ? franchiseLink(w.franchise, 26) : el("span", { class: "muted", text: "—" })) },
+      showFranchise && { key: "f", label: "Franchise", cell: (w) => (w.franchise ? franchiseLink(w.franchise, 26) : dash()) },
       { key: "s", label: "Score", num: true, cell: (w) => (w.avg_pct == null ? el("span", { class: "muted", text: "—" }) : pct(w.avg_pct)) },
       { key: "g", label: "Gross", num: true, cell: (w) => (w.gross == null ? el("span", { class: "muted", text: "—" }) : money(w.gross)) },
       { key: "c", label: "Chars", num: true, cell: (w) => String(w.characters.length) },
@@ -2359,6 +2861,29 @@ function worksOfTable(list, { showFranchise = true } = {}) {
     { plain: true }
   );
 }
+
+/* "Who and what else is in these works" — the same tally, whatever the grouping was. */
+function tallySection(title, list, extract, hashFor, { max = 30, unit = "work", label = (k) => k } = {}) {
+  const counts = new Map();
+  for (const w of list) for (const v of extract(w)) if (v != null) counts.set(v, (counts.get(v) || 0) + 1);
+  // An empty fragment appends to nothing, so callers never have to test first.
+  if (!counts.size) return document.createDocumentFragment();
+  return section(
+    title,
+    counts.size,
+    el(
+      "div",
+      { class: "chip-list" },
+      [...counts.entries()]
+        .sort((a, b) => b[1] - a[1] || String(label(a[0])).localeCompare(String(label(b[0]))))
+        .slice(0, max)
+        .map(([k, n]) => dimChip(label(k), hashFor(k), `${n} ${unit}${n === 1 ? "" : "s"}`))
+    )
+  );
+}
+
+const creditedPeople = (w) => [...new Set([...w.cast, ...w.crew].map((c) => c.person_id))];
+const personName = (id) => personById.get(id)?.name || "—";
 
 function dimensionTiles(g, extras = []) {
   const kinds = ["movie", "tv_show", "game"].filter((k) => g.by_type[k]);
@@ -2411,7 +2936,7 @@ function viewFranchise(name) {
         table(
           [
             { key: "a", label: "Work", cell: (r) => workLink(r.from, false) },
-            { key: "l", label: "Relation", cell: (r) => el("span", { class: "muted", text: r.label }) },
+            { key: "l", label: "Relation", cell: (r) => facetLink("relation", r.label) },
             { key: "b", label: "Other work", cell: (r) => workLink(r.to, false) },
           ],
           links.sort((a, b) => (a.from.year ?? 0) - (b.from.year ?? 0) || a.label.localeCompare(b.label)),
@@ -2420,6 +2945,20 @@ function viewFranchise(name) {
       )
     );
   }
+
+  frag.appendChild(
+    tallySection("Characters across this franchise", g.works, (w) => w.characters.map((c) => c.identity_id), (id) => "#/character/" + id, {
+      max: 40,
+      unit: "work",
+      label: (id) => charById.get(id)?.name || "—",
+    })
+  );
+  frag.appendChild(
+    tallySection("Most credited here", g.works, creditedPeople, (id) => "#/person/" + id, { max: 24, label: personName })
+  );
+  frag.appendChild(
+    tallySection("Studios behind it", g.works, (w) => w.studios.map((st) => st.name), (n) => "#/studio/" + encodeURIComponent(n), { max: 24 })
+  );
   return frag;
 }
 
@@ -2431,29 +2970,18 @@ function viewStudio(name) {
   frag.appendChild(dimensionTiles(g));
   frag.appendChild(section("Works", g.n_works, worksOfTable(g.works)));
 
-  const partners = new Map();
-  for (const w of g.works) {
-    for (const st of w.studios) {
-      if (st.name === g.name) continue;
-      partners.set(st.name, (partners.get(st.name) || 0) + 1);
-    }
-  }
-  if (partners.size) {
-    frag.appendChild(
-      section(
-        "Frequent co-credits",
-        partners.size,
-        el(
-          "div",
-          { class: "chip-list" },
-          [...partners.entries()]
-            .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
-            .slice(0, 24)
-            .map(([n, c]) => dimChip(n, "#/studio/" + encodeURIComponent(n), `${c} work${c === 1 ? "" : "s"}`))
-        )
-      )
-    );
-  }
+  frag.appendChild(
+    tallySection("Frequent co-credits", g.works, (w) => w.studios.map((st) => st.name).filter((n) => n !== g.name), (n) => "#/studio/" + encodeURIComponent(n), { max: 24 })
+  );
+  frag.appendChild(
+    tallySection("People credited on these works", g.works, creditedPeople, (id) => "#/person/" + id, { max: 24, label: personName })
+  );
+  frag.appendChild(
+    tallySection("Characters it has put on screen", g.works, (w) => w.characters.map((c) => c.identity_id), (id) => "#/character/" + id, { max: 30, label: (id) => charById.get(id)?.name || "—" })
+  );
+  frag.appendChild(
+    tallySection("Franchises worked in", g.works, (w) => (w.franchise ? [w.franchise] : []), (n) => "#/franchise/" + encodeURIComponent(n), { max: 20 })
+  );
   return frag;
 }
 
@@ -2495,11 +3023,11 @@ function viewPlatform(name) {
         table(
           [
             { key: "t", label: "Game", cell: (r) => workLink(r.work, false) },
-            { key: "d", label: "Date", cell: (r) => r.date || el("span", { class: "muted", text: "—" }) },
-            { key: "p", label: "Publisher", wrap: true, cell: (r) => r.publisher || el("span", { class: "muted", text: "—" }) },
-            { key: "v", label: "Developer", wrap: true, cell: (r) => r.developer || el("span", { class: "muted", text: "—" }) },
-            { key: "m", label: "Metacritic", num: true, cell: (r) => (r.metacritic == null ? el("span", { class: "muted", text: "—" }) : String(r.metacritic)) },
-            { key: "e", label: "ESRB", cell: (r) => r.esrb || el("span", { class: "muted", text: "—" }) },
+            { key: "d", label: "Date", cell: (r) => dateLink(r.date) },
+            { key: "p", label: "Publisher", wrap: true, cell: (r) => nameLinks(r.publisher, "studio") },
+            { key: "v", label: "Developer", wrap: true, cell: (r) => nameLinks(r.developer, "studio") },
+            { key: "m", label: "Metacritic", num: true, cell: (r) => (r.metacritic == null ? dash() : String(r.metacritic)) },
+            { key: "e", label: "ESRB", cell: (r) => (r.esrb ? facetLink("esrb", r.esrb) : dash()) },
           ],
           [...g.releases].sort((a, b) => String(a.date || "9").localeCompare(String(b.date || "9"))),
           { plain: true }
@@ -2510,6 +3038,494 @@ function viewPlatform(name) {
   const gamesOnly = g.works.filter((w) => !g.releases.some((r) => r.work === w));
   if (gamesOnly.length) {
     frag.appendChild(section("Also listed on this platform", gamesOnly.length, worksOfTable(gamesOnly)));
+  }
+
+  const houses = new Map();
+  for (const r of g.releases) {
+    for (const field of [r.developer, r.publisher]) {
+      if (!field) continue;
+      for (const part of splitNames(field)) houses.set(part.name, (houses.get(part.name) || 0) + 1);
+    }
+  }
+  if (houses.size) {
+    frag.appendChild(
+      section(
+        "Who shipped them",
+        houses.size,
+        el(
+          "div",
+          { class: "chip-list" },
+          [...houses.entries()]
+            .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+            .map(([n, c]) => {
+              const st = studioByName.get(normName(n));
+              return dimChip(n, st ? "#/studio/" + encodeURIComponent(st) : findHash(n), `${c} release${c === 1 ? "" : "s"}`);
+            })
+        )
+      )
+    );
+  }
+  frag.appendChild(
+    tallySection("Franchises on this platform", g.works, (w) => (w.franchise ? [w.franchise] : []), (n) => "#/franchise/" + encodeURIComponent(n), { max: 20, unit: "game" })
+  );
+  frag.appendChild(
+    tallySection("Characters playable or present", g.works, (w) => w.characters.map((c) => c.identity_id), (id) => "#/character/" + id, { max: 30, unit: "game", label: (id) => charById.get(id)?.name || "—" })
+  );
+  return frag;
+}
+
+/* ============================================================
+   OUTLETS · COMICS · AWARDS · ROLES
+   The four dimensions the Analysis charts stand on, each browsable in its own right.
+   ============================================================ */
+
+const viewPublications = dimensionListView({
+  view: "publications",
+  title: "Outlets",
+  blurb: "Every publication that scored something in this catalogue, with what it scored and how generously. Scores are normalized to 0–100 before anything is averaged.",
+  index: publicationIndex,
+  columns: [
+    { key: "name", label: "Outlet", asc: true, value: (g) => g.name.toLowerCase(), cell: (g) => el("button", { class: "row-link", text: g.name, onclick: () => go("#/publication/" + encodeURIComponent(g.name)) }) },
+    { key: "n", label: "Scores", num: true, value: (g) => g.n, cell: (g) => String(g.n) },
+    { key: "n_works", label: "Works", num: true, value: (g) => g.n_works, cell: (g) => String(g.n_works) },
+    { key: "avg_pct", label: "Mean", num: true, value: (g) => g.avg_pct, cell: (g) => pct(g.avg_pct) },
+    { key: "range", label: "Range", num: true, value: (g) => g.hi - g.lo, cell: (g) => `${Math.round(g.lo)}–${Math.round(g.hi)}` },
+    { key: "span", label: "Span", num: true, asc: true, value: (g) => g.first_year ?? 9999, cell: (g) => spanText(g) },
+  ],
+});
+
+const viewComics = dimensionListView({
+  view: "comics",
+  title: "Comic sources",
+  blurb: "The comics the screen has drawn on. A storyline listed here was cited as source material by at least one work in the catalogue.",
+  index: comicIndex,
+  columns: [
+    { key: "name", label: "Comic", asc: true, wrap: true, value: (g) => g.title.toLowerCase(), cell: (g) => el("button", { class: "row-link", text: g.title, onclick: () => go("#/comic/" + encodeURIComponent(g.title)) }) },
+    { key: "year", label: "Published", num: true, asc: true, value: (g) => g.year ?? 9999, cell: (g) => yearLink(g.year) },
+    { key: "writer", label: "Credited to", wrap: true, asc: true, value: (g) => (g.writer || "~").toLowerCase(), cell: (g) => nameLinks(g.writer) },
+    { key: "n_works", label: "Adapted by", num: true, value: (g) => g.n_works, cell: (g) => String(g.n_works) },
+    { key: "span", label: "On screen", num: true, asc: true, value: (g) => g.first_year ?? 9999, cell: (g) => spanText(g) },
+  ],
+});
+
+const viewAwards = dimensionListView({
+  view: "awards",
+  title: "Awarding bodies",
+  blurb: "Every body that has handed this catalogue a nomination, and how often it followed through.",
+  index: awardBodies,
+  columns: [
+    { key: "name", label: "Body", asc: true, value: (g) => g.name.toLowerCase(), cell: (g) => el("button", { class: "row-link", text: g.name, onclick: () => go("#/award/" + encodeURIComponent(g.name)) }) },
+    { key: "won", label: "Won", num: true, value: (g) => g.won, cell: (g) => String(g.won) },
+    { key: "nominated", label: "Nominated", num: true, value: (g) => g.nominated, cell: (g) => String(g.nominated) },
+    { key: "n_awards", label: "Records", num: true, value: (g) => g.rows.length, cell: (g) => String(g.rows.length) },
+    { key: "n_works", label: "Works", num: true, value: (g) => g.n_works, cell: (g) => String(g.n_works) },
+    { key: "span", label: "Span", num: true, asc: true, value: (g) => g.first_year ?? 9999, cell: (g) => spanText(g) },
+  ],
+});
+
+const viewRoles = dimensionListView({
+  view: "roles",
+  title: "Credit roles",
+  blurb: "Every job title the credit tables use — from “actor” to “theme lyricist” — and the people who held it.",
+  index: roleIndex,
+  columns: [
+    { key: "name", label: "Role", asc: true, value: (g) => g.name.toLowerCase(), cell: (g) => el("button", { class: "row-link", text: g.name, onclick: () => go("#/role/" + encodeURIComponent(g.name)) }) },
+    { key: "n_people", label: "People", num: true, value: (g) => g.n_people, cell: (g) => String(g.n_people) },
+    { key: "n_credits", label: "Credits", num: true, value: (g) => g.credits.length, cell: (g) => String(g.credits.length) },
+    { key: "n_works", label: "Works", num: true, value: (g) => g.n_works, cell: (g) => String(g.n_works) },
+    { key: "span", label: "Span", num: true, asc: true, value: (g) => g.first_year ?? 9999, cell: (g) => spanText(g) },
+  ],
+});
+
+function viewPublication(name) {
+  const g = publicationIndex.get(name);
+  if (!g) return el("div", { class: "empty-state", text: "Unknown outlet." });
+  const frag = document.createDocumentFragment();
+  frag.append(...dimensionHead(g, "Outlet", "publications", "All outlets"));
+  frag.appendChild(
+    dimensionTiles(g, [
+      statTile("Scores on record", String(g.n)),
+      statTile("Mean score", pct(g.avg_pct) + " / 100"),
+      statTile("Range", `${Math.round(g.lo)}–${Math.round(g.hi)}`),
+    ])
+  );
+
+  const scored = [...g.scores].sort((a, b) => b.pct - a.pct);
+  if (scored.length >= 3) {
+    frag.appendChild(
+      el("div", { class: "grid", style: { marginTop: "16px" } },
+        hbarChart({
+          title: `What ${g.name} scored`,
+          sub: "Every score this outlet filed, normalized to 0–100, highest first.",
+          items: scored.map((r) => ({ label: r.work.title, value: Math.round(r.pct), display: Math.round(r.pct) + " / 100", key: r.work.id, sub: [r.scope, r.max ? `raw ${r.score}/${r.max}` : null].filter(Boolean).join(" · ") || null })),
+          onPick: (d) => go("#/work/" + d.key),
+          labelWidth: 240,
+          maxRows: 24,
+          valueLabel: "Score",
+          tableCols: [
+            { key: "w", label: "Work", cell: (d) => el("button", { class: "row-link", text: d.label, onclick: () => go("#/work/" + d.key) }) },
+            { key: "s", label: "Normalized", num: true, cell: (d) => String(d.value) },
+            { key: "n", label: "As filed", cell: (d) => d.sub || "—" },
+          ],
+        }))
+    );
+  }
+
+  frag.appendChild(
+    section(
+      "Scores",
+      g.scores.length,
+      table(
+        [
+          { key: "w", label: "Work", cell: (r) => workLink(r.work, false) },
+          { key: "y", label: "Year", num: true, cell: (r) => yearLink(r.work.year, yr(r.work)) },
+          { key: "m", label: "Medium", cell: (r) => typeBadge(r.work.type) },
+          { key: "sc", label: "Scope", cell: (r) => (r.scope ? findLink(r.scope) : dash()) },
+          { key: "raw", label: "Raw", num: true, cell: (r) => (r.max ? `${r.score} / ${r.max}` : String(r.score)) },
+          { key: "n", label: "Normalized", num: true, cell: (r) => pct(r.pct) },
+          { key: "d", label: "Against the mean", num: true, cell: (r) => (r.work.avg_pct == null ? dash() : (r.pct - r.work.avg_pct >= 0 ? "+" : "") + Math.round(r.pct - r.work.avg_pct)) },
+        ],
+        [...g.scores].sort((a, b) => (a.work.year ?? 9999) - (b.work.year ?? 9999)),
+        { plain: true }
+      ),
+      el("div", { class: "sub", style: { marginTop: "8px" }, text: "“Against the mean” is this outlet's score minus the average of every normalized score the work carries — how far out of step this outlet was on that title." })
+    )
+  );
+  frag.appendChild(section("Works scored", g.n_works, worksOfTable(g.works)));
+  return frag;
+}
+
+function viewComic(title) {
+  const g = comicIndex.get(title);
+  if (!g) return el("div", { class: "empty-state", text: "Unknown comic." });
+  const frag = document.createDocumentFragment();
+  frag.append(...dimensionHead(g, "Comic source", "comics", "All comic sources", g.year ? yearLink(g.year) : null));
+  const lags = g.uses.filter((u) => u.year && u.work.year).map((u) => u.work.year - u.year);
+  frag.appendChild(
+    dimensionTiles(g, [
+      g.writer ? statTile("Credited to", g.writer.length > 24 ? g.writer.slice(0, 23) + "…" : g.writer, findHash(g.writer)) : null,
+      lags.length ? statTile("First adapted after", Math.min(...lags) + " yrs", "#/analysis") : null,
+    ].filter(Boolean))
+  );
+  frag.appendChild(
+    section(
+      "Adapted by",
+      g.uses.length,
+      table(
+        [
+          { key: "w", label: "Work", cell: (u) => workLink(u.work, false) },
+          { key: "y", label: "Released", num: true, cell: (u) => yearLink(u.work.year, yr(u.work)) },
+          { key: "m", label: "Medium", cell: (u) => typeBadge(u.work.type) },
+          { key: "i", label: "Issues cited", wrap: true, cell: (u) => (u.issues ? findLink(u.issues) : dash()) },
+          { key: "a", label: "Arc", wrap: true, cell: (u) => (u.arc ? findLink(u.arc) : dash()) },
+          { key: "l", label: "Wait", num: true, cell: (u) => (u.year && u.work.year ? `${u.work.year - u.year} yrs` : dash()) },
+        ],
+        [...g.uses].sort((a, b) => (a.work.year ?? 9999) - (b.work.year ?? 9999)),
+        { plain: true }
+      )
+    )
+  );
+
+  /* Characters this storyline puts on screen — the readers' route from a comic to a face. */
+  const chars = new Map();
+  for (const u of g.uses) for (const wc of u.work.characters) chars.set(wc.identity_id, (chars.get(wc.identity_id) || 0) + 1);
+  const charRows = [...chars.entries()].map(([id, n]) => ({ c: charById.get(id), n })).filter((x) => x.c).sort((a, b) => b.n - a.n || a.c.name.localeCompare(b.c.name));
+  if (charRows.length) {
+    frag.appendChild(
+      section(
+        "On screen in these adaptations",
+        charRows.length,
+        el("div", { class: "chip-list" }, charRows.slice(0, 40).map((x) => charChip({ identity_id: x.c.id, name: x.c.name, alignment: x.c.alignment })))
+      )
+    );
+  }
+  return frag;
+}
+
+function viewAward(name) {
+  const g = awardBodies.get(name);
+  if (!g) return el("div", { class: "empty-state", text: "Unknown awarding body." });
+  const frag = document.createDocumentFragment();
+  frag.append(...dimensionHead(g, "Awarding body", "awards", "All awarding bodies"));
+  frag.appendChild(
+    dimensionTiles(g, [
+      statTile("Won", String(g.won)),
+      statTile("Nominated, did not win", String(g.nominated)),
+    ])
+  );
+  frag.appendChild(
+    section(
+      "Every record",
+      g.rows.length,
+      table(
+        [
+          { key: "y", label: "Year", num: true, cell: (a) => yearLink(a.year) },
+          { key: "w", label: "Work", cell: (a) => workLink(a.work, false) },
+          { key: "c", label: "Category", wrap: true, cell: (a) => findLink(a.category) },
+          { key: "r", label: "Result", cell: (a) => (a.result === "won" ? el("strong", { text: "Won" }) : el("span", { class: "muted", text: "Nominated" })) },
+          { key: "p", label: "Recipient", cell: (a) => (a.person_id ? personLink(a.person_id) : dash()) },
+        ],
+        [...g.rows].sort((a, b) => (a.year ?? 0) - (b.year ?? 0)),
+        { plain: true }
+      )
+    )
+  );
+  frag.appendChild(section("Categories", g.categories.length, el("div", { class: "chip-list" }, g.categories.map((c) => dimChip(c, findHash(c))))));
+  frag.appendChild(section("Works recognised", g.n_works, worksOfTable(g.works)));
+  return frag;
+}
+
+function viewRole(name) {
+  const g = roleIndex.get(name);
+  if (!g) return el("div", { class: "empty-state", text: "Unknown role." });
+  const frag = document.createDocumentFragment();
+  frag.append(...dimensionHead(g, "Credit role", "roles", "All credit roles"));
+  frag.appendChild(dimensionTiles(g, [statTile("People", String(g.n_people)), statTile("Credits", String(g.credits.length))]));
+
+  const byPerson = new Map();
+  for (const c of g.credits) {
+    const p = personById.get(c.person_id);
+    if (!p) continue;
+    const e = groupInto(byPerson, p.id, () => ({ person: p, works: [] }));
+    if (!e.works.includes(c.work)) e.works.push(c.work);
+  }
+  const holders = [...byPerson.values()].sort((a, b) => b.works.length - a.works.length || a.person.name.localeCompare(b.person.name));
+
+  if (holders.length >= 3) {
+    frag.appendChild(
+      el("div", { class: "grid", style: { marginTop: "16px" } },
+        hbarChart({
+          title: `Most credited as ${g.name}`,
+          sub: "Works each person holds this credit on.",
+          items: holders.map((h) => ({ label: h.person.name, value: h.works.length, key: h.person.id, sub: h.person.roles.filter((r) => r !== g.name).slice(0, 3).join(", ") || null })),
+          onPick: (d) => go("#/person/" + d.key),
+          labelWidth: 220,
+          valueLabel: "Works",
+          tableCols: [
+            { key: "p", label: "Person", cell: (d) => el("button", { class: "row-link", text: d.label, onclick: () => go("#/person/" + d.key) }) },
+            { key: "n", label: "Works", num: true, cell: (d) => String(d.value) },
+            { key: "r", label: "Other roles", wrap: true, cell: (d) => d.sub || "—" },
+          ],
+        }))
+    );
+  }
+
+  frag.appendChild(
+    section(
+      "Everyone credited as " + g.name,
+      holders.length,
+      table(
+        [
+          { key: "p", label: "Person", cell: (h) => personLink(h.person.id) },
+          { key: "n", label: "Works", num: true, cell: (h) => String(h.works.length) },
+          { key: "w", label: "On", wrap: true, cell: (h) => el("span", { class: "chip-list" }, h.works.slice(0, 6).map((w) => el("button", { class: "chip", onclick: () => go("#/work/" + w.id) }, el("span", { class: "dot", style: { background: TYPE[w.type].color } }), w.title))) },
+          { key: "o", label: "Other roles held", wrap: true, cell: (h) => el("span", { class: "names" }, h.person.roles.filter((r) => r !== g.name).slice(0, 4).flatMap((r, i) => [i ? el("span", { class: "sep", text: "·" }) : null, roleLink(r)]).filter(Boolean)) },
+        ],
+        holders,
+        { plain: true }
+      )
+    )
+  );
+  frag.appendChild(section("Works with this credit", g.n_works, worksOfTable(g.works)));
+  return frag;
+}
+
+/* ============================================================
+   YEAR · FACET · FIND
+   Three views that exist so no value in the catalogue is a dead end.
+   ============================================================ */
+
+function viewYear(raw) {
+  const y = Number(raw);
+  const b = yearIndex.get(y);
+  if (!b) return el("div", { class: "empty-state", text: "Nothing in the catalogue is dated " + raw + "." });
+  const frag = document.createDocumentFragment();
+  frag.appendChild(backLink("All works", listHash("works")));
+  const prev = [...yearIndex.keys()].filter((k) => k < y).sort((a, c) => c - a)[0];
+  const next = [...yearIndex.keys()].filter((k) => k > y).sort((a, c) => a - c)[0];
+  frag.appendChild(
+    el(
+      "div",
+      { class: "detail-head" },
+      el("h1", { text: String(y) }),
+      el(
+        "div",
+        { class: "meta-line" },
+        el("span", { class: "badge", text: "Year" }),
+        prev ? softLink("← " + prev, "#/year/" + prev) : null,
+        next ? softLink(next + " →", "#/year/" + next) : null,
+        softLink("Filter the works list to " + y, `#/works?era=${y}`)
+      )
+    )
+  );
+
+  const tiles = [];
+  if (b.works.length) tiles.push(statTile("Released", String(b.works.length), `#/works?era=${y}`));
+  if (b.debuts.length) tiles.push(statTile("Characters first seen", String(b.debuts.length), "#/characters?sort=first_media_year&dir=1"));
+  if (b.releases.length) tiles.push(statTile("Game releases", String(b.releases.length), "#/platforms"));
+  if (b.awards.length) tiles.push(statTile("Award records", String(b.awards.length), "#/awards"));
+  if (b.comics.length) tiles.push(statTile("Comics later adapted", String(b.comics.length), "#/comics"));
+  if (b.born.length) tiles.push(statTile("People born", String(b.born.length), "#/people?sort=first&dir=1"));
+  if (tiles.length) frag.appendChild(el("div", { class: "kpis", style: { marginTop: "16px" } }, tiles));
+
+  if (b.works.length) frag.appendChild(section("Released this year", b.works.length, worksOfTable(b.works)));
+
+  if (b.debuts.length) {
+    frag.appendChild(
+      section(
+        "First appeared on screen this year",
+        b.debuts.length,
+        el("div", { class: "chip-list" }, b.debuts.sort((a, c) => c.n_works - a.n_works).map((c) => charChip({ identity_id: c.id, name: c.name, alignment: c.alignment })))
+      )
+    );
+  }
+
+  if (b.releases.length) {
+    frag.appendChild(
+      section(
+        "Game releases dated this year",
+        b.releases.length,
+        table(
+          [
+            { key: "w", label: "Game", cell: (r) => workLink(r.work, false) },
+            { key: "p", label: "Platform", cell: (r) => (r.platform ? softLink(r.platform, "#/platform/" + encodeURIComponent(r.platform)) : dash()) },
+            // Already on the year page, so the useful destination is the release table itself.
+            { key: "d", label: "Date", cell: (r) => (r.date ? softLink(String(r.date), "#/work/" + r.work.id, { title: "All release rows for " + r.work.title }) : dash()) },
+            { key: "pub", label: "Publisher", wrap: true, cell: (r) => nameLinks(r.publisher, "studio") },
+            { key: "dev", label: "Developer", wrap: true, cell: (r) => nameLinks(r.developer, "studio") },
+            { key: "m", label: "Metacritic", num: true, cell: (r) => (r.metacritic == null ? dash() : String(r.metacritic)) },
+          ],
+          [...b.releases].sort((a, c) => String(a.date).localeCompare(String(c.date))),
+          { plain: true }
+        )
+      )
+    );
+  }
+
+  if (b.awards.length) {
+    frag.appendChild(
+      section(
+        "Awards decided this year",
+        b.awards.length,
+        table(
+          [
+            { key: "b", label: "Body", cell: (a) => softLink(a.body, "#/award/" + encodeURIComponent(a.body)) },
+            { key: "w", label: "Work", cell: (a) => workLink(a.work, false) },
+            { key: "c", label: "Category", wrap: true, cell: (a) => findLink(a.category) },
+            { key: "r", label: "Result", cell: (a) => (a.result === "won" ? el("strong", { text: "Won" }) : el("span", { class: "muted", text: "Nominated" })) },
+            { key: "p", label: "Recipient", cell: (a) => (a.person_id ? personLink(a.person_id) : dash()) },
+          ],
+          b.awards,
+          { plain: true }
+        )
+      )
+    );
+  }
+
+  if (b.comics.length) {
+    frag.appendChild(
+      section(
+        "Comics published this year that the screen later used",
+        b.comics.length,
+        table(
+          [
+            { key: "c", label: "Comic", wrap: true, cell: (u) => comicLink(u.comic) },
+            { key: "w", label: "Adapted in", cell: (u) => workLink(u.work, false) },
+            { key: "y", label: "Released", num: true, cell: (u) => yearLink(u.work.year, yr(u.work)) },
+            { key: "l", label: "Wait", num: true, cell: (u) => (u.work.year ? `${u.work.year - y} yrs` : dash()) },
+          ],
+          b.comics,
+          { plain: true }
+        )
+      )
+    );
+  }
+
+  const peopleStrand = (label, list) =>
+    list.length
+      ? section(label, list.length, el("div", { class: "chip-list" }, list.map((p) => dimChip(p.name, "#/person/" + p.id, p.roles.slice(0, 2).join(", ") || null))))
+      : null;
+  const born = peopleStrand("People born this year", b.born);
+  if (born) frag.appendChild(born);
+  const died = peopleStrand("People who died this year", b.died);
+  if (died) frag.appendChild(died);
+
+  return frag;
+}
+
+function viewFacet(id) {
+  const cut = String(id || "").indexOf("/");
+  const key = cut < 0 ? id : id.slice(0, cut);
+  const value = cut < 0 ? "" : id.slice(cut + 1);
+  const facet = FACETS[key];
+  if (!facet || !value) return el("div", { class: "empty-state", text: "Unknown attribute." });
+  const index = facetIndex(key);
+  const list = index.get(value) || [];
+  if (!list.length) return el("div", { class: "empty-state", text: `Nothing in the catalogue has ${facet.label} “${value}”.` });
+
+  const g = summarise({ name: value, works: list });
+  const frag = document.createDocumentFragment();
+  frag.appendChild(backLink("All works", listHash("works")));
+  frag.appendChild(
+    el(
+      "div",
+      { class: "detail-head" },
+      el("h1", { text: facet.title(value) }),
+      el("div", { class: "meta-line" }, el("span", { class: "badge", text: facet.label }), el("span", { text: spanText(g) })),
+      el("div", { class: "note", style: { marginTop: "10px" }, text: `${facet.label} is a column in the source, not a table — this page is every work carrying the value “${value}”.` })
+    )
+  );
+  frag.appendChild(dimensionTiles(g));
+
+  /* Sideways: the other values this same column takes. */
+  const siblings = [...index.entries()].filter(([v]) => v !== value).sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]));
+  frag.appendChild(section("Works", g.n_works, worksOfTable(list)));
+  if (siblings.length) {
+    frag.appendChild(
+      section(
+        "Other " + facet.label.toLowerCase() + " values",
+        siblings.length,
+        el("div", { class: "chip-list" }, siblings.slice(0, 40).map(([v, ws]) => dimChip(v, facetHash(key, v), `${ws.length} work${ws.length === 1 ? "" : "s"}`)))
+      )
+    );
+  }
+  return frag;
+}
+
+function viewFind(q) {
+  const query = String(q || "").trim();
+  const groups = findEverywhere(query);
+  const total = groups.reduce((a, g) => a + g.hits.length, 0);
+  const frag = document.createDocumentFragment();
+  frag.appendChild(backLink("Overview", "#/overview"));
+  frag.appendChild(
+    el(
+      "div",
+      { class: "page-head" },
+      el("h1", { text: "“" + query + "”" }),
+      el("p", {
+        text: total
+          ? `${total} place${total === 1 ? "" : "s"} in the catalogue mention this, across ${groups.length} kind${groups.length === 1 ? "" : "s"} of record. Free-text values in the source — a comic artist, an episode title, a rating — have no page of their own, so this is where they lead.`
+          : "Nothing in the catalogue mentions this.",
+      })
+    )
+  );
+  if (!total) {
+    frag.appendChild(el("div", { class: "table-wrap" }, el("div", { class: "empty-state", text: "No match." })));
+    return frag;
+  }
+  for (const g of groups) {
+    frag.appendChild(
+      section(
+        g.kind,
+        g.hits.length,
+        el(
+          "div",
+          { class: "chip-list" },
+          g.hits.slice(0, 60).map((h) => dimChip(h.label, h.hash, h.sub || null))
+        )
+      )
+    );
   }
   return frag;
 }
@@ -2584,10 +3600,10 @@ function adaptationLagChart() {
     tableFn: () =>
       table(
         [
-          { key: "c", label: "Comic", wrap: true, cell: (p) => p.src.comic },
-          { key: "cy", label: "Published", num: true, cell: (p) => String(p.src.year) },
+          { key: "c", label: "Comic", wrap: true, cell: (p) => comicLink(p.src.comic) },
+          { key: "cy", label: "Published", num: true, cell: (p) => yearLink(p.src.year) },
           { key: "w", label: "Adapted in", cell: (p) => workLink(p.work, false) },
-          { key: "wy", label: "Released", num: true, cell: (p) => String(p.work.year) },
+          { key: "wy", label: "Released", num: true, cell: (p) => yearLink(p.work.year) },
           { key: "l", label: "Wait (yrs)", num: true, cell: (p) => String(p.lag) },
         ],
         [...pts].sort((a, b) => b.lag - a.lag),
@@ -2623,8 +3639,11 @@ function awardsChart() {
     if (b.won) g.appendChild(s("rect", { x: 0, y: yTop, width: Math.max(1, x(b.won)), height: barH, rx: 3, fill: "var(--series-1)" }));
     if (b.nominated) g.appendChild(s("rect", { x: x(b.won) + 2, y: yTop, width: Math.max(1, x(b.nominated) - 2), height: barH, rx: 3, fill: "var(--series-1-soft)" }));
     g.appendChild(s("text", { x: x(b.won + b.nominated) + 9, y: yTop + barH - 3, class: "dlabel", text: String(b.won + b.nominated) }));
-    g.appendChild(s("text", { x: -10, y: yTop + barH - 3, "text-anchor": "end", class: "tick", fill: "var(--text-secondary)", text: b.name.length > 26 ? b.name.slice(0, 25) + "…" : b.name }));
-    const hit = s("rect", { x: -M.l, y: i * rowH, width: W, height: rowH, fill: "transparent", tabindex: "0", role: "button", "aria-label": `${b.name}: ${b.won} won, ${b.nominated} nominated` });
+    const lbl = s("text", { x: -10, y: yTop + barH - 3, "text-anchor": "end", class: "tick", fill: "var(--text-secondary)", style: "cursor:pointer", text: b.name.length > 26 ? b.name.slice(0, 25) + "…" : b.name });
+    lbl.addEventListener("click", () => go("#/award/" + encodeURIComponent(b.name)));
+    g.appendChild(lbl);
+    const hit = s("rect", { x: -M.l, y: i * rowH, width: W, height: rowH, fill: "transparent", style: "cursor:pointer", tabindex: "0", role: "button", "aria-label": `${b.name}: ${b.won} won, ${b.nominated} nominated` });
+    hit.addEventListener("click", () => go("#/award/" + encodeURIComponent(b.name)));
     const show = (ev) => {
       const host = svg.parentNode;
       const r = host.getBoundingClientRect();
@@ -2652,7 +3671,7 @@ function awardsChart() {
     tableFn: () =>
       table(
         [
-          { key: "b", label: "Body", cell: (b) => b.name },
+          { key: "b", label: "Body", cell: (b) => softLink(b.name, "#/award/" + encodeURIComponent(b.name)) },
           { key: "w", label: "Won", num: true, cell: (b) => String(b.won) },
           { key: "n", label: "Nominated", num: true, cell: (b) => String(b.nominated) },
         ],
@@ -2683,12 +3702,17 @@ function viewAnalysis() {
         items: pubs.map((p) => ({ label: p.name, value: Math.round(p.avg_pct), display: Math.round(p.avg_pct) + " / 100", key: p.name, sub: `${p.n} scores, range ${Math.round(p.lo)}–${Math.round(p.hi)}` })),
         labelWidth: 190,
         maxRows: 20,
+        onPick: (d) => go("#/publication/" + encodeURIComponent(d.key)),
         tableCols: [
-          { key: "p", label: "Publication", cell: (d) => d.label },
+          { key: "p", label: "Publication", cell: (d) => publicationLink(d.key, d.label) },
           { key: "a", label: "Mean score", num: true, cell: (d) => String(d.value) },
           { key: "s", label: "Spread", cell: (d) => d.sub },
         ],
-      }))
+      }),
+      el("p", { class: "sub", style: { margin: "8px 2px 0" } },
+        "Every outlet has a page of its own — ",
+        el("button", { class: "linkish", text: "browse all " + publicationIndex.size + " →", onclick: () => go("#/publications") }))
+    )
   );
 
   frag.appendChild(
@@ -2709,12 +3733,17 @@ function viewAnalysis() {
         })),
         labelWidth: 260,
         maxRows: 18,
+        onPick: (d) => go("#/comic/" + encodeURIComponent(d.key)),
         tableCols: [
-          { key: "c", label: "Comic", wrap: true, cell: (d) => d.label },
+          { key: "c", label: "Comic", wrap: true, cell: (d) => comicLink(d.key, d.label) },
           { key: "n", label: "Adapted by", num: true, cell: (d) => String(d.value) },
           { key: "w", label: "Credited to", wrap: true, cell: (d) => d.sub || "—" },
         ],
-      }))
+      }),
+      el("p", { class: "sub", style: { margin: "8px 2px 0" } },
+        "Each storyline opens onto the works that used it — ",
+        el("button", { class: "linkish", text: "browse all " + comicIndex.size + " comic sources →", onclick: () => go("#/comics") }))
+    )
   );
 
   frag.appendChild(
@@ -2724,9 +3753,9 @@ function viewAnalysis() {
       table(
         [
           { key: "w", label: "Work", cell: (a) => workLink(a.work, false) },
-          { key: "b", label: "Body", cell: (a) => a.body },
-          { key: "y", label: "Year", num: true, cell: (a) => (a.year == null ? "—" : String(a.year)) },
-          { key: "c", label: "Category", wrap: true, cell: (a) => a.category },
+          { key: "b", label: "Body", cell: (a) => softLink(a.body, "#/award/" + encodeURIComponent(a.body)) },
+          { key: "y", label: "Year", num: true, cell: (a) => yearLink(a.year) },
+          { key: "c", label: "Category", wrap: true, cell: (a) => findLink(a.category) },
           { key: "r", label: "Result", cell: (a) => (a.result === "won" ? el("strong", { text: "Won" }) : el("span", { class: "muted", text: "Nominated" })) },
         ],
         [...allAwards].sort((a, b) => (a.year ?? 0) - (b.year ?? 0)),
@@ -2741,9 +3770,9 @@ function viewAnalysis() {
       [...comicIndex.values()].length,
       table(
         [
-          { key: "c", label: "Comic", wrap: true, cell: (c) => c.title },
-          { key: "y", label: "Published", num: true, cell: (c) => (c.year ?? el("span", { class: "muted", text: "—" })) },
-          { key: "w", label: "Credited to", wrap: true, cell: (c) => c.writer || el("span", { class: "muted", text: "—" }) },
+          { key: "c", label: "Comic", wrap: true, cell: (c) => comicLink(c.title) },
+          { key: "y", label: "Published", num: true, cell: (c) => yearLink(c.year) },
+          { key: "w", label: "Credited to", wrap: true, cell: (c) => nameLinks(c.writer) },
           { key: "n", label: "Cited by", num: true, cell: (c) => String(c.n) },
           {
             key: "u",
@@ -2758,6 +3787,8 @@ function viewAnalysis() {
       )
     )
   );
+
+  frag.appendChild(browseSection("Browse the dimensions behind these charts"));
 
   return frag;
 }
@@ -2800,8 +3831,8 @@ function viewAbout() {
         " in the films, plain ",
         el("code", { text: "Peter Parker" }),
         " on television. 416 credit strings name ",
-        String(characters.length),
-        " distinct characters; 61 of them have more than one spelling. Every character page here lists the spellings it absorbed."
+        linkTo(String(characters.length) + " distinct characters", "#/characters"),
+        "; 61 of them have more than one spelling. Every character page here lists the spellings it absorbed, and each spelling opens the works that used it."
       ),
       p("Where spellings disagreed on alignment, the majority wins and the per-row values stay in the underlying table.")
     )
@@ -2871,11 +3902,25 @@ function viewAbout() {
         linkTo("Franchises", "#/franchises"),
         ", ",
         linkTo("studios", "#/studios"),
-        " and ",
+        ", ",
         linkTo("platforms", "#/platforms"),
-        " are not tables you can browse in the source — they are grouped here from the join tables, so a studio page is every work that credits that name. Co-appearances, collaborators, adaptation lag and the outlet means on the ",
+        ", ",
+        linkTo("outlets", "#/publications"),
+        ", ",
+        linkTo("comic sources", "#/comics"),
+        ", ",
+        linkTo("awarding bodies", "#/awards"),
+        ", ",
+        linkTo("credit roles", "#/roles"),
+        " and ",
+        linkTo("years", "#/year/" + DATA.meta.year_max),
+        " are not tables you can browse in the source — they are grouped here from the columns that name them, so a studio page is every work that credits that name and an outlet page is every score it filed. Co-appearances, collaborators, work overlaps, adaptation lag and the outlet means on the ",
         linkTo("Analysis", "#/analysis"),
         " page are all computed in the browser from those same rows; none of them are stored figures."
+      ),
+      p(
+        "Values that name nothing the catalogue holds a record for — a comic artist, an episode title, an ESRB rating — are not left inert either. Each one leads either to the works that share it or to a cross-column lookup, so every string on screen can be followed somewhere. ",
+        linkTo("Try it on “Stan Lee” →", findHash("Stan Lee"))
       ),
       p(
         "Grouping is by name, not by an identifier: two studios spelled differently in the source stay two rows here, exactly as they are in the database."
@@ -2909,6 +3954,11 @@ const searchIndex = [
   ...[...franchiseIndex.values()].map((g) => ({ kind: "Franchises", label: g.name, sub: `${g.n_works} work${g.n_works === 1 ? "" : "s"}`, hash: "#/franchise/" + encodeURIComponent(g.name), key: g.name.toLowerCase(), rank: 3 })),
   ...[...studioIndex.values()].map((g) => ({ kind: "Studios", label: g.name, sub: `${g.n_works} work${g.n_works === 1 ? "" : "s"}`, hash: "#/studio/" + encodeURIComponent(g.name), key: g.name.toLowerCase(), rank: 4 })),
   ...[...platformIndex.values()].map((g) => ({ kind: "Platforms", label: g.name, sub: `${g.n_works} game${g.n_works === 1 ? "" : "s"}`, hash: "#/platform/" + encodeURIComponent(g.name), key: g.name.toLowerCase(), rank: 5 })),
+  ...[...publicationIndex.values()].map((g) => ({ kind: "Outlets", label: g.name, sub: `${g.n} score${g.n === 1 ? "" : "s"}`, hash: "#/publication/" + encodeURIComponent(g.name), key: g.name.toLowerCase(), rank: 6 })),
+  ...[...comicIndex.values()].map((g) => ({ kind: "Comic sources", label: g.title, sub: [g.writer, g.year].filter(Boolean).join(" · ") || `${g.n_works} adaptation${g.n_works === 1 ? "" : "s"}`, hash: "#/comic/" + encodeURIComponent(g.title), key: (g.title + " " + (g.writer || "")).toLowerCase(), rank: 7 })),
+  ...[...awardBodies.values()].map((g) => ({ kind: "Awarding bodies", label: g.name, sub: `${g.won} won · ${g.nominated} nominated`, hash: "#/award/" + encodeURIComponent(g.name), key: (g.name + " " + g.categories.join(" ")).toLowerCase(), rank: 8 })),
+  ...[...roleIndex.values()].map((g) => ({ kind: "Credit roles", label: g.name, sub: `${g.n_people} person${g.n_people === 1 ? "" : "s"}`.replace("persons", "people"), hash: "#/role/" + encodeURIComponent(g.name), key: g.name.toLowerCase(), rank: 9 })),
+  ...[...yearIndex.keys()].sort((a, b) => a - b).map((y) => ({ kind: "Years", label: String(y), sub: `${yearIndex.get(y).works.length} release${yearIndex.get(y).works.length === 1 ? "" : "s"}`, hash: "#/year/" + y, key: String(y), rank: 10 })),
 ];
 
 function setupSearch() {
@@ -2937,13 +3987,20 @@ function setupSearch() {
       .slice(0, 24);
     box.replaceChildren();
     items = [];
+    const raw = input.value.trim();
+    /* Whatever the index does or does not hold, there is always somewhere to go: the
+       cross-dataset lookup reads the free-text columns the index never sees. */
+    const everywhere = {
+      kind: hits.length ? "Everywhere else" : "Look deeper",
+      label: "Search every column for “" + raw + "”",
+      sub: "free text too",
+      hash: findHash(raw),
+    };
     if (!hits.length) {
-      box.appendChild(el("div", { class: "empty", text: "Nothing matches “" + input.value.trim() + "”." }));
-      box.classList.add("open");
-      return;
+      box.appendChild(el("div", { class: "empty", text: "Nothing in the index matches “" + raw + "”." }));
     }
     let lastKind = null;
-    for (const hit of hits) {
+    for (const hit of [...hits, everywhere]) {
       if (hit.kind !== lastKind) {
         box.appendChild(el("div", { class: "group", text: hit.kind }));
         lastKind = hit.kind;
@@ -3024,9 +4081,16 @@ function boot() {
   document.querySelector(".search-wrap .icon-slot").replaceWith(magnifier);
   document.getElementById("theme-btn").appendChild(icon("theme", 15));
   const c = DATA.meta.counts;
-  document.getElementById("foot-line").textContent =
-    `${c.works} works · ${c.characters} characters · ${c.people} people · ${c.credits} credits, ` +
-    `${DATA.meta.year_min}–${DATA.meta.year_max}. Generated from spiderman.db. Data CC BY 4.0, code MIT.`;
+  const footLink = (text, hash) => el("button", { class: "linkish", text, onclick: () => go(hash) });
+  document.getElementById("foot-line").replaceChildren(
+    footLink(`${c.works} works`, "#/works"), " · ",
+    footLink(`${c.characters} characters`, "#/characters"), " · ",
+    footLink(`${c.people} people`, "#/people"), " · ",
+    footLink(`${c.credits} credits`, "#/roles"), ", ",
+    footLink(String(DATA.meta.year_min), "#/year/" + DATA.meta.year_min), "–",
+    footLink(String(DATA.meta.year_max), "#/year/" + DATA.meta.year_max),
+    ". Generated from spiderman.db. Data CC BY 4.0, code MIT."
+  );
   // The header nav, the brand and the overview tiles are real anchors, for keyboard and
   // copy-link semantics. Some embedded viewers treat any anchor navigation — even a
   // same-document fragment one — as a request for a new tab, so intercept internal
