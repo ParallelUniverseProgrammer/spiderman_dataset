@@ -121,12 +121,152 @@ for (const p of people) {
 
 const FRANCHISES = [...new Set(works.map((w) => w.franchise).filter(Boolean))].sort();
 
+/* ---------- derived indexes: dimensions the database holds but no single row names ---------- */
+
+function groupInto(map, key, seed) {
+  if (!map.has(key)) map.set(key, seed(key));
+  return map.get(key);
+}
+
+function summarise(group) {
+  const ws = group.works;
+  const years = ws.map((w) => w.year).filter(Boolean);
+  const scored = ws.filter((w) => w.avg_pct != null);
+  group.n_works = ws.length;
+  group.first_year = years.length ? Math.min(...years) : null;
+  group.last_year = years.length ? Math.max(...years) : null;
+  group.gross = ws.reduce((a, w) => a + (w.gross || 0), 0) || null;
+  group.budget = ws.reduce((a, w) => a + (w.budget_usd || 0), 0) || null;
+  group.avg_pct = scored.length ? scored.reduce((a, w) => a + w.avg_pct, 0) / scored.length : null;
+  group.by_type = { movie: 0, tv_show: 0, game: 0 };
+  for (const w of ws) group.by_type[w.type]++;
+  return group;
+}
+
+const franchiseIndex = new Map();
+for (const f of DATA.franchises || []) franchiseIndex.set(f.name, { name: f.name, description: f.description, works: [] });
+for (const w of works) if (w.franchise) groupInto(franchiseIndex, w.franchise, (n) => ({ name: n, works: [] })).works.push(w);
+for (const g of franchiseIndex.values()) summarise(g);
+
+const studioIndex = new Map();
+for (const w of works) {
+  for (const st of w.studios) {
+    const g = groupInto(studioIndex, st.name, (n) => ({ name: n, works: [], roles: new Set() }));
+    g.roles.add(st.role);
+    if (!g.works.includes(w)) g.works.push(w);
+  }
+}
+for (const g of studioIndex.values()) summarise(g);
+
+const platformIndex = new Map();
+for (const w of works) {
+  for (const name of w.platforms) {
+    const g = groupInto(platformIndex, name, (n) => ({ name: n, works: [], releases: [] }));
+    if (!g.works.includes(w)) g.works.push(w);
+  }
+  for (const r of w.game_releases) {
+    if (!r.platform) continue;
+    const g = groupInto(platformIndex, r.platform, (n) => ({ name: n, works: [], releases: [] }));
+    if (!g.works.includes(w)) g.works.push(w);
+    g.releases.push({ ...r, work: w });
+  }
+}
+for (const g of platformIndex.values()) {
+  summarise(g);
+  const mc = g.releases.map((r) => r.metacritic).filter((v) => v != null);
+  g.avg_metacritic = mc.length ? mc.reduce((a, b) => a + b, 0) / mc.length : null;
+  const dates = g.releases.map((r) => r.date).filter(Boolean).sort();
+  g.first_release = dates[0] || null;
+  g.last_release = dates[dates.length - 1] || null;
+}
+
+/* Every normalized score, grouped by the outlet that published it. */
+const publicationIndex = new Map();
+for (const w of works) {
+  for (const r of w.reviews) {
+    if (r.pct == null) continue;
+    const g = groupInto(publicationIndex, r.publication, (n) => ({ name: n, scores: [] }));
+    g.scores.push({ ...r, work: w });
+  }
+}
+for (const g of publicationIndex.values()) {
+  g.n = g.scores.length;
+  g.avg_pct = g.scores.reduce((a, r) => a + r.pct, 0) / g.n;
+  g.lo = Math.min(...g.scores.map((r) => r.pct));
+  g.hi = Math.max(...g.scores.map((r) => r.pct));
+  g.by_type = { movie: 0, tv_show: 0, game: 0 };
+  for (const r of g.scores) g.by_type[r.work.type]++;
+}
+
+/* Comic storylines, and how long each took to reach a screen. */
+const comicIndex = new Map();
+const adaptations = [];
+for (const w of works) {
+  for (const src of w.sources) {
+    if (!src.comic) continue;
+    const g = groupInto(comicIndex, src.comic, (n) => ({ title: n, uses: [] }));
+    g.uses.push({ ...src, work: w });
+    if (src.year && w.year) adaptations.push({ work: w, src, lag: w.year - src.year });
+  }
+}
+for (const g of comicIndex.values()) {
+  g.n = g.uses.length;
+  const yrs = g.uses.map((u) => u.year).filter(Boolean);
+  g.year = yrs.length ? Math.min(...yrs) : null;
+  g.writer = g.uses.find((u) => u.writer)?.writer || null;
+}
+
+const allAwards = works.flatMap((w) => w.awards.map((a) => ({ ...a, work: w })));
+const awardBodies = new Map();
+for (const a of allAwards) {
+  const g = groupInto(awardBodies, a.body, (n) => ({ name: n, won: 0, nominated: 0, rows: [] }));
+  g[a.result === "won" ? "won" : "nominated"]++;
+  g.rows.push(a);
+}
+
+/* Characters sharing a work with this one, most-shared first. */
+function coAppearances(ident) {
+  const workIds = new Set(ident.appearances.map((a) => a.work_id));
+  const counts = new Map();
+  for (const wid of workIds) {
+    for (const wc of workById.get(wid).characters) {
+      if (wc.identity_id === ident.id) continue;
+      counts.set(wc.identity_id, (counts.get(wc.identity_id) || 0) + 1);
+    }
+  }
+  return [...counts.entries()]
+    .map(([id, n]) => ({ character: charById.get(id), n }))
+    .filter((x) => x.character)
+    .sort((a, b) => b.n - a.n || a.character.name.localeCompare(b.character.name));
+}
+
+/* People credited on more than one of the same works as this one. */
+function collaborators(person) {
+  const workIds = new Set(person.credits.map((c) => c.work_id));
+  const counts = new Map();
+  for (const wid of workIds) {
+    const w = workById.get(wid);
+    for (const c of [...w.cast, ...w.crew]) {
+      if (c.person_id === person.id) continue;
+      counts.set(c.person_id, (counts.get(c.person_id) || 0) + 1);
+    }
+  }
+  return [...counts.entries()]
+    .map(([id, n]) => ({ person: personById.get(id), n }))
+    .filter((x) => x.person && x.n > 1)
+    .sort((a, b) => b.n - a.n || a.person.name.localeCompare(b.person.name));
+}
+
 /* ---------- routing ---------- */
 
-const state = {
+/* Every list view's filter defaults. Absent from the URL means "this value". */
+const DEFAULTS = {
   works: { type: "all", franchise: "all", era: "all", sort: "year", dir: 1, q: "" },
-  chars: { align: "all", sort: "n_works", dir: -1, q: "" },
+  characters: { align: "all", sort: "n_works", dir: -1, q: "" },
   people: { kind: "all", sort: "n_works", dir: -1, q: "" },
+  franchises: { sort: "n_works", dir: -1, q: "" },
+  studios: { sort: "n_works", dir: -1, q: "" },
+  platforms: { sort: "n_works", dir: -1, q: "" },
 };
 
 function go(hash) {
@@ -135,24 +275,58 @@ function go(hash) {
 }
 
 function currentRoute() {
-  const h = location.hash.replace(/^#\/?/, "").split("?")[0] || "overview";
-  const [view, id] = h.split("/");
-  return { view, id: id ? Number(id) : null };
+  const raw = location.hash.replace(/^#\/?/, "");
+  const qi = raw.indexOf("?");
+  const path = (qi < 0 ? raw : raw.slice(0, qi)) || "overview";
+  const query = qi < 0 ? "" : raw.slice(qi + 1);
+  const slash = path.indexOf("/");
+  return slash < 0
+    ? { view: path, id: null, query }
+    : { view: path.slice(0, slash), id: decodeURIComponent(path.slice(slash + 1)), query };
+}
+
+/* Filter state lives in the URL, so any view a reader reaches is a link they can share.
+   A bare "#/works" therefore means "no filters" — which is what the nav tabs link to. */
+function readFilters(defaults, query) {
+  const out = { ...defaults };
+  const params = new URLSearchParams(query);
+  for (const k of Object.keys(defaults)) {
+    if (!params.has(k)) continue;
+    const v = params.get(k);
+    out[k] = typeof defaults[k] === "number" ? Number(v) : v;
+  }
+  return out;
+}
+
+function filterHash(view, filters, defaults) {
+  const params = new URLSearchParams();
+  for (const [k, v] of Object.entries(filters)) {
+    if (v !== defaults[k] && v !== "" && v != null) params.set(k, String(v));
+  }
+  const q = params.toString();
+  return "#/" + view + (q ? "?" + q : "");
 }
 
 /* ---------- shell ---------- */
 
 const app = document.getElementById("app");
+const LIST_VIEWS = ["works", "characters", "people", "franchises", "studios", "platforms"];
+const LAST_LIST = {};
+const listHash = (view) => LAST_LIST[view] || "#/" + view;
 
 function render() {
-  const { view, id } = currentRoute();
-  const TAB_OF = { work: "works", character: "characters", person: "people" };
+  const { view, id, query } = currentRoute();
+  const TAB_OF = {
+    work: "works", character: "characters", person: "people",
+    franchise: "franchises", studio: "studios", platform: "platforms",
+  };
   const activeTab = TAB_OF[view] || view;
   document.querySelectorAll("nav.tabs a").forEach((a) => {
     const target = a.getAttribute("href").replace("#/", "");
     if (target === activeTab) a.setAttribute("aria-current", "page");
     else a.removeAttribute("aria-current");
   });
+  if (LIST_VIEWS.includes(view)) LAST_LIST[view] = location.hash;
   app.replaceChildren();
   const map = {
     overview: viewOverview,
@@ -162,11 +336,18 @@ function render() {
     character: viewCharacter,
     people: viewPeople,
     person: viewPerson,
+    franchises: viewFranchises,
+    franchise: viewFranchise,
+    studios: viewStudios,
+    studio: viewStudio,
+    platforms: viewPlatforms,
+    platform: viewPlatform,
+    analysis: viewAnalysis,
     about: viewAbout,
   };
   const fn = map[view] || viewOverview;
-  app.appendChild(fn(id));
-  window.scrollTo(0, view.length > 5 && id ? 0 : window.__keepScroll ? window.scrollY : 0);
+  app.appendChild(fn(id, query));
+  window.scrollTo(0, window.__keepScroll ? window.scrollY : 0);
   window.__keepScroll = false;
   document.title =
     (app.querySelector("h1")?.textContent || "Spider-Man dataset") + " · Spider-Man Media Dataset";
@@ -211,6 +392,25 @@ function personLink(pid) {
   const p = personById.get(pid);
   if (!p) return el("span", { class: "muted" }, "—");
   return el("button", { class: "row-link", onclick: () => go("#/person/" + p.id), text: p.name });
+}
+
+function franchiseLink(name, maxLen) {
+  return el("button", {
+    class: "row-link",
+    style: { fontWeight: "400" },
+    text: maxLen && name.length > maxLen ? name.slice(0, maxLen - 1) + "\u2026" : name,
+    title: name,
+    onclick: () => go("#/franchise/" + encodeURIComponent(name)),
+  });
+}
+
+function dimChip(name, hash, sub) {
+  return el(
+    "button",
+    { class: "chip", onclick: () => go(hash) },
+    name,
+    sub ? el("span", { class: "as", text: sub }) : null
+  );
 }
 
 function charChip(c) {
@@ -428,7 +628,10 @@ function viewOverview() {
         ),
         statTile("Characters", String(c.characters), "#/characters"),
         statTile("People", String(c.people), "#/people"),
-        statTile("Credits", String(c.credits), "#/people")
+        statTile("Credits", String(c.credits), "#/people"),
+        statTile("Franchises", String(franchiseIndex.size), "#/franchises"),
+        statTile("Studios", String(studioIndex.size), "#/studios"),
+        statTile("Platforms", String(platformIndex.size), "#/platforms")
       )
     )
   );
@@ -448,7 +651,9 @@ function viewOverview() {
         "and for a series the whole show counts once. Character names are collapsed from 416 credit strings to ",
       el("button", { class: "linkish", text: "264 identities", onclick: () => go("#/characters") }),
       ". ",
-      el("button", { class: "linkish", text: "Full notes on the data →", onclick: () => go("#/about") })
+      el("button", { class: "linkish", text: "Full notes on the data →", onclick: () => go("#/about") }),
+      " ",
+      el("button", { class: "linkish", text: "Deeper cuts in Analysis →", onclick: () => go("#/analysis") })
     )
   );
 
@@ -529,7 +734,7 @@ function timelineChart() {
     hit.addEventListener("focus", showTip);
     hit.addEventListener("pointerleave", () => tip.hide());
     hit.addEventListener("blur", () => tip.hide());
-    if (total) hit.addEventListener("click", () => go(`#/works?year=${y}`));
+    if (total) hit.addEventListener("click", () => go(`#/works?era=${y}`));
     g.appendChild(hit);
   });
 
@@ -810,32 +1015,103 @@ function topCharactersChart() {
    WORKS
    ============================================================ */
 
-function parseQuery() {
-  const h = location.hash;
-  const qi = h.indexOf("?");
-  return qi < 0 ? {} : Object.fromEntries(new URLSearchParams(h.slice(qi + 1)));
+/* ---------- list-view plumbing: URL-backed filters, sorting, CSV ---------- */
+
+function applyFilters(view, filters) {
+  history.replaceState(null, "", filterHash(view, filters, DEFAULTS[view]));
+  rerenderInPlace();
 }
 
-function viewWorks() {
-  const q = parseQuery();
-  if (q.type) state.works.type = q.type;
-  if (q.year) {
-    state.works.era = q.year;
-    state.works.sort = "year";
-  }
-  if (q.franchise) state.works.franchise = q.franchise;
-  // Consume the deep-link once, so later filter changes aren't overridden by a stale query.
-  if (Object.keys(q).length) history.replaceState(null, "", "#/works");
-  const f = state.works;
+function sortHandler(view, filters, ascKeys) {
+  return (k) => {
+    const next = { ...filters };
+    if (filters.sort === k) next.dir = filters.dir * -1;
+    else {
+      next.sort = k;
+      next.dir = ascKeys.includes(k) ? 1 : -1;
+    }
+    applyFilters(view, next);
+  };
+}
 
-  const eras = ["all", ...[...new Set(works.map((w) => (w.year ? Math.floor(w.year / 10) * 10 : null)).filter(Boolean))].sort()];
+function sortRows(rows, get, dir, tieBreak) {
+  return [...rows].sort((a, b) => {
+    const va = get(a), vb = get(b);
+    if (va < vb) return -dir;
+    if (va > vb) return dir;
+    return tieBreak(a).localeCompare(tieBreak(b));
+  });
+}
 
-  let rows = works.filter((w) => {
+/* Re-rendering replaces the input, so the caret has to be put back by hand. */
+function filterInput(placeholder, value, onChange) {
+  return el("input", {
+    class: "txt",
+    type: "search",
+    placeholder,
+    value,
+    oninput: (e) => {
+      const at = e.target.selectionStart;
+      onChange(e.target.value);
+      const nx = app.querySelector('.filters input[type="search"]');
+      if (nx) {
+        nx.focus();
+        nx.setSelectionRange(at, at);
+      }
+    },
+  });
+}
+
+function resetButton(view, filters) {
+  const dirty = Object.keys(DEFAULTS[view]).some((k) => filters[k] !== DEFAULTS[view][k]);
+  return dirty ? el("button", { class: "linkish", text: "Reset", onclick: () => go("#/" + view) }) : null;
+}
+
+function csvEscape(s) {
+  return /[",\n]/.test(s) ? '"' + s.replace(/"/g, '""') + '"' : s;
+}
+
+/* The download is built from the rendered table, so the file always matches the screen. */
+function csvFromTable(tableEl) {
+  return [...tableEl.querySelectorAll("tr")]
+    .map((tr) => [...tr.children].map((c) => csvEscape(c.textContent.trim().replace(/\s+/g, " "))).join(","))
+    .join("\n");
+}
+
+window.csvFromTable = csvFromTable;
+
+function downloadText(filename, text) {
+  const url = URL.createObjectURL(new Blob([text], { type: "text/csv;charset=utf-8" }));
+  const a = el("a", { href: url, download: filename });
+  document.body.appendChild(a);
+  a.click();
+  a.remove();
+  setTimeout(() => URL.revokeObjectURL(url), 2000);
+}
+
+function csvButton(filename, getTableNode) {
+  return el("button", {
+    class: "toggle",
+    text: "Download CSV",
+    title: "Download the rows currently shown",
+    onclick: () => {
+      const node = getTableNode();
+      if (node) downloadText(filename, csvFromTable(node));
+    },
+  });
+}
+
+function viewWorks(_id, query) {
+  const f = readFilters(DEFAULTS.works, query);
+  const eras = [...new Set(works.map((w) => (w.year ? Math.floor(w.year / 10) * 10 : null)).filter(Boolean))].sort();
+  const exactYear = /^\d{4}$/.test(String(f.era)) && Number(f.era) % 10 !== 0;
+
+  const rows0 = works.filter((w) => {
     if (f.type !== "all" && w.type !== f.type) return false;
     if (f.franchise !== "all" && w.franchise !== f.franchise) return false;
     if (f.era !== "all") {
       const e = Number(f.era);
-      if (e > 1000 && String(e).length === 4 && e % 10 !== 0) {
+      if (exactYear) {
         if (w.year !== e) return false;
       } else if (!w.year || w.year < e || w.year >= e + 10) return false;
     }
@@ -846,44 +1122,32 @@ function viewWorks() {
     return true;
   });
 
-  const key = f.sort;
   const get = {
     year: (w) => w.year ?? 9999,
     title: (w) => w.title.toLowerCase(),
+    type: (w) => w.type,
+    franchise: (w) => (w.franchise || "~").toLowerCase(),
+    maker: (w) => (w.maker || "~").toLowerCase(),
     score: (w) => w.avg_pct ?? -1,
     gross: (w) => w.gross ?? -1,
     chars: (w) => w.characters.length,
     credits: (w) => w.n_credits,
-  }[key];
-  rows = [...rows].sort((a, b) => {
-    const va = get(a), vb = get(b);
-    if (va < vb) return -1 * f.dir;
-    if (va > vb) return 1 * f.dir;
-    return a.title.localeCompare(b.title);
-  });
+  }[f.sort] || ((w) => w.year ?? 9999);
+  const rows = sortRows(rows0, get, f.dir, (w) => w.title);
 
-  const onSort = (k) => {
-    if (!get) return;
-    if (state.works.sort === k) state.works.dir *= -1;
-    else {
-      state.works.sort = k;
-      state.works.dir = k === "title" || k === "year" ? 1 : -1;
-    }
-    rerenderInPlace();
-  };
+  const counts = { all: works.length };
+  for (const k of Object.keys(TYPE)) counts[k] = works.filter((w) => w.type === k).length;
 
+  let tableNode = null;
   const frag = document.createDocumentFragment();
   frag.appendChild(
     el(
       "div",
       { class: "page-head" },
       el("h1", { text: "Works" }),
-      el("p", { text: "Every movie, television series and game in the dataset. Sort by any column; click a title for its full record." })
+      el("p", { text: "Every movie, television series and game in the dataset. Sort by any column, click a title for its full record, and share the URL — it carries your filters." })
     )
   );
-
-  const counts = { all: works.length };
-  for (const t of Object.keys(TYPE)) counts[t] = works.filter((w) => w.type === t).length;
 
   frag.appendChild(
     el(
@@ -892,85 +1156,55 @@ function viewWorks() {
       chips(
         [
           { value: "all", label: "All", n: counts.all },
-          ...Object.keys(TYPE).map((t) => ({ value: t, label: TYPE[t].label, n: counts[t], color: TYPE[t].color })),
+          ...Object.keys(TYPE).map((k) => ({ value: k, label: TYPE[k].label, n: counts[k], color: TYPE[k].color })),
         ],
         f.type,
-        (v) => {
-          state.works.type = v;
-          rerenderInPlace();
-        }
+        (v) => applyFilters("works", { ...f, type: v })
       ),
       selectBox(
         "Era",
         [
           { value: "all", label: "All years" },
-          ...(f.era !== "all" && String(f.era).length === 4 && Number(f.era) % 10 !== 0 ? [{ value: f.era, label: f.era }] : []),
-          ...eras.filter((e) => e !== "all").map((e) => ({ value: String(e), label: e + "s" })),
+          ...(exactYear ? [{ value: String(f.era), label: String(f.era) }] : []),
+          ...eras.map((e) => ({ value: String(e), label: e + "s" })),
         ],
         String(f.era),
-        (v) => {
-          state.works.era = v;
-          rerenderInPlace();
-        }
+        (v) => applyFilters("works", { ...f, era: v })
       ),
       selectBox(
         "Franchise",
         [{ value: "all", label: "All franchises" }, ...FRANCHISES.map((x) => ({ value: x, label: x }))],
         f.franchise,
-        (v) => {
-          state.works.franchise = v;
-          rerenderInPlace();
-        }
+        (v) => applyFilters("works", { ...f, franchise: v })
       ),
-      el("input", {
-        class: "txt",
-        type: "search",
-        placeholder: "Filter titles…",
-        value: f.q,
-        oninput: (e) => {
-          state.works.q = e.target.value;
-          const at = e.target.selectionStart;
-          rerenderInPlace();
-          const nx = app.querySelector('input[type="search"]');
-          if (nx) {
-            nx.focus();
-            nx.setSelectionRange(at, at);
-          }
-        },
-      }),
-      f.type !== "all" || f.era !== "all" || f.franchise !== "all" || f.q
-        ? el("button", {
-            class: "linkish",
-            text: "Reset",
-            onclick: () => {
-              state.works = { type: "all", franchise: "all", era: "all", sort: "year", dir: 1, q: "" };
-              go("#/works");
-            },
-          })
-        : null,
+      filterInput("Filter titles…", f.q, (v) => applyFilters("works", { ...f, q: v })),
+      resetButton("works", f),
+      csvButton("spiderman-works.csv", () => tableNode),
       el("span", { class: "result-count", text: `${rows.length} of ${works.length}` })
     )
   );
 
-  frag.appendChild(
-    rows.length
-      ? table(
-          [
-            { key: "title", label: "Title", cell: (w) => workLink(w, false) },
-            { key: "year", label: "Year", num: true, cell: (w) => yr(w) },
-            { key: "type", label: "Medium", cell: (w) => typeBadge(w.type) },
-            { key: "franchise", label: "Franchise", cell: (w) => trunc(w.franchise, 24) },
-            { key: "maker", label: "Made by", cell: (w) => trunc(w.maker, 22) },
-            { key: "score", label: "Score", num: true, cell: (w) => (w.avg_pct == null ? el("span", { class: "muted", text: "—" }) : pct(w.avg_pct)) },
-            { key: "gross", label: "Gross", num: true, cell: (w) => (w.gross == null ? el("span", { class: "muted", text: "—" }) : money(w.gross)) },
-            { key: "chars", label: "Chars", num: true, cell: (w) => String(w.characters.length) },
-            { key: "credits", label: "Credits", num: true, cell: (w) => String(w.n_credits) },
-          ],
-          rows,
-          { onSort, sortKey: f.sort, dir: f.dir, scroll: true }
-        )
-      : el("div", { class: "table-wrap" }, el("div", { class: "empty-state", text: "No works match these filters." }))
-  );
+  if (rows.length) {
+    tableNode = table(
+      [
+        { key: "title", label: "Title", cell: (w) => workLink(w, false) },
+        { key: "year", label: "Year", num: true, cell: (w) => yr(w) },
+        { key: "type", label: "Medium", cell: (w) => typeBadge(w.type) },
+        { key: "franchise", label: "Franchise", cell: (w) => (w.franchise ? franchiseLink(w.franchise, 24) : el("span", { class: "muted", text: "—" })) },
+        { key: "maker", label: "Made by", cell: (w) => trunc(w.maker, 22) },
+        { key: "score", label: "Score", num: true, cell: (w) => (w.avg_pct == null ? el("span", { class: "muted", text: "—" }) : pct(w.avg_pct)) },
+        { key: "gross", label: "Gross", num: true, cell: (w) => (w.gross == null ? el("span", { class: "muted", text: "—" }) : money(w.gross)) },
+        { key: "chars", label: "Chars", num: true, cell: (w) => String(w.characters.length) },
+        { key: "credits", label: "Credits", num: true, cell: (w) => String(w.n_credits) },
+      ],
+      rows,
+      { onSort: sortHandler("works", f, ["title", "year", "type", "franchise", "maker"]), sortKey: f.sort, dir: f.dir, scroll: true }
+    );
+    frag.appendChild(tableNode);
+    tableNode = tableNode.querySelector("table");
+  } else {
+    frag.appendChild(el("div", { class: "table-wrap" }, el("div", { class: "empty-state", text: "No works match these filters." })));
+  }
 
   return frag;
 }
@@ -983,10 +1217,10 @@ function trunc(v, n) {
 /* ---------- work detail ---------- */
 
 function viewWork(id) {
-  const w = workById.get(id);
+  const w = workById.get(Number(id));
   if (!w) return el("div", { class: "empty-state", text: "Unknown work." });
   const frag = document.createDocumentFragment();
-  frag.appendChild(backLink("All works", "#/works"));
+  frag.appendChild(backLink("All works", listHash("works")));
 
   const sub = w.type === "movie" ? w.movie?.sub_type : w.type === "tv_show" ? w.tv?.sub_type : w.game?.genre;
   frag.appendChild(
@@ -1004,10 +1238,7 @@ function viewWork(id) {
           ? el("button", {
               class: "linkish",
               text: w.franchise,
-              onclick: () => {
-                state.works = { ...state.works, type: "all", era: "all", franchise: w.franchise, q: "" };
-                go("#/works?franchise=" + encodeURIComponent(w.franchise));
-              },
+              onclick: () => go("#/franchise/" + encodeURIComponent(w.franchise)),
             })
           : null
       ),
@@ -1196,10 +1427,45 @@ function viewWork(id) {
         el(
           "div",
           { class: "chip-list" },
-          w.studios.map((st) => el("span", { class: "chip" }, st.name, el("span", { class: "as", text: st.role })))
+          w.studios.map((st) => dimChip(st.name, "#/studio/" + encodeURIComponent(st.name), st.role))
         )
       )
     );
+  }
+
+  if (w.platforms.length) {
+    frag.appendChild(
+      section(
+        "Platforms",
+        w.platforms.length,
+        el("div", { class: "chip-list" }, [...w.platforms].sort().map((n) => dimChip(n, "#/platform/" + encodeURIComponent(n))))
+      )
+    );
+  }
+
+  if (w.budgets && w.budgets.length > 1) {
+    frag.appendChild(
+      section(
+        "Reported budgets",
+        w.budgets.length,
+        table(
+          [
+            { key: "c", label: "Component", cell: (b) => b.component || "—" },
+            { key: "a", label: "Amount", num: true, cell: (b) => money(b.amount) },
+            { key: "y", label: "Source year", num: true, cell: (b) => (b.source_year ?? el("span", { class: "muted", text: "—" })) },
+            { key: "p", label: "Used above", cell: (b) => (b.primary ? "yes" : el("span", { class: "muted", text: "no" })) },
+            { key: "n", label: "Note", wrap: true, cell: (b) => b.note || el("span", { class: "muted", text: "—" }) },
+          ],
+          w.budgets,
+          { plain: true }
+        ),
+        el("div", { class: "sub", style: { marginTop: "8px" }, text: "Where published figures disagree the catalogue keeps every one and marks the estimate it treats as primary." })
+      )
+    );
+  }
+
+  if (w.weekly && w.weekly.length > 1) {
+    frag.appendChild(el("div", { class: "grid", style: { marginTop: "22px" } }, weeklyGrossChart(w)));
   }
 
   /* source material */
@@ -1309,13 +1575,76 @@ function viewWork(id) {
   return frag;
 }
 
+/* Weekly domestic takings — the one film in the catalogue with a real week-by-week series. */
+function weeklyGrossChart(w) {
+  const rows = w.weekly.filter((r) => r.domestic != null);
+  const max = Math.max(...rows.map((r) => r.domestic));
+  const W = 620;
+  const H = 240;
+  const M = { t: 12, r: 14, b: 34, l: 52 };
+  const pw = W - M.l - M.r;
+  const ph = H - M.t - M.b;
+  const band = pw / rows.length;
+  const barW = Math.min(24, band - 10);
+  const y = (v) => ph - (v / max) * ph;
+
+  const svg = s("svg", { viewBox: `0 0 ${W} ${H}`, width: W, height: H, role: "img", style: { minWidth: "360px" } });
+  const g = s("g", { transform: `translate(${M.l},${M.t})` });
+  svg.appendChild(g);
+  const step = 20e6;
+  for (let v = 0; v <= max; v += step) {
+    g.appendChild(s("line", { x1: 0, x2: pw, y1: y(v), y2: y(v), class: v === 0 ? "baseline" : "gridline" }));
+    g.appendChild(s("text", { x: -8, y: y(v) + 4, "text-anchor": "end", class: "tick-num", text: money(v) }));
+  }
+
+  const tip = makeTip();
+  rows.forEach((r, i) => {
+    const x = i * band + (band - barW) / 2;
+    g.appendChild(s("rect", { x, y: y(r.domestic), width: barW, height: Math.max(1, ph - y(r.domestic)), rx: 4, fill: "var(--series-1)" }));
+    g.appendChild(s("text", { x: x + barW / 2, y: y(r.domestic) - 6, "text-anchor": "middle", class: "dlabel", text: money(r.domestic) }));
+    g.appendChild(s("text", { x: i * band + band / 2, y: ph + 18, "text-anchor": "middle", class: "tick-num", text: "wk " + r.week }));
+    const hit = s("rect", { x: i * band, y: 0, width: band, height: ph, fill: "transparent", tabindex: "0", role: "button", "aria-label": `Week ${r.week}: ${money(r.domestic)} domestic` });
+    const show = (ev) => {
+      const host = svg.parentNode;
+      const rect = host.getBoundingClientRect();
+      tip.show((ev.clientX ?? rect.left + 200) - rect.left, (ev.clientY ?? rect.top + 60) - rect.top, [
+        tipTitle("Week " + r.week),
+        tipRow("var(--series-1)", "Domestic", money(r.domestic)),
+        r.international != null ? tipRow(null, "International", money(r.international)) : null,
+      ].filter(Boolean), host);
+    };
+    hit.addEventListener("pointermove", show);
+    hit.addEventListener("focus", show);
+    hit.addEventListener("pointerleave", () => tip.hide());
+    hit.addEventListener("blur", () => tip.hide());
+    g.appendChild(hit);
+  });
+
+  return chartFigure({
+    title: "Week by week at the domestic box office",
+    sub: `${rows.length} weeks on record.`,
+    note: "This is the only film in the catalogue with a genuine weekly series — for every other film the source filed a single lifetime total under week 1, which is why the totals above are read from the lifetime rows instead.",
+    plot: { node: svg, tip },
+    tableFn: () =>
+      table(
+        [
+          { key: "w", label: "Week", num: true, cell: (r) => String(r.week) },
+          { key: "d", label: "Domestic", num: true, cell: (r) => money(r.domestic) },
+          { key: "i", label: "International", num: true, cell: (r) => (r.international == null ? "—" : money(r.international)) },
+        ],
+        w.weekly,
+        { plain: true }
+      ),
+  });
+}
+
 /* ============================================================
    CHARACTERS
    ============================================================ */
 
-function viewCharacters() {
-  const f = state.chars;
-  let rows = characters.filter((c) => {
+function viewCharacters(_id, query) {
+  const f = readFilters(DEFAULTS.characters, query);
+  const rows0 = characters.filter((c) => {
     if (f.align !== "all" && c.alignment !== f.align) return false;
     if (f.q) {
       const hay = (c.name + " " + c.variants.join(" ")).toLowerCase();
@@ -1325,31 +1654,19 @@ function viewCharacters() {
   });
   const get = {
     name: (c) => c.name.toLowerCase(),
+    align: (c) => c.alignment || "~",
     n_works: (c) => c.n_works,
     variants: (c) => c.variants.length,
     first_year: (c) => c.first_year ?? 9999,
     first_media_year: (c) => c.first_media_year ?? 9999,
-  }[f.sort];
-  rows = [...rows].sort((a, b) => {
-    const va = get(a), vb = get(b);
-    if (va < vb) return -1 * f.dir;
-    if (va > vb) return 1 * f.dir;
-    return a.name.localeCompare(b.name);
-  });
+  }[f.sort] || ((c) => c.n_works);
+  const rows = sortRows(rows0, get, f.dir, (c) => c.name);
   const maxWorks = Math.max(...characters.map((c) => c.n_works));
-
-  const onSort = (k) => {
-    if (state.chars.sort === k) state.chars.dir *= -1;
-    else {
-      state.chars.sort = k;
-      state.chars.dir = k === "name" ? 1 : -1;
-    }
-    rerenderInPlace();
-  };
 
   const counts = { all: characters.length };
   for (const a of Object.keys(ALIGN)) counts[a] = characters.filter((c) => c.alignment === a).length;
 
+  let tableNode = null;
   const frag = document.createDocumentFragment();
   frag.appendChild(
     el(
@@ -1372,67 +1689,53 @@ function viewCharacters() {
           ...Object.keys(ALIGN).map((a) => ({ value: a, label: ALIGN[a].label, n: counts[a], color: ALIGN[a].color })),
         ],
         f.align,
-        (v) => {
-          state.chars.align = v;
-          rerenderInPlace();
-        }
+        (v) => applyFilters("characters", { ...f, align: v })
       ),
-      el("input", {
-        class: "txt",
-        type: "search",
-        placeholder: "Filter characters…",
-        value: f.q,
-        oninput: (e) => {
-          state.chars.q = e.target.value;
-          const at = e.target.selectionStart;
-          rerenderInPlace();
-          const nx = app.querySelector('input[type="search"]');
-          if (nx) {
-            nx.focus();
-            nx.setSelectionRange(at, at);
-          }
-        },
-      }),
+      filterInput("Filter characters…", f.q, (v) => applyFilters("characters", { ...f, q: v })),
+      resetButton("characters", f),
+      csvButton("spiderman-characters.csv", () => tableNode),
       el("span", { class: "result-count", text: `${rows.length} of ${characters.length}` })
     )
   );
 
-  frag.appendChild(
-    rows.length
-      ? table(
-          [
-            { key: "name", label: "Character", cell: (c) => el("button", { class: "row-link", text: c.name, onclick: () => go("#/character/" + c.id) }) },
-            { key: "align", label: "Alignment", cell: (c) => dotLabel((ALIGN[c.alignment] || ALIGN.neutral).color, (ALIGN[c.alignment] || ALIGN.neutral).label) },
-            {
-              key: "n_works",
-              label: "Appears in",
-              cell: (c) =>
-                el(
-                  "span",
-                  { class: "bar-cell" },
-                  el("span", { class: "n", text: String(c.n_works) }),
-                  el("span", { class: "track" }, el("span", { class: "fill", style: { width: (c.n_works / maxWorks) * 100 + "%" } }))
-                ),
-            },
-            { key: "first_media_year", label: "First on screen", num: true, cell: (c) => (c.first_media_year ?? "—") },
-            { key: "first_year", label: "First in comics", num: true, cell: (c) => (c.first_year ?? el("span", { class: "muted", text: "—" })) },
-            { key: "variants", label: "Spellings", num: true, cell: (c) => String(c.variants.length) },
-          ],
-          rows,
-          { onSort, sortKey: f.sort, dir: f.dir, scroll: true }
-        )
-      : el("div", { class: "table-wrap" }, el("div", { class: "empty-state", text: "No characters match." }))
-  );
+  if (rows.length) {
+    tableNode = table(
+      [
+        { key: "name", label: "Character", cell: (c) => el("button", { class: "row-link", text: c.name, onclick: () => go("#/character/" + c.id) }) },
+        { key: "align", label: "Alignment", cell: (c) => dotLabel((ALIGN[c.alignment] || ALIGN.neutral).color, (ALIGN[c.alignment] || ALIGN.neutral).label) },
+        {
+          key: "n_works",
+          label: "Appears in",
+          cell: (c) =>
+            el(
+              "span",
+              { class: "bar-cell" },
+              el("span", { class: "n", text: String(c.n_works) }),
+              el("span", { class: "track" }, el("span", { class: "fill", style: { width: (c.n_works / maxWorks) * 100 + "%" } }))
+            ),
+        },
+        { key: "first_media_year", label: "First on screen", num: true, cell: (c) => (c.first_media_year ?? "—") },
+        { key: "first_year", label: "First in comics", num: true, cell: (c) => (c.first_year ?? el("span", { class: "muted", text: "—" })) },
+        { key: "variants", label: "Spellings", num: true, cell: (c) => String(c.variants.length) },
+      ],
+      rows,
+      { onSort: sortHandler("characters", f, ["name", "align", "first_year", "first_media_year"]), sortKey: f.sort, dir: f.dir, scroll: true }
+    );
+    frag.appendChild(tableNode);
+    tableNode = tableNode.querySelector("table");
+  } else {
+    frag.appendChild(el("div", { class: "table-wrap" }, el("div", { class: "empty-state", text: "No characters match." })));
+  }
 
   return frag;
 }
 
 function viewCharacter(id) {
-  const c = charById.get(id);
+  const c = charById.get(Number(id));
   if (!c) return el("div", { class: "empty-state", text: "Unknown character." });
   const a = ALIGN[c.alignment] || ALIGN.neutral;
   const frag = document.createDocumentFragment();
-  frag.appendChild(backLink("All characters", "#/characters"));
+  frag.appendChild(backLink("All characters", listHash("characters")));
 
   frag.appendChild(
     el(
@@ -1456,6 +1759,36 @@ function viewCharacter(id) {
   const rows = c.appearances
     .map((ap) => ({ ...ap, w: workById.get(ap.work_id) }))
     .sort((x, y) => (x.w.year ?? 9999) - (y.w.year ?? 9999));
+
+  const uniqueWorks = [...new Map(rows.map((r) => [r.w.id, r.w])).values()];
+  frag.appendChild(
+    el("div", { class: "grid", style: { marginTop: "16px" } },
+      yearStrip(uniqueWorks.map((w) => ({ year: w.year, type: w.type, title: w.title, work: w })), {
+        title: "When this character turns up",
+        sub: "Every work the character appears in, across the catalogue's full span.",
+        onPick: (e) => go("#/work/" + e.work.id),
+      }))
+  );
+
+  const co = coAppearances(c).slice(0, 14);
+  if (co.length >= 3) {
+    frag.appendChild(
+      el("div", { class: "grid", style: { marginTop: "14px" } },
+        hbarChart({
+          title: "Appears alongside",
+          sub: `Characters sharing a work with ${c.name}, most-shared first.`,
+          items: co.map((x) => ({ label: x.character.name, value: x.n, key: x.character.id, sub: (ALIGN[x.character.alignment] || ALIGN.neutral).label })),
+          onPick: (d) => go("#/character/" + d.key),
+          labelWidth: 240,
+          valueLabel: "Shared works",
+          tableCols: [
+            { key: "c", label: "Character", cell: (d) => el("button", { class: "row-link", text: d.label, onclick: () => go("#/character/" + d.key) }) },
+            { key: "n", label: "Shared works", num: true, cell: (d) => String(d.value) },
+            { key: "a", label: "Alignment", cell: (d) => d.sub },
+          ],
+        }))
+    );
+  }
 
   frag.appendChild(
     section(
@@ -1512,9 +1845,9 @@ function viewCharacter(id) {
    PEOPLE
    ============================================================ */
 
-function viewPeople() {
-  const f = state.people;
-  let rows = people.filter((p) => {
+function viewPeople(_id, query) {
+  const f = readFilters(DEFAULTS.people, query);
+  const rows0 = people.filter((p) => {
     if (f.kind === "cast" && !p.is_actor) return false;
     if (f.kind === "crew" && p.is_actor) return false;
     if (f.q && !p.name.toLowerCase().includes(f.q.toLowerCase())) return false;
@@ -1522,27 +1855,15 @@ function viewPeople() {
   });
   const get = {
     name: (p) => p.name.toLowerCase(),
+    roles: (p) => p.roles.join(", ").toLowerCase(),
     n_works: (p) => p.n_works,
     credits: (p) => p.credits.length,
     first: (p) => p.years[0] ?? 9999,
     last: (p) => p.years[p.years.length - 1] ?? -1,
-  }[f.sort];
-  rows = [...rows].sort((x, y) => {
-    const a = get(x), b = get(y);
-    if (a < b) return -1 * f.dir;
-    if (a > b) return 1 * f.dir;
-    return x.name.localeCompare(y.name);
-  });
+  }[f.sort] || ((p) => p.n_works);
+  const rows = sortRows(rows0, get, f.dir, (p) => p.name);
 
-  const onSort = (k) => {
-    if (state.people.sort === k) state.people.dir *= -1;
-    else {
-      state.people.sort = k;
-      state.people.dir = k === "name" ? 1 : -1;
-    }
-    rerenderInPlace();
-  };
-
+  let tableNode = null;
   const frag = document.createDocumentFragment();
   frag.appendChild(
     el(
@@ -1564,33 +1885,17 @@ function viewPeople() {
           { value: "crew", label: "Crew only", n: people.filter((p) => !p.is_actor).length },
         ],
         f.kind,
-        (v) => {
-          state.people.kind = v;
-          rerenderInPlace();
-        }
+        (v) => applyFilters("people", { ...f, kind: v })
       ),
-      el("input", {
-        class: "txt",
-        type: "search",
-        placeholder: "Filter names…",
-        value: f.q,
-        oninput: (e) => {
-          state.people.q = e.target.value;
-          const at = e.target.selectionStart;
-          rerenderInPlace();
-          const nx = app.querySelector('input[type="search"]');
-          if (nx) {
-            nx.focus();
-            nx.setSelectionRange(at, at);
-          }
-        },
-      }),
+      filterInput("Filter names…", f.q, (v) => applyFilters("people", { ...f, q: v })),
+      resetButton("people", f),
+      csvButton("spiderman-people.csv", () => tableNode),
       el("span", { class: "result-count", text: `${rows.length} of ${people.length}` })
     )
   );
 
-  frag.appendChild(
-    table(
+  if (rows.length) {
+    tableNode = table(
       [
         { key: "name", label: "Name", cell: (p) => el("button", { class: "row-link", text: p.name, onclick: () => go("#/person/" + p.id) }) },
         { key: "roles", label: "Roles", wrap: true, cell: (p) => trunc(p.roles.join(", "), 46) },
@@ -1600,18 +1905,22 @@ function viewPeople() {
         { key: "last", label: "Latest", num: true, cell: (p) => (p.years[p.years.length - 1] ?? el("span", { class: "muted", text: "—" })) },
       ],
       rows,
-      { onSort, sortKey: f.sort, dir: f.dir, scroll: true }
-    )
-  );
+      { onSort: sortHandler("people", f, ["name", "roles", "first", "last"]), sortKey: f.sort, dir: f.dir, scroll: true }
+    );
+    frag.appendChild(tableNode);
+    tableNode = tableNode.querySelector("table");
+  } else {
+    frag.appendChild(el("div", { class: "table-wrap" }, el("div", { class: "empty-state", text: "No people match." })));
+  }
 
   return frag;
 }
 
 function viewPerson(id) {
-  const p = personById.get(id);
+  const p = personById.get(Number(id));
   if (!p) return el("div", { class: "empty-state", text: "Unknown person." });
   const frag = document.createDocumentFragment();
-  frag.appendChild(backLink("All people", "#/people"));
+  frag.appendChild(backLink("All people", listHash("people")));
 
   frag.appendChild(
     el(
@@ -1651,6 +1960,54 @@ function viewPerson(id) {
       : r.character;
   };
 
+  const careerWorks = [...new Map(rows.map((r) => [r.w.id, r.w])).values()];
+  if (careerWorks.length > 1) {
+    frag.appendChild(
+      el("div", { class: "grid", style: { marginTop: "16px" } },
+        yearStrip(careerWorks.map((w) => ({ year: w.year, type: w.type, title: w.title, work: w })), {
+          title: "Career in this catalogue",
+          sub: "Every catalogued work this person is credited on.",
+          onPick: (e) => go("#/work/" + e.work.id),
+        }))
+    );
+  }
+
+  const mates = collaborators(p).slice(0, 14);
+  if (mates.length >= 3) {
+    frag.appendChild(
+      el("div", { class: "grid", style: { marginTop: "14px" } },
+        hbarChart({
+          title: "Worked with",
+          sub: `People credited on more than one of the same works as ${p.name}.`,
+          items: mates.map((x) => ({ label: x.person.name, value: x.n, key: x.person.id, sub: x.person.roles.slice(0, 3).join(", ") })),
+          onPick: (d) => go("#/person/" + d.key),
+          labelWidth: 220,
+          valueLabel: "Shared works",
+          tableCols: [
+            { key: "p", label: "Person", cell: (d) => el("button", { class: "row-link", text: d.label, onclick: () => go("#/person/" + d.key) }) },
+            { key: "n", label: "Shared works", num: true, cell: (d) => String(d.value) },
+            { key: "r", label: "Roles", wrap: true, cell: (d) => d.sub },
+          ],
+        }))
+    );
+  }
+
+  if (p.roles.length > 1) {
+    const mix = new Map();
+    for (const c of p.credits) mix.set(c.role, (mix.get(c.role) || 0) + 1);
+    frag.appendChild(
+      section(
+        "Roles held",
+        p.roles.length,
+        el(
+          "div",
+          { class: "chip-list" },
+          [...mix.entries()].sort((a, b) => b[1] - a[1]).map(([r, n]) => el("span", { class: "chip" }, r, el("span", { class: "as", text: "\u00d7" + n })))
+        )
+      )
+    );
+  }
+
   frag.appendChild(
     section(
       "Credits",
@@ -1664,6 +2021,739 @@ function viewPerson(id) {
           { key: "c", label: "As", wrap: true, cell: charFor },
         ],
         rows,
+        { plain: true }
+      )
+    )
+  );
+
+  return frag;
+}
+
+/* ============================================================
+   REUSABLE CHART FORMS
+   ============================================================ */
+
+/* Horizontal bars for "which of these is biggest" — one hue, or split by medium. */
+function hbarChart({ title, sub, note, items, unit = "", onPick, splitByMedium = false, tableCols, labelWidth = 200, maxRows = 16, valueLabel = "Total" }) {
+  const shown = items.slice(0, maxRows);
+  const max = Math.max(...shown.map((d) => d.value), 1);
+  const W = 900;
+  const rowH = 24;
+  const M = { t: 6, r: 52, b: 24, l: labelWidth };
+  const ph = shown.length * rowH;
+  const H = ph + M.t + M.b;
+  const pw = W - M.l - M.r;
+  const x = (v) => (v / max) * pw;
+  const step = max <= 5 ? 1 : max <= 12 ? 2 : max <= 30 ? 5 : max <= 120 ? 20 : Math.pow(10, Math.floor(Math.log10(max)));
+
+  const svg = s("svg", { viewBox: `0 0 ${W} ${H}`, width: W, height: H, role: "img", style: { minWidth: "620px" } });
+  const g = s("g", { transform: `translate(${M.l},${M.t})` });
+  svg.appendChild(g);
+
+  for (let v = 0; v <= max; v += step) {
+    g.appendChild(s("line", { x1: x(v), x2: x(v), y1: 0, y2: ph, class: v === 0 ? "baseline" : "gridline" }));
+    g.appendChild(s("text", { x: x(v), y: ph + 16, "text-anchor": "middle", class: "tick-num", text: String(v) }));
+  }
+
+  const tip = makeTip();
+  const order = ["movie", "tv_show", "game"];
+  shown.forEach((d, i) => {
+    const yTop = i * rowH + 3;
+    const barH = Math.min(16, rowH - 8);
+    if (splitByMedium && d.parts) {
+      let acc = 0;
+      order.forEach((k) => {
+        const n = d.parts[k] || 0;
+        if (!n) return;
+        const x0 = x(acc);
+        const w = Math.max(1, x(acc + n) - x0 - (acc > 0 ? 2 : 0));
+        g.appendChild(s("rect", { x: acc > 0 ? x0 + 2 : x0, y: yTop, width: w, height: barH, rx: 3, fill: TYPE[k].color }));
+        acc += n;
+      });
+    } else {
+      g.appendChild(s("rect", { x: 0, y: yTop, width: Math.max(1, x(d.value)), height: barH, rx: 3, fill: "var(--series-1)" }));
+    }
+    g.appendChild(s("text", { x: x(d.value) + 9, y: yTop + barH - 3, class: "dlabel", text: d.display ?? String(d.value) + unit }));
+    const lbl = s("text", {
+      x: -10, y: yTop + barH - 3, "text-anchor": "end", class: "tick",
+      fill: "var(--text-secondary)", style: onPick ? "cursor:pointer" : null,
+      text: d.label.length > 32 ? d.label.slice(0, 31) + "…" : d.label,
+    });
+    if (onPick) lbl.addEventListener("click", () => onPick(d));
+    g.appendChild(lbl);
+
+    const hit = s("rect", {
+      x: -M.l, y: i * rowH, width: W, height: rowH, fill: "transparent",
+      style: onPick ? "cursor:pointer" : null, tabindex: "0", role: "button",
+      "aria-label": `${d.label}: ${d.display ?? d.value + unit}`,
+    });
+    const show = (ev) => {
+      const host = svg.parentNode;
+      const r = host.getBoundingClientRect();
+      const rows = splitByMedium && d.parts
+        ? order.filter((k) => d.parts[k]).map((k) => tipRow(TYPE[k].color, TYPE[k].label, String(d.parts[k])))
+        : [];
+      tip.show((ev.clientX ?? r.left + 300) - r.left, (ev.clientY ?? r.top + i * rowH) - r.top, [
+        tipTitle(d.label),
+        ...rows,
+        tipRow(rows.length ? null : "var(--series-1)", valueLabel, d.display ?? String(d.value) + unit),
+        d.sub ? el("div", { class: "t-note", text: d.sub }) : null,
+      ].filter(Boolean), host);
+    };
+    hit.addEventListener("pointermove", show);
+    hit.addEventListener("focus", show);
+    hit.addEventListener("pointerleave", () => tip.hide());
+    hit.addEventListener("blur", () => tip.hide());
+    if (onPick) hit.addEventListener("click", () => onPick(d));
+    g.appendChild(hit);
+  });
+
+  return chartFigure({
+    title,
+    sub: sub + (items.length > shown.length ? ` Showing the top ${shown.length} of ${items.length}.` : ""),
+    note,
+    legend: splitByMedium ? legendBox(order.map((k) => ({ color: TYPE[k].color, label: TYPE[k].label }))) : null,
+    plot: { node: svg, tip },
+    tableFn: () => table(tableCols, items, { plain: true }),
+  });
+}
+
+/* A compact per-year presence strip — one mark per year the subject appears in. */
+function yearStrip(entries, { title, sub, onPick }) {
+  const y0 = DATA.meta.year_min;
+  const y1 = DATA.meta.year_max;
+  const byYear = new Map();
+  for (const e of entries) {
+    if (!e.year) continue;
+    if (!byYear.has(e.year)) byYear.set(e.year, []);
+    byYear.get(e.year).push(e);
+  }
+  const W = 900;
+  const H = 76;
+  const M = { t: 8, r: 8, b: 24, l: 8 };
+  const pw = W - M.l - M.r;
+  const ph = H - M.t - M.b;
+  const x = (v) => ((v - y0) / (y1 - y0)) * pw;
+  const maxN = Math.max(...[...byYear.values()].map((v) => v.length), 1);
+
+  const svg = s("svg", { viewBox: `0 0 ${W} ${H}`, width: W, height: H, role: "img", style: { minWidth: "520px" } });
+  const g = s("g", { transform: `translate(${M.l},${M.t})` });
+  svg.appendChild(g);
+  g.appendChild(s("line", { x1: 0, x2: pw, y1: ph, y2: ph, class: "baseline" }));
+  for (let t = 1970; t <= y1; t += 10) {
+    g.appendChild(s("line", { x1: x(t), x2: x(t), y1: 0, y2: ph, class: "gridline" }));
+    g.appendChild(s("text", { x: x(t), y: ph + 16, "text-anchor": "middle", class: "tick-num", text: String(t) }));
+  }
+
+  const tip = makeTip();
+  const barW = Math.max(4, pw / (y1 - y0) - 1);
+  const order = ["movie", "tv_show", "game"];
+  const unit = ph / maxN;
+  for (const [year, list] of byYear) {
+    let acc = 0;
+    for (const k of order) {
+      const n = list.filter((e) => e.type === k).length;
+      if (!n) continue;
+      const h = Math.max(5, n * unit - (acc > 0 ? 2 : 0));
+      g.appendChild(s("rect", { x: x(year) - barW / 2, y: ph - acc * unit - h, width: barW, height: h, rx: 2, fill: TYPE[k].color }));
+      acc += n;
+    }
+  }
+  for (const [year, list] of byYear) {
+    const hit = s("rect", {
+      x: x(year) - 10, y: 0, width: 20, height: ph, fill: "transparent",
+      style: "cursor:pointer", tabindex: "0", role: "button",
+      "aria-label": `${year}: ${list.map((e) => e.title).join(", ")}`,
+    });
+    const show = (ev) => {
+      const host = svg.parentNode;
+      const r = host.getBoundingClientRect();
+      tip.show((ev.clientX ?? r.left + 200) - r.left, (ev.clientY ?? r.top) - r.top, [
+        tipTitle(String(year)),
+        ...list.map((e) => tipRow(TYPE[e.type]?.color, e.title, TYPE[e.type]?.one || "")),
+      ], host);
+    };
+    hit.addEventListener("pointermove", show);
+    hit.addEventListener("focus", show);
+    hit.addEventListener("pointerleave", () => tip.hide());
+    hit.addEventListener("blur", () => tip.hide());
+    if (onPick) hit.addEventListener("click", () => onPick(list[0]));
+    g.appendChild(hit);
+  }
+
+  return chartFigure({
+    title,
+    sub,
+    legend: legendBox(["movie", "tv_show", "game"].filter((k) => entries.some((e) => e.type === k)).map((k) => ({ color: TYPE[k].color, label: TYPE[k].label }))),
+    plot: { node: svg, tip },
+    tableFn: () =>
+      table(
+        [
+          { key: "y", label: "Year", num: true, cell: (e) => (e.year ?? "—") },
+          { key: "t", label: "Work", cell: (e) => (e.work ? workLink(e.work, false) : e.title) },
+          { key: "m", label: "Medium", cell: (e) => (e.type ? typeBadge(e.type) : "—") },
+        ],
+        [...entries].sort((a, b) => (a.year ?? 9999) - (b.year ?? 9999)),
+        { plain: true }
+      ),
+  });
+}
+
+/* ============================================================
+   FRANCHISES · STUDIOS · PLATFORMS
+   ============================================================ */
+
+function dimensionListView({ view, title, blurb, index, columns, chart, unit }) {
+  return (_id, query) => {
+    const f = readFilters(DEFAULTS[view], query);
+    const all = [...index.values()];
+    const rows0 = f.q ? all.filter((g) => g.name.toLowerCase().includes(f.q.toLowerCase())) : all;
+    const get = columns.find((c) => c.key === f.sort)?.value || ((g) => g.n_works);
+    const rows = sortRows(rows0, get, f.dir, (g) => g.name);
+
+    let tableNode = null;
+    const frag = document.createDocumentFragment();
+    frag.appendChild(el("div", { class: "page-head" }, el("h1", { text: title }), el("p", { text: blurb })));
+    frag.appendChild(
+      el(
+        "div",
+        { class: "filters" },
+        filterInput(`Filter ${title.toLowerCase()}…`, f.q, (v) => applyFilters(view, { ...f, q: v })),
+        resetButton(view, f),
+        csvButton(`spiderman-${view}.csv`, () => tableNode),
+        el("span", { class: "result-count", text: `${rows.length} of ${all.length}` })
+      )
+    );
+    if (chart) frag.appendChild(el("div", { class: "grid", style: { marginBottom: "14px" } }, chart(all)));
+
+    if (rows.length) {
+      tableNode = table(
+        columns.map((c) => ({ key: c.key, label: c.label, num: c.num, wrap: c.wrap, cell: c.cell })),
+        rows,
+        { onSort: sortHandler(view, f, columns.filter((c) => c.asc).map((c) => c.key)), sortKey: f.sort, dir: f.dir, scroll: true }
+      );
+      frag.appendChild(tableNode);
+      tableNode = tableNode.querySelector("table");
+    } else {
+      frag.appendChild(el("div", { class: "table-wrap" }, el("div", { class: "empty-state", text: "Nothing matches." })));
+    }
+    return frag;
+  };
+}
+
+const spanText = (g) => (g.first_year == null ? "—" : g.first_year === g.last_year ? String(g.first_year) : `${g.first_year}–${g.last_year}`);
+
+const viewFranchises = dimensionListView({
+  view: "franchises",
+  title: "Franchises",
+  blurb: "The continuities the catalogue is organised into — a franchise groups works that share a universe, a cast or a production lineage.",
+  index: franchiseIndex,
+  chart: (all) =>
+    hbarChart({
+      title: "Works per franchise",
+      sub: "Split by medium.",
+      items: [...all].sort((a, b) => b.n_works - a.n_works).map((g) => ({ label: g.name, value: g.n_works, parts: g.by_type, key: g.name })),
+      splitByMedium: true,
+      onPick: (d) => go("#/franchise/" + encodeURIComponent(d.key)),
+      tableCols: [
+        { key: "n", label: "Franchise", cell: (d) => franchiseLink(d.label) },
+        { key: "m", label: "Movies", num: true, cell: (d) => String(d.parts.movie) },
+        { key: "t", label: "TV series", num: true, cell: (d) => String(d.parts.tv_show) },
+        { key: "g", label: "Games", num: true, cell: (d) => String(d.parts.game) },
+        { key: "v", label: "Total", num: true, cell: (d) => String(d.value) },
+      ],
+    }),
+  columns: [
+    { key: "name", label: "Franchise", asc: true, value: (g) => g.name.toLowerCase(), cell: (g) => el("button", { class: "row-link", text: g.name, onclick: () => go("#/franchise/" + encodeURIComponent(g.name)) }) },
+    { key: "desc", label: "Description", wrap: true, asc: true, value: (g) => (g.description || "~").toLowerCase(), cell: (g) => g.description || el("span", { class: "muted", text: "—" }) },
+    { key: "n_works", label: "Works", num: true, value: (g) => g.n_works, cell: (g) => String(g.n_works) },
+    { key: "span", label: "Span", num: true, asc: true, value: (g) => g.first_year ?? 9999, cell: (g) => spanText(g) },
+    { key: "gross", label: "Gross", num: true, value: (g) => g.gross ?? -1, cell: (g) => (g.gross ? money(g.gross) : el("span", { class: "muted", text: "—" })) },
+    { key: "score", label: "Score", num: true, value: (g) => g.avg_pct ?? -1, cell: (g) => (g.avg_pct == null ? el("span", { class: "muted", text: "—" }) : pct(g.avg_pct)) },
+  ],
+});
+
+const viewStudios = dimensionListView({
+  view: "studios",
+  title: "Studios",
+  blurb: "Every production company, distributor and network credited on a work, with the works they were involved in.",
+  index: studioIndex,
+  chart: (all) =>
+    hbarChart({
+      title: "Busiest studios",
+      sub: "Works credited to each company, split by medium.",
+      items: [...all].sort((a, b) => b.n_works - a.n_works).map((g) => ({ label: g.name, value: g.n_works, parts: g.by_type, key: g.name })),
+      splitByMedium: true,
+      onPick: (d) => go("#/studio/" + encodeURIComponent(d.key)),
+      tableCols: [
+        { key: "n", label: "Studio", cell: (d) => el("button", { class: "row-link", text: d.label, onclick: () => go("#/studio/" + encodeURIComponent(d.key)) }) },
+        { key: "v", label: "Works", num: true, cell: (d) => String(d.value) },
+      ],
+    }),
+  columns: [
+    { key: "name", label: "Studio", asc: true, value: (g) => g.name.toLowerCase(), cell: (g) => el("button", { class: "row-link", text: g.name, onclick: () => go("#/studio/" + encodeURIComponent(g.name)) }) },
+    { key: "roles", label: "Credited as", asc: true, value: (g) => [...g.roles].sort().join(", "), cell: (g) => [...g.roles].sort().join(", ") },
+    { key: "n_works", label: "Works", num: true, value: (g) => g.n_works, cell: (g) => String(g.n_works) },
+    { key: "span", label: "Span", num: true, asc: true, value: (g) => g.first_year ?? 9999, cell: (g) => spanText(g) },
+    { key: "gross", label: "Gross", num: true, value: (g) => g.gross ?? -1, cell: (g) => (g.gross ? money(g.gross) : el("span", { class: "muted", text: "—" })) },
+    { key: "score", label: "Score", num: true, value: (g) => g.avg_pct ?? -1, cell: (g) => (g.avg_pct == null ? el("span", { class: "muted", text: "—" }) : pct(g.avg_pct)) },
+  ],
+});
+
+const viewPlatforms = dimensionListView({
+  view: "platforms",
+  title: "Platforms",
+  blurb: "Every console, handheld and computer a Spider-Man game shipped on, with the per-platform release records behind them.",
+  index: platformIndex,
+  chart: (all) =>
+    hbarChart({
+      title: "Games per platform",
+      sub: "Distinct games catalogued on each platform.",
+      items: [...all].sort((a, b) => b.n_works - a.n_works).map((g) => ({ label: g.name, value: g.n_works, key: g.name, sub: g.avg_metacritic ? `mean Metacritic ${Math.round(g.avg_metacritic)}` : null })),
+      onPick: (d) => go("#/platform/" + encodeURIComponent(d.key)),
+      tableCols: [
+        { key: "n", label: "Platform", cell: (d) => el("button", { class: "row-link", text: d.label, onclick: () => go("#/platform/" + encodeURIComponent(d.key)) }) },
+        { key: "v", label: "Games", num: true, cell: (d) => String(d.value) },
+      ],
+    }),
+  columns: [
+    { key: "name", label: "Platform", asc: true, value: (g) => g.name.toLowerCase(), cell: (g) => el("button", { class: "row-link", text: g.name, onclick: () => go("#/platform/" + encodeURIComponent(g.name)) }) },
+    { key: "n_works", label: "Games", num: true, value: (g) => g.n_works, cell: (g) => String(g.n_works) },
+    { key: "releases", label: "Release rows", num: true, value: (g) => g.releases.length, cell: (g) => String(g.releases.length) },
+    { key: "span", label: "Span", num: true, asc: true, value: (g) => g.first_year ?? 9999, cell: (g) => spanText(g) },
+    { key: "mc", label: "Mean Metacritic", num: true, value: (g) => g.avg_metacritic ?? -1, cell: (g) => (g.avg_metacritic == null ? el("span", { class: "muted", text: "—" }) : String(Math.round(g.avg_metacritic))) },
+  ],
+});
+
+function dimensionHead(group, kind, backView, backLabel, extra) {
+  return [
+    backLink(backLabel, listHash(backView)),
+    el(
+      "div",
+      { class: "detail-head" },
+      el("h1", { text: group.name }),
+      el(
+        "div",
+        { class: "meta-line" },
+        el("span", { class: "badge", text: kind }),
+        el("span", { text: spanText(group) }),
+        extra
+      ),
+      group.description ? el("div", { class: "note", style: { marginTop: "10px" }, text: group.description }) : null
+    ),
+  ];
+}
+
+function worksOfTable(list, { showFranchise = true } = {}) {
+  return table(
+    [
+      { key: "t", label: "Title", cell: (w) => workLink(w, false) },
+      { key: "y", label: "Year", num: true, cell: (w) => yr(w) },
+      { key: "m", label: "Medium", cell: (w) => typeBadge(w.type) },
+      showFranchise && { key: "f", label: "Franchise", cell: (w) => (w.franchise ? franchiseLink(w.franchise, 26) : el("span", { class: "muted", text: "—" })) },
+      { key: "s", label: "Score", num: true, cell: (w) => (w.avg_pct == null ? el("span", { class: "muted", text: "—" }) : pct(w.avg_pct)) },
+      { key: "g", label: "Gross", num: true, cell: (w) => (w.gross == null ? el("span", { class: "muted", text: "—" }) : money(w.gross)) },
+      { key: "c", label: "Chars", num: true, cell: (w) => String(w.characters.length) },
+    ].filter(Boolean),
+    [...list].sort((a, b) => (a.year ?? 9999) - (b.year ?? 9999)),
+    { plain: true }
+  );
+}
+
+function dimensionTiles(g, extras = []) {
+  const kinds = ["movie", "tv_show", "game"].filter((k) => g.by_type[k]);
+  const tiles = [statTile("Works", String(g.n_works))];
+  // Only break down by medium when there is actually more than one — otherwise the
+  // breakdown tile just repeats the total.
+  if (kinds.length > 1) for (const k of kinds) tiles.push(statTile(TYPE[k].label, String(g.by_type[k])));
+  if (g.gross) tiles.push(statTile("Combined gross", money(g.gross)));
+  if (g.avg_pct != null) tiles.push(statTile("Mean score", pct(g.avg_pct) + " / 100"));
+  return el("div", { class: "kpis", style: { marginTop: "16px" } }, tiles, extras);
+}
+
+function viewFranchise(name) {
+  const g = franchiseIndex.get(name);
+  if (!g) return el("div", { class: "empty-state", text: "Unknown franchise." });
+  const frag = document.createDocumentFragment();
+  frag.append(...dimensionHead(g, "Franchise", "franchises", "All franchises"));
+  frag.appendChild(dimensionTiles(g));
+  frag.appendChild(
+    el("div", { class: "grid", style: { marginTop: "16px" } },
+      yearStrip(g.works.map((w) => ({ year: w.year, type: w.type, title: w.title, work: w })), {
+        title: "Release history",
+        sub: "Every work in this franchise on the catalogue's full 1967–2026 span.",
+        onPick: (e) => go("#/work/" + e.work.id),
+      }))
+  );
+  frag.appendChild(section("Works", g.n_works, worksOfTable(g.works, { showFranchise: false })));
+
+  const inside = new Set(g.works.map((w) => w.id));
+  const links = [];
+  const seenPairs = new Set();
+  const rank = (w) => (w.year ?? 9999) * 1000 + w.id;
+  for (const w of g.works) {
+    for (const r of w.relations) {
+      if (!inside.has(r.work_id)) continue;
+      const other = workById.get(r.work_id);
+      // Each relation is stored from both ends; show it once, from the earlier work.
+      if (rank(w) > rank(other)) continue;
+      const key = [Math.min(w.id, other.id), Math.max(w.id, other.id)].join("-") + "|" + r.label;
+      if (seenPairs.has(key)) continue;
+      seenPairs.add(key);
+      links.push({ from: w, label: r.label, to: other });
+    }
+  }
+  if (links.length) {
+    frag.appendChild(
+      section(
+        "How these works connect",
+        links.length,
+        table(
+          [
+            { key: "a", label: "Work", cell: (r) => workLink(r.from, false) },
+            { key: "l", label: "Relation", cell: (r) => el("span", { class: "muted", text: r.label }) },
+            { key: "b", label: "Other work", cell: (r) => workLink(r.to, false) },
+          ],
+          links.sort((a, b) => (a.from.year ?? 0) - (b.from.year ?? 0) || a.label.localeCompare(b.label)),
+          { plain: true }
+        )
+      )
+    );
+  }
+  return frag;
+}
+
+function viewStudio(name) {
+  const g = studioIndex.get(name);
+  if (!g) return el("div", { class: "empty-state", text: "Unknown studio." });
+  const frag = document.createDocumentFragment();
+  frag.append(...dimensionHead(g, "Studio", "studios", "All studios", el("span", { text: [...g.roles].sort().join(" · ") })));
+  frag.appendChild(dimensionTiles(g));
+  frag.appendChild(section("Works", g.n_works, worksOfTable(g.works)));
+
+  const partners = new Map();
+  for (const w of g.works) {
+    for (const st of w.studios) {
+      if (st.name === g.name) continue;
+      partners.set(st.name, (partners.get(st.name) || 0) + 1);
+    }
+  }
+  if (partners.size) {
+    frag.appendChild(
+      section(
+        "Frequent co-credits",
+        partners.size,
+        el(
+          "div",
+          { class: "chip-list" },
+          [...partners.entries()]
+            .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+            .slice(0, 24)
+            .map(([n, c]) => dimChip(n, "#/studio/" + encodeURIComponent(n), `${c} work${c === 1 ? "" : "s"}`))
+        )
+      )
+    );
+  }
+  return frag;
+}
+
+function viewPlatform(name) {
+  const g = platformIndex.get(name);
+  if (!g) return el("div", { class: "empty-state", text: "Unknown platform." });
+  const frag = document.createDocumentFragment();
+  frag.append(...dimensionHead(g, "Platform", "platforms", "All platforms"));
+  const extras = [];
+  if (g.avg_metacritic != null) extras.push(statTile("Mean Metacritic", String(Math.round(g.avg_metacritic))));
+  if (g.releases.length) extras.push(statTile("Release rows", String(g.releases.length)));
+  frag.appendChild(dimensionTiles(g, extras));
+
+  const scored = g.releases.filter((r) => r.metacritic != null);
+  if (scored.length >= 3) {
+    frag.appendChild(
+      el("div", { class: "grid", style: { marginTop: "16px" } },
+        hbarChart({
+          title: "Metacritic scores on this platform",
+          sub: "The score recorded for each release row, highest first.",
+          items: scored
+            .sort((a, b) => b.metacritic - a.metacritic)
+            .map((r) => ({ label: r.work.title, value: r.metacritic, key: r.work.id, sub: r.date || null })),
+          onPick: (d) => go("#/work/" + d.key),
+          labelWidth: 240,
+          tableCols: [
+            { key: "t", label: "Game", cell: (d) => el("button", { class: "row-link", text: d.label, onclick: () => go("#/work/" + d.key) }) },
+            { key: "v", label: "Metacritic", num: true, cell: (d) => String(d.value) },
+          ],
+        }))
+    );
+  }
+
+  if (g.releases.length) {
+    frag.appendChild(
+      section(
+        "Releases",
+        g.releases.length,
+        table(
+          [
+            { key: "t", label: "Game", cell: (r) => workLink(r.work, false) },
+            { key: "d", label: "Date", cell: (r) => r.date || el("span", { class: "muted", text: "—" }) },
+            { key: "p", label: "Publisher", wrap: true, cell: (r) => r.publisher || el("span", { class: "muted", text: "—" }) },
+            { key: "v", label: "Developer", wrap: true, cell: (r) => r.developer || el("span", { class: "muted", text: "—" }) },
+            { key: "m", label: "Metacritic", num: true, cell: (r) => (r.metacritic == null ? el("span", { class: "muted", text: "—" }) : String(r.metacritic)) },
+            { key: "e", label: "ESRB", cell: (r) => r.esrb || el("span", { class: "muted", text: "—" }) },
+          ],
+          [...g.releases].sort((a, b) => String(a.date || "9").localeCompare(String(b.date || "9"))),
+          { plain: true }
+        )
+      )
+    );
+  }
+  const gamesOnly = g.works.filter((w) => !g.releases.some((r) => r.work === w));
+  if (gamesOnly.length) {
+    frag.appendChild(section("Also listed on this platform", gamesOnly.length, worksOfTable(gamesOnly)));
+  }
+  return frag;
+}
+
+/* ============================================================
+   ANALYSIS
+   ============================================================ */
+
+/* Comic publication year against screen year. The 45° rule is "adapted the same year",
+   so vertical distance above it is how long the story waited. */
+function adaptationLagChart() {
+  const pts = adaptations;
+  const lo = 1960;
+  const hi = 2030;
+  const W = 620;
+  const H = 420;
+  const M = { t: 12, r: 16, b: 40, l: 44 };
+  const pw = W - M.l - M.r;
+  const ph = H - M.t - M.b;
+  const x = (v) => ((v - lo) / (hi - lo)) * pw;
+  const y = (v) => ph - ((v - lo) / (hi - lo)) * ph;
+
+  const svg = s("svg", { viewBox: `0 0 ${W} ${H}`, width: W, height: H, role: "img", style: { minWidth: "380px" } });
+  const g = s("g", { transform: `translate(${M.l},${M.t})` });
+  svg.appendChild(g);
+
+  for (let t = 1960; t <= 2020; t += 20) {
+    g.appendChild(s("line", { x1: x(t), x2: x(t), y1: 0, y2: ph, class: "gridline" }));
+    g.appendChild(s("line", { x1: 0, x2: pw, y1: y(t), y2: y(t), class: "gridline" }));
+    g.appendChild(s("text", { x: x(t), y: ph + 17, "text-anchor": "middle", class: "tick-num", text: String(t) }));
+    g.appendChild(s("text", { x: -8, y: y(t) + 4, "text-anchor": "end", class: "tick-num", text: String(t) }));
+  }
+  g.appendChild(s("line", { x1: 0, x2: pw, y1: ph, y2: ph, class: "baseline" }));
+  g.appendChild(s("line", { x1: 0, x2: 0, y1: 0, y2: ph, class: "baseline" }));
+  g.appendChild(s("line", { x1: x(lo), x2: x(hi), y1: y(lo), y2: y(hi), stroke: "var(--axis)", "stroke-width": 1 }));
+  g.appendChild(s("text", { x: x(2004), y: y(1998), class: "tick", fill: "var(--text-muted)", transform: `rotate(-45 ${x(2004)} ${y(1998)})`, text: "adapted the same year" }));
+  g.appendChild(s("text", { x: pw / 2, y: ph + 34, "text-anchor": "middle", class: "tick", text: "Comic published" }));
+
+  const tip = makeTip();
+  for (const p of pts) g.appendChild(s("circle", { cx: x(p.src.year), cy: y(p.work.year), r: 4.5, fill: TYPE[p.work.type].color, stroke: "var(--surface-1)", "stroke-width": 2 }));
+  for (const p of pts) {
+    const hit = s("circle", {
+      cx: x(p.src.year), cy: y(p.work.year), r: 12, fill: "transparent", style: "cursor:pointer",
+      tabindex: "0", role: "button",
+      "aria-label": `${p.src.comic} (${p.src.year}) adapted in ${p.work.title}, ${p.work.year}, after ${p.lag} years`,
+    });
+    const show = (ev) => {
+      const host = svg.parentNode;
+      const r = host.getBoundingClientRect();
+      tip.show((ev.clientX ?? r.left + 200) - r.left, (ev.clientY ?? r.top + 100) - r.top, [
+        tipTitle(p.work.title + " (" + yr(p.work) + ")"),
+        tipRow(TYPE[p.work.type].color, p.src.comic, String(p.src.year)),
+        el("div", { class: "t-note", text: p.lag === 0 ? "adapted the same year" : p.lag > 0 ? `${p.lag} years after publication` : `${-p.lag} years before the comic` }),
+      ], host);
+    };
+    hit.addEventListener("pointermove", show);
+    hit.addEventListener("focus", show);
+    hit.addEventListener("pointerleave", () => tip.hide());
+    hit.addEventListener("blur", () => tip.hide());
+    hit.addEventListener("click", () => go("#/work/" + p.work.id));
+    g.appendChild(hit);
+  }
+
+  const lags = pts.map((p) => p.lag).sort((a, b) => a - b);
+  const median = lags[Math.floor(lags.length / 2)];
+  return chartFigure({
+    title: "How long a comic waits to be adapted",
+    sub: `${pts.length} source records that carry both a comic year and a release year. Vertical axis is the year the adaptation shipped.`,
+    note: `Median wait: ${median} years. Points below the line are adaptations of stories published after the work came out — usually a later comic revisiting the same material.`,
+    legend: legendBox(["movie", "tv_show", "game"].map((k) => ({ color: TYPE[k].color, label: TYPE[k].label }))),
+    plot: { node: svg, tip },
+    tableFn: () =>
+      table(
+        [
+          { key: "c", label: "Comic", wrap: true, cell: (p) => p.src.comic },
+          { key: "cy", label: "Published", num: true, cell: (p) => String(p.src.year) },
+          { key: "w", label: "Adapted in", cell: (p) => workLink(p.work, false) },
+          { key: "wy", label: "Released", num: true, cell: (p) => String(p.work.year) },
+          { key: "l", label: "Wait (yrs)", num: true, cell: (p) => String(p.lag) },
+        ],
+        [...pts].sort((a, b) => b.lag - a.lag),
+        { plain: true }
+      ),
+  });
+}
+
+/* Won vs nominated by awarding body — two shades of one hue, an ordinal pair. */
+function awardsChart() {
+  const bodies = [...awardBodies.values()].sort((a, b) => b.won + b.nominated - (a.won + a.nominated));
+  const max = Math.max(...bodies.map((b) => b.won + b.nominated));
+  const W = 540;
+  const rowH = 30;
+  const M = { t: 6, r: 34, b: 26, l: 190 };
+  const ph = bodies.length * rowH;
+  const H = ph + M.t + M.b;
+  const pw = W - M.l - M.r;
+  const x = (v) => (v / max) * pw;
+
+  const svg = s("svg", { viewBox: `0 0 ${W} ${H}`, width: W, height: H, role: "img", style: { minWidth: "380px" } });
+  const g = s("g", { transform: `translate(${M.l},${M.t})` });
+  svg.appendChild(g);
+  for (let v = 0; v <= max; v += 2) {
+    g.appendChild(s("line", { x1: x(v), x2: x(v), y1: 0, y2: ph, class: v === 0 ? "baseline" : "gridline" }));
+    g.appendChild(s("text", { x: x(v), y: ph + 17, "text-anchor": "middle", class: "tick-num", text: String(v) }));
+  }
+
+  const tip = makeTip();
+  bodies.forEach((b, i) => {
+    const yTop = i * rowH + 4;
+    const barH = 16;
+    if (b.won) g.appendChild(s("rect", { x: 0, y: yTop, width: Math.max(1, x(b.won)), height: barH, rx: 3, fill: "var(--series-1)" }));
+    if (b.nominated) g.appendChild(s("rect", { x: x(b.won) + 2, y: yTop, width: Math.max(1, x(b.nominated) - 2), height: barH, rx: 3, fill: "var(--series-1-soft)" }));
+    g.appendChild(s("text", { x: x(b.won + b.nominated) + 9, y: yTop + barH - 3, class: "dlabel", text: String(b.won + b.nominated) }));
+    g.appendChild(s("text", { x: -10, y: yTop + barH - 3, "text-anchor": "end", class: "tick", fill: "var(--text-secondary)", text: b.name.length > 26 ? b.name.slice(0, 25) + "…" : b.name }));
+    const hit = s("rect", { x: -M.l, y: i * rowH, width: W, height: rowH, fill: "transparent", tabindex: "0", role: "button", "aria-label": `${b.name}: ${b.won} won, ${b.nominated} nominated` });
+    const show = (ev) => {
+      const host = svg.parentNode;
+      const r = host.getBoundingClientRect();
+      tip.show((ev.clientX ?? r.left + 300) - r.left, (ev.clientY ?? r.top + i * rowH) - r.top, [
+        tipTitle(b.name),
+        tipRow("var(--series-1)", "Won", String(b.won)),
+        tipRow("var(--series-1-soft)", "Nominated", String(b.nominated)),
+      ], host);
+    };
+    hit.addEventListener("pointermove", show);
+    hit.addEventListener("focus", show);
+    hit.addEventListener("pointerleave", () => tip.hide());
+    hit.addEventListener("blur", () => tip.hide());
+    g.appendChild(hit);
+  });
+
+  return chartFigure({
+    title: "Awards by body",
+    sub: `${allAwards.length} award records across ${bodies.length} awarding bodies.`,
+    legend: legendBox([
+      { color: "var(--series-1)", label: "Won" },
+      { color: "var(--series-1-soft)", label: "Nominated, did not win" },
+    ]),
+    plot: { node: svg, tip },
+    tableFn: () =>
+      table(
+        [
+          { key: "b", label: "Body", cell: (b) => b.name },
+          { key: "w", label: "Won", num: true, cell: (b) => String(b.won) },
+          { key: "n", label: "Nominated", num: true, cell: (b) => String(b.nominated) },
+        ],
+        bodies,
+        { plain: true }
+      ),
+  });
+}
+
+function viewAnalysis() {
+  const frag = document.createDocumentFragment();
+  frag.appendChild(
+    el(
+      "div",
+      { class: "page-head" },
+      el("h1", { text: "Analysis" }),
+      el("p", { text: "Cuts of the data that no single table holds: how outlets differ, how long comics wait to be adapted, which storylines get reused, and what the catalogue has won." })
+    )
+  );
+
+  const pubs = [...publicationIndex.values()].filter((p) => p.n >= 4).sort((a, b) => b.avg_pct - a.avg_pct);
+  frag.appendChild(
+    el("div", { class: "grid" },
+      hbarChart({
+        title: "How the outlets differ",
+        sub: "Mean normalized score per publication, for outlets with at least four scores on record.",
+        note: "Every scale — 10-point, 5-star, percentage — is mapped onto 0–100 first, so these are comparable. An outlet's mean also reflects which works it happened to review.",
+        items: pubs.map((p) => ({ label: p.name, value: Math.round(p.avg_pct), display: Math.round(p.avg_pct) + " / 100", key: p.name, sub: `${p.n} scores, range ${Math.round(p.lo)}–${Math.round(p.hi)}` })),
+        labelWidth: 190,
+        maxRows: 20,
+        tableCols: [
+          { key: "p", label: "Publication", cell: (d) => d.label },
+          { key: "a", label: "Mean score", num: true, cell: (d) => String(d.value) },
+          { key: "s", label: "Spread", cell: (d) => d.sub },
+        ],
+      }))
+  );
+
+  frag.appendChild(
+    el("div", { class: "grid cols-2", style: { marginTop: "14px" } }, adaptationLagChart(), awardsChart())
+  );
+
+  const comics = [...comicIndex.values()].filter((c) => c.n > 1).sort((a, b) => b.n - a.n);
+  frag.appendChild(
+    el("div", { class: "grid", style: { marginTop: "14px" } },
+      hbarChart({
+        title: "Storylines the screen keeps going back to",
+        sub: "Comic titles cited as a source by more than one work.",
+        items: comics.map((c) => ({
+          label: c.title,
+          value: c.n,
+          key: c.title,
+          sub: [c.writer, c.year].filter(Boolean).join(" · ") || null,
+        })),
+        labelWidth: 260,
+        maxRows: 18,
+        tableCols: [
+          { key: "c", label: "Comic", wrap: true, cell: (d) => d.label },
+          { key: "n", label: "Adapted by", num: true, cell: (d) => String(d.value) },
+          { key: "w", label: "Credited to", wrap: true, cell: (d) => d.sub || "—" },
+        ],
+      }))
+  );
+
+  frag.appendChild(
+    section(
+      "Every award on record",
+      allAwards.length,
+      table(
+        [
+          { key: "w", label: "Work", cell: (a) => workLink(a.work, false) },
+          { key: "b", label: "Body", cell: (a) => a.body },
+          { key: "y", label: "Year", num: true, cell: (a) => (a.year == null ? "—" : String(a.year)) },
+          { key: "c", label: "Category", wrap: true, cell: (a) => a.category },
+          { key: "r", label: "Result", cell: (a) => (a.result === "won" ? el("strong", { text: "Won" }) : el("span", { class: "muted", text: "Nominated" })) },
+        ],
+        [...allAwards].sort((a, b) => (a.year ?? 0) - (b.year ?? 0)),
+        { plain: true }
+      )
+    )
+  );
+
+  frag.appendChild(
+    section(
+      "Every comic source",
+      [...comicIndex.values()].length,
+      table(
+        [
+          { key: "c", label: "Comic", wrap: true, cell: (c) => c.title },
+          { key: "y", label: "Published", num: true, cell: (c) => (c.year ?? el("span", { class: "muted", text: "—" })) },
+          { key: "w", label: "Credited to", wrap: true, cell: (c) => c.writer || el("span", { class: "muted", text: "—" }) },
+          { key: "n", label: "Cited by", num: true, cell: (c) => String(c.n) },
+          {
+            key: "u",
+            label: "Works",
+            wrap: true,
+            cell: (c) =>
+              el("span", { class: "chip-list" }, c.uses.map((u) => el("button", { class: "chip", text: u.work.title, onclick: () => go("#/work/" + u.work.id) }))),
+          },
+        ],
+        [...comicIndex.values()].sort((a, b) => b.n - a.n || (a.year ?? 9999) - (b.year ?? 9999)),
         { plain: true }
       )
     )
@@ -1774,6 +2864,27 @@ function viewAbout() {
 
   frag.appendChild(
     section(
+      "What this page derives, and what it only reads",
+      null,
+      p(
+        "Works, characters, people, episodes, releases and awards are read straight out of the database. ",
+        linkTo("Franchises", "#/franchises"),
+        ", ",
+        linkTo("studios", "#/studios"),
+        " and ",
+        linkTo("platforms", "#/platforms"),
+        " are not tables you can browse in the source — they are grouped here from the join tables, so a studio page is every work that credits that name. Co-appearances, collaborators, adaptation lag and the outlet means on the ",
+        linkTo("Analysis", "#/analysis"),
+        " page are all computed in the browser from those same rows; none of them are stored figures."
+      ),
+      p(
+        "Grouping is by name, not by an identifier: two studios spelled differently in the source stay two rows here, exactly as they are in the database."
+      )
+    )
+  );
+
+  frag.appendChild(
+    section(
       "Provenance",
       null,
       p(
@@ -1795,6 +2906,9 @@ const searchIndex = [
   ...works.map((w) => ({ kind: "Works", label: w.title, sub: `${yr(w)} · ${TYPE[w.type].one}`, hash: "#/work/" + w.id, key: w.title.toLowerCase(), rank: 0 })),
   ...characters.map((c) => ({ kind: "Characters", label: c.name, sub: `${c.n_works} work${c.n_works === 1 ? "" : "s"}`, hash: "#/character/" + c.id, key: (c.name + " " + c.variants.join(" ")).toLowerCase(), rank: 1 })),
   ...people.map((p) => ({ kind: "People", label: p.name, sub: `${p.credits.length} credit${p.credits.length === 1 ? "" : "s"}`, hash: "#/person/" + p.id, key: p.name.toLowerCase(), rank: 2 })),
+  ...[...franchiseIndex.values()].map((g) => ({ kind: "Franchises", label: g.name, sub: `${g.n_works} work${g.n_works === 1 ? "" : "s"}`, hash: "#/franchise/" + encodeURIComponent(g.name), key: g.name.toLowerCase(), rank: 3 })),
+  ...[...studioIndex.values()].map((g) => ({ kind: "Studios", label: g.name, sub: `${g.n_works} work${g.n_works === 1 ? "" : "s"}`, hash: "#/studio/" + encodeURIComponent(g.name), key: g.name.toLowerCase(), rank: 4 })),
+  ...[...platformIndex.values()].map((g) => ({ kind: "Platforms", label: g.name, sub: `${g.n_works} game${g.n_works === 1 ? "" : "s"}`, hash: "#/platform/" + encodeURIComponent(g.name), key: g.name.toLowerCase(), rank: 5 })),
 ];
 
 function setupSearch() {
@@ -1913,19 +3027,6 @@ function boot() {
   document.getElementById("foot-line").textContent =
     `${c.works} works · ${c.characters} characters · ${c.people} people · ${c.credits} credits, ` +
     `${DATA.meta.year_min}–${DATA.meta.year_max}. Generated from spiderman.db. Data CC BY 4.0, code MIT.`;
-  // The nav tabs are a fresh start; the in-page back links keep whatever filters were set.
-  const RESET = {
-    works: () => (state.works = { type: "all", franchise: "all", era: "all", sort: "year", dir: 1, q: "" }),
-    characters: () => (state.chars = { align: "all", sort: "n_works", dir: -1, q: "" }),
-    people: () => (state.people = { kind: "all", sort: "n_works", dir: -1, q: "" }),
-  };
-  document.querySelectorAll("nav.tabs a").forEach((a) => {
-    const view = a.getAttribute("href").replace("#/", "");
-    a.addEventListener("click", () => {
-      RESET[view]?.();
-      if (location.hash === a.getAttribute("href")) rerenderInPlace();
-    });
-  });
   setupSearch();
   setupTheme();
   window.addEventListener("hashchange", render);

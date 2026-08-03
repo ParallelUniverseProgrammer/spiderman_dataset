@@ -69,14 +69,25 @@ def main():
             "developer": gr["developer"], "metacritic": gr["metacritic_score"],
             "esrb": gr["esrb_rating"]})
 
-    for b in rows(con, "SELECT * FROM budgets WHERE is_primary=1 AND component='production'"):
-        works[b["work_id"]]["budget_usd"] = b["amount_usd"]
+    for b in rows(con, "SELECT * FROM budgets ORDER BY is_primary DESC, amount_usd DESC"):
+        w = works[b["work_id"]]
+        w.setdefault("budgets", []).append({
+            "amount": b["amount_usd"], "component": b["component"],
+            "primary": bool(b["is_primary"]), "source_year": b["source_year"],
+            "inflation_adj_2024": b["inflation_adj_2024"], "note": b["note"]})
+        if b["is_primary"] and b["component"] == "production":
+            w["budget_usd"] = b["amount_usd"]
     for bo in rows(con, "SELECT * FROM box_office WHERE scope='lifetime'"):
         works[bo["work_id"]]["box_office"] = {
             "domestic": bo["domestic_usd"], "international": bo["international_usd"],
             "worldwide": bo["worldwide_usd"]}
-    for bo in rows(con, "SELECT * FROM box_office WHERE scope='week' AND week_number=1"):
-        works[bo["work_id"]].setdefault("box_office", {})["opening_week_domestic"] = bo["domestic_usd"]
+    # Weekly rows are a different measurement from the lifetime totals and are kept
+    # separate — see "Reading box_office" in the README.
+    for bo in rows(con, "SELECT * FROM box_office WHERE scope='week' ORDER BY week_number"):
+        works[bo["work_id"]].setdefault("weekly", []).append({
+            "week": bo["week_number"], "start": bo["week_start_date"],
+            "domestic": bo["domestic_usd"], "international": bo["international_usd"],
+            "worldwide": bo["worldwide_usd"]})
 
     for r in rows(con, "SELECT * FROM review_scores ORDER BY score_pct DESC"):
         works[r["work_id"]]["reviews"].append({
@@ -193,6 +204,10 @@ def main():
             "year_min": min(w["year"] for w in works.values() if w["year"]),
             "year_max": max(w["year"] for w in works.values() if w["year"]),
         },
+        "franchises": [
+            {"name": f["name"], "description": f["description"]}
+            for f in sorted(franchises.values(), key=lambda f: f["name"])
+        ],
         "works": prune(sorted(works.values(), key=lambda w: (w["year"] or 9999, w["id"]))),
         "characters": prune(sorted(identities.values(),
                                    key=lambda i: -i["n_works"])),
