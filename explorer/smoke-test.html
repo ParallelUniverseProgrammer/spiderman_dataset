@@ -3,7 +3,8 @@
 <pre id="out"></pre>
 <script>
 const out = [];
-const log = (m) => out.push(m);
+// Written out as we go, so a run cut short still shows how far it got.
+const log = (m) => { out.push(m); document.getElementById("out").textContent = out.join("\n"); };
 const errs = [];
 window.addEventListener("error", (e) => errs.push("TOP " + e.message));
 const f = document.getElementById("f");
@@ -319,6 +320,160 @@ f.onload = async () => {
     }
   }
   check("every value link lands somewhere real", broken.length === 0, broken.slice(0, 6).join(" | "));
+
+  // ---- a link has to answer the number it sits on ----
+  // A tile counting "2 movies for this character" must land on those two movies, not on
+  // every movie in the catalogue.
+  await nav("#/character/10");
+  const docOck = qa(".kpi").find((k) => k.textContent.includes("Movies"));
+  check("character medium tile is scoped", docOck?.getAttribute("href")?.includes("char=10"), docOck?.getAttribute("href"));
+  const tileN = Number(docOck.querySelector(".value").textContent);
+  docOck.dispatchEvent(new w.MouseEvent("click", { bubbles: true, cancelable: true })); await wait(220);
+  check("scoped tile lands on exactly that many works", qa("tbody tr").length === tileN, qa("tbody tr").length + " vs " + tileN);
+
+  await nav("#/works?type=movie&char=10");
+  check("character filter restores from the URL", qa("tbody tr").length === tileN, qa("tbody tr").length);
+  check("character filter is visible in the filter bar", [...qa(".filters select option")].some((o) => o.selected && o.textContent === "Doctor Octopus"));
+  qa("nav.tabs a").find((a) => a.getAttribute("href") === "#/works").click(); await wait(200);
+  check("nav tab clears the character filter", qa("tbody tr").length === 81, qa("tbody tr").length);
+
+  // Every "?at=" destination has to exist on the page it opens.
+  const missing = [];
+  for (const page of ["#/year/2002", "#/year/2018", "#/character/10", "#/work/13", "#/work/9",
+                      "#/comic/" + encodeURIComponent("The Amazing Spider-Man")]) {
+    await nav(page);
+    const jumps = qa(".kpi[href*='?at=']").map((k) => k.getAttribute("href"));
+    for (const h of jumps) {
+      await nav(h);
+      const id = new URLSearchParams(h.split("?")[1]).get("at");
+      if (!d.getElementById(id)) missing.push(page + " → " + h);
+    }
+  }
+  check("every jump tile finds its block", missing.length === 0, missing.join(" | "));
+
+  // A chip's count is a promise about what clicking it gives you.
+  await nav("#/works?char=10");
+  const chipN = Number(qa(".chips button").find((b) => b.textContent.startsWith("Games")).textContent.match(/\d+/)[0]);
+  qa(".chips button").find((b) => b.textContent.startsWith("Games")).click(); await wait(160);
+  check("chip counts hold inside the other filters", qa("tbody tr").length === chipN, qa("tbody tr").length + " vs " + chipN);
+
+  await nav("#/characters?q=spider");
+  const heroChip = Number(qa(".chips button").find((b) => b.textContent.startsWith("Hero")).textContent.match(/\d+/)[0]);
+  qa(".chips button").find((b) => b.textContent.startsWith("Hero")).click(); await wait(160);
+  check("character chip counts hold too", qa("tbody tr").length === heroChip, qa("tbody tr").length + " vs " + heroChip);
+
+  // No tile may point at a page that says nothing about the number on it.
+  await nav("#/work/13");
+  check("budget tile no longer dumps you on Analysis", !qa(".kpi").some((k) => k.getAttribute("href") === "#/analysis"),
+        qa(".kpi").filter((k) => k.getAttribute("href") === "#/analysis").map((k) => k.textContent).join(","));
+
+  // ---- no tile anywhere is inert, and none lands on an unfiltered list ----
+  const BARE = ["#/works", "#/characters", "#/people", "#/franchises", "#/studios", "#/platforms",
+                "#/publications", "#/comics", "#/awards", "#/roles", "#/analysis", "#/about"];
+  const inertTiles = [], bareTiles = [];
+  const tilePages = ["#/work/13", "#/work/28", "#/work/40", "#/character/27", "#/person/35",
+                     "#/franchise/" + encodeURIComponent("Marvel Cinematic Universe"),
+                     "#/studio/" + encodeURIComponent("Columbia Pictures"),
+                     "#/platform/" + encodeURIComponent("PlayStation 2"),
+                     "#/platform/" + encodeURIComponent("Atari 2600"),
+                     "#/publication/" + encodeURIComponent("Push Square"),
+                     "#/comic/" + encodeURIComponent("The Amazing Spider-Man"),
+                     "#/award/" + encodeURIComponent("Academy Awards"),
+                     "#/role/actor", "#/facet/rating/PG-13", "#/year/2002"];
+  for (const page of tilePages) {
+    await nav(page);
+    for (const k of qa("#app .kpi")) {
+      const what = page + " " + (k.querySelector(".label")?.textContent || "?");
+      if (k.tagName !== "A") inertTiles.push(what);
+      else if (BARE.includes(k.getAttribute("href"))) bareTiles.push(what + " → " + k.getAttribute("href"));
+    }
+  }
+  check("no tile is inert", inertTiles.length === 0, inertTiles.join(" | "));
+  check("no tile dumps you on an unfiltered list", bareTiles.length === 0, bareTiles.join(" | "));
+
+  // A dimension page's medium tile filters that page's own works block.
+  await nav("#/studio/" + encodeURIComponent("Columbia Pictures"));
+  const movieTile = qa(".kpi").find((k) => k.querySelector(".label")?.textContent === "Movies");
+  const movieN = Number(movieTile.querySelector(".value").textContent);
+  await nav(movieTile.getAttribute("href"));
+  const wb = d.getElementById("works");
+  check("studio medium tile filters its own works block", wb && Number(wb.querySelector("h2 .n").textContent) === movieN,
+        wb ? wb.querySelector("h2 .n").textContent + " vs " + movieN : "no block");
+  check("and the block's chips let you widen back out", wb.querySelectorAll(".section-filters button").length === 3,
+        wb.querySelectorAll(".section-filters button").length);
+  wb.querySelector(".section-filters button").click(); await wait(160);
+  check("widening restores every work", Number(d.getElementById("works").querySelector("h2 .n").textContent) === 23,
+        d.getElementById("works").querySelector("h2 .n").textContent);
+
+  // An award page's result tiles cut its own record table.
+  await nav("#/award/" + encodeURIComponent("Academy Awards"));
+  const wonTile = qa(".kpi").find((k) => k.querySelector(".label")?.textContent === "Won");
+  const wonN = Number(wonTile.querySelector(".value").textContent);
+  await nav(wonTile.getAttribute("href"));
+  check("award 'Won' tile cuts the record table", Number(d.getElementById("records").querySelector("h2 .n").textContent) === wonN,
+        d.getElementById("records").querySelector("h2 .n").textContent + " vs " + wonN);
+
+  // Two blocks on one page cut independently, so changing one must not silently reset the
+  // other — a tile that jumps to its own block rewrites only its own params.
+  await nav("#/award/" + encodeURIComponent("Academy Awards") + "?at=works&type=movie");
+  const wonHref = qa(".kpi").find((k) => k.querySelector(".label")?.textContent === "Won").getAttribute("href");
+  check("a tile keeps the rest of the page's state",
+        wonHref.includes("type=movie") && wonHref.includes("result=won"), wonHref);
+  await nav(wonHref);
+  check("and still cuts its own block", Number(d.getElementById("records").querySelector("h2 .n").textContent) === 2,
+        d.getElementById("records").querySelector("h2 .n").textContent);
+  // The "Works" tile means all of them, so it is the one thing that clears the medium cut.
+  const allHref = qa(".kpi").find((k) => k.querySelector(".label")?.textContent === "Works").getAttribute("href");
+  check("but the Works tile clears the medium cut", !allHref.includes("type="), allHref);
+
+  // A series' Seasons tile lands on an episode guide that shows the seasons.
+  await nav("#/work/28");
+  const seasonTile = qa(".kpi").find((k) => k.querySelector(".label")?.textContent === "Seasons");
+  const seasonN = Number(seasonTile.querySelector(".value").textContent);
+  await nav(seasonTile.getAttribute("href"));
+  const eb = d.getElementById("episodes");
+  check("seasons tile lands on a guide split by season",
+        eb && eb.querySelectorAll(".section-filters button").length === seasonN + 1,
+        eb ? eb.querySelectorAll(".section-filters button").length : "no block");
+  const s1 = eb.querySelectorAll(".section-filters button")[1];
+  const s1n = Number(s1.querySelector(".n").textContent);
+  s1.click(); await wait(160);
+  check("picking a season cuts the guide to it",
+        Number(d.getElementById("episodes").querySelector("h2 .n").textContent) === s1n,
+        d.getElementById("episodes").querySelector("h2 .n").textContent + " vs " + s1n);
+
+  // A film's runtime ranks against the other films, in a column you can actually see.
+  await nav("#/work/13");
+  const rtTile = qa(".kpi").find((k) => k.querySelector(".label")?.textContent === "Runtime");
+  await nav(rtTile.getAttribute("href"));
+  check("runtime tile ranks films by runtime",
+        qa("thead th").some((h) => h.textContent.startsWith("Runtime")) && !!q("tr.row-focus"),
+        qa("thead th").map((h) => h.textContent).join(","));
+  check("and the ranking is films only", qa("tbody tr").length === 23, qa("tbody tr").length);
+
+  // A budget with no gross can't sit on the budget→gross chart, so it ranks instead —
+  // and the ranking has to show the figure it ranked on.
+  await nav("#/work/22");
+  const bTile = qa(".kpi").find((k) => k.querySelector(".label")?.textContent === "Production budget");
+  check("budget tile has a destination", !!bTile.getAttribute("href"), bTile.outerHTML.slice(0, 60));
+  await nav(bTile.getAttribute("href"));
+  check("budget tile ranks by budget, with the column shown",
+        qa("thead th").some((h) => h.textContent.startsWith("Budget")) && !!q("tr.row-focus"),
+        qa("thead th").map((h) => h.textContent).join(","));
+  // The default list must not carry those two columns around.
+  await nav("#/works");
+  check("neither column clutters the default list",
+        !qa("thead th").some((h) => /^(Budget|Runtime)/.test(h.textContent)),
+        qa("thead th").map((h) => h.textContent).join(","));
+
+  // An outlet's mean is the mean of what it filed, not of how good the works were.
+  await nav("#/publication/" + encodeURIComponent("Push Square"));
+  const meanTiles = qa(".kpi").filter((k) => k.querySelector(".label")?.textContent === "Mean score");
+  check("outlet mean is not duplicated", meanTiles.length === 1, meanTiles.length);
+  const lo = Number(q("#app .meta-line") && qa(".kpi").find((k) => k.querySelector(".label").textContent === "Range").querySelector(".value").textContent.split("–")[0]);
+  const hi = Number(qa(".kpi").find((k) => k.querySelector(".label").textContent === "Range").querySelector(".value").textContent.split("–")[1]);
+  const mean = Number(meanTiles[0].querySelector(".value").textContent.split(" ")[0]);
+  check("outlet mean sits inside the range it filed", mean >= lo && mean <= hi, mean + " in " + lo + "–" + hi);
 
   log(errs.length ? "FAIL js-errors :: " + errs.join(" | ") : "PASS no-js-errors");
  } catch (e) {

@@ -194,8 +194,18 @@ reads `explorer/data.json` (the whole database, ~440 KB) and gives you:
   to their person or studio page, years to a page for that year, attributes like
   an MPAA rating or a game engine to the works sharing them, and free text the
   catalogue holds no record for — a comic artist, an episode title — to a
-  cross-column lookup that finds every row mentioning it. The smoke test asserts
-  this: it walks 17 pages and fails on any cell of data that cannot be followed.
+  cross-column lookup that finds every row mentioning it.
+- **And every number opens the rows behind it**, never an unfiltered list. A
+  studio's "22 movies" cuts that studio's own works block to those 22; an
+  awarding body's "2 won" cuts its record table to those two; a series' season
+  count opens the episode guide split by season; a character's "3 games" opens
+  the works list filtered to that character. Where the honest answer is a
+  comparison rather than a list — a review score, a gross, a runtime, a budget —
+  the tile opens the ranked table with that row highlighted and the column it
+  ranked on in view. The smoke test asserts both halves: it walks 17 pages and
+  fails on any cell of data that cannot be followed, then checks every summary
+  tile on 15 more and fails on any that is inert or lands somewhere that says
+  nothing about the number on it.
 - **Search** (press `/`) across works, characters, people, franchises, studios,
   platforms, outlets, comic sources, awarding bodies, credit roles and years at
   once, with a "search every column" fallback for anything the index misses.
