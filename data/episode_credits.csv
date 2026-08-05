@@ -1,0 +1,876 @@
+episode_id,role,name,credit_order,person_id
+2,director,Ron Satlof,1,174
+2,writer,Robert Janes,1,175
+3,director,Ron Satlof,1,174
+3,writer,Robert Janes,1,175
+4,director,Michael Caffey,1,
+4,writer,Dick Nelson,1,
+4,writer,Robert Janes,2,175
+5,director,Fernando Lamas,1,
+5,writer,John W. Bloch,1,
+6,director,Dennis Donnelly,1,
+6,writer,Duke Sandefur,1,
+7,director,Cliff Bole,1,
+7,writer,Gregory S. Dinallo,1,
+7,writer,Bruce Kalish,2,
+7,writer,Philip John Taylor,3,
+8,director,Larry Stewart,1,
+8,writer,Howard Dimsdale,1,
+9,director,Tom Blank,1,
+9,writer,Brian McKay,1,
+9,writer,Gregory S. Dinallo,2,
+10,director,Don McDougall,1,181
+10,writer,Michael Michaelian,1,
+11,director,Tony Ganz,1,
+11,writer,Howard Dimsdale,1,
+12,director,Joseph Manduke,1,
+12,writer,Stephen Kandel,1,
+13,director,Don McDougall,1,181
+13,writer,Lionel E. Siegel,1,182
+14,director,Don McDougall,1,181
+14,writer,Lionel E. Siegel,1,182
+15,writer,Michael Reaves,1,
+16,writer,Michael Reaves,1,
+17,writer,Brynne Chandler Reaves,1,
+18,writer,Steve Perry,1,
+19,writer,Roger Slifer,1,
+20,writer,Diane Duane,1,
+20,writer,Peter Morwood,2,
+21,writer,Larry Brody,1,
+21,writer,Robert Gregory Browne,2,
+22,writer,Robert Gregory Browne,1,
+22,writer,Larry Brody,2,
+23,writer,Robert Gregory Browne,1,
+23,writer,Larry Brody,2,
+24,writer,Mark Hoffmeier,1,525
+24,writer,Larry Brody,2,
+25,writer,Robert Gregory Browne,1,
+25,writer,Larry Brody,2,
+26,writer,Robert Gregory Browne,1,
+26,writer,Larry Brody,2,
+27,writer,Robert Gregory Browne,1,
+27,writer,Larry Brody,2,
+28,director,Tim Eldred,1,
+28,writer,Morgan Gendel,1,370
+29,director,Vincent Edwards,1,
+29,writer,Rick Suvalle,1,
+30,director,Audu Paden,1,
+30,writer,Greg Johnson,1,
+31,director,Brandon Vietti,1,
+31,writer,Todd Felderstein,1,
+31,writer,Morgan Gendel,2,370
+32,director,Alan Caldwell,1,
+32,writer,Marsha Griffin,1,371
+33,director,Vincent Edwards,1,
+33,writer,Morgan Gendel,1,370
+34,director,Brandon Vietti,1,
+34,writer,Tracey Forbes,1,
+35,director,Audu Paden,1,
+35,writer,Brian Michael Bendis,1,369
+35,writer,Morgan Gendel,2,370
+35,writer,Marsha Griffin,3,371
+36,director,Tim Eldred,1,
+36,writer,Whip Lipsey,1,
+36,writer,Scott Lipsey,2,
+37,director,Alan Caldwell,1,
+37,writer,Morgan Gendel,1,370
+37,writer,Rick Suvalle,2,
+38,director,Vincent Edwards,1,
+38,writer,Morgan Gendel,1,370
+39,director,Alan Caldwell,1,
+39,director,Vincent Edwards,2,
+39,director,Audu Paden,3,
+39,writer,Morgan Gendel,1,370
+40,director,Tim Eldred,1,
+40,director,Brandon Vietti,2,
+40,writer,Steven Kriozere,1,
+41,director,Mel Zwyer,1,403
+41,writer,Jeff Trammell,1,402
+42,director,Liza Singer,1,404
+42,writer,Charlie Neuner,1,
+43,director,Stu Livingston,1,405
+43,writer,Jeff Trammell,1,402
+44,director,Liza Singer,1,404
+44,writer,Charlie Neuner,1,
+45,director,Stu Livingston,1,405
+45,writer,Jeff Trammell,1,402
+46,director,Liza Singer,1,404
+46,writer,Charlie Neuner,1,
+47,director,Stu Livingston,1,405
+47,writer,Raven Koné,1,
+48,director,Liza Singer,1,404
+48,writer,Charlie Neuner,1,
+49,director,Liza Singer,1,404
+49,writer,Jeff Trammell,1,402
+50,director,Stu Livingston,1,405
+50,writer,Charlie Neuner,1,
+50,writer,Jeff Trammell,2,402
+131,director,Kōichi Takemoto,1,187
+131,writer,Shōzō Uehara,1,329
+132,director,Kōichi Takemoto,1,187
+132,writer,Susumu Takaku,1,188
+133,director,Katsuhiko Taguchi,1,
+133,writer,Susumu Takaku,1,188
+134,director,Katsuhiko Taguchi,1,
+134,writer,Shōzō Uehara,1,329
+135,director,Kōichi Takemoto,1,187
+135,writer,Susumu Takaku,1,188
+136,director,Kōichi Takemoto,1,187
+136,writer,Shōzō Uehara,1,329
+137,director,Katsuhiko Taguchi,1,
+137,writer,Shōzō Uehara,1,329
+138,director,Katsuhiko Taguchi,1,
+138,writer,Susumu Takaku,1,188
+139,director,Takaharu Saeki,1,
+139,writer,Shōzō Uehara,1,329
+140,director,Takaharu Saeki,1,
+140,writer,Shōzō Uehara,1,329
+141,director,Kōichi Takemoto,1,187
+141,writer,Susumu Takaku,1,188
+142,director,Kōichi Takemoto,1,187
+142,writer,Shōzō Uehara,1,329
+143,director,Kimio Hirayama,1,
+143,writer,Susumu Takaku,1,188
+144,director,Kimio Hirayama,1,
+144,writer,Shōzō Uehara,1,329
+145,director,Kōichi Takemoto,1,187
+145,writer,Susumu Takaku,1,188
+146,director,Kōichi Takemoto,1,187
+146,writer,Shōzō Uehara,1,329
+147,director,Takaharu Saeki,1,
+147,writer,Susumu Takaku,1,188
+148,director,Takaharu Saeki,1,
+148,writer,Kuniaki Oshikawa,1,
+149,director,Kōichi Takemoto,1,187
+149,writer,Shōzō Uehara,1,329
+150,director,Kōichi Takemoto,1,187
+150,writer,Hirohisa Soda,1,
+151,director,Kōichi Takemoto,1,187
+151,writer,Susumu Takaku,1,188
+152,director,Takaharu Saeki,1,
+152,writer,Susumu Takaku,1,188
+153,director,Takaharu Saeki,1,
+153,writer,Hirohisa Soda,1,
+154,director,Hideo Tanaka,1,
+154,writer,Susumu Takaku,1,188
+155,director,Hideo Tanaka,1,
+155,writer,Mikio Matsushita,1,
+156,director,Kōichi Takemoto,1,187
+156,writer,Kuniaki Oshikawa,1,
+157,director,Kōichi Takemoto,1,187
+157,writer,Susumu Takaku,1,188
+158,director,Yoshiaki Kobayashi,1,
+158,writer,Mikio Matsushita,1,
+159,director,Yoshiaki Kobayashi,1,
+159,writer,Shōzō Uehara,1,329
+160,director,Takaharu Saeki,1,
+160,writer,Hirohisa Soda,1,
+161,director,Kōichi Takemoto,1,187
+161,writer,Shōzō Uehara,1,329
+162,director,Takaharu Saeki,1,
+162,writer,Mikio Matsushita,1,
+163,director,Kōichi Takemoto,1,187
+163,writer,Susumu Takaku,1,188
+164,director,Kōichi Takemoto,1,187
+164,writer,Hirohisa Soda,1,
+165,director,Yoshiaki Kobayashi,1,
+165,writer,Susumu Takaku,1,188
+166,director,Yoshiaki Kobayashi,1,
+166,writer,Shōzō Uehara,1,329
+167,director,Takaharu Saeki,1,
+167,writer,Susumu Takaku,1,188
+168,director,Takaharu Saeki,1,
+168,writer,Hirohisa Soda,1,
+169,director,Yoshiaki Kobayashi,1,
+169,writer,Shōzō Uehara,1,329
+170,director,Yoshiaki Kobayashi,1,
+170,writer,Mikio Matsushita,1,
+171,director,Yoshiaki Kobayashi,1,
+171,writer,Shōzō Uehara,1,329
+179,writer,Larry Parr,1,
+183,writer,Larry Parr,1,
+185,writer,Donald F. Glut,1,
+188,writer,Larry Parr,1,
+189,writer,Donald F. Glut,1,
+190,writer,Larry Parr,1,
+191,writer,Christy Marx,1,
+192,writer,Larry Parr,1,
+193,writer,Donald F. Glut,1,
+195,writer,Donald F. Glut,1,
+197,writer,Christy Marx,1,
+198,writer,Dennis Marks,1,351
+199,writer,Donald F. Glut,1,
+200,writer,Christy Marx,1,
+201,writer,Christy Marx,1,
+202,writer,Dennis Marks,1,351
+203,writer,Doug Booth,1,
+204,writer,Christy Marx,1,
+205,writer,Francis FeighanJack Hanrahan,1,
+206,writer,Christy Marx,1,
+207,writer,Donald F. Glut,1,
+208,writer,Donald F. Glut,1,
+209,writer,Donald F. Glut,1,
+210,writer,Dennis Marks,1,351
+211,writer,Donald F. Glut,1,
+212,writer,Christy Marx,1,
+213,writer,Donald F. Glut,1,
+214,writer,Michael Reaves,1,
+215,writer,Jack Mendelsohn,1,
+216,writer,Dennis Marks,1,351
+217,writer,Michael Reaves,1,
+218,writer,Donald Glut,1,
+219,writer,Dennis Marks,1,351
+220,writer,Michael Reaves,1,
+221,writer,Dennis Marks,1,351
+222,director,Bob Richardson,1,357
+222,writer,"Gerry Conway,Stan Berkowitz",1,
+222,writer,John Semper,2,356
+223,director,Bob Richardson,1,357
+224,director,Bob Richardson,1,357
+225,director,Bob Richardson,1,357
+226,director,Bob Richardson,1,357
+226,writer,Marv WolfmanStan Berkowitzand John Semper,1,
+227,director,Bob Richardson,1,357
+228,director,Bob Richardson,1,357
+229,director,Bob Richardson,1,357
+230,director,Bob Richardson,1,357
+231,director,Bob Richardson,1,357
+232,director,Bob Richardson,1,357
+233,director,Bob Richardson,1,357
+233,writer,Stan Berkowitz,1,
+234,director,Bob Richardson,1,357
+234,writer,John Semper,1,356
+235,director,Bob Richardson,1,357
+236,director,Bob Richardson,1,357
+237,director,Bob Richardson,1,357
+238,director,Bob Richardson,1,357
+239,director,Bob Richardson,1,357
+240,director,Bob Richardson,1,357
+241,director,Bob Richardson,1,357
+242,director,Bob Richardson,1,357
+242,writer,John Semper,1,356
+243,director,Bob Richardson,1,357
+243,writer,"Stephanie Mathison, Mark Hoffmeier",1,
+243,writer,John Semper,2,356
+244,director,Bob Richardson,1,357
+244,writer,John Semper,1,356
+244,writer,Meg McLaughlin,2,
+245,director,Bob Richardson,1,357
+245,writer,"Mark Hoffmeier, Stan Berkowitz",1,
+245,writer,John Semper,2,356
+246,director,Bob Richardson,1,357
+246,writer,"Mark Hoffmeier, Stan Berkowitz",1,
+246,writer,John Semper,2,356
+247,director,Bob Richardson,1,357
+248,director,Bob Richardson,1,357
+249,director,Bob Richardson,1,357
+250,director,Bob Richardson,1,357
+251,director,Bob Richardson,1,357
+252,director,Bob Richardson,1,357
+253,director,Bob Richardson,1,357
+254,director,Bob Richardson,1,357
+254,writer,John Semper,1,356
+254,writer,Mark HoffmeierTeleplay by: Brooks Wachtel,2,
+254,writer,Cynthia Harrison,3,
+255,director,Bob Richardson,1,357
+256,director,Bob Richardson,1,357
+257,director,Bob Richardson,1,357
+258,director,Bob Richardson,1,357
+258,writer,"John SemperTeleplay by: Stan Berkowitz, Len Wein",1,
+258,writer,John Semper,2,356
+259,director,Bob Richardson,1,357
+260,director,Bob Richardson,1,357
+260,writer,James Krieg,1,
+261,director,Bob Richardson,1,357
+262,director,Bob Richardson,1,357
+263,director,Bob Richardson,1,357
+264,director,Bob Richardson,1,357
+265,director,Bob Richardson,1,357
+266,director,Bob Richardson,1,357
+266,writer,Meg McLaughlin,1,
+267,director,Bob Richardson,1,357
+268,director,Bob Richardson,1,357
+269,director,Bob Richardson,1,357
+270,director,Bob Richardson,1,357
+270,writer,Mark Hoffmeier,1,525
+271,director,Bob Richardson,1,357
+272,director,Bob Richardson,1,357
+273,director,Bob Richardson,1,357
+274,director,Bob Richardson,1,357
+275,director,Bob Richardson,1,357
+275,writer,John Semper,1,356
+276,director,Bob Richardson,1,357
+276,writer,John Semper,1,356
+277,director,Bob Richardson,1,357
+277,writer,John Semper,1,356
+278,director,Bob Richardson,1,357
+278,writer,John Semper,1,356
+279,director,Bob Richardson,1,357
+279,writer,John Semper,1,356
+280,director,Bob Richardson,1,357
+281,director,Bob Richardson,1,357
+282,director,Bob Richardson,1,357
+282,writer,John Semper,1,356
+282,writer,Karen Milovich,2,
+283,director,Bob Richardson,1,357
+283,writer,Virginia Roth,1,
+284,director,Bob Richardson,1,357
+284,writer,"John Semper, Mark Hoffmeier",1,
+284,writer,Ernie Altbacker,2,
+285,director,Bob Richardson,1,357
+286,director,Bob Richardson,1,357
+286,writer,John Semper,1,356
+287,director,Victor Cook,1,378
+287,writer,Greg Weisman,1,377
+288,director,Troy Adomitis,1,
+288,writer,Kevin Hopps,1,
+289,director,Dave Bullock,1,
+289,writer,Matt Wayne,1,
+290,director,Dan Fausett,1,
+290,writer,Andrew Robinson,1,
+291,director,Troy Adomitis,1,
+291,writer,Kevin Hopps,1,
+292,director,Dave Bullock,1,
+292,writer,Matt Wayne,1,
+293,director,Victor Cook,1,378
+293,writer,Andrew Robinson,1,
+294,director,Jennifer Coyle,1,
+294,writer,Randy Jandt,1,
+295,director,Dave Bullock,1,
+295,writer,Kevin Hopps,1,
+296,director,Dan Fausett,1,
+296,writer,Matt Wayne,1,
+297,director,Dave Bullock,1,
+297,director,Jennifer Coyle,2,
+297,writer,Andrew Robinson,1,
+297,writer,Greg Weisman,2,377
+298,director,Dave Bullock,1,
+298,writer,Greg Weisman,1,377
+299,director,Victor Cook,1,378
+299,writer,Kevin Hopps,1,
+300,director,Jennifer Coyle,1,
+300,writer,Kevin Hopps,1,
+301,director,Kevin Altieri,1,
+301,writer,Matt Wayne,1,
+302,director,Mike Goguen,1,
+302,writer,Andrew Robinson,1,
+303,director,Jennifer Coyle,1,
+303,writer,Randy Jandt,1,
+304,director,Kevin Altieri,1,
+304,writer,Kevin Hopps,1,
+305,director,Mike Goguen,1,
+305,writer,Nicole Dubuc,1,
+306,director,Jennifer Coyle,1,
+306,writer,Andrew Robinson,1,
+307,director,Kevin Altieri,1,
+307,writer,Nicole Dubuc,1,
+308,director,Mike Goguen,1,
+308,writer,Kevin Hopps,1,
+309,director,Jennifer Coyle,1,
+309,writer,Andrew Robinson,1,
+310,director,Kevin Altieri,1,
+310,writer,Nicole Dubuc,1,
+311,director,Mike Goguen,1,
+311,writer,Greg Weisman,1,377
+312,director,Victor Cook,1,378
+312,writer,Kevin Hopps,1,
+313,director,"Alex Soto, Phil Pignotti",1,
+313,director,Tim Eldered,2,
+313,writer,Paul Dini,1,384
+314,director,"Alex Soto, Phil Pignotti",1,
+314,director,Tim Eldered,2,
+314,writer,Paul Dini,1,384
+315,director,Gary Hartle,1,
+315,director,Jeff Allen,2,
+315,writer,Man of Action,1,
+316,director,Alex Soto,1,387
+316,writer,Man of Action,1,
+316,writer,James Felder,2,
+317,director,Phil Pignotti,1,
+317,writer,Man of Action,1,
+318,director,Jeff Allen,1,
+318,director,Gary Hartle,2,
+318,writer,Man of Action,1,
+318,writer,Joe Fallon,2,
+319,director,Alex Soto,1,387
+319,writer,Man of Action,1,
+319,writer,Dani Wolff,2,
+320,director,Phil Pignotti,1,
+320,writer,Man of Action,1,
+321,director,Alex Soto,1,387
+321,writer,Man of Action,1,
+321,writer,Eugene Son,2,
+322,director,Jeff Allen,1,
+322,writer,Brian Michael Bendis,1,369
+323,director,Phil Pignotti,1,
+323,writer,Man of Action,1,
+324,director,Alex Soto,1,387
+324,writer,Man of Action,1,
+324,writer,Jacob Semahn,2,
+325,director,Jeff Allen,1,
+325,writer,Man of Action,1,
+325,writer,James Felder,2,
+326,director,Phil Pignotti,1,
+326,writer,Man of Action,1,
+326,writer,Eugene Son,2,
+327,director,Jeff Allen,1,
+327,writer,Brian Michael Bendis,1,369
+328,director,Alex Soto,1,387
+328,writer,Man of Action,1,
+328,writer,Scott Mosier,2,
+329,director,Phil Pignotti,1,
+329,writer,Man of Action,1,
+329,writer,Rich Fogel,2,
+330,director,Jeff Allen,1,
+330,writer,Man of Action,1,
+330,writer,Scott Mosier,2,
+331,director,Alex Soto,1,387
+331,writer,Danielle Wolff,1,
+331,writer,Man of Action,2,
+332,director,Phil Pignotti,1,
+332,writer,Man of Action,1,
+332,writer,Eugene Son,2,
+333,director,Jeff Allen,1,
+333,writer,Man of Action,1,
+333,writer,Joe Fallon,2,
+334,director,Alex Soto,1,387
+334,writer,Man of Action,1,
+334,writer,Frank Tieri,2,
+335,director,Phil Pignotti,1,
+335,writer,Brian Michael Bendis,1,369
+336,director,Jeff Allen,1,
+336,writer,Man of Action,1,
+336,writer,Scott Mosier,2,
+337,director,Alex Soto,1,387
+337,writer,Man of Action,1,
+337,writer,Eugene Son,2,
+338,director,Phil Pignotti,1,
+338,writer,Man of Action,1,
+338,writer,Jacob Semahn,2,
+339,director,Roy Burdine,1,
+339,director,Phil Pignotti,2,
+339,writer,"Man of Action, Jacob Semahn",1,
+339,writer,Eugene Son,2,
+340,director,Roy Burdine,1,
+340,director,Phil Pignotti,2,
+340,writer,"Man of Action, Jacob Semahn",1,
+340,writer,Eugene Son,2,
+341,director,Tim Maltby,1,
+341,writer,Man of Action,1,
+341,writer,Ed Valentine,2,
+342,director,Roy Burdine,1,
+342,writer,Man of Action,1,
+342,writer,Danielle Wolff,2,
+343,director,Phil Pignotti,1,
+343,writer,Man of Action,1,
+343,writer,Scott Mosier,2,
+344,director,Tim Maltby,1,
+344,writer,Man of Action,1,
+344,writer,Scott Mosier,2,
+345,director,Roy Burdine,1,
+345,writer,Story by: Joe QuesadaTeleplay by: Man of Action,1,
+345,writer,Jimmy Palmiotti,2,
+346,director,Phil Pignotti,1,
+346,writer,Man of Action,1,
+346,writer,Paul Giacoppo,2,
+347,director,Tim Maltby,1,
+347,writer,Man of Action,1,
+347,writer,Eugene Son,2,
+348,director,Roy Burdine,1,
+348,writer,Man of Action,1,
+348,writer,Danielle Wolff,2,
+349,director,Phil Pignotti,1,
+349,director,Tim Maltby,2,
+349,writer,"Man of Action, Scott Mosier, Kevin Burke",1,
+349,writer,Chris Doc Wyatt,2,
+350,director,Phil Pignotti,1,
+350,director,Tim Maltby,2,
+350,writer,"Man of Action, Scott Mosier, Kevin Burke",1,
+350,writer,Chris Doc Wyatt,2,
+351,director,Roy Burdine,1,
+351,writer,Man of Action,1,
+351,writer,Jacob Semahn,2,
+352,director,Phil Pignotti,1,
+352,writer,Brian Michael Bendis,1,369
+353,director,Tim Maltby,1,
+353,writer,Man of Action,1,
+353,writer,Joe Fallon,2,
+354,director,Roy Burdine,1,
+354,writer,Man of Action,1,
+354,writer,Ed Valentine,2,
+355,director,Phil Pignotti,1,
+355,writer,Man of Action,1,
+355,writer,Scott Mosier,2,
+356,director,Tim Maltby,1,
+356,writer,Brian Michael Bendis,1,369
+357,director,Roy Burdine,1,
+357,writer,Man of Action,1,
+357,writer,Kaita Mpambara,2,
+358,director,Phil Pignotti,1,
+358,writer,Man of Action,1,
+358,writer,Jacob Semahn,2,
+359,director,Roy Burdine,1,
+359,director,Phil Pignotti,2,
+359,writer,"Man of Action, Kevin Burke",1,
+359,writer,Chris Doc Wyatt,2,
+360,director,Roy Burdine,1,
+360,director,Phil Pignotti,2,
+360,writer,"Man of Action, Kevin Burke",1,
+360,writer,Chris Doc Wyatt,2,
+361,director,Tim Maltby,1,
+361,writer,"Man of Action, Kevin Burke",1,
+361,writer,Chris Doc Wyatt,2,
+362,director,Roy Burdine,1,
+362,writer,Man of Action,1,
+362,writer,Danielle Wolff,2,
+363,director,Phil Pignotti,1,
+363,writer,Man of Action,1,
+363,writer,Scott Mosier,2,
+364,director,Tim Maltby,1,
+364,writer,Man of Action,1,
+364,writer,Jacob Semahn,2,
+365,director,Kalvin Lee,1,
+365,writer,Eugene Son,1,
+366,director,Roy Burdine,1,
+366,writer,Danielle Wolff,1,
+367,director,Tim Maltby,1,
+367,writer,Kevin Burke,1,
+367,writer,Chris Doc Wyatt,2,
+368,director,Kalvin Lee,1,
+368,writer,Henry Gilroy,1,
+368,writer,Marty Isenberg,2,
+369,director,Roy Burdine,1,
+369,writer,Jim McCann,1,
+370,director,Tim Maltby,1,
+370,writer,Eugene Son,1,
+371,director,Roy BurdineTim Maltby,1,
+371,writer,Paul Dini,1,384
+372,director,Roy Burdine,1,
+372,writer,Brian Michael Bendis,1,369
+373,director,Tim Maltby,1,
+373,writer,Marty Isenberg,1,
+374,director,Kalvin Lee,1,
+374,writer,Marty Isenberg,1,
+375,director,Roy Burdine,1,
+375,writer,Tom Pugsley,1,
+376,director,Tim Maltby,1,
+376,writer,Mairghread Scott,1,
+377,director,Kalvin Lee,1,
+377,writer,Geoffrey Thorne,1,
+378,director,Roy Burdine,1,
+378,writer,Andrew R. Robinson,1,
+379,director,Tim Maltby,1,
+379,writer,Brandon Auman,1,
+380,director,Kalvin Lee,1,
+380,writer,Danielle Wolff,1,
+381,director,Roy Burdine,1,
+381,writer,Eugene Son,1,
+382,director,Kalvin LeeRoy BurdineTim MaltbyKalvin Lee,1,
+382,writer,Danielle WolffPaul DiniKevin Burke,1,
+382,writer,Chris Doc WyattEugene Son,2,
+383,director,Tim MaltbyKalvin LeeRoy BurdineTim Maltby,1,
+383,writer,Thomas F. ZahlerMatt WayneMarty IsenbergEugene Son,1,
+384,director,Roy Burdine,1,
+384,writer,Kevin Burke,1,
+384,writer,Chris Doc Wyatt,2,
+385,director,Young Ki Yoon,1,
+385,writer,Jacob Semahn,1,
+386,director,Jae Woo Kim,1,
+386,writer,Paul Giacoppo,1,
+387,director,Roy Burdine,1,
+387,writer,Mairghread Scott,1,
+388,director,Young Ki Yoon,1,
+388,writer,Geoffrey Thorne,1,
+389,director,Jae Woo Kim,1,
+389,writer,Matt Wayne,1,
+390,director,Roy Burdine,1,
+390,writer,Gavin Hignight,1,
+391,director,Young Ki YoonJae Woo Kim,1,
+391,writer,Kevin Burke,1,
+391,writer,Chris Doc Wyatt,2,
+392,director,Young Ki Yoon,1,
+392,writer,Henry Gilroy,1,
+393,director,Jae Woo Kim,1,
+393,writer,Elliott Casey,1,
+394,director,Young Ki YoonJae Woo Kim,1,
+394,writer,Jacob SemahnKevin Burke,1,
+394,writer,Chris Doc Wyatt,2,
+395,director,Young Ki YoonJae Woo Kim,1,
+395,writer,Kevin Burke,1,
+395,writer,Chris Doc Wyatt,2,
+396,director,Roy BurdineYoung Ki YoonJae Woo Kim,1,
+396,writer,Joshua FineJacob SemahnKevin Burke,1,
+396,writer,Chris Doc Wyatt,2,
+397,director,Young Ki YoonJae Woo KimRoy Burdine,1,
+397,writer,Paul GiacoppoJoshua Hale FialkovMarty Isenberg,1,
+398,director,Roy BurdineYoung Ki YoonJae Woo KimRoy Burdine,1,
+398,writer,Andrew RobinsonKevin Burke,1,
+398,writer,Chris Doc WyattHenry GilroyKevin Burke,2,
+398,writer,Chris Doc Wyatt,3,
+399,director,Dan Duncan,1,393
+399,writer,Kevin Shinick,1,391
+400,director,Philip Pignotti,1,392
+400,writer,Kevin Shinick,1,391
+401,director,Philip Pignotti,1,392
+401,writer,Kevin Shinick,1,391
+402,director,Sol Choi,1,
+402,writer,Kevin Shinick,1,391
+403,director,Dan Duncan,1,393
+403,writer,Mike Fasolo,1,
+404,director,Sol Choi,1,
+404,writer,Sterling Gates,1,
+405,director,Dan Duncan,1,393
+405,writer,J.T. Krul,1,
+406,director,Sol Choi,1,
+406,writer,Kevin Burke,1,
+406,writer,Chris Doc Wyatt,2,
+407,director,Dan Duncan,1,393
+407,writer,Kevin Shinick,1,391
+408,director,Dan Duncan,1,393
+408,writer,Kevin Shinick,1,391
+409,director,Sol Choi,1,
+409,writer,Chris Cox,1,
+409,writer,Kevin Shinick,2,391
+410,director,Dan Duncan,1,393
+410,writer,Kevin Burke,1,
+410,writer,Chris Doc Wyatt,2,
+411,director,Sol Choi,1,
+411,writer,Sterling Gates,1,
+412,director,Dan Duncan,1,393
+412,writer,Kevin Shinick,1,391
+412,writer,Paul Giacoppo,2,
+413,director,Sol Choi,1,
+413,writer,Ben Joseph,1,
+414,director,Sol Choi,1,
+414,writer,Kevin Burke,1,
+414,writer,Chris Doc Wyatt,2,
+415,director,Dan Duncan,1,393
+415,writer,Mike Fasolo,1,
+416,director,Sol Choi,1,
+416,writer,Kevin Shinick,1,391
+417,director,Dan Duncan,1,393
+417,writer,Sterling Gates,1,
+418,director,Sol Choi,1,
+418,writer,Chris Cox,1,
+418,writer,Kevin Shinick,2,391
+419,director,Dan Duncan,1,393
+419,writer,Kevin Burke,1,
+419,writer,Chris Doc Wyatt,2,
+420,director,Sol Choi,1,
+420,writer,Jacob Semahn,1,
+421,director,Dan Duncan,1,393
+421,writer,Zach Craley,1,
+422,director,Sol Choi,1,
+422,writer,Kevin Shinick,1,391
+423,director,Dan Duncan,1,393
+423,writer,Kevin Burke,1,
+423,writer,Chris Doc Wyatt,2,
+424,director,Sol Choi,1,
+424,writer,Kevin Shinick,1,391
+425,director,Dan Duncan,1,393
+425,writer,Kevin Burke,1,
+425,writer,Chris Doc Wyatt,2,
+426,director,Sol Choi,1,
+426,writer,Kevin Burke,1,
+426,writer,Chris Doc Wyatt,2,
+427,director,Dan Duncan,1,393
+427,writer,Kevin Burke,1,
+427,writer,Chris Doc Wyatt,2,
+428,director,Sol Choi,1,
+428,writer,Mark Hoffmeier,1,525
+429,director,Dan Duncan,1,393
+429,writer,Josh Haber,1,
+430,director,Sol Choi,1,
+430,writer,Jacob Semahn,1,
+431,director,Dan Duncan,1,393
+431,writer,Kevin Burke,1,
+431,writer,Chris Doc Wyatt,2,
+432,director,Sol Choi,1,
+432,writer,J.M. DeMatteis,1,
+433,director,Dan Duncan,1,393
+433,writer,Jacob Semahn,1,
+434,director,Sol Choi,1,
+434,writer,Gavin Hignight,1,
+435,director,Dan Duncan,1,393
+435,writer,Jennifer Muro,1,
+436,director,Sol Choi,1,
+436,writer,Jacob Semahn,1,
+437,director,Dan Duncan,1,393
+437,writer,Kevin Burke,1,
+437,writer,Chris Doc Wyatt,2,
+438,director,Sol Choi,1,
+438,writer,Danielle Wolff,1,
+439,director,Dan Duncan,1,393
+439,writer,Kevin Burke,1,
+439,writer,Chris Doc Wyatt,2,
+440,director,Sol Choi,1,
+440,writer,Grant Moran,1,
+441,director,Dan Duncan,1,393
+441,writer,Jacob Semahn,1,
+442,director,Sol Choi,1,
+442,writer,Jacob Semahn,1,
+443,director,Dan Duncan,1,393
+443,director,Eric Elrod,2,
+443,writer,Kevin Burke,1,
+443,writer,Chris Doc Wyatt,2,
+444,director,Sol Choi,1,
+444,writer,Liza Palmer,1,
+445,director,Eric Elrod,1,
+445,writer,Shannon Eric Denton,1,
+446,director,Sol Choi,1,
+446,writer,J. M. DeMatteis,1,
+447,director,Eric Elrod,1,
+447,writer,Gavin Hignight,1,
+448,director,Sol Choi,1,
+448,writer,Jacob Semahn,1,
+449,director,Eric Elrod,1,
+449,writer,Kevin Burke,1,
+449,writer,Chris Doc Wyatt,2,
+450,director,Sol Choi,1,
+450,writer,Kevin Burke,1,
+450,writer,Chris Doc Wyatt,2,
+451,director,Tim Eldred,1,
+451,director,Sol Choi,2,
+451,writer,Kevin Burke,1,
+451,writer,Chris Doc Wyatt,2,
+452,director,Tim Eldred,1,
+452,director,Sol Choi,2,
+452,writer,Merrill Hagan,1,
+452,writer,Denise Downer,2,
+453,director,Tim Eldred,1,
+453,director,Sol Choi,2,
+453,writer,Zach Craley,1,
+453,writer,J. M. DeMatteis,2,
+454,director,Tim Eldred,1,
+454,director,Sol Choi,2,
+454,writer,Jim Martin,1,
+454,writer,Gavin Hignight,2,
+455,director,Tim Eldred,1,
+455,director,Sol Choi,2,
+455,writer,Marty Isenberg,1,
+455,writer,Mae Catt,2,
+456,director,Tim Eldred,1,
+456,director,Sol Choi,2,
+456,writer,Kevin Burke,1,
+456,writer,Chris Doc Wyatt,2,
+457,writer,Ashley Mendoza / Sib Ventress,1,
+458,writer,Ken Kristensen / Henry Gifford,1,
+459,writer,Kent Redeker / Henry Gifford,1,
+460,writer,Mark Drop / Josh Haber,1,
+461,writer,Kent Redeker / Henry Gifford,1,
+462,writer,Kerri Grant / Josh Haber,1,
+463,writer,Liza Palmer / Robert Vargas,1,
+464,writer,Mark Drop / Jonathan Hurwitz,1,
+465,writer,Liza Palmer / Claudia Silver,1,
+466,writer,Liza Palmer / Claudia Silver,1,
+467,writer,Jonathan Hurwitz / Baljeet Rai,1,
+468,writer,Robert Vargas,1,
+468,writer,Mike Kubat / Robert Vargas,2,
+469,writer,Baljeet Rai / Gene Laufenberg,1,
+470,writer,Henry Gifford,1,
+470,writer,Claudia Silver / Gene Laufenberg,2,
+470,writer,Claudia Silver,3,
+471,writer,Henry Gifford,1,
+472,writer,Claudia Silver / Mike Kubat,1,
+473,writer,Mike Kubat,1,
+474,writer,Mike Kubat / Bart Jennett,1,
+475,writer,Henry Gifford / Baljeet Rai,1,
+476,writer,Mike Kubat / Claudia Silver,1,
+477,writer,Claudia Silver / Mike Kubat,1,
+478,writer,Mike Kubat / Bart Jennett,1,
+479,writer,Claudia Silver / Mike Kubat,1,
+480,writer,Baljeet Rai,1,
+480,writer,Claudia Silver / Henry Gifford,2,
+481,writer,Alexa Harzan,1,
+482,writer,Mike Kubat,1,
+483,writer,Mike Kubat,1,
+484,writer,Claudia Silver / Sib Ventress,1,
+485,writer,Mike Kubat / Alexa Harzan,1,
+486,writer,Claudia Silver / Mike Kubat,1,
+487,writer,Bart Jennett,1,
+488,writer,Mike Kubat / Claudia Silver,1,
+489,writer,Alexa Harzan,1,
+490,writer,Claudia Silver / Mike Kubat,1,
+491,writer,Claudia Silver,1,
+492,writer,Alexa Harzan / Mike Kubat,1,
+495,writer,Claudia Silver,1,
+496,writer,Mike Kubat,1,
+498,writer,Claudia Silver,1,
+499,writer,Mike Kubat / Claudia Silver,1,
+500,writer,Mike Kubat,1,
+501,writer,Claudia Silver / Mike Kubat,1,
+503,writer,Daka Hermon,1,
+506,writer,Daka Hermon,1,
+507,writer,Mike Kubat,1,
+508,writer,Mike Kubat / Alexa Harzan,1,
+509,writer,Mike Kubat / Bart Jennett,1,
+510,writer,Claudia Silver / Daka Hermon,1,
+511,writer,Greg Johnson,1,
+512,writer,Alexa Harzan,1,
+513,writer,Daka Hermon,1,
+514,writer,Alexa Harzan,1,
+515,writer,Daka Hermon / Greg Johnson,1,
+516,writer,Alexa Harzan,1,
+517,writer,Greg Johnson / Alexa Harzan,1,
+519,writer,Greg Johnson / Daka Hermon,1,
+520,writer,Alexa Harzan,1,
+521,writer,Daka Hermon / Greg Johnson,1,
+522,writer,Alexa Harzan,1,
+523,writer,Greg Johnson / Daka Hermon,1,
+524,writer,Alexa Harzan,1,
+525,writer,Greg Johnson,1,
+526,writer,Alexa Harzan,1,
+527,writer,Greg Johnson / Alexa Harzan,1,
+528,writer,Claudia Silver / Danielle Kreger,1,
+529,writer,Greg Johnson / Daka Hermon,1,
+530,writer,Greg Johnson,1,
+531,writer,Daka Hermon,1,
+532,writer,Peter Gaffney / Daka Hermon,1,
+533,writer,Greg Johnson / Alexa Harzan,1,
+534,writer,Claudia Silver / Daka Hermon,1,
+535,writer,Daka Hermon,1,
+536,writer,Greg Johnson,1,
+537,writer,Alexa Harzan / Greg Johnson,1,
+538,writer,Daka Hermon / Claudia Silver,1,
+539,writer,Greg Johnson,1,
+540,writer,Danielle Kreger,1,
+542,writer,Alexa Harzan,1,
+543,writer,Danielle Kreger,1,
+545,writer,Daka Hermon,1,
+546,writer,Greg Johnson / Alexa Harzan,1,
+547,writer,Greg Johnson,1,
+548,writer,Daka Hermon,1,
+549,writer,Daka Hermon / Claudia Silver,1,
+550,writer,Alexa Harzan,1,
+551,writer,Greg Johnson / Alexa Harzan,1,
+552,writer,Daka Hermon,1,
+553,writer,Becca Topol,1,
+553,writer,Alexa Harzan / Greg Johnson,2,
+555,writer,Daka Hermon,1,
+556,writer,Alexa Harzan,1,
+556,writer,Bart Jennett / Greg Johnson,2,
+557,writer,Claudia Silver / Daka Hermon,1,
+558,writer,Greg Johnson / {{nowrap|}},1,
+560,writer,{{nowrap|}} / Claudia Silver,1,
+561,writer,Sib Ventress / Danielle Kreger,1,
+562,writer,Greg Johnson,1,
+563,writer,Claudia Silver,1,
+564,writer,Greg Johnson,1,
+570,director,Harry Bradbeer,1,414
+570,writer,Oren Uziel,1,412
+571,director,Harry Bradbeer,1,414
+571,writer,Christopher Chen,1,
+572,director,Nzingha Stewart,1,
+572,writer,Megan Liao,1,
+572,writer,Steve Lightfoot,2,413
+573,director,Nzingha Stewart,1,
+573,writer,Tori Sampson,1,
+574,director,Alethea Jones,1,
+574,writer,Jennifer Frazin,1,
+574,writer,Steve Lightfoot,2,413
+575,director,Alethea Jones,1,
+575,writer,Jack Henderson,1,
+576,director,Greg Yaitanes,1,
+576,writer,Bruce Marshall Romans,1,
+577,director,Greg Yaitanes,1,
+577,writer,Oren Uziel,1,412

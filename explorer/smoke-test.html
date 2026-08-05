@@ -281,10 +281,15 @@ f.onload = async () => {
   // that names a thing has to be clickable.
   const INERT = /^(—|–|Won|Nominated|yes|no|n\/a|score|song|[+\-–]?[\d.,]+(\s*(min|M|K|×|yrs|\/\s*[\d.,]+|out of \d+))?|\$[\d.,]+[KMB]?|\d{4}\s*[–-]\s*\d{4}|\d+\s*\/\s*\d+)$/i;
   const dead = [];
+  const SPIDERMAN_CREATOR_ID = w.SPIDERMAN_DATA.comic_creators.find((c) => c.name === "Stan Lee").id;
+  const SPIDERMAN_COMIC_ID = w.SPIDERMAN_DATA.comics.find((c) => c.origin === "wikidata" && c.credits?.length > 3).id;
   for (const h of ["#/works", "#/characters", "#/people", "#/work/13", "#/work/28", "#/work/40",
                    "#/character/27", "#/person/35", "#/franchise/MCU", "#/studio/" + encodeURIComponent("Columbia Pictures"),
                    "#/platform/" + encodeURIComponent("PlayStation 2"), "#/publication/IGN", "#/award/Academy%20Awards",
-                   "#/role/composer", "#/year/2002", "#/facet/rating/PG-13", "#/analysis"]) {
+                   "#/role/composer", "#/year/2002", "#/facet/rating/PG-13", "#/analysis",
+                   // v4's pages hold to the same rule
+                   "#/creators", "#/creator/" + SPIDERMAN_CREATOR_ID, "#/comicrow/" + SPIDERMAN_COMIC_ID,
+                   "#/comic/" + encodeURIComponent("Amazing Fantasy"), "#/studio/" + encodeURIComponent("Marvel Studios")]) {
     await nav(h);
     for (const td of qa("td, .deflist .v")) {
       const t = td.textContent.trim().replace(/\s+/g, " ");
@@ -298,7 +303,8 @@ f.onload = async () => {
   // The new pages must not push the page sideways either.
   const wide = [];
   for (const h of ["#/publications", "#/comics", "#/roles", "#/publication/IGN", "#/comic/" + encodeURIComponent("The Amazing Spider-Man"),
-                   "#/role/actor", "#/year/2002", "#/facet/rating/PG-13", "#/find/" + encodeURIComponent("Stan Lee"), "#/person/35", "#/character/27"]) {
+                   "#/role/actor", "#/year/2002", "#/facet/rating/PG-13", "#/find/" + encodeURIComponent("Stan Lee"), "#/person/35", "#/character/27",
+                   "#/creators", "#/creator/" + SPIDERMAN_CREATOR_ID, "#/comicrow/" + SPIDERMAN_COMIC_ID]) {
     await nav(h);
     if (d.documentElement.scrollWidth > d.documentElement.clientWidth + 1) wide.push(h + " " + d.documentElement.scrollWidth);
   }
@@ -474,6 +480,90 @@ f.onload = async () => {
   const hi = Number(qa(".kpi").find((k) => k.querySelector(".label").textContent === "Range").querySelector(".value").textContent.split("–")[1]);
   const mean = Number(meanTiles[0].querySelector(".value").textContent.split(" ")[0]);
   check("outlet mean sits inside the range it filed", mean >= lo && mean <= hi, mean + " in " + lo + "–" + hi);
+
+  // ---- v4: the comics layer, the creators, and the character graph ----
+
+  const DATA = w.SPIDERMAN_DATA;
+  check("comics shipped", DATA.comics.length > 100, DATA.comics.length);
+  check("creators shipped", DATA.comic_creators.length > 100, DATA.comic_creators.length);
+
+  await nav("#/creators");
+  check("creators list renders", qa("tbody tr").length > 50, qa("tbody tr").length);
+  check("creators list is sorted by comics", q("thead th .arrow"));
+
+  // The most-credited creator opens onto the comics behind the number.
+  const topCreator = [...DATA.comic_creators].sort((a, b) => b.id - a.id);
+  const stan = DATA.comic_creators.find((c) => c.name === "Stan Lee");
+  await nav("#/creator/" + stan.id);
+  const cComics = qa(".kpi").find((k) => k.querySelector(".label")?.textContent === "Comics");
+  const nComics = Number(cComics.querySelector(".value").textContent);
+  check("Stan Lee has a body of work", nComics > 20, nComics);
+  await nav(cComics.getAttribute("href"));
+  check("comics tile lands on the comics table",
+        Number(d.getElementById("comics").querySelector("h2 .n").textContent) === nComics,
+        d.getElementById("comics")?.querySelector("h2 .n")?.textContent + " vs " + nComics);
+  check("and he is linked to his screen credits", !!qa("#app .meta-line button").length);
+
+  // A resolved issue carries its credits; a parsed one says so instead of faking them.
+  const wdIssue = DATA.comics.find((c) => c.origin === "wikidata" && c.credits && c.credits.length > 3);
+  await nav("#/comicrow/" + wdIssue.id);
+  check("a Wikidata issue shows its credits", !!d.getElementById("credits"),
+        q("#app h1")?.textContent);
+  check("its credits name people you can open",
+        qa("#credits button.row-link").length > 2, qa("#credits button.row-link").length);
+  const parsed = DATA.comics.find((c) => c.origin === "parsed");
+  await nav("#/comicrow/" + parsed.id);
+  check("a parsed issue admits it has no metadata",
+        /Wikidata has no item/.test(q("#app .note")?.textContent || ""),
+        q("#app .note")?.textContent?.slice(0, 40));
+  check("but still names its series", !!qa("#app .meta-line button.row-link").length);
+
+  // A citation string now opens onto the issues it resolved to.
+  const cited = [...w.SPIDERMAN_DATA.works].flatMap((x) => x.sources || []).find((s) => (s.comic_ids || []).length > 1);
+  await nav("#/comic/" + encodeURIComponent(cited.comic));
+  const issuesBlock = d.getElementById("issues");
+  check("a citation lists the issues behind it", !!issuesBlock, cited.comic);
+  check("and each issue opens", issuesBlock && qa("#issues button.row-link").length > 0);
+
+  // The character graph: internal edges are links, external ones are honest text.
+  const linked = DATA.characters.find((c) => (c.relations || []).some((r) => r.other_id) && (c.relations || []).some((r) => !r.other_id));
+  await nav("#/character/" + linked.id);
+  const relBlock = qa("#app section.block").find((s2) => s2.querySelector("h2")?.textContent.startsWith("Relationships"));
+  check("character page has a relationships block", !!relBlock, linked.name);
+  check("in-dataset relations are clickable", relBlock.querySelectorAll("button.chip").length > 0);
+  check("out-of-dataset relations are not pretending to be",
+        relBlock.querySelectorAll("span.chip.muted").length > 0);
+  const relN = Number(relBlock.querySelector("h2 .n").textContent);
+  check("the relationship count matches the chips",
+        relBlock.querySelectorAll(".chip").length === relN,
+        relBlock.querySelectorAll(".chip").length + " vs " + relN);
+
+  // Clicking a relation lands on that character.
+  const chip = relBlock.querySelector("button.chip");
+  const chipName = chip.textContent;
+  chip.click(); await wait(200);
+  check("a relation opens the other character", q("#app h1")?.textContent === chipName,
+        q("#app h1")?.textContent + " vs " + chipName);
+
+  // v4 filled two columns the README used to list as always-NULL.
+  await nav("#/studio/" + encodeURIComponent("Marvel Studios"));
+  check("studio page shows the parent company v4 filled",
+        /Disney/.test(d.getElementById("app").textContent), "no parent shown");
+  await nav("#/platform/" + encodeURIComponent("Atari 2600"));
+  check("platform page shows its manufacturer",
+        qa(".kpi").some((k) => k.querySelector(".label")?.textContent === "Made by"),
+        qa(".kpi").map((k) => k.querySelector(".label")?.textContent).join(","));
+
+  // Every new page must still keep to the no-dead-ends rule.
+  for (const h of ["#/creators", "#/creator/" + stan.id, "#/comicrow/" + wdIssue.id]) {
+    await nav(h);
+    const dead = qa("#app .kpi[href]").filter((k) => {
+      const id = (k.getAttribute("href").split("at=")[1] || "").split("&")[0];
+      return id && !d.getElementById(id);
+    });
+    check("no tile on " + h + " points at a missing block", dead.length === 0,
+          dead.map((x) => x.getAttribute("href")).join(","));
+  }
 
   log(errs.length ? "FAIL js-errors :: " + errs.join(" | ") : "PASS no-js-errors");
  } catch (e) {

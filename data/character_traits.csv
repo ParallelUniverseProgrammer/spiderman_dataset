@@ -1,0 +1,713 @@
+identity_id,trait,value
+2,ability,superhuman strength
+2,ability,superhuman speed
+2,ability,healing factor
+2,ability,precognition
+2,ability,superhuman agility / reflexes
+2,character_type,superhero
+2,character_type,supervillain
+2,occupation,waiter
+2,occupation,teaching assistant
+2,occupation,bodyguard
+2,occupation,superhero
+2,occupation,vigilante
+2,occupation,criminal
+2,occupation,scientist
+2,occupation,cook
+2,occupation,bartender
+2,occupation,janitor
+2,occupation,mechanic
+2,occupation,inventor
+2,occupation,school teacher
+2,occupation,photographer
+3,ability,probability manipulation
+3,character_type,superhero
+3,character_type,supervillain
+3,eye_color,green
+3,hair_color,white hair
+3,hair_color,platinum blond hair
+3,height,5.10 m
+3,occupation,private investigator
+3,occupation,crime boss
+3,occupation,criminal
+3,occupation,superhero
+3,occupation,detective
+3,occupation,bounty hunter
+3,occupation,righteous thief
+4,character_type,supervillain
+5,ability,superhuman strength
+5,ability,superhuman endurance
+5,ability,superhuman speed
+5,occupation,military personnel
+6,ability,superhuman strength
+6,ability,superhuman speed
+6,ability,healing factor
+6,ability,superhuman durability
+6,ability,superhuman agility / reflexes
+6,character_type,supervillain
+6,height,1.85 m
+6,occupation,serial killer
+7,ability,shapeshifting
+7,character_type,supervillain
+7,occupation,actor
+7,occupation,criminal
+7,occupation,crime boss
+7,occupation,spy
+8,ability,superhuman senses
+8,character_type,superhero
+8,medical_condition,blindness
+8,occupation,lawyer
+8,occupation,superhero
+8,occupation,ninja
+8,occupation,martial artist
+8,occupation,vigilante
+8,religion,Catholicism
+8,sport,karate
+9,character_type,supervillain
+9,eye_color,brown
+9,hair_color,brown hair
+9,height,1.82 m
+9,occupation,ruler
+9,occupation,adventurer
+9,occupation,magician
+10,character_type,mad scientist
+10,character_type,supervillain
+11,ability,spell
+11,character_type,superhero
+11,height,1.89 m
+11,occupation,neurosurgeon
+11,occupation,magician
+11,occupation,Dimension Traveler
+12,character_type,antihero
+12,eye_color,white
+12,height,1.90 m
+13,ability,electrokinesis
+13,character_type,supervillain
+13,occupation,criminal
+13,occupation,lineworker
+14,character_type,antihero
+14,ethnic_group,Sicilian Americans
+14,occupation,military personnel
+14,occupation,vigilante
+14,occupation,instructor
+14,occupation,soldier
+14,religion,Catholicism
+14,religion,lapsed Catholic
+15,ability,superhuman strength
+15,ability,superhuman speed
+15,ability,healing factor
+15,ability,superhuman durability
+15,character_type,supervillain
+15,occupation,businessperson
+16,occupation,student
+18,ability,healing factor
+18,character_type,superhero
+18,occupation,scientist
+19,character_type,supervillain
+19,occupation,businessperson
+19,occupation,drug trafficker
+19,occupation,crime boss
+19,occupation,manager
+19,occupation,criminal
+20,ability,superhuman strength
+20,ability,superhuman speed
+20,character_type,supervillain
+20,occupation,hunter
+20,occupation,mercenary
+21,ability,superhuman strength
+21,ability,healing factor
+21,ability,superhuman speed
+21,character_type,supervillain
+21,occupation,biologist
+21,occupation,medical officer
+21,religion,Catholicism
+22,ability,superhuman strength
+22,ability,superhuman speed
+22,ability,superhuman endurance
+22,ability,superhuman agility / reflexes
+22,ability,superhuman durability
+22,ability,healing factor
+22,ability,precognition
+22,ability,telepathy
+22,ability,astral projection
+22,ability,clairvoyance
+22,character_type,superhero
+22,eye_color,blue
+22,hair_color,strawberry blond hair
+22,occupation,government agent
+22,occupation,clairvoyant
+23,ability,superhuman strength
+23,ability,superhuman speed
+23,ability,healing factor
+23,ability,superhuman agility / reflexes
+23,ability,superhuman senses
+23,ability,superhuman endurance
+23,character_type,superhero
+23,character_type,supervillain
+23,occupation,biochemist
+23,occupation,hematologist
+24,hair_color,brown hair
+25,character_type,superhero
+25,ethnic_group,African Americans
+25,ethnic_group,Puerto Ricans
+25,eye_color,brown
+25,hair_color,black hair
+25,height,1.73 m
+25,occupation,superhero
+25,occupation,student
+26,character_type,supervillain
+27,ability,superhuman agility / reflexes
+27,hair_color,brown hair
+27,height,1.78 m
+27,occupation,photographer
+27,occupation,scientist
+27,occupation,teacher
+27,occupation,superhero
+27,occupation,inventor
+27,occupation,businessperson
+28,ability,superhuman strength
+28,ability,superhuman speed
+28,ability,superhuman durability
+28,character_type,supervillain
+28,occupation,criminal
+29,character_type,superhero
+29,character_type,supervillain
+29,occupation,criminal
+29,occupation,superhero
+30,ability,superhuman strength
+30,ability,superhuman speed
+30,ability,superhuman durability
+30,ability,superhuman agility / reflexes
+30,character_type,supervillain
+30,occupation,private investigator
+30,occupation,government agent
+30,occupation,criminal
+30,occupation,contract killer
+31,character_type,supervillain
+31,occupation,thief
+31,occupation,contract killer
+32,ability,sonic scream
+32,character_type,supervillain
+32,occupation,serial killer
+32,occupation,drug trafficker
+33,ability,superhuman strength
+33,ability,superhuman speed
+33,ability,superhuman agility / reflexes
+33,ability,superhuman durability
+33,character_type,superhero
+33,occupation,superhero
+33,occupation,vigilante
+33,occupation,intern
+33,occupation,student
+34,character_type,superhero
+34,occupation,mercenary
+34,occupation,businessperson
+35,ability,superhuman strength
+35,ability,superhuman speed
+35,character_type,superhero
+35,occupation,student
+35,occupation,superhero
+37,ability,superhuman strength
+37,ability,superhuman speed
+37,ability,superhuman agility / reflexes
+37,ability,healing factor
+37,ability,superhuman endurance
+37,occupation,detective
+37,occupation,superhero
+37,occupation,private investigator
+37,occupation,vigilante
+38,occupation,scientist
+42,character_type,supervillain
+43,character_type,supervillain
+45,character_type,supervillain
+46,ability,healing factor
+46,ability,superhuman senses
+46,ability,superhuman agility / reflexes
+46,ability,superhuman strength
+46,ability,superhuman longevity
+46,ability,extrasensory perception
+46,ability,superhuman speed
+46,ability,superhuman durability
+46,character_type,superhero
+46,eye_color,blue
+46,hair_color,black hair
+46,height,5.25 m
+46,occupation,military personnel
+46,occupation,instructor
+46,occupation,bartender
+46,occupation,bouncer
+46,occupation,spy
+46,occupation,mercenary
+46,occupation,sailor
+46,occupation,miner
+46,occupation,superhero
+46,sport,karate
+48,character_type,superhero
+48,sport,taekwondo
+53,ability,superhuman strength
+53,ability,superhuman speed
+53,ability,superhuman agility / reflexes
+53,ability,superhuman durability
+53,character_type,mad scientist
+53,character_type,supervillain
+53,occupation,inventor
+53,occupation,scientist
+57,ability,superhuman strength
+57,ability,superhuman speed
+57,ability,healing factor
+57,ability,superhuman durability
+57,ability,superhuman agility / reflexes
+57,character_type,superhero
+57,character_type,supervillain
+57,occupation,supervillain
+57,occupation,superhero
+57,occupation,lawyer
+58,ability,superhuman strength
+58,ability,superhuman agility / reflexes
+58,character_type,superhero
+58,occupation,student
+58,occupation,intern
+58,occupation,hunter
+58,occupation,superhero
+60,occupation,psychologist
+63,character_type,supervillain
+63,sport,karate
+64,ability,superhuman strength
+64,ability,superhuman agility / reflexes
+64,ability,superhuman senses
+64,ability,superhuman speed
+64,ability,superhuman durability
+64,ability,superhuman endurance
+64,ability,healing factor
+64,character_type,superhero
+64,occupation,geneticist
+64,occupation,biochemist
+64,occupation,university teacher
+64,occupation,superhero
+65,character_type,superhero
+65,character_type,supervillain
+67,occupation,reporter
+67,occupation,secretary
+68,character_type,supervillain
+69,ability,superhuman agility / reflexes
+69,ability,superhuman senses
+69,character_type,superhero
+69,ethnic_group,black people
+69,occupation,superhero
+70,occupation,spy
+70,occupation,school teacher
+70,occupation,fashion designer
+70,occupation,ballerina
+70,occupation,superhero
+70,sport,karate
+71,ability,superhuman strength
+71,ability,healing factor
+71,ability,superhuman speed
+71,ability,superhuman senses
+71,ability,superhuman agility / reflexes
+71,ability,superhuman durability
+71,ability,superhuman longevity
+71,occupation,vampire hunter
+71,occupation,swordfighter
+71,occupation,martial artist
+71,sport,taekwondo
+72,character_type,supervillain
+72,occupation,anthropologist
+72,occupation,inventor
+74,eye_color,brown
+74,hair_color,black hair
+77,character_type,supervillain
+77,occupation,government agent
+77,occupation,contract killer
+77,occupation,thief
+77,occupation,pitcher
+77,occupation,mercenary
+78,occupation,criminal
+79,character_type,superhero
+79,hair_color,blond hair
+79,height,1.80 m
+79,occupation,aircraft pilot
+79,occupation,editor-in-chief
+79,occupation,journalist
+80,character_type,supervillain
+82,character_type,supervillain
+87,ability,optic blasts
+87,character_type,superhero
+87,eye_color,brown
+87,hair_color,brown hair
+87,occupation,aircraft pilot
+87,occupation,head teacher
+87,occupation,student
+87,occupation,announcer
+87,occupation,superhero
+91,ability,healing factor
+91,character_type,antihero
+91,character_type,superhero
+91,occupation,soldier
+91,occupation,mercenary
+92,character_type,superhero
+94,ability,superhuman strength
+94,ability,superhuman durability
+94,ability,superhuman agility / reflexes
+94,ability,pyrokinesis
+94,ability,magic in fiction
+94,character_type,supervillain
+94,occupation,mass murderer
+104,occupation,professional wrestler
+107,ability,superhuman speed
+107,ability,superhuman agility / reflexes
+107,ability,superhuman senses
+107,ability,superhuman strength
+107,character_type,superhero
+107,occupation,businessperson
+109,ability,flight
+109,ability,pyrokinesis
+109,character_type,superhero
+109,occupation,superhero
+109,occupation,student
+110,character_type,superhero
+110,occupation,soldier
+110,occupation,student
+111,ability,levitation
+111,ability,teleportation
+111,ability,force field
+111,ability,time travel
+111,ability,healing factor
+111,ability,telepathy
+111,ability,immortality in fiction
+111,ability,superhuman strength
+111,ability,superhuman durability
+111,ability,superhuman speed
+111,ability,telekinesis
+111,ability,reality warping
+111,character_type,supervillain
+112,ability,energy manipulation
+112,character_type,superhero
+112,hair_color,brown hair
+112,occupation,thief
+112,occupation,superhero
+115,occupation,police officer
+116,ability,superhuman strength
+116,ability,pyrokinesis
+116,ability,immortality in fiction
+116,ability,healing factor
+116,character_type,superhero
+116,occupation,circus performer
+116,occupation,accountant
+117,ability,superhuman strength
+117,ability,superhuman speed
+117,ability,healing factor
+117,ability,superhuman durability
+117,character_type,supervillain
+117,occupation,government agent
+117,occupation,criminal
+117,occupation,businessperson
+119,character_type,supervillain
+122,character_type,supervillain
+122,occupation,crime boss
+122,occupation,loan shark
+122,occupation,contract killer
+122,occupation,mob enforcer
+123,occupation,bodyguard
+125,character_type,superhero
+125,occupation,archer
+126,ability,clairvoyance
+126,ability,astral projection
+126,ability,telepathy
+126,ability,technopathy
+126,ability,telekinesis
+126,character_type,supervillain
+126,occupation,geneticist
+126,occupation,inventor
+127,ability,superhuman strength
+127,character_type,supervillain
+127,occupation,mercenary
+127,occupation,criminal
+127,occupation,mob enforcer
+127,occupation,government agent
+127,occupation,fighter pilot
+127,occupation,soldier
+128,height,3000 m
+129,ability,pyrokinesis
+129,ability,flight
+129,character_type,superhero
+129,occupation,actor
+129,occupation,astronaut
+129,occupation,superhero
+129,occupation,firefighter
+129,occupation,chief financial officer
+129,occupation,mechanic
+129,occupation,racing automobile driver
+129,occupation,circus performer
+129,occupation,motorcyclist
+131,ability,hydrokinesis
+131,character_type,supervillain
+131,occupation,criminal
+131,occupation,employee
+131,occupation,crew member
+132,ability,cryokinesis
+132,character_type,superhero
+132,occupation,accountant
+132,occupation,teacher
+132,occupation,student
+132,occupation,superhero
+135,character_type,superhero
+135,occupation,bodyguard
+135,occupation,private investigator
+135,occupation,martial artist
+135,occupation,superhero
+135,occupation,spy
+135,occupation,vigilante
+136,ability,superhuman strength
+136,ability,flight
+136,ability,energy manipulation
+136,character_type,superhero
+136,eye_color,blue
+136,hair_color,black hair
+136,height,6.0833 m
+136,occupation,inventor
+136,occupation,businessperson
+136,occupation,superhero
+137,occupation,reporter
+137,occupation,publisher
+137,occupation,editor-in-chief
+137,occupation,chief executive officer
+137,occupation,philanthropist
+142,character_type,superhero
+144,occupation,police officer
+146,ability,superhuman strength
+146,ability,healing factor
+146,character_type,superhero
+146,occupation,lawyer
+146,occupation,superhero
+149,ability,superhuman strength
+149,ability,superhuman speed
+149,ability,superhuman agility / reflexes
+149,ability,superhuman durability
+149,character_type,superhero
+149,occupation,superhero
+149,occupation,vigilante
+149,occupation,musician
+149,occupation,student
+150,character_type,superhero
+150,occupation,astronaut
+150,occupation,aircraft pilot
+155,ability,superhuman strength
+155,ability,superhuman speed
+155,ability,precognition
+155,ability,healing factor
+155,ability,superhuman agility / reflexes
+155,character_type,superhero
+155,occupation,contract killer
+155,occupation,superhero
+155,occupation,vigilante
+155,occupation,geneticist
+157,character_type,supervillain
+157,occupation,time traveller
+160,character_type,supervillain
+161,character_type,supervillain
+163,occupation,chief executive officer
+164,ability,magic in fiction
+164,character_type,antihero
+164,character_type,trickster
+164,character_type,supervillain
+166,ability,superhuman strength
+166,ability,superhuman durability
+166,character_type,superhero
+166,ethnic_group,black people
+166,occupation,superhero
+166,occupation,bodyguard
+166,occupation,mercenary
+166,occupation,private investigator
+167,occupation,con artist
+171,ability,magnetism manipulation
+171,ability,electromagnetism manipulation
+171,character_type,superhero
+171,character_type,supervillain
+171,occupation,ruler
+171,occupation,head teacher
+171,occupation,spy
+171,occupation,orderly
+171,religion,Judaism
+174,occupation,intelligence agent
+174,occupation,soldier
+175,ability,superhuman strength
+175,ability,superhuman agility / reflexes
+175,ability,mind control
+175,character_type,supervillain
+175,eye_color,glowing eye
+175,occupation,philanthropist
+175,occupation,crime boss
+178,eye_color,green
+178,hair_color,red hair
+178,occupation,actor
+178,occupation,model
+178,occupation,television presenter
+178,occupation,stage actor
+178,religion,Christianity
+182,ability,flight
+182,ability,superhuman strength
+182,ability,superhuman speed
+182,ability,superhuman agility / reflexes
+182,ability,telepathy
+182,ability,superhuman durability
+182,character_type,superhero
+182,occupation,student
+182,occupation,superhero
+183,character_type,supervillain
+184,ability,superhuman strength
+184,ability,superhuman speed
+184,ability,healing factor
+184,ability,superhuman agility / reflexes
+184,ability,superhuman senses
+184,character_type,superhero
+184,occupation,geneticist
+184,occupation,chief executive officer
+184,occupation,vigilante
+184,occupation,superhero
+187,ability,elasticity
+187,character_type,superhero
+187,occupation,explorer
+187,occupation,adventurer
+187,occupation,professor
+187,occupation,student
+189,character_type,superhero
+189,ethnic_group,American Jews
+189,medical_condition,dissociative identity disorder
+190,ability,superhuman strength
+190,ability,superhuman durability
+190,character_type,supervillain
+194,character_type,superhero
+196,occupation,reporter
+198,occupation,spy
+198,occupation,soldier
+198,occupation,instructor
+198,occupation,boxer
+198,occupation,spymaster
+198,sport,taekwondo
+199,character_type,superhero
+200,ability,teleportation
+200,ability,superhuman agility / reflexes
+200,character_type,superhero
+200,occupation,circus performer
+200,occupation,superhero
+200,occupation,Catholic priest
+200,religion,Catholicism
+200,sport,taekwondo
+202,ability,superhuman strength
+202,ability,superhuman speed
+202,ability,time travel
+202,ability,immortality in fiction
+202,ability,telepathy
+202,ability,superhuman durability
+202,ability,energy manipulation
+202,character_type,superhero
+202,character_type,supervillain
+202,occupation,astronomer
+202,occupation,superhero
+202,occupation,explorer
+202,occupation,scholar
+202,occupation,herald
+202,occupation,time traveller
+203,character_type,superhero
+206,occupation,circus performer
+207,ability,superhuman strength
+207,ability,superhuman speed
+207,ability,healing factor
+207,ability,superhuman durability
+207,ability,superhuman agility / reflexes
+207,character_type,supervillain
+207,occupation,reporter
+207,occupation,vigilante
+207,occupation,government agent
+207,occupation,superhero
+209,eye_color,blue
+209,hair_color,strawberry blond hair
+211,ability,intangibility
+211,character_type,superhero
+211,eye_color,hazel
+211,hair_color,brown hair
+211,occupation,aircraft pilot
+211,occupation,bartender
+211,occupation,circus performer
+211,occupation,teacher
+211,occupation,government agent
+211,occupation,superhero
+211,religion,Judaism
+214,ability,memory manipulation
+214,ability,telepathy
+214,character_type,superhero
+214,medical_condition,Alzheimer's disease
+214,occupation,head teacher
+214,occupation,scientist
+225,height,5.583 m
+225,height,1.7 m
+227,ethnic_group,African Americans
+227,occupation,newspaper editor
+228,eye_color,brown
+228,hair_color,brown hair
+229,ability,power mimicry or absorption
+229,ability,superhuman strength
+229,ability,superhuman durability
+229,ability,flight
+229,ability,superhuman speed
+229,ability,superhuman endurance
+229,ability,superhuman agility / reflexes
+229,ability,immortality in fiction
+229,character_type,superhero
+229,character_type,supervillain
+229,eye_color,green
+229,occupation,mechanic
+229,occupation,waiter
+229,occupation,terrorist
+229,occupation,superhero
+239,eye_color,purple
+240,character_type,superhero
+243,ability,weather manipulation
+243,ability,flight
+243,character_type,superhero
+243,eye_color,blue
+243,eye_color,brown
+243,hair_color,white hair
+243,hair_color,grey hair
+243,height,5.11 m
+243,occupation,gladiator
+243,occupation,student
+243,occupation,thief
+243,occupation,superhero
+244,eye_color,purple
+245,character_type,supervillain
+245,occupation,drill instructor
+245,occupation,mercenary
+245,occupation,teacher
+246,character_type,supervillain
+246,height,79 m
+247,character_type,supervillain
+247,occupation,contract killer
+247,occupation,mercenary
+249,ability,weather manipulation
+249,character_type,superhero
+249,character_type,unseen character
+249,hair_color,blond hair
+251,character_type,supervillain
+251,occupation,prostitute
+251,occupation,kunoichi
+252,ability,teleportation
+252,character_type,supervillain
+252,occupation,criminal
+253,ability,superhuman strength
+253,ability,superhuman agility / reflexes
+253,ability,superhuman durability
+253,ability,superhuman senses
+253,character_type,supervillain
+253,occupation,employee
+256,occupation,thief
+258,character_type,superhero
+258,occupation,superhero
+258,occupation,special agent
+260,hair_color,brown hair
+260,occupation,scientist
+261,occupation,magician
+262,character_type,superhero
+262,height,1.83 m
+263,occupation,supervillain

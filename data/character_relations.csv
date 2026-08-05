@@ -1,0 +1,791 @@
+identity_id,relation,other_name,other_identity_id,other_wikidata_id
+1,spouse,Uncle Ben,44,Q2299139
+1,relative,Peter Parker / Spider-Man,27,Q79037
+10,enemy,Peter Parker / Spider-Man,27,Q79037
+10,enemy,Green Goblin / Norman Osborn,15,Q1779361
+10,enemy,Gold Goblin,117,Q17090877
+108,enemy,Peter Parker / Spider-Man,27,Q79037
+109,enemy,Emma Frost,,Q1995969
+109,enemy,Empath,,Q2364510
+109,partner,Cannonball,,Q1194236
+109,partner,Vance Astrovik,,Q3545872
+11,enemy,Dormammu,,Q2066394
+11,enemy,Baron Mordo,,Q2435970
+11,enemy,Gargantos,,Q110917411
+11,enemy,Xandu,,Q3570549
+11,enemy,Shuma-Gorath,,Q2639507
+11,enemy,Nightmare,,Q15222919
+11,enemy,Dweller-in-Darkness,,Q5318067
+11,enemy,Zom,,Q8073711
+11,partner,Clea,,Q2404595
+110,child,Felicity Hardy,,Q5441790
+110,partner,Black Cat,3,Q912640
+110,partner,Betty Brant,67,Q2628255
+110,partner,Liz Allan,163,Q1132203
+111,enemy,Doctor Doom,9,Q430178
+111,enemy,Uatu,,Q615226
+111,enemy,Beta Ray Bill,,Q1987662
+111,enemy,Silver Surfer / Norrin Radd,202,Q95153
+111,enemy,The Fantastic Four,,Q152098
+111,enemy,Thanos,246,Q2276627
+111,enemy,In-Betweener,,Q3029214
+111,enemy,Excalibur,,Q2603976
+111,child,Galacta,,Q5517781
+112,enemy,Mister Sinister,,Q302534
+112,enemy,Candra,,Q5032038
+112,spouse,Bella Donna,,Q4883353
+112,spouse,Rogue,229,Q838097
+112,alternate_universe_counterpart,Ultimate Gambit,,Q48957559
+115,child,Gwen Stacy,16,Q945817
+116,enemy,Mephisto,,Q2418665
+116,enemy,Centurious,,Q5063090
+116,spouse,Roxanne Simpson,,Q7372377
+116,relative,Noble Kale,,Q7045734
+116,relative,Jennifer Kale,,Q6178488
+117,enemy,Peter Parker / Spider-Man,27,Q79037
+117,enemy,Spider-Punk,38,Q63975143
+117,enemy,Sin-Eater (comics),,Q11680813
+117,enemy,Doctor Octopus,10,Q578094
+117,enemy,Kindred,,Q3772700
+117,enemy,Phil Urich,,Q4483669
+117,child,Green Goblin / Norman Osborn,15,Q1779361
+117,partner,Menace,,Q1748149
+117,alternate_universe_counterpart,Ultimate Green Goblin,,Q48544198
+12,enemy,Carnage,6,Q1753328
+12,enemy,Peter Parker / Spider-Man,27,Q79037
+12,enemy,Spider-Punk,38,Q63975143
+12,enemy,Toxin,,Q2657400
+12,enemy,Maker,,Q39071489
+12,child,"Sadie ""Christmas"" / Lasher (symbiote)",161,Q2578146
+12,child,Nam,,Q227710
+12,child,Carl Mach,,Q2886408
+12,child,Carlton Drake / Riot,80,Q507241
+12,child,Carnage,6,Q1753328
+12,alternate_universe_counterpart,Ultimate Venom,,Q4003186
+122,enemy,Peter Parker / Spider-Man,27,Q79037
+122,enemy,Kingpin,19,Q1753322
+123,partner,Pepper Potts,,Q936542
+125,enemy,Loki,164,Q1147326
+125,enemy,Crossfire,,Q1638503
+125,enemy,Trick Shot,,Q3539043
+125,spouse,Mockingbird,,Q73544
+125,partner,Black Widow / Natasha Romanova,70,Q369197
+125,alternate_universe_counterpart,Ultimate Hawkeye,,Q16912454
+126,enemy,New Warriors,,Q2731643
+127,enemy,Peter Parker / Spider-Man,27,Q79037
+129,enemy,Doctor Doom,9,Q430178
+129,enemy,Wizard,,Q740257
+129,enemy,Abner Jenkins,,Q16203115
+129,enemy,Trapster,,Q431400
+129,father,Franklin Storm,,Q20858389
+129,spouse,Lyja,,Q3832323
+129,partner,Crystal,,Q2418760
+129,partner,Nova,,Q19398
+129,partner,Namorita,,Q2314770
+129,partner,Medusa,,Q432272
+13,enemy,Peter Parker / Spider-Man,27,Q79037
+131,enemy,Peter Parker / Spider-Man,27,Q79037
+132,mother,Madeline Drake,,Q111376791
+132,father,William Drake,,Q111376777
+132,partner,Star-Lord / Peter Quill,211,Q547306
+132,partner,Opal Tanaka,,Q24207147
+132,partner,Mystique,,Q737236
+132,partner,Christian Frost,,Q12305959
+132,alternate_universe_counterpart,Ultimate Iceman,,Q48947511
+135,enemy,Sabretooth,,Q431862
+135,enemy,Steel Serpent,,Q17022155
+135,enemy,Master Khan,,Q6785042
+135,enemy,Man Mountain Marko,,Q6746231
+136,enemy,Mandarin,,Q2417914
+136,enemy,Thanos,246,Q2276627
+136,enemy,Titanium Man,,Q2915396
+136,enemy,MODOK,,Q208927
+136,enemy,Ultron,,Q2474195
+136,enemy,Loki,164,Q1147326
+136,enemy,Iron Monger,,Q2487192
+136,enemy,Hydra,,Q3052324
+136,enemy,Justin Hammer,,Q2664416
+136,enemy,Crimson Dynamo,,Q2339552
+136,enemy,Zeke Stane,,Q2790757
+136,enemy,Gremlin,,Q3032140
+136,enemy,Cobalt Man,,Q3269419
+136,enemy,Madame Masque,,Q2339160
+136,mother,Maria Stark,,Q3847537
+136,father,Howard Stark,,Q773035
+136,alternate_universe_counterpart,Ultimate Iron Man,,Q288516
+136,alternate_universe_counterpart,Iron Lad,,Q133799918
+137,spouse,Marla Madison,,Q111301136
+137,child,John Jameson,150,Q2423326
+137,child,Mattie Franklin (future Spider-Woman),182,Q2095786
+14,enemy,Jigsaw,,Q955796
+14,enemy,Barracuda,,Q3544280
+14,enemy,Damage,,Q19364972
+14,enemy,Thorn,,Q19881381
+14,enemy,Rapido,,Q23306602
+14,enemy,Ma Gnucci,,Q1982323
+14,enemy,Russian,,Q2438411
+14,enemy,Bushwacker,,Q2633496
+14,enemy,Sniper,,Q19840837
+14,enemy,Gold Goblin,117,Q17090877
+14,enemy,Kingpin,19,Q1753322
+14,spouse,Maria Castle,,Q114888777
+14,child,Lisa Barbara Castle,,Q114889845
+14,child,Frank Castle Jr.,,Q114890103
+14,alternate_universe_counterpart,Cosmic Ghost Rider,,Q104833057
+142,enemy,Peter Parker / Spider-Man,27,Q79037
+142,father,Tombstone,43,Q59643
+142,partner,Randy Robertson,,Q7292400
+144,spouse,Rio Morales,225,Q60825677
+144,child,Miles Morales,25,Q59826
+146,enemy,Titania,,Q580822
+146,spouse,John Jameson,150,Q2423326
+146,partner,Starfox,,Q2295563
+146,partner,Hercules,,Q534889
+146,partner,Iron Man / Tony Stark,136,Q180704
+146,partner,Clay Quartermain,,Q965099
+146,partner,Wyatt Wingfoot,,Q3570193
+146,partner,Luke Cage,166,Q2267760
+146,relative,Hulk,18,Q188760
+146,relative,Bruce Banner,,Q24050117
+146,relative,Skaar,,Q1394575
+149,enemy,Kingpin,,Q110486878
+149,alternate_universe_counterpart,Gwen Stacy,16,Q945817
+15,enemy,Doctor Octopus,10,Q578094
+15,father,Gold Goblin,117,Q17090877
+15,spouse,Liz Allan,163,Q1132203
+15,child,Normie Osborn,,Q7053134
+15,partner,Menace,,Q1748149
+15,partner,Mary Jane Parker,178,Q27810
+150,father,J. Jonah Jameson,137,Q1992523
+150,spouse,She-Hulk / Jennifer Walters,146,Q677627
+155,enemy,Sinister Six,,Q2082275
+157,enemy,Avengers,,Q322646
+157,enemy,Ultron,,Q2474195
+157,enemy,Doctor Doom,9,Q430178
+157,enemy,Immortus,,Q3543422
+157,enemy,Ravonna Renslayer,,Q7296820
+157,enemy,Knull,160,Q85774745
+157,relative,Nathaniel Richards,,Q3336797
+157,relative,Mister Fantastic / Reed Richards,187,Q865017
+157,relative,Franklin Richards,,Q2624716
+157,relative,Valeria Richards,,Q734861
+16,father,George Stacy,115,Q7879740
+16,partner,Peter Parker / Spider-Man,27,Q79037
+16,alternate_universe_counterpart,Jessica Drew / Spider-Woman,149,Q20979395
+160,enemy,Patrick Mulligan / Toxin,207,Q2604715
+160,enemy,Kang the Conqueror,157,Q1982051
+161,enemy,Peter Parker / Spider-Man,27,Q79037
+161,father,Eddie Brock / Venom,12,Q1621261
+163,father,Wilson Allan,,Q112042766
+163,spouse,Green Goblin / Norman Osborn,15,Q1779361
+163,child,Normie Osborn,,Q7053134
+163,partner,Peter Parker / Spider-Man,27,Q79037
+163,partner,Flash Thompson,110,Q552000
+163,alternate_universe_counterpart,Ultimate Firestar,,Q21188808
+164,enemy,Thor,249,Q717588
+164,enemy,Iron Man / Tony Stark,136,Q180704
+164,enemy,Hawkeye,125,Q19095
+164,enemy,Avengers,,Q322646
+164,father,Laufey,,Q6497975
+164,spouse,Sigyn,,Q17019529
+164,child,Fenris Wolf,,Q5443580
+164,child,Midgard Serpent,,Q6842189
+164,child,Agamemnon,,Q4691169
+166,enemy,Chemistro,,Q2962576
+166,enemy,Diamondback,,Q43073416
+166,enemy,Cottonmouth,,Q2998614
+166,enemy,Man Mountain Marko,,Q6746231
+166,spouse,Jessica Jones,,Q2271377
+166,child,Danielle Cage,,Q115533935
+166,partner,She-Hulk / Jennifer Walters,146,Q677627
+171,enemy,Professor X,214,Q838076
+171,enemy,X-Men,,Q128452
+171,enemy,William Stryker,,Q2551564
+171,enemy,Daisy Johnson,,Q1424480
+171,enemy,Jean Grey,,Q5350072
+171,enemy,Onslaught,,Q2075745
+171,enemy,Apocalypse,,Q2071805
+171,enemy,Red Skull,,Q2034529
+171,spouse,Magda Lehnsherr,,Q57013559
+171,child,Anya Eisenhardt,,Q57022061
+171,child,Scarlet Witch,,Q929285
+171,child,Quicksilver,,Q929273
+171,child,Polaris,,Q2071256
+171,child,Joseph,,Q1771401
+171,child,Magnus Lehnsherr,,Q16253333
+171,partner,Lee Forrester,,Q6513617
+171,partner,Mystique,,Q737236
+171,partner,Rogue,229,Q838097
+171,alternate_universe_counterpart,Magneto,,Q112110384
+171,alternate_universe_counterpart,Ultimate Magneto,,Q48412444
+172,alternate_universe_counterpart,Peter Parker / Spider-Man,27,Q79037
+175,enemy,Peter Parker / Spider-Man,27,Q79037
+178,spouse,Peter Parker / Spider-Man,27,Q79037
+178,child,Spider-Girl,35,Q2186500
+178,child,Benjamin Richard Parker,,Q4889166
+178,partner,Green Goblin / Norman Osborn,15,Q1779361
+18,enemy,Abomination,,Q60146
+18,enemy,The Leader,,Q2328990
+18,enemy,Thunderbolt Ross,,Q1841525
+18,enemy,MODOK,,Q208927
+18,enemy,Tyrannus,,Q2749614
+18,enemy,Glenn Talbot,,Q3108827
+18,enemy,Gardener,,Q3162643
+18,enemy,Absorbing Man,,Q2465865
+18,enemy,Mister Hyde,,Q1638775
+18,enemy,Madman,,Q4781622
+18,enemy,Glob,,Q5570029
+18,enemy,Bi-Beast,,Q2900730
+18,enemy,U-Foes,,Q962140
+18,enemy,Zzzax,,Q2309083
+18,enemy,Mercy,,Q6818707
+18,enemy,Gamma Corps,,Q3095016
+18,enemy,Speedfreek,,Q3492961
+18,enemy,Maestro,,Q6729338
+18,enemy,Brian Banner,,Q4963042
+18,enemy,One Below All,,Q125348701
+18,mother,Rebecca Banner,,Q17066180
+18,father,Brian Banner,,Q4963042
+18,spouse,Betty Ross,,Q616633
+18,spouse,Caiera,,Q1130690
+18,child,Skaar,,Q1394575
+18,child,Hiro-Kala,,Q3785756
+18,child,Lyra,,Q3841033
+18,relative,She-Hulk / Jennifer Walters,146,Q677627
+18,alternate_universe_counterpart,Ultimate Hulk,,Q105605035
+18,alternate_universe_counterpart,Maestro,,Q6729338
+181,spouse,Richard Parker,222,Q102268961
+181,child,Peter Parker / Spider-Man,27,Q79037
+182,father,J. Jonah Jameson,137,Q1992523
+183,enemy,Peter Parker / Spider-Man,27,Q79037
+184,enemy,Flipside,,Q5459730
+184,enemy,Tyler Stone,,Q7860164
+184,father,Tyler Stone,,Q7860164
+184,relative,Tiberius Stone,,Q14619282
+187,enemy,Doctor Doom,9,Q430178
+187,father,Nathaniel Richards,,Q3336797
+187,spouse,Invisible Woman,,Q510450
+187,child,Franklin Richards,,Q2624716
+187,child,Valeria Richards,,Q734861
+187,alternate_universe_counterpart,Maker,,Q39071489
+187,alternate_universe_counterpart,Doom,,Q133799925
+189,enemy,Bushman,,Q3545397
+189,enemy,Black Spectre,,Q4921877
+189,spouse,Marlene Alraune,,Q60549183
+19,enemy,Daredevil,8,Q327553
+19,enemy,Peter Parker / Spider-Man,27,Q79037
+19,enemy,Captain America,5,Q190679
+19,enemy,Hammerhead,122,Q2719607
+19,enemy,Silvermane,,Q2500449
+19,enemy,Richard Fisk,,Q2436122
+19,enemy,Vanessa Fisk,,Q7914646
+19,enemy,Frank Castle / The Punisher,14,Q729150
+19,spouse,Vanessa Fisk,,Q7914646
+19,spouse,Typhoid Mary,251,Q2625935
+19,child,Richard Fisk,,Q2436122
+194,enemy,Attuma,,Q2393694
+194,enemy,Llyra,,Q6662949
+194,enemy,Gargantos,,Q110917411
+194,enemy,Orka,,Q3356429
+194,enemy,Commander Kraken,,Q780488
+194,mother,Fen,,Q115441513
+194,spouse,Marrina Smallwood,,Q2295556
+194,spouse,Dorma,,Q3543851
+194,partner,Emma Frost,,Q1995969
+194,alternate_universe_counterpart,Ultimate Namor,,Q15141703
+196,spouse,Betty Brant,67,Q2628255
+198,enemy,Baron Strucker,,Q576524
+198,child,Nick Fury Jr.,,Q3846693
+198,alternate_universe_counterpart,Nick Fury,,Q7880226
+2,child,Darkdevil,,Q5223578
+20,enemy,Peter Parker / Spider-Man,27,Q79037
+20,enemy,Tigra,,Q2532716
+20,child,Alyosha Kravinoff,,Q653898
+20,child,Ana Kravinoff,,Q19875028
+20,child,Grim Hunter,,Q2003141
+20,partner,Calypso,4,Q2934584
+20,alternate_universe_counterpart,Ultimate Kraven,,Q4003168
+200,enemy,Mystique,,Q737236
+200,enemy,Azazel,,Q2642022
+200,enemy,Graydon Creed,,Q3115851
+200,mother,Mystique,,Q737236
+200,mother,Destiny,,Q1051111
+200,father,Azazel,,Q2642022
+200,child,Nocturne,,Q1911253
+200,partner,Amanda Sefton,,Q3613591
+200,partner,Cerise,,Q3546921
+200,alternate_universe_counterpart,Nightcrawler,,Q117322409
+202,enemy,Doctor Doom,9,Q430178
+202,enemy,Mephisto,,Q2418665
+202,enemy,Galactus,111,Q1429836
+202,enemy,Thanos,246,Q2276627
+202,enemy,Terrax,,Q1984020
+202,partner,Shalla-Bal,,Q7487249
+207,enemy,Peter Parker / Spider-Man,27,Q79037
+207,enemy,Cletus Kasady,,Q55607777
+207,enemy,Knull,160,Q85774745
+207,spouse,Anne Weying,57,Q14475812
+207,alternate_universe_counterpart,Venom,,Q125253709
+207,alternate_universe_counterpart,Eddie Brock,,Q63761182
+208,alternate_universe_counterpart,Peter Parker / Spider-Man,27,Q79037
+208,alternate_universe_counterpart,Ultimate Spider-Man,,Q47471875
+208,alternate_universe_counterpart,Spider-Man Noir,37,Q3966701
+208,alternate_universe_counterpart,Spider-Ham,36,Q3966700
+208,alternate_universe_counterpart,Spider-Man,,Q48739522
+209,spouse,Tony Stark,,Q23894967
+209,child,Morgan Stark,,Q6911845
+21,enemy,Peter Parker / Spider-Man,27,Q79037
+21,spouse,Martha Connors,,Q39052969
+21,child,Billy Connors,,Q39069914
+211,enemy,Ogun,,Q7080283
+211,mother,Terri Pryde,,Q111658697
+211,father,Carmen Pryde,,Q111658696
+211,partner,Colossus,,Q60002
+211,partner,Star-Lord,,Q3496918
+211,partner,Iceman,132,Q838088
+211,partner,Pete Wisdom,,Q1136453
+211,alternate_universe_counterpart,Kate Pryde,,Q112110359
+211,alternate_universe_counterpart,Colleen,,Q114005814
+211,alternate_universe_counterpart,Ultimate Kitty Pryde,,Q48958279
+214,enemy,Magneto,171,Q840291
+214,enemy,Juggernaut,,Q841372
+214,enemy,Cassandra Nova,,Q858901
+214,enemy,Pyro,,Q2339776
+214,enemy,Shadow King,,Q1585469
+214,mother,Sharon Xavier,,Q111328112
+214,father,Brian Xavier,,Q111328111
+214,spouse,Lilandra Neramani,,Q2504688
+214,child,Legion,,Q1607791
+214,child,Xandra Neramani,,Q133267296
+214,partner,Amelia Voght,,Q2842673
+214,partner,Gabrielle Haller,,Q5516076
+214,partner,Moira MacTaggert,,Q2361279
+214,alternate_universe_counterpart,Professor X,,Q117322403
+222,spouse,Mary Parker,181,Q102268990
+222,child,Peter Parker / Spider-Man,27,Q79037
+225,spouse,Jefferson Davis,144,Q115534083
+225,child,Miles Morales,25,Q59826
+227,enemy,Tombstone,43,Q59643
+227,child,Randy Robertson,,Q7292400
+229,enemy,Mystique,,Q737236
+229,enemy,Carol Danvers,,Q64658380
+229,mother,Mystique,,Q737236
+229,mother,Destiny,,Q1051111
+229,spouse,Gambit (Remy LeBeau),112,Q2639150
+229,child,Magnus Lehnsherr,,Q16253333
+229,partner,Magneto,171,Q840291
+229,partner,Joseph,,Q1771401
+229,alternate_universe_counterpart,Ultimate Rogue,,Q48946153
+23,enemy,Peter Parker / Spider-Man,27,Q79037
+231,spouse,Otto Octavius,,Q63761127
+239,spouse,Talos (Skrull),244,Q66189316
+24,partner,Peter Parker,,Q23991129
+240,enemy,Nitro,,Q669916
+241,enemy,Peter Parker / Spider-Man,27,Q79037
+241,child,Alistair Smythe,53,Q2837209
+243,enemy,Shadow King,,Q1585469
+243,mother,N'Dare,,Q111309715
+243,father,David Munroe,,Q111449140
+243,spouse,Black Panther / T'Challa,69,Q998220
+243,partner,Wolverine,46,Q186422
+243,partner,Forge,,Q1002884
+243,alternate_universe_counterpart,Storm,,Q112110393
+243,alternate_universe_counterpart,Ultimate Storm,,Q4003183
+244,spouse,Soren (Skrull),239,Q66189494
+245,enemy,Scott Lang,,Q81787
+246,enemy,Adam Warlock,,Q1735229
+246,enemy,Avengers,,Q322646
+246,enemy,Guardians of the Galaxy,,Q2545790
+246,enemy,Galactus,111,Q1429836
+246,enemy,The Fantastic Four,,Q152098
+246,enemy,X-Men,,Q128452
+246,enemy,Elders of the Universe,,Q3038387
+246,enemy,Silver Surfer / Norrin Radd,202,Q95153
+246,enemy,Mar-Vell,,Q927598
+246,enemy,Phyla-Vell,,Q1235121
+246,enemy,Gamora,,Q2721152
+246,enemy,Drax the Destroyer,,Q898039
+246,enemy,Star-Lord,,Q3496918
+246,enemy,Iron Man / Tony Stark,136,Q180704
+246,enemy,Kronos,,Q3199922
+246,enemy,Living Tribunal,,Q2735212
+246,enemy,Beyonder,,Q1994866
+246,mother,Sui-San,,Q130378413
+246,father,Mentor,,Q930794
+246,child,Gamora,,Q2721152
+246,child,Nebula,,Q2721134
+246,child,Thane,,Q47302915
+246,relative,Kronos,,Q3199922
+246,relative,Gamora,,Q2721152
+246,relative,Nebula,,Q2721134
+246,relative,Corvus Glaive,,Q17986678
+246,relative,Zuras,,Q3576299
+246,relative,Ebony Maw,,Q20979240
+247,spouse,Silver Sable,34,Q1877130
+249,enemy,Loki,164,Q1147326
+249,enemy,Malekith the Accursed,,Q3281842
+249,enemy,Surtur,,Q3247771
+249,enemy,Laufey,,Q6497975
+249,enemy,Midgard Serpent,,Q6842189
+249,enemy,Lorelei,,Q3259423
+249,enemy,Seth,,Q3480653
+249,enemy,Mangog,,Q3285766
+249,enemy,Wrecker,,Q654551
+249,enemy,Radioactive Man,,Q978851
+249,enemy,Mister Hyde,,Q1638775
+249,enemy,Absorbing Man,,Q2465865
+249,enemy,Destroyer,,Q2473486
+249,enemy,Ego the Living Planet,,Q2642342
+249,enemy,Ulik,,Q2746596
+249,enemy,Hela,,Q3043221
+249,enemy,Executioner,,Q3109952
+249,enemy,Gorr the God Butcher,,Q96379736
+249,mother,Gaea,,Q3545630
+249,mother,Frigga,,Q3087835
+249,father,Odin,,Q1319513
+249,child,Torunn,,Q6151029
+249,alternate_universe_counterpart,Thor,,Q4003185
+249,alternate_universe_counterpart,King Thor,,Q113947121
+25,enemy,Kangaroo,,Q3192657
+25,enemy,Ultimate Green Goblin,,Q48544198
+25,enemy,Aaron Davis,,Q60484975
+25,mother,Rio Morales,225,Q60825677
+25,father,Jefferson Davis,144,Q115534083
+251,enemy,Daredevil,8,Q327553
+251,spouse,Kingpin,19,Q1753322
+251,partner,Daredevil,8,Q327553
+252,enemy,X-Men,,Q128452
+253,enemy,Captain America,5,Q190679
+253,enemy,Peter Parker / Spider-Man,27,Q79037
+256,child,Black Cat,3,Q912640
+258,relative,White Tiger,,Q17064925
+26,enemy,Peter Parker / Spider-Man,27,Q79037
+26,enemy,Daredevil,8,Q327553
+262,enemy,Sunset Bain,,Q3503968
+27,enemy,Gold Goblin,117,Q17090877
+27,enemy,Doctor Octopus,10,Q578094
+27,enemy,Patrick Mulligan / Toxin,207,Q2604715
+27,enemy,Eddie Brock / Venom,12,Q1621261
+27,enemy,Mysterio,26,Q2283843
+27,enemy,Lizard,21,Q19382
+27,enemy,Tombstone,43,Q59643
+27,enemy,Wraith,,Q369515
+27,enemy,Speed Demon,,Q385744
+27,enemy,Carlton Drake / Riot,80,Q507241
+27,enemy,Chameleon,7,Q521305
+27,enemy,Rhino,28,Q572626
+27,enemy,Dennis Carradine / Burglar,78,Q606569
+27,enemy,Alyosha Kravinoff,,Q653898
+27,enemy,Kraven the Hunter,20,Q654588
+27,enemy,Green Goblin,,Q735721
+27,enemy,Hobgoblin,,Q849818
+27,enemy,Sandman,29,Q1049890
+27,enemy,Michael Morbius / Living Vampire,23,Q1087722
+27,enemy,Beetle,65,Q1168065
+27,enemy,Kingpin,19,Q1753322
+27,enemy,Carnage,6,Q1753328
+27,enemy,Will o' the Wisp,,Q1772036
+27,enemy,Cletus Kasady,,Q55607777
+27,enemy,Ox,,Q111910188
+27,enemy,Demogoblin,94,Q1812152
+27,enemy,Scream,,Q1861779
+27,enemy,Hydro-Man,131,Q1990090
+27,enemy,Grim Hunter,,Q2003141
+27,enemy,Shocker,31,Q2015743
+27,enemy,Frederick Foswell,,Q2032965
+27,enemy,Aaron Davis / Prowler,48,Q2274942
+27,enemy,Vulture,45,Q2296291
+27,enemy,Electro,13,Q2297886
+27,enemy,Richard Fisk,,Q2436122
+27,enemy,Doppelganger,,Q2440293
+27,enemy,Silvermane,,Q2500449
+27,enemy,Molten Man,,Q2534462
+27,enemy,Carrion,82,Q2555885
+27,enemy,"Sadie ""Christmas"" / Lasher (symbiote)",161,Q2578146
+27,enemy,Jackal,,Q2584005
+27,enemy,Mendel Stromm,183,Q2585537
+27,enemy,Boomerang,,Q2604725
+27,enemy,Tinkerer,42,Q2623764
+27,enemy,Hood,,Q2624726
+27,enemy,Puma,,Q2628556
+27,enemy,Hammerhead,122,Q2719607
+27,enemy,Alistair Smythe,53,Q2837209
+27,enemy,Big Wheel,68,Q2902368
+27,enemy,Scorpion,30,Q2917078
+27,enemy,Calypso,4,Q2934584
+27,enemy,Spot,,Q3031868
+27,enemy,Spencer Smythe (PS2/PSP),241,Q3080800
+27,enemy,Jonas Harrow,,Q3183266
+27,enemy,Martin Li / Mister Negative,175,Q3316968
+27,enemy,Rocket Racer,,Q3440451
+27,enemy,Slyde,,Q3486816
+27,enemy,Stegron,,Q3498060
+27,enemy,Stunner,,Q3501133
+27,enemy,Black Tarantula,,Q3544440
+27,enemy,Hitman,,Q3551286
+27,enemy,White Rabbit,,Q3686980
+27,enemy,Walrus,,Q3998685
+27,enemy,Vermin,253,Q4010081
+27,enemy,Phil Urich,,Q4483669
+27,enemy,Bloodshed,,Q4928002
+27,enemy,Enforcers,,Q5377360
+27,enemy,Farley Stillwell,108,Q5435440
+27,enemy,Man Mountain Marko,,Q6746231
+27,enemy,Montana,,Q6904213
+27,enemy,Swarm,,Q7653886
+27,enemy,Roderick Kingsley,,Q9311511
+27,enemy,Abner Jenkins,,Q16203115
+27,enemy,Janice Lincoln,142,Q16203548
+27,enemy,Fancy Dan,,Q20656907
+27,enemy,Sinister Six,,Q2082275
+27,enemy,Sin-Eater (comics),,Q11680813
+27,mother,Mary Parker,181,Q102268990
+27,father,Richard Parker,222,Q102268961
+27,spouse,Mary Jane Parker,178,Q27810
+27,child,Spider-Girl,35,Q2186500
+27,child,Benjamin Richard Parker,,Q4889166
+27,child,Felicity Hardy,,Q5441790
+27,partner,Gwen Stacy,16,Q945817
+27,partner,Black Cat,3,Q912640
+27,partner,Betty Brant,67,Q2628255
+27,partner,Carlie Cooper,,Q3658902
+27,partner,Debra Whitman,,Q3704417
+27,partner,Mary Jane Parker,178,Q27810
+27,partner,Liz Allan,163,Q1132203
+27,partner,Star-Lord / Peter Quill,211,Q547306
+27,relative,Uncle Ben,44,Q2299139
+27,relative,Aunt May,1,Q2453332
+27,relative,Richard Parker,222,Q102268961
+27,alternate_universe_counterpart,Ultimate Spider-Man,,Q47471875
+27,alternate_universe_counterpart,Spider-Man Noir,37,Q3966701
+27,alternate_universe_counterpart,Spider-Ham,36,Q3966700
+27,alternate_universe_counterpart,Pavitr Prabhakar / Spider-Man India,208,Q48732969
+27,alternate_universe_counterpart,Spider-Man,,Q48739522
+28,enemy,Peter Parker / Spider-Man,27,Q79037
+29,enemy,Peter Parker / Spider-Man,27,Q79037
+3,father,Walter Hardy,256,Q7965074
+3,child,Felicity Hardy,,Q5441790
+3,partner,Peter Parker / Spider-Man,27,Q79037
+3,partner,Daredevil,8,Q327553
+3,partner,Puma,,Q2628556
+3,partner,Flash Thompson,110,Q552000
+3,alternate_universe_counterpart,Ultimate Black Cat,,Q4003164
+30,enemy,Peter Parker / Spider-Man,27,Q79037
+31,enemy,Peter Parker / Spider-Man,27,Q79037
+32,enemy,Cloak and Dagger,,Q2419540
+34,spouse,The Foreigner,247,Q3545603
+35,mother,Mary Jane Parker,178,Q27810
+35,father,Peter Parker / Spider-Man,27,Q79037
+36,alternate_universe_counterpart,Peter Parker / Spider-Man,27,Q79037
+36,alternate_universe_counterpart,Ultimate Spider-Man,,Q47471875
+36,alternate_universe_counterpart,Spider-Man Noir,37,Q3966701
+36,alternate_universe_counterpart,Pavitr Prabhakar / Spider-Man India,208,Q48732969
+36,alternate_universe_counterpart,Spider-Man,,Q48739522
+37,alternate_universe_counterpart,Peter Parker / Spider-Man,27,Q79037
+37,alternate_universe_counterpart,Ultimate Spider-Man,,Q47471875
+37,alternate_universe_counterpart,Spider-Ham,36,Q3966700
+37,alternate_universe_counterpart,Pavitr Prabhakar / Spider-Man India,208,Q48732969
+37,alternate_universe_counterpart,Spider-Man,,Q48739522
+38,enemy,Gold Goblin,117,Q17090877
+38,enemy,Eddie Brock / Venom,12,Q1621261
+38,enemy,Thunderstrike,,Q17033514
+4,enemy,Peter Parker / Spider-Man,27,Q79037
+4,partner,Kraven the Hunter,20,Q654588
+42,enemy,Peter Parker / Spider-Man,27,Q79037
+43,enemy,Peter Parker / Spider-Man,27,Q79037
+43,enemy,Daredevil,8,Q327553
+43,enemy,Robbie Robertson,227,Q944573
+43,child,Janice Lincoln,142,Q16203548
+44,spouse,Aunt May,1,Q2453332
+45,enemy,Peter Parker / Spider-Man,27,Q79037
+46,enemy,Sabretooth,,Q431862
+46,enemy,Romulus,,Q1628510
+46,enemy,Lady Deathstrike,,Q2448071
+46,enemy,Baron Strucker,,Q576524
+46,enemy,Silver Samurai,,Q898201
+46,enemy,Omega Red,,Q2420335
+46,enemy,William Stryker,,Q2551564
+46,enemy,Bloodscream,,Q2906990
+46,enemy,Cyber,,Q3008124
+46,enemy,Geist,,Q3100198
+46,enemy,Kenuichio Harada,,Q71067619
+46,enemy,Ogun,,Q7080283
+46,enemy,Viper,,Q568267
+46,enemy,Shingen Yashida,,Q7497450
+46,enemy,Gorgon,,Q3111031
+46,enemy,Professor Thorton,,Q7248194
+46,father,Thomas Logan,,Q7791911
+46,spouse,Viper,,Q568267
+46,child,Daken,,Q2658347
+46,child,Amiko Kobayashi,,Q4746268
+46,child,X-23,,Q1872439
+46,child,Gabby Kinney,,Q110147974
+46,child,Wild Thing,,Q8000827
+46,partner,Jean Grey,,Q5350072
+46,partner,Storm (Ororo Munroe),243,Q632212
+46,partner,Mariko Yashida,,Q3293073
+46,partner,Silver Fox,,Q2608804
+46,partner,Native,,Q6979927
+46,partner,Yukio,,Q8060735
+46,partner,Mystique,,Q737236
+46,partner,Domino,,Q59644
+46,partner,Elektra,,Q913359
+46,alternate_universe_counterpart,Wolverine,,Q112110379
+46,alternate_universe_counterpart,Ultimate Wolverine,,Q7880273
+46,alternate_universe_counterpart,Old Man Logan,,Q52413964
+48,enemy,Peter Parker / Spider-Man,27,Q79037
+5,enemy,Red Skull,,Q2034529
+5,enemy,Baron Zemo,,Q2620643
+5,enemy,Crossbones,,Q647315
+5,enemy,Sin,,Q577086
+5,enemy,Kingpin,19,Q1753322
+5,enemy,Batroc the Leaper (Georges Batroc),63,Q2308669
+5,enemy,Arnim Zola,,Q2663969
+5,enemy,Helmut Zemo,,Q27986209
+5,enemy,MODOK,,Q208927
+5,enemy,Vermin,253,Q4010081
+5,enemy,Viper,,Q568267
+5,enemy,Doctor Faustus,,Q1447249
+5,enemy,Hate-Monger,,Q3303309
+5,enemy,Korath the Pursuer,,Q3198900
+5,enemy,Hydra,,Q3052324
+5,enemy,Porcupine,,Q111342207
+5,enemy,Solarr,,Q3489235
+5,enemy,Serpent Society,,Q3488248
+5,enemy,Mister Hyde,,Q1638775
+5,alternate_universe_counterpart,Ultimate Captain America,,Q4003148
+5,alternate_universe_counterpart,Captain America,,Q133799944
+53,enemy,Peter Parker / Spider-Man,27,Q79037
+53,father,Spencer Smythe (PS2/PSP),241,Q3080800
+57,spouse,Patrick Mulligan / Toxin,207,Q2604715
+6,enemy,Peter Parker / Spider-Man,27,Q79037
+6,enemy,Eddie Brock / Venom,12,Q1621261
+6,father,Eddie Brock / Venom,12,Q1621261
+6,child,Toxin,,Q2657400
+63,enemy,Captain America,5,Q190679
+63,enemy,Falcon,,Q672591
+64,enemy,Dark Beast,,Q2723286
+64,mother,Edna McCoy,,Q111333248
+64,father,Norton McCoy,,Q111333247
+64,partner,Abigail Brand,,Q2821619
+64,alternate_universe_counterpart,Dark Beast,,Q2723286
+64,alternate_universe_counterpart,Ultimate Beast,,Q4003146
+65,enemy,Peter Parker / Spider-Man,27,Q79037
+67,mother,Eleonore Brant,,Q111795149
+67,spouse,Ned Leeds,196,Q3337686
+67,partner,Peter Parker / Spider-Man,27,Q79037
+67,partner,Flash Thompson,110,Q552000
+68,enemy,Peter Parker / Spider-Man,27,Q79037
+69,enemy,Klaw,,Q2703749
+69,enemy,Erik Killmonger,,Q5388669
+69,enemy,Man-Ape,,Q3139744
+69,enemy,Zenzi,,Q115800561
+69,enemy,Baron Macabre,,Q106670105
+69,enemy,Kiber the Cruel,,Q6404004
+69,enemy,Achebe,,Q2823008
+69,enemy,Sons of the Serpent,,Q7562380
+69,spouse,Storm (Ororo Munroe),243,Q632212
+7,enemy,Peter Parker / Spider-Man,27,Q79037
+70,enemy,Yelena Belova,,Q4009216
+70,enemy,Iron Maiden,,Q3544680
+70,enemy,Damon Dran,,Q5212824
+70,enemy,Red Guardian,,Q111722753
+70,spouse,Red Guardian,,Q111722753
+70,partner,Bucky Barnes,,Q28006858
+70,partner,Hawkeye,125,Q19095
+71,enemy,Deacon Frost,,Q1748380
+71,enemy,Dracula,,Q1131724
+72,enemy,X-Men,,Q128452
+72,enemy,Mystique,,Q737236
+72,child,Larry Trask,,Q771054
+72,child,Madame Sanctity,,Q6726329
+77,enemy,Daredevil,8,Q327553
+77,enemy,Daken,,Q2658347
+78,enemy,Peter Parker / Spider-Man,27,Q79037
+79,enemy,Deathbird,,Q3020765
+79,enemy,Mystique,,Q737236
+79,enemy,Karla Sofen,,Q1394350
+79,enemy,Doomsday Man,,Q29097098
+79,enemy,Yon-Rogg,,Q8054873
+79,enemy,Hala the Accuser,,Q30636422
+79,mother,Marie Danvers,,Q117178853
+79,father,Joe Danvers,,Q117178837
+79,partner,Wonder Man,,Q1041907
+8,enemy,Kingpin,19,Q1753322
+8,enemy,Bullseye,77,Q388316
+8,enemy,The Hand,,Q2550236
+8,enemy,Owl,,Q2070834
+8,enemy,Demogoblin,94,Q1812152
+8,enemy,Mysterio,26,Q2283843
+8,enemy,Enforcers,,Q5377360
+8,enemy,Fancy Dan,,Q20656907
+8,enemy,Montana,,Q6904213
+8,enemy,Nuke,,Q944173
+8,enemy,Jester,,Q2539445
+8,enemy,Typhoid Mary,251,Q2625935
+8,enemy,Bushwacker,,Q2633496
+8,enemy,Gladiator,,Q2671468
+8,enemy,Death-Stalker,,Q3550368
+8,enemy,Bullet,,Q2928024
+8,enemy,Stilt-Man,,Q431125
+8,enemy,Turk Barrett,,Q7855000
+8,enemy,Tombstone,43,Q59643
+8,enemy,Mister Hyde,,Q1638775
+8,enemy,Eel,,Q111342150
+8,mother,Maggie Murdock,,Q23306601
+8,father,Jack Murdock,,Q21188801
+8,spouse,Milla Donovan,,Q540442
+8,partner,Elektra,,Q913359
+8,partner,Karen Page,,Q2298077
+8,partner,Black Widow / Natasha Romanova,70,Q369197
+8,partner,Typhoid Mary,251,Q2625935
+8,partner,Black Cat,3,Q912640
+8,partner,Claire Temple,,Q19571310
+8,partner,Echo,,Q2519959
+8,partner,Dakota North,,Q5210033
+8,partner,Moondragon,,Q1908572
+8,alternate_universe_counterpart,Kingpin,,Q110486878
+80,enemy,Peter Parker / Spider-Man,27,Q79037
+80,father,Eddie Brock / Venom,12,Q1621261
+82,enemy,Peter Parker / Spider-Man,27,Q79037
+87,enemy,Mister Sinister,,Q302534
+87,enemy,Vulcan,,Q2568977
+87,mother,Katherine Summers,,Q15229053
+87,father,Corsair,,Q2385117
+87,spouse,Madelyne Pryor,,Q741279
+87,spouse,Jean Grey,,Q5350072
+87,child,Cable,,Q2267017
+87,child,Ruby Summers,,Q3446576
+87,child,Nate Grey,,Q2602677
+87,partner,Emma Frost,,Q1995969
+87,partner,Lee Forrester,,Q6513617
+87,alternate_universe_counterpart,Ultimate Cyclops,,Q4003147
+87,alternate_universe_counterpart,Cyclops,,Q128904414
+9,enemy,The Fantastic Four,,Q152098
+9,enemy,Squirrel Girl,,Q4353353
+9,enemy,Mephisto,,Q2418665
+9,enemy,Silver Surfer / Norrin Radd,202,Q95153
+9,enemy,Galactus,111,Q1429836
+9,enemy,Invisible Woman,,Q510450
+9,enemy,Human Torch,129,Q584585
+9,enemy,Mister Fantastic / Reed Richards,187,Q865017
+9,enemy,Thing,,Q910204
+9,enemy,Dreadknight,,Q3039224
+9,enemy,Excalibur,,Q2603976
+9,enemy,Maker,,Q39071489
+9,enemy,Kang the Conqueror,157,Q1982051
+9,enemy,Beyonder,,Q1994866
+9,enemy,Impossible Man,,Q1149855
+9,mother,Cynthia von Doom,,Q5200168
+9,child,Kristoff Vernard,,Q3545586
+9,partner,Morgan le Fay,,Q645718
+9,partner,Scarlet Witch,,Q929285
+9,relative,Kang the Conqueror,157,Q1982051
+9,alternate_universe_counterpart,Ultimate Doctor Doom,,Q16619125
+9,alternate_universe_counterpart,Doom 2099,,Q5297058
+91,enemy,Ajax,,Q4699585
+91,enemy,Madcap,,Q6726576
+91,enemy,William Stryker,,Q2551564
+91,spouse,Shiklah,,Q19867627
+94,enemy,Daredevil,8,Q327553
+94,enemy,Peter Parker / Spider-Man,27,Q79037

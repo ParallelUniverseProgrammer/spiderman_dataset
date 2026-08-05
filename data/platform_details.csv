@@ -1,0 +1,52 @@
+platform_id,wikidata_id,wikipedia_title,manufacturer,developer,released,discontinued
+1,Q206261,Atari 2600,"Atari, Inc.",,1977-09,
+2,Q342163,Acorn Electron,Acorn Computers,,1983-08-25,
+3,Q3017175,Apple II (original),Apple Inc.,Steve Wozniak,1977-06-10,
+6,Q99775,Commodore 64,Commodore International,Commodore International,,1994-05
+7,Q1115913,Commodore 16,Commodore International,,1984,
+8,Q57741692,Dragon 32,,,,
+9,Q47604,MS-DOS,,Microsoft,1981-08-12,
+10,Q23882,ZX Spectrum,Sinclair Research,Sinclair Research,,1992
+11,Q100047,Amiga,Commodore International,,,1996
+12,Q627302,Atari ST,Atari Corporation,,,
+13,Q478829,Amstrad CPC,Amstrad,,1984,
+14,Q10676,Sega Genesis,Sega,,1988-10-29,
+15,Q209868,Master System,Sega,,1987-10,
+16,Q751719,Game Gear,Sega,,1990-10-06,1997-04-30
+17,Q1047516,Sega CD,Sega,,1991-12-12,1996
+19,Q172742,Nintendo Entertainment System,Nintendo,Nintendo Research & Development 2,1983-07-15,
+20,Q183259,Super Nintendo Entertainment System,Nintendo,Nintendo Research & Development 2,1990-11-21,
+22,Q186437,Game Boy,Nintendo,Nintendo Research & Development 1,1989-04-21,2003-03-23
+23,Q183259,Super Nintendo Entertainment System,Nintendo,Nintendo Research & Development 2,1990-11-21,
+25,Q10676,Sega Genesis,Sega,,1988-10-29,
+26,Q183259,Super Nintendo Entertainment System,Nintendo,Nintendo Research & Development 2,1990-11-21,
+27,Q1063978,32X,Sega,,1994-11-21,1996
+28,Q10677,PlayStation (console),Sony Interactive Entertainment,Sony Interactive Entertainment,1994-12-03,2006-03-23
+29,Q203992,Game Boy Color,Nintendo,Nintendo Research & Engineering Department,1998-10-21,
+30,Q184839,Nintendo 64,Nintendo,Nintendo Integrated Research & Development,1996-06-23,2007-08-07
+31,Q184198,Dreamcast,Sega,,1998-11-27,2002-02-14
+32,Q1406,Microsoft Windows,,Microsoft,1985-11-20,
+33,Q14116,MacOS,,Apple Inc.,2001-03-24,
+34,Q188642,Game Boy Advance,Nintendo,Nintendo,2001-03-21,2010-05-14
+35,Q10680,PlayStation 2,Sony Interactive Entertainment,Sony Group,2000-03-04,2013-01-04
+36,Q132020,Xbox (console),Flex Ltd.,Microsoft,2001-11-15,2006
+37,Q182172,GameCube,Nintendo,Nintendo,2001-09-14,2007
+38,Q336434,N-Gage,Nokia,,2003-10-07,2005-11-26
+39,Q170323,Nintendo DS,Nintendo,Nintendo,2004-11-21,2007-01-18
+40,Q170325,PlayStation Portable,Sony Interactive Entertainment,Sony Interactive Entertainment,2004-12-12,2014-06
+41,Q14116,MacOS,,Apple Inc.,2001-03-24,
+43,Q48263,Xbox 360,Flex Ltd.,Microsoft,2005-11-22,
+44,Q10683,PlayStation 3,Sony Interactive Entertainment,Sony Interactive Entertainment,2006-11-11,2017-05
+45,Q8079,Wii,Foxconn,Nintendo,2006-11-19,2017
+46,Q203597,Nintendo 3DS,Nintendo,Nintendo,2011-02-26,2020-09-16
+48,Q188808,PlayStation Vita,Sony Interactive Entertainment,Sony Interactive Entertainment,2011-12-17,2019-03-01
+49,Q94,Android (operating system),,Google,,
+50,Q48493,IOS,,Apple Inc.,2007-06-29,
+52,Q5014725,PlayStation 4,Sony Interactive Entertainment,Sony Interactive Entertainment,2013-11-15,
+53,Q13361286,Xbox One,Foxconn,Microsoft,2013-11-22,2020
+54,Q56942,Wii U,Nintendo,Nintendo,2012-11-18,2018
+55,Q14116,MacOS,,Apple Inc.,2001-03-24,
+56,Q19610114,Nintendo Switch,Nintendo Platform Technology Development,Nintendo,2017-03-03,
+59,Q14116,MacOS,,Apple Inc.,2001-03-24,
+62,Q63184502,PlayStation 5,Sony Group,Sony Interactive Entertainment,2020-11-12,
+66,Q1406,Microsoft Windows,,Microsoft,1985-11-20,

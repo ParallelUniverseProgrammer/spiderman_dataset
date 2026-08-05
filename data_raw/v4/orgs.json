@@ -1,0 +1,1728 @@
+{
+ "labels": {
+  "Q1006668": "Glen Cove",
+  "Q1012388": "Hoffman Estates",
+  "Q112165928": "video game publishing",
+  "Q1127887": "Vivendi",
+  "Q11311474": "Square Enix Holdings",
+  "Q1140680": "Flex Ltd.",
+  "Q11425": "animation",
+  "Q115397763": "comics industry",
+  "Q1187283": "interactive entertainment",
+  "Q1200552": "Marvel Entertainment",
+  "Q1201337": "Tsukiji",
+  "Q122741": "Sega",
+  "Q126399": "Warner Bros. Entertainment",
+  "Q1337818": "Woodland Hills",
+  "Q13409231": "Atari, Inc.",
+  "Q135485147": "Paramount Skydance",
+  "Q1368944": "game industry",
+  "Q1401416": "computer animation",
+  "Q1415395": "film industry",
+  "Q1418": "Nokia",
+  "Q142": "France",
+  "Q145": "United Kingdom",
+  "Q1470791": "Knutsford",
+  "Q148": "People's Republic of China",
+  "Q1490": "Tokyo",
+  "Q16": "Canada",
+  "Q16559": "Austin",
+  "Q17": "Japan",
+  "Q173799": "entertainment",
+  "Q173941": "Electronic Arts",
+  "Q1782700": "Infogrames",
+  "Q178824": "Blizzard Entertainment",
+  "Q179645": "Shinjuku",
+  "Q18125": "Manchester",
+  "Q18594": "Sony Interactive Entertainment",
+  "Q190088": "Minato",
+  "Q200491": "Activision",
+  "Q2011497": "Wilmslow",
+  "Q208305": "Commodore International",
+  "Q21190892": "Nintendo Platform Technology Development",
+  "Q21198548": "audiovisual production",
+  "Q212704": "Chūō",
+  "Q2145": "Quebec City",
+  "Q2153666": "Longwood",
+  "Q2216535": "Walt Disney Studios",
+  "Q2283": "Microsoft",
+  "Q232641": "Taitō-ku",
+  "Q233495": "Shinagawa",
+  "Q2337085": "Twycross",
+  "Q24639": "Vancouver",
+  "Q24861": "Albany",
+  "Q2499130": "Sony Pictures Studios",
+  "Q2633052": "Nintendo Research & Development 1",
+  "Q2640560": "CBS Building",
+  "Q2668532": "Nintendo Research & Development 2",
+  "Q277162": "Hammersmith",
+  "Q289": "television",
+  "Q29": "Spain",
+  "Q29469450": "SEGA Group Corporation",
+  "Q30": "United States",
+  "Q312": "Apple Inc.",
+  "Q3141": "Melbourne",
+  "Q323414": "Simi Valley",
+  "Q339228": "Acclaim Entertainment",
+  "Q34006": "Hollywood",
+  "Q342149": "Acorn Computers",
+  "Q344341": "Activision Blizzard",
+  "Q34600": "Kyoto",
+  "Q3627870": "Atari Corporation",
+  "Q367466": "Marvel Studios",
+  "Q3877245": "Nintendo Integrated Research & Development",
+  "Q3877252": "Nintendo Research & Engineering Department",
+  "Q3884": "Amazon",
+  "Q389261": "Backbone Entertainment",
+  "Q39561": "Burbank",
+  "Q408": "Australia",
+  "Q41187": "Sony Group",
+  "Q4131576": "TT Games",
+  "Q4409": "Sinclair Research",
+  "Q463094": "Foxconn",
+  "Q47164": "Santa Monica",
+  "Q478825": "Amstrad",
+  "Q483382": "Steve Wozniak",
+  "Q485716": "Glendale",
+  "Q493378": "Culver City",
+  "Q499178": "Emeryville",
+  "Q499196": "Costa Mesa",
+  "Q501476": "Hasbro",
+  "Q5016373": "Cadence Industries",
+  "Q54140": "Salem",
+  "Q542018": "PlayStation Studios",
+  "Q55": "Netherlands",
+  "Q56611639": "media industry",
+  "Q60": "New York City",
+  "Q62": "San Francisco",
+  "Q628249": "Interplay Entertainment",
+  "Q65": "Los Angeles",
+  "Q7112620": "outline of entertainment",
+  "Q734974": "Greensburg",
+  "Q73801": "Xbox Game Studios",
+  "Q7414": "The Walt Disney Company",
+  "Q745099": "Kyocera",
+  "Q803": "Utrecht",
+  "Q8093": "Nintendo",
+  "Q812628": "Bayswater",
+  "Q822314": "Sony Pictures",
+  "Q836198": "Shinjuku",
+  "Q84": "London",
+  "Q851989": "porting",
+  "Q860580": "Tencent",
+  "Q8686": "Shanghai",
+  "Q90": "Paris",
+  "Q932586": "film production",
+  "Q936768": "Kirkland",
+  "Q941594": "video game industry",
+  "Q95": "Google",
+  "Q99": "California"
+ },
+ "platforms": {
+  "Acorn Electron": {
+   "enwiki": "Acorn Electron",
+   "external_ids": {
+    "commons_category": "Acorn Electron",
+    "freebase": "/m/0wkf"
+   },
+   "label": "Acorn Electron",
+   "manufacturer_qid": "Q342149",
+   "qid": "Q342163",
+   "released": "1983-08-25"
+  },
+  "Amiga": {
+   "discontinued": "1996",
+   "enwiki": "Amiga",
+   "external_ids": {
+    "commons_category": "Commodore Amiga",
+    "freebase": "/m/0vvw"
+   },
+   "label": "Commodore Amiga",
+   "manufacturer_qid": "Q208305",
+   "qid": "Q100047"
+  },
+  "Amstrad CPC": {
+   "enwiki": "Amstrad CPC",
+   "external_ids": {
+    "commons_category": "Amstrad CPC",
+    "freebase": "/m/0xkl"
+   },
+   "label": "Amstrad CPC",
+   "manufacturer_qid": "Q478825",
+   "qid": "Q478829",
+   "released": "1984"
+  },
+  "Android": {
+   "developer_qid": "Q95",
+   "enwiki": "Android (operating system)",
+   "external_ids": {
+    "commons_category": "Android (operating system)",
+    "freebase": "/m/02wxtgw",
+    "official_website": "https://android.com"
+   },
+   "label": "Android",
+   "qid": "Q94"
+  },
+  "Apple II": {
+   "developer_qid": "Q483382",
+   "enwiki": "Apple II (original)",
+   "external_ids": {
+    "commons_category": "Apple II",
+    "freebase": "/m/0wxp"
+   },
+   "label": "Apple II",
+   "manufacturer_qid": "Q312",
+   "qid": "Q3017175",
+   "released": "1977-06-10"
+  },
+  "Atari 2600": {
+   "enwiki": "Atari 2600",
+   "external_ids": {
+    "commons_category": "Atari 2600",
+    "freebase": "/m/01136"
+   },
+   "label": "Atari 2600",
+   "manufacturer_qid": "Q13409231",
+   "qid": "Q206261",
+   "released": "1977-09"
+  },
+  "Atari ST": {
+   "enwiki": "Atari ST",
+   "external_ids": {
+    "commons_category": "Atari ST",
+    "freebase": "/m/0x35"
+   },
+   "label": "Atari ST",
+   "manufacturer_qid": "Q3627870",
+   "qid": "Q627302"
+  },
+  "Commodore 16": {
+   "enwiki": "Commodore 16",
+   "external_ids": {
+    "commons_category": "Commodore 16",
+    "freebase": "/m/01s0ty"
+   },
+   "label": "Commodore 16",
+   "manufacturer_qid": "Q208305",
+   "qid": "Q1115913",
+   "released": "1984"
+  },
+  "Commodore 64": {
+   "developer_qid": "Q208305",
+   "discontinued": "1994-05",
+   "enwiki": "Commodore 64",
+   "external_ids": {
+    "commons_category": "Commodore 64",
+    "freebase": "/m/0228q"
+   },
+   "label": "Commodore 64",
+   "manufacturer_qid": "Q208305",
+   "qid": "Q99775"
+  },
+  "Dragon 32": {
+   "enwiki": "Dragon 32",
+   "external_ids": {
+    "commons_category": "Dragon 32 and 64"
+   },
+   "label": "Dragon 32",
+   "qid": "Q57741692"
+  },
+  "Dreamcast": {
+   "discontinued": "2002-02-14",
+   "enwiki": "Dreamcast",
+   "external_ids": {
+    "commons_category": "Sega Dreamcast",
+    "freebase": "/m/07605"
+   },
+   "label": "Dreamcast",
+   "manufacturer_qid": "Q122741",
+   "qid": "Q184198",
+   "released": "1998-11-27"
+  },
+  "Game Boy": {
+   "developer_qid": "Q2633052",
+   "discontinued": "2003-03-23",
+   "enwiki": "Game Boy",
+   "external_ids": {
+    "commons_category": "Game Boy",
+    "freebase": "/m/0dv3zf"
+   },
+   "label": "Game Boy",
+   "manufacturer_qid": "Q8093",
+   "qid": "Q186437",
+   "released": "1989-04-21"
+  },
+  "Game Boy Advance": {
+   "developer_qid": "Q8093",
+   "discontinued": "2010-05-14",
+   "enwiki": "Game Boy Advance",
+   "external_ids": {
+    "commons_category": "Game Boy Advance",
+    "freebase": "/m/03877",
+    "official_website": "http://www.gameboy.com"
+   },
+   "label": "Game Boy Advance",
+   "manufacturer_qid": "Q8093",
+   "qid": "Q188642",
+   "released": "2001-03-21"
+  },
+  "Game Boy Color": {
+   "developer_qid": "Q3877252",
+   "enwiki": "Game Boy Color",
+   "external_ids": {
+    "commons_category": "Game Boy Color",
+    "freebase": "/m/03ffs",
+    "official_website": "http://gameboy.com/"
+   },
+   "label": "Game Boy Color",
+   "manufacturer_qid": "Q8093",
+   "qid": "Q203992",
+   "released": "1998-10-21"
+  },
+  "Game Gear": {
+   "discontinued": "1997-04-30",
+   "enwiki": "Game Gear",
+   "external_ids": {
+    "commons_category": "Sega Game Gear",
+    "freebase": "/m/075y1"
+   },
+   "label": "Game Gear",
+   "manufacturer_qid": "Q122741",
+   "qid": "Q751719",
+   "released": "1990-10-06"
+  },
+  "GameCube": {
+   "developer_qid": "Q8093",
+   "discontinued": "2007",
+   "enwiki": "GameCube",
+   "external_ids": {
+    "commons_category": "GameCube",
+    "freebase": "/m/0f0w2",
+    "official_website": "http://www.nintendo.co.jp/ngc/"
+   },
+   "label": "Nintendo GameCube",
+   "manufacturer_qid": "Q8093",
+   "qid": "Q182172",
+   "released": "2001-09-14"
+  },
+  "MS-DOS": {
+   "developer_qid": "Q2283",
+   "enwiki": "MS-DOS",
+   "external_ids": {
+    "commons_category": "MS-DOS",
+    "freebase": "/m/050xd",
+    "official_website": "https://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/windows_dos_overview.mspx"
+   },
+   "label": "MS-DOS",
+   "qid": "Q47604",
+   "released": "1981-08-12"
+  },
+  "Mac OS": {
+   "developer_qid": "Q312",
+   "enwiki": "MacOS",
+   "external_ids": {
+    "commons_category": "MacOS",
+    "freebase": "/m/055yr",
+    "official_website": "https://www.apple.com/os/macos/"
+   },
+   "label": "macOS",
+   "qid": "Q14116",
+   "released": "2001-03-24"
+  },
+  "Mac OS X": {
+   "developer_qid": "Q312",
+   "enwiki": "MacOS",
+   "external_ids": {
+    "commons_category": "MacOS",
+    "freebase": "/m/055yr",
+    "official_website": "https://www.apple.com/os/macos/"
+   },
+   "label": "macOS",
+   "qid": "Q14116",
+   "released": "2001-03-24"
+  },
+  "Master System": {
+   "enwiki": "Master System",
+   "external_ids": {
+    "commons_category": "Sega Master System",
+    "freebase": "/m/0q55f",
+    "official_website": "https://www.sega.jp/history/hard/mastersystem/index.html"
+   },
+   "label": "Sega Master System",
+   "manufacturer_qid": "Q122741",
+   "qid": "Q209868",
+   "released": "1987-10"
+  },
+  "Microsoft Windows": {
+   "developer_qid": "Q2283",
+   "enwiki": "Microsoft Windows",
+   "external_ids": {
+    "commons_category": "Microsoft Windows",
+    "freebase": "/m/04r_8",
+    "official_website": "https://windows.com"
+   },
+   "label": "Microsoft Windows",
+   "qid": "Q1406",
+   "released": "1985-11-20"
+  },
+  "N-Gage": {
+   "discontinued": "2005-11-26",
+   "enwiki": "N-Gage",
+   "external_ids": {
+    "commons_category": "Nokia N-Gage",
+    "freebase": "/m/01qs76",
+    "official_website": "http://www.n-gage.com/ngi/firstgen/index.html"
+   },
+   "label": "N-Gage",
+   "manufacturer_qid": "Q1418",
+   "qid": "Q336434",
+   "released": "2003-10-07"
+  },
+  "NES": {
+   "developer_qid": "Q2668532",
+   "enwiki": "Nintendo Entertainment System",
+   "external_ids": {
+    "commons_category": "Famicom and variants",
+    "freebase": "/m/05j0w"
+   },
+   "label": "Nintendo Entertainment System",
+   "manufacturer_qid": "Q8093",
+   "qid": "Q172742",
+   "released": "1983-07-15"
+  },
+  "Nintendo 3DS": {
+   "developer_qid": "Q8093",
+   "discontinued": "2020-09-16",
+   "enwiki": "Nintendo 3DS",
+   "external_ids": {
+    "commons_category": "Nintendo 3DS",
+    "freebase": "/m/0bmjxs9",
+    "official_website": "http://www.nintendo.fr/Nintendo-3DS/Nintendo-3DS-94560.html"
+   },
+   "label": "Nintendo 3DS",
+   "manufacturer_qid": "Q8093",
+   "qid": "Q203597",
+   "released": "2011-02-26"
+  },
+  "Nintendo 64": {
+   "developer_qid": "Q3877245",
+   "discontinued": "2007-08-07",
+   "enwiki": "Nintendo 64",
+   "external_ids": {
+    "commons_category": "Nintendo 64",
+    "freebase": "/m/05h5m",
+    "official_website": "http://www.nintendo.com/consumer/systems/nintendo64/index.jsp"
+   },
+   "label": "Nintendo 64",
+   "manufacturer_qid": "Q8093",
+   "qid": "Q184839",
+   "released": "1996-06-23"
+  },
+  "Nintendo DS": {
+   "developer_qid": "Q8093",
+   "discontinued": "2007-01-18",
+   "enwiki": "Nintendo DS",
+   "external_ids": {
+    "commons_category": "Nintendo DS",
+    "freebase": "/m/028jm0",
+    "official_website": "http://www.nintendo.com/ds"
+   },
+   "label": "Nintendo DS",
+   "manufacturer_qid": "Q8093",
+   "qid": "Q170323",
+   "released": "2004-11-21"
+  },
+  "Nintendo Switch": {
+   "developer_qid": "Q8093",
+   "enwiki": "Nintendo Switch",
+   "external_ids": {
+    "commons_category": "Nintendo Switch",
+    "freebase": "/m/0130pygf",
+    "official_website": "http://www.nintendo.com/switch/"
+   },
+   "label": "Nintendo Switch",
+   "manufacturer_qid": "Q21190892",
+   "qid": "Q19610114",
+   "released": "2017-03-03"
+  },
+  "OS X": {
+   "developer_qid": "Q312",
+   "enwiki": "MacOS",
+   "external_ids": {
+    "commons_category": "MacOS",
+    "freebase": "/m/055yr",
+    "official_website": "https://www.apple.com/os/macos/"
+   },
+   "label": "macOS",
+   "qid": "Q14116",
+   "released": "2001-03-24"
+  },
+  "PlayStation": {
+   "developer_qid": "Q18594",
+   "discontinued": "2006-03-23",
+   "enwiki": "PlayStation (console)",
+   "external_ids": {
+    "commons_category": "PlayStation (original)",
+    "freebase": "/m/05zxk",
+    "official_website": "https://playstation.com"
+   },
+   "label": "PlayStation",
+   "manufacturer_qid": "Q18594",
+   "qid": "Q10677",
+   "released": "1994-12-03"
+  },
+  "PlayStation 2": {
+   "developer_qid": "Q41187",
+   "discontinued": "2013-01-04",
+   "enwiki": "PlayStation 2",
+   "external_ids": {
+    "commons_category": "PlayStation 2",
+    "freebase": "/m/066kp",
+    "official_website": "https://www.playstation.com/explore/ps2"
+   },
+   "label": "PlayStation 2",
+   "manufacturer_qid": "Q18594",
+   "qid": "Q10680",
+   "released": "2000-03-04"
+  },
+  "PlayStation 3": {
+   "developer_qid": "Q18594",
+   "discontinued": "2017-05",
+   "enwiki": "PlayStation 3",
+   "external_ids": {
+    "commons_category": "PlayStation 3",
+    "freebase": "/m/067gh",
+    "official_website": "https://www.playstation.com/explore/ps3"
+   },
+   "label": "PlayStation 3",
+   "manufacturer_qid": "Q18594",
+   "qid": "Q10683",
+   "released": "2006-11-11"
+  },
+  "PlayStation 4": {
+   "developer_qid": "Q18594",
+   "enwiki": "PlayStation 4",
+   "external_ids": {
+    "commons_category": "PlayStation 4",
+    "freebase": "/m/0r4_kmc",
+    "official_website": "https://www.playstation.com/explore/ps4"
+   },
+   "label": "PlayStation 4",
+   "manufacturer_qid": "Q18594",
+   "qid": "Q5014725",
+   "released": "2013-11-15"
+  },
+  "PlayStation 5": {
+   "developer_qid": "Q18594",
+   "enwiki": "PlayStation 5",
+   "external_ids": {
+    "commons_category": "PlayStation 5",
+    "official_website": "https://www.playstation.com/ps5"
+   },
+   "label": "PlayStation 5",
+   "manufacturer_qid": "Q41187",
+   "qid": "Q63184502",
+   "released": "2020-11-12"
+  },
+  "PlayStation Portable": {
+   "developer_qid": "Q18594",
+   "discontinued": "2014-06",
+   "enwiki": "PlayStation Portable",
+   "external_ids": {
+    "commons_category": "PlayStation Portable",
+    "freebase": "/m/02x8rd",
+    "official_website": "http://www.fr.PlayStation.com/psp"
+   },
+   "label": "PlayStation Portable",
+   "manufacturer_qid": "Q18594",
+   "qid": "Q170325",
+   "released": "2004-12-12"
+  },
+  "PlayStation Vita": {
+   "developer_qid": "Q18594",
+   "discontinued": "2019-03-01",
+   "enwiki": "PlayStation Vita",
+   "external_ids": {
+    "commons_category": "PlayStation Vita",
+    "freebase": "/m/0fqq_84",
+    "official_website": "http://us.playstation.com/psvita/"
+   },
+   "label": "PlayStation Vita",
+   "manufacturer_qid": "Q18594",
+   "qid": "Q188808",
+   "released": "2011-12-17"
+  },
+  "Sega 32X": {
+   "discontinued": "1996",
+   "enwiki": "32X",
+   "external_ids": {
+    "commons_category": "Sega 32X",
+    "freebase": "/m/075yk"
+   },
+   "label": "Sega 32X",
+   "manufacturer_qid": "Q122741",
+   "qid": "Q1063978",
+   "released": "1994-11-21"
+  },
+  "Sega CD": {
+   "discontinued": "1996",
+   "enwiki": "Sega CD",
+   "external_ids": {
+    "commons_category": "Sega CD",
+    "freebase": "/m/075zf"
+   },
+   "label": "Sega CD/Mega CD",
+   "manufacturer_qid": "Q122741",
+   "qid": "Q1047516",
+   "released": "1991-12-12"
+  },
+  "Sega Genesis": {
+   "enwiki": "Sega Genesis",
+   "external_ids": {
+    "commons_category": "Sega Mega Drive",
+    "freebase": "/m/07tl9y"
+   },
+   "label": "Sega Genesis/Mega Drive",
+   "manufacturer_qid": "Q122741",
+   "qid": "Q10676",
+   "released": "1988-10-29"
+  },
+  "Sega Genesis/Mega Drive": {
+   "enwiki": "Sega Genesis",
+   "external_ids": {
+    "commons_category": "Sega Mega Drive",
+    "freebase": "/m/07tl9y"
+   },
+   "label": "Sega Genesis/Mega Drive",
+   "manufacturer_qid": "Q122741",
+   "qid": "Q10676",
+   "released": "1988-10-29"
+  },
+  "Super Famicom": {
+   "developer_qid": "Q2668532",
+   "enwiki": "Super Nintendo Entertainment System",
+   "external_ids": {
+    "commons_category": "Super Famicom and variants",
+    "freebase": "/m/070c4"
+   },
+   "label": "Super Nintendo Entertainment System",
+   "manufacturer_qid": "Q8093",
+   "qid": "Q183259",
+   "released": "1990-11-21"
+  },
+  "Super NES": {
+   "developer_qid": "Q2668532",
+   "enwiki": "Super Nintendo Entertainment System",
+   "external_ids": {
+    "commons_category": "Super Famicom and variants",
+    "freebase": "/m/070c4"
+   },
+   "label": "Super Nintendo Entertainment System",
+   "manufacturer_qid": "Q8093",
+   "qid": "Q183259",
+   "released": "1990-11-21"
+  },
+  "Super Nintendo Entertainment System": {
+   "developer_qid": "Q2668532",
+   "enwiki": "Super Nintendo Entertainment System",
+   "external_ids": {
+    "commons_category": "Super Famicom and variants",
+    "freebase": "/m/070c4"
+   },
+   "label": "Super Nintendo Entertainment System",
+   "manufacturer_qid": "Q8093",
+   "qid": "Q183259",
+   "released": "1990-11-21"
+  },
+  "Wii": {
+   "developer_qid": "Q8093",
+   "discontinued": "2017",
+   "enwiki": "Wii",
+   "external_ids": {
+    "commons_category": "Wii",
+    "freebase": "/m/026kds",
+    "official_website": "http://wii.com"
+   },
+   "label": "Wii",
+   "manufacturer_qid": "Q463094",
+   "qid": "Q8079",
+   "released": "2006-11-19"
+  },
+  "Wii U": {
+   "developer_qid": "Q8093",
+   "discontinued": "2018",
+   "enwiki": "Wii U",
+   "external_ids": {
+    "commons_category": "Wii U",
+    "freebase": "/m/0gls6tt",
+    "official_website": "https://www.nintendo.com/en-gb/Wii-U/Wii-U-344102.html"
+   },
+   "label": "Wii U",
+   "manufacturer_qid": "Q8093",
+   "qid": "Q56942",
+   "released": "2012-11-18"
+  },
+  "Windows": {
+   "developer_qid": "Q2283",
+   "enwiki": "Microsoft Windows",
+   "external_ids": {
+    "commons_category": "Microsoft Windows",
+    "freebase": "/m/04r_8",
+    "official_website": "https://windows.com"
+   },
+   "label": "Microsoft Windows",
+   "qid": "Q1406",
+   "released": "1985-11-20"
+  },
+  "Xbox": {
+   "developer_qid": "Q2283",
+   "discontinued": "2006",
+   "enwiki": "Xbox (console)",
+   "external_ids": {
+    "commons_category": "Xbox",
+    "freebase": "/m/0qffzrl",
+    "official_website": "https://www.xbox.com/"
+   },
+   "label": "Xbox",
+   "manufacturer_qid": "Q1140680",
+   "qid": "Q132020",
+   "released": "2001-11-15"
+  },
+  "Xbox 360": {
+   "developer_qid": "Q2283",
+   "enwiki": "Xbox 360",
+   "external_ids": {
+    "commons_category": "Xbox 360",
+    "freebase": "/m/02plp2",
+    "official_website": "http://www.xbox.com"
+   },
+   "label": "Xbox 360",
+   "manufacturer_qid": "Q1140680",
+   "qid": "Q48263",
+   "released": "2005-11-22"
+  },
+  "Xbox One": {
+   "developer_qid": "Q2283",
+   "discontinued": "2020",
+   "enwiki": "Xbox One",
+   "external_ids": {
+    "commons_category": "Xbox One",
+    "freebase": "/m/0vphbfj",
+    "official_website": "http://www.xbox.com/it-IT/xboxone/"
+   },
+   "label": "Xbox One",
+   "manufacturer_qid": "Q463094",
+   "qid": "Q13361286",
+   "released": "2013-11-22"
+  },
+  "ZX Spectrum": {
+   "developer_qid": "Q4409",
+   "discontinued": "1992",
+   "enwiki": "ZX Spectrum",
+   "external_ids": {
+    "commons_category": "Sinclair ZX Spectrum",
+    "freebase": "/m/089b9"
+   },
+   "label": "ZX Spectrum",
+   "manufacturer_qid": "Q4409",
+   "qid": "Q23882"
+  },
+  "iOS": {
+   "developer_qid": "Q312",
+   "enwiki": "IOS",
+   "external_ids": {
+    "commons_category": "IOS (Apple Inc.)",
+    "freebase": "/m/03wbl14",
+    "official_website": "https://www.apple.com/ios/"
+   },
+   "label": "iOS",
+   "qid": "Q48493",
+   "released": "2007-06-29"
+  },
+  "macOS": {
+   "developer_qid": "Q312",
+   "enwiki": "MacOS",
+   "external_ids": {
+    "commons_category": "MacOS",
+    "freebase": "/m/055yr",
+    "official_website": "https://www.apple.com/os/macos/"
+   },
+   "label": "macOS",
+   "qid": "Q14116",
+   "released": "2001-03-24"
+  }
+ },
+ "studios": {
+  "Acclaim Entertainment": {
+   "country_qid": "Q30",
+   "dissolved": "2004-09-01",
+   "enwiki": "Acclaim Entertainment",
+   "external_ids": {
+    "freebase": "/m/01t7jy",
+    "official_website": "http://www.acclaim.com"
+   },
+   "hq_qid": "Q1006668",
+   "inception": "1987-01-01",
+   "industry_qid": "Q941594",
+   "label": "Acclaim Entertainment",
+   "qid": "Q339228"
+  },
+  "Activision": {
+   "country_qid": "Q30",
+   "enwiki": "Activision",
+   "external_ids": {
+    "commons_category": "Activision",
+    "freebase": "/m/09j_g",
+    "official_website": "https://www.activision.com"
+   },
+   "hq_qid": "Q47164",
+   "inception": "1979-10-01",
+   "industry_qid": "Q941594",
+   "label": "Activision",
+   "parent_qid": "Q344341",
+   "qid": "Q200491"
+  },
+  "Adelaide Productions": {
+   "country_qid": "Q30",
+   "enwiki": "Adelaide Productions",
+   "external_ids": {
+    "freebase": "/m/08nmcw"
+   },
+   "hq_qid": "Q493378",
+   "inception": "1993",
+   "industry_qid": "Q11425",
+   "label": "Adelaide Productions",
+   "parent_qid": "Q41187",
+   "qid": "Q966852"
+  },
+  "Adventure International": {
+   "country_qid": "Q30",
+   "dissolved": "1985",
+   "enwiki": "Adventure International",
+   "external_ids": {
+    "freebase": "/m/0kl4"
+   },
+   "hq_qid": "Q2153666",
+   "inception": "1978",
+   "industry_qid": "Q941594",
+   "label": "Adventure International",
+   "qid": "Q4686510"
+  },
+  "Amaze Entertainment": {
+   "country_qid": "Q30",
+   "dissolved": "2009",
+   "enwiki": "Amaze Entertainment",
+   "external_ids": {
+    "commons_category": "Amaze Entertainment",
+    "freebase": "/m/0kqk57",
+    "official_website": "http://www.amazeentertainment.com/"
+   },
+   "hq_qid": "Q936768",
+   "inception": "1997",
+   "industry_qid": "Q941594",
+   "label": "Amaze Entertainment",
+   "qid": "Q521489"
+  },
+  "Amazon MGM Studios": {
+   "country_qid": "Q30",
+   "enwiki": "Amazon MGM Studios",
+   "external_ids": {
+    "commons_category": "Amazon MGM Studios",
+    "freebase": "/m/0n42bf0",
+    "official_website": "https://www.mgm.com/"
+   },
+   "hq_qid": "Q493378",
+   "inception": "2010",
+   "label": "Amazon MGM Studios",
+   "parent_qid": "Q3884",
+   "qid": "Q4740868"
+  },
+  "Arad Productions, Inc.": {
+   "country_qid": "Q30",
+   "enwiki": null,
+   "label": "Arad Productions Inc.",
+   "qid": "Q17991752"
+  },
+  "Aspyr": {
+   "country_qid": "Q30",
+   "enwiki": "Aspyr",
+   "external_ids": {
+    "commons_category": "Aspyr",
+    "freebase": "/m/051pnv",
+    "official_website": "http://www.aspyr.com"
+   },
+   "hq_qid": "Q16559",
+   "inception": "1996-01-01",
+   "industry_qid": "Q941594",
+   "label": "Aspyr",
+   "qid": "Q738135"
+  },
+  "Atomic Cartoons": {
+   "country_qid": "Q16",
+   "enwiki": "Atomic Cartoons",
+   "external_ids": {
+    "freebase": "/m/08hmvn",
+    "official_website": "http://www.atomiccartoons.com/"
+   },
+   "inception": "1999",
+   "industry_qid": "Q11425",
+   "label": "Atomic Cartoons",
+   "qid": "Q4817265"
+  },
+  "Beam Software": {
+   "country_qid": "Q408",
+   "dissolved": "2010",
+   "enwiki": "Beam Software",
+   "external_ids": {
+    "freebase": "/m/03wnyn",
+    "official_website": "http://www.melbournehouse.com/"
+   },
+   "hq_qid": "Q3141",
+   "inception": "1977",
+   "industry_qid": "Q941594",
+   "label": "Krome Studios Melbourne",
+   "parent_qid": "Q1782700",
+   "qid": "Q2456686"
+  },
+  "Beenox": {
+   "country_qid": "Q16",
+   "enwiki": "Beenox",
+   "external_ids": {
+    "freebase": "/m/02qsf95",
+    "official_website": "http://www.beenox.com/"
+   },
+   "hq_qid": "Q2145",
+   "inception": "2000",
+   "industry_qid": "Q941594",
+   "label": "Beenox",
+   "parent_qid": "Q200491",
+   "qid": "Q775346"
+  },
+  "Bits Studios": {
+   "country_qid": "Q145",
+   "enwiki": "Bits Studios",
+   "external_ids": {
+    "freebase": "/m/05c0szb"
+   },
+   "hq_qid": "Q84",
+   "inception": "1984-01-01",
+   "industry_qid": "Q941594",
+   "label": "Bits Studios",
+   "qid": "Q4035139"
+  },
+  "BlueSky Software": {
+   "country_qid": "Q30",
+   "dissolved": "2001-03",
+   "enwiki": "BlueSky Software",
+   "external_ids": {
+    "freebase": "/m/06k1l0"
+   },
+   "hq_qid": "Q99",
+   "inception": "1988-01-01",
+   "industry_qid": "Q941594",
+   "label": "BlueSky Software",
+   "parent_qid": "Q628249",
+   "qid": "Q1136254"
+  },
+  "Brooklyn Multimedia": {
+   "country_qid": "Q30",
+   "enwiki": null,
+   "external_ids": {
+    "freebase": "/m/06s8_l"
+   },
+   "industry_qid": "Q941594",
+   "label": "Brooklyn Multimedia",
+   "qid": "Q4974880"
+  },
+  "CBS": {
+   "country_qid": "Q30",
+   "enwiki": "CBS",
+   "external_ids": {
+    "commons_category": "CBS",
+    "freebase": "/m/09d5h",
+    "official_website": "https://cbs.com"
+   },
+   "hq_qid": "Q2640560",
+   "inception": "1927-09-18",
+   "industry_qid": "Q56611639",
+   "label": "CBS",
+   "parent_qid": "Q135485147",
+   "qid": "Q43380"
+  },
+  "Children's Television Workshop": {
+   "enwiki": null,
+   "label": "Children's Television Workshop",
+   "qid": "Q121337292"
+  },
+  "Columbia Pictures": {
+   "country_qid": "Q30",
+   "enwiki": "Columbia Pictures",
+   "external_ids": {
+    "commons_category": "Columbia Pictures",
+    "freebase": "/m/017s11",
+    "official_website": "https://www.sonypictures.com/"
+   },
+   "hq_qid": "Q493378",
+   "inception": "1918",
+   "industry_qid": "Q932586",
+   "label": "Columbia Pictures",
+   "parent_qid": "Q822314",
+   "qid": "Q186941"
+  },
+  "Columbia Pictures Television": {
+   "country_qid": "Q30",
+   "dissolved": "2001-01-01",
+   "enwiki": "Columbia Pictures Television",
+   "external_ids": {
+    "freebase": "/m/03shp0"
+   },
+   "hq_qid": "Q2499130",
+   "inception": "1974-05-06",
+   "industry_qid": "Q289",
+   "label": "Columbia Pictures Television",
+   "parent_qid": "Q822314",
+   "qid": "Q5149791"
+  },
+  "Di Bonaventura Pictures": {
+   "country_qid": "Q30",
+   "enwiki": "Di Bonaventura Pictures",
+   "external_ids": {
+    "freebase": "/m/05pwgwm"
+   },
+   "hq_qid": "Q65",
+   "inception": "2003",
+   "industry_qid": "Q932586",
+   "label": "di Bonaventura Pictures",
+   "qid": "Q17305133"
+  },
+  "Digital Eclipse": {
+   "country_qid": "Q30",
+   "enwiki": "Digital Eclipse",
+   "external_ids": {
+    "official_website": "https://digitaleclipse.com/"
+   },
+   "hq_qid": "Q99",
+   "inception": "1992-08-07",
+   "industry_qid": "Q941594",
+   "label": "Digital Eclipse",
+   "parent_qid": "Q389261",
+   "qid": "Q65088849"
+  },
+  "Edge of Reality": {
+   "country_qid": "Q30",
+   "dissolved": "2018",
+   "enwiki": "Edge of Reality",
+   "external_ids": {
+    "freebase": "/m/0glc6y",
+    "official_website": "http://www.edgeofreality.com/"
+   },
+   "hq_qid": "Q16559",
+   "inception": "1988",
+   "industry_qid": "Q941594",
+   "label": "Edge of Reality",
+   "qid": "Q2737798"
+  },
+  "Epoch Co.": {
+   "country_qid": "Q17",
+   "enwiki": "Epoch Co.",
+   "external_ids": {
+    "commons_category": "Epoch Co.",
+    "freebase": "/m/02hk_x5",
+    "official_website": "https://epoch.jp"
+   },
+   "hq_qid": "Q232641",
+   "inception": "1958-05-06",
+   "industry_qid": "Q941594",
+   "label": "Epoch Co.",
+   "qid": "Q132358"
+  },
+  "Feral Interactive": {
+   "country_qid": "Q145",
+   "enwiki": "Feral Interactive",
+   "external_ids": {
+    "freebase": "/m/08dzcc",
+    "official_website": "https://www.feralinteractive.com/"
+   },
+   "hq_qid": "Q84",
+   "inception": "1997-01-01",
+   "industry_qid": "Q941594",
+   "label": "Feral Interactive",
+   "qid": "Q863618"
+  },
+  "Film Roman": {
+   "country_qid": "Q30",
+   "dissolved": "2018-05-01",
+   "enwiki": "Film Roman",
+   "external_ids": {
+    "freebase": "/m/04nd8g",
+    "official_website": "http://www.filmroman.com/"
+   },
+   "hq_qid": "Q39561",
+   "inception": "1984-10-26",
+   "industry_qid": "Q1415395",
+   "label": "Film Roman",
+   "qid": "Q2722120"
+  },
+  "Fox Kids Network": {
+   "country_qid": "Q145",
+   "dissolved": "2020-10-01",
+   "enwiki": "Disney XD (United Kingdom and Ireland)",
+   "external_ids": {
+    "freebase": "/m/0x2hrjb",
+    "official_website": "https://tv.disney.co.uk/whats-on"
+   },
+   "hq_qid": "Q277162",
+   "label": "Disney XD",
+   "qid": "Q65089865"
+  },
+  "Gameloft": {
+   "country_qid": "Q142",
+   "enwiki": "Gameloft",
+   "external_ids": {
+    "commons_category": "Gameloft",
+    "freebase": "/m/064f29",
+    "official_website": "http://www.gameloft.com/"
+   },
+   "hq_qid": "Q90",
+   "inception": "1999-01-01",
+   "industry_qid": "Q112165928",
+   "label": "Gameloft",
+   "parent_qid": "Q1127887",
+   "qid": "Q689093"
+  },
+  "Gameloft Barcelona": {
+   "country_qid": "Q29",
+   "enwiki": "Gameloft Barcelona",
+   "industry_qid": "Q941594",
+   "label": "Gameloft Iberica",
+   "qid": "Q102271088"
+  },
+  "Grantray-Lawrence Animation": {
+   "enwiki": "Grantray-Lawrence Animation",
+   "external_ids": {
+    "freebase": "/m/02x9kj"
+   },
+   "inception": "1954-01-01",
+   "industry_qid": "Q11425",
+   "label": "Grantray-Lawrence Animation",
+   "qid": "Q3115420"
+  },
+  "Griptonite Games": {
+   "country_qid": "Q30",
+   "enwiki": "Glu Mobile",
+   "external_ids": {
+    "commons_category": "Glu Mobile",
+    "freebase": "/m/083pmc",
+    "official_website": "http://www.glu.com/"
+   },
+   "hq_qid": "Q62",
+   "inception": "2005-01-01",
+   "industry_qid": "Q941594",
+   "label": "Glu Mobile",
+   "parent_qid": "Q173941",
+   "qid": "Q2450081"
+  },
+  "High Voltage Software": {
+   "country_qid": "Q30",
+   "enwiki": "High Voltage Software",
+   "external_ids": {
+    "freebase": "/m/03wf7z5",
+    "official_website": "https://www.high-voltage.com/"
+   },
+   "hq_qid": "Q1012388",
+   "inception": "1993-01-01",
+   "industry_qid": "Q941594",
+   "label": "High Voltage Software",
+   "qid": "Q2617918"
+  },
+  "Insomniac Games": {
+   "country_qid": "Q30",
+   "enwiki": "Insomniac Games",
+   "external_ids": {
+    "commons_category": "Insomniac Games",
+    "freebase": "/m/033b85",
+    "official_website": "https://insomniac.games"
+   },
+   "hq_qid": "Q39561",
+   "inception": "1994-02-28",
+   "industry_qid": "Q941594",
+   "label": "Insomniac Games",
+   "parent_qid": "Q542018",
+   "qid": "Q1141245"
+  },
+  "LJN": {
+   "country_qid": "Q30",
+   "dissolved": "1995",
+   "enwiki": "LJN",
+   "external_ids": {
+    "freebase": "/m/01t7nn"
+   },
+   "hq_qid": "Q60",
+   "inception": "1970-01-01",
+   "industry_qid": "Q941594",
+   "label": "LJN",
+   "qid": "Q3206072"
+  },
+  "LTI Gray Matter": {
+   "country_qid": "Q30",
+   "dissolved": "2010",
+   "enwiki": null,
+   "external_ids": {
+    "freebase": "/m/02hk_yl",
+    "official_website": "http://www.livetech.com/"
+   },
+   "hq_qid": "Q323414",
+   "inception": "1981",
+   "industry_qid": "Q941594",
+   "label": "LTI Gray Matter",
+   "qid": "Q25377881"
+  },
+  "Lord Miller Productions": {
+   "enwiki": "Lord Miller Productions",
+   "label": "Lord Miller Productions",
+   "qid": "Q109569652"
+  },
+  "Mainframe Entertainment": {
+   "country_qid": "Q16",
+   "enwiki": "Mainframe Studios",
+   "external_ids": {
+    "freebase": "/m/030v4l",
+    "official_website": "https://www.mainframe.ca/"
+   },
+   "hq_qid": "Q24639",
+   "inception": "1991",
+   "industry_qid": "Q1401416",
+   "label": "Rainmaker Entertainment",
+   "qid": "Q3299128"
+  },
+  "Marvel Animation": {
+   "country_qid": "Q30",
+   "enwiki": "Marvel Animation",
+   "external_ids": {
+    "freebase": "/m/043tvd3",
+    "official_website": "http://www.marvel.com"
+   },
+   "hq_qid": "Q485716",
+   "inception": "2008-01-25",
+   "industry_qid": "Q21198548",
+   "label": "Marvel Animation",
+   "parent_qid": "Q367466",
+   "qid": "Q2425877"
+  },
+  "Marvel Comics Group": {
+   "country_qid": "Q30",
+   "enwiki": "Marvel Comics",
+   "external_ids": {
+    "commons_category": "Marvel Comics",
+    "freebase": "/m/058j2",
+    "official_website": "https://www.marvel.com/"
+   },
+   "hq_qid": "Q60",
+   "inception": "1961-06",
+   "industry_qid": "Q115397763",
+   "label": "Marvel Comics",
+   "parent_qid": "Q1200552",
+   "qid": "Q173496"
+  },
+  "Marvel Enterprises": {
+   "country_qid": "Q30",
+   "dissolved": "2023-03-29",
+   "enwiki": "Marvel Entertainment",
+   "external_ids": {
+    "freebase": "/m/0c_j5d",
+    "official_website": "https://www.marvel.com"
+   },
+   "hq_qid": "Q60",
+   "inception": "1998-06",
+   "industry_qid": "Q173799",
+   "label": "Marvel Entertainment",
+   "parent_qid": "Q7414",
+   "qid": "Q1200552"
+  },
+  "Marvel Entertainment": {
+   "country_qid": "Q30",
+   "dissolved": "2023-03-29",
+   "enwiki": "Marvel Entertainment",
+   "external_ids": {
+    "freebase": "/m/0c_j5d",
+    "official_website": "https://www.marvel.com"
+   },
+   "hq_qid": "Q60",
+   "inception": "1998-06",
+   "industry_qid": "Q173799",
+   "label": "Marvel Entertainment",
+   "parent_qid": "Q7414",
+   "qid": "Q1200552"
+  },
+  "Marvel Productions": {
+   "country_qid": "Q30",
+   "dissolved": "1996",
+   "enwiki": "Marvel Productions",
+   "external_ids": {
+    "freebase": "/m/05skxq"
+   },
+   "hq_qid": "Q34006",
+   "inception": "1981",
+   "industry_qid": "Q289",
+   "label": "Marvel Productions",
+   "parent_qid": "Q5016373",
+   "qid": "Q3296046"
+  },
+  "Marvel Studios": {
+   "country_qid": "Q30",
+   "enwiki": "Marvel Studios",
+   "external_ids": {
+    "commons_category": "Marvel Studios",
+    "freebase": "/m/043q8h",
+    "official_website": "https://www.marvel.com/movies"
+   },
+   "hq_qid": "Q39561",
+   "inception": "1993-01-01",
+   "industry_qid": "Q1415395",
+   "label": "Marvel Studios",
+   "parent_qid": "Q2216535",
+   "qid": "Q367466"
+  },
+  "Matt Tolmach Productions": {
+   "country_qid": "Q30",
+   "enwiki": null,
+   "label": "Matt Tolmach Productions",
+   "qid": "Q111310084"
+  },
+  "Neversoft": {
+   "country_qid": "Q30",
+   "dissolved": "2014-07-10",
+   "enwiki": "Neversoft",
+   "external_ids": {
+    "freebase": "/m/035tl3"
+   },
+   "hq_qid": "Q1337818",
+   "inception": "1994-07",
+   "industry_qid": "Q941594",
+   "label": "Neversoft",
+   "parent_qid": "Q200491",
+   "qid": "Q970264"
+  },
+  "Next Level Games": {
+   "country_qid": "Q16",
+   "enwiki": "Next Level Games",
+   "external_ids": {
+    "freebase": "/m/08q273",
+    "official_website": "https://nextlevelgames.com/"
+   },
+   "hq_qid": "Q24639",
+   "inception": "2002-08-22",
+   "industry_qid": "Q941594",
+   "label": "Next Level Games",
+   "parent_qid": "Q8093",
+   "qid": "Q2719211"
+  },
+  "Nintendo": {
+   "country_qid": "Q17",
+   "enwiki": "Nintendo",
+   "external_ids": {
+    "commons_category": "Nintendo",
+    "freebase": "/m/059wk",
+    "official_website": "https://www.nintendo.com/jp/index.html"
+   },
+   "hq_qid": "Q34600",
+   "inception": "1889-09-23",
+   "industry_qid": "Q941594",
+   "label": "Nintendo",
+   "qid": "Q8093"
+  },
+  "Nixxes Software": {
+   "country_qid": "Q55",
+   "enwiki": "Nixxes Software",
+   "external_ids": {
+    "freebase": "/m/0r8pd1k",
+    "official_website": "https://www.nixxes.com"
+   },
+   "hq_qid": "Q803",
+   "inception": "1999-08",
+   "industry_qid": "Q851989",
+   "label": "Nixxes Software",
+   "parent_qid": "Q542018",
+   "qid": "Q13219333"
+  },
+  "Other Ocean Interactive": {
+   "country_qid": "Q16",
+   "enwiki": "Other Ocean",
+   "external_ids": {
+    "freebase": "/m/09ly674"
+   },
+   "hq_qid": "Q499178",
+   "inception": "2006",
+   "industry_qid": "Q941594",
+   "label": "Other Ocean",
+   "qid": "Q31641433"
+  },
+  "Paragon Software": {
+   "country_qid": "Q30",
+   "dissolved": "1992",
+   "enwiki": "Paragon Software",
+   "external_ids": {
+    "freebase": "/m/06s8c1"
+   },
+   "hq_qid": "Q734974",
+   "inception": "1987",
+   "industry_qid": "Q941594",
+   "label": "Paragon Software",
+   "qid": "Q7134604"
+  },
+  "Parker Brothers": {
+   "country_qid": "Q30",
+   "dissolved": "1998",
+   "enwiki": "Parker Brothers",
+   "external_ids": {
+    "commons_category": "Parker Brothers",
+    "freebase": "/m/01l75f"
+   },
+   "hq_qid": "Q54140",
+   "inception": "1883",
+   "industry_qid": "Q1368944",
+   "label": "Parker Brothers",
+   "parent_qid": "Q501476",
+   "qid": "Q1501379"
+  },
+  "Pascal Pictures": {
+   "country_qid": "Q30",
+   "enwiki": null,
+   "label": "Pascal Pictures",
+   "qid": "Q110545747"
+  },
+  "Polygon Pictures": {
+   "country_qid": "Q17",
+   "enwiki": "Polygon Pictures",
+   "external_ids": {
+    "freebase": "/m/026t4rq",
+    "official_website": "http://www.ppi.co.jp/"
+   },
+   "hq_qid": "Q190088",
+   "inception": "1983-07-22",
+   "industry_qid": "Q941594",
+   "label": "Polygon Pictures",
+   "qid": "Q3543894"
+  },
+  "Rare": {
+   "country_qid": "Q145",
+   "enwiki": "Rare (company)",
+   "external_ids": {
+    "freebase": "/m/01qvcr",
+    "official_website": "https://www.rare.co.uk/"
+   },
+   "hq_qid": "Q2337085",
+   "inception": "1985",
+   "industry_qid": "Q941594",
+   "label": "Rare Ltd.",
+   "parent_qid": "Q73801",
+   "qid": "Q642707"
+  },
+  "Saban Entertainment": {
+   "country_qid": "Q30",
+   "dissolved": "2002",
+   "enwiki": "BVS Entertainment",
+   "external_ids": {
+    "freebase": "/m/0888lr",
+    "official_website": "http://www.saban.com/"
+   },
+   "hq_qid": "Q65",
+   "inception": "1988-01-01",
+   "industry_qid": "Q11425",
+   "label": "BVS Entertainment",
+   "parent_qid": "Q7414",
+   "qid": "Q2719775"
+  },
+  "Sega": {
+   "country_qid": "Q17",
+   "enwiki": "Sega",
+   "external_ids": {
+    "commons_category": "Sega",
+    "freebase": "/m/06p8m",
+    "official_website": "https://www.sega.com"
+   },
+   "hq_qid": "Q233495",
+   "inception": "1960-06-03",
+   "industry_qid": "Q941594",
+   "label": "Sega",
+   "parent_qid": "Q29469450",
+   "qid": "Q122741"
+  },
+  "Shaba Games": {
+   "country_qid": "Q30",
+   "dissolved": "2009-10-08",
+   "enwiki": "Shaba Games",
+   "external_ids": {
+    "freebase": "/m/035tnn",
+    "official_website": "http://www.shaba.com/"
+   },
+   "hq_qid": "Q62",
+   "inception": "1997-01-01",
+   "industry_qid": "Q941594",
+   "label": "Shaba Games",
+   "qid": "Q2406160"
+  },
+  "Software Creations": {
+   "country_qid": "Q145",
+   "dissolved": "2004",
+   "enwiki": "Software Creations",
+   "external_ids": {
+    "freebase": "/m/02hl0qr"
+   },
+   "hq_qid": "Q18125",
+   "inception": "1985",
+   "industry_qid": "Q941594",
+   "label": "Software Creations",
+   "parent_qid": "Q339228",
+   "qid": "Q7554189"
+  },
+  "Sony Interactive Entertainment": {
+   "country_qid": "Q17",
+   "enwiki": "Sony Interactive Entertainment",
+   "external_ids": {
+    "commons_category": "Sony Interactive Entertainment",
+    "freebase": "/m/03_c8p",
+    "official_website": "https://sonyinteractive.com/"
+   },
+   "hq_qid": "Q1490",
+   "inception": "1993-11-15",
+   "industry_qid": "Q1187283",
+   "label": "Sony Interactive Entertainment",
+   "parent_qid": "Q41187",
+   "qid": "Q18594"
+  },
+  "Sony Pictures Animation": {
+   "country_qid": "Q30",
+   "enwiki": "Sony Pictures Animation",
+   "external_ids": {
+    "commons_category": "Sony Pictures Animation",
+    "freebase": "/m/0601h1",
+    "official_website": "http://sonypicturesanimation.com"
+   },
+   "hq_qid": "Q493378",
+   "inception": "2002-01-01",
+   "industry_qid": "Q1401416",
+   "label": "Sony Pictures Animation",
+   "parent_qid": "Q822314",
+   "qid": "Q1416835"
+  },
+  "Sony Pictures Releasing": {
+   "country_qid": "Q30",
+   "enwiki": "Sony Pictures Motion Picture Group",
+   "external_ids": {
+    "freebase": "/m/0_yh337",
+    "official_website": "https://www.sonypictures.com/"
+   },
+   "hq_qid": "Q493378",
+   "inception": "1998",
+   "industry_qid": "Q7112620",
+   "label": "Sony Pictures Motion Picture Group",
+   "parent_qid": "Q41187",
+   "qid": "Q2065128"
+  },
+  "Sony Pictures Television": {
+   "country_qid": "Q30",
+   "enwiki": "Sony Pictures Television",
+   "external_ids": {
+    "freebase": "/m/035kzk",
+    "official_website": "https://www.sonypicturestelevision.com/"
+   },
+   "hq_qid": "Q493378",
+   "inception": "2002-09-16",
+   "industry_qid": "Q289",
+   "label": "Sony Pictures Television",
+   "parent_qid": "Q822314",
+   "qid": "Q652390"
+  },
+  "Square Enix": {
+   "country_qid": "Q17",
+   "enwiki": "Square Enix",
+   "external_ids": {
+    "commons_category": "Square Enix",
+    "freebase": "/m/01dycg",
+    "official_website": "https://www.square-enix.com/"
+   },
+   "hq_qid": "Q836198",
+   "inception": "1975",
+   "industry_qid": "Q941594",
+   "label": "Square Enix",
+   "parent_qid": "Q11311474",
+   "qid": "Q207784"
+  },
+  "Success": {
+   "country_qid": "Q17",
+   "enwiki": "Success (company)",
+   "external_ids": {
+    "freebase": "/m/02pyrn9",
+    "official_website": "http://www.success-corp.co.jp/"
+   },
+   "hq_qid": "Q233495",
+   "inception": "1978-01-01",
+   "industry_qid": "Q941594",
+   "label": "Success",
+   "qid": "Q1091035"
+  },
+  "TT Fusion": {
+   "country_qid": "Q145",
+   "enwiki": null,
+   "external_ids": {
+    "freebase": "/m/04ljl5d",
+    "official_website": "http://www.ttgames.com/"
+   },
+   "hq_qid": "Q2011497",
+   "inception": "2006",
+   "industry_qid": "Q941594",
+   "label": "TT Fusion",
+   "qid": "Q5042600"
+  },
+  "Taito": {
+   "country_qid": "Q17",
+   "enwiki": "Taito",
+   "external_ids": {
+    "commons_category": "Taito Corporation",
+    "freebase": "/m/07rfp",
+    "official_website": "https://www.taito.co.jp"
+   },
+   "hq_qid": "Q179645",
+   "inception": "1953-08-24",
+   "industry_qid": "Q941594",
+   "label": "Taito",
+   "parent_qid": "Q745099",
+   "qid": "Q1054844"
+  },
+  "Technopop": {
+   "country_qid": "Q30",
+   "dissolved": "2000",
+   "enwiki": null,
+   "external_ids": {
+    "freebase": "/m/08vc_y",
+    "official_website": "http://technopop.net/"
+   },
+   "hq_qid": "Q99",
+   "inception": "1990",
+   "industry_qid": "Q941594",
+   "label": "Technopop",
+   "qid": "Q7692650"
+  },
+  "Tencent Pictures": {
+   "country_qid": "Q148",
+   "enwiki": "Tencent Pictures",
+   "hq_qid": "Q8686",
+   "inception": "2015",
+   "industry_qid": "Q1415395",
+   "label": "Tencent Pictures",
+   "parent_qid": "Q860580",
+   "qid": "Q22080095"
+  },
+  "Toei Advertising": {
+   "country_qid": "Q17",
+   "enwiki": null,
+   "external_ids": {
+    "official_website": "https://www.toei-video.co.jp/"
+   },
+   "hq_qid": "Q1201337",
+   "inception": "1970-06-10",
+   "label": "Toei Video",
+   "qid": "Q11527250"
+  },
+  "Toei Company": {
+   "country_qid": "Q17",
+   "enwiki": "Toei Company",
+   "external_ids": {
+    "commons_category": "Toei Company",
+    "freebase": "/m/0674hk",
+    "official_website": "https://www.toei.co.jp/"
+   },
+   "hq_qid": "Q212704",
+   "inception": "1950-10-01",
+   "industry_qid": "Q1415395",
+   "label": "Toei Company",
+   "qid": "Q1066018"
+  },
+  "Torus Games": {
+   "country_qid": "Q408",
+   "dissolved": "2024",
+   "enwiki": "Torus Games",
+   "external_ids": {
+    "freebase": "/m/06cfg2",
+    "official_website": "http://www.torus.com.au/"
+   },
+   "hq_qid": "Q812628",
+   "inception": "1994",
+   "industry_qid": "Q941594",
+   "label": "Torus Games",
+   "qid": "Q4893510"
+  },
+  "Traveller's Tales": {
+   "country_qid": "Q145",
+   "enwiki": "Traveller's Tales",
+   "external_ids": {
+    "freebase": "/m/06ntbx",
+    "official_website": "http://www.ttgames.com/"
+   },
+   "hq_qid": "Q1470791",
+   "inception": "1989",
+   "industry_qid": "Q941594",
+   "label": "Traveller's Tales",
+   "parent_qid": "Q4131576",
+   "qid": "Q2568920"
+  },
+  "Treyarch": {
+   "country_qid": "Q30",
+   "enwiki": "Treyarch",
+   "external_ids": {
+    "freebase": "/m/035tq0",
+    "official_website": "https://www.treyarch.com/"
+   },
+   "hq_qid": "Q47164",
+   "inception": "1996-01-01",
+   "industry_qid": "Q941594",
+   "label": "Treyarch",
+   "parent_qid": "Q200491",
+   "qid": "Q382543"
+  },
+  "Vicarious Visions": {
+   "country_qid": "Q30",
+   "enwiki": "Blizzard Albany",
+   "external_ids": {
+    "freebase": "/m/09v9mr",
+    "official_website": "http://www.vvisions.com"
+   },
+   "hq_qid": "Q24861",
+   "inception": "1994-01-01",
+   "industry_qid": "Q941594",
+   "label": "Blizzard Albany",
+   "parent_qid": "Q178824",
+   "qid": "Q1947354"
+  },
+  "Warner Bros. Interactive Entertainment": {
+   "country_qid": "Q30",
+   "enwiki": "Warner Bros. Games",
+   "external_ids": {
+    "commons_category": "Warner Bros. Games",
+    "freebase": "/m/07733f",
+    "official_website": "https://www.warnerbrosgames.com"
+   },
+   "hq_qid": "Q39561",
+   "inception": "2004-01",
+   "industry_qid": "Q941594",
+   "label": "Warner Bros. Games",
+   "parent_qid": "Q126399",
+   "qid": "Q2319420"
+  },
+  "Zono": {
+   "country_qid": "Q30",
+   "dissolved": "2007",
+   "enwiki": "Zono",
+   "external_ids": {
+    "freebase": "/m/0dlk7x",
+    "official_website": "http://www.zono.com/"
+   },
+   "hq_qid": "Q499196",
+   "inception": "1991",
+   "industry_qid": "Q941594",
+   "label": "Zono",
+   "qid": "Q2482897"
+  }
+ }
+}

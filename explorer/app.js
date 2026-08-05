@@ -117,9 +117,55 @@ for (const c of characters) {
   c.appearances = c.appearances || [];
   c.variants = c.variants || [];
   c.external_ids = c.external_ids || [];
+  c.relations = c.relations || [];
+  c.traits = c.traits || {};
   c.n_works = c.n_works || 0;
   c.by_type = { movie: 0, tv_show: 0, game: 0 };
   for (const wid of new Set(c.appearances.map((a) => a.work_id))) c.by_type[workById.get(wid).type]++;
+}
+
+/* The comics the screen adapted, and the people who made them. The export holds
+   each credit once, on the comic; the creator's side of it is built here. */
+const comicRows = DATA.comics || [];
+const comicCreators = DATA.comic_creators || [];
+const comicById = new Map(comicRows.map((c) => [c.id, c]));
+const creatorById = new Map(comicCreators.map((c) => [c.id, c]));
+
+for (const c of comicRows) {
+  c.credits = c.credits || [];
+  c.characters = c.characters || [];
+  c.series = c.series_id ? comicById.get(c.series_id) : null;
+  c.works = [];
+}
+for (const cr of comicCreators) cr.credits = [];
+for (const c of comicRows) {
+  for (const x of c.credits) {
+    const cr = creatorById.get(x.creator_id);
+    if (!cr) continue;
+    x.creator = cr;
+    cr.credits.push({ comic: c, role: x.role });
+  }
+}
+for (const w of works) {
+  for (const src of w.sources) {
+    for (const id of src.comic_ids || []) {
+      const c = comicById.get(id);
+      if (c && !c.works.includes(w)) c.works.push(w);
+    }
+  }
+}
+for (const cr of comicCreators) {
+  cr.name_l = cr.name.toLowerCase();
+  cr.roles = [...new Set(cr.credits.map((x) => x.role))].sort();
+  cr.n_comics = new Set(cr.credits.map((x) => x.comic.id)).size;
+  /* Two different spans, and conflating them would be a lie: when they worked in
+     comics, and when the screen got round to those comics. `summarise` owns
+     first_year/last_year (the screen side) for every dimension, so the comics
+     side keeps its own names. */
+  const yrs = cr.credits.map((x) => x.comic.year).filter(Boolean);
+  cr.comic_first_year = yrs.length ? Math.min(...yrs) : null;
+  cr.comic_last_year = yrs.length ? Math.max(...yrs) : null;
+  cr.works = [...new Set(cr.credits.flatMap((x) => x.comic.works))];
 }
 for (const p of people) {
   p.credits = p.credits || [];
@@ -315,7 +361,18 @@ for (const g of publicationIndex.values()) {
 for (const g of comicIndex.values()) {
   g.name = g.title;
   g.works = [...new Set(g.uses.map((u) => u.work))];
+  /* v4 resolved the citations to actual issues. A citation naming a run — "Amazing
+     Spider-Man #121-122" — resolves to several, so this is a list, not a value. */
+  g.resolved = [...new Set(g.uses.flatMap((u) => (u.comic_ids || []).map((id) => comicById.get(id)).filter(Boolean)))];
   summarise(g);
+}
+
+/* Comic writers and artists as a dimension of their own — the same shape as a studio
+   or an outlet, so the one list view and one detail page serve them too. */
+const creatorIndex = new Map();
+for (const cr of comicCreators) {
+  creatorIndex.set(cr.name, cr);
+  summarise(cr);
 }
 
 for (const g of awardBodies.values()) {
@@ -464,13 +521,15 @@ function findEverywhere(q) {
   const add = (kind, hits) => hits.length && groups.push({ kind, hits });
 
   add("Works", works.filter((w) => has(w.title) || has(w.notes) || has(w.maker)).map((w) => ({ label: w.title, sub: `${yr(w)} · ${TYPE[w.type].one}`, hash: "#/work/" + w.id })));
-  add("Characters", characters.filter((c) => has(c.name) || c.variants.some(has) || has(c.first_comic) || has(c.gender) || has(c.publisher) || has(c.universe) || has(c.creators)).map((c) => ({ label: c.name, sub: `${c.n_works} work${c.n_works === 1 ? "" : "s"}`, hash: "#/character/" + c.id })));
+  add("Characters", characters.filter((c) => has(c.name) || c.variants.some(has) || has(c.first_comic) || has(c.gender) || has(c.publisher) || has(c.universe) || has(c.creators) || Object.values(c.traits).some((vs) => vs.some(has)) || c.relations.some((r) => has(r.name))).map((c) => ({ label: c.name, sub: `${c.n_works} work${c.n_works === 1 ? "" : "s"}`, hash: "#/character/" + c.id })));
   add("People", people.filter((p) => has(p.name) || has(p.place) || has(p.gender) || has(p.nationality) || has(p.birth_country) || has(p.death_place) || has(p.birth_name) || p.occupations.some(has) || p.citizenships.some(has)).map((p) => ({ label: p.name, sub: p.roles.slice(0, 3).join(", "), hash: "#/person/" + p.id })));
   add("Franchises", [...franchiseIndex.values()].filter((g) => has(g.name) || has(g.description)).map((g) => ({ label: g.name, sub: `${g.n_works} works`, hash: "#/franchise/" + encodeURIComponent(g.name) })));
   add("Studios", [...studioIndex.values()].filter((g) => has(g.name)).map((g) => ({ label: g.name, sub: `${g.n_works} works`, hash: "#/studio/" + encodeURIComponent(g.name) })));
   add("Platforms", [...platformIndex.values()].filter((g) => has(g.name)).map((g) => ({ label: g.name, sub: `${g.n_works} games`, hash: "#/platform/" + encodeURIComponent(g.name) })));
   add("Outlets", [...publicationIndex.values()].filter((g) => has(g.name)).map((g) => ({ label: g.name, sub: `${g.n} scores`, hash: "#/publication/" + encodeURIComponent(g.name) })));
   add("Comics", [...comicIndex.values()].filter((g) => has(g.title) || has(g.writer)).map((g) => ({ label: g.title, sub: [g.writer, g.year].filter(Boolean).join(" · "), hash: "#/comic/" + encodeURIComponent(g.title) })));
+  add("Comic issues", comicRows.filter((c) => has(c.title) || has(c.publisher)).map((c) => ({ label: c.title, sub: [c.publisher, c.year].filter(Boolean).join(" · "), hash: "#/comicrow/" + c.id })));
+  add("Comic creators", comicCreators.filter((c) => has(c.name) || c.roles.some((r) => has(roleText(r)))).map((c) => ({ label: c.name, sub: `${c.n_comics} comic${c.n_comics === 1 ? "" : "s"}, ${c.roles.map(roleText).join(", ")}`, hash: "#/creator/" + c.id })));
   add("Awarding bodies", [...awardBodies.values()].filter((g) => has(g.name) || g.categories.some(has)).map((g) => ({ label: g.name, sub: `${g.won} won, ${g.nominated} nominated`, hash: "#/award/" + encodeURIComponent(g.name) })));
   add("Credit roles", [...roleIndex.values()].filter((g) => has(g.name)).map((g) => ({ label: g.name, sub: `${g.n_people} people`, hash: "#/role/" + encodeURIComponent(g.name) })));
 
@@ -508,6 +567,7 @@ const DEFAULTS = {
   platforms: { sort: "n_works", dir: -1, q: "" },
   publications: { sort: "avg_pct", dir: -1, q: "" },
   comics: { sort: "n_works", dir: -1, q: "" },
+  creators: { sort: "n_comics", dir: -1, q: "" },
   awards: { sort: "n_awards", dir: -1, q: "" },
   roles: { sort: "n_people", dir: -1, q: "" },
 };
@@ -553,7 +613,7 @@ function filterHash(view, filters, defaults) {
 /* ---------- shell ---------- */
 
 const app = document.getElementById("app");
-const LIST_VIEWS = ["works", "characters", "people", "franchises", "studios", "platforms", "publications", "comics", "awards", "roles"];
+const LIST_VIEWS = ["works", "characters", "people", "franchises", "studios", "platforms", "publications", "comics", "creators", "awards", "roles"];
 const LAST_LIST = {};
 const listHash = (view) => LAST_LIST[view] || "#/" + view;
 
@@ -564,6 +624,7 @@ function render() {
     franchise: "franchises", studio: "studios", platform: "platforms",
     // The four dimensions the Analysis page opens up keep that tab lit.
     publication: "analysis", publications: "analysis", comic: "analysis", comics: "analysis",
+    creator: "analysis", creators: "analysis", comicrow: "analysis",
     award: "analysis", awards: "analysis", role: "analysis", roles: "analysis",
     facet: "works",
   };
@@ -593,6 +654,9 @@ function render() {
     publication: viewPublication,
     comics: viewComics,
     comic: viewComic,
+    creators: viewCreators,
+    creator: viewCreator,
+    comicrow: viewComicRow,
     awards: viewAwards,
     award: viewAward,
     roles: viewRoles,
@@ -972,15 +1036,16 @@ function browseSection(title = "Every way into the data") {
     { label: "Platforms", hash: "#/platforms", n: platformIndex.size },
     { label: "Outlets", hash: "#/publications", n: publicationIndex.size },
     { label: "Comic sources", hash: "#/comics", n: comicIndex.size },
+    comicCreators.length ? { label: "Comic creators", hash: "#/creators", n: comicCreators.length } : null,
     { label: "Awarding bodies", hash: "#/awards", n: awardBodies.size },
     { label: "Credit roles", hash: "#/roles", n: roleIndex.size },
     { label: "Years", hash: "#/year/" + DATA.meta.year_max, n: yearIndex.size },
-  ];
+  ].filter(Boolean);
   return section(
     title,
     null,
     el("div", { class: "chip-list" }, items.map((it) => dimChip(it.label, it.hash, String(it.n)))),
-    el("div", { class: "sub", style: { marginTop: "8px" }, text: "Outlets, comic sources, awarding bodies, credit roles and years are not tables in the source — they are grouped here out of the columns that name them, so each becomes somewhere you can stand." })
+    el("div", { class: "sub", style: { marginTop: "8px" }, text: "Outlets, comic sources, awarding bodies, credit roles and years are not tables in the source — they are grouped here out of the columns that name them, so each becomes somewhere you can stand. Comic creators are a table of their own." })
   );
 }
 
@@ -2423,6 +2488,20 @@ function viewCharacter(id) {
   addCFact("Narrative universe", c.universe && findLink(c.universe));
   addCFact("Creators", c.creators && nameLinks(c.creators));
   addCFact("First appearance", c.first_appearance_title && el("span", { class: "names" }, findLink(c.first_appearance_title), c.first_appearance_year ? el("span", { class: "as", text: String(c.first_appearance_year) }) : null));
+  /* The debut as a comic row rather than a title string — v4's version of the
+     line above, and the one you can click through to the credits. */
+  const debut = c.debut_comic_id ? comicById.get(c.debut_comic_id) : null;
+  addCFact("Debut comic", debut && el("span", { class: "names" }, comicRowLink(debut),
+    debut.year ? el("span", { class: "as", text: String(debut.year) }) : null));
+  for (const [trait, label] of [["character_type", "Character type"], ["occupation", "Occupation"],
+                                ["ability", "Abilities"], ["team", "Teams"],
+                                ["ethnic_group", "Ethnicity"], ["religion", "Religion"],
+                                ["eye_color", "Eyes"], ["hair_color", "Hair"], ["height", "Height"]]) {
+    const vals = c.traits[trait];
+    if (vals && vals.length)
+      addCFact(label, el("span", { class: "names" },
+        vals.flatMap((v, i) => [i ? el("span", { class: "sep", text: "·" }) : null, findLink(v)])));
+  }
   if (cFacts.length) frag.appendChild(section("Details", null, el("div", { class: "card deflist" }, cFacts)));
 
   const tiles = [statTile("Works", String(c.n_works), `#/characters?sort=n_works&dir=-1&focus=${c.id}`, "See it ranked against every character")];
@@ -2447,6 +2526,46 @@ function viewCharacter(id) {
         onPick: (e) => go("#/work/" + e.work.id),
       }))
   );
+
+  /* Who this character is to other characters — the one thing the catalogue could
+     never say before v4. An edge whose other end is in the dataset is a link; one
+     that is not is still worth naming, so it stays as text. */
+  if (c.relations.length) {
+    const REL_LABELS = {
+      enemy: "Enemy of", ally: "Allied with", mother: "Mother", father: "Father",
+      spouse: "Spouse", child: "Child", partner: "Partner", relative: "Relative",
+      alternate_universe_counterpart: "Counterpart in another universe",
+    };
+    const order = ["enemy", "ally", "alternate_universe_counterpart", "spouse", "partner",
+                   "father", "mother", "child", "relative"];
+    const byRel = new Map();
+    for (const r of c.relations) {
+      if (!byRel.has(r.relation)) byRel.set(r.relation, []);
+      byRel.get(r.relation).push(r);
+    }
+    const rank = (rel) => (order.indexOf(rel) < 0 ? order.length : order.indexOf(rel));
+    const groups = [...byRel.entries()].sort((a, b) => rank(a[0]) - rank(b[0]));
+    /* Each relation gets a full-width row of its own: an "enemy of" list can run to
+       eighty names, and a two-column grid would file that beside a one-name "spouse"
+       and leave a column of whitespace the height of the page. */
+    frag.appendChild(
+      section("Relationships", c.relations.length,
+        el("div", { class: "card" },
+          groups.map(([rel, list], i) =>
+            el("div", { style: i ? { marginTop: "14px" } : null },
+              el("div", { class: "k", style: { fontSize: "12px", color: "var(--text-muted)", marginBottom: "5px" },
+                          text: (REL_LABELS[rel] || rel.replace(/_/g, " ")) + " · " + list.length }),
+              el("div", { class: "chip-list" },
+                [...list]
+                  .sort((a, b) => (b.other_id ? 1 : 0) - (a.other_id ? 1 : 0) || a.name.localeCompare(b.name))
+                  .map((r) =>
+                    r.other_id
+                      ? el("button", { class: "chip", text: r.name, onclick: () => go("#/character/" + r.other_id) })
+                      : el("span", { class: "chip muted", title: "Not a character in this dataset", text: r.name })))))),
+        el("div", { class: "sub", style: { marginTop: "8px" },
+          text: "Greyed names are characters Wikidata links to that this catalogue has no row for — they have never been on screen in a Spider-Man work." }))
+    );
+  }
 
   const co = coAppearances(c).slice(0, 14);
   if (co.length >= 3) {
@@ -3362,6 +3481,21 @@ function viewStudio(name) {
   const frag = document.createDocumentFragment();
   frag.append(...dimensionHead(g, "Studio", "studios", "All studios", el("span", { text: [...g.roles].sort().join(" · ") })));
   frag.appendChild(dimensionTiles(g));
+
+  /* Who owns it and where it is — the two columns that were NULL for every studio
+     until v4, plus what else Wikidata knows about it. */
+  const sd = (DATA.studio_details || {})[name];
+  const st = g.works.flatMap((w) => w.studios).find((x) => x.name === name) || {};
+  const sFacts = [];
+  const addSFact = (k, v) => v && sFacts.push(el("div", null, el("div", { class: "k", text: k }), el("div", { class: "v" }, v)));
+  addSFact("Country", st.country && findLink(st.country));
+  addSFact("Parent company", st.parent && (studioIndex.has(st.parent) ? softLink(st.parent, "#/studio/" + encodeURIComponent(st.parent)) : findLink(st.parent)));
+  addSFact("Industry", sd?.industry && findLink(sd.industry));
+  addSFact("Headquarters", sd?.headquarters && findLink(sd.headquarters));
+  addSFact("Founded", sd?.inception && dateLink(sd.inception));
+  addSFact("Dissolved", sd?.dissolved && dateLink(sd.dissolved));
+  if (sFacts.length) frag.appendChild(section("Details", null, el("div", { class: "card deflist" }, sFacts)));
+
   frag.appendChild(worksSection("Works", g.works));
 
   frag.appendChild(
@@ -3388,9 +3522,22 @@ function viewPlatform(name) {
      is answered by one block: the release table, which carries the dates and the scores. */
   const toReleases = pageHashWith({ at: "releases" });
   const extras = [];
+  const pd = (DATA.platform_details || {})[name];
+  if (pd?.manufacturer) extras.push(statTile("Made by", pd.manufacturer, findHash(pd.manufacturer)));
   if (g.avg_metacritic != null) extras.push(statTile("Mean Metacritic", String(Math.round(g.avg_metacritic)), toReleases, "The scores it averages"));
   if (g.releases.length) extras.push(statTile("Release rows", String(g.releases.length), toReleases, "One row per dated release"));
   frag.appendChild(dimensionTiles(g, extras, { at: "releases", label: "games" }));
+
+  /* The hardware's own lifespan. Not tiles: a tile is a number you can open, and
+     these two open nothing — the catalogue has no page for a hardware launch. */
+  if (pd?.released || pd?.discontinued || pd?.developer) {
+    const pFacts = [];
+    const addPFact = (k, v) => v && pFacts.push(el("div", null, el("div", { class: "k", text: k }), el("div", { class: "v" }, v)));
+    addPFact("Released", pd.released && dateLink(pd.released));
+    addPFact("Discontinued", pd.discontinued && dateLink(pd.discontinued));
+    addPFact("Developed by", pd.developer && findLink(pd.developer));
+    frag.appendChild(section("The hardware", null, el("div", { class: "card deflist" }, pFacts)));
+  }
 
   const scored = g.releases.filter((r) => r.metacritic != null);
   if (scored.length >= 3) {
@@ -3510,6 +3657,180 @@ const viewComics = dimensionListView({
   ],
 });
 
+const ROLE_LABELS = {
+  writer: "writer", author: "author", penciller: "penciller", inker: "inker",
+  colorist: "colourist", letterer: "letterer", cover_artist: "cover artist",
+  illustrator: "illustrator", editor: "editor", creator: "creator",
+};
+const roleText = (r) => ROLE_LABELS[r] || r.replace(/_/g, " ");
+
+const comicSpan = (g) =>
+  g.comic_first_year == null ? "—" : g.comic_first_year === g.comic_last_year ? String(g.comic_first_year) : `${g.comic_first_year}–${g.comic_last_year}`;
+
+const viewCreators = dimensionListView({
+  view: "creators",
+  title: "Comic creators",
+  blurb:
+    "The writers and artists behind the comics this catalogue adapts — every credit Wikidata files on those issues, down to the letterer. “Adapted by” counts the screen works citing a comic this person worked on.",
+  index: creatorIndex,
+  columns: [
+    { key: "name", label: "Creator", asc: true, value: (g) => g.name_l, cell: (g) => el("button", { class: "row-link", text: g.name, onclick: () => go("#/creator/" + g.id) }) },
+    { key: "roles", label: "Credited as", wrap: true, asc: true, value: (g) => g.roles.join(" "), cell: (g) => el("span", { class: "names" }, g.roles.flatMap((r, i) => [i ? el("span", { class: "sep", text: "·" }) : null, findLink(roleText(r))])) },
+    { key: "n_comics", label: "Comics", num: true, value: (g) => g.n_comics, cell: (g) => String(g.n_comics) },
+    { key: "comic_span", label: "Working", num: true, asc: true, value: (g) => g.comic_first_year ?? 9999, cell: (g) => comicSpan(g) },
+    { key: "n_works", label: "Adapted by", num: true, value: (g) => g.n_works, cell: (g) => String(g.n_works) },
+    { key: "screen", label: "Screen credit", value: (g) => (g.person_id ? "1" : "0"), cell: (g) => (g.person_id ? personLink(g.person_id) : dash()) },
+  ],
+});
+
+function comicRowLink(c) {
+  return el("button", { class: "row-link", text: c.title, onclick: () => go("#/comicrow/" + c.id) });
+}
+
+/* One comic issue, series or storyline as v4 resolved it — distinct from the
+   citation-string page at #/comic/<title>, which groups every work that cited it. */
+function viewComicRow(id) {
+  const c = comicById.get(Number(id));
+  if (!c) return el("div", { class: "empty-state", text: "Unknown comic." });
+  const frag = document.createDocumentFragment();
+  frag.appendChild(backLink("All comic sources", listHash("comics")));
+  frag.appendChild(
+    el("div", { class: "detail-head" },
+      el("h1", { text: c.title }),
+      el("div", { class: "meta-line" },
+        el("span", { class: "badge", text: c.kind === "series" ? "Comic series" : c.kind === "storyline" ? "Storyline" : "Comic issue" }),
+        c.year ? yearLink(c.year) : null,
+        c.publisher ? findLink(c.publisher) : null,
+        c.series ? el("span", null, "in ", comicRowLink(c.series)) : null),
+      c.origin === "parsed"
+        ? el("div", { class: "note", style: { marginTop: "10px" },
+            text: "Read out of the citation that names it — Wikidata has no item for this issue, so it carries a series and a number but no date, publisher or credits." })
+        : null)
+  );
+
+  const tiles = [];
+  if (c.date) tiles.push(statTile("Published", c.date, yearHas(c.year) ? "#/year/" + c.year : null));
+  if (c.issue != null) tiles.push(statTile("Issue", "#" + c.issue));
+  if (c.credits.length) tiles.push(statTile("Credits", String(c.credits.length), atHash("credits")));
+  if (c.works.length) tiles.push(statTile("Adapted by", String(c.works.length), atHash("works")));
+  if (tiles.length) frag.appendChild(el("div", { class: "kpis", style: { marginTop: "16px" } }, tiles));
+
+  if (c.credits.length) {
+    const byRole = new Map();
+    for (const x of c.credits) {
+      if (!byRole.has(x.role)) byRole.set(x.role, []);
+      byRole.get(x.role).push(x.creator);
+    }
+    frag.appendChild(
+      anchor("credits", section("Credits", c.credits.length,
+        table(
+          [
+            { key: "r", label: "Role", cell: (row) => findLink(roleText(row.role)) },
+            { key: "n", label: "Credited", wrap: true, cell: (row) => el("span", { class: "names" }, row.people.flatMap((p, i) => [i ? el("span", { class: "sep", text: "·" }) : null, el("button", { class: "row-link", text: p.name, onclick: () => go("#/creator/" + p.id) })])) },
+          ],
+          [...byRole.entries()].map(([role, people]) => ({ role, people })),
+          { plain: true }
+        )))
+    );
+  }
+
+  if (c.characters.length) {
+    const chars = c.characters.map((cid) => charById.get(cid)).filter(Boolean);
+    if (chars.length)
+      frag.appendChild(
+        section("Characters in it", chars.length,
+          el("div", { class: "chip-list" },
+            chars.map((ch) => el("button", { class: "chip", text: ch.name, onclick: () => go("#/character/" + ch.id) }))))
+      );
+  }
+
+  const debutants = characters.filter((ch) => ch.debut_comic_id === c.id);
+  if (debutants.length)
+    frag.appendChild(
+      section("First appeared here", debutants.length,
+        el("div", { class: "chip-list" },
+          debutants.map((ch) => el("button", { class: "chip", text: ch.name, onclick: () => go("#/character/" + ch.id) }))))
+    );
+
+  if (c.works.length) frag.appendChild(worksSection("Adapted by", c.works));
+
+  if (c.kind === "series") {
+    const issues = comicRows.filter((x) => x.series_id === c.id).sort((a, b) => (a.issue ?? 0) - (b.issue ?? 0));
+    if (issues.length)
+      frag.appendChild(
+        section("Issues in the dataset", issues.length,
+          table(
+            [
+              { key: "i", label: "Issue", num: true, cell: (x) => (x.issue == null ? dash() : "#" + x.issue) },
+              { key: "t", label: "Title", cell: (x) => comicRowLink(x) },
+              { key: "d", label: "Published", num: true, cell: (x) => dateLink(x.date) },
+              { key: "n", label: "Adapted by", num: true, cell: (x) => String(x.works.length) },
+              { key: "o", label: "From", cell: (x) => el("span", { class: "muted", text: x.origin === "parsed" ? "citation" : "Wikidata" }) },
+            ],
+            issues,
+            { plain: true, scroll: true }
+          ))
+      );
+  }
+  return frag;
+}
+
+function viewCreator(id) {
+  const cr = creatorById.get(Number(id));
+  if (!cr) return el("div", { class: "empty-state", text: "Unknown creator." });
+  const frag = document.createDocumentFragment();
+  /* `dimensionHead` prints the span of the *works* — for a creator that is when the
+     screen got round to their comics, which sits confusingly next to the years they
+     were drawing. Say which one it is. */
+  frag.append(...dimensionHead(cr, "Comic creator", "creators", "All comic creators",
+    el("span", null,
+      cr.works.length ? el("span", { class: "muted", text: "adapted on screen" }) : null,
+      cr.person_id ? el("span", null, " · also on screen: ", personLink(cr.person_id)) : null)));
+
+  const extras = [];
+  extras.push(statTile("Comics", String(cr.n_comics), atHash("comics")));
+  if (cr.comic_first_year) extras.push(statTile("Working in comics", comicSpan(cr)));
+  if (cr.birth) extras.push(statTile("Born", cr.birth.slice(0, 4)));
+  /* `dimensionTiles` leads with a Works tile pointing at the works block. Plenty of
+     creators have none — their comics are in the dataset but nothing on screen cites
+     them — and that tile would link to a block this page never renders. */
+  frag.appendChild(
+    cr.works.length
+      ? dimensionTiles(cr, extras, { label: "adaptations" })
+      : el("div", { class: "kpis", style: { marginTop: "16px" } },
+          extras,
+          statTile("Adapted by", "none", null, "No work in the catalogue cites a comic they worked on"))
+  );
+
+  /* One row per comic, not per credit: Ditko pencilled, inked and drew the cover of
+     the same issue, and three identical rows say less than one row naming all three. */
+  const byComic = new Map();
+  for (const x of cr.credits) {
+    if (!byComic.has(x.comic.id)) byComic.set(x.comic.id, { comic: x.comic, roles: [] });
+    byComic.get(x.comic.id).roles.push(x.role);
+  }
+  const comicRowsFor = [...byComic.values()].sort(
+    (a, b) => (a.comic.year ?? 9999) - (b.comic.year ?? 9999) ||
+              (a.comic.issue ?? 0) - (b.comic.issue ?? 0) ||
+              a.comic.title.localeCompare(b.comic.title));
+  frag.appendChild(
+    anchor("comics", section("Comics credited on", cr.n_comics,
+      table(
+        [
+          { key: "t", label: "Comic", cell: (x) => comicRowLink(x.comic) },
+          { key: "y", label: "Published", num: true, cell: (x) => (x.comic.year ? yearLink(x.comic.year) : dash()) },
+          { key: "r", label: "As", wrap: true, cell: (x) => el("span", { class: "names" }, x.roles.flatMap((r, i) => [i ? el("span", { class: "sep", text: "·" }) : null, findLink(roleText(r))])) },
+          { key: "a", label: "Adapted by", num: true, cell: (x) => String(x.comic.works.length) },
+        ],
+        comicRowsFor,
+        { plain: true, scroll: true }
+      )))
+  );
+
+  if (cr.works.length) frag.appendChild(worksSection("Screen works drawing on their comics", cr.works));
+  return frag;
+}
+
 const viewAwards = dimensionListView({
   view: "awards",
   title: "Awarding bodies",
@@ -3614,8 +3935,37 @@ function viewComic(title) {
     dimensionTiles(g, [
       g.writer ? statTile("Credited to", g.writer.length > 24 ? g.writer.slice(0, 23) + "…" : g.writer, findHash(g.writer)) : null,
       lags.length ? statTile("First adapted after", Math.min(...lags) + " yrs", atHash("adaptation-lag", "#/analysis"), "See it on the comic-to-screen chart") : null,
+      g.resolved.length ? statTile("Issues behind it", String(g.resolved.length), atHash("issues"), "The comics this citation resolves to") : null,
     ].filter(Boolean), { label: "adaptations" })
   );
+
+  /* The citation is a string; these are the comics it turned out to name. */
+  if (g.resolved.length) {
+    const issues = [...g.resolved].sort(
+      (a, b) => (a.year ?? 9999) - (b.year ?? 9999) || (a.issue ?? 0) - (b.issue ?? 0));
+    frag.appendChild(
+      anchor("issues", section("Issues behind this citation", issues.length,
+        table(
+          [
+            { key: "t", label: "Comic", cell: (c) => comicRowLink(c) },
+            { key: "d", label: "Published", num: true, cell: (c) => (c.date ? dateLink(c.date) : yearLink(c.year)) },
+            { key: "p", label: "Publisher", cell: (c) => (c.publisher ? findLink(c.publisher) : dash()) },
+            { key: "c", label: "Made by", wrap: true, cell: (c) => {
+              const w = c.credits.filter((x) => x.role === "writer" || x.role === "author");
+              return w.length
+                ? el("span", { class: "names" }, w.flatMap((x, i) => [i ? el("span", { class: "sep", text: "·" }) : null, el("button", { class: "row-link", text: x.creator.name, onclick: () => go("#/creator/" + x.creator.id) })]))
+                : dash();
+            } },
+            { key: "o", label: "From", cell: (c) => el("span", { class: "muted", text: c.origin === "parsed" ? "citation" : "Wikidata" }) },
+          ],
+          issues,
+          { plain: true, scroll: true }
+        ),
+        el("div", { class: "sub", style: { marginTop: "8px" },
+          text: "“Wikidata” rows carry a publication date and full credits. “citation” rows are issues named by the source material that Wikidata has no item for — the series and number are real, the rest is unknown." })))
+    );
+  }
+
   frag.appendChild(
     worksSection("Adapted by", g.uses, {
       workOf: (u) => u.work,
@@ -4178,7 +4528,9 @@ function viewAnalysis() {
       }),
       el("p", { class: "sub", style: { margin: "8px 2px 0" } },
         "Each storyline opens onto the works that used it — ",
-        el("button", { class: "linkish", text: "browse all " + comicIndex.size + " comic sources →", onclick: () => go("#/comics") }))
+        el("button", { class: "linkish", text: "browse all " + comicIndex.size + " comic sources →", onclick: () => go("#/comics") }),
+        comicCreators.length ? el("span", null, " · ",
+          el("button", { class: "linkish", text: "or the " + comicCreators.length + " writers and artists behind them →", onclick: () => go("#/creators") })) : null)
     )
   );
 

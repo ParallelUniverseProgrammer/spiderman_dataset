@@ -184,7 +184,14 @@ def wbsearch(text, kind="item", limit=15, refresh=False):
     )
 
 
-def entities_bulk(qids, props="labels", refresh=False):
+# Wikidata has been moving language-neutral labels — product names, most of them,
+# which is exactly what this dataset asks about — to the `mul` code. Asking for
+# `en` alone returns an empty label object for "Nintendo Switch", "Dreamcast" and
+# "MS-DOS" alike. Callers that care pass LANGS and read labels through en_label().
+LANGS = "en|mul"
+
+
+def entities_bulk(qids, props="labels", refresh=False, languages="en"):
     """wbgetentities for up to 50 ids at a time; returns {qid: entity}."""
     out = {}
     qids = list(qids)
@@ -192,7 +199,7 @@ def entities_bulk(qids, props="labels", refresh=False):
         chunk = qids[i:i + 50]
         params = {
             "action": "wbgetentities", "ids": "|".join(chunk), "props": props,
-            "languages": "en", "format": "json",
+            "languages": languages, "format": "json",
         }
 
         def go(p=params):
@@ -203,14 +210,29 @@ def entities_bulk(qids, props="labels", refresh=False):
     return out
 
 
-def qid_labels(qids, refresh=False):
+def en_label(ent):
+    """The English label, falling back to the language-neutral one."""
+    if not isinstance(ent, dict):
+        return None
+    labels = ent.get("labels") or {}
+    for code in ("en", "mul"):
+        v = (labels.get(code) or {}).get("value")
+        if v:
+            return v
+    return None
+
+
+def en_aliases(ent):
+    if not isinstance(ent, dict):
+        return []
+    al = ent.get("aliases") or {}
+    return [a.get("value") for code in ("en", "mul") for a in (al.get(code) or [])]
+
+
+def qid_labels(qids, refresh=False, languages="en"):
     """{qid: english label} for a set of ids."""
-    ents = entities_bulk(sorted(set(q for q in qids if q)), "labels", refresh)
-    return {
-        k: v.get("labels", {}).get("en", {}).get("value")
-        for k, v in ents.items()
-        if isinstance(v, dict)
-    }
+    ents = entities_bulk(sorted(set(q for q in qids if q)), "labels", refresh, languages)
+    return {k: en_label(v) for k, v in ents.items() if isinstance(v, dict)}
 
 
 # --- claim readers ---------------------------------------------------------

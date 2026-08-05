@@ -1,0 +1,9085 @@
+{
+ "edges": [
+  {
+   "from_id": 1,
+   "relation": "spouse",
+   "to_id": 44,
+   "to_qid": "Q2299139"
+  },
+  {
+   "from_id": 1,
+   "relation": "relative",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 10,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 10,
+   "relation": "enemy",
+   "to_id": 17,
+   "to_qid": "Q1779361"
+  },
+  {
+   "from_id": 10,
+   "relation": "enemy",
+   "to_id": 117,
+   "to_qid": "Q17090877"
+  },
+  {
+   "from_id": 108,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 109,
+   "relation": "enemy",
+   "to_qid": "Q1995969"
+  },
+  {
+   "from_id": 109,
+   "relation": "enemy",
+   "to_qid": "Q2364510"
+  },
+  {
+   "from_id": 109,
+   "relation": "partner",
+   "to_qid": "Q1194236"
+  },
+  {
+   "from_id": 109,
+   "relation": "partner",
+   "to_qid": "Q3545872"
+  },
+  {
+   "from_id": 11,
+   "relation": "enemy",
+   "to_qid": "Q2066394"
+  },
+  {
+   "from_id": 11,
+   "relation": "enemy",
+   "to_qid": "Q2435970"
+  },
+  {
+   "from_id": 11,
+   "relation": "enemy",
+   "to_qid": "Q110917411"
+  },
+  {
+   "from_id": 11,
+   "relation": "enemy",
+   "to_qid": "Q3570549"
+  },
+  {
+   "from_id": 11,
+   "relation": "enemy",
+   "to_qid": "Q2639507"
+  },
+  {
+   "from_id": 11,
+   "relation": "enemy",
+   "to_qid": "Q15222919"
+  },
+  {
+   "from_id": 11,
+   "relation": "enemy",
+   "to_qid": "Q5318067"
+  },
+  {
+   "from_id": 11,
+   "relation": "enemy",
+   "to_qid": "Q8073711"
+  },
+  {
+   "from_id": 11,
+   "relation": "partner",
+   "to_qid": "Q2404595"
+  },
+  {
+   "from_id": 110,
+   "relation": "child",
+   "to_qid": "Q5441790"
+  },
+  {
+   "from_id": 110,
+   "relation": "partner",
+   "to_id": 3,
+   "to_qid": "Q912640"
+  },
+  {
+   "from_id": 110,
+   "relation": "partner",
+   "to_id": 67,
+   "to_qid": "Q2628255"
+  },
+  {
+   "from_id": 110,
+   "relation": "partner",
+   "to_id": 163,
+   "to_qid": "Q1132203"
+  },
+  {
+   "from_id": 111,
+   "relation": "enemy",
+   "to_id": 9,
+   "to_qid": "Q430178"
+  },
+  {
+   "from_id": 111,
+   "relation": "enemy",
+   "to_qid": "Q615226"
+  },
+  {
+   "from_id": 111,
+   "relation": "enemy",
+   "to_qid": "Q1987662"
+  },
+  {
+   "from_id": 111,
+   "relation": "enemy",
+   "to_id": 202,
+   "to_qid": "Q95153"
+  },
+  {
+   "from_id": 111,
+   "relation": "enemy",
+   "to_qid": "Q152098"
+  },
+  {
+   "from_id": 111,
+   "relation": "enemy",
+   "to_id": 246,
+   "to_qid": "Q2276627"
+  },
+  {
+   "from_id": 111,
+   "relation": "enemy",
+   "to_qid": "Q3029214"
+  },
+  {
+   "from_id": 111,
+   "relation": "enemy",
+   "to_qid": "Q2603976"
+  },
+  {
+   "from_id": 111,
+   "relation": "child",
+   "to_qid": "Q5517781"
+  },
+  {
+   "from_id": 112,
+   "relation": "enemy",
+   "to_qid": "Q302534"
+  },
+  {
+   "from_id": 112,
+   "relation": "enemy",
+   "to_qid": "Q5032038"
+  },
+  {
+   "from_id": 112,
+   "relation": "spouse",
+   "to_qid": "Q4883353"
+  },
+  {
+   "from_id": 112,
+   "relation": "spouse",
+   "to_id": 229,
+   "to_qid": "Q838097"
+  },
+  {
+   "from_id": 112,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q48957559"
+  },
+  {
+   "from_id": 115,
+   "relation": "child",
+   "to_id": 16,
+   "to_qid": "Q945817"
+  },
+  {
+   "from_id": 116,
+   "relation": "enemy",
+   "to_qid": "Q2418665"
+  },
+  {
+   "from_id": 116,
+   "relation": "enemy",
+   "to_qid": "Q5063090"
+  },
+  {
+   "from_id": 116,
+   "relation": "spouse",
+   "to_qid": "Q7372377"
+  },
+  {
+   "from_id": 116,
+   "relation": "relative",
+   "to_qid": "Q7045734"
+  },
+  {
+   "from_id": 116,
+   "relation": "relative",
+   "to_qid": "Q6178488"
+  },
+  {
+   "from_id": 117,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 117,
+   "relation": "enemy",
+   "to_id": 38,
+   "to_qid": "Q63975143"
+  },
+  {
+   "from_id": 117,
+   "relation": "enemy",
+   "to_qid": "Q11680813"
+  },
+  {
+   "from_id": 117,
+   "relation": "enemy",
+   "to_id": 97,
+   "to_qid": "Q578094"
+  },
+  {
+   "from_id": 117,
+   "relation": "enemy",
+   "to_qid": "Q3772700"
+  },
+  {
+   "from_id": 117,
+   "relation": "enemy",
+   "to_qid": "Q4483669"
+  },
+  {
+   "from_id": 117,
+   "relation": "child",
+   "to_id": 17,
+   "to_qid": "Q1779361"
+  },
+  {
+   "from_id": 117,
+   "relation": "partner",
+   "to_qid": "Q1748149"
+  },
+  {
+   "from_id": 117,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q48544198"
+  },
+  {
+   "from_id": 12,
+   "relation": "enemy",
+   "to_id": 84,
+   "to_qid": "Q1753328"
+  },
+  {
+   "from_id": 12,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 12,
+   "relation": "enemy",
+   "to_id": 38,
+   "to_qid": "Q63975143"
+  },
+  {
+   "from_id": 12,
+   "relation": "enemy",
+   "to_qid": "Q2657400"
+  },
+  {
+   "from_id": 12,
+   "relation": "enemy",
+   "to_qid": "Q39071489"
+  },
+  {
+   "from_id": 12,
+   "relation": "child",
+   "to_id": 161,
+   "to_qid": "Q2578146"
+  },
+  {
+   "from_id": 12,
+   "relation": "child",
+   "to_qid": "Q227710"
+  },
+  {
+   "from_id": 12,
+   "relation": "child",
+   "to_qid": "Q2886408"
+  },
+  {
+   "from_id": 12,
+   "relation": "child",
+   "to_id": 80,
+   "to_qid": "Q507241"
+  },
+  {
+   "from_id": 12,
+   "relation": "child",
+   "to_id": 84,
+   "to_qid": "Q1753328"
+  },
+  {
+   "from_id": 12,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q4003186"
+  },
+  {
+   "from_id": 122,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 122,
+   "relation": "enemy",
+   "to_id": 19,
+   "to_qid": "Q1753322"
+  },
+  {
+   "from_id": 123,
+   "relation": "partner",
+   "to_qid": "Q936542"
+  },
+  {
+   "from_id": 124,
+   "relation": "enemy",
+   "to_id": 84,
+   "to_qid": "Q1753328"
+  },
+  {
+   "from_id": 124,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 124,
+   "relation": "enemy",
+   "to_id": 38,
+   "to_qid": "Q63975143"
+  },
+  {
+   "from_id": 124,
+   "relation": "enemy",
+   "to_qid": "Q2657400"
+  },
+  {
+   "from_id": 124,
+   "relation": "enemy",
+   "to_qid": "Q39071489"
+  },
+  {
+   "from_id": 124,
+   "relation": "child",
+   "to_id": 161,
+   "to_qid": "Q2578146"
+  },
+  {
+   "from_id": 124,
+   "relation": "child",
+   "to_qid": "Q227710"
+  },
+  {
+   "from_id": 124,
+   "relation": "child",
+   "to_qid": "Q2886408"
+  },
+  {
+   "from_id": 124,
+   "relation": "child",
+   "to_id": 80,
+   "to_qid": "Q507241"
+  },
+  {
+   "from_id": 124,
+   "relation": "child",
+   "to_id": 84,
+   "to_qid": "Q1753328"
+  },
+  {
+   "from_id": 124,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q4003186"
+  },
+  {
+   "from_id": 125,
+   "relation": "enemy",
+   "to_id": 164,
+   "to_qid": "Q1147326"
+  },
+  {
+   "from_id": 125,
+   "relation": "enemy",
+   "to_qid": "Q1638503"
+  },
+  {
+   "from_id": 125,
+   "relation": "enemy",
+   "to_qid": "Q3539043"
+  },
+  {
+   "from_id": 125,
+   "relation": "spouse",
+   "to_qid": "Q73544"
+  },
+  {
+   "from_id": 125,
+   "relation": "partner",
+   "to_id": 70,
+   "to_qid": "Q369197"
+  },
+  {
+   "from_id": 125,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q16912454"
+  },
+  {
+   "from_id": 126,
+   "relation": "enemy",
+   "to_qid": "Q2731643"
+  },
+  {
+   "from_id": 127,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 129,
+   "relation": "enemy",
+   "to_id": 9,
+   "to_qid": "Q430178"
+  },
+  {
+   "from_id": 129,
+   "relation": "enemy",
+   "to_qid": "Q740257"
+  },
+  {
+   "from_id": 129,
+   "relation": "enemy",
+   "to_qid": "Q16203115"
+  },
+  {
+   "from_id": 129,
+   "relation": "enemy",
+   "to_qid": "Q431400"
+  },
+  {
+   "from_id": 129,
+   "relation": "father",
+   "to_qid": "Q20858389"
+  },
+  {
+   "from_id": 129,
+   "relation": "spouse",
+   "to_qid": "Q3832323"
+  },
+  {
+   "from_id": 129,
+   "relation": "partner",
+   "to_qid": "Q2418760"
+  },
+  {
+   "from_id": 129,
+   "relation": "partner",
+   "to_qid": "Q19398"
+  },
+  {
+   "from_id": 129,
+   "relation": "partner",
+   "to_qid": "Q2314770"
+  },
+  {
+   "from_id": 129,
+   "relation": "partner",
+   "to_qid": "Q432272"
+  },
+  {
+   "from_id": 13,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 131,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 132,
+   "relation": "mother",
+   "to_qid": "Q111376791"
+  },
+  {
+   "from_id": 132,
+   "relation": "father",
+   "to_qid": "Q111376777"
+  },
+  {
+   "from_id": 132,
+   "relation": "partner",
+   "to_id": 211,
+   "to_qid": "Q547306"
+  },
+  {
+   "from_id": 132,
+   "relation": "partner",
+   "to_qid": "Q24207147"
+  },
+  {
+   "from_id": 132,
+   "relation": "partner",
+   "to_qid": "Q737236"
+  },
+  {
+   "from_id": 132,
+   "relation": "partner",
+   "to_qid": "Q12305959"
+  },
+  {
+   "from_id": 132,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q48947511"
+  },
+  {
+   "from_id": 135,
+   "relation": "enemy",
+   "to_qid": "Q431862"
+  },
+  {
+   "from_id": 135,
+   "relation": "enemy",
+   "to_qid": "Q17022155"
+  },
+  {
+   "from_id": 135,
+   "relation": "enemy",
+   "to_qid": "Q6785042"
+  },
+  {
+   "from_id": 135,
+   "relation": "enemy",
+   "to_qid": "Q6746231"
+  },
+  {
+   "from_id": 136,
+   "relation": "enemy",
+   "to_qid": "Q2417914"
+  },
+  {
+   "from_id": 136,
+   "relation": "enemy",
+   "to_id": 246,
+   "to_qid": "Q2276627"
+  },
+  {
+   "from_id": 136,
+   "relation": "enemy",
+   "to_qid": "Q2915396"
+  },
+  {
+   "from_id": 136,
+   "relation": "enemy",
+   "to_qid": "Q208927"
+  },
+  {
+   "from_id": 136,
+   "relation": "enemy",
+   "to_qid": "Q2474195"
+  },
+  {
+   "from_id": 136,
+   "relation": "enemy",
+   "to_id": 164,
+   "to_qid": "Q1147326"
+  },
+  {
+   "from_id": 136,
+   "relation": "enemy",
+   "to_qid": "Q2487192"
+  },
+  {
+   "from_id": 136,
+   "relation": "enemy",
+   "to_qid": "Q3052324"
+  },
+  {
+   "from_id": 136,
+   "relation": "enemy",
+   "to_qid": "Q2664416"
+  },
+  {
+   "from_id": 136,
+   "relation": "enemy",
+   "to_qid": "Q2339552"
+  },
+  {
+   "from_id": 136,
+   "relation": "enemy",
+   "to_qid": "Q2790757"
+  },
+  {
+   "from_id": 136,
+   "relation": "enemy",
+   "to_qid": "Q3032140"
+  },
+  {
+   "from_id": 136,
+   "relation": "enemy",
+   "to_qid": "Q3269419"
+  },
+  {
+   "from_id": 136,
+   "relation": "enemy",
+   "to_qid": "Q2339160"
+  },
+  {
+   "from_id": 136,
+   "relation": "mother",
+   "to_qid": "Q3847537"
+  },
+  {
+   "from_id": 136,
+   "relation": "father",
+   "to_qid": "Q773035"
+  },
+  {
+   "from_id": 136,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q288516"
+  },
+  {
+   "from_id": 136,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q133799918"
+  },
+  {
+   "from_id": 137,
+   "relation": "spouse",
+   "to_qid": "Q111301136"
+  },
+  {
+   "from_id": 137,
+   "relation": "child",
+   "to_id": 150,
+   "to_qid": "Q2423326"
+  },
+  {
+   "from_id": 137,
+   "relation": "child",
+   "to_id": 182,
+   "to_qid": "Q2095786"
+  },
+  {
+   "from_id": 138,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 139,
+   "relation": "child",
+   "to_qid": "Q5223578"
+  },
+  {
+   "from_id": 14,
+   "relation": "enemy",
+   "to_qid": "Q955796"
+  },
+  {
+   "from_id": 14,
+   "relation": "enemy",
+   "to_qid": "Q3544280"
+  },
+  {
+   "from_id": 14,
+   "relation": "enemy",
+   "to_qid": "Q19364972"
+  },
+  {
+   "from_id": 14,
+   "relation": "enemy",
+   "to_qid": "Q19881381"
+  },
+  {
+   "from_id": 14,
+   "relation": "enemy",
+   "to_qid": "Q23306602"
+  },
+  {
+   "from_id": 14,
+   "relation": "enemy",
+   "to_qid": "Q1982323"
+  },
+  {
+   "from_id": 14,
+   "relation": "enemy",
+   "to_qid": "Q2438411"
+  },
+  {
+   "from_id": 14,
+   "relation": "enemy",
+   "to_qid": "Q2633496"
+  },
+  {
+   "from_id": 14,
+   "relation": "enemy",
+   "to_qid": "Q19840837"
+  },
+  {
+   "from_id": 14,
+   "relation": "enemy",
+   "to_id": 117,
+   "to_qid": "Q17090877"
+  },
+  {
+   "from_id": 14,
+   "relation": "enemy",
+   "to_id": 19,
+   "to_qid": "Q1753322"
+  },
+  {
+   "from_id": 14,
+   "relation": "spouse",
+   "to_qid": "Q114888777"
+  },
+  {
+   "from_id": 14,
+   "relation": "child",
+   "to_qid": "Q114889845"
+  },
+  {
+   "from_id": 14,
+   "relation": "child",
+   "to_qid": "Q114890103"
+  },
+  {
+   "from_id": 14,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q104833057"
+  },
+  {
+   "from_id": 140,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 142,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 142,
+   "relation": "father",
+   "to_id": 43,
+   "to_qid": "Q59643"
+  },
+  {
+   "from_id": 142,
+   "relation": "partner",
+   "to_qid": "Q7292400"
+  },
+  {
+   "from_id": 144,
+   "relation": "spouse",
+   "to_id": 225,
+   "to_qid": "Q60825677"
+  },
+  {
+   "from_id": 144,
+   "relation": "child",
+   "to_id": 25,
+   "to_qid": "Q59826"
+  },
+  {
+   "from_id": 145,
+   "relation": "spouse",
+   "to_id": 225,
+   "to_qid": "Q60825677"
+  },
+  {
+   "from_id": 145,
+   "relation": "child",
+   "to_id": 25,
+   "to_qid": "Q59826"
+  },
+  {
+   "from_id": 146,
+   "relation": "enemy",
+   "to_qid": "Q580822"
+  },
+  {
+   "from_id": 146,
+   "relation": "spouse",
+   "to_id": 150,
+   "to_qid": "Q2423326"
+  },
+  {
+   "from_id": 146,
+   "relation": "partner",
+   "to_qid": "Q2295563"
+  },
+  {
+   "from_id": 146,
+   "relation": "partner",
+   "to_qid": "Q534889"
+  },
+  {
+   "from_id": 146,
+   "relation": "partner",
+   "to_id": 136,
+   "to_qid": "Q180704"
+  },
+  {
+   "from_id": 146,
+   "relation": "partner",
+   "to_qid": "Q965099"
+  },
+  {
+   "from_id": 146,
+   "relation": "partner",
+   "to_qid": "Q3570193"
+  },
+  {
+   "from_id": 146,
+   "relation": "partner",
+   "to_id": 212,
+   "to_qid": "Q2267760"
+  },
+  {
+   "from_id": 146,
+   "relation": "relative",
+   "to_id": 18,
+   "to_qid": "Q188760"
+  },
+  {
+   "from_id": 146,
+   "relation": "relative",
+   "to_qid": "Q24050117"
+  },
+  {
+   "from_id": 146,
+   "relation": "relative",
+   "to_qid": "Q1394575"
+  },
+  {
+   "from_id": 149,
+   "relation": "enemy",
+   "to_qid": "Q110486878"
+  },
+  {
+   "from_id": 149,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 16,
+   "to_qid": "Q945817"
+  },
+  {
+   "from_id": 15,
+   "relation": "enemy",
+   "to_id": 97,
+   "to_qid": "Q578094"
+  },
+  {
+   "from_id": 15,
+   "relation": "father",
+   "to_id": 117,
+   "to_qid": "Q17090877"
+  },
+  {
+   "from_id": 15,
+   "relation": "spouse",
+   "to_id": 163,
+   "to_qid": "Q1132203"
+  },
+  {
+   "from_id": 15,
+   "relation": "child",
+   "to_qid": "Q7053134"
+  },
+  {
+   "from_id": 15,
+   "relation": "partner",
+   "to_qid": "Q1748149"
+  },
+  {
+   "from_id": 15,
+   "relation": "partner",
+   "to_id": 179,
+   "to_qid": "Q27810"
+  },
+  {
+   "from_id": 150,
+   "relation": "father",
+   "to_id": 137,
+   "to_qid": "Q1992523"
+  },
+  {
+   "from_id": 150,
+   "relation": "spouse",
+   "to_id": 146,
+   "to_qid": "Q677627"
+  },
+  {
+   "from_id": 155,
+   "relation": "enemy",
+   "to_qid": "Q2082275"
+  },
+  {
+   "from_id": 156,
+   "relation": "enemy",
+   "to_qid": "Q3020765"
+  },
+  {
+   "from_id": 156,
+   "relation": "enemy",
+   "to_qid": "Q737236"
+  },
+  {
+   "from_id": 156,
+   "relation": "enemy",
+   "to_qid": "Q1394350"
+  },
+  {
+   "from_id": 156,
+   "relation": "enemy",
+   "to_qid": "Q29097098"
+  },
+  {
+   "from_id": 156,
+   "relation": "enemy",
+   "to_qid": "Q8054873"
+  },
+  {
+   "from_id": 156,
+   "relation": "enemy",
+   "to_qid": "Q30636422"
+  },
+  {
+   "from_id": 156,
+   "relation": "mother",
+   "to_qid": "Q117178853"
+  },
+  {
+   "from_id": 156,
+   "relation": "father",
+   "to_qid": "Q117178837"
+  },
+  {
+   "from_id": 156,
+   "relation": "partner",
+   "to_qid": "Q1041907"
+  },
+  {
+   "from_id": 157,
+   "relation": "enemy",
+   "to_qid": "Q322646"
+  },
+  {
+   "from_id": 157,
+   "relation": "enemy",
+   "to_qid": "Q2474195"
+  },
+  {
+   "from_id": 157,
+   "relation": "enemy",
+   "to_id": 9,
+   "to_qid": "Q430178"
+  },
+  {
+   "from_id": 157,
+   "relation": "enemy",
+   "to_qid": "Q3543422"
+  },
+  {
+   "from_id": 157,
+   "relation": "enemy",
+   "to_qid": "Q7296820"
+  },
+  {
+   "from_id": 157,
+   "relation": "enemy",
+   "to_id": 160,
+   "to_qid": "Q85774745"
+  },
+  {
+   "from_id": 157,
+   "relation": "relative",
+   "to_qid": "Q3336797"
+  },
+  {
+   "from_id": 157,
+   "relation": "relative",
+   "to_id": 187,
+   "to_qid": "Q865017"
+  },
+  {
+   "from_id": 157,
+   "relation": "relative",
+   "to_qid": "Q2624716"
+  },
+  {
+   "from_id": 157,
+   "relation": "relative",
+   "to_qid": "Q734861"
+  },
+  {
+   "from_id": 16,
+   "relation": "father",
+   "to_id": 115,
+   "to_qid": "Q7879740"
+  },
+  {
+   "from_id": 16,
+   "relation": "partner",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 16,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 149,
+   "to_qid": "Q20979395"
+  },
+  {
+   "from_id": 160,
+   "relation": "enemy",
+   "to_id": 207,
+   "to_qid": "Q2604715"
+  },
+  {
+   "from_id": 160,
+   "relation": "enemy",
+   "to_id": 157,
+   "to_qid": "Q1982051"
+  },
+  {
+   "from_id": 161,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 161,
+   "relation": "father",
+   "to_id": 124,
+   "to_qid": "Q1621261"
+  },
+  {
+   "from_id": 163,
+   "relation": "father",
+   "to_qid": "Q112042766"
+  },
+  {
+   "from_id": 163,
+   "relation": "spouse",
+   "to_id": 17,
+   "to_qid": "Q1779361"
+  },
+  {
+   "from_id": 163,
+   "relation": "child",
+   "to_qid": "Q7053134"
+  },
+  {
+   "from_id": 163,
+   "relation": "partner",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 163,
+   "relation": "partner",
+   "to_id": 110,
+   "to_qid": "Q552000"
+  },
+  {
+   "from_id": 163,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q21188808"
+  },
+  {
+   "from_id": 164,
+   "relation": "enemy",
+   "to_id": 249,
+   "to_qid": "Q717588"
+  },
+  {
+   "from_id": 164,
+   "relation": "enemy",
+   "to_id": 136,
+   "to_qid": "Q180704"
+  },
+  {
+   "from_id": 164,
+   "relation": "enemy",
+   "to_id": 125,
+   "to_qid": "Q19095"
+  },
+  {
+   "from_id": 164,
+   "relation": "enemy",
+   "to_qid": "Q322646"
+  },
+  {
+   "from_id": 164,
+   "relation": "father",
+   "to_qid": "Q6497975"
+  },
+  {
+   "from_id": 164,
+   "relation": "spouse",
+   "to_qid": "Q17019529"
+  },
+  {
+   "from_id": 164,
+   "relation": "child",
+   "to_qid": "Q5443580"
+  },
+  {
+   "from_id": 164,
+   "relation": "child",
+   "to_qid": "Q6842189"
+  },
+  {
+   "from_id": 164,
+   "relation": "child",
+   "to_qid": "Q4691169"
+  },
+  {
+   "from_id": 166,
+   "relation": "enemy",
+   "to_qid": "Q2962576"
+  },
+  {
+   "from_id": 166,
+   "relation": "enemy",
+   "to_qid": "Q43073416"
+  },
+  {
+   "from_id": 166,
+   "relation": "enemy",
+   "to_qid": "Q2998614"
+  },
+  {
+   "from_id": 166,
+   "relation": "enemy",
+   "to_qid": "Q6746231"
+  },
+  {
+   "from_id": 166,
+   "relation": "enemy",
+   "to_qid": "Q27132943"
+  },
+  {
+   "from_id": 166,
+   "relation": "spouse",
+   "to_qid": "Q2271377"
+  },
+  {
+   "from_id": 166,
+   "relation": "child",
+   "to_qid": "Q115533935"
+  },
+  {
+   "from_id": 166,
+   "relation": "partner",
+   "to_id": 146,
+   "to_qid": "Q677627"
+  },
+  {
+   "from_id": 17,
+   "relation": "enemy",
+   "to_id": 97,
+   "to_qid": "Q578094"
+  },
+  {
+   "from_id": 17,
+   "relation": "father",
+   "to_id": 117,
+   "to_qid": "Q17090877"
+  },
+  {
+   "from_id": 17,
+   "relation": "spouse",
+   "to_id": 163,
+   "to_qid": "Q1132203"
+  },
+  {
+   "from_id": 17,
+   "relation": "child",
+   "to_qid": "Q7053134"
+  },
+  {
+   "from_id": 17,
+   "relation": "partner",
+   "to_qid": "Q1748149"
+  },
+  {
+   "from_id": 17,
+   "relation": "partner",
+   "to_id": 179,
+   "to_qid": "Q27810"
+  },
+  {
+   "from_id": 171,
+   "relation": "enemy",
+   "to_id": 214,
+   "to_qid": "Q838076"
+  },
+  {
+   "from_id": 171,
+   "relation": "enemy",
+   "to_qid": "Q128452"
+  },
+  {
+   "from_id": 171,
+   "relation": "enemy",
+   "to_qid": "Q2551564"
+  },
+  {
+   "from_id": 171,
+   "relation": "enemy",
+   "to_qid": "Q1424480"
+  },
+  {
+   "from_id": 171,
+   "relation": "enemy",
+   "to_qid": "Q5350072"
+  },
+  {
+   "from_id": 171,
+   "relation": "enemy",
+   "to_qid": "Q2075745"
+  },
+  {
+   "from_id": 171,
+   "relation": "enemy",
+   "to_qid": "Q2071805"
+  },
+  {
+   "from_id": 171,
+   "relation": "enemy",
+   "to_qid": "Q2034529"
+  },
+  {
+   "from_id": 171,
+   "relation": "spouse",
+   "to_qid": "Q57013559"
+  },
+  {
+   "from_id": 171,
+   "relation": "child",
+   "to_qid": "Q57022061"
+  },
+  {
+   "from_id": 171,
+   "relation": "child",
+   "to_qid": "Q929285"
+  },
+  {
+   "from_id": 171,
+   "relation": "child",
+   "to_qid": "Q929273"
+  },
+  {
+   "from_id": 171,
+   "relation": "child",
+   "to_qid": "Q2071256"
+  },
+  {
+   "from_id": 171,
+   "relation": "child",
+   "to_qid": "Q1771401"
+  },
+  {
+   "from_id": 171,
+   "relation": "child",
+   "to_qid": "Q16253333"
+  },
+  {
+   "from_id": 171,
+   "relation": "partner",
+   "to_qid": "Q6513617"
+  },
+  {
+   "from_id": 171,
+   "relation": "partner",
+   "to_qid": "Q737236"
+  },
+  {
+   "from_id": 171,
+   "relation": "partner",
+   "to_id": 229,
+   "to_qid": "Q838097"
+  },
+  {
+   "from_id": 171,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q112110384"
+  },
+  {
+   "from_id": 171,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q48412444"
+  },
+  {
+   "from_id": 172,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 175,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 178,
+   "relation": "spouse",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 178,
+   "relation": "child",
+   "to_id": 35,
+   "to_qid": "Q2186500"
+  },
+  {
+   "from_id": 178,
+   "relation": "child",
+   "to_qid": "Q4889166"
+  },
+  {
+   "from_id": 178,
+   "relation": "partner",
+   "to_id": 17,
+   "to_qid": "Q1779361"
+  },
+  {
+   "from_id": 179,
+   "relation": "spouse",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 179,
+   "relation": "child",
+   "to_id": 35,
+   "to_qid": "Q2186500"
+  },
+  {
+   "from_id": 179,
+   "relation": "child",
+   "to_qid": "Q4889166"
+  },
+  {
+   "from_id": 179,
+   "relation": "partner",
+   "to_id": 17,
+   "to_qid": "Q1779361"
+  },
+  {
+   "from_id": 18,
+   "relation": "enemy",
+   "to_qid": "Q60146"
+  },
+  {
+   "from_id": 18,
+   "relation": "enemy",
+   "to_qid": "Q2328990"
+  },
+  {
+   "from_id": 18,
+   "relation": "enemy",
+   "to_qid": "Q1841525"
+  },
+  {
+   "from_id": 18,
+   "relation": "enemy",
+   "to_qid": "Q208927"
+  },
+  {
+   "from_id": 18,
+   "relation": "enemy",
+   "to_qid": "Q2749614"
+  },
+  {
+   "from_id": 18,
+   "relation": "enemy",
+   "to_qid": "Q3108827"
+  },
+  {
+   "from_id": 18,
+   "relation": "enemy",
+   "to_qid": "Q3162643"
+  },
+  {
+   "from_id": 18,
+   "relation": "enemy",
+   "to_qid": "Q2465865"
+  },
+  {
+   "from_id": 18,
+   "relation": "enemy",
+   "to_qid": "Q1638775"
+  },
+  {
+   "from_id": 18,
+   "relation": "enemy",
+   "to_qid": "Q4781622"
+  },
+  {
+   "from_id": 18,
+   "relation": "enemy",
+   "to_qid": "Q5570029"
+  },
+  {
+   "from_id": 18,
+   "relation": "enemy",
+   "to_qid": "Q2900730"
+  },
+  {
+   "from_id": 18,
+   "relation": "enemy",
+   "to_qid": "Q962140"
+  },
+  {
+   "from_id": 18,
+   "relation": "enemy",
+   "to_qid": "Q2309083"
+  },
+  {
+   "from_id": 18,
+   "relation": "enemy",
+   "to_qid": "Q6818707"
+  },
+  {
+   "from_id": 18,
+   "relation": "enemy",
+   "to_qid": "Q3095016"
+  },
+  {
+   "from_id": 18,
+   "relation": "enemy",
+   "to_qid": "Q3492961"
+  },
+  {
+   "from_id": 18,
+   "relation": "enemy",
+   "to_qid": "Q6729338"
+  },
+  {
+   "from_id": 18,
+   "relation": "enemy",
+   "to_qid": "Q4963042"
+  },
+  {
+   "from_id": 18,
+   "relation": "enemy",
+   "to_qid": "Q125348701"
+  },
+  {
+   "from_id": 18,
+   "relation": "mother",
+   "to_qid": "Q17066180"
+  },
+  {
+   "from_id": 18,
+   "relation": "father",
+   "to_qid": "Q4963042"
+  },
+  {
+   "from_id": 18,
+   "relation": "spouse",
+   "to_qid": "Q616633"
+  },
+  {
+   "from_id": 18,
+   "relation": "spouse",
+   "to_qid": "Q1130690"
+  },
+  {
+   "from_id": 18,
+   "relation": "child",
+   "to_qid": "Q1394575"
+  },
+  {
+   "from_id": 18,
+   "relation": "child",
+   "to_qid": "Q3785756"
+  },
+  {
+   "from_id": 18,
+   "relation": "child",
+   "to_qid": "Q3841033"
+  },
+  {
+   "from_id": 18,
+   "relation": "relative",
+   "to_id": 146,
+   "to_qid": "Q677627"
+  },
+  {
+   "from_id": 18,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q105605035"
+  },
+  {
+   "from_id": 18,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q6729338"
+  },
+  {
+   "from_id": 181,
+   "relation": "spouse",
+   "to_id": 222,
+   "to_qid": "Q102268961"
+  },
+  {
+   "from_id": 181,
+   "relation": "child",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 182,
+   "relation": "father",
+   "to_id": 137,
+   "to_qid": "Q1992523"
+  },
+  {
+   "from_id": 183,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 184,
+   "relation": "enemy",
+   "to_qid": "Q5459730"
+  },
+  {
+   "from_id": 184,
+   "relation": "enemy",
+   "to_qid": "Q7860164"
+  },
+  {
+   "from_id": 184,
+   "relation": "father",
+   "to_qid": "Q7860164"
+  },
+  {
+   "from_id": 184,
+   "relation": "relative",
+   "to_qid": "Q14619282"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 117,
+   "to_qid": "Q17090877"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 97,
+   "to_qid": "Q578094"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 207,
+   "to_qid": "Q2604715"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 124,
+   "to_qid": "Q1621261"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 26,
+   "to_qid": "Q2283843"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 21,
+   "to_qid": "Q19382"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 43,
+   "to_qid": "Q59643"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q369515"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q385744"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 80,
+   "to_qid": "Q507241"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 7,
+   "to_qid": "Q521305"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 28,
+   "to_qid": "Q572626"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 78,
+   "to_qid": "Q606569"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q653898"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 20,
+   "to_qid": "Q654588"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q735721"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q849818"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 29,
+   "to_qid": "Q1049890"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 23,
+   "to_qid": "Q1087722"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 65,
+   "to_qid": "Q1168065"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 19,
+   "to_qid": "Q1753322"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 84,
+   "to_qid": "Q1753328"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q1772036"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q55607777"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q111910188"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q111910187"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 94,
+   "to_qid": "Q1812152"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q1861779"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 131,
+   "to_qid": "Q1990090"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q2003141"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 31,
+   "to_qid": "Q2015743"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q2032965"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 48,
+   "to_qid": "Q2274942"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 49,
+   "to_qid": "Q2296291"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 13,
+   "to_qid": "Q2297886"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q2436122"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q2440293"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q2500449"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q2534462"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 82,
+   "to_qid": "Q2555885"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 161,
+   "to_qid": "Q2578146"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q2584005"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 183,
+   "to_qid": "Q2585537"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q2604725"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 42,
+   "to_qid": "Q2623764"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q2624726"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q2628556"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 122,
+   "to_qid": "Q2719607"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 53,
+   "to_qid": "Q2837209"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 68,
+   "to_qid": "Q2902368"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 30,
+   "to_qid": "Q2917078"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 4,
+   "to_qid": "Q2934584"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q3031868"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 241,
+   "to_qid": "Q3080800"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q3183266"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 175,
+   "to_qid": "Q3316968"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q3440451"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q3486816"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q3498060"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q3501133"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q3544440"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q3551286"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q3686980"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q3998685"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 253,
+   "to_qid": "Q4010081"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q4483669"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q4928002"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q5377360"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 108,
+   "to_qid": "Q5435440"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 138,
+   "to_qid": "Q6163022"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q6746231"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q6904213"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q7653886"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q9311511"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q16203115"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_id": 142,
+   "to_qid": "Q16203548"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q20656907"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q2082275"
+  },
+  {
+   "from_id": 186,
+   "relation": "enemy",
+   "to_qid": "Q11680813"
+  },
+  {
+   "from_id": 186,
+   "relation": "mother",
+   "to_id": 181,
+   "to_qid": "Q102268990"
+  },
+  {
+   "from_id": 186,
+   "relation": "father",
+   "to_id": 222,
+   "to_qid": "Q102268961"
+  },
+  {
+   "from_id": 186,
+   "relation": "spouse",
+   "to_id": 179,
+   "to_qid": "Q27810"
+  },
+  {
+   "from_id": 186,
+   "relation": "child",
+   "to_id": 35,
+   "to_qid": "Q2186500"
+  },
+  {
+   "from_id": 186,
+   "relation": "child",
+   "to_qid": "Q4889166"
+  },
+  {
+   "from_id": 186,
+   "relation": "child",
+   "to_qid": "Q5441790"
+  },
+  {
+   "from_id": 186,
+   "relation": "partner",
+   "to_id": 16,
+   "to_qid": "Q945817"
+  },
+  {
+   "from_id": 186,
+   "relation": "partner",
+   "to_id": 3,
+   "to_qid": "Q912640"
+  },
+  {
+   "from_id": 186,
+   "relation": "partner",
+   "to_id": 67,
+   "to_qid": "Q2628255"
+  },
+  {
+   "from_id": 186,
+   "relation": "partner",
+   "to_qid": "Q3658902"
+  },
+  {
+   "from_id": 186,
+   "relation": "partner",
+   "to_qid": "Q3704417"
+  },
+  {
+   "from_id": 186,
+   "relation": "partner",
+   "to_id": 179,
+   "to_qid": "Q27810"
+  },
+  {
+   "from_id": 186,
+   "relation": "partner",
+   "to_id": 163,
+   "to_qid": "Q1132203"
+  },
+  {
+   "from_id": 186,
+   "relation": "partner",
+   "to_id": 211,
+   "to_qid": "Q547306"
+  },
+  {
+   "from_id": 186,
+   "relation": "relative",
+   "to_id": 44,
+   "to_qid": "Q2299139"
+  },
+  {
+   "from_id": 186,
+   "relation": "relative",
+   "to_id": 1,
+   "to_qid": "Q2453332"
+  },
+  {
+   "from_id": 186,
+   "relation": "relative",
+   "to_id": 222,
+   "to_qid": "Q102268961"
+  },
+  {
+   "from_id": 186,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q47471875"
+  },
+  {
+   "from_id": 186,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 66,
+   "to_qid": "Q3966701"
+  },
+  {
+   "from_id": 186,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 36,
+   "to_qid": "Q3966700"
+  },
+  {
+   "from_id": 186,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 208,
+   "to_qid": "Q48732969"
+  },
+  {
+   "from_id": 186,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q48739522"
+  },
+  {
+   "from_id": 187,
+   "relation": "enemy",
+   "to_id": 9,
+   "to_qid": "Q430178"
+  },
+  {
+   "from_id": 187,
+   "relation": "father",
+   "to_qid": "Q3336797"
+  },
+  {
+   "from_id": 187,
+   "relation": "spouse",
+   "to_qid": "Q510450"
+  },
+  {
+   "from_id": 187,
+   "relation": "child",
+   "to_qid": "Q2624716"
+  },
+  {
+   "from_id": 187,
+   "relation": "child",
+   "to_qid": "Q734861"
+  },
+  {
+   "from_id": 187,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q39071489"
+  },
+  {
+   "from_id": 187,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q133799925"
+  },
+  {
+   "from_id": 189,
+   "relation": "enemy",
+   "to_qid": "Q3545397"
+  },
+  {
+   "from_id": 189,
+   "relation": "enemy",
+   "to_qid": "Q4921877"
+  },
+  {
+   "from_id": 189,
+   "relation": "spouse",
+   "to_qid": "Q60549183"
+  },
+  {
+   "from_id": 19,
+   "relation": "enemy",
+   "to_id": 8,
+   "to_qid": "Q327553"
+  },
+  {
+   "from_id": 19,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 19,
+   "relation": "enemy",
+   "to_id": 5,
+   "to_qid": "Q190679"
+  },
+  {
+   "from_id": 19,
+   "relation": "enemy",
+   "to_id": 122,
+   "to_qid": "Q2719607"
+  },
+  {
+   "from_id": 19,
+   "relation": "enemy",
+   "to_qid": "Q2500449"
+  },
+  {
+   "from_id": 19,
+   "relation": "enemy",
+   "to_qid": "Q2436122"
+  },
+  {
+   "from_id": 19,
+   "relation": "enemy",
+   "to_qid": "Q7914646"
+  },
+  {
+   "from_id": 19,
+   "relation": "enemy",
+   "to_id": 14,
+   "to_qid": "Q729150"
+  },
+  {
+   "from_id": 19,
+   "relation": "spouse",
+   "to_qid": "Q7914646"
+  },
+  {
+   "from_id": 19,
+   "relation": "spouse",
+   "to_id": 251,
+   "to_qid": "Q2625935"
+  },
+  {
+   "from_id": 19,
+   "relation": "child",
+   "to_qid": "Q2436122"
+  },
+  {
+   "from_id": 194,
+   "relation": "enemy",
+   "to_qid": "Q2393694"
+  },
+  {
+   "from_id": 194,
+   "relation": "enemy",
+   "to_qid": "Q6662949"
+  },
+  {
+   "from_id": 194,
+   "relation": "enemy",
+   "to_qid": "Q110917411"
+  },
+  {
+   "from_id": 194,
+   "relation": "enemy",
+   "to_qid": "Q3356429"
+  },
+  {
+   "from_id": 194,
+   "relation": "enemy",
+   "to_qid": "Q780488"
+  },
+  {
+   "from_id": 194,
+   "relation": "mother",
+   "to_qid": "Q115441513"
+  },
+  {
+   "from_id": 194,
+   "relation": "spouse",
+   "to_qid": "Q2295556"
+  },
+  {
+   "from_id": 194,
+   "relation": "spouse",
+   "to_qid": "Q3543851"
+  },
+  {
+   "from_id": 194,
+   "relation": "partner",
+   "to_qid": "Q1995969"
+  },
+  {
+   "from_id": 194,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q15141703"
+  },
+  {
+   "from_id": 196,
+   "relation": "spouse",
+   "to_id": 67,
+   "to_qid": "Q2628255"
+  },
+  {
+   "from_id": 198,
+   "relation": "enemy",
+   "to_qid": "Q576524"
+  },
+  {
+   "from_id": 198,
+   "relation": "child",
+   "to_qid": "Q3846693"
+  },
+  {
+   "from_id": 198,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q7880226"
+  },
+  {
+   "from_id": 2,
+   "relation": "child",
+   "to_qid": "Q5223578"
+  },
+  {
+   "from_id": 20,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 20,
+   "relation": "enemy",
+   "to_qid": "Q2532716"
+  },
+  {
+   "from_id": 20,
+   "relation": "child",
+   "to_qid": "Q653898"
+  },
+  {
+   "from_id": 20,
+   "relation": "child",
+   "to_qid": "Q19875028"
+  },
+  {
+   "from_id": 20,
+   "relation": "child",
+   "to_qid": "Q2003141"
+  },
+  {
+   "from_id": 20,
+   "relation": "partner",
+   "to_id": 4,
+   "to_qid": "Q2934584"
+  },
+  {
+   "from_id": 20,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q4003168"
+  },
+  {
+   "from_id": 200,
+   "relation": "enemy",
+   "to_qid": "Q737236"
+  },
+  {
+   "from_id": 200,
+   "relation": "enemy",
+   "to_qid": "Q2642022"
+  },
+  {
+   "from_id": 200,
+   "relation": "enemy",
+   "to_qid": "Q3115851"
+  },
+  {
+   "from_id": 200,
+   "relation": "mother",
+   "to_qid": "Q737236"
+  },
+  {
+   "from_id": 200,
+   "relation": "mother",
+   "to_qid": "Q1051111"
+  },
+  {
+   "from_id": 200,
+   "relation": "father",
+   "to_qid": "Q2642022"
+  },
+  {
+   "from_id": 200,
+   "relation": "child",
+   "to_qid": "Q1911253"
+  },
+  {
+   "from_id": 200,
+   "relation": "partner",
+   "to_qid": "Q3613591"
+  },
+  {
+   "from_id": 200,
+   "relation": "partner",
+   "to_qid": "Q3546921"
+  },
+  {
+   "from_id": 200,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q117322409"
+  },
+  {
+   "from_id": 202,
+   "relation": "enemy",
+   "to_id": 9,
+   "to_qid": "Q430178"
+  },
+  {
+   "from_id": 202,
+   "relation": "enemy",
+   "to_qid": "Q2418665"
+  },
+  {
+   "from_id": 202,
+   "relation": "enemy",
+   "to_id": 111,
+   "to_qid": "Q1429836"
+  },
+  {
+   "from_id": 202,
+   "relation": "enemy",
+   "to_id": 246,
+   "to_qid": "Q2276627"
+  },
+  {
+   "from_id": 202,
+   "relation": "enemy",
+   "to_qid": "Q1984020"
+  },
+  {
+   "from_id": 202,
+   "relation": "partner",
+   "to_qid": "Q7487249"
+  },
+  {
+   "from_id": 207,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 207,
+   "relation": "enemy",
+   "to_qid": "Q55607777"
+  },
+  {
+   "from_id": 207,
+   "relation": "enemy",
+   "to_id": 160,
+   "to_qid": "Q85774745"
+  },
+  {
+   "from_id": 207,
+   "relation": "spouse",
+   "to_id": 57,
+   "to_qid": "Q14475812"
+  },
+  {
+   "from_id": 207,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q125253709"
+  },
+  {
+   "from_id": 207,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q63761182"
+  },
+  {
+   "from_id": 207,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q108923148"
+  },
+  {
+   "from_id": 208,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 208,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q47471875"
+  },
+  {
+   "from_id": 208,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 66,
+   "to_qid": "Q3966701"
+  },
+  {
+   "from_id": 208,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 36,
+   "to_qid": "Q3966700"
+  },
+  {
+   "from_id": 208,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q48739522"
+  },
+  {
+   "from_id": 209,
+   "relation": "spouse",
+   "to_qid": "Q23894967"
+  },
+  {
+   "from_id": 209,
+   "relation": "child",
+   "to_qid": "Q6911845"
+  },
+  {
+   "from_id": 21,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 21,
+   "relation": "spouse",
+   "to_qid": "Q39052969"
+  },
+  {
+   "from_id": 21,
+   "relation": "child",
+   "to_qid": "Q39069914"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 117,
+   "to_qid": "Q17090877"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 97,
+   "to_qid": "Q578094"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 207,
+   "to_qid": "Q2604715"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 124,
+   "to_qid": "Q1621261"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 26,
+   "to_qid": "Q2283843"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 21,
+   "to_qid": "Q19382"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 43,
+   "to_qid": "Q59643"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q369515"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q385744"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 80,
+   "to_qid": "Q507241"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 7,
+   "to_qid": "Q521305"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 28,
+   "to_qid": "Q572626"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 78,
+   "to_qid": "Q606569"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q653898"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 20,
+   "to_qid": "Q654588"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q735721"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q849818"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 29,
+   "to_qid": "Q1049890"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 23,
+   "to_qid": "Q1087722"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 65,
+   "to_qid": "Q1168065"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 19,
+   "to_qid": "Q1753322"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 84,
+   "to_qid": "Q1753328"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q1772036"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q55607777"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q111910188"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q111910187"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 94,
+   "to_qid": "Q1812152"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q1861779"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 131,
+   "to_qid": "Q1990090"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q2003141"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 31,
+   "to_qid": "Q2015743"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q2032965"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 48,
+   "to_qid": "Q2274942"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 49,
+   "to_qid": "Q2296291"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 13,
+   "to_qid": "Q2297886"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q2436122"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q2440293"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q2500449"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q2534462"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 82,
+   "to_qid": "Q2555885"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 161,
+   "to_qid": "Q2578146"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q2584005"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 183,
+   "to_qid": "Q2585537"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q2604725"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 42,
+   "to_qid": "Q2623764"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q2624726"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q2628556"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 122,
+   "to_qid": "Q2719607"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 53,
+   "to_qid": "Q2837209"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 68,
+   "to_qid": "Q2902368"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 30,
+   "to_qid": "Q2917078"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 4,
+   "to_qid": "Q2934584"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q3031868"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 241,
+   "to_qid": "Q3080800"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q3183266"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 175,
+   "to_qid": "Q3316968"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q3440451"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q3486816"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q3498060"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q3501133"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q3544440"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q3551286"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q3686980"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q3998685"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 253,
+   "to_qid": "Q4010081"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q4483669"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q4928002"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q5377360"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 108,
+   "to_qid": "Q5435440"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 138,
+   "to_qid": "Q6163022"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q6746231"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q6904213"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q7653886"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q9311511"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q16203115"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_id": 142,
+   "to_qid": "Q16203548"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q20656907"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q2082275"
+  },
+  {
+   "from_id": 210,
+   "relation": "enemy",
+   "to_qid": "Q11680813"
+  },
+  {
+   "from_id": 210,
+   "relation": "mother",
+   "to_id": 181,
+   "to_qid": "Q102268990"
+  },
+  {
+   "from_id": 210,
+   "relation": "father",
+   "to_id": 222,
+   "to_qid": "Q102268961"
+  },
+  {
+   "from_id": 210,
+   "relation": "spouse",
+   "to_id": 179,
+   "to_qid": "Q27810"
+  },
+  {
+   "from_id": 210,
+   "relation": "child",
+   "to_id": 35,
+   "to_qid": "Q2186500"
+  },
+  {
+   "from_id": 210,
+   "relation": "child",
+   "to_qid": "Q4889166"
+  },
+  {
+   "from_id": 210,
+   "relation": "child",
+   "to_qid": "Q5441790"
+  },
+  {
+   "from_id": 210,
+   "relation": "partner",
+   "to_id": 16,
+   "to_qid": "Q945817"
+  },
+  {
+   "from_id": 210,
+   "relation": "partner",
+   "to_id": 3,
+   "to_qid": "Q912640"
+  },
+  {
+   "from_id": 210,
+   "relation": "partner",
+   "to_id": 67,
+   "to_qid": "Q2628255"
+  },
+  {
+   "from_id": 210,
+   "relation": "partner",
+   "to_qid": "Q3658902"
+  },
+  {
+   "from_id": 210,
+   "relation": "partner",
+   "to_qid": "Q3704417"
+  },
+  {
+   "from_id": 210,
+   "relation": "partner",
+   "to_id": 179,
+   "to_qid": "Q27810"
+  },
+  {
+   "from_id": 210,
+   "relation": "partner",
+   "to_id": 163,
+   "to_qid": "Q1132203"
+  },
+  {
+   "from_id": 210,
+   "relation": "partner",
+   "to_id": 211,
+   "to_qid": "Q547306"
+  },
+  {
+   "from_id": 210,
+   "relation": "relative",
+   "to_id": 44,
+   "to_qid": "Q2299139"
+  },
+  {
+   "from_id": 210,
+   "relation": "relative",
+   "to_id": 1,
+   "to_qid": "Q2453332"
+  },
+  {
+   "from_id": 210,
+   "relation": "relative",
+   "to_id": 222,
+   "to_qid": "Q102268961"
+  },
+  {
+   "from_id": 210,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q47471875"
+  },
+  {
+   "from_id": 210,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 66,
+   "to_qid": "Q3966701"
+  },
+  {
+   "from_id": 210,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 36,
+   "to_qid": "Q3966700"
+  },
+  {
+   "from_id": 210,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 208,
+   "to_qid": "Q48732969"
+  },
+  {
+   "from_id": 210,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q48739522"
+  },
+  {
+   "from_id": 211,
+   "relation": "enemy",
+   "to_qid": "Q7080283"
+  },
+  {
+   "from_id": 211,
+   "relation": "mother",
+   "to_qid": "Q111658697"
+  },
+  {
+   "from_id": 211,
+   "relation": "father",
+   "to_qid": "Q111658696"
+  },
+  {
+   "from_id": 211,
+   "relation": "partner",
+   "to_qid": "Q60002"
+  },
+  {
+   "from_id": 211,
+   "relation": "partner",
+   "to_qid": "Q3496918"
+  },
+  {
+   "from_id": 211,
+   "relation": "partner",
+   "to_id": 132,
+   "to_qid": "Q838088"
+  },
+  {
+   "from_id": 211,
+   "relation": "partner",
+   "to_qid": "Q1136453"
+  },
+  {
+   "from_id": 211,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q112110359"
+  },
+  {
+   "from_id": 211,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q114005814"
+  },
+  {
+   "from_id": 211,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q48958279"
+  },
+  {
+   "from_id": 212,
+   "relation": "enemy",
+   "to_qid": "Q2962576"
+  },
+  {
+   "from_id": 212,
+   "relation": "enemy",
+   "to_qid": "Q43073416"
+  },
+  {
+   "from_id": 212,
+   "relation": "enemy",
+   "to_qid": "Q2998614"
+  },
+  {
+   "from_id": 212,
+   "relation": "enemy",
+   "to_qid": "Q6746231"
+  },
+  {
+   "from_id": 212,
+   "relation": "enemy",
+   "to_qid": "Q27132943"
+  },
+  {
+   "from_id": 212,
+   "relation": "spouse",
+   "to_qid": "Q2271377"
+  },
+  {
+   "from_id": 212,
+   "relation": "child",
+   "to_qid": "Q115533935"
+  },
+  {
+   "from_id": 212,
+   "relation": "partner",
+   "to_id": 146,
+   "to_qid": "Q677627"
+  },
+  {
+   "from_id": 214,
+   "relation": "enemy",
+   "to_id": 171,
+   "to_qid": "Q840291"
+  },
+  {
+   "from_id": 214,
+   "relation": "enemy",
+   "to_qid": "Q841372"
+  },
+  {
+   "from_id": 214,
+   "relation": "enemy",
+   "to_qid": "Q858901"
+  },
+  {
+   "from_id": 214,
+   "relation": "enemy",
+   "to_qid": "Q2339776"
+  },
+  {
+   "from_id": 214,
+   "relation": "enemy",
+   "to_qid": "Q1585469"
+  },
+  {
+   "from_id": 214,
+   "relation": "mother",
+   "to_qid": "Q111328112"
+  },
+  {
+   "from_id": 214,
+   "relation": "father",
+   "to_qid": "Q111328111"
+  },
+  {
+   "from_id": 214,
+   "relation": "spouse",
+   "to_qid": "Q2504688"
+  },
+  {
+   "from_id": 214,
+   "relation": "child",
+   "to_qid": "Q1607791"
+  },
+  {
+   "from_id": 214,
+   "relation": "child",
+   "to_qid": "Q133267296"
+  },
+  {
+   "from_id": 214,
+   "relation": "partner",
+   "to_qid": "Q2842673"
+  },
+  {
+   "from_id": 214,
+   "relation": "partner",
+   "to_qid": "Q5516076"
+  },
+  {
+   "from_id": 214,
+   "relation": "partner",
+   "to_qid": "Q2361279"
+  },
+  {
+   "from_id": 214,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q117322403"
+  },
+  {
+   "from_id": 215,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 222,
+   "relation": "spouse",
+   "to_id": 181,
+   "to_qid": "Q102268990"
+  },
+  {
+   "from_id": 222,
+   "relation": "child",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 225,
+   "relation": "spouse",
+   "to_id": 145,
+   "to_qid": "Q115534083"
+  },
+  {
+   "from_id": 225,
+   "relation": "child",
+   "to_id": 25,
+   "to_qid": "Q59826"
+  },
+  {
+   "from_id": 227,
+   "relation": "enemy",
+   "to_id": 43,
+   "to_qid": "Q59643"
+  },
+  {
+   "from_id": 227,
+   "relation": "child",
+   "to_qid": "Q7292400"
+  },
+  {
+   "from_id": 229,
+   "relation": "enemy",
+   "to_qid": "Q737236"
+  },
+  {
+   "from_id": 229,
+   "relation": "enemy",
+   "to_qid": "Q64658380"
+  },
+  {
+   "from_id": 229,
+   "relation": "mother",
+   "to_qid": "Q737236"
+  },
+  {
+   "from_id": 229,
+   "relation": "mother",
+   "to_qid": "Q1051111"
+  },
+  {
+   "from_id": 229,
+   "relation": "spouse",
+   "to_id": 112,
+   "to_qid": "Q2639150"
+  },
+  {
+   "from_id": 229,
+   "relation": "child",
+   "to_qid": "Q16253333"
+  },
+  {
+   "from_id": 229,
+   "relation": "partner",
+   "to_id": 171,
+   "to_qid": "Q840291"
+  },
+  {
+   "from_id": 229,
+   "relation": "partner",
+   "to_qid": "Q1771401"
+  },
+  {
+   "from_id": 229,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q48946153"
+  },
+  {
+   "from_id": 23,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 231,
+   "relation": "spouse",
+   "to_qid": "Q63761127"
+  },
+  {
+   "from_id": 239,
+   "relation": "spouse",
+   "to_id": 244,
+   "to_qid": "Q66189316"
+  },
+  {
+   "from_id": 24,
+   "relation": "partner",
+   "to_qid": "Q23991129"
+  },
+  {
+   "from_id": 240,
+   "relation": "enemy",
+   "to_qid": "Q669916"
+  },
+  {
+   "from_id": 241,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 241,
+   "relation": "child",
+   "to_id": 53,
+   "to_qid": "Q2837209"
+  },
+  {
+   "from_id": 243,
+   "relation": "enemy",
+   "to_qid": "Q1585469"
+  },
+  {
+   "from_id": 243,
+   "relation": "mother",
+   "to_qid": "Q111309715"
+  },
+  {
+   "from_id": 243,
+   "relation": "father",
+   "to_qid": "Q111449140"
+  },
+  {
+   "from_id": 243,
+   "relation": "spouse",
+   "to_id": 69,
+   "to_qid": "Q998220"
+  },
+  {
+   "from_id": 243,
+   "relation": "partner",
+   "to_id": 46,
+   "to_qid": "Q186422"
+  },
+  {
+   "from_id": 243,
+   "relation": "partner",
+   "to_qid": "Q1002884"
+  },
+  {
+   "from_id": 243,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q112110393"
+  },
+  {
+   "from_id": 243,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q4003183"
+  },
+  {
+   "from_id": 244,
+   "relation": "spouse",
+   "to_id": 239,
+   "to_qid": "Q66189494"
+  },
+  {
+   "from_id": 245,
+   "relation": "enemy",
+   "to_qid": "Q81787"
+  },
+  {
+   "from_id": 246,
+   "relation": "enemy",
+   "to_qid": "Q1735229"
+  },
+  {
+   "from_id": 246,
+   "relation": "enemy",
+   "to_qid": "Q322646"
+  },
+  {
+   "from_id": 246,
+   "relation": "enemy",
+   "to_qid": "Q2545790"
+  },
+  {
+   "from_id": 246,
+   "relation": "enemy",
+   "to_id": 111,
+   "to_qid": "Q1429836"
+  },
+  {
+   "from_id": 246,
+   "relation": "enemy",
+   "to_qid": "Q152098"
+  },
+  {
+   "from_id": 246,
+   "relation": "enemy",
+   "to_qid": "Q128452"
+  },
+  {
+   "from_id": 246,
+   "relation": "enemy",
+   "to_qid": "Q3038387"
+  },
+  {
+   "from_id": 246,
+   "relation": "enemy",
+   "to_id": 202,
+   "to_qid": "Q95153"
+  },
+  {
+   "from_id": 246,
+   "relation": "enemy",
+   "to_qid": "Q927598"
+  },
+  {
+   "from_id": 246,
+   "relation": "enemy",
+   "to_qid": "Q1235121"
+  },
+  {
+   "from_id": 246,
+   "relation": "enemy",
+   "to_qid": "Q2721152"
+  },
+  {
+   "from_id": 246,
+   "relation": "enemy",
+   "to_qid": "Q898039"
+  },
+  {
+   "from_id": 246,
+   "relation": "enemy",
+   "to_qid": "Q3496918"
+  },
+  {
+   "from_id": 246,
+   "relation": "enemy",
+   "to_id": 136,
+   "to_qid": "Q180704"
+  },
+  {
+   "from_id": 246,
+   "relation": "enemy",
+   "to_qid": "Q3199922"
+  },
+  {
+   "from_id": 246,
+   "relation": "enemy",
+   "to_qid": "Q2735212"
+  },
+  {
+   "from_id": 246,
+   "relation": "enemy",
+   "to_qid": "Q1994866"
+  },
+  {
+   "from_id": 246,
+   "relation": "mother",
+   "to_qid": "Q130378413"
+  },
+  {
+   "from_id": 246,
+   "relation": "father",
+   "to_qid": "Q930794"
+  },
+  {
+   "from_id": 246,
+   "relation": "child",
+   "to_qid": "Q2721152"
+  },
+  {
+   "from_id": 246,
+   "relation": "child",
+   "to_qid": "Q2721134"
+  },
+  {
+   "from_id": 246,
+   "relation": "child",
+   "to_qid": "Q47302915"
+  },
+  {
+   "from_id": 246,
+   "relation": "relative",
+   "to_qid": "Q3199922"
+  },
+  {
+   "from_id": 246,
+   "relation": "relative",
+   "to_qid": "Q2721152"
+  },
+  {
+   "from_id": 246,
+   "relation": "relative",
+   "to_qid": "Q2721134"
+  },
+  {
+   "from_id": 246,
+   "relation": "relative",
+   "to_qid": "Q17986678"
+  },
+  {
+   "from_id": 246,
+   "relation": "relative",
+   "to_qid": "Q3576299"
+  },
+  {
+   "from_id": 246,
+   "relation": "relative",
+   "to_qid": "Q20979240"
+  },
+  {
+   "from_id": 247,
+   "relation": "spouse",
+   "to_id": 34,
+   "to_qid": "Q1877130"
+  },
+  {
+   "from_id": 249,
+   "relation": "enemy",
+   "to_id": 164,
+   "to_qid": "Q1147326"
+  },
+  {
+   "from_id": 249,
+   "relation": "enemy",
+   "to_qid": "Q3281842"
+  },
+  {
+   "from_id": 249,
+   "relation": "enemy",
+   "to_qid": "Q3247771"
+  },
+  {
+   "from_id": 249,
+   "relation": "enemy",
+   "to_qid": "Q6497975"
+  },
+  {
+   "from_id": 249,
+   "relation": "enemy",
+   "to_qid": "Q6842189"
+  },
+  {
+   "from_id": 249,
+   "relation": "enemy",
+   "to_qid": "Q3259423"
+  },
+  {
+   "from_id": 249,
+   "relation": "enemy",
+   "to_qid": "Q3480653"
+  },
+  {
+   "from_id": 249,
+   "relation": "enemy",
+   "to_qid": "Q3285766"
+  },
+  {
+   "from_id": 249,
+   "relation": "enemy",
+   "to_qid": "Q654551"
+  },
+  {
+   "from_id": 249,
+   "relation": "enemy",
+   "to_qid": "Q978851"
+  },
+  {
+   "from_id": 249,
+   "relation": "enemy",
+   "to_qid": "Q1638775"
+  },
+  {
+   "from_id": 249,
+   "relation": "enemy",
+   "to_qid": "Q2465865"
+  },
+  {
+   "from_id": 249,
+   "relation": "enemy",
+   "to_qid": "Q2473486"
+  },
+  {
+   "from_id": 249,
+   "relation": "enemy",
+   "to_qid": "Q2642342"
+  },
+  {
+   "from_id": 249,
+   "relation": "enemy",
+   "to_qid": "Q2746596"
+  },
+  {
+   "from_id": 249,
+   "relation": "enemy",
+   "to_qid": "Q3043221"
+  },
+  {
+   "from_id": 249,
+   "relation": "enemy",
+   "to_qid": "Q3109952"
+  },
+  {
+   "from_id": 249,
+   "relation": "enemy",
+   "to_qid": "Q96379736"
+  },
+  {
+   "from_id": 249,
+   "relation": "mother",
+   "to_qid": "Q3545630"
+  },
+  {
+   "from_id": 249,
+   "relation": "mother",
+   "to_qid": "Q3087835"
+  },
+  {
+   "from_id": 249,
+   "relation": "father",
+   "to_qid": "Q1319513"
+  },
+  {
+   "from_id": 249,
+   "relation": "child",
+   "to_qid": "Q6151029"
+  },
+  {
+   "from_id": 249,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q4003185"
+  },
+  {
+   "from_id": 249,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q113947121"
+  },
+  {
+   "from_id": 249,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q133800008"
+  },
+  {
+   "from_id": 25,
+   "relation": "enemy",
+   "to_qid": "Q3192657"
+  },
+  {
+   "from_id": 25,
+   "relation": "enemy",
+   "to_qid": "Q48544198"
+  },
+  {
+   "from_id": 25,
+   "relation": "enemy",
+   "to_qid": "Q60484975"
+  },
+  {
+   "from_id": 25,
+   "relation": "mother",
+   "to_id": 225,
+   "to_qid": "Q60825677"
+  },
+  {
+   "from_id": 25,
+   "relation": "father",
+   "to_id": 145,
+   "to_qid": "Q115534083"
+  },
+  {
+   "from_id": 251,
+   "relation": "enemy",
+   "to_id": 8,
+   "to_qid": "Q327553"
+  },
+  {
+   "from_id": 251,
+   "relation": "spouse",
+   "to_id": 19,
+   "to_qid": "Q1753322"
+  },
+  {
+   "from_id": 251,
+   "relation": "partner",
+   "to_id": 8,
+   "to_qid": "Q327553"
+  },
+  {
+   "from_id": 252,
+   "relation": "enemy",
+   "to_qid": "Q128452"
+  },
+  {
+   "from_id": 253,
+   "relation": "enemy",
+   "to_id": 5,
+   "to_qid": "Q190679"
+  },
+  {
+   "from_id": 253,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 256,
+   "relation": "child",
+   "to_id": 3,
+   "to_qid": "Q912640"
+  },
+  {
+   "from_id": 258,
+   "relation": "relative",
+   "to_qid": "Q17064925"
+  },
+  {
+   "from_id": 26,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 26,
+   "relation": "enemy",
+   "to_id": 8,
+   "to_qid": "Q327553"
+  },
+  {
+   "from_id": 262,
+   "relation": "enemy",
+   "to_qid": "Q3503968"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 117,
+   "to_qid": "Q17090877"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 97,
+   "to_qid": "Q578094"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 207,
+   "to_qid": "Q2604715"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 124,
+   "to_qid": "Q1621261"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 26,
+   "to_qid": "Q2283843"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 21,
+   "to_qid": "Q19382"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 43,
+   "to_qid": "Q59643"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q369515"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q385744"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 80,
+   "to_qid": "Q507241"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 7,
+   "to_qid": "Q521305"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 28,
+   "to_qid": "Q572626"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 78,
+   "to_qid": "Q606569"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q653898"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 20,
+   "to_qid": "Q654588"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q735721"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q849818"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 29,
+   "to_qid": "Q1049890"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 23,
+   "to_qid": "Q1087722"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 65,
+   "to_qid": "Q1168065"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 19,
+   "to_qid": "Q1753322"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 84,
+   "to_qid": "Q1753328"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q1772036"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q55607777"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q111910188"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q111910187"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 94,
+   "to_qid": "Q1812152"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q1861779"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 131,
+   "to_qid": "Q1990090"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q2003141"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 31,
+   "to_qid": "Q2015743"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q2032965"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 48,
+   "to_qid": "Q2274942"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 49,
+   "to_qid": "Q2296291"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 13,
+   "to_qid": "Q2297886"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q2436122"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q2440293"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q2500449"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q2534462"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 82,
+   "to_qid": "Q2555885"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 161,
+   "to_qid": "Q2578146"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q2584005"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 183,
+   "to_qid": "Q2585537"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q2604725"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 42,
+   "to_qid": "Q2623764"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q2624726"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q2628556"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 122,
+   "to_qid": "Q2719607"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 53,
+   "to_qid": "Q2837209"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 68,
+   "to_qid": "Q2902368"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 30,
+   "to_qid": "Q2917078"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 4,
+   "to_qid": "Q2934584"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q3031868"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 241,
+   "to_qid": "Q3080800"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q3183266"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 175,
+   "to_qid": "Q3316968"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q3440451"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q3486816"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q3498060"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q3501133"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q3544440"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q3551286"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q3686980"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q3998685"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 253,
+   "to_qid": "Q4010081"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q4483669"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q4928002"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q5377360"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 108,
+   "to_qid": "Q5435440"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 138,
+   "to_qid": "Q6163022"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q6746231"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q6904213"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q7653886"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q9311511"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q16203115"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_id": 142,
+   "to_qid": "Q16203548"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q20656907"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q2082275"
+  },
+  {
+   "from_id": 27,
+   "relation": "enemy",
+   "to_qid": "Q11680813"
+  },
+  {
+   "from_id": 27,
+   "relation": "mother",
+   "to_id": 181,
+   "to_qid": "Q102268990"
+  },
+  {
+   "from_id": 27,
+   "relation": "father",
+   "to_id": 222,
+   "to_qid": "Q102268961"
+  },
+  {
+   "from_id": 27,
+   "relation": "spouse",
+   "to_id": 179,
+   "to_qid": "Q27810"
+  },
+  {
+   "from_id": 27,
+   "relation": "child",
+   "to_id": 35,
+   "to_qid": "Q2186500"
+  },
+  {
+   "from_id": 27,
+   "relation": "child",
+   "to_qid": "Q4889166"
+  },
+  {
+   "from_id": 27,
+   "relation": "child",
+   "to_qid": "Q5441790"
+  },
+  {
+   "from_id": 27,
+   "relation": "partner",
+   "to_id": 16,
+   "to_qid": "Q945817"
+  },
+  {
+   "from_id": 27,
+   "relation": "partner",
+   "to_id": 3,
+   "to_qid": "Q912640"
+  },
+  {
+   "from_id": 27,
+   "relation": "partner",
+   "to_id": 67,
+   "to_qid": "Q2628255"
+  },
+  {
+   "from_id": 27,
+   "relation": "partner",
+   "to_qid": "Q3658902"
+  },
+  {
+   "from_id": 27,
+   "relation": "partner",
+   "to_qid": "Q3704417"
+  },
+  {
+   "from_id": 27,
+   "relation": "partner",
+   "to_id": 179,
+   "to_qid": "Q27810"
+  },
+  {
+   "from_id": 27,
+   "relation": "partner",
+   "to_id": 163,
+   "to_qid": "Q1132203"
+  },
+  {
+   "from_id": 27,
+   "relation": "partner",
+   "to_id": 211,
+   "to_qid": "Q547306"
+  },
+  {
+   "from_id": 27,
+   "relation": "relative",
+   "to_id": 44,
+   "to_qid": "Q2299139"
+  },
+  {
+   "from_id": 27,
+   "relation": "relative",
+   "to_id": 1,
+   "to_qid": "Q2453332"
+  },
+  {
+   "from_id": 27,
+   "relation": "relative",
+   "to_id": 222,
+   "to_qid": "Q102268961"
+  },
+  {
+   "from_id": 27,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q47471875"
+  },
+  {
+   "from_id": 27,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 66,
+   "to_qid": "Q3966701"
+  },
+  {
+   "from_id": 27,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 36,
+   "to_qid": "Q3966700"
+  },
+  {
+   "from_id": 27,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 208,
+   "to_qid": "Q48732969"
+  },
+  {
+   "from_id": 27,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q48739522"
+  },
+  {
+   "from_id": 28,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 29,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 3,
+   "relation": "father",
+   "to_id": 256,
+   "to_qid": "Q7965074"
+  },
+  {
+   "from_id": 3,
+   "relation": "child",
+   "to_qid": "Q5441790"
+  },
+  {
+   "from_id": 3,
+   "relation": "partner",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 3,
+   "relation": "partner",
+   "to_id": 8,
+   "to_qid": "Q327553"
+  },
+  {
+   "from_id": 3,
+   "relation": "partner",
+   "to_qid": "Q2628556"
+  },
+  {
+   "from_id": 3,
+   "relation": "partner",
+   "to_id": 110,
+   "to_qid": "Q552000"
+  },
+  {
+   "from_id": 3,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q4003164"
+  },
+  {
+   "from_id": 30,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 31,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 32,
+   "relation": "enemy",
+   "to_qid": "Q2419540"
+  },
+  {
+   "from_id": 34,
+   "relation": "spouse",
+   "to_id": 247,
+   "to_qid": "Q3545603"
+  },
+  {
+   "from_id": 35,
+   "relation": "mother",
+   "to_id": 179,
+   "to_qid": "Q27810"
+  },
+  {
+   "from_id": 35,
+   "relation": "father",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 36,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 36,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q47471875"
+  },
+  {
+   "from_id": 36,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 66,
+   "to_qid": "Q3966701"
+  },
+  {
+   "from_id": 36,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 208,
+   "to_qid": "Q48732969"
+  },
+  {
+   "from_id": 36,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q48739522"
+  },
+  {
+   "from_id": 37,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 37,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q47471875"
+  },
+  {
+   "from_id": 37,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 36,
+   "to_qid": "Q3966700"
+  },
+  {
+   "from_id": 37,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 208,
+   "to_qid": "Q48732969"
+  },
+  {
+   "from_id": 37,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q48739522"
+  },
+  {
+   "from_id": 38,
+   "relation": "enemy",
+   "to_id": 117,
+   "to_qid": "Q17090877"
+  },
+  {
+   "from_id": 38,
+   "relation": "enemy",
+   "to_id": 124,
+   "to_qid": "Q1621261"
+  },
+  {
+   "from_id": 38,
+   "relation": "enemy",
+   "to_qid": "Q17033514"
+  },
+  {
+   "from_id": 4,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 4,
+   "relation": "partner",
+   "to_id": 20,
+   "to_qid": "Q654588"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 117,
+   "to_qid": "Q17090877"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 97,
+   "to_qid": "Q578094"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 207,
+   "to_qid": "Q2604715"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 124,
+   "to_qid": "Q1621261"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 26,
+   "to_qid": "Q2283843"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 21,
+   "to_qid": "Q19382"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 43,
+   "to_qid": "Q59643"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q369515"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q385744"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 80,
+   "to_qid": "Q507241"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 7,
+   "to_qid": "Q521305"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 28,
+   "to_qid": "Q572626"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 78,
+   "to_qid": "Q606569"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q653898"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 20,
+   "to_qid": "Q654588"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q735721"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q849818"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 29,
+   "to_qid": "Q1049890"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 23,
+   "to_qid": "Q1087722"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 65,
+   "to_qid": "Q1168065"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 19,
+   "to_qid": "Q1753322"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 84,
+   "to_qid": "Q1753328"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q1772036"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q55607777"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q111910188"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q111910187"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 94,
+   "to_qid": "Q1812152"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q1861779"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 131,
+   "to_qid": "Q1990090"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q2003141"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 31,
+   "to_qid": "Q2015743"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q2032965"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 48,
+   "to_qid": "Q2274942"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 49,
+   "to_qid": "Q2296291"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 13,
+   "to_qid": "Q2297886"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q2436122"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q2440293"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q2500449"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q2534462"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 82,
+   "to_qid": "Q2555885"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 161,
+   "to_qid": "Q2578146"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q2584005"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 183,
+   "to_qid": "Q2585537"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q2604725"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 42,
+   "to_qid": "Q2623764"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q2624726"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q2628556"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 122,
+   "to_qid": "Q2719607"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 53,
+   "to_qid": "Q2837209"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 68,
+   "to_qid": "Q2902368"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 30,
+   "to_qid": "Q2917078"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 4,
+   "to_qid": "Q2934584"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q3031868"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 241,
+   "to_qid": "Q3080800"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q3183266"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 175,
+   "to_qid": "Q3316968"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q3440451"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q3486816"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q3498060"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q3501133"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q3544440"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q3551286"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q3686980"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q3998685"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 253,
+   "to_qid": "Q4010081"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q4483669"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q4928002"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q5377360"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 108,
+   "to_qid": "Q5435440"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 138,
+   "to_qid": "Q6163022"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q6746231"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q6904213"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q7653886"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q9311511"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q16203115"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_id": 142,
+   "to_qid": "Q16203548"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q20656907"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q2082275"
+  },
+  {
+   "from_id": 40,
+   "relation": "enemy",
+   "to_qid": "Q11680813"
+  },
+  {
+   "from_id": 40,
+   "relation": "mother",
+   "to_id": 181,
+   "to_qid": "Q102268990"
+  },
+  {
+   "from_id": 40,
+   "relation": "father",
+   "to_id": 222,
+   "to_qid": "Q102268961"
+  },
+  {
+   "from_id": 40,
+   "relation": "spouse",
+   "to_id": 179,
+   "to_qid": "Q27810"
+  },
+  {
+   "from_id": 40,
+   "relation": "child",
+   "to_id": 35,
+   "to_qid": "Q2186500"
+  },
+  {
+   "from_id": 40,
+   "relation": "child",
+   "to_qid": "Q4889166"
+  },
+  {
+   "from_id": 40,
+   "relation": "child",
+   "to_qid": "Q5441790"
+  },
+  {
+   "from_id": 40,
+   "relation": "partner",
+   "to_id": 16,
+   "to_qid": "Q945817"
+  },
+  {
+   "from_id": 40,
+   "relation": "partner",
+   "to_id": 3,
+   "to_qid": "Q912640"
+  },
+  {
+   "from_id": 40,
+   "relation": "partner",
+   "to_id": 67,
+   "to_qid": "Q2628255"
+  },
+  {
+   "from_id": 40,
+   "relation": "partner",
+   "to_qid": "Q3658902"
+  },
+  {
+   "from_id": 40,
+   "relation": "partner",
+   "to_qid": "Q3704417"
+  },
+  {
+   "from_id": 40,
+   "relation": "partner",
+   "to_id": 179,
+   "to_qid": "Q27810"
+  },
+  {
+   "from_id": 40,
+   "relation": "partner",
+   "to_id": 163,
+   "to_qid": "Q1132203"
+  },
+  {
+   "from_id": 40,
+   "relation": "partner",
+   "to_id": 211,
+   "to_qid": "Q547306"
+  },
+  {
+   "from_id": 40,
+   "relation": "relative",
+   "to_id": 44,
+   "to_qid": "Q2299139"
+  },
+  {
+   "from_id": 40,
+   "relation": "relative",
+   "to_id": 1,
+   "to_qid": "Q2453332"
+  },
+  {
+   "from_id": 40,
+   "relation": "relative",
+   "to_id": 222,
+   "to_qid": "Q102268961"
+  },
+  {
+   "from_id": 40,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q47471875"
+  },
+  {
+   "from_id": 40,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 66,
+   "to_qid": "Q3966701"
+  },
+  {
+   "from_id": 40,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 36,
+   "to_qid": "Q3966700"
+  },
+  {
+   "from_id": 40,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 208,
+   "to_qid": "Q48732969"
+  },
+  {
+   "from_id": 40,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q48739522"
+  },
+  {
+   "from_id": 42,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 43,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 43,
+   "relation": "enemy",
+   "to_id": 8,
+   "to_qid": "Q327553"
+  },
+  {
+   "from_id": 43,
+   "relation": "enemy",
+   "to_id": 227,
+   "to_qid": "Q944573"
+  },
+  {
+   "from_id": 43,
+   "relation": "child",
+   "to_id": 142,
+   "to_qid": "Q16203548"
+  },
+  {
+   "from_id": 44,
+   "relation": "spouse",
+   "to_id": 1,
+   "to_qid": "Q2453332"
+  },
+  {
+   "from_id": 45,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 46,
+   "relation": "enemy",
+   "to_qid": "Q431862"
+  },
+  {
+   "from_id": 46,
+   "relation": "enemy",
+   "to_qid": "Q1628510"
+  },
+  {
+   "from_id": 46,
+   "relation": "enemy",
+   "to_qid": "Q2448071"
+  },
+  {
+   "from_id": 46,
+   "relation": "enemy",
+   "to_qid": "Q576524"
+  },
+  {
+   "from_id": 46,
+   "relation": "enemy",
+   "to_qid": "Q898201"
+  },
+  {
+   "from_id": 46,
+   "relation": "enemy",
+   "to_qid": "Q2420335"
+  },
+  {
+   "from_id": 46,
+   "relation": "enemy",
+   "to_qid": "Q2551564"
+  },
+  {
+   "from_id": 46,
+   "relation": "enemy",
+   "to_qid": "Q2906990"
+  },
+  {
+   "from_id": 46,
+   "relation": "enemy",
+   "to_qid": "Q3008124"
+  },
+  {
+   "from_id": 46,
+   "relation": "enemy",
+   "to_qid": "Q3100198"
+  },
+  {
+   "from_id": 46,
+   "relation": "enemy",
+   "to_qid": "Q71067619"
+  },
+  {
+   "from_id": 46,
+   "relation": "enemy",
+   "to_qid": "Q7080283"
+  },
+  {
+   "from_id": 46,
+   "relation": "enemy",
+   "to_qid": "Q568267"
+  },
+  {
+   "from_id": 46,
+   "relation": "enemy",
+   "to_qid": "Q7497450"
+  },
+  {
+   "from_id": 46,
+   "relation": "enemy",
+   "to_qid": "Q3111031"
+  },
+  {
+   "from_id": 46,
+   "relation": "enemy",
+   "to_qid": "Q7248194"
+  },
+  {
+   "from_id": 46,
+   "relation": "father",
+   "to_qid": "Q7791911"
+  },
+  {
+   "from_id": 46,
+   "relation": "spouse",
+   "to_qid": "Q568267"
+  },
+  {
+   "from_id": 46,
+   "relation": "child",
+   "to_qid": "Q2658347"
+  },
+  {
+   "from_id": 46,
+   "relation": "child",
+   "to_qid": "Q4746268"
+  },
+  {
+   "from_id": 46,
+   "relation": "child",
+   "to_qid": "Q1872439"
+  },
+  {
+   "from_id": 46,
+   "relation": "child",
+   "to_qid": "Q110147974"
+  },
+  {
+   "from_id": 46,
+   "relation": "child",
+   "to_qid": "Q8000827"
+  },
+  {
+   "from_id": 46,
+   "relation": "partner",
+   "to_qid": "Q5350072"
+  },
+  {
+   "from_id": 46,
+   "relation": "partner",
+   "to_id": 243,
+   "to_qid": "Q632212"
+  },
+  {
+   "from_id": 46,
+   "relation": "partner",
+   "to_qid": "Q3293073"
+  },
+  {
+   "from_id": 46,
+   "relation": "partner",
+   "to_qid": "Q2608804"
+  },
+  {
+   "from_id": 46,
+   "relation": "partner",
+   "to_qid": "Q6979927"
+  },
+  {
+   "from_id": 46,
+   "relation": "partner",
+   "to_qid": "Q8060735"
+  },
+  {
+   "from_id": 46,
+   "relation": "partner",
+   "to_qid": "Q737236"
+  },
+  {
+   "from_id": 46,
+   "relation": "partner",
+   "to_qid": "Q59644"
+  },
+  {
+   "from_id": 46,
+   "relation": "partner",
+   "to_qid": "Q913359"
+  },
+  {
+   "from_id": 46,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q112110379"
+  },
+  {
+   "from_id": 46,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q7880273"
+  },
+  {
+   "from_id": 46,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q52413964"
+  },
+  {
+   "from_id": 48,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 49,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 5,
+   "relation": "enemy",
+   "to_qid": "Q2034529"
+  },
+  {
+   "from_id": 5,
+   "relation": "enemy",
+   "to_qid": "Q2620643"
+  },
+  {
+   "from_id": 5,
+   "relation": "enemy",
+   "to_qid": "Q647315"
+  },
+  {
+   "from_id": 5,
+   "relation": "enemy",
+   "to_qid": "Q577086"
+  },
+  {
+   "from_id": 5,
+   "relation": "enemy",
+   "to_id": 19,
+   "to_qid": "Q1753322"
+  },
+  {
+   "from_id": 5,
+   "relation": "enemy",
+   "to_id": 63,
+   "to_qid": "Q2308669"
+  },
+  {
+   "from_id": 5,
+   "relation": "enemy",
+   "to_qid": "Q2663969"
+  },
+  {
+   "from_id": 5,
+   "relation": "enemy",
+   "to_qid": "Q30315324"
+  },
+  {
+   "from_id": 5,
+   "relation": "enemy",
+   "to_qid": "Q27986209"
+  },
+  {
+   "from_id": 5,
+   "relation": "enemy",
+   "to_qid": "Q208927"
+  },
+  {
+   "from_id": 5,
+   "relation": "enemy",
+   "to_id": 253,
+   "to_qid": "Q4010081"
+  },
+  {
+   "from_id": 5,
+   "relation": "enemy",
+   "to_qid": "Q568267"
+  },
+  {
+   "from_id": 5,
+   "relation": "enemy",
+   "to_qid": "Q1447249"
+  },
+  {
+   "from_id": 5,
+   "relation": "enemy",
+   "to_qid": "Q3303309"
+  },
+  {
+   "from_id": 5,
+   "relation": "enemy",
+   "to_qid": "Q3198900"
+  },
+  {
+   "from_id": 5,
+   "relation": "enemy",
+   "to_qid": "Q3052324"
+  },
+  {
+   "from_id": 5,
+   "relation": "enemy",
+   "to_qid": "Q111342207"
+  },
+  {
+   "from_id": 5,
+   "relation": "enemy",
+   "to_qid": "Q3489235"
+  },
+  {
+   "from_id": 5,
+   "relation": "enemy",
+   "to_qid": "Q3488248"
+  },
+  {
+   "from_id": 5,
+   "relation": "enemy",
+   "to_qid": "Q1638775"
+  },
+  {
+   "from_id": 5,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q4003148"
+  },
+  {
+   "from_id": 5,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q133799944"
+  },
+  {
+   "from_id": 53,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 53,
+   "relation": "father",
+   "to_id": 241,
+   "to_qid": "Q3080800"
+  },
+  {
+   "from_id": 57,
+   "relation": "spouse",
+   "to_id": 207,
+   "to_qid": "Q2604715"
+  },
+  {
+   "from_id": 6,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 6,
+   "relation": "enemy",
+   "to_id": 124,
+   "to_qid": "Q1621261"
+  },
+  {
+   "from_id": 6,
+   "relation": "father",
+   "to_id": 124,
+   "to_qid": "Q1621261"
+  },
+  {
+   "from_id": 6,
+   "relation": "child",
+   "to_qid": "Q2657400"
+  },
+  {
+   "from_id": 63,
+   "relation": "enemy",
+   "to_id": 5,
+   "to_qid": "Q190679"
+  },
+  {
+   "from_id": 63,
+   "relation": "enemy",
+   "to_qid": "Q672591"
+  },
+  {
+   "from_id": 64,
+   "relation": "enemy",
+   "to_qid": "Q2723286"
+  },
+  {
+   "from_id": 64,
+   "relation": "mother",
+   "to_qid": "Q111333248"
+  },
+  {
+   "from_id": 64,
+   "relation": "father",
+   "to_qid": "Q111333247"
+  },
+  {
+   "from_id": 64,
+   "relation": "partner",
+   "to_qid": "Q2821619"
+  },
+  {
+   "from_id": 64,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q2723286"
+  },
+  {
+   "from_id": 64,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q4003146"
+  },
+  {
+   "from_id": 65,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 66,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 66,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q47471875"
+  },
+  {
+   "from_id": 66,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 36,
+   "to_qid": "Q3966700"
+  },
+  {
+   "from_id": 66,
+   "relation": "alternate_universe_counterpart",
+   "to_id": 208,
+   "to_qid": "Q48732969"
+  },
+  {
+   "from_id": 66,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q48739522"
+  },
+  {
+   "from_id": 67,
+   "relation": "mother",
+   "to_qid": "Q111795149"
+  },
+  {
+   "from_id": 67,
+   "relation": "spouse",
+   "to_id": 196,
+   "to_qid": "Q3337686"
+  },
+  {
+   "from_id": 67,
+   "relation": "partner",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 67,
+   "relation": "partner",
+   "to_id": 110,
+   "to_qid": "Q552000"
+  },
+  {
+   "from_id": 68,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 69,
+   "relation": "enemy",
+   "to_qid": "Q2703749"
+  },
+  {
+   "from_id": 69,
+   "relation": "enemy",
+   "to_qid": "Q5388669"
+  },
+  {
+   "from_id": 69,
+   "relation": "enemy",
+   "to_qid": "Q3139744"
+  },
+  {
+   "from_id": 69,
+   "relation": "enemy",
+   "to_qid": "Q115800561"
+  },
+  {
+   "from_id": 69,
+   "relation": "enemy",
+   "to_qid": "Q106670105"
+  },
+  {
+   "from_id": 69,
+   "relation": "enemy",
+   "to_qid": "Q6404004"
+  },
+  {
+   "from_id": 69,
+   "relation": "enemy",
+   "to_qid": "Q2823008"
+  },
+  {
+   "from_id": 69,
+   "relation": "enemy",
+   "to_qid": "Q7562380"
+  },
+  {
+   "from_id": 69,
+   "relation": "spouse",
+   "to_id": 243,
+   "to_qid": "Q632212"
+  },
+  {
+   "from_id": 7,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 70,
+   "relation": "enemy",
+   "to_qid": "Q4009216"
+  },
+  {
+   "from_id": 70,
+   "relation": "enemy",
+   "to_qid": "Q3544680"
+  },
+  {
+   "from_id": 70,
+   "relation": "enemy",
+   "to_qid": "Q5212824"
+  },
+  {
+   "from_id": 70,
+   "relation": "enemy",
+   "to_qid": "Q111722753"
+  },
+  {
+   "from_id": 70,
+   "relation": "spouse",
+   "to_qid": "Q111722753"
+  },
+  {
+   "from_id": 70,
+   "relation": "partner",
+   "to_qid": "Q28006858"
+  },
+  {
+   "from_id": 70,
+   "relation": "partner",
+   "to_id": 125,
+   "to_qid": "Q19095"
+  },
+  {
+   "from_id": 71,
+   "relation": "enemy",
+   "to_qid": "Q1748380"
+  },
+  {
+   "from_id": 71,
+   "relation": "enemy",
+   "to_qid": "Q1131724"
+  },
+  {
+   "from_id": 72,
+   "relation": "enemy",
+   "to_qid": "Q128452"
+  },
+  {
+   "from_id": 72,
+   "relation": "enemy",
+   "to_qid": "Q737236"
+  },
+  {
+   "from_id": 72,
+   "relation": "child",
+   "to_qid": "Q771054"
+  },
+  {
+   "from_id": 72,
+   "relation": "child",
+   "to_qid": "Q6726329"
+  },
+  {
+   "from_id": 77,
+   "relation": "enemy",
+   "to_id": 8,
+   "to_qid": "Q327553"
+  },
+  {
+   "from_id": 77,
+   "relation": "enemy",
+   "to_qid": "Q2658347"
+  },
+  {
+   "from_id": 78,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 79,
+   "relation": "enemy",
+   "to_qid": "Q3020765"
+  },
+  {
+   "from_id": 79,
+   "relation": "enemy",
+   "to_qid": "Q737236"
+  },
+  {
+   "from_id": 79,
+   "relation": "enemy",
+   "to_qid": "Q1394350"
+  },
+  {
+   "from_id": 79,
+   "relation": "enemy",
+   "to_qid": "Q29097098"
+  },
+  {
+   "from_id": 79,
+   "relation": "enemy",
+   "to_qid": "Q8054873"
+  },
+  {
+   "from_id": 79,
+   "relation": "enemy",
+   "to_qid": "Q30636422"
+  },
+  {
+   "from_id": 79,
+   "relation": "mother",
+   "to_qid": "Q117178853"
+  },
+  {
+   "from_id": 79,
+   "relation": "father",
+   "to_qid": "Q117178837"
+  },
+  {
+   "from_id": 79,
+   "relation": "partner",
+   "to_qid": "Q1041907"
+  },
+  {
+   "from_id": 8,
+   "relation": "enemy",
+   "to_id": 19,
+   "to_qid": "Q1753322"
+  },
+  {
+   "from_id": 8,
+   "relation": "enemy",
+   "to_id": 77,
+   "to_qid": "Q388316"
+  },
+  {
+   "from_id": 8,
+   "relation": "enemy",
+   "to_qid": "Q2550236"
+  },
+  {
+   "from_id": 8,
+   "relation": "enemy",
+   "to_qid": "Q2070834"
+  },
+  {
+   "from_id": 8,
+   "relation": "enemy",
+   "to_id": 94,
+   "to_qid": "Q1812152"
+  },
+  {
+   "from_id": 8,
+   "relation": "enemy",
+   "to_id": 26,
+   "to_qid": "Q2283843"
+  },
+  {
+   "from_id": 8,
+   "relation": "enemy",
+   "to_qid": "Q5377360"
+  },
+  {
+   "from_id": 8,
+   "relation": "enemy",
+   "to_qid": "Q20656907"
+  },
+  {
+   "from_id": 8,
+   "relation": "enemy",
+   "to_qid": "Q6904213"
+  },
+  {
+   "from_id": 8,
+   "relation": "enemy",
+   "to_qid": "Q944173"
+  },
+  {
+   "from_id": 8,
+   "relation": "enemy",
+   "to_qid": "Q2539445"
+  },
+  {
+   "from_id": 8,
+   "relation": "enemy",
+   "to_id": 251,
+   "to_qid": "Q2625935"
+  },
+  {
+   "from_id": 8,
+   "relation": "enemy",
+   "to_qid": "Q2633496"
+  },
+  {
+   "from_id": 8,
+   "relation": "enemy",
+   "to_qid": "Q2671468"
+  },
+  {
+   "from_id": 8,
+   "relation": "enemy",
+   "to_qid": "Q3550368"
+  },
+  {
+   "from_id": 8,
+   "relation": "enemy",
+   "to_qid": "Q2928024"
+  },
+  {
+   "from_id": 8,
+   "relation": "enemy",
+   "to_qid": "Q431125"
+  },
+  {
+   "from_id": 8,
+   "relation": "enemy",
+   "to_qid": "Q7855000"
+  },
+  {
+   "from_id": 8,
+   "relation": "enemy",
+   "to_id": 43,
+   "to_qid": "Q59643"
+  },
+  {
+   "from_id": 8,
+   "relation": "enemy",
+   "to_qid": "Q1638775"
+  },
+  {
+   "from_id": 8,
+   "relation": "enemy",
+   "to_qid": "Q111342150"
+  },
+  {
+   "from_id": 8,
+   "relation": "mother",
+   "to_qid": "Q23306601"
+  },
+  {
+   "from_id": 8,
+   "relation": "father",
+   "to_qid": "Q21188801"
+  },
+  {
+   "from_id": 8,
+   "relation": "spouse",
+   "to_qid": "Q540442"
+  },
+  {
+   "from_id": 8,
+   "relation": "partner",
+   "to_qid": "Q913359"
+  },
+  {
+   "from_id": 8,
+   "relation": "partner",
+   "to_qid": "Q2298077"
+  },
+  {
+   "from_id": 8,
+   "relation": "partner",
+   "to_id": 70,
+   "to_qid": "Q369197"
+  },
+  {
+   "from_id": 8,
+   "relation": "partner",
+   "to_id": 251,
+   "to_qid": "Q2625935"
+  },
+  {
+   "from_id": 8,
+   "relation": "partner",
+   "to_id": 3,
+   "to_qid": "Q912640"
+  },
+  {
+   "from_id": 8,
+   "relation": "partner",
+   "to_qid": "Q19571310"
+  },
+  {
+   "from_id": 8,
+   "relation": "partner",
+   "to_qid": "Q2519959"
+  },
+  {
+   "from_id": 8,
+   "relation": "partner",
+   "to_qid": "Q5210033"
+  },
+  {
+   "from_id": 8,
+   "relation": "partner",
+   "to_qid": "Q1908572"
+  },
+  {
+   "from_id": 8,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q110486878"
+  },
+  {
+   "from_id": 80,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 80,
+   "relation": "father",
+   "to_id": 124,
+   "to_qid": "Q1621261"
+  },
+  {
+   "from_id": 82,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 84,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 84,
+   "relation": "enemy",
+   "to_id": 124,
+   "to_qid": "Q1621261"
+  },
+  {
+   "from_id": 84,
+   "relation": "father",
+   "to_id": 124,
+   "to_qid": "Q1621261"
+  },
+  {
+   "from_id": 84,
+   "relation": "child",
+   "to_qid": "Q2657400"
+  },
+  {
+   "from_id": 87,
+   "relation": "enemy",
+   "to_qid": "Q302534"
+  },
+  {
+   "from_id": 87,
+   "relation": "enemy",
+   "to_qid": "Q2568977"
+  },
+  {
+   "from_id": 87,
+   "relation": "mother",
+   "to_qid": "Q15229053"
+  },
+  {
+   "from_id": 87,
+   "relation": "father",
+   "to_qid": "Q2385117"
+  },
+  {
+   "from_id": 87,
+   "relation": "spouse",
+   "to_qid": "Q741279"
+  },
+  {
+   "from_id": 87,
+   "relation": "spouse",
+   "to_qid": "Q5350072"
+  },
+  {
+   "from_id": 87,
+   "relation": "child",
+   "to_qid": "Q2267017"
+  },
+  {
+   "from_id": 87,
+   "relation": "child",
+   "to_qid": "Q3446576"
+  },
+  {
+   "from_id": 87,
+   "relation": "child",
+   "to_qid": "Q2602677"
+  },
+  {
+   "from_id": 87,
+   "relation": "partner",
+   "to_qid": "Q1995969"
+  },
+  {
+   "from_id": 87,
+   "relation": "partner",
+   "to_qid": "Q6513617"
+  },
+  {
+   "from_id": 87,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q4003147"
+  },
+  {
+   "from_id": 87,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q128904414"
+  },
+  {
+   "from_id": 9,
+   "relation": "enemy",
+   "to_qid": "Q152098"
+  },
+  {
+   "from_id": 9,
+   "relation": "enemy",
+   "to_qid": "Q4353353"
+  },
+  {
+   "from_id": 9,
+   "relation": "enemy",
+   "to_qid": "Q2418665"
+  },
+  {
+   "from_id": 9,
+   "relation": "enemy",
+   "to_id": 202,
+   "to_qid": "Q95153"
+  },
+  {
+   "from_id": 9,
+   "relation": "enemy",
+   "to_id": 111,
+   "to_qid": "Q1429836"
+  },
+  {
+   "from_id": 9,
+   "relation": "enemy",
+   "to_qid": "Q510450"
+  },
+  {
+   "from_id": 9,
+   "relation": "enemy",
+   "to_id": 129,
+   "to_qid": "Q584585"
+  },
+  {
+   "from_id": 9,
+   "relation": "enemy",
+   "to_id": 187,
+   "to_qid": "Q865017"
+  },
+  {
+   "from_id": 9,
+   "relation": "enemy",
+   "to_qid": "Q910204"
+  },
+  {
+   "from_id": 9,
+   "relation": "enemy",
+   "to_qid": "Q3039224"
+  },
+  {
+   "from_id": 9,
+   "relation": "enemy",
+   "to_qid": "Q2603976"
+  },
+  {
+   "from_id": 9,
+   "relation": "enemy",
+   "to_qid": "Q39071489"
+  },
+  {
+   "from_id": 9,
+   "relation": "enemy",
+   "to_id": 157,
+   "to_qid": "Q1982051"
+  },
+  {
+   "from_id": 9,
+   "relation": "enemy",
+   "to_qid": "Q1994866"
+  },
+  {
+   "from_id": 9,
+   "relation": "enemy",
+   "to_qid": "Q1149855"
+  },
+  {
+   "from_id": 9,
+   "relation": "mother",
+   "to_qid": "Q5200168"
+  },
+  {
+   "from_id": 9,
+   "relation": "child",
+   "to_qid": "Q3545586"
+  },
+  {
+   "from_id": 9,
+   "relation": "partner",
+   "to_qid": "Q645718"
+  },
+  {
+   "from_id": 9,
+   "relation": "partner",
+   "to_qid": "Q929285"
+  },
+  {
+   "from_id": 9,
+   "relation": "relative",
+   "to_id": 157,
+   "to_qid": "Q1982051"
+  },
+  {
+   "from_id": 9,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q16619125"
+  },
+  {
+   "from_id": 9,
+   "relation": "alternate_universe_counterpart",
+   "to_qid": "Q5297058"
+  },
+  {
+   "from_id": 91,
+   "relation": "enemy",
+   "to_qid": "Q4699585"
+  },
+  {
+   "from_id": 91,
+   "relation": "enemy",
+   "to_qid": "Q6726576"
+  },
+  {
+   "from_id": 91,
+   "relation": "enemy",
+   "to_qid": "Q2551564"
+  },
+  {
+   "from_id": 91,
+   "relation": "spouse",
+   "to_qid": "Q19867627"
+  },
+  {
+   "from_id": 94,
+   "relation": "enemy",
+   "to_id": 8,
+   "to_qid": "Q327553"
+  },
+  {
+   "from_id": 94,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 96,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 96,
+   "relation": "enemy",
+   "to_id": 17,
+   "to_qid": "Q1779361"
+  },
+  {
+   "from_id": 96,
+   "relation": "enemy",
+   "to_id": 117,
+   "to_qid": "Q17090877"
+  },
+  {
+   "from_id": 97,
+   "relation": "enemy",
+   "to_id": 40,
+   "to_qid": "Q79037"
+  },
+  {
+   "from_id": 97,
+   "relation": "enemy",
+   "to_id": 17,
+   "to_qid": "Q1779361"
+  },
+  {
+   "from_id": 97,
+   "relation": "enemy",
+   "to_id": 117,
+   "to_qid": "Q17090877"
+  }
+ ],
+ "labels": {
+  "Q1002884": "Forge",
+  "Q10349745": "racing automobile driver",
+  "Q10384029": "drug trafficker",
+  "Q1041907": "Wonder Man",
+  "Q104833057": "Cosmic Ghost Rider",
+  "Q1048902": "pitcher",
+  "Q1049890": "Sandman",
+  "Q10509939": "grey hair",
+  "Q1051111": "Destiny",
+  "Q105605035": "Ultimate Hulk",
+  "Q1056391": "head teacher",
+  "Q1058307": "vampire hunter",
+  "Q1058617": "private investigator",
+  "Q10591707": "con artist",
+  "Q1064192": "magic in fiction",
+  "Q106670105": "Baron Macabre",
+  "Q1069127": "lapsed Catholic",
+  "Q107711": "firefighter",
+  "Q10855616": "medical officer",
+  "Q10860242": "bouncer",
+  "Q10874": "blindness",
+  "Q108923148": "Venom",
+  "Q1090219": "janitor",
+  "Q1097498": "ruler",
+  "Q110147974": "Gabby Kinney",
+  "Q11032077": "teleportation",
+  "Q110486878": "Kingpin",
+  "Q11063": "astronomer",
+  "Q11081": "Alzheimer's disease",
+  "Q110871130": "Max Dillon",
+  "Q110910": "antihero",
+  "Q110917411": "Gargantos",
+  "Q11124885": "martial artist",
+  "Q111301136": "Marla Madison",
+  "Q111309715": "N'Dare",
+  "Q111328111": "Brian Xavier",
+  "Q111328112": "Sharon Xavier",
+  "Q111333247": "Norton McCoy",
+  "Q111333248": "Edna McCoy",
+  "Q111342150": "Eel",
+  "Q111342207": "Porcupine",
+  "Q111376777": "William Drake",
+  "Q111376791": "Madeline Drake",
+  "Q111449140": "David Munroe",
+  "Q111658696": "Carmen Pryde",
+  "Q111658697": "Terri Pryde",
+  "Q111722753": "Red Guardian",
+  "Q111795149": "Eleonore Brant",
+  "Q111910187": "Ox",
+  "Q111910188": "Ox",
+  "Q111951332": "Spider-Man",
+  "Q112042766": "Wilson Allan",
+  "Q112110359": "Kate Pryde",
+  "Q112110379": "Wolverine",
+  "Q112110384": "Magneto",
+  "Q112110393": "Storm",
+  "Q112989985": "platinum blond hair",
+  "Q1130690": "Caiera",
+  "Q1131724": "Dracula",
+  "Q11338576": "boxer",
+  "Q1136453": "Pete Wisdom",
+  "Q113947121": "King Thor",
+  "Q11397897": "swordfighter",
+  "Q114005814": "Colleen",
+  "Q11419": "karate",
+  "Q114888777": "Maria Castle",
+  "Q114889845": "Lisa Barbara Castle",
+  "Q114890103": "Frank Castle Jr.",
+  "Q1149855": "Impossible Man",
+  "Q1152040": "healing factor",
+  "Q1153622": "kunoichi",
+  "Q115441513": "Fen",
+  "Q115533935": "Danielle Cage",
+  "Q115800561": "Zenzi",
+  "Q11631": "astronaut",
+  "Q11680813": "Sin-Eater (comics)",
+  "Q117178837": "Joe Danvers",
+  "Q117178853": "Marie Danvers",
+  "Q117322403": "Professor X",
+  "Q117322409": "Nightcrawler",
+  "Q11900058": "explorer",
+  "Q1194236": "Cannonball",
+  "Q121594": "professor",
+  "Q12177489": "orderly",
+  "Q12305959": "Christian Frost",
+  "Q1235121": "Phyla-Vell",
+  "Q12362622": "philanthropist",
+  "Q12414919": "terrorist",
+  "Q125253709": "Venom",
+  "Q125348701": "One Below All",
+  "Q128452": "X-Men",
+  "Q128904414": "Cyclops",
+  "Q130378413": "Sui-San",
+  "Q1319513": "Odin",
+  "Q133267296": "Xandra Neramani",
+  "Q133799918": "Iron Lad",
+  "Q133799925": "Doom",
+  "Q133799944": "Captain America",
+  "Q133800008": "Thor",
+  "Q1341441": "force field",
+  "Q13474373": "professional wrestler",
+  "Q136129693": "glowing eye",
+  "Q1371925": "announcer",
+  "Q138656374": "Dimension Traveler",
+  "Q1394350": "Karla Sofen",
+  "Q1394575": "Skaar",
+  "Q1424480": "Daisy Johnson",
+  "Q1447249": "Doctor Faustus",
+  "Q14619282": "Tiberius Stone",
+  "Q148401": "magician",
+  "Q14915751": "prostitute",
+  "Q15141703": "Ultimate Namor",
+  "Q152098": "The Fantastic Four",
+  "Q15222919": "Nightmare",
+  "Q15229053": "Katherine Summers",
+  "Q152357": "red hair",
+  "Q156839": "cook",
+  "Q157195": "waiter",
+  "Q1585469": "Shadow King",
+  "Q15883433": "mass murderer",
+  "Q1607791": "Legion",
+  "Q16203115": "Abner Jenkins",
+  "Q1621261": "Venom",
+  "Q1622272": "university teacher",
+  "Q16253333": "Magnus Lehnsherr",
+  "Q1628510": "Romulus",
+  "Q1638503": "Crossfire",
+  "Q1638775": "Mister Hyde",
+  "Q16619125": "Ultimate Doctor Doom",
+  "Q16912454": "Ultimate Hawkeye",
+  "Q17019529": "Sigyn",
+  "Q17022155": "Steel Serpent",
+  "Q17033514": "Thunderstrike",
+  "Q170612": "telepathy",
+  "Q17064925": "White Tiger",
+  "Q17066180": "Rebecca Banner",
+  "Q17090877": "Norman Osborn",
+  "Q17122705": "brown",
+  "Q17122740": "hazel",
+  "Q17122834": "blue",
+  "Q17122854": "green",
+  "Q1714828": "hunter",
+  "Q17307272": "circus performer",
+  "Q17351648": "newspaper editor",
+  "Q1735229": "Adam Warlock",
+  "Q1748149": "Menace",
+  "Q1748380": "Deacon Frost",
+  "Q1753322": "Kingpin",
+  "Q1771401": "Joseph",
+  "Q1772036": "Will o' the Wisp",
+  "Q1779361": "Harry Osborn",
+  "Q178197": "mercenary",
+  "Q17986678": "Corvus Glaive",
+  "Q182154": "time travel",
+  "Q1841": "Catholicism",
+  "Q1841525": "Thunderbolt Ross",
+  "Q1861779": "Scream",
+  "Q186446": "telekinesis",
+  "Q18657": "dissociative identity disorder",
+  "Q18661358": "strawberry blond hair",
+  "Q1872439": "X-23",
+  "Q1879366": "electrokinesis",
+  "Q188784": "superhero",
+  "Q1892035": "levitation",
+  "Q1908572": "Moondragon",
+  "Q1911253": "Nocturne",
+  "Q1922956": "black hair",
+  "Q1925011": "shapeshifting",
+  "Q1930187": "journalist",
+  "Q19364972": "Damage",
+  "Q19382": "Lizard",
+  "Q19398": "Nova",
+  "Q19571310": "Claire Temple",
+  "Q1975715": "loan shark",
+  "Q19788920": "righteous thief",
+  "Q1982323": "Ma Gnucci",
+  "Q1984020": "Terrax",
+  "Q19840837": "Sniper",
+  "Q19867627": "Shiklah",
+  "Q19875028": "Ana Kravinoff",
+  "Q1987662": "Beta Ray Bill",
+  "Q19881381": "Thorn",
+  "Q1992523": "J. Jonah Jameson",
+  "Q1994866": "Beyonder",
+  "Q1995969": "Emma Frost",
+  "Q2003141": "Grim Hunter",
+  "Q202466": "blond hair",
+  "Q2032965": "Frederick Foswell",
+  "Q2034529": "Red Skull",
+  "Q205375": "inventor",
+  "Q20656907": "Fancy Dan",
+  "Q2066394": "Dormammu",
+  "Q2069787": "pyrokinesis",
+  "Q2070313": "teaching assistant",
+  "Q2070834": "Owl",
+  "Q2071256": "Polaris",
+  "Q2071805": "Apocalypse",
+  "Q2075745": "Onslaught",
+  "Q2082275": "Sinister Six",
+  "Q20826540": "scholar",
+  "Q20858389": "Franklin Storm",
+  "Q208927": "MODOK",
+  "Q2095549": "aircraft pilot",
+  "Q20979240": "Ebony Maw",
+  "Q21188801": "Jack Murdock",
+  "Q21188808": "Ultimate Firestar",
+  "Q212980": "psychologist",
+  "Q21451555": "reality warping",
+  "Q2159907": "criminal",
+  "Q2251335": "school teacher",
+  "Q2259451": "stage actor",
+  "Q2267017": "Cable",
+  "Q2271377": "Jessica Jones",
+  "Q227710": "Nam",
+  "Q2289795": "Scorpion",
+  "Q2295556": "Marrina Smallwood",
+  "Q2295563": "Starfox",
+  "Q2298077": "Karen Page",
+  "Q2299139": "Uncle Ben",
+  "Q23012720": "probability manipulation",
+  "Q23012785": "superhuman speed",
+  "Q2309083": "Zzzax",
+  "Q2314770": "Namorita",
+  "Q2328990": "The Leader",
+  "Q23306601": "Maggie Murdock",
+  "Q23306602": "Rapido",
+  "Q2339160": "Madame Masque",
+  "Q2339552": "Crimson Dynamo",
+  "Q2339776": "Pyro",
+  "Q2361279": "Moira MacTaggert",
+  "Q2364510": "Empath",
+  "Q2367101": "brown hair",
+  "Q2385117": "Corsair",
+  "Q23894967": "Tony Stark",
+  "Q2393694": "Attuma",
+  "Q23991129": "Peter Parker",
+  "Q23991271": "May Parker",
+  "Q2404595": "Clea",
+  "Q24050117": "Bruce Banner",
+  "Q2417914": "Mandarin",
+  "Q2418665": "Mephisto",
+  "Q2418760": "Crystal",
+  "Q2419540": "Cloak and Dagger",
+  "Q2420335": "Omega Red",
+  "Q24207147": "Opal Tanaka",
+  "Q2435970": "Baron Mordo",
+  "Q2436122": "Richard Fisk",
+  "Q2438411": "Russian",
+  "Q2440293": "Doppelganger",
+  "Q2448071": "Lady Deathstrike",
+  "Q2453332": "Aunt May",
+  "Q2462658": "manager",
+  "Q2465865": "Absorbing Man",
+  "Q2473486": "Destroyer",
+  "Q2474195": "Ultron",
+  "Q2487192": "Iron Monger",
+  "Q24962806": "mob enforcer",
+  "Q2500449": "Silvermane",
+  "Q2504688": "Lilandra Neramani",
+  "Q250867": "Catholic priest",
+  "Q2516866": "publisher",
+  "Q2519959": "Echo",
+  "Q2532716": "Tigra",
+  "Q2534462": "Molten Man",
+  "Q2539445": "Jester",
+  "Q2545790": "Guardians of the Galaxy",
+  "Q2550236": "The Hand",
+  "Q2551564": "William Stryker",
+  "Q2568977": "Vulcan",
+  "Q2584005": "Jackal",
+  "Q2602677": "Nate Grey",
+  "Q2603976": "Excalibur",
+  "Q2604725": "Boomerang",
+  "Q2608804": "Silver Fox",
+  "Q2620643": "Baron Zemo",
+  "Q2624716": "Franklin Richards",
+  "Q2624726": "Hood",
+  "Q2628556": "Puma",
+  "Q2633496": "Bushwacker",
+  "Q2639507": "Shuma-Gorath",
+  "Q2642022": "Azazel",
+  "Q2642342": "Ego the Living Planet",
+  "Q2649737": "cryokinesis",
+  "Q2655853": "special agent",
+  "Q2657400": "Toxin",
+  "Q2658347": "Daken",
+  "Q2663969": "Arnim Zola",
+  "Q2664416": "Justin Hammer",
+  "Q2671468": "Gladiator",
+  "Q2703749": "Klaw",
+  "Q27132943": "Cottonmouth",
+  "Q2721134": "Nebula",
+  "Q2721152": "Gamora",
+  "Q2723286": "Dark Beast",
+  "Q2731643": "New Warriors",
+  "Q2735212": "Living Tribunal",
+  "Q2746596": "Ulik",
+  "Q2749614": "Tyrannus",
+  "Q27810": "Mary Jane Watson",
+  "Q27839441": "purple",
+  "Q2790757": "Zeke Stane",
+  "Q27986209": "Helmut Zemo",
+  "Q28006858": "Bucky Barnes",
+  "Q2821619": "Abigail Brand",
+  "Q2823008": "Achebe",
+  "Q2842673": "Amelia Voght",
+  "Q2873500": "adventurer",
+  "Q288516": "Ultimate Iron Man",
+  "Q2886408": "Carl Mach",
+  "Q2900730": "Bi-Beast",
+  "Q2906990": "Bloodscream",
+  "Q29097098": "Doomsday Man",
+  "Q2915396": "Titanium Man",
+  "Q2919046": "biochemist",
+  "Q2928024": "Bullet",
+  "Q29424976": "magnetism manipulation",
+  "Q29432877": "weather manipulation",
+  "Q29433518": "memory manipulation",
+  "Q2962576": "Chemistro",
+  "Q2975244": "clairvoyance",
+  "Q2998614": "Cottonmouth",
+  "Q3008124": "Cyber",
+  "Q3020765": "Deathbird",
+  "Q302534": "Mister Sinister",
+  "Q3029214": "In-Betweener",
+  "Q30315324": "Baron Zemo",
+  "Q3031868": "Spot",
+  "Q3032140": "Gremlin",
+  "Q3038387": "Elders of the Universe",
+  "Q3039224": "Dreadknight",
+  "Q3043221": "Hela",
+  "Q3052324": "Hydra",
+  "Q30636422": "Hala the Accuser",
+  "Q3087835": "Frigga",
+  "Q3095016": "Gamma Corps",
+  "Q3100198": "Geist",
+  "Q3108827": "Glenn Talbot",
+  "Q3109952": "Executioner",
+  "Q3111031": "Gorgon",
+  "Q3115851": "Graydon Creed",
+  "Q3126128": "geneticist",
+  "Q3139744": "Man-Ape",
+  "Q3143749": "hydrokinesis",
+  "Q3144914": "hematologist",
+  "Q315625": "intern",
+  "Q3162643": "Gardener",
+  "Q3183266": "Jonas Harrow",
+  "Q3190387": "vigilante",
+  "Q3192657": "Kangaroo",
+  "Q3198900": "Korath the Pursuer",
+  "Q3199922": "Kronos",
+  "Q322646": "Avengers",
+  "Q3247771": "Surtur",
+  "Q3259423": "Lorelei",
+  "Q326653": "accountant",
+  "Q3269419": "Cobalt Man",
+  "Q327029": "mechanic",
+  "Q327553": "Daredevil",
+  "Q3281842": "Malekith the Accursed",
+  "Q3285766": "Mangog",
+  "Q3293073": "Mariko Yashida",
+  "Q3303309": "Hate-Monger",
+  "Q3316968": "Mister Negative",
+  "Q33231": "photographer",
+  "Q3336797": "Nathaniel Richards",
+  "Q3356429": "Orka",
+  "Q33999": "actor",
+  "Q3440451": "Rocket Racer",
+  "Q3446576": "Ruby Summers",
+  "Q3480653": "Seth",
+  "Q3486816": "Slyde",
+  "Q3488248": "Serpent Society",
+  "Q3489235": "Solarr",
+  "Q3492961": "Speedfreek",
+  "Q3496918": "Star-Lord",
+  "Q3498060": "Stegron",
+  "Q3501133": "Stunner",
+  "Q3501317": "fashion designer",
+  "Q3503968": "Sunset Bain",
+  "Q3539043": "Trick Shot",
+  "Q3543422": "Immortus",
+  "Q3543851": "Dorma",
+  "Q3544280": "Barracuda",
+  "Q3544440": "Black Tarantula",
+  "Q3544680": "Iron Maiden",
+  "Q3545397": "Bushman",
+  "Q3545586": "Kristoff Vernard",
+  "Q3545630": "Gaea",
+  "Q3545872": "Vance Astrovik",
+  "Q3546921": "Cerise",
+  "Q3550368": "Death-Stalker",
+  "Q3551286": "Hitman",
+  "Q3562775": "thief",
+  "Q3570193": "Wyatt Wingfoot",
+  "Q3570549": "Xandu",
+  "Q3576299": "Zuras",
+  "Q3613591": "Amanda Sefton",
+  "Q36389": "taekwondo",
+  "Q3658902": "Carlie Cooper",
+  "Q3686980": "White Rabbit",
+  "Q369515": "Wraith",
+  "Q3704417": "Debra Whitman",
+  "Q37226": "teacher",
+  "Q3772700": "Kindred",
+  "Q3785756": "Hiro-Kala",
+  "Q378770": "contract killer",
+  "Q3832323": "Lyja",
+  "Q3841033": "Lyra",
+  "Q384593": "police officer",
+  "Q3846693": "Nick Fury Jr.",
+  "Q3847537": "Maria Stark",
+  "Q385744": "Speed Demon",
+  "Q39052969": "Martha Connors",
+  "Q39069914": "Billy Connors",
+  "Q39071489": "Maker",
+  "Q392651": "intelligence agent",
+  "Q3998685": "Walrus",
+  "Q4003146": "Ultimate Beast",
+  "Q4003147": "Ultimate Cyclops",
+  "Q4003148": "Ultimate Captain America",
+  "Q4003164": "Ultimate Black Cat",
+  "Q4003168": "Ultimate Kraven",
+  "Q4003183": "Ultimate Storm",
+  "Q4003185": "Thor",
+  "Q4003186": "Ultimate Venom",
+  "Q4009216": "Yelena Belova",
+  "Q40348": "lawyer",
+  "Q4070300": "ballerina",
+  "Q42909": "reporter",
+  "Q43073416": "Diamondback",
+  "Q431125": "Stilt-Man",
+  "Q431400": "Trapster",
+  "Q431862": "Sabretooth",
+  "Q432272": "Medusa",
+  "Q4353353": "Squirrel Girl",
+  "Q43845": "businessperson",
+  "Q4386945": "superhuman strength",
+  "Q4483669": "Phil Urich",
+  "Q45199": "sailor",
+  "Q45787133": "motorcyclist",
+  "Q4610556": "model",
+  "Q4691169": "Agamemnon",
+  "Q4699585": "Ajax",
+  "Q47064": "military personnel",
+  "Q47088639": "power mimicry or absorption",
+  "Q47089006": "superhuman durability",
+  "Q47090903": "superhuman agility / reflexes",
+  "Q47102058": "superhuman senses",
+  "Q47148394": "intangibility",
+  "Q47148949": "technopathy",
+  "Q47302915": "Thane",
+  "Q4746268": "Amiko Kobayashi",
+  "Q47471875": "Ultimate Spider-Man",
+  "Q4773904": "anthropologist",
+  "Q4781622": "Madman",
+  "Q48282": "student",
+  "Q482999": "gladiator",
+  "Q48412444": "Ultimate Magneto",
+  "Q484188": "serial killer",
+  "Q484876": "chief executive officer",
+  "Q48544198": "Ultimate Green Goblin",
+  "Q48739522": "Spider-Man",
+  "Q4883353": "Bella Donna",
+  "Q4889166": "Benjamin Richard Parker",
+  "Q48946153": "Ultimate Rogue",
+  "Q48947511": "Ultimate Iceman",
+  "Q48957559": "Ultimate Gambit",
+  "Q48958279": "Ultimate Kitty Pryde",
+  "Q49085": "African Americans",
+  "Q4921877": "Black Spectre",
+  "Q4928002": "Bloodshed",
+  "Q4947495": "crime boss",
+  "Q4963042": "Brian Banner",
+  "Q4991371": "soldier",
+  "Q5032038": "Candra",
+  "Q5043": "Christianity",
+  "Q5063090": "Centurious",
+  "Q510450": "Invisible Woman",
+  "Q5125402": "clairvoyant",
+  "Q5184855": "crew member",
+  "Q51879220": "flight",
+  "Q51908485": "superhuman longevity",
+  "Q51992182": "elasticity",
+  "Q51996832": "optic blasts",
+  "Q5200168": "Cynthia von Doom",
+  "Q520667": "precognition",
+  "Q5210033": "Dakota North",
+  "Q5212824": "Damon Dran",
+  "Q5223578": "Darkdevil",
+  "Q52412496": "sonic scream",
+  "Q52413964": "Old Man Logan",
+  "Q526231": "unseen character",
+  "Q5297058": "Doom 2099",
+  "Q5307556": "drill instructor",
+  "Q5318067": "Dweller-in-Darkness",
+  "Q534889": "Hercules",
+  "Q5350072": "Jean Grey",
+  "Q5377360": "Enforcers",
+  "Q5388669": "Erik Killmonger",
+  "Q540442": "Milla Donovan",
+  "Q5441790": "Felicity Hardy",
+  "Q5443580": "Fenris Wolf",
+  "Q5459730": "Flipside",
+  "Q54805989": "energy manipulation",
+  "Q5516076": "Gabrielle Haller",
+  "Q5517781": "Galacta",
+  "Q55607777": "Cletus Kasady",
+  "Q5570029": "Glob",
+  "Q5589126": "government agent",
+  "Q55938790": "Bonesaw McGraw",
+  "Q568267": "Viper",
+  "Q57013559": "Magda Lehnsherr",
+  "Q57022061": "Anya Eisenhardt",
+  "Q572626": "Rhino",
+  "Q576524": "Baron Strucker",
+  "Q577086": "Sin",
+  "Q578094": "Doctor Octopus",
+  "Q580822": "Titania",
+  "Q5873008": "spell",
+  "Q589298": "editor-in-chief",
+  "Q59643": "Tombstone",
+  "Q59644": "Domino",
+  "Q59826": "Miles Morales",
+  "Q60002": "Colossus",
+  "Q6005390": "immortality in fiction",
+  "Q60146": "Abomination",
+  "Q60464931": "Peter Parker",
+  "Q60464979": "Harry Osborn",
+  "Q60484975": "Aaron Davis",
+  "Q60549183": "Marlene Alraune",
+  "Q60661987": "time traveller",
+  "Q614130": "mad scientist",
+  "Q6151029": "Torunn",
+  "Q615226": "Uatu",
+  "Q616633": "Betty Ross",
+  "Q6178488": "Jennifer Kale",
+  "Q618694": "fighter pilot",
+  "Q621613": "bounty hunter",
+  "Q623268": "chief financial officer",
+  "Q62391724": "white",
+  "Q63761127": "Otto Octavius",
+  "Q63761182": "Eddie Brock",
+  "Q639669": "musician",
+  "Q6404004": "Kiber the Cruel",
+  "Q645718": "Morgan le Fay",
+  "Q64658380": "Carol Danvers",
+  "Q647315": "Crossbones",
+  "Q6497975": "Laufey",
+  "Q6498903": "supervillain",
+  "Q65117523": "Peter Parker",
+  "Q6513617": "Lee Forrester",
+  "Q653898": "Alyosha Kravinoff",
+  "Q654551": "Wrecker",
+  "Q6662949": "Llyra",
+  "Q669916": "Nitro",
+  "Q672591": "Falcon",
+  "Q6726329": "Madame Sanctity",
+  "Q6726576": "Madcap",
+  "Q6729338": "Maestro",
+  "Q6746231": "Man Mountain Marko",
+  "Q6785042": "Master Khan",
+  "Q678551": "American Jews",
+  "Q6818707": "Mercy",
+  "Q6842189": "Midgard Serpent",
+  "Q6863554": "mind control",
+  "Q6904213": "Montana",
+  "Q6911845": "Morgan Stark",
+  "Q691225": "lineworker",
+  "Q6933946": "white hair",
+  "Q696819": "herald",
+  "Q6979927": "Native",
+  "Q703534": "employee",
+  "Q7045734": "Noble Kale",
+  "Q7053134": "Normie Osborn",
+  "Q7080283": "Ogun",
+  "Q71067619": "Kenuichio Harada",
+  "Q7248194": "Professor Thorton",
+  "Q729150": "Punisher",
+  "Q7292400": "Randy Robertson",
+  "Q7296820": "Ravonna Renslayer",
+  "Q734861": "Valeria Richards",
+  "Q73544": "Mockingbird",
+  "Q735721": "Green Goblin",
+  "Q737236": "Mystique",
+  "Q7372377": "Roxanne Simpson",
+  "Q740257": "Wizard",
+  "Q741279": "Madelyne Pryor",
+  "Q7487249": "Shalla-Bal",
+  "Q7497450": "Shingen Yashida",
+  "Q7507476": "Sicilian Americans",
+  "Q7562380": "Sons of the Serpent",
+  "Q7581768": "spymaster",
+  "Q7653886": "Swarm",
+  "Q771054": "Larry Trask",
+  "Q773035": "Howard Stark",
+  "Q777952": "instructor",
+  "Q7791911": "Thomas Logan",
+  "Q780488": "Commander Kraken",
+  "Q7855000": "Turk Barrett",
+  "Q7860164": "Tyler Stone",
+  "Q7880226": "Nick Fury",
+  "Q7880273": "Ultimate Wolverine",
+  "Q790024": "extrasensory perception",
+  "Q79037": "Spider-Man",
+  "Q7914646": "Vanessa Fisk",
+  "Q8000827": "Wild Thing",
+  "Q8054873": "Yon-Rogg",
+  "Q8060735": "Yukio",
+  "Q80687": "secretary",
+  "Q8073711": "Zom",
+  "Q808266": "bartender",
+  "Q817393": "black people",
+  "Q81787": "Scott Lang",
+  "Q818844": "astral projection",
+  "Q820037": "miner",
+  "Q83788671": "superhuman endurance",
+  "Q841372": "Juggernaut",
+  "Q842782": "detective",
+  "Q849818": "Hobgoblin",
+  "Q851436": "bodyguard",
+  "Q858901": "Cassandra Nova",
+  "Q864503": "biologist",
+  "Q881024": "Blade",
+  "Q890527": "archer",
+  "Q893594": "Puerto Ricans",
+  "Q898039": "Drax the Destroyer",
+  "Q898201": "Silver Samurai",
+  "Q901": "scientist",
+  "Q902180": "trickster",
+  "Q9049926": "Nico Minoru",
+  "Q907767": "Doctor Strange",
+  "Q910204": "Thing",
+  "Q913359": "Elektra",
+  "Q9268": "Judaism",
+  "Q927598": "Mar-Vell",
+  "Q929273": "Quicksilver",
+  "Q929285": "Scarlet Witch",
+  "Q930794": "Mentor",
+  "Q9311511": "Roderick Kingsley",
+  "Q9352089": "spy",
+  "Q936542": "Pepper Potts",
+  "Q9385011": "neurosurgeon",
+  "Q9402": "ninja",
+  "Q944173": "Nuke",
+  "Q947873": "television presenter",
+  "Q955796": "Jigsaw",
+  "Q95594075": "electromagnetism manipulation",
+  "Q962140": "U-Foes",
+  "Q96379736": "Gorr the God Butcher",
+  "Q965099": "Clay Quartermain",
+  "Q978851": "Radioactive Man",
+  "Q98454793": "Peter Parker",
+  "Q98454800": "Gwen Stacy"
+ },
+ "traits": {
+  "10": {
+   "character_type": [
+    "Q614130",
+    "Q6498903"
+   ]
+  },
+  "104": {
+   "occupation": [
+    "Q13474373"
+   ]
+  },
+  "107": {
+   "ability": [
+    "Q23012785",
+    "Q47090903",
+    "Q47102058",
+    "Q4386945"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q43845"
+   ]
+  },
+  "109": {
+   "ability": [
+    "Q51879220",
+    "Q2069787"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q188784",
+    "Q48282"
+   ]
+  },
+  "11": {
+   "ability": [
+    "Q5873008"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "height": [
+    {
+     "amount": "+1.89",
+     "unit": "http://www.wikidata.org/entity/Q11573"
+    }
+   ],
+   "occupation": [
+    "Q9385011",
+    "Q148401",
+    "Q138656374"
+   ]
+  },
+  "110": {
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q4991371",
+    "Q48282"
+   ]
+  },
+  "111": {
+   "ability": [
+    "Q1892035",
+    "Q11032077",
+    "Q1341441",
+    "Q182154",
+    "Q1152040",
+    "Q170612",
+    "Q6005390",
+    "Q4386945",
+    "Q47089006",
+    "Q23012785",
+    "Q186446",
+    "Q21451555"
+   ],
+   "character_type": [
+    "Q6498903"
+   ]
+  },
+  "112": {
+   "ability": [
+    "Q54805989"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "hair_color": [
+    "Q2367101"
+   ],
+   "occupation": [
+    "Q3562775",
+    "Q188784"
+   ]
+  },
+  "115": {
+   "occupation": [
+    "Q384593"
+   ]
+  },
+  "116": {
+   "ability": [
+    "Q4386945",
+    "Q2069787",
+    "Q6005390",
+    "Q1152040"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q17307272",
+    "Q326653"
+   ]
+  },
+  "117": {
+   "ability": [
+    "Q4386945",
+    "Q23012785",
+    "Q1152040",
+    "Q47089006"
+   ],
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q5589126",
+    "Q2159907",
+    "Q43845"
+   ]
+  },
+  "119": {
+   "character_type": [
+    "Q6498903"
+   ]
+  },
+  "12": {
+   "character_type": [
+    "Q110910"
+   ],
+   "eye_color": [
+    "Q62391724"
+   ],
+   "height": [
+    {
+     "amount": "+1.90",
+     "unit": "http://www.wikidata.org/entity/Q11573"
+    }
+   ]
+  },
+  "122": {
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q4947495",
+    "Q1975715",
+    "Q378770",
+    "Q24962806"
+   ]
+  },
+  "123": {
+   "occupation": [
+    "Q851436"
+   ]
+  },
+  "124": {
+   "character_type": [
+    "Q110910"
+   ],
+   "eye_color": [
+    "Q62391724"
+   ],
+   "height": [
+    {
+     "amount": "+1.90",
+     "unit": "http://www.wikidata.org/entity/Q11573"
+    }
+   ]
+  },
+  "125": {
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q890527"
+   ]
+  },
+  "126": {
+   "ability": [
+    "Q2975244",
+    "Q818844",
+    "Q170612",
+    "Q47148949",
+    "Q186446"
+   ],
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q3126128",
+    "Q205375"
+   ]
+  },
+  "127": {
+   "ability": [
+    "Q4386945"
+   ],
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q178197",
+    "Q2159907",
+    "Q24962806",
+    "Q5589126",
+    "Q618694",
+    "Q4991371"
+   ]
+  },
+  "128": {
+   "height": [
+    {
+     "amount": "+3000",
+     "unit": "http://www.wikidata.org/entity/Q174728"
+    }
+   ]
+  },
+  "129": {
+   "ability": [
+    "Q2069787",
+    "Q51879220"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q33999",
+    "Q11631",
+    "Q188784",
+    "Q107711",
+    "Q623268",
+    "Q327029",
+    "Q10349745",
+    "Q17307272",
+    "Q45787133"
+   ]
+  },
+  "13": {
+   "ability": [
+    "Q1879366"
+   ],
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q2159907",
+    "Q691225"
+   ]
+  },
+  "131": {
+   "ability": [
+    "Q3143749"
+   ],
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q2159907",
+    "Q703534",
+    "Q5184855"
+   ]
+  },
+  "132": {
+   "ability": [
+    "Q2649737"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q326653",
+    "Q37226",
+    "Q48282",
+    "Q188784"
+   ]
+  },
+  "135": {
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q851436",
+    "Q1058617",
+    "Q11124885",
+    "Q188784",
+    "Q9352089",
+    "Q3190387"
+   ]
+  },
+  "136": {
+   "ability": [
+    "Q4386945",
+    "Q51879220",
+    "Q54805989"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "eye_color": [
+    "Q17122834"
+   ],
+   "hair_color": [
+    "Q1922956"
+   ],
+   "height": [
+    {
+     "amount": "+6.0833",
+     "unit": "http://www.wikidata.org/entity/Q3710"
+    }
+   ],
+   "occupation": [
+    "Q205375",
+    "Q43845",
+    "Q188784"
+   ]
+  },
+  "137": {
+   "occupation": [
+    "Q42909",
+    "Q2516866",
+    "Q589298",
+    "Q484876",
+    "Q12362622"
+   ]
+  },
+  "138": {
+   "ability": [
+    "Q4386945"
+   ],
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q178197",
+    "Q2159907",
+    "Q24962806",
+    "Q5589126",
+    "Q618694",
+    "Q4991371"
+   ]
+  },
+  "139": {
+   "ability": [
+    "Q4386945",
+    "Q23012785",
+    "Q1152040",
+    "Q520667",
+    "Q47090903"
+   ],
+   "character_type": [
+    "Q188784",
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q157195",
+    "Q2070313",
+    "Q851436",
+    "Q188784",
+    "Q3190387",
+    "Q2159907",
+    "Q901",
+    "Q156839",
+    "Q808266",
+    "Q1090219",
+    "Q327029",
+    "Q205375",
+    "Q2251335",
+    "Q33231"
+   ]
+  },
+  "14": {
+   "character_type": [
+    "Q110910"
+   ],
+   "ethnic_group": [
+    "Q7507476"
+   ],
+   "occupation": [
+    "Q47064",
+    "Q3190387",
+    "Q777952",
+    "Q4991371"
+   ],
+   "religion": [
+    "Q1841",
+    "Q1069127"
+   ]
+  },
+  "140": {
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q3562775",
+    "Q378770"
+   ]
+  },
+  "142": {
+   "character_type": [
+    "Q188784"
+   ]
+  },
+  "144": {
+   "occupation": [
+    "Q384593"
+   ]
+  },
+  "145": {
+   "occupation": [
+    "Q384593"
+   ]
+  },
+  "146": {
+   "ability": [
+    "Q4386945",
+    "Q1152040"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q40348",
+    "Q188784"
+   ]
+  },
+  "149": {
+   "ability": [
+    "Q4386945",
+    "Q23012785",
+    "Q47090903",
+    "Q47089006"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q188784",
+    "Q3190387",
+    "Q639669",
+    "Q48282"
+   ]
+  },
+  "15": {
+   "ability": [
+    "Q4386945",
+    "Q23012785",
+    "Q1152040",
+    "Q47089006"
+   ],
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q43845"
+   ]
+  },
+  "150": {
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q11631",
+    "Q2095549"
+   ]
+  },
+  "151": {
+   "ability": [
+    "Q4386945",
+    "Q23012785",
+    "Q83788671",
+    "Q47090903",
+    "Q47089006",
+    "Q1152040",
+    "Q520667",
+    "Q170612",
+    "Q818844",
+    "Q2975244"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "eye_color": [
+    "Q17122834"
+   ],
+   "hair_color": [
+    "Q18661358"
+   ],
+   "occupation": [
+    "Q5589126",
+    "Q5125402"
+   ]
+  },
+  "155": {
+   "ability": [
+    "Q4386945",
+    "Q23012785",
+    "Q520667",
+    "Q1152040",
+    "Q47090903"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q378770",
+    "Q188784",
+    "Q3190387",
+    "Q3126128"
+   ]
+  },
+  "156": {
+   "character_type": [
+    "Q188784"
+   ],
+   "hair_color": [
+    "Q202466"
+   ],
+   "height": [
+    {
+     "amount": "+1.80",
+     "unit": "http://www.wikidata.org/entity/Q11573"
+    }
+   ],
+   "occupation": [
+    "Q2095549",
+    "Q589298",
+    "Q1930187"
+   ]
+  },
+  "157": {
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q60661987"
+   ]
+  },
+  "16": {
+   "occupation": [
+    "Q48282"
+   ]
+  },
+  "160": {
+   "character_type": [
+    "Q6498903"
+   ]
+  },
+  "161": {
+   "character_type": [
+    "Q6498903"
+   ]
+  },
+  "163": {
+   "occupation": [
+    "Q484876"
+   ]
+  },
+  "164": {
+   "ability": [
+    "Q1064192"
+   ],
+   "character_type": [
+    "Q110910",
+    "Q902180",
+    "Q6498903"
+   ]
+  },
+  "166": {
+   "ability": [
+    "Q4386945",
+    "Q47089006"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "ethnic_group": [
+    "Q817393"
+   ],
+   "occupation": [
+    "Q188784",
+    "Q851436",
+    "Q178197",
+    "Q1058617"
+   ]
+  },
+  "167": {
+   "occupation": [
+    "Q10591707"
+   ]
+  },
+  "17": {
+   "ability": [
+    "Q4386945",
+    "Q23012785",
+    "Q1152040",
+    "Q47089006"
+   ],
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q43845"
+   ]
+  },
+  "171": {
+   "ability": [
+    "Q29424976",
+    "Q95594075"
+   ],
+   "character_type": [
+    "Q188784",
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q1097498",
+    "Q1056391",
+    "Q9352089",
+    "Q12177489"
+   ],
+   "religion": [
+    "Q9268"
+   ]
+  },
+  "174": {
+   "occupation": [
+    "Q392651",
+    "Q4991371"
+   ]
+  },
+  "175": {
+   "ability": [
+    "Q4386945",
+    "Q47090903",
+    "Q6863554"
+   ],
+   "character_type": [
+    "Q6498903"
+   ],
+   "eye_color": [
+    "Q136129693"
+   ],
+   "occupation": [
+    "Q12362622",
+    "Q4947495"
+   ]
+  },
+  "178": {
+   "eye_color": [
+    "Q17122854"
+   ],
+   "hair_color": [
+    "Q152357"
+   ],
+   "occupation": [
+    "Q33999",
+    "Q4610556",
+    "Q947873",
+    "Q2259451"
+   ],
+   "religion": [
+    "Q5043"
+   ]
+  },
+  "179": {
+   "eye_color": [
+    "Q17122854"
+   ],
+   "hair_color": [
+    "Q152357"
+   ],
+   "occupation": [
+    "Q33999",
+    "Q4610556",
+    "Q947873",
+    "Q2259451"
+   ],
+   "religion": [
+    "Q5043"
+   ]
+  },
+  "18": {
+   "ability": [
+    "Q1152040"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q901"
+   ]
+  },
+  "182": {
+   "ability": [
+    "Q51879220",
+    "Q4386945",
+    "Q23012785",
+    "Q47090903",
+    "Q170612",
+    "Q47089006"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q48282",
+    "Q188784"
+   ]
+  },
+  "183": {
+   "character_type": [
+    "Q6498903"
+   ]
+  },
+  "184": {
+   "ability": [
+    "Q4386945",
+    "Q23012785",
+    "Q1152040",
+    "Q47090903",
+    "Q47102058"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q3126128",
+    "Q484876",
+    "Q3190387",
+    "Q188784"
+   ]
+  },
+  "186": {
+   "ability": [
+    "Q47090903"
+   ],
+   "hair_color": [
+    "Q2367101"
+   ],
+   "height": [
+    {
+     "amount": "+1.78",
+     "unit": "http://www.wikidata.org/entity/Q11573"
+    }
+   ],
+   "occupation": [
+    "Q33231",
+    "Q901",
+    "Q37226",
+    "Q188784",
+    "Q205375",
+    "Q43845"
+   ]
+  },
+  "187": {
+   "ability": [
+    "Q51992182"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q11900058",
+    "Q2873500",
+    "Q121594",
+    "Q48282"
+   ]
+  },
+  "189": {
+   "character_type": [
+    "Q188784"
+   ],
+   "ethnic_group": [
+    "Q678551"
+   ],
+   "medical_condition": [
+    "Q18657"
+   ]
+  },
+  "19": {
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q43845",
+    "Q10384029",
+    "Q4947495",
+    "Q2462658",
+    "Q2159907"
+   ]
+  },
+  "190": {
+   "ability": [
+    "Q4386945",
+    "Q47089006"
+   ],
+   "character_type": [
+    "Q6498903"
+   ]
+  },
+  "194": {
+   "character_type": [
+    "Q188784"
+   ]
+  },
+  "196": {
+   "occupation": [
+    "Q42909"
+   ]
+  },
+  "198": {
+   "occupation": [
+    "Q9352089",
+    "Q4991371",
+    "Q777952",
+    "Q11338576",
+    "Q7581768"
+   ],
+   "sport": [
+    "Q36389"
+   ]
+  },
+  "199": {
+   "character_type": [
+    "Q188784"
+   ]
+  },
+  "2": {
+   "ability": [
+    "Q4386945",
+    "Q23012785",
+    "Q1152040",
+    "Q520667",
+    "Q47090903"
+   ],
+   "character_type": [
+    "Q188784",
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q157195",
+    "Q2070313",
+    "Q851436",
+    "Q188784",
+    "Q3190387",
+    "Q2159907",
+    "Q901",
+    "Q156839",
+    "Q808266",
+    "Q1090219",
+    "Q327029",
+    "Q205375",
+    "Q2251335",
+    "Q33231"
+   ]
+  },
+  "20": {
+   "ability": [
+    "Q4386945",
+    "Q23012785"
+   ],
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q1714828",
+    "Q178197"
+   ]
+  },
+  "200": {
+   "ability": [
+    "Q11032077",
+    "Q47090903"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q17307272",
+    "Q188784",
+    "Q250867"
+   ],
+   "religion": [
+    "Q1841"
+   ],
+   "sport": [
+    "Q36389"
+   ]
+  },
+  "202": {
+   "ability": [
+    "Q4386945",
+    "Q23012785",
+    "Q182154",
+    "Q6005390",
+    "Q170612",
+    "Q47089006",
+    "Q54805989"
+   ],
+   "character_type": [
+    "Q188784",
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q11063",
+    "Q188784",
+    "Q11900058",
+    "Q20826540",
+    "Q696819",
+    "Q60661987"
+   ]
+  },
+  "203": {
+   "character_type": [
+    "Q188784"
+   ]
+  },
+  "206": {
+   "occupation": [
+    "Q17307272"
+   ]
+  },
+  "207": {
+   "ability": [
+    "Q4386945",
+    "Q23012785",
+    "Q1152040",
+    "Q47089006",
+    "Q47090903"
+   ],
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q42909",
+    "Q3190387",
+    "Q5589126",
+    "Q188784"
+   ]
+  },
+  "209": {
+   "eye_color": [
+    "Q17122834"
+   ],
+   "hair_color": [
+    "Q18661358"
+   ]
+  },
+  "21": {
+   "ability": [
+    "Q4386945",
+    "Q1152040",
+    "Q23012785"
+   ],
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q864503",
+    "Q10855616"
+   ],
+   "religion": [
+    "Q1841"
+   ]
+  },
+  "210": {
+   "ability": [
+    "Q47090903"
+   ],
+   "hair_color": [
+    "Q2367101"
+   ],
+   "height": [
+    {
+     "amount": "+1.78",
+     "unit": "http://www.wikidata.org/entity/Q11573"
+    }
+   ],
+   "occupation": [
+    "Q33231",
+    "Q901",
+    "Q37226",
+    "Q188784",
+    "Q205375",
+    "Q43845"
+   ]
+  },
+  "211": {
+   "ability": [
+    "Q47148394"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "eye_color": [
+    "Q17122740"
+   ],
+   "hair_color": [
+    "Q2367101"
+   ],
+   "occupation": [
+    "Q2095549",
+    "Q808266",
+    "Q17307272",
+    "Q37226",
+    "Q5589126",
+    "Q188784"
+   ],
+   "religion": [
+    "Q9268"
+   ]
+  },
+  "212": {
+   "ability": [
+    "Q4386945",
+    "Q47089006"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "ethnic_group": [
+    "Q817393"
+   ],
+   "occupation": [
+    "Q188784",
+    "Q851436",
+    "Q178197",
+    "Q1058617"
+   ]
+  },
+  "214": {
+   "ability": [
+    "Q29433518",
+    "Q170612"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "medical_condition": [
+    "Q11081"
+   ],
+   "occupation": [
+    "Q1056391",
+    "Q901"
+   ]
+  },
+  "215": {
+   "character_type": [
+    "Q188784"
+   ],
+   "sport": [
+    "Q36389"
+   ]
+  },
+  "22": {
+   "ability": [
+    "Q4386945",
+    "Q23012785",
+    "Q83788671",
+    "Q47090903",
+    "Q47089006",
+    "Q1152040",
+    "Q520667",
+    "Q170612",
+    "Q818844",
+    "Q2975244"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "eye_color": [
+    "Q17122834"
+   ],
+   "hair_color": [
+    "Q18661358"
+   ],
+   "occupation": [
+    "Q5589126",
+    "Q5125402"
+   ]
+  },
+  "225": {
+   "height": [
+    {
+     "amount": "+5.583",
+     "unit": "http://www.wikidata.org/entity/Q3710"
+    },
+    {
+     "amount": "+1.7",
+     "unit": "http://www.wikidata.org/entity/Q11573"
+    }
+   ]
+  },
+  "227": {
+   "ethnic_group": [
+    "Q49085"
+   ],
+   "occupation": [
+    "Q17351648"
+   ]
+  },
+  "228": {
+   "eye_color": [
+    "Q17122705"
+   ],
+   "hair_color": [
+    "Q2367101"
+   ]
+  },
+  "229": {
+   "ability": [
+    "Q47088639",
+    "Q4386945",
+    "Q47089006",
+    "Q51879220",
+    "Q23012785",
+    "Q83788671",
+    "Q47090903",
+    "Q6005390"
+   ],
+   "character_type": [
+    "Q188784",
+    "Q6498903"
+   ],
+   "eye_color": [
+    "Q17122854"
+   ],
+   "occupation": [
+    "Q327029",
+    "Q157195",
+    "Q12414919",
+    "Q188784"
+   ]
+  },
+  "23": {
+   "ability": [
+    "Q4386945",
+    "Q23012785",
+    "Q1152040",
+    "Q47090903",
+    "Q47102058",
+    "Q83788671"
+   ],
+   "character_type": [
+    "Q188784",
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q2919046",
+    "Q3144914"
+   ]
+  },
+  "239": {
+   "eye_color": [
+    "Q27839441"
+   ]
+  },
+  "24": {
+   "hair_color": [
+    "Q2367101"
+   ]
+  },
+  "240": {
+   "character_type": [
+    "Q188784"
+   ]
+  },
+  "243": {
+   "ability": [
+    "Q29432877",
+    "Q51879220"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "eye_color": [
+    "Q17122834",
+    "Q17122705"
+   ],
+   "hair_color": [
+    "Q6933946",
+    "Q10509939"
+   ],
+   "height": [
+    {
+     "amount": "+5.11",
+     "unit": "http://www.wikidata.org/entity/Q3710"
+    }
+   ],
+   "occupation": [
+    "Q482999",
+    "Q48282",
+    "Q3562775",
+    "Q188784"
+   ]
+  },
+  "244": {
+   "eye_color": [
+    "Q27839441"
+   ]
+  },
+  "245": {
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q5307556",
+    "Q178197",
+    "Q37226"
+   ]
+  },
+  "246": {
+   "character_type": [
+    "Q6498903"
+   ],
+   "height": [
+    {
+     "amount": "+79",
+     "unit": "http://www.wikidata.org/entity/Q218593"
+    }
+   ]
+  },
+  "247": {
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q378770",
+    "Q178197"
+   ]
+  },
+  "249": {
+   "ability": [
+    "Q29432877"
+   ],
+   "character_type": [
+    "Q188784",
+    "Q526231"
+   ],
+   "hair_color": [
+    "Q202466"
+   ]
+  },
+  "25": {
+   "character_type": [
+    "Q188784"
+   ],
+   "ethnic_group": [
+    "Q49085",
+    "Q893594"
+   ],
+   "eye_color": [
+    "Q17122705"
+   ],
+   "hair_color": [
+    "Q1922956"
+   ],
+   "height": [
+    {
+     "amount": "+1.73",
+     "unit": "http://www.wikidata.org/entity/Q11573"
+    }
+   ],
+   "occupation": [
+    "Q188784",
+    "Q48282"
+   ]
+  },
+  "251": {
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q14915751",
+    "Q1153622"
+   ]
+  },
+  "252": {
+   "ability": [
+    "Q11032077"
+   ],
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q2159907"
+   ]
+  },
+  "253": {
+   "ability": [
+    "Q4386945",
+    "Q47090903",
+    "Q47089006",
+    "Q47102058"
+   ],
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q703534"
+   ]
+  },
+  "256": {
+   "occupation": [
+    "Q3562775"
+   ]
+  },
+  "258": {
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q188784",
+    "Q2655853"
+   ]
+  },
+  "26": {
+   "character_type": [
+    "Q6498903"
+   ]
+  },
+  "260": {
+   "hair_color": [
+    "Q2367101"
+   ],
+   "occupation": [
+    "Q901"
+   ]
+  },
+  "261": {
+   "occupation": [
+    "Q148401"
+   ]
+  },
+  "262": {
+   "character_type": [
+    "Q188784"
+   ],
+   "height": [
+    {
+     "amount": "+1.83",
+     "unit": "http://www.wikidata.org/entity/Q11573"
+    }
+   ]
+  },
+  "263": {
+   "occupation": [
+    "Q6498903"
+   ]
+  },
+  "27": {
+   "ability": [
+    "Q47090903"
+   ],
+   "hair_color": [
+    "Q2367101"
+   ],
+   "height": [
+    {
+     "amount": "+1.78",
+     "unit": "http://www.wikidata.org/entity/Q11573"
+    }
+   ],
+   "occupation": [
+    "Q33231",
+    "Q901",
+    "Q37226",
+    "Q188784",
+    "Q205375",
+    "Q43845"
+   ]
+  },
+  "28": {
+   "ability": [
+    "Q4386945",
+    "Q23012785",
+    "Q47089006"
+   ],
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q2159907"
+   ]
+  },
+  "29": {
+   "character_type": [
+    "Q188784",
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q2159907",
+    "Q188784"
+   ]
+  },
+  "3": {
+   "ability": [
+    "Q23012720"
+   ],
+   "character_type": [
+    "Q188784",
+    "Q6498903"
+   ],
+   "eye_color": [
+    "Q17122854"
+   ],
+   "hair_color": [
+    "Q6933946",
+    "Q112989985"
+   ],
+   "height": [
+    {
+     "amount": "+5.10",
+     "unit": "http://www.wikidata.org/entity/Q3710"
+    }
+   ],
+   "occupation": [
+    "Q1058617",
+    "Q4947495",
+    "Q2159907",
+    "Q188784",
+    "Q842782",
+    "Q621613",
+    "Q19788920"
+   ]
+  },
+  "30": {
+   "ability": [
+    "Q4386945",
+    "Q23012785",
+    "Q47089006",
+    "Q47090903"
+   ],
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q1058617",
+    "Q5589126",
+    "Q2159907",
+    "Q378770"
+   ]
+  },
+  "31": {
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q3562775",
+    "Q378770"
+   ]
+  },
+  "32": {
+   "ability": [
+    "Q52412496"
+   ],
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q484188",
+    "Q10384029"
+   ]
+  },
+  "33": {
+   "ability": [
+    "Q4386945",
+    "Q23012785",
+    "Q47090903",
+    "Q47089006"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q188784",
+    "Q3190387",
+    "Q315625",
+    "Q48282"
+   ]
+  },
+  "34": {
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q178197",
+    "Q43845"
+   ]
+  },
+  "35": {
+   "ability": [
+    "Q4386945",
+    "Q23012785"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q48282",
+    "Q188784"
+   ]
+  },
+  "37": {
+   "ability": [
+    "Q4386945",
+    "Q23012785",
+    "Q47090903",
+    "Q1152040",
+    "Q83788671"
+   ],
+   "occupation": [
+    "Q842782",
+    "Q188784",
+    "Q1058617",
+    "Q3190387"
+   ]
+  },
+  "38": {
+   "occupation": [
+    "Q901"
+   ]
+  },
+  "4": {
+   "character_type": [
+    "Q6498903"
+   ]
+  },
+  "40": {
+   "ability": [
+    "Q47090903"
+   ],
+   "hair_color": [
+    "Q2367101"
+   ],
+   "height": [
+    {
+     "amount": "+1.78",
+     "unit": "http://www.wikidata.org/entity/Q11573"
+    }
+   ],
+   "occupation": [
+    "Q33231",
+    "Q901",
+    "Q37226",
+    "Q188784",
+    "Q205375",
+    "Q43845"
+   ]
+  },
+  "42": {
+   "character_type": [
+    "Q6498903"
+   ]
+  },
+  "43": {
+   "character_type": [
+    "Q6498903"
+   ]
+  },
+  "45": {
+   "character_type": [
+    "Q6498903"
+   ]
+  },
+  "46": {
+   "ability": [
+    "Q1152040",
+    "Q47102058",
+    "Q47090903",
+    "Q4386945",
+    "Q51908485",
+    "Q790024",
+    "Q23012785",
+    "Q47089006"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "eye_color": [
+    "Q17122834"
+   ],
+   "hair_color": [
+    "Q1922956"
+   ],
+   "height": [
+    {
+     "amount": "+5.25",
+     "unit": "http://www.wikidata.org/entity/Q3710"
+    }
+   ],
+   "occupation": [
+    "Q47064",
+    "Q777952",
+    "Q808266",
+    "Q10860242",
+    "Q9352089",
+    "Q178197",
+    "Q45199",
+    "Q820037",
+    "Q188784"
+   ],
+   "sport": [
+    "Q11419"
+   ]
+  },
+  "48": {
+   "character_type": [
+    "Q188784"
+   ],
+   "sport": [
+    "Q36389"
+   ]
+  },
+  "49": {
+   "character_type": [
+    "Q6498903"
+   ]
+  },
+  "5": {
+   "ability": [
+    "Q4386945",
+    "Q83788671",
+    "Q23012785"
+   ],
+   "occupation": [
+    "Q47064"
+   ]
+  },
+  "53": {
+   "ability": [
+    "Q4386945",
+    "Q23012785",
+    "Q47090903",
+    "Q47089006"
+   ],
+   "character_type": [
+    "Q614130",
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q205375",
+    "Q901"
+   ]
+  },
+  "57": {
+   "ability": [
+    "Q4386945",
+    "Q23012785",
+    "Q1152040",
+    "Q47089006",
+    "Q47090903"
+   ],
+   "character_type": [
+    "Q188784",
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q6498903",
+    "Q188784",
+    "Q40348"
+   ]
+  },
+  "58": {
+   "ability": [
+    "Q4386945",
+    "Q47090903"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q48282",
+    "Q315625",
+    "Q1714828",
+    "Q188784"
+   ]
+  },
+  "59": {
+   "ability": [
+    "Q4386945",
+    "Q47090903"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q48282",
+    "Q315625",
+    "Q1714828",
+    "Q188784"
+   ]
+  },
+  "6": {
+   "ability": [
+    "Q4386945",
+    "Q23012785",
+    "Q1152040",
+    "Q47089006",
+    "Q47090903"
+   ],
+   "character_type": [
+    "Q6498903"
+   ],
+   "height": [
+    {
+     "amount": "+1.85",
+     "unit": "http://www.wikidata.org/entity/Q11573"
+    }
+   ],
+   "occupation": [
+    "Q484188"
+   ]
+  },
+  "60": {
+   "occupation": [
+    "Q212980"
+   ]
+  },
+  "63": {
+   "character_type": [
+    "Q6498903"
+   ],
+   "sport": [
+    "Q11419"
+   ]
+  },
+  "64": {
+   "ability": [
+    "Q4386945",
+    "Q47090903",
+    "Q47102058",
+    "Q23012785",
+    "Q47089006",
+    "Q83788671",
+    "Q1152040"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "occupation": [
+    "Q3126128",
+    "Q2919046",
+    "Q1622272",
+    "Q188784"
+   ]
+  },
+  "65": {
+   "character_type": [
+    "Q188784",
+    "Q6498903"
+   ]
+  },
+  "66": {
+   "ability": [
+    "Q4386945",
+    "Q23012785",
+    "Q47090903",
+    "Q1152040",
+    "Q83788671"
+   ],
+   "occupation": [
+    "Q842782",
+    "Q188784",
+    "Q1058617",
+    "Q3190387"
+   ]
+  },
+  "67": {
+   "occupation": [
+    "Q42909",
+    "Q80687"
+   ]
+  },
+  "68": {
+   "character_type": [
+    "Q6498903"
+   ]
+  },
+  "69": {
+   "ability": [
+    "Q47090903",
+    "Q47102058"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "ethnic_group": [
+    "Q817393"
+   ],
+   "occupation": [
+    "Q188784"
+   ]
+  },
+  "7": {
+   "ability": [
+    "Q1925011"
+   ],
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q33999",
+    "Q2159907",
+    "Q4947495",
+    "Q9352089"
+   ]
+  },
+  "70": {
+   "occupation": [
+    "Q9352089",
+    "Q2251335",
+    "Q3501317",
+    "Q4070300",
+    "Q188784"
+   ],
+   "sport": [
+    "Q11419"
+   ]
+  },
+  "71": {
+   "ability": [
+    "Q4386945",
+    "Q1152040",
+    "Q23012785",
+    "Q47102058",
+    "Q47090903",
+    "Q47089006",
+    "Q51908485"
+   ],
+   "occupation": [
+    "Q1058307",
+    "Q11397897",
+    "Q11124885"
+   ],
+   "sport": [
+    "Q36389"
+   ]
+  },
+  "72": {
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q4773904",
+    "Q205375"
+   ]
+  },
+  "74": {
+   "eye_color": [
+    "Q17122705"
+   ],
+   "hair_color": [
+    "Q1922956"
+   ]
+  },
+  "77": {
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q5589126",
+    "Q378770",
+    "Q3562775",
+    "Q1048902",
+    "Q178197"
+   ]
+  },
+  "78": {
+   "occupation": [
+    "Q2159907"
+   ]
+  },
+  "79": {
+   "character_type": [
+    "Q188784"
+   ],
+   "hair_color": [
+    "Q202466"
+   ],
+   "height": [
+    {
+     "amount": "+1.80",
+     "unit": "http://www.wikidata.org/entity/Q11573"
+    }
+   ],
+   "occupation": [
+    "Q2095549",
+    "Q589298",
+    "Q1930187"
+   ]
+  },
+  "8": {
+   "ability": [
+    "Q47102058"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "medical_condition": [
+    "Q10874"
+   ],
+   "occupation": [
+    "Q40348",
+    "Q188784",
+    "Q9402",
+    "Q11124885",
+    "Q3190387"
+   ],
+   "religion": [
+    "Q1841"
+   ],
+   "sport": [
+    "Q11419"
+   ]
+  },
+  "80": {
+   "character_type": [
+    "Q6498903"
+   ]
+  },
+  "82": {
+   "character_type": [
+    "Q6498903"
+   ]
+  },
+  "84": {
+   "ability": [
+    "Q4386945",
+    "Q23012785",
+    "Q1152040",
+    "Q47089006",
+    "Q47090903"
+   ],
+   "character_type": [
+    "Q6498903"
+   ],
+   "height": [
+    {
+     "amount": "+1.85",
+     "unit": "http://www.wikidata.org/entity/Q11573"
+    }
+   ],
+   "occupation": [
+    "Q484188"
+   ]
+  },
+  "87": {
+   "ability": [
+    "Q51996832"
+   ],
+   "character_type": [
+    "Q188784"
+   ],
+   "eye_color": [
+    "Q17122705"
+   ],
+   "hair_color": [
+    "Q2367101"
+   ],
+   "occupation": [
+    "Q2095549",
+    "Q1056391",
+    "Q48282",
+    "Q1371925",
+    "Q188784"
+   ]
+  },
+  "9": {
+   "character_type": [
+    "Q6498903"
+   ],
+   "eye_color": [
+    "Q17122705"
+   ],
+   "hair_color": [
+    "Q2367101"
+   ],
+   "height": [
+    {
+     "amount": "+1.82",
+     "unit": "http://www.wikidata.org/entity/Q11573"
+    }
+   ],
+   "occupation": [
+    "Q1097498",
+    "Q2873500",
+    "Q148401"
+   ]
+  },
+  "91": {
+   "ability": [
+    "Q1152040"
+   ],
+   "character_type": [
+    "Q110910",
+    "Q188784"
+   ],
+   "occupation": [
+    "Q4991371",
+    "Q178197"
+   ]
+  },
+  "92": {
+   "character_type": [
+    "Q188784"
+   ]
+  },
+  "94": {
+   "ability": [
+    "Q4386945",
+    "Q47089006",
+    "Q47090903",
+    "Q2069787",
+    "Q1064192"
+   ],
+   "character_type": [
+    "Q6498903"
+   ],
+   "occupation": [
+    "Q15883433"
+   ]
+  },
+  "96": {
+   "character_type": [
+    "Q614130",
+    "Q6498903"
+   ]
+  },
+  "97": {
+   "character_type": [
+    "Q614130",
+    "Q6498903"
+   ]
+  }
+ },
+ "work_casts": {
+  "5": [
+   "Q79037",
+   "Q27810",
+   "Q735721",
+   "Q17090877",
+   "Q60464979",
+   "Q2299139",
+   "Q23991271",
+   "Q55938790"
+  ],
+  "6": [
+   "Q60464931",
+   "Q63761127",
+   "Q79037"
+  ],
+  "7": [
+   "Q79037"
+  ],
+  "9": [
+   "Q98454793",
+   "Q98454800",
+   "Q110871130",
+   "Q735721",
+   "Q572626",
+   "Q2453332",
+   "Q27810",
+   "Q79037"
+  ],
+  "10": [
+   "Q23991129"
+  ],
+  "11": [
+   "Q79037",
+   "Q59826"
+  ],
+  "12": [
+   "Q23991129"
+  ],
+  "13": [
+   "Q23991129"
+  ],
+  "16": [
+   "Q23991129"
+  ],
+  "26": [
+   "Q111951332"
+  ],
+  "29": [
+   "Q79037"
+  ],
+  "31": [
+   "Q881024",
+   "Q79037"
+  ],
+  "35": [
+   "Q881024"
+  ],
+  "38": [
+   "Q79037",
+   "Q907767",
+   "Q327553",
+   "Q9049926",
+   "Q59643",
+   "Q1779361",
+   "Q578094"
+  ],
+  "39": [
+   "Q79037"
+  ],
+  "41": [
+   "Q79037"
+  ],
+  "42": [
+   "Q79037"
+  ],
+  "43": [
+   "Q79037"
+  ],
+  "44": [
+   "Q729150"
+  ],
+  "45": [
+   "Q79037"
+  ],
+  "47": [
+   "Q79037"
+  ],
+  "49": [
+   "Q79037"
+  ],
+  "51": [
+   "Q79037"
+  ],
+  "65": [
+   "Q79037",
+   "Q1049890",
+   "Q1621261",
+   "Q2289795",
+   "Q1992523",
+   "Q27810",
+   "Q19382"
+  ],
+  "69": [
+   "Q79037"
+  ],
+  "70": [
+   "Q79037"
+  ],
+  "71": [
+   "Q98454793",
+   "Q98454800",
+   "Q79037"
+  ],
+  "76": [
+   "Q65117523",
+   "Q59826",
+   "Q27810",
+   "Q2453332",
+   "Q578094",
+   "Q1753322",
+   "Q3316968"
+  ],
+  "79": [
+   "Q59826"
+  ]
+ }
+}

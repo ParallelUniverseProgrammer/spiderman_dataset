@@ -106,11 +106,19 @@ def main():
             "date": s["release_date"], "peak_us": s["chart_peak_us"],
             "peak_uk": s["chart_peak_uk"]})
 
+    # v4 resolved each source_material row to comic rows; carry the ids so a
+    # citation on a work page can open the issues behind it.
+    comic_ids_by_source = {}
+    for link in rows(con, "SELECT * FROM work_source_comics"):
+        comic_ids_by_source.setdefault(link["source_material_id"], []).append(
+            link["comic_id"])
+
     for s in rows(con, "SELECT * FROM source_material"):
         works[s["work_id"]]["sources"].append({
             "comic": s["comic_title"], "issues": s["issue_range"],
             "writer": s["comic_writer"], "year": s["comic_year"],
-            "arc": s["storyline_arc"]})
+            "arc": s["storyline_arc"],
+            "comic_ids": sorted(comic_ids_by_source.get(s["id"], []))})
 
     segments_by_ep = {}
     for sg in rows(con, "SELECT * FROM episode_segments ORDER BY show_work_id, season_number, episode_number, segment_index"):
@@ -118,12 +126,22 @@ def main():
         segments_by_ep.setdefault(key, []).append({
             "title": sg["title"], "writer": sg["writer"], "director": sg["director"]})
 
+    # Only the credits v4 matched to a person are carried: the names themselves
+    # are already in `director`/`writer`, and what the explorer cannot derive on
+    # its own is which of them is somebody with a page.
+    ep_credits = {}
+    for c in rows(con, "SELECT * FROM episode_credits WHERE person_id IS NOT NULL"
+                       " ORDER BY episode_id, role, credit_order"):
+        ep_credits.setdefault(c["episode_id"], []).append(
+            {"role": c["role"], "name": c["name"], "person_id": c["person_id"]})
+
     for e in rows(con, "SELECT * FROM episodes ORDER BY season_number, episode_number"):
         works[e["show_work_id"]]["episodes"].append({
             "season": e["season_number"], "episode": e["episode_number"],
             "title": e["title"], "air_date": e["air_date"],
             "runtime": e["runtime_minutes"], "director": e["director"],
             "writer": e["writer"], "viewers_m": e["us_viewers_millions"],
+            "credits": ep_credits.get(e["id"], []),
             "segments": segments_by_ep.get((e["show_work_id"], e["season_number"], e["episode_number"]), [])})
 
     # (A, sequel, B) means B follows A; (A, prequel, B) means B precedes A.
@@ -254,6 +272,71 @@ def main():
                 "first_appearance_year": d["first_appearance_year"],
                 "wikipedia": d["wikipedia_title"]})
 
+    # --- v4: the comics, the people who drew them, and the character graph ---
+
+    comics = {}
+    for c in rows(con, "SELECT * FROM comics ORDER BY id"):
+        comics[c["id"]] = {
+            "id": c["id"], "title": c["title"], "kind": c["kind"],
+            "series_id": c["series_id"], "issue": c["issue_number"],
+            "publisher": c["publisher"], "date": c["publication_date"],
+            "year": c["publication_year"], "origin": c["origin"],
+            "wikidata": c["wikidata_id"], "wikipedia": c["wikipedia_title"],
+            "credits": [], "characters": []}
+
+    creators = {}
+    for cr in rows(con, "SELECT * FROM comic_creators ORDER BY name"):
+        creators[cr["id"]] = {
+            "id": cr["id"], "name": cr["name"], "wikidata": cr["wikidata_id"],
+            "person_id": cr["person_id"], "birth": cr["birth_date"],
+            "death": cr["death_date"], "wikipedia": cr["wikipedia_title"]}
+
+    # Held once, on the comic. The app walks these to build each creator's side
+    # of the same relation — storing both directions doubled the payload for
+    # nothing.
+    for x in rows(con, "SELECT * FROM comic_credits ORDER BY comic_id, role"):
+        if x["creator_id"] in creators:
+            comics[x["comic_id"]]["credits"].append(
+                {"creator_id": x["creator_id"], "role": x["role"]})
+
+    for x in rows(con, "SELECT * FROM comic_characters ORDER BY comic_id"):
+        comics[x["comic_id"]]["characters"].append(x["identity_id"])
+
+    for d in rows(con, "SELECT * FROM character_debuts"):
+        ident = identities.get(d["identity_id"])
+        if ident:
+            ident["debut_comic_id"] = d["comic_id"]
+            ident["debut_method"] = d["method"]
+
+    for r in rows(con, "SELECT * FROM character_relations"
+                       " ORDER BY identity_id, relation, other_name"):
+        ident = identities.get(r["identity_id"])
+        if ident:
+            ident.setdefault("relations", []).append(
+                {"relation": r["relation"], "name": r["other_name"],
+                 "other_id": r["other_identity_id"]})
+
+    for t in rows(con, "SELECT * FROM character_traits ORDER BY identity_id, trait, value"):
+        ident = identities.get(t["identity_id"])
+        if ident:
+            ident.setdefault("traits", {}).setdefault(t["trait"], []).append(t["value"])
+
+    platform_detail = {}
+    for d in rows(con, "SELECT p.name, d.* FROM platform_details d"
+                       " JOIN platforms p ON p.id = d.platform_id ORDER BY p.name"):
+        platform_detail[d["name"]] = {
+            "manufacturer": d["manufacturer"], "developer": d["developer"],
+            "released": d["released"], "discontinued": d["discontinued"],
+            "wikipedia": d["wikipedia_title"]}
+
+    studio_detail = {}
+    for d in rows(con, "SELECT s.name, d.* FROM studio_details d"
+                       " JOIN studios s ON s.id = d.studio_id ORDER BY s.name"):
+        studio_detail[d["name"]] = {
+            "industry": d["industry"], "headquarters": d["headquarters"],
+            "inception": d["inception"], "dissolved": d["dissolved"],
+            "wikipedia": d["wikipedia_title"]}
+
     # Outbound links only — most external_ids rows are authority-file identifiers
     # (VIAF, GND, LoC…) with no url to send a reader to.
     for x in rows(con, "SELECT * FROM external_ids WHERE url IS NOT NULL ORDER BY entity_type, entity_id, source"):
@@ -262,16 +345,21 @@ def main():
         if target is not None:
             target.setdefault("external_ids", []).append(entry)
 
-    prov_sources = {r["source_key"]: r for r in rows(con, "SELECT * FROM v3_sources")}
+    prov_sources = {}
     provenance = []
-    for r in rows(con, "SELECT table_name, source_key, action, COUNT(*) n FROM v3_provenance "
-                       "GROUP BY table_name, source_key, action ORDER BY table_name, source_key, action"):
-        src = prov_sources.get(r["source_key"], {})
-        provenance.append({
-            "table": r["table_name"], "action": r["action"], "n": r["n"],
-            "source": r["source_key"], "source_name": src.get("name"),
-            "source_url": src.get("url"), "licence": src.get("licence"),
-            "retrieved": src.get("retrieved")})
+    for version in ("v3", "v4"):
+        for r in rows(con, f"SELECT * FROM {version}_sources"):
+            prov_sources.setdefault(r["source_key"], r)
+        for r in rows(con, f"SELECT table_name, source_key, action, COUNT(*) n"
+                           f"  FROM {version}_provenance GROUP BY table_name, source_key, action"
+                           f"  ORDER BY table_name, source_key, action"):
+            src = prov_sources.get(r["source_key"], {})
+            provenance.append({
+                "table": r["table_name"], "action": r["action"], "n": r["n"],
+                "version": version,
+                "source": r["source_key"], "source_name": src.get("name"),
+                "source_url": src.get("url"), "licence": src.get("licence"),
+                "retrieved": src.get("retrieved")})
 
     # The heaviest v3 additions — outbound links, prose summaries, award lists — are
     # furniture for a single detail page, never for a list or a filter. Splitting them
@@ -302,6 +390,8 @@ def main():
                 "characters": len(identities),
                 "people": len(people),
                 "credits": sum(len(p["credits"]) for p in people.values()),
+                "comics": len(comics),
+                "comic_creators": len(creators),
             },
             "year_min": min(w["year"] for w in works.values() if w["year"]),
             "year_max": max(w["year"] for w in works.values() if w["year"]),
@@ -316,6 +406,11 @@ def main():
         "characters": prune(sorted(identities.values(),
                                    key=lambda i: -i["n_works"])),
         "people": prune(sorted(people.values(), key=lambda p: p["name"])),
+        "comics": prune(sorted(comics.values(),
+                               key=lambda c: (c["year"] or 9999, c["title"]))),
+        "comic_creators": prune(sorted(creators.values(), key=lambda c: c["name"])),
+        "platform_details": prune(platform_detail),
+        "studio_details": prune(studio_detail),
     }
 
     js = json.dumps(data, ensure_ascii=False, separators=(",", ":"))

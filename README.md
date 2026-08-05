@@ -6,24 +6,39 @@
 [![Dependencies: none](https://img.shields.io/badge/dependencies-none-brightgreen.svg)](#reproducing-the-build)
 
 **Every Spider-Man movie, TV series and video game ever released — 1967 to 2026 —
-normalized into a 24-table SQLite database with cast, characters, studios, budgets,
-box office, review scores and comic sources.**
+normalized into a 54-table SQLite database with cast, characters, studios, budgets,
+box office, review scores and the comics behind every adaptation.**
 
 Not a scraped CSV dump. Character names are resolved to *identities* (416 credit
 strings → 264 real characters), review scores are normalized onto a common 0–100
-scale, and every counting trap in the data is documented rather than left for you
-to fall into. The build is offline, dependency-free and byte-for-byte reproducible.
+scale, comic citations are resolved to real issues with writers and artists
+attached, and every counting trap in the data is documented rather than left for
+you to fall into. The build is offline, dependency-free and byte-for-byte
+reproducible.
 
 ```
 81 works  ·  264 characters  ·  581 people  ·  826 cast & crew credits
-41 tables  ·  8 analysis views  ·  42 CSV exports  ·  3.4 MB
+257 comics  ·  318 comic creators  ·  790 character relationships
+54 tables  ·  13 analysis views  ·  55 CSV exports  ·  4.7 MB
 ```
 
-**v3** is an additive enrichment release. Every v2 table keeps its columns in the
-same order and no value v2 wrote was overwritten — it just has a lot more in it:
-review scores now cover 56 works rather than 30, every series has an episode
-guide rather than five of them, and `people.nationality` is populated for the
-first time. See [What v3 added](#what-v3-added).
+**v4** resolves the dataset's outer edges: the comic titles `source_material`
+only ever named as strings are now 257 real comics with writers, artists and
+publication dates attached, characters carry a relationship graph (enemies,
+family, alternate-universe counterparts), and three of the twelve columns that
+were NULL for every row in v3 — `studios.country`, `studios.parent_company`,
+`character_details.publisher` — are now populated for some of them. See
+[What v4 added](#what-v4-added).
+
+<details>
+<summary><b>What v3 added</b> — the 17-table enrichment release this builds on</summary>
+
+Every v2 table kept its columns in the same order and no value v2 wrote was
+overwritten — it just had a lot more in it: review scores went from 30 works
+to 56, every series got an episode guide rather than five of them, and
+`people.nationality` was populated for the first time. See
+[What v3 added](#what-v3-added).
+</details>
 
 | | |
 |---|---|
@@ -33,7 +48,8 @@ first time. See [What v3 added](#what-v3-added).
 | **Format** | SQLite (`spiderman.db`) + one CSV per table + a denormalized flat CSV |
 | **Provenance** | Wikipedia, Wikidata, Box Office Mojo, Rotten Tomatoes, Metacritic, IMDb, TMDB |
 
-**Contents** — [Quickstart](#quickstart) · [What v3 added](#what-v3-added) · [Browse it interactively](#browse-it-interactively) ·
+**Contents** — [Quickstart](#quickstart) · [What v4 added](#what-v4-added) ·
+[What v3 added](#what-v3-added) · [Browse it interactively](#browse-it-interactively) ·
 [Example queries](#example-queries) ·
 [Schema](#schema) · [Read this before you count](#read-this-before-you-count) ·
 [Files](#files) · [Reproducing the build](#reproducing-the-build) ·
@@ -76,6 +92,116 @@ denormalized single-row-per-work view with studios, platforms, budget, gross and
 review averages already joined. Good for a spreadsheet or a quick notebook; use
 the database when you need the character and credit relationships.
 </details>
+
+---
+
+## What v4 added
+
+v3 filled the dataset's holes. v4 goes after its *edges* — the columns that
+named something the database had no row for. It adds **4,957 rows** from the
+same two sources v3 used, plus what the database itself already knew but had
+never cross-referenced (episode credits, comic debuts). Everything it touched
+is in `v4_provenance`, on the same terms as v3: nothing v2 or v3 wrote was
+changed except to fill a NULL, and `--check` proves it against both.
+
+```sql
+SELECT table_name, action, COUNT(*) FROM v4_provenance GROUP BY 1, 2 ORDER BY 3 DESC;
+```
+
+### Comics, resolved
+
+`source_material.comic_title` and `character_details.first_appearance_title`
+were free text — "Amazing Spider-Man #121-122", "The Amazing Spider-Man #3".
+Neither was a row, so nothing could ask which adaptations draw on Ditko-era
+issues, or who wrote the comic a character first appeared in. v4 resolves
+these citations against Wikidata's comics data:
+
+| | Before | v4 |
+|---|---|---|
+| Comics with their own row | 0 | **257** (150 from Wikidata, 107 read from a citation) |
+| `source_material` rows resolved to a comic | 0 / 142 | **76 / 142** |
+| Works with a resolved comic source | 0 / 81 | **36 / 81** |
+| Comic creators on record | 0 | **318**, 21 of them also screen-credited in this dataset |
+| Credits (writer, penciller, inker, colourist, letterer, cover artist…) | 0 | **889** |
+| Character debuts pointing at a comic row | 0 / 264 | **131 / 264** |
+
+Wikidata itemises roughly ninety of the nine hundred *Amazing Spider-Man*
+issues. A citation naming one of the rest still becomes a `comics` row —
+`origin='parsed'`, series and issue number read straight out of the citation —
+rather than being dropped or forced onto the wrong issue; it just carries no
+date, publisher or credits. Filter on `origin='wikidata'` for the ones with
+real metadata behind them.
+
+### The character graph
+
+Characters had attributes (`character_details`) but no relationships to each
+other. `character_relations` adds enemies, family, partners and
+alternate-universe counterparts as edges; `character_traits` adds the
+abilities, team memberships and physical description behind them.
+
+| | |
+|---|---|
+| Relationship edges | **790** (257 between two identities this dataset has a row for; the rest name someone Wikidata links to that this dataset does not track) |
+| Identities with at least one edge | **131 / 264** |
+| Identities with at least one trait | **141 / 264** |
+
+Where v3's identity resolver mapped several of this dataset's spellings onto
+the same Wikidata item — the four Spider-Men of the Spider-Verse films all
+reduce to one Q-id — the item's relationships are attached to whichever
+identity has the most credited spellings behind it, not copied onto all of
+them. Copying would have said, as data, that Takuya Yamashiro has Peter
+Parker's seventy-eight enemies.
+
+### The rest
+
+- **`episodes.director` / `.writer`** needed no new source at all — just
+  reading a column the database already had against another for the first
+  time. They were `; `-joined name strings over 577 rows; `episode_credits`
+  splits them and matches each name back to `people` by exact normalized
+  match: **465 / 577** episodes now have at least one addressable credit,
+  **238** of those names resolved to a person who also holds a screen credit
+  elsewhere in the dataset.
+- **`studios.country`** and **`studios.parent_company`** were two of the
+  twelve columns the [coverage section](#coverage--limitations) listed as
+  never populated. A new Wikidata resolution pass over all 104 studios and 66
+  platforms fills them for **71 / 104** and **38 / 104** studios, and fills
+  the new `studio_details` and `platform_details` tables (**74** and **51**
+  rows) with industry, HQ, founding date and — for platforms — manufacturer
+  and discontinuation date.
+- **`character_details.publisher`** — also on that fully-NULL list — needed no
+  network call of its own: it's filled for **106 / 264** identities from the
+  publisher of the comic each one debuted in, once that comic had one.
+
+### New tables
+
+Thirteen, all new — no v2 or v3 table changes shape.
+
+| Table | Rows | |
+|---|---|---|
+| `comics` | 257 | Series, issues and storylines resolved from citations |
+| `comic_creators`, `comic_credits` | 318 / 889 | Writers and artists, and who did what on which issue |
+| `comic_characters` | 460 | Which of this dataset's characters a comic issue lists |
+| `work_source_comics` | 185 | `source_material` rows linked to the comics they resolved to |
+| `character_debuts` | 131 | A character's first appearance as a comic row, not a title string |
+| `character_relations`, `character_traits` | 790 / 712 | The character graph |
+| `studio_details`, `platform_details` | 74 / 51 | Industry, HQ, founding/discontinuation dates |
+| `episode_credits` | 875 | Director/writer names split out and matched to `people` |
+| `v4_provenance`, `v4_sources` | 4,957 / 3 | What v4 touched, and where it came from |
+
+Plus five views: `v_work_comic_sources`, `v_comic_creator_profile`,
+`v_character_network`, `v_character_dossier`, `v_episode_credits`.
+
+### Verifying the compatibility claim
+
+```bash
+python3 build_db_v4.py --check
+```
+
+Builds v2+v3 on their own into a temporary directory and diffs the result
+against the v4 database: every v2 and v3 table must keep the same columns in
+the same order, every row either of them wrote must still be there with the
+same values (except NULLs v4 filled, and only on the three columns above), all
+eight earlier views must still run, and the flat CSV must keep its 42 columns.
 
 ---
 
@@ -166,7 +292,7 @@ open explorer/index.html          # or just double-click it
 ```
 
 A dependency-free static page — no server, no network calls, no build step. It
-reads `explorer/data.json` (the whole database, ~440 KB) and gives you:
+reads `explorer/data.json` (the whole database, ~920 KB) and gives you:
 
 - **Overview** — releases per year by medium, budget → worldwide gross per film,
   review scores over time, and the most-adapted characters. Every mark is
@@ -174,22 +300,29 @@ reads `explorer/data.json` (the whole database, ~440 KB) and gives you:
 - **Works / Characters / People** — sortable, filterable tables over all 81 works,
   264 characters and 581 people. Filters live in the URL, so any view is a link
   you can share, and any view downloads as CSV.
-- **Franchises / Studios / Platforms / Outlets / Comic sources / Awarding bodies /
-  Credit roles / Years** — eight dimensions the database only holds implicitly,
-  grouped out of the columns that name them: 13 franchises, 104 studios,
-  66 platforms, 36 outlets, 102 comic sources, 8 awarding bodies, 62 credit roles
-  and every year on the 1967–2026 span, each with its own page.
+- **Franchises / Studios / Platforms / Outlets / Comic sources / Comic creators /
+  Awarding bodies / Credit roles / Years** — nine dimensions the database only
+  holds implicitly, grouped out of the columns that name them, or — for comic
+  creators — read straight from a v4 table: 13 franchises, 104 studios,
+  66 platforms, 36 outlets, 102 comic sources, 318 comic creators, 8 awarding
+  bodies, 62 credit roles and every year on the 1967–2026 span, each with its
+  own page.
 - **Analysis** — how the review outlets differ on a common 0–100 scale, how
   long a comic waits before it is adapted (122 source records, median 28 years),
   which storylines the screen keeps going back to, and every award on record.
 - **Detail pages** that cross-link in every direction: a film lists its cast,
   characters, studios, platforms, comic sources, awards, competing budget
   estimates, connected works and the works it overlaps with by shared people or
-  shared characters; a character gets a release strip, its co-appearances, every
+  shared characters; a character gets a release strip, its co-appearances, its
+  Wikidata-derived relationships (enemies, family, alternate-universe
+  counterparts) with the ones this dataset also tracks as clickable links, every
   performer who has played it with the years they played it, and the credit
   spellings collapsed into it; a person gets a career strip, frequent
   collaborators, the characters they have played and when, and who else has
-  played them.
+  played them; a comic issue page shows its writer, penciller, inker, colourist
+  and letterer, the characters it puts on screen, and every adaptation that
+  cites it; a comic creator page shows their full bibliography in this dataset
+  and, where the same human also holds a screen credit, links to it.
 - **Nothing is a dead end.** Every value on screen leads somewhere: names resolve
   to their person or studio page, years to a page for that year, attributes like
   an MPAA rating or a game engine to the works sharing them, and free text the
@@ -202,13 +335,16 @@ reads `explorer/data.json` (the whole database, ~440 KB) and gives you:
   the works list filtered to that character. Where the honest answer is a
   comparison rather than a list — a review score, a gross, a runtime, a budget —
   the tile opens the ranked table with that row highlighted and the column it
-  ranked on in view. The smoke test asserts both halves: it walks 17 pages and
-  fails on any cell of data that cannot be followed, then checks every summary
-  tile on 15 more and fails on any that is inert or lands somewhere that says
+  ranked on in view. The smoke test asserts both halves — 140 checks across
+  every page the v3 and v4 layers added, including the new comic and creator
+  pages and the character graph — and fails on any cell of data that cannot be
+  followed or any summary tile that is inert or lands somewhere that says
   nothing about the number on it.
 - **Search** (press `/`) across works, characters, people, franchises, studios,
-  platforms, outlets, comic sources, awarding bodies, credit roles and years at
-  once, with a "search every column" fallback for anything the index misses.
+  platforms, outlets, comic sources, comic creators, awarding bodies, credit
+  roles and years at once, with a "search every column" fallback — which now
+  also reaches into character traits and relationships — for anything the
+  index misses.
 - **About the data** — the counting traps below, restated where you'd hit them,
   plus which figures are read from the database and which are derived in the page.
 
@@ -323,9 +459,10 @@ Read this one as a caveat, not a finding — see
 
 ## Schema
 
-41 tables, 8 views. Row counts are current as of the committed build. The 24 v2
+54 tables, 13 views. Row counts are current as of the committed build. The 24 v2
 tables below are unchanged in shape; the 17 tables v3 adds are listed under
-[What v3 added](#what-v3-added).
+[What v3 added](#what-v3-added); the 13 tables v4 adds are listed under
+[What v4 added](#what-v4-added).
 
 ```
 franchises (id, name, description)                              -- 13 rows
@@ -400,6 +537,12 @@ Prefer these over the raw tables for anything you plan to aggregate.
 | `v_character_appearances` | 801 | `work_characters` resolved to `character_identities`, keeping the actor and billing order. |
 | `v_film_economics` | 23 | Lifetime gross vs primary production budget, plus `gross_multiple`. |
 | `v_review_by_publication` | 270 | Review scores with the outlet split out from the reviewed platform. |
+
+The nine views v3 and v4 add are listed in their own sections:
+[v3's four](#what-v3-added), [v4's five](#what-v4-added). `v_character_dossier`
+and `v_work_comic_sources` are the ones most worth knowing about — one row per
+character with its abilities, teams and enemy count; one row per adaptation
+next to the specific comic it draws on.
 
 ---
 
@@ -535,20 +678,23 @@ than stored — an unresolved person is preferable to a confidently wrong one.
 | Path | Description |
 |------|-------------|
 | `spiderman.db` | SQLite database — the primary artifact |
-| `data/*.csv` | One CSV per table (41) |
+| `data/*.csv` | One CSV per table (54) |
 | `data/spiderman_all_media_flat.csv` | Denormalized one-row-per-work view (42 columns) |
 | `data_raw/movies.json` | Source research: 23 films |
 | `data_raw/games.json` | Source research: 43 games with per-platform releases |
 | `data_raw/tv.json` | Source research: 15 series, 82 episode rows |
 | `data_raw/people_external.json` | TMDB person data (367 people), consumed by the build |
 | `data_raw/v3/*.json` | Wikidata and Wikipedia enrichment, consumed by the v3 layer |
-| `build_db_v3.py` | **The build.** Runs v2, applies the v3 layer, validates, exports |
-| `v3_layer.py` | The additive v3 layer itself — every row it adds and why |
+| `data_raw/v4/*.json` | Comics, character graph and org data, consumed by the v4 layer |
+| `build_db_v4.py` | **The build.** Runs v2, applies the v3 layer then the v4 layer, validates, exports |
+| `v4_layer.py` | The additive v4 layer — comics, character graph, org detail, episode credits |
+| `build_db_v3.py` | The v3 build; still produces exactly the v2+v3 database on its own |
+| `v3_layer.py` | The additive v3 layer — every row it adds and why |
 | `build_db_v2.py` | The v2 build; still produces exactly the v2 database on its own |
 | `wdlib.py` | Cached, rate-limited Wikidata / Wikipedia / MusicBrainz access |
 | `fetch_wikidata_*.py`, `fetch_episodes.py`, `fetch_reception.py`, `fetch_summaries.py` | Optional network steps that regenerate `data_raw/v3/` |
+| `fetch_comics.py`, `fetch_character_graph.py`, `fetch_orgs.py` | Optional network steps that regenerate `data_raw/v4/` |
 | `fetch_tmdb_people.py` | Optional network step that regenerates `people_external.json` |
-| `explorer/TODO-v3.md` | What the explorer still needs in order to show the v3 data |
 | `build_db.py` | v1 build script, superseded — kept for history |
 | `AUDIT_REVIEW.md` | Historical QA audit of the v2 build; every issue listed is fixed |
 | `explorer/` | Interactive browser explorer — open `explorer/index.html` |
@@ -561,23 +707,28 @@ Every research item in `data_raw/` resolves to exactly one work: 23/23 movies,
 ## Reproducing the build
 
 ```bash
-python3 build_db_v3.py           # v2 base + the v3 enrichment layer
-python3 build_db_v3.py --check   # ... and prove v2 compatibility
+python3 build_db_v4.py           # v2 base + the v3 layer + the v4 layer
+python3 build_db_v4.py --check   # ... and prove v2 + v3 compatibility
 ```
 
-Python 3.9+, **standard library only** — no pip install, no network. `build_db_v3.py`
-runs `build_db_v2.py` unchanged and hands it `v3_layer`, which adds its rows before
-the CSVs are exported so the CSVs match the database they came from. Both stages
-validate: v2 over foreign keys, enums and export integrity, v3 over the same plus
-its own referential and scale checks. Either exiting non-zero fails the build.
+Python 3.9+, **standard library only** — no pip install, no network. `build_db_v4.py`
+runs `build_db_v2.py` unchanged and hands it `v4_layer`, which applies `v3_layer`
+and then its own rows before the CSVs are exported so the CSVs match the database
+they came from. All three stages validate: v2 over foreign keys, enums and export
+integrity; v3 over the same plus its own referential and scale checks; v4 over its
+own FK and invariant checks (a comic can't be its own series, a parsed issue must
+carry a series and number, no character is its own enemy). Either `--check` run
+exiting non-zero fails the build.
 
-`python3 build_db_v2.py` on its own still produces exactly the v2 database it always
-did — the v3 hook is inert unless `SPIDERMAN_V3_LAYER` is set, which only
-`build_db_v3.py` does.
+`python3 build_db_v3.py` on its own still produces exactly the v2+v3 database it
+always did, and `python3 build_db_v2.py` still produces exactly v2 — the layer
+hook is inert unless `SPIDERMAN_V3_LAYER` is set, which `build_db_v3.py` points at
+`v3_layer` and `build_db_v4.py` points at `v4_layer`.
 
-Both are deterministic: the v3 layer reads `data_raw/v3/*.json` written by the
-fetch scripts below, so the build itself never touches the network and rebuilding
-from a clean checkout reproduces the committed artifacts byte for byte.
+All three are deterministic: the v3 and v4 layers read `data_raw/v3/*.json` and
+`data_raw/v4/*.json` written by the fetch scripts below, so the build itself never
+touches the network and rebuilding from a clean checkout reproduces the committed
+artifacts byte for byte.
 
 The run also prints its own quality report — row counts, research match rate,
 per-table coverage, fully-NULL columns, dropped rows and every contradiction it
@@ -620,6 +771,29 @@ and 82 character identities could not be resolved to one unambiguous entity, and
 they are left alone rather than matched to a plausible-looking wrong one.
 </details>
 
+<details>
+<summary><b>Refreshing the v4 data (optional)</b></summary>
+
+The v4 fetchers reuse the QIDs `fetch_wikidata_characters.py` and
+`fetch_wikidata_works.py` already resolved — no re-resolution, no extra
+requests for those — and write `data_raw/v4/*.json`. Same rules as v3: no API
+key, cached under `data_raw/.wd_cache/`, rate-limited per host.
+
+```bash
+python3 fetch_comics.py           # resolve source_material and first-appearance citations to comics
+python3 fetch_character_graph.py  # enemies, family, alternate-universe counterparts, abilities
+python3 fetch_orgs.py             # studios and platforms -> Wikidata; country, parent, manufacturer
+python3 build_db_v4.py --check
+```
+
+`fetch_comics.py` reports its match rate by kind: of the citations that name a
+comic at all, most resolve either to a specific Wikidata issue or, for the
+issues Wikidata hasn't itemised, to a series-and-number pair read out of the
+citation itself. The rest name something that turns out not to be a comic on
+Wikidata — a character, a film with the same title, a band called Venom — and
+are left unresolved rather than attached to the wrong item.
+</details>
+
 ---
 
 ## Coverage & limitations
@@ -637,9 +811,22 @@ Works with at least one enrichment row:
 | `cast_crew` | 70/81 (86%) | |
 | `work_relations` | 68/81 (83%) | |
 | `review_scores` | 56/81 (69%) | was 30/81 in v2 |
+| `work_source_comics` | 36/81 (44%) | v4 — only 73/81 have a `source_material` row to resolve in the first place |
 
 These are data-availability gaps, not build defects. The build reports each one.
 
+- **`comics` / `work_source_comics`** — 76 of 142 `source_material` citations
+  resolved to a comic, over 36 of the 73 works that had a citation at all. A
+  citation resolves either to a specific Wikidata issue or, for the ~90% of
+  *Amazing Spider-Man* issues Wikidata hasn't itemised, to a series-and-number
+  pair read out of the citation itself (`origin='parsed'`, no date or credits).
+  What's left unresolved is mostly citations that don't actually name a comic —
+  "Spider-Man comics", a film with the same title as a character, a storyline
+  described in prose rather than by issue number.
+- **`character_relations` / `character_traits`** — 131 of 264 identities have
+  at least one relationship edge, 141 at least one trait. Coverage tracks
+  `character_details` coverage almost exactly: a character with no Wikidata
+  item to begin with has no relationships to read off it either.
 - **`review_scores`** — 35 of 43 games, 17 of 23 films, 4 of 15 series. What is
   left is largely unreviewable rather than unresearched: the six films without a
   score are the three 1970s TV movies, the 1978 Toei film, and two that have not
@@ -653,14 +840,18 @@ These are data-availability gaps, not build defects. The build reports each one.
 - **Characters** — 182 of 264 identities resolve to a Wikidata item, and 157 now
   have a first comic appearance. The remaining 82 are mostly one-off credit
   spellings and background parts that have no item anywhere.
-- **Fully-NULL columns (12)** — nothing populates `work_characters.notes`,
-  `studios.country`, `studios.parent_company`, `box_office.week_start_date`,
+- **Fully-NULL columns (9, down from 12)** — nothing populates
+  `work_characters.notes`, `box_office.week_start_date`,
   `budgets.inflation_adj_2024`, `soundtracks.release_date`,
   `soundtracks.chart_peak_uk`, `work_content_ratings.country`,
-  `work_content_ratings.reason`, `work_release_dates.event`,
-  `box_office_regions.as_of` or `character_details.publisher`. The build lists them
-  on every run, so a column that quietly stops being filled cannot go unnoticed.
-  (`people.nationality` was on this list in v2 and is now filled for 382 of 581.)
+  `work_content_ratings.reason`, `work_release_dates.event` or
+  `box_office_regions.as_of`. The build lists them on every run, so a column
+  that quietly stops being filled cannot go unnoticed. (`people.nationality`
+  was on this list in v2 and is now filled for 382 of 581; v4 took
+  `studios.country`, `studios.parent_company` and `character_details.publisher`
+  off it — filled for 71/104, 38/104 and 106/264 respectively, still short of
+  every row because not every studio or debut issue resolves to a Wikidata
+  item with that fact on it.)
 - **`box_office`** — 20 rows over 17 films: 16 lifetime totals and one genuine
   4-week run (*Venom: The Last Dance*). No film has both, so a film's opening week
   and its final gross are never both known. v3 adds nine per-territory figures in
