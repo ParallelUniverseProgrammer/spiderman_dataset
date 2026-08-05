@@ -421,6 +421,9 @@ figure.chart .sub { color: var(--text-secondary); font-size: 13px; margin-top: 2
 
 .chips { display: flex; flex-wrap: wrap; gap: 4px; background: var(--surface-1); border: 1px solid var(--border); border-radius: 9px; padding: 3px; }
 
+/* Chips that cut one block of a detail page rather than a whole list view. */
+.section-filters { margin: -2px 0 12px; }
+
 .chips button {
   border: 0;
   background: none;
@@ -607,6 +610,9 @@ tbody tr.row-focus:hover { background: var(--hover); }
 .badge .dot { width: 8px; height: 8px; border-radius: 50%; flex: none; }
 
 section.block { margin-top: 22px; }
+
+/* A block a tile jumps to clears the sticky header instead of hiding under it. */
+.jump-target { scroll-margin-top: 76px; }
 
 section.block > h2 {
   margin-bottom: 9px;

@@ -45,9 +45,11 @@ const icon = (name, size = 16) =>
 /* ---------- formatting ---------- */
 
 const TYPE = {
-  movie: { label: "Movies", one: "Movie", color: "var(--series-1)" },
-  tv_show: { label: "TV series", one: "TV series", color: "var(--series-2)" },
-  game: { label: "Games", one: "Game", color: "var(--series-3)" },
+  // `noun` / `nounOne` are the forms that read correctly mid-sentence, which lower-casing
+  // the label does not give you for "TV series".
+  movie: { label: "Movies", one: "Movie", noun: "movies", nounOne: "movie", color: "var(--series-1)" },
+  tv_show: { label: "TV series", one: "TV series", noun: "TV series", nounOne: "TV series", color: "var(--series-2)" },
+  game: { label: "Games", one: "Game", noun: "games", nounOne: "game", color: "var(--series-3)" },
 };
 
 const ALIGN = {
@@ -303,6 +305,11 @@ const charKeys = (w) => w.characters.map((c) => c.identity_id);
 for (const g of publicationIndex.values()) {
   g.works = [...new Set(g.scores.map((r) => r.work))];
   summarise(g);
+  /* An outlet's mean is the mean of the scores it filed — not, as `summarise` computes for
+     every other dimension, the mean of the works' own overall means. Restore it, or the
+     outlet pages and the "how the outlets differ" chart report how good the works were
+     instead of how generously this outlet marked them. */
+  g.avg_pct = g.scores.reduce((a, r) => a + r.pct, 0) / g.n;
 }
 
 for (const g of comicIndex.values()) {
@@ -493,7 +500,7 @@ function findEverywhere(q) {
 /* Every list view's filter defaults. Absent from the URL means "this value".
    `focus` is not a filter — it is the row a link asked us to point at. */
 const DEFAULTS = {
-  works: { type: "all", franchise: "all", era: "all", genre: "all", country: "all", language: "all", sort: "year", dir: 1, q: "", focus: "" },
+  works: { type: "all", franchise: "all", era: "all", genre: "all", country: "all", language: "all", char: "all", sort: "year", dir: 1, q: "", focus: "" },
   characters: { align: "all", sort: "n_works", dir: -1, q: "", focus: "" },
   people: { kind: "all", nationality: "all", sort: "n_works", dir: -1, q: "", focus: "" },
   franchises: { sort: "n_works", dir: -1, q: "" },
@@ -598,7 +605,12 @@ function render() {
   };
   const fn = map[view] || viewOverview;
   app.appendChild(fn(id, query));
-  window.scrollTo(0, window.__keepScroll ? window.scrollY : 0);
+  /* `?at=<id>` names a block on the page being rendered — the destination of a tile whose
+     number is answered further down, or on one specific chart of another page. */
+  const at = new URLSearchParams(query).get("at");
+  const target = at ? app.querySelector("#" + CSS.escape(at)) : null;
+  if (target) target.scrollIntoView({ block: "start" });
+  else window.scrollTo(0, window.__keepScroll ? window.scrollY : 0);
   window.__keepScroll = false;
   document.title =
     (app.querySelector("h1")?.textContent || "Spider-Man dataset") + " · Spider-Man Media Dataset";
@@ -624,6 +636,37 @@ function statTile(label, value, hash, note) {
   return hash
     ? el("a", { class: "kpi", href: hash, title: note || null }, inner)
     : el("div", { class: "kpi" }, inner);
+}
+
+/* A tile is only worth a destination when the destination answers the number on it. Where
+   that answer is a block on this page — or one named chart on another — the tile jumps to
+   that block instead of dumping the reader into an unfiltered list of everything. */
+function pathHash() {
+  const { view, id } = currentRoute();
+  return "#/" + view + (id ? "/" + encodeURIComponent(id) : "");
+}
+
+const atHash = (id, base) => (base ?? pathHash()) + "?at=" + id;
+
+function anchor(id, node) {
+  node.id = id;
+  node.classList.add("jump-target");
+  return node;
+}
+
+const jumpTile = (label, value, id, note, base) => statTile(label, value, atHash(id, base), note);
+
+/* A detail page can carry more than one cut at a time — an awarding body's records filtered
+   to wins *and* its works filtered to films. So a tile or chip that changes one of them
+   rewrites only its own params and leaves the rest of the page's state alone. */
+function pageHashWith(overrides) {
+  const params = new URLSearchParams(currentRoute().query);
+  for (const [k, v] of Object.entries(overrides)) {
+    if (v == null || v === "") params.delete(k);
+    else params.set(k, String(v));
+  }
+  const q = params.toString();
+  return pathHash() + (q ? "?" + q : "");
 }
 
 const dash = () => el("span", { class: "muted", text: "—" });
@@ -658,8 +701,14 @@ const comicLink = (title, label) => {
 };
 const publicationLink = (name, label) =>
   publicationIndex.has(name) ? softLink(label ?? name, "#/publication/" + encodeURIComponent(name)) : findLink(name, label);
-const mediumLink = (type) =>
-  el("button", { class: "dot-label link-quiet", onclick: () => go("#/works?type=" + type) },
+/* `scope` keeps the medium marker in the context the reader clicked it from: inside a
+   character's own table it means "this medium, for this character", not "every movie". */
+const mediumLink = (type, scope) =>
+  el("button", {
+    class: "dot-label link-quiet",
+    title: scope ? `${TYPE[type].label} in this list` : `Every ${TYPE[type].nounOne} in the catalogue`,
+    onclick: () => go("#/works?type=" + type + (scope ? "&" + scope : "")),
+  },
     el("span", { class: "dot", style: { background: TYPE[type].color } }), TYPE[type].one);
 const alignLink = (alignment) => {
   const a = ALIGN[alignment] || ALIGN.neutral;
@@ -686,8 +735,8 @@ function dotLabel(color, label) {
 }
 
 /* The medium marker is the same everywhere, and everywhere it is a way into that medium. */
-function typeBadge(type) {
-  return mediumLink(type);
+function typeBadge(type, scope) {
+  return mediumLink(type, scope);
 }
 
 function workLink(w, extra) {
@@ -990,7 +1039,7 @@ function viewOverview() {
         ),
         statTile("Characters", String(c.characters), "#/characters"),
         statTile("People", String(c.people), "#/people"),
-        statTile("Credits", String(c.credits), "#/people"),
+        statTile("Credits", String(c.credits), "#/people?sort=credits&dir=-1"),
         statTile("Franchises", String(franchiseIndex.size), "#/franchises"),
         statTile("Studios", String(studioIndex.size), "#/studios"),
         statTile("Platforms", String(platformIndex.size), "#/platforms")
@@ -1000,7 +1049,7 @@ function viewOverview() {
 
   frag.appendChild(el("div", { class: "grid", style: { marginTop: "14px" } }, timelineChart()));
   frag.appendChild(
-    el("div", { class: "grid cols-2", style: { marginTop: "14px" } }, economicsChart(), receptionChart())
+    el("div", { class: "grid cols-2", style: { marginTop: "14px" } }, anchor("economics", economicsChart()), receptionChart())
   );
   frag.appendChild(el("div", { class: "grid", style: { marginTop: "14px" } }, topCharactersChart()));
 
@@ -1470,8 +1519,9 @@ function viewWorks(_id, query) {
   const eras = [...new Set(works.map((w) => (w.year ? Math.floor(w.year / 10) * 10 : null)).filter(Boolean))].sort();
   const exactYear = /^\d{4}$/.test(String(f.era)) && Number(f.era) % 10 !== 0;
 
-  const rows0 = works.filter((w) => {
-    if (f.type !== "all" && w.type !== f.type) return false;
+  /* Everything except the medium chips, which need to count what each chip would give you
+     under the filters already set — not the whole catalogue. */
+  const passesRest = (w) => {
     if (f.franchise !== "all" && w.franchise !== f.franchise) return false;
     if (f.era !== "all") {
       const e = Number(f.era);
@@ -1482,12 +1532,15 @@ function viewWorks(_id, query) {
     if (f.genre !== "all" && !w.genres.includes(f.genre)) return false;
     if (f.country !== "all" && !w.countries.includes(f.country)) return false;
     if (f.language !== "all" && !w.languages.includes(f.language)) return false;
+    if (f.char !== "all" && !w.characters.some((wc) => String(wc.identity_id) === String(f.char))) return false;
     if (f.q) {
       const hay = (w.title + " " + (w.franchise || "") + " " + (w.maker || "")).toLowerCase();
       if (!hay.includes(f.q.toLowerCase())) return false;
     }
     return true;
-  });
+  };
+  const scoped = works.filter(passesRest);
+  const rows0 = f.type === "all" ? scoped : scoped.filter((w) => w.type === f.type);
 
   const get = {
     year: (w) => w.year ?? 9999,
@@ -1499,11 +1552,12 @@ function viewWorks(_id, query) {
     gross: (w) => w.gross ?? -1,
     chars: (w) => w.characters.length,
     credits: (w) => w.n_credits,
+    runtime: (w) => w.movie?.runtime_minutes ?? -1,
   }[f.sort] || ((w) => w.year ?? 9999);
   const rows = sortRows(rows0, get, f.dir, (w) => w.title);
 
-  const counts = { all: works.length };
-  for (const k of Object.keys(TYPE)) counts[k] = works.filter((w) => w.type === k).length;
+  const counts = { all: scoped.length };
+  for (const k of Object.keys(TYPE)) counts[k] = scoped.filter((w) => w.type === k).length;
 
   let tableNode = null;
   const frag = document.createDocumentFragment();
@@ -1568,6 +1622,14 @@ function viewWorks(_id, query) {
             (v) => applyFilters("works", { ...f, language: v })
           )
         : null,
+      /* The one filter that comes in from elsewhere: a character page's medium tiles link
+         here scoped to that character, so the count on the tile is the list you land on. */
+      selectBox(
+        "Character",
+        [{ value: "all", label: "Any character" }, ...[...characters].sort((a, b) => a.name.localeCompare(b.name)).map((c) => ({ value: String(c.id), label: c.name }))],
+        String(f.char),
+        (v) => applyFilters("works", { ...f, char: v })
+      ),
       filterInput("Filter titles…", f.q, (v) => applyFilters("works", { ...f, q: v })),
       resetButton("works", f),
       csvButton("spiderman-works.csv", () => tableNode),
@@ -1587,7 +1649,17 @@ function viewWorks(_id, query) {
         { key: "gross", label: "Gross", num: true, cell: (w) => (w.gross == null ? el("span", { class: "muted", text: "—" }) : money(w.gross)) },
         { key: "chars", label: "Chars", num: true, cell: (w) => String(w.characters.length) },
         { key: "credits", label: "Credits", num: true, cell: (w) => String(w.n_credits) },
-      ],
+        /* Two columns that would be mostly empty in the default list, so they appear only
+           when the reader is looking at them — which is what the runtime and budget tiles
+           on a work's page ask for when they send you here. */
+        f.sort === "budget" && { key: "budget", label: "Budget", num: true, cell: (w) => (w.budget_usd ? money(w.budget_usd) : dash()) },
+        (f.type === "movie" || f.sort === "runtime") && {
+          key: "runtime",
+          label: "Runtime",
+          num: true,
+          cell: (w) => (w.movie?.runtime_minutes ? w.movie.runtime_minutes + " min" : dash()),
+        },
+      ].filter(Boolean),
       rows,
       { onSort: sortHandler("works", f, ["title", "year", "type", "franchise", "maker"]), sortKey: f.sort, dir: f.dir, scroll: true, focus: (w) => String(w.id) === String(f.focus) }
     );
@@ -1650,12 +1722,21 @@ function viewWork(id) {
   const rank = (sort) => `#/works?sort=${sort}&dir=-1&focus=${w.id}`;
   const tiles = [];
   if (w.avg_pct != null) tiles.push(statTile("Mean review score", pct(w.avg_pct) + " / 100", rank("score"), "See it ranked against every scored work"));
-  if (w.budget_usd) tiles.push(statTile("Production budget", money(w.budget_usd), "#/analysis"));
+  /* The budget→gross chart is on the overview and only plots works carrying both figures,
+     so it belongs to the tile that needs both. A budget on its own ranks against the other
+     budgets instead — the same move the score and gross tiles make. */
+  if (w.budget_usd) tiles.push(statTile("Production budget", money(w.budget_usd), rank("budget"), "See it ranked against every budget on record"));
   if (w.gross) tiles.push(statTile("Worldwide gross", money(w.gross), rank("gross"), "See it ranked against every work on record"));
-  if (w.budget_usd && w.gross) tiles.push(statTile("Return on budget", (w.gross / w.budget_usd).toFixed(2) + "×", "#/analysis"));
-  if (w.movie?.runtime_minutes) tiles.push(statTile("Runtime", w.movie.runtime_minutes + " min"));
-  if (w.tv?.episodes) tiles.push(statTile("Episodes", num(w.tv.episodes)));
-  if (w.tv?.seasons) tiles.push(statTile("Seasons", String(w.tv.seasons)));
+  if (w.budget_usd && w.gross)
+    tiles.push(statTile("Return on budget", (w.gross / w.budget_usd).toFixed(2) + "×", atHash("economics", "#/overview"), "See it on the budget → gross chart"));
+  if (w.movie?.runtime_minutes)
+    tiles.push(statTile("Runtime", w.movie.runtime_minutes + " min", `#/works?type=movie&sort=runtime&dir=-1&focus=${w.id}`, "See it ranked against every film"));
+  /* The episode guide answers both of these — but only for the series that have one, and
+     only honestly when it is not a stub of two rows against a 65-episode run. */
+  const guide = w.episodes.length >= 3 ? pageHashWith({ at: "episodes", season: null }) : null;
+  if (w.tv?.episodes)
+    tiles.push(statTile("Episodes", num(w.tv.episodes), guide, guide ? (w.episodes.length < w.tv.episodes ? w.episodes.length + " are itemised below" : "See the episode guide") : null));
+  if (w.tv?.seasons) tiles.push(statTile("Seasons", String(w.tv.seasons), guide, guide ? "See the episode guide" : null));
   if (w.characters.length) tiles.push(statTile("Characters", String(w.characters.length), rank("chars")));
   if (w.n_credits) tiles.push(statTile("Credited people", String(w.n_credits), rank("credits")));
   if (tiles.length) frag.appendChild(el("div", { class: "kpis", style: { marginTop: "16px" } }, tiles));
@@ -1691,8 +1772,10 @@ function viewWork(id) {
         el("span", { class: "names" }, [...w.platforms].sort().flatMap((n, i) => [i ? el("span", { class: "sep", text: "·" }) : null, softLink(n, "#/platform/" + encodeURIComponent(n))]).filter(Boolean))
     );
   }
-  if (w.box_office?.domestic) addFact("Domestic gross", softLink(money(w.box_office.domestic), rank("gross")));
-  if (w.box_office?.international) addFact("International gross", softLink(money(w.box_office.international), rank("gross")));
+  // Both rows link to the same ranking, which is by worldwide gross — the title says which.
+  const grossRank = { title: "Rank every work by worldwide gross" };
+  if (w.box_office?.domestic) addFact("Domestic gross", softLink(money(w.box_office.domestic), rank("gross"), grossRank));
+  if (w.box_office?.international) addFact("International gross", softLink(money(w.box_office.international), rank("gross"), grossRank));
   if (facts.length) frag.appendChild(section("Details", null, el("div", { class: "card deflist" }, facts)));
 
   /* genre / country / language — columns in the source, not tables of their own, so they
@@ -1881,10 +1964,28 @@ function viewWork(id) {
   /* episodes */
   if (w.episodes.length) {
     const hasSegments = w.episodes.some((e) => e.segments?.length > 1);
+    /* The Seasons tile lands here, so the guide has to show the seasons rather than just
+       run 65 rows together — the chips are what that number counted. */
+    const seasons = [...new Set(w.episodes.map((e) => e.season).filter((s) => s != null))].sort((a, b) => a - b);
+    const asked = Number(paramOf("season", ""));
+    const season = seasons.includes(asked) ? asked : null;
+    const eps = season == null ? w.episodes : w.episodes.filter((e) => e.season === season);
+    const toEpisodes = (s) => pageHashWith({ at: "episodes", season: s });
     frag.appendChild(
-      section(
+      anchor("episodes", section(
         "Episodes on record",
-        w.episodes.length,
+        eps.length,
+        seasons.length > 1
+          ? el("div", { class: "filters section-filters" },
+              chips(
+                [
+                  { value: "", label: "All seasons", n: w.episodes.length },
+                  ...seasons.map((s) => ({ value: String(s), label: "Season " + s, n: w.episodes.filter((e) => e.season === s).length })),
+                ],
+                season == null ? "" : String(season),
+                (v) => go(toEpisodes(v === "" ? null : v))
+              ))
+          : null,
         table(
           [
             { key: "s", label: "S", num: true, cell: (e) => (e.season == null ? "—" : String(e.season)) },
@@ -1904,13 +2005,13 @@ function viewWork(id) {
             { key: "wr", label: "Writer", wrap: true, cell: (e) => nameLinks(e.writer) },
             { key: "v", label: "US viewers", num: true, cell: (e) => (e.viewers_m == null ? dash() : e.viewers_m + "M") },
           ].filter(Boolean),
-          w.episodes,
+          eps,
           { plain: true }
         ),
         w.tv?.episodes && w.episodes.length < w.tv.episodes
           ? el("div", { class: "sub", style: { marginTop: "8px" }, text: `The series ran ${w.tv.episodes} episodes; ${w.episodes.length} are itemised here.` })
           : null
-      )
+      ))
     );
   }
 
@@ -2206,14 +2307,12 @@ function weeklyGrossChart(w) {
 
 function viewCharacters(_id, query) {
   const f = readFilters(DEFAULTS.characters, query);
-  const rows0 = characters.filter((c) => {
-    if (f.align !== "all" && c.alignment !== f.align) return false;
-    if (f.q) {
-      const hay = (c.name + " " + c.variants.join(" ")).toLowerCase();
-      if (!hay.includes(f.q.toLowerCase())) return false;
-    }
-    return true;
+  const scoped = characters.filter((c) => {
+    if (!f.q) return true;
+    const hay = (c.name + " " + c.variants.join(" ")).toLowerCase();
+    return hay.includes(f.q.toLowerCase());
   });
+  const rows0 = f.align === "all" ? scoped : scoped.filter((c) => c.alignment === f.align);
   const get = {
     name: (c) => c.name.toLowerCase(),
     align: (c) => c.alignment || "~",
@@ -2225,8 +2324,9 @@ function viewCharacters(_id, query) {
   const rows = sortRows(rows0, get, f.dir, (c) => c.name);
   const maxWorks = Math.max(...characters.map((c) => c.n_works));
 
-  const counts = { all: characters.length };
-  for (const a of Object.keys(ALIGN)) counts[a] = characters.filter((c) => c.alignment === a).length;
+  // A chip promises what clicking it gives you, so it counts inside the other filters.
+  const counts = { all: scoped.length };
+  for (const a of Object.keys(ALIGN)) counts[a] = scoped.filter((c) => c.alignment === a).length;
 
   let tableNode = null;
   const frag = document.createDocumentFragment();
@@ -2326,7 +2426,10 @@ function viewCharacter(id) {
   if (cFacts.length) frag.appendChild(section("Details", null, el("div", { class: "card deflist" }, cFacts)));
 
   const tiles = [statTile("Works", String(c.n_works), `#/characters?sort=n_works&dir=-1&focus=${c.id}`, "See it ranked against every character")];
-  for (const t of ["movie", "tv_show", "game"]) if (c.by_type[t]) tiles.push(statTile(TYPE[t].label, String(c.by_type[t]), "#/works?type=" + t));
+  // Each medium tile opens the works list scoped to this character, so the list you land on
+  // holds exactly the works the number counted.
+  for (const t of ["movie", "tv_show", "game"])
+    if (c.by_type[t]) tiles.push(statTile(TYPE[t].label, String(c.by_type[t]), `#/works?type=${t}&char=${c.id}`, `The ${TYPE[t].noun} ${c.name} is in`));
   if (c.first_media_year) tiles.push(statTile("First on screen", String(c.first_media_year), "#/year/" + c.first_media_year));
   if (c.first_year) tiles.push(statTile("First in comics", String(c.first_year), yearHas(c.first_year) ? "#/year/" + c.first_year : null));
   frag.appendChild(el("div", { class: "kpis", style: { marginTop: "16px" } }, tiles));
@@ -2373,7 +2476,7 @@ function viewCharacter(id) {
         [
           { key: "w", label: "Work", cell: (r) => workLink(r.w, false) },
           { key: "y", label: "Year", num: true, cell: (r) => yearLink(r.w.year, yr(r.w)) },
-          { key: "t", label: "Medium", cell: (r) => typeBadge(r.w.type) },
+          { key: "t", label: "Medium", cell: (r) => typeBadge(r.w.type, "char=" + c.id) },
           { key: "f", label: "Franchise", cell: (r) => (r.w.franchise ? franchiseLink(r.w.franchise, 22) : dash()) },
           { key: "as", label: "Credited as", wrap: true, cell: (r) => facetLink("credited-as", r.as) },
           { key: "a", label: "Played by", cell: (r) => (r.actor_person_id ? personLink(r.actor_person_id) : dash()) },
@@ -2488,13 +2591,12 @@ function charactersPlayedBy(person) {
 
 function viewPeople(_id, query) {
   const f = readFilters(DEFAULTS.people, query);
-  const rows0 = people.filter((p) => {
-    if (f.kind === "cast" && !p.is_actor) return false;
-    if (f.kind === "crew" && p.is_actor) return false;
+  const scoped = people.filter((p) => {
     if (f.nationality !== "all" && p.nationality !== f.nationality) return false;
     if (f.q && !p.name.toLowerCase().includes(f.q.toLowerCase())) return false;
     return true;
   });
+  const rows0 = scoped.filter((p) => (f.kind === "cast" ? p.is_actor : f.kind === "crew" ? !p.is_actor : true));
   const get = {
     name: (p) => p.name.toLowerCase(),
     roles: (p) => p.roles.join(", ").toLowerCase(),
@@ -2523,9 +2625,9 @@ function viewPeople(_id, query) {
       { class: "filters" },
       chips(
         [
-          { value: "all", label: "Everyone", n: people.length },
-          { value: "cast", label: "Performers", n: people.filter((p) => p.is_actor).length },
-          { value: "crew", label: "Crew only", n: people.filter((p) => !p.is_actor).length },
+          { value: "all", label: "Everyone", n: scoped.length },
+          { value: "cast", label: "Performers", n: scoped.filter((p) => p.is_actor).length },
+          { value: "crew", label: "Crew only", n: scoped.filter((p) => !p.is_actor).length },
         ],
         f.kind,
         (v) => applyFilters("people", { ...f, kind: v })
@@ -2620,7 +2722,14 @@ function viewPerson(id) {
       { class: "kpis", style: { marginTop: "16px" } },
       statTile("Works", String(p.n_works), `#/people?sort=n_works&dir=-1&focus=${p.id}`, "See it ranked against everyone"),
       statTile("Credits", String(p.credits.length), `#/people?sort=credits&dir=-1&focus=${p.id}`),
-      p.years.length ? statTile("Active", p.years[0] === p.years[p.years.length - 1] ? String(p.years[0]) : p.years[0] + "–" + p.years[p.years.length - 1], "#/year/" + p.years[0]) : null
+      p.years.length
+        ? statTile(
+            "Active",
+            p.years[0] === p.years[p.years.length - 1] ? String(p.years[0]) : p.years[0] + "–" + p.years[p.years.length - 1],
+            "#/year/" + p.years[0],
+            p.years.length > 1 ? "Opens " + p.years[0] + ", their first catalogued year" : null
+          )
+        : null
     )
   );
 
@@ -3112,6 +3221,34 @@ function worksOfTable(list, { showFranchise = true } = {}) {
   );
 }
 
+/* Reads one of the query params a detail page understands. Detail pages have no filter
+   state of their own, so a param here only ever comes from a tile or a chip on the page. */
+const paramOf = (key, fallback = "all") => new URLSearchParams(currentRoute().query).get(key) || fallback;
+
+/* The block every dimension page ends on: the works behind its numbers.
+   The medium tiles above it point *here* rather than at the catalogue-wide works list, so
+   what a tile counted is exactly what the reader lands on — and the chips widen it back out
+   without leaving the page. `?at=works` is what the tiles scroll to, `?type=` is the cut. */
+function worksSection(title, rows, { workOf = (r) => r, render = worksOfTable, id = "works", note = null } = {}) {
+  const kinds = ["movie", "tv_show", "game"].filter((k) => rows.some((r) => workOf(r).type === k));
+  const asked = paramOf("type");
+  const type = kinds.includes(asked) ? asked : "all";
+  const shown = type === "all" ? rows : rows.filter((r) => workOf(r).type === type);
+  const head =
+    kinds.length > 1
+      ? el("div", { class: "filters section-filters" },
+          chips(
+            [
+              { value: "all", label: "All", n: rows.length },
+              ...kinds.map((k) => ({ value: k, label: TYPE[k].label, n: rows.filter((r) => workOf(r).type === k).length, color: TYPE[k].color })),
+            ],
+            type,
+            (v) => go(pageHashWith({ at: id, type: v === "all" ? null : v }))
+          ))
+      : null;
+  return anchor(id, section(title, shown.length, head, render(shown), note));
+}
+
 /* "Who and what else is in these works" — the same tally, whatever the grouping was. */
 function tallySection(title, list, extract, hashFor, { max = 30, unit = "work", label = (k) => k } = {}) {
   const counts = new Map();
@@ -3135,14 +3272,21 @@ function tallySection(title, list, extract, hashFor, { max = 30, unit = "work", 
 const creditedPeople = (w) => [...new Set([...w.cast, ...w.crew].map((c) => c.person_id))];
 const personName = (id) => personById.get(id)?.name || "—";
 
-function dimensionTiles(g, extras = []) {
+/* Every one of these numbers is answered by the works block further down the page, so each
+   tile scrolls to it — the medium tiles with that medium already selected. `works` names the
+   block; a page whose works block is called something else passes its own id. */
+function dimensionTiles(g, extras = [], { at = "works", label = "works", score = null } = {}) {
   const kinds = ["movie", "tv_show", "game"].filter((k) => g.by_type[k]);
-  const tiles = [statTile("Works", String(g.n_works))];
+  const to = (type) => pageHashWith({ at, type: type || null });
+  const tiles = [statTile("Works", String(g.n_works), to(), "See the " + label)];
   // Only break down by medium when there is actually more than one — otherwise the
   // breakdown tile just repeats the total.
-  if (kinds.length > 1) for (const k of kinds) tiles.push(statTile(TYPE[k].label, String(g.by_type[k])));
-  if (g.gross) tiles.push(statTile("Combined gross", money(g.gross)));
-  if (g.avg_pct != null) tiles.push(statTile("Mean score", pct(g.avg_pct) + " / 100"));
+  if (kinds.length > 1)
+    for (const k of kinds) tiles.push(statTile(TYPE[k].label, String(g.by_type[k]), to(k), `Just the ${TYPE[k].noun}`));
+  if (g.gross) tiles.push(statTile("Combined gross", money(g.gross), to(), "The works it adds up"));
+  // An outlet's mean averages the scores it filed, not the works — so it lands on those.
+  if (g.avg_pct != null)
+    tiles.push(statTile("Mean score", pct(g.avg_pct) + " / 100", score?.hash || to(), score?.note || "The works it averages"));
   return el("div", { class: "kpis", style: { marginTop: "16px" } }, tiles, extras);
 }
 
@@ -3160,7 +3304,7 @@ function viewFranchise(name) {
         onPick: (e) => go("#/work/" + e.work.id),
       }))
   );
-  frag.appendChild(section("Works", g.n_works, worksOfTable(g.works, { showFranchise: false })));
+  frag.appendChild(worksSection("Works", g.works, { render: (list) => worksOfTable(list, { showFranchise: false }) }));
 
   const inside = new Set(g.works.map((w) => w.id));
   const links = [];
@@ -3218,7 +3362,7 @@ function viewStudio(name) {
   const frag = document.createDocumentFragment();
   frag.append(...dimensionHead(g, "Studio", "studios", "All studios", el("span", { text: [...g.roles].sort().join(" · ") })));
   frag.appendChild(dimensionTiles(g));
-  frag.appendChild(section("Works", g.n_works, worksOfTable(g.works)));
+  frag.appendChild(worksSection("Works", g.works));
 
   frag.appendChild(
     tallySection("Frequent co-credits", g.works, (w) => w.studios.map((st) => st.name).filter((n) => n !== g.name), (n) => "#/studio/" + encodeURIComponent(n), { max: 24 })
@@ -3240,10 +3384,13 @@ function viewPlatform(name) {
   if (!g) return el("div", { class: "empty-state", text: "Unknown platform." });
   const frag = document.createDocumentFragment();
   frag.append(...dimensionHead(g, "Platform", "platforms", "All platforms"));
+  /* A platform's works are all games, so the medium breakdown never applies and every tile
+     is answered by one block: the release table, which carries the dates and the scores. */
+  const toReleases = pageHashWith({ at: "releases" });
   const extras = [];
-  if (g.avg_metacritic != null) extras.push(statTile("Mean Metacritic", String(Math.round(g.avg_metacritic))));
-  if (g.releases.length) extras.push(statTile("Release rows", String(g.releases.length)));
-  frag.appendChild(dimensionTiles(g, extras));
+  if (g.avg_metacritic != null) extras.push(statTile("Mean Metacritic", String(Math.round(g.avg_metacritic)), toReleases, "The scores it averages"));
+  if (g.releases.length) extras.push(statTile("Release rows", String(g.releases.length), toReleases, "One row per dated release"));
+  frag.appendChild(dimensionTiles(g, extras, { at: "releases", label: "games" }));
 
   const scored = g.releases.filter((r) => r.metacritic != null);
   if (scored.length >= 3) {
@@ -3265,9 +3412,10 @@ function viewPlatform(name) {
     );
   }
 
+  const gamesOnly = g.works.filter((w) => !g.releases.some((r) => r.work === w));
   if (g.releases.length) {
     frag.appendChild(
-      section(
+      anchor("releases", section(
         "Releases",
         g.releases.length,
         table(
@@ -3281,13 +3429,17 @@ function viewPlatform(name) {
           ],
           [...g.releases].sort((a, b) => String(a.date || "9").localeCompare(String(b.date || "9"))),
           { plain: true }
-        )
-      )
+        ),
+        gamesOnly.length
+          ? el("div", { class: "sub", style: { marginTop: "8px" }, text: `${gamesOnly.length} more game${gamesOnly.length === 1 ? " is" : "s are"} listed on this platform without a dated release row — they follow below.` })
+          : null
+      ))
     );
   }
-  const gamesOnly = g.works.filter((w) => !g.releases.some((r) => r.work === w));
   if (gamesOnly.length) {
-    frag.appendChild(section("Also listed on this platform", gamesOnly.length, worksOfTable(gamesOnly)));
+    const more = section("Also listed on this platform", gamesOnly.length, worksOfTable(gamesOnly));
+    // With no release table above it, this block is the one every tile is pointing at.
+    frag.appendChild(g.releases.length ? more : anchor("releases", more));
   }
 
   const houses = new Map();
@@ -3392,12 +3544,19 @@ function viewPublication(name) {
   if (!g) return el("div", { class: "empty-state", text: "Unknown outlet." });
   const frag = document.createDocumentFragment();
   frag.append(...dimensionHead(g, "Outlet", "publications", "All outlets"));
+  /* Two blocks answer this page: the scores it filed, and the works those scores are on.
+     "Mean score" and the medium breakdown come from `dimensionTiles`, so the extras here are
+     only what is true of the scores themselves. */
+  const toScores = pageHashWith({ at: "scores" });
   frag.appendChild(
-    dimensionTiles(g, [
-      statTile("Scores on record", String(g.n)),
-      statTile("Mean score", pct(g.avg_pct) + " / 100"),
-      statTile("Range", `${Math.round(g.lo)}–${Math.round(g.hi)}`),
-    ])
+    dimensionTiles(
+      g,
+      [
+        statTile("Scores on record", String(g.n), toScores, "Every score it filed"),
+        statTile("Range", `${Math.round(g.lo)}–${Math.round(g.hi)}`, toScores, "Lowest and highest it gave"),
+      ],
+      { label: "works it scored", score: { hash: toScores, note: "The scores it averages" } }
+    )
   );
 
   const scored = [...g.scores].sort((a, b) => b.pct - a.pct);
@@ -3422,7 +3581,7 @@ function viewPublication(name) {
   }
 
   frag.appendChild(
-    section(
+    anchor("scores", section(
       "Scores",
       g.scores.length,
       table(
@@ -3439,9 +3598,9 @@ function viewPublication(name) {
         { plain: true }
       ),
       el("div", { class: "sub", style: { marginTop: "8px" }, text: "“Against the mean” is this outlet's score minus the average of every normalized score the work carries — how far out of step this outlet was on that title." })
-    )
+    ))
   );
-  frag.appendChild(section("Works scored", g.n_works, worksOfTable(g.works)));
+  frag.appendChild(worksSection("Works scored", g.works));
   return frag;
 }
 
@@ -3454,26 +3613,26 @@ function viewComic(title) {
   frag.appendChild(
     dimensionTiles(g, [
       g.writer ? statTile("Credited to", g.writer.length > 24 ? g.writer.slice(0, 23) + "…" : g.writer, findHash(g.writer)) : null,
-      lags.length ? statTile("First adapted after", Math.min(...lags) + " yrs", "#/analysis") : null,
-    ].filter(Boolean))
+      lags.length ? statTile("First adapted after", Math.min(...lags) + " yrs", atHash("adaptation-lag", "#/analysis"), "See it on the comic-to-screen chart") : null,
+    ].filter(Boolean), { label: "adaptations" })
   );
   frag.appendChild(
-    section(
-      "Adapted by",
-      g.uses.length,
-      table(
-        [
-          { key: "w", label: "Work", cell: (u) => workLink(u.work, false) },
-          { key: "y", label: "Released", num: true, cell: (u) => yearLink(u.work.year, yr(u.work)) },
-          { key: "m", label: "Medium", cell: (u) => typeBadge(u.work.type) },
-          { key: "i", label: "Issues cited", wrap: true, cell: (u) => (u.issues ? findLink(u.issues) : dash()) },
-          { key: "a", label: "Arc", wrap: true, cell: (u) => (u.arc ? findLink(u.arc) : dash()) },
-          { key: "l", label: "Wait", num: true, cell: (u) => (u.year && u.work.year ? `${u.work.year - u.year} yrs` : dash()) },
-        ],
-        [...g.uses].sort((a, b) => (a.work.year ?? 9999) - (b.work.year ?? 9999)),
-        { plain: true }
-      )
-    )
+    worksSection("Adapted by", g.uses, {
+      workOf: (u) => u.work,
+      render: (uses) =>
+        table(
+          [
+            { key: "w", label: "Work", cell: (u) => workLink(u.work, false) },
+            { key: "y", label: "Released", num: true, cell: (u) => yearLink(u.work.year, yr(u.work)) },
+            { key: "m", label: "Medium", cell: (u) => typeBadge(u.work.type) },
+            { key: "i", label: "Issues cited", wrap: true, cell: (u) => (u.issues ? findLink(u.issues) : dash()) },
+            { key: "a", label: "Arc", wrap: true, cell: (u) => (u.arc ? findLink(u.arc) : dash()) },
+            { key: "l", label: "Wait", num: true, cell: (u) => (u.year && u.work.year ? `${u.work.year - u.year} yrs` : dash()) },
+          ],
+          [...uses].sort((a, b) => (a.work.year ?? 9999) - (b.work.year ?? 9999)),
+          { plain: true }
+        ),
+    })
   );
 
   /* Characters this storyline puts on screen — the readers' route from a comic to a face. */
@@ -3497,16 +3656,31 @@ function viewAward(name) {
   if (!g) return el("div", { class: "empty-state", text: "Unknown awarding body." });
   const frag = document.createDocumentFragment();
   frag.append(...dimensionHead(g, "Awarding body", "awards", "All awarding bodies"));
+  /* The two result tiles cut the record table rather than sitting inert: the number on the
+     tile and the number of rows you land on are the same number. */
+  const toRecords = (result) => pageHashWith({ at: "records", result: result || null });
   frag.appendChild(
     dimensionTiles(g, [
-      statTile("Won", String(g.won)),
-      statTile("Nominated, did not win", String(g.nominated)),
-    ])
+      statTile("Won", String(g.won), toRecords("won"), "Just the wins"),
+      statTile("Nominated, did not win", String(g.nominated), toRecords("nominated"), "Just the nominations"),
+    ], { label: "works it recognised" })
   );
+  const result = ["won", "nominated"].includes(paramOf("result")) ? paramOf("result") : "all";
+  const shownRows = result === "all" ? g.rows : g.rows.filter((a) => (result === "won" ? a.result === "won" : a.result !== "won"));
   frag.appendChild(
-    section(
+    anchor("records", section(
       "Every record",
-      g.rows.length,
+      shownRows.length,
+      el("div", { class: "filters section-filters" },
+        chips(
+          [
+            { value: "all", label: "All", n: g.rows.length },
+            { value: "won", label: "Won", n: g.won },
+            { value: "nominated", label: "Nominated", n: g.nominated },
+          ],
+          result,
+          (v) => go(toRecords(v === "all" ? null : v))
+        )),
       table(
         [
           { key: "y", label: "Year", num: true, cell: (a) => yearLink(a.year) },
@@ -3515,13 +3689,13 @@ function viewAward(name) {
           { key: "r", label: "Result", cell: (a) => (a.result === "won" ? el("strong", { text: "Won" }) : el("span", { class: "muted", text: "Nominated" })) },
           { key: "p", label: "Recipient", cell: (a) => (a.person_id ? personLink(a.person_id) : dash()) },
         ],
-        [...g.rows].sort((a, b) => (a.year ?? 0) - (b.year ?? 0)),
+        [...shownRows].sort((a, b) => (a.year ?? 0) - (b.year ?? 0)),
         { plain: true }
       )
-    )
+    ))
   );
   frag.appendChild(section("Categories", g.categories.length, el("div", { class: "chip-list" }, g.categories.map((c) => dimChip(c, findHash(c))))));
-  frag.appendChild(section("Works recognised", g.n_works, worksOfTable(g.works)));
+  frag.appendChild(worksSection("Works recognised", g.works));
   return frag;
 }
 
@@ -3530,7 +3704,13 @@ function viewRole(name) {
   if (!g) return el("div", { class: "empty-state", text: "Unknown role." });
   const frag = document.createDocumentFragment();
   frag.append(...dimensionHead(g, "Credit role", "roles", "All credit roles"));
-  frag.appendChild(dimensionTiles(g, [statTile("People", String(g.n_people)), statTile("Credits", String(g.credits.length))]));
+  const toHolders = pageHashWith({ at: "holders" });
+  frag.appendChild(
+    dimensionTiles(g, [
+      statTile("People", String(g.n_people), toHolders, "Everyone who holds it"),
+      statTile("Credits", String(g.credits.length), toHolders, "Counted once per person per work"),
+    ], { label: "works with this credit" })
+  );
 
   const byPerson = new Map();
   for (const c of g.credits) {
@@ -3561,7 +3741,7 @@ function viewRole(name) {
   }
 
   frag.appendChild(
-    section(
+    anchor("holders", section(
       "Everyone credited as " + g.name,
       holders.length,
       table(
@@ -3573,10 +3753,14 @@ function viewRole(name) {
         ],
         holders,
         { plain: true }
-      )
-    )
+      ),
+      /* Both the People and the Credits tiles land here, and they are different numbers —
+         say which is which rather than leaving the reader to reconcile them. */
+      el("div", { class: "sub", style: { marginTop: "8px" },
+        text: `${g.credits.length} credit row${g.credits.length === 1 ? "" : "s"} in the source name this role, held by ${g.n_people} ${g.n_people === 1 ? "person" : "people"} across ${g.n_works} work${g.n_works === 1 ? "" : "s"} — a person credited on three works accounts for three of them.` })
+    ))
   );
-  frag.appendChild(section("Works with this credit", g.n_works, worksOfTable(g.works)));
+  frag.appendChild(worksSection("Works with this credit", g.works));
   return frag;
 }
 
@@ -3609,30 +3793,32 @@ function viewYear(raw) {
     )
   );
 
+  /* Every one of these numbers is listed in full further down this page, so the tiles jump
+     there rather than to the catalogue-wide list of platforms, awards or comics. */
   const tiles = [];
-  if (b.works.length) tiles.push(statTile("Released", String(b.works.length), `#/works?era=${y}`));
-  if (b.debuts.length) tiles.push(statTile("Characters first seen", String(b.debuts.length), "#/characters?sort=first_media_year&dir=1"));
-  if (b.releases.length) tiles.push(statTile("Game releases", String(b.releases.length), "#/platforms"));
-  if (b.awards.length) tiles.push(statTile("Award records", String(b.awards.length), "#/awards"));
-  if (b.comics.length) tiles.push(statTile("Comics later adapted", String(b.comics.length), "#/comics"));
-  if (b.born.length) tiles.push(statTile("People born", String(b.born.length), "#/people?sort=first&dir=1"));
+  if (b.works.length) tiles.push(statTile("Released", String(b.works.length), `#/works?era=${y}`, "Filter the works list to " + y));
+  if (b.debuts.length) tiles.push(jumpTile("Characters first seen", String(b.debuts.length), "y-debuts"));
+  if (b.releases.length) tiles.push(jumpTile("Game releases", String(b.releases.length), "y-releases"));
+  if (b.awards.length) tiles.push(jumpTile("Award records", String(b.awards.length), "y-awards"));
+  if (b.comics.length) tiles.push(jumpTile("Comics later adapted", String(b.comics.length), "y-comics"));
+  if (b.born.length) tiles.push(jumpTile("People born", String(b.born.length), "y-born"));
   if (tiles.length) frag.appendChild(el("div", { class: "kpis", style: { marginTop: "16px" } }, tiles));
 
   if (b.works.length) frag.appendChild(section("Released this year", b.works.length, worksOfTable(b.works)));
 
   if (b.debuts.length) {
     frag.appendChild(
-      section(
+      anchor("y-debuts", section(
         "First appeared on screen this year",
         b.debuts.length,
         el("div", { class: "chip-list" }, b.debuts.sort((a, c) => c.n_works - a.n_works).map((c) => charChip({ identity_id: c.id, name: c.name, alignment: c.alignment })))
-      )
+      ))
     );
   }
 
   if (b.releases.length) {
     frag.appendChild(
-      section(
+      anchor("y-releases", section(
         "Game releases dated this year",
         b.releases.length,
         table(
@@ -3648,13 +3834,13 @@ function viewYear(raw) {
           [...b.releases].sort((a, c) => String(a.date).localeCompare(String(c.date))),
           { plain: true }
         )
-      )
+      ))
     );
   }
 
   if (b.awards.length) {
     frag.appendChild(
-      section(
+      anchor("y-awards", section(
         "Awards decided this year",
         b.awards.length,
         table(
@@ -3668,13 +3854,13 @@ function viewYear(raw) {
           b.awards,
           { plain: true }
         )
-      )
+      ))
     );
   }
 
   if (b.comics.length) {
     frag.appendChild(
-      section(
+      anchor("y-comics", section(
         "Comics published this year that the screen later used",
         b.comics.length,
         table(
@@ -3687,7 +3873,7 @@ function viewYear(raw) {
           b.comics,
           { plain: true }
         )
-      )
+      ))
     );
   }
 
@@ -3696,7 +3882,7 @@ function viewYear(raw) {
       ? section(label, list.length, el("div", { class: "chip-list" }, list.map((p) => dimChip(p.name, "#/person/" + p.id, p.roles.slice(0, 2).join(", ") || null))))
       : null;
   const born = peopleStrand("People born this year", b.born);
-  if (born) frag.appendChild(born);
+  if (born) frag.appendChild(anchor("y-born", born));
   const died = peopleStrand("People who died this year", b.died);
   if (died) frag.appendChild(died);
 
@@ -3729,7 +3915,7 @@ function viewFacet(id) {
 
   /* Sideways: the other values this same column takes. */
   const siblings = [...index.entries()].filter(([v]) => v !== value).sort((a, b) => b[1].length - a[1].length || a[0].localeCompare(b[0]));
-  frag.appendChild(section("Works", g.n_works, worksOfTable(list)));
+  frag.appendChild(worksSection("Works", list));
   if (siblings.length) {
     frag.appendChild(
       section(
@@ -3966,7 +4152,7 @@ function viewAnalysis() {
   );
 
   frag.appendChild(
-    el("div", { class: "grid cols-2", style: { marginTop: "14px" } }, adaptationLagChart(), awardsChart())
+    el("div", { class: "grid cols-2", style: { marginTop: "14px" } }, anchor("adaptation-lag", adaptationLagChart()), anchor("awards-chart", awardsChart()))
   );
 
   const comics = [...comicIndex.values()].filter((c) => c.n > 1).sort((a, b) => b.n - a.n);
