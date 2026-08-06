@@ -60,8 +60,8 @@ to 56, every series got an episode guide rather than five of them, and
 ## Quickstart
 
 ```bash
-git clone https://github.com/<your-user>/spiderman-dataset.git
-cd spiderman-dataset
+git clone https://github.com/ParallelUniverseProgrammer/spiderman_dataset.git
+cd spiderman_dataset
 sqlite3 spiderman.db "SELECT title, release_year FROM media_works ORDER BY release_year LIMIT 5;"
 ```
 
@@ -883,7 +883,7 @@ These are data-availability gaps, not build defects. The build reports each one.
 Suggested citation:
 
 ```
-Spider-Man Media Dataset, https://github.com/<your-user>/spiderman-dataset,
+Spider-Man Media Dataset, https://github.com/ParallelUniverseProgrammer/spiderman_dataset,
 CC BY 4.0.
 ```
 
