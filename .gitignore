@@ -6,3 +6,6 @@ __pycache__/
 # regenerable, ~180 MB, not source data. The fetchers' *output*
 # (data_raw/v3/*.json) is committed, because the build reads it offline.
 data_raw/.wd_cache/
+
+# Claude Code local session state (worktrees, etc.) — not project source.
+.claude/
