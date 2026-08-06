@@ -525,14 +525,17 @@ f.onload = async () => {
   check("a citation lists the issues behind it", !!issuesBlock, cited.comic);
   check("and each issue opens", issuesBlock && qa("#issues button.row-link").length > 0);
 
-  // The character graph: internal edges are links, external ones are honest text.
+  // The character graph: edges into the catalogue are links, edges to the second
+  // ring v5 resolved are outlined links, and anything left is honest text.
   const linked = DATA.characters.find((c) => (c.relations || []).some((r) => r.other_id) && (c.relations || []).some((r) => !r.other_id));
   await nav("#/character/" + linked.id);
   const relBlock = qa("#app section.block").find((s2) => s2.querySelector("h2")?.textContent.startsWith("Relationships"));
   check("character page has a relationships block", !!relBlock, linked.name);
-  check("in-dataset relations are clickable", relBlock.querySelectorAll("button.chip").length > 0);
-  check("out-of-dataset relations are not pretending to be",
-        relBlock.querySelectorAll("span.chip.muted").length > 0);
+  check("in-dataset relations are clickable", relBlock.querySelectorAll("button.chip:not(.outer)").length > 0);
+  const outerN = relBlock.querySelectorAll("button.chip.outer").length;
+  const mutedN = relBlock.querySelectorAll("span.chip.muted").length;
+  check("second-ring relations open the row v5 gave them", outerN > 0, outerN + " outlined");
+  check("nothing on this page is left as a bare unresolved name", mutedN === 0, mutedN + " greyed");
   const relN = Number(relBlock.querySelector("h2 .n").textContent);
   check("the relationship count matches the chips",
         relBlock.querySelectorAll(".chip").length === relN,
@@ -563,6 +566,43 @@ f.onload = async () => {
     });
     check("no tile on " + h + " points at a missing block", dead.length === 0,
           dead.map((x) => x.getAttribute("href")).join(","));
+  }
+
+  // ---- v5: performances, and the second ring ----
+  const gameWithCast = DATA.works.find((w2) => w2.type === "game" && (w2.portrayals || []).length);
+  check("a game now has a voice cast", !!gameWithCast, gameWithCast && gameWithCast.title);
+  await nav("#/work/" + gameWithCast.id);
+  const perfBlock = qa("#app section.block").find((s2) => s2.querySelector("h2")?.textContent.startsWith("Performances"));
+  check("the game page shows it", !!perfBlock && perfBlock.querySelectorAll("tbody tr").length === gameWithCast.portrayals.length,
+        perfBlock && perfBlock.querySelectorAll("tbody tr").length + " vs " + gameWithCast.portrayals.length);
+
+  const spidey = DATA.characters.find((c) => (c.portrayals || []).length > 5);
+  await nav("#/character/" + spidey.id);
+  const castBlock = qa("#app section.block").find((s2) => s2.querySelector("h2")?.textContent.startsWith("Performed by"));
+  check("a character lists everyone who has played it", !!castBlock, spidey.name);
+  check("and counts performers, not credits",
+        Number(castBlock.querySelector("h2 .n").textContent) === spidey.n_performers,
+        castBlock.querySelector("h2 .n").textContent + " vs " + spidey.n_performers);
+  const mediaSpan = new Set(spidey.portrayals.map((x) => DATA.works.find((w2) => w2.id === x.work_id).type));
+  check("the lineage crosses media", mediaSpan.size > 1, [...mediaSpan].join(","));
+
+  // A second-ring character has a page, and it leads back into the catalogue.
+  const rel2 = DATA.related_characters.find((r) => (r.back_relations || []).length > 1);
+  await nav("#/related/" + rel2.id);
+  check("a second-ring character has a page", q("#app h1")?.textContent === rel2.name, rel2.name);
+  const backBlock = qa("#app section.block").find((s2) => s2.querySelector("h2")?.textContent.startsWith("Connected to"));
+  check("and it leads back into the catalogue", !!backBlock && backBlock.querySelectorAll("button.chip").length > 0);
+  backBlock.querySelector("button.chip").click(); await wait(160);
+  check("clicking through lands on a catalogued character", w.location.hash.startsWith("#/character/"), w.location.hash);
+
+  // A performer with no `people` row still gets somewhere to land.
+  const loose = DATA.performers.find((pf) => !pf.person_id && (pf.portrayals || []).length > 1);
+  if (loose) {
+    await nav("#/performer/" + loose.id);
+    check("an uncatalogued performer has a page", q("#app h1")?.textContent === loose.name, loose.name);
+    const lb = qa("#app section.block").find((s2) => s2.querySelector("h2")?.textContent.startsWith("Performances"));
+    check("listing every role they play", !!lb && lb.querySelectorAll("tbody tr").length === loose.portrayals.length,
+          lb && lb.querySelectorAll("tbody tr").length + " vs " + loose.portrayals.length);
   }
 
   log(errs.length ? "FAIL js-errors :: " + errs.join(" | ") : "PASS no-js-errors");

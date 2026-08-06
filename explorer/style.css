@@ -687,3 +687,9 @@ footer.foot a { color: var(--text-secondary); }
   .table-wrap.scroll { max-height: none; }
   .hero-fig .value { font-size: 48px; }
 }
+
+/* A second-ring character — connected to the catalogue's cast, but never on
+   screen in it. Outlined rather than filled, so the distinction survives at a
+   glance in a list of eighty enemy chips. */
+.chip.outer { border-style: dashed; color: var(--text-secondary); }
+.chip.outer:hover { border-style: solid; color: var(--text-primary); }

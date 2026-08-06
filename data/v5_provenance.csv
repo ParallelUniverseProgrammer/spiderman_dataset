@@ -1,0 +1,2941 @@
+table_name,row_key,action,source_key
+related_characters,related:Q1002884,insert,wikidata
+related_characters,related:Q1041907,insert,wikidata
+related_characters,related:Q104833057,insert,wikidata
+related_characters,related:Q1051111,insert,wikidata
+related_characters,related:Q105605035,insert,wikidata
+related_characters,related:Q106670105,insert,wikidata
+related_characters,related:Q108923148,insert,wikidata
+related_characters,related:Q110147974,insert,wikidata
+related_characters,related:Q110486878,insert,wikidata
+related_characters,related:Q110871130,insert,wikidata
+related_characters,related:Q110917411,insert,wikidata
+related_characters,related:Q111301136,insert,wikidata
+related_characters,related:Q111309715,insert,wikidata
+related_characters,related:Q111328111,insert,wikidata
+related_characters,related:Q111328112,insert,wikidata
+related_characters,related:Q111333247,insert,wikidata
+related_characters,related:Q111333248,insert,wikidata
+related_characters,related:Q111342150,insert,wikidata
+related_characters,related:Q111342207,insert,wikidata
+related_characters,related:Q111376777,insert,wikidata
+related_characters,related:Q111376791,insert,wikidata
+related_characters,related:Q111449140,insert,wikidata
+related_characters,related:Q111658696,insert,wikidata
+related_characters,related:Q111658697,insert,wikidata
+related_characters,related:Q111722753,insert,wikidata
+related_characters,related:Q111795149,insert,wikidata
+related_characters,related:Q111910187,insert,wikidata
+related_characters,related:Q111910188,insert,wikidata
+related_characters,related:Q111951332,insert,wikidata
+related_characters,related:Q112042766,insert,wikidata
+related_characters,related:Q112110359,insert,wikidata
+related_characters,related:Q112110379,insert,wikidata
+related_characters,related:Q112110384,insert,wikidata
+related_characters,related:Q112110393,insert,wikidata
+related_characters,related:Q1130690,insert,wikidata
+related_characters,related:Q1131724,insert,wikidata
+related_characters,related:Q1136453,insert,wikidata
+related_characters,related:Q113947121,insert,wikidata
+related_characters,related:Q114005814,insert,wikidata
+related_characters,related:Q114888777,insert,wikidata
+related_characters,related:Q114889845,insert,wikidata
+related_characters,related:Q114890103,insert,wikidata
+related_characters,related:Q1149855,insert,wikidata
+related_characters,related:Q115441513,insert,wikidata
+related_characters,related:Q115533935,insert,wikidata
+related_characters,related:Q115800561,insert,wikidata
+related_characters,related:Q11680813,insert,wikidata
+related_characters,related:Q117178837,insert,wikidata
+related_characters,related:Q117178853,insert,wikidata
+related_characters,related:Q117322403,insert,wikidata
+related_characters,related:Q117322409,insert,wikidata
+related_characters,related:Q1194236,insert,wikidata
+related_characters,related:Q12305959,insert,wikidata
+related_characters,related:Q1235121,insert,wikidata
+related_characters,related:Q125253709,insert,wikidata
+related_characters,related:Q125348701,insert,wikidata
+related_characters,related:Q128452,insert,wikidata
+related_characters,related:Q128904414,insert,wikidata
+related_characters,related:Q130378413,insert,wikidata
+related_characters,related:Q1319513,insert,wikidata
+related_characters,related:Q133267296,insert,wikidata
+related_characters,related:Q133799918,insert,wikidata
+related_characters,related:Q133799925,insert,wikidata
+related_characters,related:Q133799944,insert,wikidata
+related_characters,related:Q133800008,insert,wikidata
+related_characters,related:Q1394350,insert,wikidata
+related_characters,related:Q1394575,insert,wikidata
+related_characters,related:Q1424480,insert,wikidata
+related_characters,related:Q1447249,insert,wikidata
+related_characters,related:Q14619282,insert,wikidata
+related_characters,related:Q15141703,insert,wikidata
+related_characters,related:Q152098,insert,wikidata
+related_characters,related:Q15222919,insert,wikidata
+related_characters,related:Q15229053,insert,wikidata
+related_characters,related:Q1585469,insert,wikidata
+related_characters,related:Q1607791,insert,wikidata
+related_characters,related:Q16203115,insert,wikidata
+related_characters,related:Q16253333,insert,wikidata
+related_characters,related:Q1628510,insert,wikidata
+related_characters,related:Q1638503,insert,wikidata
+related_characters,related:Q1638775,insert,wikidata
+related_characters,related:Q16619125,insert,wikidata
+related_characters,related:Q16912454,insert,wikidata
+related_characters,related:Q17019529,insert,wikidata
+related_characters,related:Q17022155,insert,wikidata
+related_characters,related:Q17033514,insert,wikidata
+related_characters,related:Q17064925,insert,wikidata
+related_characters,related:Q17066180,insert,wikidata
+related_characters,related:Q1735229,insert,wikidata
+related_characters,related:Q1748149,insert,wikidata
+related_characters,related:Q1748380,insert,wikidata
+related_characters,related:Q1771401,insert,wikidata
+related_characters,related:Q1772036,insert,wikidata
+related_characters,related:Q17986678,insert,wikidata
+related_characters,related:Q1841525,insert,wikidata
+related_characters,related:Q1861779,insert,wikidata
+related_characters,related:Q1872439,insert,wikidata
+related_characters,related:Q1908572,insert,wikidata
+related_characters,related:Q1911253,insert,wikidata
+related_characters,related:Q19364972,insert,wikidata
+related_characters,related:Q19398,insert,wikidata
+related_characters,related:Q19571310,insert,wikidata
+related_characters,related:Q1982323,insert,wikidata
+related_characters,related:Q1984020,insert,wikidata
+related_characters,related:Q19840837,insert,wikidata
+related_characters,related:Q19867627,insert,wikidata
+related_characters,related:Q19875028,insert,wikidata
+related_characters,related:Q1987662,insert,wikidata
+related_characters,related:Q19881381,insert,wikidata
+related_characters,related:Q1994866,insert,wikidata
+related_characters,related:Q1995969,insert,wikidata
+related_characters,related:Q2003141,insert,wikidata
+related_characters,related:Q2032965,insert,wikidata
+related_characters,related:Q2034529,insert,wikidata
+related_characters,related:Q20656907,insert,wikidata
+related_characters,related:Q2066394,insert,wikidata
+related_characters,related:Q2070834,insert,wikidata
+related_characters,related:Q2071256,insert,wikidata
+related_characters,related:Q2071805,insert,wikidata
+related_characters,related:Q2075745,insert,wikidata
+related_characters,related:Q2082275,insert,wikidata
+related_characters,related:Q20858389,insert,wikidata
+related_characters,related:Q208927,insert,wikidata
+related_characters,related:Q20979240,insert,wikidata
+related_characters,related:Q21188801,insert,wikidata
+related_characters,related:Q21188808,insert,wikidata
+related_characters,related:Q2267017,insert,wikidata
+related_characters,related:Q2271377,insert,wikidata
+related_characters,related:Q227710,insert,wikidata
+related_characters,related:Q2289795,insert,wikidata
+related_characters,related:Q2295556,insert,wikidata
+related_characters,related:Q2295563,insert,wikidata
+related_characters,related:Q2298077,insert,wikidata
+related_characters,related:Q2309083,insert,wikidata
+related_characters,related:Q2314770,insert,wikidata
+related_characters,related:Q2328990,insert,wikidata
+related_characters,related:Q23306601,insert,wikidata
+related_characters,related:Q23306602,insert,wikidata
+related_characters,related:Q2339160,insert,wikidata
+related_characters,related:Q2339552,insert,wikidata
+related_characters,related:Q2339776,insert,wikidata
+related_characters,related:Q2361279,insert,wikidata
+related_characters,related:Q2364510,insert,wikidata
+related_characters,related:Q2385117,insert,wikidata
+related_characters,related:Q23894967,insert,wikidata
+related_characters,related:Q2393694,insert,wikidata
+related_characters,related:Q23991129,insert,wikidata
+related_characters,related:Q23991271,insert,wikidata
+related_characters,related:Q2404595,insert,wikidata
+related_characters,related:Q24050117,insert,wikidata
+related_characters,related:Q2417914,insert,wikidata
+related_characters,related:Q2418665,insert,wikidata
+related_characters,related:Q2418760,insert,wikidata
+related_characters,related:Q2419540,insert,wikidata
+related_characters,related:Q2420335,insert,wikidata
+related_characters,related:Q24207147,insert,wikidata
+related_characters,related:Q2435970,insert,wikidata
+related_characters,related:Q2436122,insert,wikidata
+related_characters,related:Q2438411,insert,wikidata
+related_characters,related:Q2440293,insert,wikidata
+related_characters,related:Q2448071,insert,wikidata
+related_characters,related:Q2465865,insert,wikidata
+related_characters,related:Q2473486,insert,wikidata
+related_characters,related:Q2474195,insert,wikidata
+related_characters,related:Q2487192,insert,wikidata
+related_characters,related:Q2500449,insert,wikidata
+related_characters,related:Q2504688,insert,wikidata
+related_characters,related:Q2519959,insert,wikidata
+related_characters,related:Q2532716,insert,wikidata
+related_characters,related:Q2534462,insert,wikidata
+related_characters,related:Q2539445,insert,wikidata
+related_characters,related:Q2545790,insert,wikidata
+related_characters,related:Q2550236,insert,wikidata
+related_characters,related:Q2551564,insert,wikidata
+related_characters,related:Q2568977,insert,wikidata
+related_characters,related:Q2584005,insert,wikidata
+related_characters,related:Q2602677,insert,wikidata
+related_characters,related:Q2603976,insert,wikidata
+related_characters,related:Q2604725,insert,wikidata
+related_characters,related:Q2608804,insert,wikidata
+related_characters,related:Q2620643,insert,wikidata
+related_characters,related:Q2624716,insert,wikidata
+related_characters,related:Q2624726,insert,wikidata
+related_characters,related:Q2628556,insert,wikidata
+related_characters,related:Q2633496,insert,wikidata
+related_characters,related:Q2639507,insert,wikidata
+related_characters,related:Q2642022,insert,wikidata
+related_characters,related:Q2642342,insert,wikidata
+related_characters,related:Q2657400,insert,wikidata
+related_characters,related:Q2658347,insert,wikidata
+related_characters,related:Q2663969,insert,wikidata
+related_characters,related:Q2664416,insert,wikidata
+related_characters,related:Q2671468,insert,wikidata
+related_characters,related:Q2703749,insert,wikidata
+related_characters,related:Q27132943,insert,wikidata
+related_characters,related:Q2721134,insert,wikidata
+related_characters,related:Q2721152,insert,wikidata
+related_characters,related:Q2723286,insert,wikidata
+related_characters,related:Q2731643,insert,wikidata
+related_characters,related:Q2735212,insert,wikidata
+related_characters,related:Q2746596,insert,wikidata
+related_characters,related:Q2749614,insert,wikidata
+related_characters,related:Q2790757,insert,wikidata
+related_characters,related:Q27986209,insert,wikidata
+related_characters,related:Q28006858,insert,wikidata
+related_characters,related:Q2821619,insert,wikidata
+related_characters,related:Q2823008,insert,wikidata
+related_characters,related:Q2842673,insert,wikidata
+related_characters,related:Q288516,insert,wikidata
+related_characters,related:Q2886408,insert,wikidata
+related_characters,related:Q2900730,insert,wikidata
+related_characters,related:Q2906990,insert,wikidata
+related_characters,related:Q29097098,insert,wikidata
+related_characters,related:Q2915396,insert,wikidata
+related_characters,related:Q2928024,insert,wikidata
+related_characters,related:Q2962576,insert,wikidata
+related_characters,related:Q2998614,insert,wikidata
+related_characters,related:Q3008124,insert,wikidata
+related_characters,related:Q3020765,insert,wikidata
+related_characters,related:Q302534,insert,wikidata
+related_characters,related:Q3029214,insert,wikidata
+related_characters,related:Q30315324,insert,wikidata
+related_characters,related:Q3031868,insert,wikidata
+related_characters,related:Q3032140,insert,wikidata
+related_characters,related:Q3038387,insert,wikidata
+related_characters,related:Q3039224,insert,wikidata
+related_characters,related:Q3043221,insert,wikidata
+related_characters,related:Q3052324,insert,wikidata
+related_characters,related:Q30636422,insert,wikidata
+related_characters,related:Q3087835,insert,wikidata
+related_characters,related:Q3095016,insert,wikidata
+related_characters,related:Q3100198,insert,wikidata
+related_characters,related:Q3108827,insert,wikidata
+related_characters,related:Q3109952,insert,wikidata
+related_characters,related:Q3111031,insert,wikidata
+related_characters,related:Q3115851,insert,wikidata
+related_characters,related:Q3139744,insert,wikidata
+related_characters,related:Q3162643,insert,wikidata
+related_characters,related:Q3183266,insert,wikidata
+related_characters,related:Q3192657,insert,wikidata
+related_characters,related:Q3198900,insert,wikidata
+related_characters,related:Q3199922,insert,wikidata
+related_characters,related:Q322646,insert,wikidata
+related_characters,related:Q3247771,insert,wikidata
+related_characters,related:Q3259423,insert,wikidata
+related_characters,related:Q3269419,insert,wikidata
+related_characters,related:Q3281842,insert,wikidata
+related_characters,related:Q3285766,insert,wikidata
+related_characters,related:Q3293073,insert,wikidata
+related_characters,related:Q3303309,insert,wikidata
+related_characters,related:Q3336797,insert,wikidata
+related_characters,related:Q3356429,insert,wikidata
+related_characters,related:Q3440451,insert,wikidata
+related_characters,related:Q3446576,insert,wikidata
+related_characters,related:Q3480653,insert,wikidata
+related_characters,related:Q3486816,insert,wikidata
+related_characters,related:Q3488248,insert,wikidata
+related_characters,related:Q3489235,insert,wikidata
+related_characters,related:Q3492961,insert,wikidata
+related_characters,related:Q3496918,insert,wikidata
+related_characters,related:Q3498060,insert,wikidata
+related_characters,related:Q3501133,insert,wikidata
+related_characters,related:Q3503968,insert,wikidata
+related_characters,related:Q3539043,insert,wikidata
+related_characters,related:Q3543422,insert,wikidata
+related_characters,related:Q3543851,insert,wikidata
+related_characters,related:Q3544280,insert,wikidata
+related_characters,related:Q3544440,insert,wikidata
+related_characters,related:Q3544680,insert,wikidata
+related_characters,related:Q3545397,insert,wikidata
+related_characters,related:Q3545586,insert,wikidata
+related_characters,related:Q3545630,insert,wikidata
+related_characters,related:Q3545872,insert,wikidata
+related_characters,related:Q3546921,insert,wikidata
+related_characters,related:Q3550368,insert,wikidata
+related_characters,related:Q3551286,insert,wikidata
+related_characters,related:Q3570193,insert,wikidata
+related_characters,related:Q3570549,insert,wikidata
+related_characters,related:Q3576299,insert,wikidata
+related_characters,related:Q3613591,insert,wikidata
+related_characters,related:Q3658902,insert,wikidata
+related_characters,related:Q3686980,insert,wikidata
+related_characters,related:Q369515,insert,wikidata
+related_characters,related:Q3704417,insert,wikidata
+related_characters,related:Q3772700,insert,wikidata
+related_characters,related:Q3785756,insert,wikidata
+related_characters,related:Q3832323,insert,wikidata
+related_characters,related:Q3841033,insert,wikidata
+related_characters,related:Q3846693,insert,wikidata
+related_characters,related:Q3847537,insert,wikidata
+related_characters,related:Q385744,insert,wikidata
+related_characters,related:Q39052969,insert,wikidata
+related_characters,related:Q39069914,insert,wikidata
+related_characters,related:Q39071489,insert,wikidata
+related_characters,related:Q3998685,insert,wikidata
+related_characters,related:Q4003146,insert,wikidata
+related_characters,related:Q4003147,insert,wikidata
+related_characters,related:Q4003148,insert,wikidata
+related_characters,related:Q4003164,insert,wikidata
+related_characters,related:Q4003168,insert,wikidata
+related_characters,related:Q4003183,insert,wikidata
+related_characters,related:Q4003185,insert,wikidata
+related_characters,related:Q4003186,insert,wikidata
+related_characters,related:Q4009216,insert,wikidata
+related_characters,related:Q43073416,insert,wikidata
+related_characters,related:Q431125,insert,wikidata
+related_characters,related:Q431400,insert,wikidata
+related_characters,related:Q431862,insert,wikidata
+related_characters,related:Q432272,insert,wikidata
+related_characters,related:Q4353353,insert,wikidata
+related_characters,related:Q4483669,insert,wikidata
+related_characters,related:Q4691169,insert,wikidata
+related_characters,related:Q4699585,insert,wikidata
+related_characters,related:Q47302915,insert,wikidata
+related_characters,related:Q4746268,insert,wikidata
+related_characters,related:Q47471875,insert,wikidata
+related_characters,related:Q4781622,insert,wikidata
+related_characters,related:Q48412444,insert,wikidata
+related_characters,related:Q48544198,insert,wikidata
+related_characters,related:Q48739522,insert,wikidata
+related_characters,related:Q4883353,insert,wikidata
+related_characters,related:Q4889166,insert,wikidata
+related_characters,related:Q48946153,insert,wikidata
+related_characters,related:Q48947511,insert,wikidata
+related_characters,related:Q48957559,insert,wikidata
+related_characters,related:Q48958279,insert,wikidata
+related_characters,related:Q4921877,insert,wikidata
+related_characters,related:Q4928002,insert,wikidata
+related_characters,related:Q4963042,insert,wikidata
+related_characters,related:Q5032038,insert,wikidata
+related_characters,related:Q5063090,insert,wikidata
+related_characters,related:Q510450,insert,wikidata
+related_characters,related:Q5200168,insert,wikidata
+related_characters,related:Q5210033,insert,wikidata
+related_characters,related:Q5212824,insert,wikidata
+related_characters,related:Q5223578,insert,wikidata
+related_characters,related:Q52413964,insert,wikidata
+related_characters,related:Q5297058,insert,wikidata
+related_characters,related:Q5318067,insert,wikidata
+related_characters,related:Q534889,insert,wikidata
+related_characters,related:Q5350072,insert,wikidata
+related_characters,related:Q5377360,insert,wikidata
+related_characters,related:Q5388669,insert,wikidata
+related_characters,related:Q540442,insert,wikidata
+related_characters,related:Q5441790,insert,wikidata
+related_characters,related:Q5443580,insert,wikidata
+related_characters,related:Q5459730,insert,wikidata
+related_characters,related:Q5516076,insert,wikidata
+related_characters,related:Q5517781,insert,wikidata
+related_characters,related:Q55607777,insert,wikidata
+related_characters,related:Q5570029,insert,wikidata
+related_characters,related:Q55938790,insert,wikidata
+related_characters,related:Q568267,insert,wikidata
+related_characters,related:Q57013559,insert,wikidata
+related_characters,related:Q57022061,insert,wikidata
+related_characters,related:Q576524,insert,wikidata
+related_characters,related:Q577086,insert,wikidata
+related_characters,related:Q580822,insert,wikidata
+related_characters,related:Q59644,insert,wikidata
+related_characters,related:Q60002,insert,wikidata
+related_characters,related:Q60146,insert,wikidata
+related_characters,related:Q60464931,insert,wikidata
+related_characters,related:Q60464979,insert,wikidata
+related_characters,related:Q60484975,insert,wikidata
+related_characters,related:Q60549183,insert,wikidata
+related_characters,related:Q6151029,insert,wikidata
+related_characters,related:Q615226,insert,wikidata
+related_characters,related:Q616633,insert,wikidata
+related_characters,related:Q6178488,insert,wikidata
+related_characters,related:Q63761127,insert,wikidata
+related_characters,related:Q63761182,insert,wikidata
+related_characters,related:Q6404004,insert,wikidata
+related_characters,related:Q645718,insert,wikidata
+related_characters,related:Q64658380,insert,wikidata
+related_characters,related:Q647315,insert,wikidata
+related_characters,related:Q6497975,insert,wikidata
+related_characters,related:Q65117523,insert,wikidata
+related_characters,related:Q6513617,insert,wikidata
+related_characters,related:Q653898,insert,wikidata
+related_characters,related:Q654551,insert,wikidata
+related_characters,related:Q6662949,insert,wikidata
+related_characters,related:Q669916,insert,wikidata
+related_characters,related:Q672591,insert,wikidata
+related_characters,related:Q6726329,insert,wikidata
+related_characters,related:Q6726576,insert,wikidata
+related_characters,related:Q6729338,insert,wikidata
+related_characters,related:Q6746231,insert,wikidata
+related_characters,related:Q6785042,insert,wikidata
+related_characters,related:Q6818707,insert,wikidata
+related_characters,related:Q6842189,insert,wikidata
+related_characters,related:Q6904213,insert,wikidata
+related_characters,related:Q6911845,insert,wikidata
+related_characters,related:Q6979927,insert,wikidata
+related_characters,related:Q7045734,insert,wikidata
+related_characters,related:Q7053134,insert,wikidata
+related_characters,related:Q7080283,insert,wikidata
+related_characters,related:Q71067619,insert,wikidata
+related_characters,related:Q7248194,insert,wikidata
+related_characters,related:Q7292400,insert,wikidata
+related_characters,related:Q7296820,insert,wikidata
+related_characters,related:Q734861,insert,wikidata
+related_characters,related:Q73544,insert,wikidata
+related_characters,related:Q735721,insert,wikidata
+related_characters,related:Q737236,insert,wikidata
+related_characters,related:Q7372377,insert,wikidata
+related_characters,related:Q740257,insert,wikidata
+related_characters,related:Q741279,insert,wikidata
+related_characters,related:Q7487249,insert,wikidata
+related_characters,related:Q7497450,insert,wikidata
+related_characters,related:Q7562380,insert,wikidata
+related_characters,related:Q7653886,insert,wikidata
+related_characters,related:Q771054,insert,wikidata
+related_characters,related:Q773035,insert,wikidata
+related_characters,related:Q7791911,insert,wikidata
+related_characters,related:Q780488,insert,wikidata
+related_characters,related:Q7855000,insert,wikidata
+related_characters,related:Q7860164,insert,wikidata
+related_characters,related:Q7880226,insert,wikidata
+related_characters,related:Q7880273,insert,wikidata
+related_characters,related:Q7914646,insert,wikidata
+related_characters,related:Q8000827,insert,wikidata
+related_characters,related:Q8054873,insert,wikidata
+related_characters,related:Q8060735,insert,wikidata
+related_characters,related:Q8073711,insert,wikidata
+related_characters,related:Q81787,insert,wikidata
+related_characters,related:Q841372,insert,wikidata
+related_characters,related:Q849818,insert,wikidata
+related_characters,related:Q858901,insert,wikidata
+related_characters,related:Q898039,insert,wikidata
+related_characters,related:Q898201,insert,wikidata
+related_characters,related:Q910204,insert,wikidata
+related_characters,related:Q913359,insert,wikidata
+related_characters,related:Q927598,insert,wikidata
+related_characters,related:Q929273,insert,wikidata
+related_characters,related:Q929285,insert,wikidata
+related_characters,related:Q930794,insert,wikidata
+related_characters,related:Q9311511,insert,wikidata
+related_characters,related:Q936542,insert,wikidata
+related_characters,related:Q944173,insert,wikidata
+related_characters,related:Q955796,insert,wikidata
+related_characters,related:Q962140,insert,wikidata
+related_characters,related:Q96379736,insert,wikidata
+related_characters,related:Q965099,insert,wikidata
+related_characters,related:Q978851,insert,wikidata
+related_characters,related:Q98454793,insert,wikidata
+related_characters,related:Q98454800,insert,wikidata
+character_relation_targets,2:child:Darkdevil,insert,derived
+character_relation_targets,3:alternate_universe_counterpart:Ultimate Black Cat,insert,derived
+character_relation_targets,3:child:Felicity Hardy,insert,derived
+character_relation_targets,3:partner:Puma,insert,derived
+character_relation_targets,5:alternate_universe_counterpart:Captain America,insert,derived
+character_relation_targets,5:alternate_universe_counterpart:Ultimate Captain America,insert,derived
+character_relation_targets,5:enemy:Arnim Zola,insert,derived
+character_relation_targets,5:enemy:Baron Zemo,insert,derived
+character_relation_targets,5:enemy:Crossbones,insert,derived
+character_relation_targets,5:enemy:Doctor Faustus,insert,derived
+character_relation_targets,5:enemy:Hate-Monger,insert,derived
+character_relation_targets,5:enemy:Helmut Zemo,insert,derived
+character_relation_targets,5:enemy:Hydra,insert,derived
+character_relation_targets,5:enemy:Korath the Pursuer,insert,derived
+character_relation_targets,5:enemy:MODOK,insert,derived
+character_relation_targets,5:enemy:Mister Hyde,insert,derived
+character_relation_targets,5:enemy:Porcupine,insert,derived
+character_relation_targets,5:enemy:Red Skull,insert,derived
+character_relation_targets,5:enemy:Serpent Society,insert,derived
+character_relation_targets,5:enemy:Sin,insert,derived
+character_relation_targets,5:enemy:Solarr,insert,derived
+character_relation_targets,5:enemy:Viper,insert,derived
+character_relation_targets,6:child:Toxin,insert,derived
+character_relation_targets,8:alternate_universe_counterpart:Kingpin,insert,derived
+character_relation_targets,8:enemy:Bullet,insert,derived
+character_relation_targets,8:enemy:Bushwacker,insert,derived
+character_relation_targets,8:enemy:Death-Stalker,insert,derived
+character_relation_targets,8:enemy:Eel,insert,derived
+character_relation_targets,8:enemy:Enforcers,insert,derived
+character_relation_targets,8:enemy:Fancy Dan,insert,derived
+character_relation_targets,8:enemy:Gladiator,insert,derived
+character_relation_targets,8:enemy:Jester,insert,derived
+character_relation_targets,8:enemy:Mister Hyde,insert,derived
+character_relation_targets,8:enemy:Montana,insert,derived
+character_relation_targets,8:enemy:Nuke,insert,derived
+character_relation_targets,8:enemy:Owl,insert,derived
+character_relation_targets,8:enemy:Stilt-Man,insert,derived
+character_relation_targets,8:enemy:The Hand,insert,derived
+character_relation_targets,8:enemy:Turk Barrett,insert,derived
+character_relation_targets,8:father:Jack Murdock,insert,derived
+character_relation_targets,8:mother:Maggie Murdock,insert,derived
+character_relation_targets,8:partner:Claire Temple,insert,derived
+character_relation_targets,8:partner:Dakota North,insert,derived
+character_relation_targets,8:partner:Echo,insert,derived
+character_relation_targets,8:partner:Elektra,insert,derived
+character_relation_targets,8:partner:Karen Page,insert,derived
+character_relation_targets,8:partner:Moondragon,insert,derived
+character_relation_targets,8:spouse:Milla Donovan,insert,derived
+character_relation_targets,9:alternate_universe_counterpart:Doom 2099,insert,derived
+character_relation_targets,9:alternate_universe_counterpart:Ultimate Doctor Doom,insert,derived
+character_relation_targets,9:child:Kristoff Vernard,insert,derived
+character_relation_targets,9:enemy:Beyonder,insert,derived
+character_relation_targets,9:enemy:Dreadknight,insert,derived
+character_relation_targets,9:enemy:Excalibur,insert,derived
+character_relation_targets,9:enemy:Impossible Man,insert,derived
+character_relation_targets,9:enemy:Invisible Woman,insert,derived
+character_relation_targets,9:enemy:Maker,insert,derived
+character_relation_targets,9:enemy:Mephisto,insert,derived
+character_relation_targets,9:enemy:Squirrel Girl,insert,derived
+character_relation_targets,9:enemy:The Fantastic Four,insert,derived
+character_relation_targets,9:enemy:Thing,insert,derived
+character_relation_targets,9:mother:Cynthia von Doom,insert,derived
+character_relation_targets,9:partner:Morgan le Fay,insert,derived
+character_relation_targets,9:partner:Scarlet Witch,insert,derived
+character_relation_targets,11:enemy:Baron Mordo,insert,derived
+character_relation_targets,11:enemy:Dormammu,insert,derived
+character_relation_targets,11:enemy:Dweller-in-Darkness,insert,derived
+character_relation_targets,11:enemy:Gargantos,insert,derived
+character_relation_targets,11:enemy:Nightmare,insert,derived
+character_relation_targets,11:enemy:Shuma-Gorath,insert,derived
+character_relation_targets,11:enemy:Xandu,insert,derived
+character_relation_targets,11:enemy:Zom,insert,derived
+character_relation_targets,11:partner:Clea,insert,derived
+character_relation_targets,12:alternate_universe_counterpart:Ultimate Venom,insert,derived
+character_relation_targets,12:child:Carl Mach,insert,derived
+character_relation_targets,12:child:Nam,insert,derived
+character_relation_targets,12:enemy:Maker,insert,derived
+character_relation_targets,12:enemy:Toxin,insert,derived
+character_relation_targets,14:alternate_universe_counterpart:Cosmic Ghost Rider,insert,derived
+character_relation_targets,14:child:Frank Castle Jr.,insert,derived
+character_relation_targets,14:child:Lisa Barbara Castle,insert,derived
+character_relation_targets,14:enemy:Barracuda,insert,derived
+character_relation_targets,14:enemy:Bushwacker,insert,derived
+character_relation_targets,14:enemy:Damage,insert,derived
+character_relation_targets,14:enemy:Jigsaw,insert,derived
+character_relation_targets,14:enemy:Ma Gnucci,insert,derived
+character_relation_targets,14:enemy:Rapido,insert,derived
+character_relation_targets,14:enemy:Russian,insert,derived
+character_relation_targets,14:enemy:Sniper,insert,derived
+character_relation_targets,14:enemy:Thorn,insert,derived
+character_relation_targets,14:spouse:Maria Castle,insert,derived
+character_relation_targets,15:child:Normie Osborn,insert,derived
+character_relation_targets,15:partner:Menace,insert,derived
+character_relation_targets,18:alternate_universe_counterpart:Maestro,insert,derived
+character_relation_targets,18:alternate_universe_counterpart:Ultimate Hulk,insert,derived
+character_relation_targets,18:child:Hiro-Kala,insert,derived
+character_relation_targets,18:child:Lyra,insert,derived
+character_relation_targets,18:child:Skaar,insert,derived
+character_relation_targets,18:enemy:Abomination,insert,derived
+character_relation_targets,18:enemy:Absorbing Man,insert,derived
+character_relation_targets,18:enemy:Bi-Beast,insert,derived
+character_relation_targets,18:enemy:Brian Banner,insert,derived
+character_relation_targets,18:enemy:Gamma Corps,insert,derived
+character_relation_targets,18:enemy:Gardener,insert,derived
+character_relation_targets,18:enemy:Glenn Talbot,insert,derived
+character_relation_targets,18:enemy:Glob,insert,derived
+character_relation_targets,18:enemy:MODOK,insert,derived
+character_relation_targets,18:enemy:Madman,insert,derived
+character_relation_targets,18:enemy:Maestro,insert,derived
+character_relation_targets,18:enemy:Mercy,insert,derived
+character_relation_targets,18:enemy:Mister Hyde,insert,derived
+character_relation_targets,18:enemy:One Below All,insert,derived
+character_relation_targets,18:enemy:Speedfreek,insert,derived
+character_relation_targets,18:enemy:The Leader,insert,derived
+character_relation_targets,18:enemy:Thunderbolt Ross,insert,derived
+character_relation_targets,18:enemy:Tyrannus,insert,derived
+character_relation_targets,18:enemy:U-Foes,insert,derived
+character_relation_targets,18:enemy:Zzzax,insert,derived
+character_relation_targets,18:father:Brian Banner,insert,derived
+character_relation_targets,18:mother:Rebecca Banner,insert,derived
+character_relation_targets,18:spouse:Betty Ross,insert,derived
+character_relation_targets,18:spouse:Caiera,insert,derived
+character_relation_targets,19:child:Richard Fisk,insert,derived
+character_relation_targets,19:enemy:Richard Fisk,insert,derived
+character_relation_targets,19:enemy:Silvermane,insert,derived
+character_relation_targets,19:enemy:Vanessa Fisk,insert,derived
+character_relation_targets,19:spouse:Vanessa Fisk,insert,derived
+character_relation_targets,20:alternate_universe_counterpart:Ultimate Kraven,insert,derived
+character_relation_targets,20:child:Alyosha Kravinoff,insert,derived
+character_relation_targets,20:child:Ana Kravinoff,insert,derived
+character_relation_targets,20:child:Grim Hunter,insert,derived
+character_relation_targets,20:enemy:Tigra,insert,derived
+character_relation_targets,21:child:Billy Connors,insert,derived
+character_relation_targets,21:spouse:Martha Connors,insert,derived
+character_relation_targets,24:partner:Peter Parker,insert,derived
+character_relation_targets,25:enemy:Aaron Davis,insert,derived
+character_relation_targets,25:enemy:Kangaroo,insert,derived
+character_relation_targets,25:enemy:Ultimate Green Goblin,insert,derived
+character_relation_targets,27:alternate_universe_counterpart:Spider-Man,insert,derived
+character_relation_targets,27:alternate_universe_counterpart:Ultimate Spider-Man,insert,derived
+character_relation_targets,27:child:Benjamin Richard Parker,insert,derived
+character_relation_targets,27:child:Felicity Hardy,insert,derived
+character_relation_targets,27:enemy:Abner Jenkins,insert,derived
+character_relation_targets,27:enemy:Alyosha Kravinoff,insert,derived
+character_relation_targets,27:enemy:Black Tarantula,insert,derived
+character_relation_targets,27:enemy:Bloodshed,insert,derived
+character_relation_targets,27:enemy:Boomerang,insert,derived
+character_relation_targets,27:enemy:Cletus Kasady,insert,derived
+character_relation_targets,27:enemy:Doppelganger,insert,derived
+character_relation_targets,27:enemy:Enforcers,insert,derived
+character_relation_targets,27:enemy:Fancy Dan,insert,derived
+character_relation_targets,27:enemy:Frederick Foswell,insert,derived
+character_relation_targets,27:enemy:Green Goblin,insert,derived
+character_relation_targets,27:enemy:Grim Hunter,insert,derived
+character_relation_targets,27:enemy:Hitman,insert,derived
+character_relation_targets,27:enemy:Hobgoblin,insert,derived
+character_relation_targets,27:enemy:Hood,insert,derived
+character_relation_targets,27:enemy:Jackal,insert,derived
+character_relation_targets,27:enemy:Jonas Harrow,insert,derived
+character_relation_targets,27:enemy:Man Mountain Marko,insert,derived
+character_relation_targets,27:enemy:Molten Man,insert,derived
+character_relation_targets,27:enemy:Montana,insert,derived
+character_relation_targets,27:enemy:Ox,insert,derived
+character_relation_targets,27:enemy:Phil Urich,insert,derived
+character_relation_targets,27:enemy:Puma,insert,derived
+character_relation_targets,27:enemy:Richard Fisk,insert,derived
+character_relation_targets,27:enemy:Rocket Racer,insert,derived
+character_relation_targets,27:enemy:Roderick Kingsley,insert,derived
+character_relation_targets,27:enemy:Scream,insert,derived
+character_relation_targets,27:enemy:Silvermane,insert,derived
+character_relation_targets,27:enemy:Sin-Eater (comics),insert,derived
+character_relation_targets,27:enemy:Sinister Six,insert,derived
+character_relation_targets,27:enemy:Slyde,insert,derived
+character_relation_targets,27:enemy:Speed Demon,insert,derived
+character_relation_targets,27:enemy:Spot,insert,derived
+character_relation_targets,27:enemy:Stegron,insert,derived
+character_relation_targets,27:enemy:Stunner,insert,derived
+character_relation_targets,27:enemy:Swarm,insert,derived
+character_relation_targets,27:enemy:Walrus,insert,derived
+character_relation_targets,27:enemy:White Rabbit,insert,derived
+character_relation_targets,27:enemy:Will o' the Wisp,insert,derived
+character_relation_targets,27:enemy:Wraith,insert,derived
+character_relation_targets,27:partner:Carlie Cooper,insert,derived
+character_relation_targets,27:partner:Debra Whitman,insert,derived
+character_relation_targets,32:enemy:Cloak and Dagger,insert,derived
+character_relation_targets,36:alternate_universe_counterpart:Spider-Man,insert,derived
+character_relation_targets,36:alternate_universe_counterpart:Ultimate Spider-Man,insert,derived
+character_relation_targets,37:alternate_universe_counterpart:Spider-Man,insert,derived
+character_relation_targets,37:alternate_universe_counterpart:Ultimate Spider-Man,insert,derived
+character_relation_targets,38:enemy:Thunderstrike,insert,derived
+character_relation_targets,46:alternate_universe_counterpart:Old Man Logan,insert,derived
+character_relation_targets,46:alternate_universe_counterpart:Ultimate Wolverine,insert,derived
+character_relation_targets,46:alternate_universe_counterpart:Wolverine,insert,derived
+character_relation_targets,46:child:Amiko Kobayashi,insert,derived
+character_relation_targets,46:child:Daken,insert,derived
+character_relation_targets,46:child:Gabby Kinney,insert,derived
+character_relation_targets,46:child:Wild Thing,insert,derived
+character_relation_targets,46:child:X-23,insert,derived
+character_relation_targets,46:enemy:Baron Strucker,insert,derived
+character_relation_targets,46:enemy:Bloodscream,insert,derived
+character_relation_targets,46:enemy:Cyber,insert,derived
+character_relation_targets,46:enemy:Geist,insert,derived
+character_relation_targets,46:enemy:Gorgon,insert,derived
+character_relation_targets,46:enemy:Kenuichio Harada,insert,derived
+character_relation_targets,46:enemy:Lady Deathstrike,insert,derived
+character_relation_targets,46:enemy:Ogun,insert,derived
+character_relation_targets,46:enemy:Omega Red,insert,derived
+character_relation_targets,46:enemy:Professor Thorton,insert,derived
+character_relation_targets,46:enemy:Romulus,insert,derived
+character_relation_targets,46:enemy:Sabretooth,insert,derived
+character_relation_targets,46:enemy:Shingen Yashida,insert,derived
+character_relation_targets,46:enemy:Silver Samurai,insert,derived
+character_relation_targets,46:enemy:Viper,insert,derived
+character_relation_targets,46:enemy:William Stryker,insert,derived
+character_relation_targets,46:father:Thomas Logan,insert,derived
+character_relation_targets,46:partner:Domino,insert,derived
+character_relation_targets,46:partner:Elektra,insert,derived
+character_relation_targets,46:partner:Jean Grey,insert,derived
+character_relation_targets,46:partner:Mariko Yashida,insert,derived
+character_relation_targets,46:partner:Mystique,insert,derived
+character_relation_targets,46:partner:Native,insert,derived
+character_relation_targets,46:partner:Silver Fox,insert,derived
+character_relation_targets,46:partner:Yukio,insert,derived
+character_relation_targets,46:spouse:Viper,insert,derived
+character_relation_targets,63:enemy:Falcon,insert,derived
+character_relation_targets,64:alternate_universe_counterpart:Dark Beast,insert,derived
+character_relation_targets,64:alternate_universe_counterpart:Ultimate Beast,insert,derived
+character_relation_targets,64:enemy:Dark Beast,insert,derived
+character_relation_targets,64:father:Norton McCoy,insert,derived
+character_relation_targets,64:mother:Edna McCoy,insert,derived
+character_relation_targets,64:partner:Abigail Brand,insert,derived
+character_relation_targets,67:mother:Eleonore Brant,insert,derived
+character_relation_targets,69:enemy:Achebe,insert,derived
+character_relation_targets,69:enemy:Baron Macabre,insert,derived
+character_relation_targets,69:enemy:Erik Killmonger,insert,derived
+character_relation_targets,69:enemy:Kiber the Cruel,insert,derived
+character_relation_targets,69:enemy:Klaw,insert,derived
+character_relation_targets,69:enemy:Man-Ape,insert,derived
+character_relation_targets,69:enemy:Sons of the Serpent,insert,derived
+character_relation_targets,69:enemy:Zenzi,insert,derived
+character_relation_targets,70:enemy:Damon Dran,insert,derived
+character_relation_targets,70:enemy:Iron Maiden,insert,derived
+character_relation_targets,70:enemy:Red Guardian,insert,derived
+character_relation_targets,70:enemy:Yelena Belova,insert,derived
+character_relation_targets,70:partner:Bucky Barnes,insert,derived
+character_relation_targets,70:spouse:Red Guardian,insert,derived
+character_relation_targets,71:enemy:Deacon Frost,insert,derived
+character_relation_targets,71:enemy:Dracula,insert,derived
+character_relation_targets,72:child:Larry Trask,insert,derived
+character_relation_targets,72:child:Madame Sanctity,insert,derived
+character_relation_targets,72:enemy:Mystique,insert,derived
+character_relation_targets,72:enemy:X-Men,insert,derived
+character_relation_targets,77:enemy:Daken,insert,derived
+character_relation_targets,79:enemy:Deathbird,insert,derived
+character_relation_targets,79:enemy:Doomsday Man,insert,derived
+character_relation_targets,79:enemy:Hala the Accuser,insert,derived
+character_relation_targets,79:enemy:Karla Sofen,insert,derived
+character_relation_targets,79:enemy:Mystique,insert,derived
+character_relation_targets,79:enemy:Yon-Rogg,insert,derived
+character_relation_targets,79:father:Joe Danvers,insert,derived
+character_relation_targets,79:mother:Marie Danvers,insert,derived
+character_relation_targets,79:partner:Wonder Man,insert,derived
+character_relation_targets,87:alternate_universe_counterpart:Cyclops,insert,derived
+character_relation_targets,87:alternate_universe_counterpart:Ultimate Cyclops,insert,derived
+character_relation_targets,87:child:Cable,insert,derived
+character_relation_targets,87:child:Nate Grey,insert,derived
+character_relation_targets,87:child:Ruby Summers,insert,derived
+character_relation_targets,87:enemy:Mister Sinister,insert,derived
+character_relation_targets,87:enemy:Vulcan,insert,derived
+character_relation_targets,87:father:Corsair,insert,derived
+character_relation_targets,87:mother:Katherine Summers,insert,derived
+character_relation_targets,87:partner:Emma Frost,insert,derived
+character_relation_targets,87:partner:Lee Forrester,insert,derived
+character_relation_targets,87:spouse:Jean Grey,insert,derived
+character_relation_targets,87:spouse:Madelyne Pryor,insert,derived
+character_relation_targets,91:enemy:Ajax,insert,derived
+character_relation_targets,91:enemy:Madcap,insert,derived
+character_relation_targets,91:enemy:William Stryker,insert,derived
+character_relation_targets,91:spouse:Shiklah,insert,derived
+character_relation_targets,109:enemy:Emma Frost,insert,derived
+character_relation_targets,109:enemy:Empath,insert,derived
+character_relation_targets,109:partner:Cannonball,insert,derived
+character_relation_targets,109:partner:Vance Astrovik,insert,derived
+character_relation_targets,110:child:Felicity Hardy,insert,derived
+character_relation_targets,111:child:Galacta,insert,derived
+character_relation_targets,111:enemy:Beta Ray Bill,insert,derived
+character_relation_targets,111:enemy:Excalibur,insert,derived
+character_relation_targets,111:enemy:In-Betweener,insert,derived
+character_relation_targets,111:enemy:The Fantastic Four,insert,derived
+character_relation_targets,111:enemy:Uatu,insert,derived
+character_relation_targets,112:alternate_universe_counterpart:Ultimate Gambit,insert,derived
+character_relation_targets,112:enemy:Candra,insert,derived
+character_relation_targets,112:enemy:Mister Sinister,insert,derived
+character_relation_targets,112:spouse:Bella Donna,insert,derived
+character_relation_targets,116:enemy:Centurious,insert,derived
+character_relation_targets,116:enemy:Mephisto,insert,derived
+character_relation_targets,116:relative:Jennifer Kale,insert,derived
+character_relation_targets,116:relative:Noble Kale,insert,derived
+character_relation_targets,116:spouse:Roxanne Simpson,insert,derived
+character_relation_targets,117:alternate_universe_counterpart:Ultimate Green Goblin,insert,derived
+character_relation_targets,117:enemy:Kindred,insert,derived
+character_relation_targets,117:enemy:Phil Urich,insert,derived
+character_relation_targets,117:enemy:Sin-Eater (comics),insert,derived
+character_relation_targets,117:partner:Menace,insert,derived
+character_relation_targets,123:partner:Pepper Potts,insert,derived
+character_relation_targets,125:alternate_universe_counterpart:Ultimate Hawkeye,insert,derived
+character_relation_targets,125:enemy:Crossfire,insert,derived
+character_relation_targets,125:enemy:Trick Shot,insert,derived
+character_relation_targets,125:spouse:Mockingbird,insert,derived
+character_relation_targets,126:enemy:New Warriors,insert,derived
+character_relation_targets,129:enemy:Abner Jenkins,insert,derived
+character_relation_targets,129:enemy:Trapster,insert,derived
+character_relation_targets,129:enemy:Wizard,insert,derived
+character_relation_targets,129:father:Franklin Storm,insert,derived
+character_relation_targets,129:partner:Crystal,insert,derived
+character_relation_targets,129:partner:Medusa,insert,derived
+character_relation_targets,129:partner:Namorita,insert,derived
+character_relation_targets,129:partner:Nova,insert,derived
+character_relation_targets,129:spouse:Lyja,insert,derived
+character_relation_targets,132:alternate_universe_counterpart:Ultimate Iceman,insert,derived
+character_relation_targets,132:father:William Drake,insert,derived
+character_relation_targets,132:mother:Madeline Drake,insert,derived
+character_relation_targets,132:partner:Christian Frost,insert,derived
+character_relation_targets,132:partner:Mystique,insert,derived
+character_relation_targets,132:partner:Opal Tanaka,insert,derived
+character_relation_targets,135:enemy:Man Mountain Marko,insert,derived
+character_relation_targets,135:enemy:Master Khan,insert,derived
+character_relation_targets,135:enemy:Sabretooth,insert,derived
+character_relation_targets,135:enemy:Steel Serpent,insert,derived
+character_relation_targets,136:alternate_universe_counterpart:Iron Lad,insert,derived
+character_relation_targets,136:alternate_universe_counterpart:Ultimate Iron Man,insert,derived
+character_relation_targets,136:enemy:Cobalt Man,insert,derived
+character_relation_targets,136:enemy:Crimson Dynamo,insert,derived
+character_relation_targets,136:enemy:Gremlin,insert,derived
+character_relation_targets,136:enemy:Hydra,insert,derived
+character_relation_targets,136:enemy:Iron Monger,insert,derived
+character_relation_targets,136:enemy:Justin Hammer,insert,derived
+character_relation_targets,136:enemy:MODOK,insert,derived
+character_relation_targets,136:enemy:Madame Masque,insert,derived
+character_relation_targets,136:enemy:Mandarin,insert,derived
+character_relation_targets,136:enemy:Titanium Man,insert,derived
+character_relation_targets,136:enemy:Ultron,insert,derived
+character_relation_targets,136:enemy:Zeke Stane,insert,derived
+character_relation_targets,136:father:Howard Stark,insert,derived
+character_relation_targets,136:mother:Maria Stark,insert,derived
+character_relation_targets,137:spouse:Marla Madison,insert,derived
+character_relation_targets,142:partner:Randy Robertson,insert,derived
+character_relation_targets,146:enemy:Titania,insert,derived
+character_relation_targets,146:partner:Clay Quartermain,insert,derived
+character_relation_targets,146:partner:Hercules,insert,derived
+character_relation_targets,146:partner:Starfox,insert,derived
+character_relation_targets,146:partner:Wyatt Wingfoot,insert,derived
+character_relation_targets,146:relative:Bruce Banner,insert,derived
+character_relation_targets,146:relative:Skaar,insert,derived
+character_relation_targets,149:enemy:Kingpin,insert,derived
+character_relation_targets,155:enemy:Sinister Six,insert,derived
+character_relation_targets,157:enemy:Avengers,insert,derived
+character_relation_targets,157:enemy:Immortus,insert,derived
+character_relation_targets,157:enemy:Ravonna Renslayer,insert,derived
+character_relation_targets,157:enemy:Ultron,insert,derived
+character_relation_targets,157:relative:Franklin Richards,insert,derived
+character_relation_targets,157:relative:Nathaniel Richards,insert,derived
+character_relation_targets,157:relative:Valeria Richards,insert,derived
+character_relation_targets,163:alternate_universe_counterpart:Ultimate Firestar,insert,derived
+character_relation_targets,163:child:Normie Osborn,insert,derived
+character_relation_targets,163:father:Wilson Allan,insert,derived
+character_relation_targets,164:child:Agamemnon,insert,derived
+character_relation_targets,164:child:Fenris Wolf,insert,derived
+character_relation_targets,164:child:Midgard Serpent,insert,derived
+character_relation_targets,164:enemy:Avengers,insert,derived
+character_relation_targets,164:father:Laufey,insert,derived
+character_relation_targets,164:spouse:Sigyn,insert,derived
+character_relation_targets,166:child:Danielle Cage,insert,derived
+character_relation_targets,166:enemy:Chemistro,insert,derived
+character_relation_targets,166:enemy:Cottonmouth,insert,derived
+character_relation_targets,166:enemy:Diamondback,insert,derived
+character_relation_targets,166:enemy:Man Mountain Marko,insert,derived
+character_relation_targets,166:spouse:Jessica Jones,insert,derived
+character_relation_targets,171:alternate_universe_counterpart:Magneto,insert,derived
+character_relation_targets,171:alternate_universe_counterpart:Ultimate Magneto,insert,derived
+character_relation_targets,171:child:Anya Eisenhardt,insert,derived
+character_relation_targets,171:child:Joseph,insert,derived
+character_relation_targets,171:child:Magnus Lehnsherr,insert,derived
+character_relation_targets,171:child:Polaris,insert,derived
+character_relation_targets,171:child:Quicksilver,insert,derived
+character_relation_targets,171:child:Scarlet Witch,insert,derived
+character_relation_targets,171:enemy:Apocalypse,insert,derived
+character_relation_targets,171:enemy:Daisy Johnson,insert,derived
+character_relation_targets,171:enemy:Jean Grey,insert,derived
+character_relation_targets,171:enemy:Onslaught,insert,derived
+character_relation_targets,171:enemy:Red Skull,insert,derived
+character_relation_targets,171:enemy:William Stryker,insert,derived
+character_relation_targets,171:enemy:X-Men,insert,derived
+character_relation_targets,171:partner:Lee Forrester,insert,derived
+character_relation_targets,171:partner:Mystique,insert,derived
+character_relation_targets,171:spouse:Magda Lehnsherr,insert,derived
+character_relation_targets,178:child:Benjamin Richard Parker,insert,derived
+character_relation_targets,184:enemy:Flipside,insert,derived
+character_relation_targets,184:enemy:Tyler Stone,insert,derived
+character_relation_targets,184:father:Tyler Stone,insert,derived
+character_relation_targets,184:relative:Tiberius Stone,insert,derived
+character_relation_targets,187:alternate_universe_counterpart:Doom,insert,derived
+character_relation_targets,187:alternate_universe_counterpart:Maker,insert,derived
+character_relation_targets,187:child:Franklin Richards,insert,derived
+character_relation_targets,187:child:Valeria Richards,insert,derived
+character_relation_targets,187:father:Nathaniel Richards,insert,derived
+character_relation_targets,187:spouse:Invisible Woman,insert,derived
+character_relation_targets,189:enemy:Black Spectre,insert,derived
+character_relation_targets,189:enemy:Bushman,insert,derived
+character_relation_targets,189:spouse:Marlene Alraune,insert,derived
+character_relation_targets,194:alternate_universe_counterpart:Ultimate Namor,insert,derived
+character_relation_targets,194:enemy:Attuma,insert,derived
+character_relation_targets,194:enemy:Commander Kraken,insert,derived
+character_relation_targets,194:enemy:Gargantos,insert,derived
+character_relation_targets,194:enemy:Llyra,insert,derived
+character_relation_targets,194:enemy:Orka,insert,derived
+character_relation_targets,194:mother:Fen,insert,derived
+character_relation_targets,194:partner:Emma Frost,insert,derived
+character_relation_targets,194:spouse:Dorma,insert,derived
+character_relation_targets,194:spouse:Marrina Smallwood,insert,derived
+character_relation_targets,198:alternate_universe_counterpart:Nick Fury,insert,derived
+character_relation_targets,198:child:Nick Fury Jr.,insert,derived
+character_relation_targets,198:enemy:Baron Strucker,insert,derived
+character_relation_targets,200:alternate_universe_counterpart:Nightcrawler,insert,derived
+character_relation_targets,200:child:Nocturne,insert,derived
+character_relation_targets,200:enemy:Azazel,insert,derived
+character_relation_targets,200:enemy:Graydon Creed,insert,derived
+character_relation_targets,200:enemy:Mystique,insert,derived
+character_relation_targets,200:father:Azazel,insert,derived
+character_relation_targets,200:mother:Destiny,insert,derived
+character_relation_targets,200:mother:Mystique,insert,derived
+character_relation_targets,200:partner:Amanda Sefton,insert,derived
+character_relation_targets,200:partner:Cerise,insert,derived
+character_relation_targets,202:enemy:Mephisto,insert,derived
+character_relation_targets,202:enemy:Terrax,insert,derived
+character_relation_targets,202:partner:Shalla-Bal,insert,derived
+character_relation_targets,207:alternate_universe_counterpart:Eddie Brock,insert,derived
+character_relation_targets,207:alternate_universe_counterpart:Venom,insert,derived
+character_relation_targets,207:enemy:Cletus Kasady,insert,derived
+character_relation_targets,208:alternate_universe_counterpart:Spider-Man,insert,derived
+character_relation_targets,208:alternate_universe_counterpart:Ultimate Spider-Man,insert,derived
+character_relation_targets,209:child:Morgan Stark,insert,derived
+character_relation_targets,209:spouse:Tony Stark,insert,derived
+character_relation_targets,211:alternate_universe_counterpart:Colleen,insert,derived
+character_relation_targets,211:alternate_universe_counterpart:Kate Pryde,insert,derived
+character_relation_targets,211:alternate_universe_counterpart:Ultimate Kitty Pryde,insert,derived
+character_relation_targets,211:enemy:Ogun,insert,derived
+character_relation_targets,211:father:Carmen Pryde,insert,derived
+character_relation_targets,211:mother:Terri Pryde,insert,derived
+character_relation_targets,211:partner:Colossus,insert,derived
+character_relation_targets,211:partner:Pete Wisdom,insert,derived
+character_relation_targets,211:partner:Star-Lord,insert,derived
+character_relation_targets,214:alternate_universe_counterpart:Professor X,insert,derived
+character_relation_targets,214:child:Legion,insert,derived
+character_relation_targets,214:child:Xandra Neramani,insert,derived
+character_relation_targets,214:enemy:Cassandra Nova,insert,derived
+character_relation_targets,214:enemy:Juggernaut,insert,derived
+character_relation_targets,214:enemy:Pyro,insert,derived
+character_relation_targets,214:enemy:Shadow King,insert,derived
+character_relation_targets,214:father:Brian Xavier,insert,derived
+character_relation_targets,214:mother:Sharon Xavier,insert,derived
+character_relation_targets,214:partner:Amelia Voght,insert,derived
+character_relation_targets,214:partner:Gabrielle Haller,insert,derived
+character_relation_targets,214:partner:Moira MacTaggert,insert,derived
+character_relation_targets,214:spouse:Lilandra Neramani,insert,derived
+character_relation_targets,227:child:Randy Robertson,insert,derived
+character_relation_targets,229:alternate_universe_counterpart:Ultimate Rogue,insert,derived
+character_relation_targets,229:child:Magnus Lehnsherr,insert,derived
+character_relation_targets,229:enemy:Carol Danvers,insert,derived
+character_relation_targets,229:enemy:Mystique,insert,derived
+character_relation_targets,229:mother:Destiny,insert,derived
+character_relation_targets,229:mother:Mystique,insert,derived
+character_relation_targets,229:partner:Joseph,insert,derived
+character_relation_targets,231:spouse:Otto Octavius,insert,derived
+character_relation_targets,240:enemy:Nitro,insert,derived
+character_relation_targets,243:alternate_universe_counterpart:Storm,insert,derived
+character_relation_targets,243:alternate_universe_counterpart:Ultimate Storm,insert,derived
+character_relation_targets,243:enemy:Shadow King,insert,derived
+character_relation_targets,243:father:David Munroe,insert,derived
+character_relation_targets,243:mother:N'Dare,insert,derived
+character_relation_targets,243:partner:Forge,insert,derived
+character_relation_targets,245:enemy:Scott Lang,insert,derived
+character_relation_targets,246:child:Gamora,insert,derived
+character_relation_targets,246:child:Nebula,insert,derived
+character_relation_targets,246:child:Thane,insert,derived
+character_relation_targets,246:enemy:Adam Warlock,insert,derived
+character_relation_targets,246:enemy:Avengers,insert,derived
+character_relation_targets,246:enemy:Beyonder,insert,derived
+character_relation_targets,246:enemy:Drax the Destroyer,insert,derived
+character_relation_targets,246:enemy:Elders of the Universe,insert,derived
+character_relation_targets,246:enemy:Gamora,insert,derived
+character_relation_targets,246:enemy:Guardians of the Galaxy,insert,derived
+character_relation_targets,246:enemy:Kronos,insert,derived
+character_relation_targets,246:enemy:Living Tribunal,insert,derived
+character_relation_targets,246:enemy:Mar-Vell,insert,derived
+character_relation_targets,246:enemy:Phyla-Vell,insert,derived
+character_relation_targets,246:enemy:Star-Lord,insert,derived
+character_relation_targets,246:enemy:The Fantastic Four,insert,derived
+character_relation_targets,246:enemy:X-Men,insert,derived
+character_relation_targets,246:father:Mentor,insert,derived
+character_relation_targets,246:mother:Sui-San,insert,derived
+character_relation_targets,246:relative:Corvus Glaive,insert,derived
+character_relation_targets,246:relative:Ebony Maw,insert,derived
+character_relation_targets,246:relative:Gamora,insert,derived
+character_relation_targets,246:relative:Kronos,insert,derived
+character_relation_targets,246:relative:Nebula,insert,derived
+character_relation_targets,246:relative:Zuras,insert,derived
+character_relation_targets,249:alternate_universe_counterpart:King Thor,insert,derived
+character_relation_targets,249:alternate_universe_counterpart:Thor,insert,derived
+character_relation_targets,249:child:Torunn,insert,derived
+character_relation_targets,249:enemy:Absorbing Man,insert,derived
+character_relation_targets,249:enemy:Destroyer,insert,derived
+character_relation_targets,249:enemy:Ego the Living Planet,insert,derived
+character_relation_targets,249:enemy:Executioner,insert,derived
+character_relation_targets,249:enemy:Gorr the God Butcher,insert,derived
+character_relation_targets,249:enemy:Hela,insert,derived
+character_relation_targets,249:enemy:Laufey,insert,derived
+character_relation_targets,249:enemy:Lorelei,insert,derived
+character_relation_targets,249:enemy:Malekith the Accursed,insert,derived
+character_relation_targets,249:enemy:Mangog,insert,derived
+character_relation_targets,249:enemy:Midgard Serpent,insert,derived
+character_relation_targets,249:enemy:Mister Hyde,insert,derived
+character_relation_targets,249:enemy:Radioactive Man,insert,derived
+character_relation_targets,249:enemy:Seth,insert,derived
+character_relation_targets,249:enemy:Surtur,insert,derived
+character_relation_targets,249:enemy:Ulik,insert,derived
+character_relation_targets,249:enemy:Wrecker,insert,derived
+character_relation_targets,249:father:Odin,insert,derived
+character_relation_targets,249:mother:Frigga,insert,derived
+character_relation_targets,249:mother:Gaea,insert,derived
+character_relation_targets,252:enemy:X-Men,insert,derived
+character_relation_targets,258:relative:White Tiger,insert,derived
+character_relation_targets,262:enemy:Sunset Bain,insert,derived
+related_character_relations,1:partner:Storm (Ororo Munroe),insert,wikidata
+related_character_relations,1:partner:Mystique,insert,wikidata
+related_character_relations,2:partner:Scarlet Witch,insert,wikidata
+related_character_relations,2:partner:Captain Marvel / Carol Danvers,insert,wikidata
+related_character_relations,3:alternate_universe_counterpart:Frank Castle / The Punisher,insert,wikidata
+related_character_relations,4:enemy:X-Men,insert,wikidata
+related_character_relations,4:spouse:Mystique,insert,wikidata
+related_character_relations,4:child:Rogue,insert,wikidata
+related_character_relations,4:child:Nightcrawler (DS),insert,wikidata
+related_character_relations,4:partner:Mystique,insert,wikidata
+related_character_relations,5:alternate_universe_counterpart:Hulk,insert,wikidata
+related_character_relations,5:alternate_universe_counterpart:Maestro,insert,wikidata
+related_character_relations,6:enemy:Black Panther / T'Challa,insert,wikidata
+related_character_relations,7:alternate_universe_counterpart:Patrick Mulligan / Toxin,insert,wikidata
+related_character_relations,8:father:Wolverine,insert,wikidata
+related_character_relations,9:enemy:Jessica Drew / Spider-Woman,insert,wikidata
+related_character_relations,9:alternate_universe_counterpart:Daredevil,insert,wikidata
+related_character_relations,10:enemy:Peter Parker,insert,wikidata
+related_character_relations,11:enemy:Namor the Sub-Mariner,insert,wikidata
+related_character_relations,11:enemy:Doctor Strange,insert,wikidata
+related_character_relations,11:enemy:Wong,insert,wikidata
+related_character_relations,12:spouse:J. Jonah Jameson,insert,wikidata
+related_character_relations,13:spouse:David Munroe,insert,wikidata
+related_character_relations,13:child:Storm (Ororo Munroe),insert,wikidata
+related_character_relations,14:spouse:Sharon Xavier,insert,wikidata
+related_character_relations,14:child:Professor X,insert,wikidata
+related_character_relations,14:child:Cassandra Nova,insert,wikidata
+related_character_relations,15:spouse:Brian Xavier,insert,wikidata
+related_character_relations,15:child:Professor X,insert,wikidata
+related_character_relations,15:child:Cassandra Nova,insert,wikidata
+related_character_relations,16:spouse:Edna McCoy,insert,wikidata
+related_character_relations,16:child:Beast (Hank McCoy),insert,wikidata
+related_character_relations,17:spouse:Norton McCoy,insert,wikidata
+related_character_relations,17:child:Beast (Hank McCoy),insert,wikidata
+related_character_relations,18:enemy:Daredevil,insert,wikidata
+related_character_relations,19:enemy:Captain America,insert,wikidata
+related_character_relations,20:spouse:Madeline Drake,insert,wikidata
+related_character_relations,20:child:Iceman,insert,wikidata
+related_character_relations,21:spouse:William Drake,insert,wikidata
+related_character_relations,21:child:Iceman,insert,wikidata
+related_character_relations,22:spouse:N'Dare,insert,wikidata
+related_character_relations,22:child:Storm (Ororo Munroe),insert,wikidata
+related_character_relations,23:child:Star-Lord / Peter Quill,insert,wikidata
+related_character_relations,24:child:Star-Lord / Peter Quill,insert,wikidata
+related_character_relations,25:enemy:Black Widow / Natasha Romanova,insert,wikidata
+related_character_relations,25:spouse:Black Widow / Natasha Romanova,insert,wikidata
+related_character_relations,26:child:Betty Brant,insert,wikidata
+related_character_relations,27:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,28:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,30:child:Liz Allan,insert,wikidata
+related_character_relations,31:alternate_universe_counterpart:Star-Lord / Peter Quill,insert,wikidata
+related_character_relations,31:alternate_universe_counterpart:Ultimate Kitty Pryde,insert,wikidata
+related_character_relations,31:alternate_universe_counterpart:Colleen,insert,wikidata
+related_character_relations,32:alternate_universe_counterpart:Wolverine,insert,wikidata
+related_character_relations,32:alternate_universe_counterpart:Ultimate Wolverine,insert,wikidata
+related_character_relations,32:alternate_universe_counterpart:Old Man Logan,insert,wikidata
+related_character_relations,33:alternate_universe_counterpart:Magneto,insert,wikidata
+related_character_relations,34:alternate_universe_counterpart:Storm (Ororo Munroe),insert,wikidata
+related_character_relations,34:alternate_universe_counterpart:Ultimate Storm,insert,wikidata
+related_character_relations,35:spouse:Hulk,insert,wikidata
+related_character_relations,35:child:Skaar,insert,wikidata
+related_character_relations,35:child:Hiro-Kala,insert,wikidata
+related_character_relations,36:enemy:Blade,insert,wikidata
+related_character_relations,36:enemy:Apocalypse,insert,wikidata
+related_character_relations,36:spouse:Shiklah,insert,wikidata
+related_character_relations,37:partner:Star-Lord / Peter Quill,insert,wikidata
+related_character_relations,38:alternate_universe_counterpart:Thor,insert,wikidata
+related_character_relations,39:alternate_universe_counterpart:Star-Lord / Peter Quill,insert,wikidata
+related_character_relations,39:alternate_universe_counterpart:Ultimate Kitty Pryde,insert,wikidata
+related_character_relations,39:alternate_universe_counterpart:Kate Pryde,insert,wikidata
+related_character_relations,40:spouse:Frank Castle / The Punisher,insert,wikidata
+related_character_relations,40:child:Lisa Barbara Castle,insert,wikidata
+related_character_relations,40:child:Frank Castle Jr.,insert,wikidata
+related_character_relations,41:mother:Maria Castle,insert,wikidata
+related_character_relations,41:father:Frank Castle / The Punisher,insert,wikidata
+related_character_relations,42:mother:Maria Castle,insert,wikidata
+related_character_relations,42:father:Frank Castle / The Punisher,insert,wikidata
+related_character_relations,43:enemy:Doctor Doom,insert,wikidata
+related_character_relations,44:child:Namor the Sub-Mariner,insert,wikidata
+related_character_relations,45:mother:Jessica Jones,insert,wikidata
+related_character_relations,45:father:Luke Cage,insert,wikidata
+related_character_relations,46:enemy:Black Panther / T'Challa,insert,wikidata
+related_character_relations,47:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,47:enemy:Gold Goblin,insert,wikidata
+related_character_relations,48:spouse:Marie Danvers,insert,wikidata
+related_character_relations,48:child:Captain Marvel / Carol Danvers,insert,wikidata
+related_character_relations,49:spouse:Joe Danvers,insert,wikidata
+related_character_relations,49:child:Captain Marvel / Carol Danvers,insert,wikidata
+related_character_relations,50:alternate_universe_counterpart:Professor X,insert,wikidata
+related_character_relations,51:alternate_universe_counterpart:Nightcrawler (DS),insert,wikidata
+related_character_relations,52:partner:Firestar,insert,wikidata
+related_character_relations,54:enemy:Thanos,insert,wikidata
+related_character_relations,54:father:Mar-Vell,insert,wikidata
+related_character_relations,55:alternate_universe_counterpart:Patrick Mulligan / Toxin,insert,wikidata
+related_character_relations,56:enemy:Hulk,insert,wikidata
+related_character_relations,57:enemy:William Stryker,insert,wikidata
+related_character_relations,57:enemy:Magneto,insert,wikidata
+related_character_relations,57:enemy:Kenuichio Harada,insert,wikidata
+related_character_relations,57:enemy:Bolivar Trask,insert,wikidata
+related_character_relations,57:enemy:Vulcan,insert,wikidata
+related_character_relations,57:enemy:Thanos,insert,wikidata
+related_character_relations,57:enemy:Apocalypse,insert,wikidata
+related_character_relations,57:enemy:Vanisher,insert,wikidata
+related_character_relations,57:enemy:Destiny,insert,wikidata
+related_character_relations,57:enemy:Ajax,insert,wikidata
+related_character_relations,57:enemy:Mystique,insert,wikidata
+related_character_relations,57:enemy:Mister Sinister,insert,wikidata
+related_character_relations,57:enemy:Shadow King,insert,wikidata
+related_character_relations,57:enemy:Sabretooth,insert,wikidata
+related_character_relations,57:enemy:Juggernaut,insert,wikidata
+related_character_relations,58:alternate_universe_counterpart:Cyclops (Scott Summers),insert,wikidata
+related_character_relations,58:alternate_universe_counterpart:Ultimate Cyclops,insert,wikidata
+related_character_relations,59:spouse:Mentor,insert,wikidata
+related_character_relations,59:child:Thanos,insert,wikidata
+related_character_relations,59:child:Starfox,insert,wikidata
+related_character_relations,60:enemy:Surtur,insert,wikidata
+related_character_relations,60:spouse:Frigga,insert,wikidata
+related_character_relations,60:child:Thor,insert,wikidata
+related_character_relations,60:child:Loki,insert,wikidata
+related_character_relations,61:mother:Lilandra Neramani,insert,wikidata
+related_character_relations,61:father:Professor X,insert,wikidata
+related_character_relations,62:alternate_universe_counterpart:Iron Man / Tony Stark,insert,wikidata
+related_character_relations,62:alternate_universe_counterpart:Ultimate Iron Man,insert,wikidata
+related_character_relations,63:alternate_universe_counterpart:Mister Fantastic / Reed Richards,insert,wikidata
+related_character_relations,63:alternate_universe_counterpart:Maker,insert,wikidata
+related_character_relations,64:alternate_universe_counterpart:Captain America,insert,wikidata
+related_character_relations,64:alternate_universe_counterpart:Ultimate Captain America,insert,wikidata
+related_character_relations,65:alternate_universe_counterpart:Thor,insert,wikidata
+related_character_relations,65:alternate_universe_counterpart:King Thor,insert,wikidata
+related_character_relations,66:enemy:Captain Marvel / Carol Danvers,insert,wikidata
+related_character_relations,67:mother:Caiera,insert,wikidata
+related_character_relations,67:father:Hulk,insert,wikidata
+related_character_relations,68:enemy:Magneto,insert,wikidata
+related_character_relations,69:enemy:Captain America,insert,wikidata
+related_character_relations,70:child:Tyler Stone,insert,wikidata
+related_character_relations,71:alternate_universe_counterpart:Namor the Sub-Mariner,insert,wikidata
+related_character_relations,72:enemy:Doctor Doom,insert,wikidata
+related_character_relations,72:enemy:Galactus,insert,wikidata
+related_character_relations,72:enemy:Thanos,insert,wikidata
+related_character_relations,72:enemy:Ultron,insert,wikidata
+related_character_relations,72:enemy:Wizard,insert,wikidata
+related_character_relations,72:enemy:Terrax,insert,wikidata
+related_character_relations,73:enemy:Excalibur,insert,wikidata
+related_character_relations,73:enemy:Doctor Strange,insert,wikidata
+related_character_relations,74:spouse:Corsair,insert,wikidata
+related_character_relations,74:child:Cyclops (Scott Summers),insert,wikidata
+related_character_relations,74:child:Vulcan,insert,wikidata
+related_character_relations,75:enemy:Storm (Ororo Munroe),insert,wikidata
+related_character_relations,75:enemy:X-Men,insert,wikidata
+related_character_relations,75:enemy:Professor X,insert,wikidata
+related_character_relations,76:mother:Gabrielle Haller,insert,wikidata
+related_character_relations,76:father:Professor X,insert,wikidata
+related_character_relations,77:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,77:enemy:Human Torch,insert,wikidata
+related_character_relations,78:mother:Rogue,insert,wikidata
+related_character_relations,78:father:Magneto,insert,wikidata
+related_character_relations,79:enemy:Wolverine,insert,wikidata
+related_character_relations,79:enemy:Sabretooth,insert,wikidata
+related_character_relations,80:enemy:Hawkeye,insert,wikidata
+related_character_relations,81:enemy:Thor,insert,wikidata
+related_character_relations,81:enemy:Captain America,insert,wikidata
+related_character_relations,81:enemy:Daredevil,insert,wikidata
+related_character_relations,81:enemy:Hulk,insert,wikidata
+related_character_relations,82:enemy:Maker,insert,wikidata
+related_character_relations,82:alternate_universe_counterpart:Doctor Doom,insert,wikidata
+related_character_relations,82:alternate_universe_counterpart:Doom 2099,insert,wikidata
+related_character_relations,83:alternate_universe_counterpart:Hawkeye,insert,wikidata
+related_character_relations,84:spouse:Loki,insert,wikidata
+related_character_relations,85:enemy:Iron Fist,insert,wikidata
+related_character_relations,86:enemy:Spider-Punk,insert,wikidata
+related_character_relations,88:spouse:Brian Banner,insert,wikidata
+related_character_relations,88:child:Hulk,insert,wikidata
+related_character_relations,89:enemy:Thanos,insert,wikidata
+related_character_relations,89:enemy:In-Betweener,insert,wikidata
+related_character_relations,89:enemy:Ultron,insert,wikidata
+related_character_relations,90:partner:Green Goblin / Norman Osborn,insert,wikidata
+related_character_relations,90:partner:Gold Goblin,insert,wikidata
+related_character_relations,91:enemy:Blade,insert,wikidata
+related_character_relations,92:father:Magneto,insert,wikidata
+related_character_relations,92:partner:Rogue,insert,wikidata
+related_character_relations,93:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,95:enemy:Hulk,insert,wikidata
+related_character_relations,95:enemy:Domino,insert,wikidata
+related_character_relations,95:child:Betty Ross,insert,wikidata
+related_character_relations,96:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,96:father:Eddie Brock / Venom,insert,wikidata
+related_character_relations,97:father:Wolverine,insert,wikidata
+related_character_relations,99:mother:Scarlet Witch,insert,wikidata
+related_character_relations,99:father:Nightcrawler (DS),insert,wikidata
+related_character_relations,100:enemy:Frank Castle / The Punisher,insert,wikidata
+related_character_relations,101:partner:Human Torch,insert,wikidata
+related_character_relations,103:enemy:Frank Castle / The Punisher,insert,wikidata
+related_character_relations,104:enemy:Silver Surfer / Norrin Radd,insert,wikidata
+related_character_relations,104:enemy:New Warriors,insert,wikidata
+related_character_relations,104:enemy:The Fantastic Four,insert,wikidata
+related_character_relations,105:enemy:Frank Castle / The Punisher,insert,wikidata
+related_character_relations,106:spouse:Deadpool / Wade Wilson,insert,wikidata
+related_character_relations,106:spouse:Dracula,insert,wikidata
+related_character_relations,107:father:Kraven the Hunter,insert,wikidata
+related_character_relations,108:enemy:Surtur,insert,wikidata
+related_character_relations,108:enemy:Galactus,insert,wikidata
+related_character_relations,109:enemy:Frank Castle / The Punisher,insert,wikidata
+related_character_relations,110:enemy:Doctor Doom,insert,wikidata
+related_character_relations,110:enemy:Thanos,insert,wikidata
+related_character_relations,111:enemy:Firestar,insert,wikidata
+related_character_relations,111:child:Ruby Summers,insert,wikidata
+related_character_relations,111:partner:Cyclops (Scott Summers),insert,wikidata
+related_character_relations,111:partner:Namor the Sub-Mariner,insert,wikidata
+related_character_relations,111:partner:Iron Man / Tony Stark,insert,wikidata
+related_character_relations,112:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,112:father:Kraven the Hunter,insert,wikidata
+related_character_relations,113:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,114:enemy:Captain America,insert,wikidata
+related_character_relations,114:enemy:Falcon,insert,wikidata
+related_character_relations,114:enemy:Avengers,insert,wikidata
+related_character_relations,114:enemy:Magneto,insert,wikidata
+related_character_relations,114:child:Sin,insert,wikidata
+related_character_relations,115:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,115:enemy:Daredevil,insert,wikidata
+related_character_relations,116:enemy:Doctor Strange,insert,wikidata
+related_character_relations,116:relative:Clea,insert,wikidata
+related_character_relations,117:enemy:Daredevil,insert,wikidata
+related_character_relations,118:father:Magneto,insert,wikidata
+related_character_relations,119:enemy:Cable,insert,wikidata
+related_character_relations,119:enemy:Nate Grey,insert,wikidata
+related_character_relations,119:enemy:X-Men,insert,wikidata
+related_character_relations,119:enemy:Magneto,insert,wikidata
+related_character_relations,119:enemy:Dracula,insert,wikidata
+related_character_relations,120:enemy:Franklin Richards,insert,wikidata
+related_character_relations,120:enemy:Magneto,insert,wikidata
+related_character_relations,121:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,121:enemy:Kaine / Scarlet Spider,insert,wikidata
+related_character_relations,122:child:Invisible Woman,insert,wikidata
+related_character_relations,122:child:Human Torch,insert,wikidata
+related_character_relations,123:enemy:Captain America,insert,wikidata
+related_character_relations,123:enemy:Iron Man / Tony Stark,insert,wikidata
+related_character_relations,123:enemy:Hulk,insert,wikidata
+related_character_relations,125:spouse:Maggie Murdock,insert,wikidata
+related_character_relations,125:child:Daredevil,insert,wikidata
+related_character_relations,126:alternate_universe_counterpart:Liz Allan,insert,wikidata
+related_character_relations,127:enemy:Apocalypse,insert,wikidata
+related_character_relations,127:mother:Madelyne Pryor,insert,wikidata
+related_character_relations,127:father:Cyclops (Scott Summers),insert,wikidata
+related_character_relations,127:partner:Domino,insert,wikidata
+related_character_relations,128:spouse:Luke Cage,insert,wikidata
+related_character_relations,128:child:Danielle Cage,insert,wikidata
+related_character_relations,131:spouse:Namor the Sub-Mariner,insert,wikidata
+related_character_relations,132:mother:Sui-San,insert,wikidata
+related_character_relations,132:father:Mentor,insert,wikidata
+related_character_relations,133:partner:Daredevil,insert,wikidata
+related_character_relations,134:enemy:Hulk,insert,wikidata
+related_character_relations,135:partner:Human Torch,insert,wikidata
+related_character_relations,136:enemy:Hulk,insert,wikidata
+related_character_relations,136:enemy:Betty Ross,insert,wikidata
+related_character_relations,137:spouse:Jack Murdock,insert,wikidata
+related_character_relations,137:child:Daredevil,insert,wikidata
+related_character_relations,138:enemy:Frank Castle / The Punisher,insert,wikidata
+related_character_relations,139:enemy:Iron Man / Tony Stark,insert,wikidata
+related_character_relations,139:partner:Iron Man / Tony Stark,insert,wikidata
+related_character_relations,141:enemy:Professor X,insert,wikidata
+related_character_relations,142:partner:Professor X,insert,wikidata
+related_character_relations,143:enemy:Firestar,insert,wikidata
+related_character_relations,144:spouse:Katherine Summers,insert,wikidata
+related_character_relations,144:child:Cyclops (Scott Summers),insert,wikidata
+related_character_relations,144:child:Vulcan,insert,wikidata
+related_character_relations,145:spouse:Pepper Potts,insert,wikidata
+related_character_relations,145:child:Morgan Stark,insert,wikidata
+related_character_relations,146:enemy:Namor the Sub-Mariner,insert,wikidata
+related_character_relations,147:partner:Michelle Jones-Watson / MJ,insert,wikidata
+related_character_relations,147:relative:May Parker,insert,wikidata
+related_character_relations,147:alternate_universe_counterpart:Peter Parker,insert,wikidata
+related_character_relations,148:relative:Peter Parker,insert,wikidata
+related_character_relations,149:partner:Doctor Strange,insert,wikidata
+related_character_relations,149:relative:Dormammu,insert,wikidata
+related_character_relations,151:enemy:Iron Man / Tony Stark,insert,wikidata
+related_character_relations,152:enemy:Doctor Doom,insert,wikidata
+related_character_relations,152:enemy:Silver Surfer / Norrin Radd,insert,wikidata
+related_character_relations,152:enemy:Ghost Rider (Danny Ketch),insert,wikidata
+related_character_relations,153:spouse:Quicksilver,insert,wikidata
+related_character_relations,153:partner:Human Torch,insert,wikidata
+related_character_relations,154:enemy:Shriek,insert,wikidata
+related_character_relations,155:enemy:Wolverine,insert,wikidata
+related_character_relations,156:partner:Iceman,insert,wikidata
+related_character_relations,157:enemy:Doctor Strange,insert,wikidata
+related_character_relations,158:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,158:enemy:Kingpin,insert,wikidata
+related_character_relations,158:mother:Vanessa Fisk,insert,wikidata
+related_character_relations,158:father:Kingpin,insert,wikidata
+related_character_relations,159:enemy:Frank Castle / The Punisher,insert,wikidata
+related_character_relations,160:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,161:enemy:Wolverine,insert,wikidata
+related_character_relations,162:enemy:Thor,insert,wikidata
+related_character_relations,162:enemy:Hulk,insert,wikidata
+related_character_relations,162:spouse:Titania,insert,wikidata
+related_character_relations,163:enemy:Thor,insert,wikidata
+related_character_relations,164:enemy:The Fantastic Four,insert,wikidata
+related_character_relations,164:enemy:Adam Warlock,insert,wikidata
+related_character_relations,164:enemy:Avengers,insert,wikidata
+related_character_relations,164:enemy:Iron Man / Tony Stark,insert,wikidata
+related_character_relations,164:enemy:Kang the Conqueror,insert,wikidata
+related_character_relations,165:enemy:Iron Man / Tony Stark,insert,wikidata
+related_character_relations,165:child:Zeke Stane,insert,wikidata
+related_character_relations,166:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,166:enemy:Kingpin,insert,wikidata
+related_character_relations,167:enemy:Deathbird,insert,wikidata
+related_character_relations,167:spouse:Professor X,insert,wikidata
+related_character_relations,167:child:Xandra Neramani,insert,wikidata
+related_character_relations,169:enemy:Kraven the Hunter,insert,wikidata
+related_character_relations,169:enemy:Hood,insert,wikidata
+related_character_relations,170:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,172:enemy:Thanos,insert,wikidata
+related_character_relations,173:enemy:Daredevil,insert,wikidata
+related_character_relations,174:enemy:X-Men,insert,wikidata
+related_character_relations,174:enemy:Wolverine,insert,wikidata
+related_character_relations,174:enemy:Deadpool / Wade Wilson,insert,wikidata
+related_character_relations,174:enemy:Magneto,insert,wikidata
+related_character_relations,175:enemy:X-Men,insert,wikidata
+related_character_relations,175:enemy:Cyclops (Scott Summers),insert,wikidata
+related_character_relations,175:mother:Katherine Summers,insert,wikidata
+related_character_relations,175:father:Corsair,insert,wikidata
+related_character_relations,175:spouse:Deathbird,insert,wikidata
+related_character_relations,176:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,177:enemy:Apocalypse,insert,wikidata
+related_character_relations,177:enemy:Dark Beast,insert,wikidata
+related_character_relations,177:mother:Jean Grey,insert,wikidata
+related_character_relations,177:father:Cyclops (Scott Summers),insert,wikidata
+related_character_relations,178:enemy:Doctor Doom,insert,wikidata
+related_character_relations,178:enemy:Galactus,insert,wikidata
+related_character_relations,178:enemy:Juggernaut,insert,wikidata
+related_character_relations,178:enemy:Mister Sinister,insert,wikidata
+related_character_relations,178:enemy:Mystique,insert,wikidata
+related_character_relations,178:enemy:Nightmare,insert,wikidata
+related_character_relations,179:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,180:partner:Wolverine,insert,wikidata
+related_character_relations,181:enemy:Captain America,insert,wikidata
+related_character_relations,182:enemy:Onslaught,insert,wikidata
+related_character_relations,182:mother:Invisible Woman,insert,wikidata
+related_character_relations,182:father:Mister Fantastic / Reed Richards,insert,wikidata
+related_character_relations,183:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,183:enemy:Tigra,insert,wikidata
+related_character_relations,184:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,184:partner:Black Cat,insert,wikidata
+related_character_relations,185:enemy:Daredevil,insert,wikidata
+related_character_relations,185:enemy:Frank Castle / The Punisher,insert,wikidata
+related_character_relations,186:enemy:Doctor Strange,insert,wikidata
+related_character_relations,187:enemy:Nightcrawler (DS),insert,wikidata
+related_character_relations,187:child:Nightcrawler (DS),insert,wikidata
+related_character_relations,187:partner:Mystique,insert,wikidata
+related_character_relations,188:enemy:Thor,insert,wikidata
+related_character_relations,189:enemy:Eddie Brock / Venom,insert,wikidata
+related_character_relations,190:enemy:Bullseye,insert,wikidata
+related_character_relations,190:father:Wolverine,insert,wikidata
+related_character_relations,191:enemy:Captain America,insert,wikidata
+related_character_relations,192:enemy:Iron Man / Tony Stark,insert,wikidata
+related_character_relations,193:enemy:Daredevil,insert,wikidata
+related_character_relations,194:enemy:Black Panther / T'Challa,insert,wikidata
+related_character_relations,195:enemy:Luke Cage,insert,wikidata
+related_character_relations,196:enemy:Gamora,insert,wikidata
+related_character_relations,196:relative:Gamora,insert,wikidata
+related_character_relations,196:relative:Thanos,insert,wikidata
+related_character_relations,197:enemy:Thanos,insert,wikidata
+related_character_relations,197:enemy:Nebula,insert,wikidata
+related_character_relations,197:partner:Iron Man / Tony Stark,insert,wikidata
+related_character_relations,198:enemy:Beast (Hank McCoy),insert,wikidata
+related_character_relations,198:enemy:Nate Grey,insert,wikidata
+related_character_relations,198:alternate_universe_counterpart:Beast (Hank McCoy),insert,wikidata
+related_character_relations,198:alternate_universe_counterpart:Ultimate Beast,insert,wikidata
+related_character_relations,199:enemy:Terrax,insert,wikidata
+related_character_relations,199:enemy:High Evolutionary,insert,wikidata
+related_character_relations,199:enemy:Juggernaut,insert,wikidata
+related_character_relations,199:enemy:Malekith the Accursed,insert,wikidata
+related_character_relations,199:enemy:Nitro,insert,wikidata
+related_character_relations,199:enemy:U-Foes,insert,wikidata
+related_character_relations,200:enemy:Thanos,insert,wikidata
+related_character_relations,201:enemy:Thor,insert,wikidata
+related_character_relations,202:enemy:Hulk,insert,wikidata
+related_character_relations,203:enemy:Iron Man / Tony Stark,insert,wikidata
+related_character_relations,203:father:Iron Monger,insert,wikidata
+related_character_relations,204:enemy:Captain America,insert,wikidata
+related_character_relations,204:enemy:Bucky Barnes,insert,wikidata
+related_character_relations,204:father:Baron Zemo,insert,wikidata
+related_character_relations,205:enemy:Helmut Zemo,insert,wikidata
+related_character_relations,205:partner:Black Widow / Natasha Romanova,insert,wikidata
+related_character_relations,206:partner:Beast (Hank McCoy),insert,wikidata
+related_character_relations,207:enemy:Black Panther / T'Challa,insert,wikidata
+related_character_relations,208:partner:Professor X,insert,wikidata
+related_character_relations,209:alternate_universe_counterpart:Iron Man / Tony Stark,insert,wikidata
+related_character_relations,209:alternate_universe_counterpart:Iron Lad,insert,wikidata
+related_character_relations,210:father:Eddie Brock / Venom,insert,wikidata
+related_character_relations,211:enemy:Hulk,insert,wikidata
+related_character_relations,212:enemy:Wolverine,insert,wikidata
+related_character_relations,213:enemy:Captain Marvel / Carol Danvers,insert,wikidata
+related_character_relations,214:enemy:Iron Man / Tony Stark,insert,wikidata
+related_character_relations,215:enemy:Daredevil,insert,wikidata
+related_character_relations,216:enemy:Luke Cage,insert,wikidata
+related_character_relations,217:enemy:Luke Cage,insert,wikidata
+related_character_relations,218:enemy:Wolverine,insert,wikidata
+related_character_relations,219:enemy:Lilandra Neramani,insert,wikidata
+related_character_relations,219:enemy:Captain Marvel / Carol Danvers,insert,wikidata
+related_character_relations,219:spouse:Vulcan,insert,wikidata
+related_character_relations,220:enemy:Cyclops (Scott Summers),insert,wikidata
+related_character_relations,220:enemy:Gambit (Remy LeBeau),insert,wikidata
+related_character_relations,220:enemy:Excalibur,insert,wikidata
+related_character_relations,220:enemy:X-Men,insert,wikidata
+related_character_relations,221:enemy:Galactus,insert,wikidata
+related_character_relations,221:enemy:Adam Warlock,insert,wikidata
+related_character_relations,222:enemy:Captain America,insert,wikidata
+related_character_relations,222:child:Helmut Zemo,insert,wikidata
+related_character_relations,223:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,224:enemy:Iron Man / Tony Stark,insert,wikidata
+related_character_relations,225:enemy:Thanos,insert,wikidata
+related_character_relations,226:enemy:Doctor Doom,insert,wikidata
+related_character_relations,227:enemy:Thor,insert,wikidata
+related_character_relations,228:enemy:Iron Man / Tony Stark,insert,wikidata
+related_character_relations,228:enemy:Captain America,insert,wikidata
+related_character_relations,229:enemy:Captain Marvel / Carol Danvers,insert,wikidata
+related_character_relations,230:spouse:Odin,insert,wikidata
+related_character_relations,230:child:Loki,insert,wikidata
+related_character_relations,230:child:Thor,insert,wikidata
+related_character_relations,230:relative:Thor,insert,wikidata
+related_character_relations,231:enemy:Hulk,insert,wikidata
+related_character_relations,232:enemy:Wolverine,insert,wikidata
+related_character_relations,233:enemy:Hulk,insert,wikidata
+related_character_relations,233:spouse:Betty Ross,insert,wikidata
+related_character_relations,234:enemy:Thor,insert,wikidata
+related_character_relations,235:enemy:Wolverine,insert,wikidata
+related_character_relations,236:enemy:Nightcrawler (DS),insert,wikidata
+related_character_relations,236:enemy:Sabretooth,insert,wikidata
+related_character_relations,236:mother:Mystique,insert,wikidata
+related_character_relations,236:father:Sabretooth,insert,wikidata
+related_character_relations,237:enemy:Black Panther / T'Challa,insert,wikidata
+related_character_relations,238:enemy:Hulk,insert,wikidata
+related_character_relations,239:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,240:enemy:Miles Morales,insert,wikidata
+related_character_relations,241:enemy:Captain America,insert,wikidata
+related_character_relations,242:enemy:Thanos,insert,wikidata
+related_character_relations,242:child:Mentor,insert,wikidata
+related_character_relations,242:child:Zuras,insert,wikidata
+related_character_relations,243:enemy:Kang the Conqueror,insert,wikidata
+related_character_relations,243:enemy:Ultron,insert,wikidata
+related_character_relations,243:enemy:Thanos,insert,wikidata
+related_character_relations,243:enemy:Loki,insert,wikidata
+related_character_relations,243:enemy:Red Skull,insert,wikidata
+related_character_relations,244:enemy:Beta Ray Bill,insert,wikidata
+related_character_relations,244:enemy:Odin,insert,wikidata
+related_character_relations,244:enemy:Thor,insert,wikidata
+related_character_relations,245:enemy:Thor,insert,wikidata
+related_character_relations,246:enemy:Iron Man / Tony Stark,insert,wikidata
+related_character_relations,247:enemy:Thor,insert,wikidata
+related_character_relations,247:enemy:New Warriors,insert,wikidata
+related_character_relations,248:enemy:Thor,insert,wikidata
+related_character_relations,249:father:Shingen Yashida,insert,wikidata
+related_character_relations,249:child:Amiko Kobayashi,insert,wikidata
+related_character_relations,249:partner:Wolverine,insert,wikidata
+related_character_relations,251:child:Mister Fantastic / Reed Richards,insert,wikidata
+related_character_relations,251:relative:Invisible Woman,insert,wikidata
+related_character_relations,251:relative:Kang the Conqueror,insert,wikidata
+related_character_relations,252:enemy:Namor the Sub-Mariner,insert,wikidata
+related_character_relations,253:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,254:mother:Emma Frost,insert,wikidata
+related_character_relations,254:father:Cyclops (Scott Summers),insert,wikidata
+related_character_relations,255:enemy:Thor,insert,wikidata
+related_character_relations,256:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,257:enemy:Captain America,insert,wikidata
+related_character_relations,258:enemy:Captain America,insert,wikidata
+related_character_relations,259:enemy:Hulk,insert,wikidata
+related_character_relations,260:enemy:Thanos,insert,wikidata
+related_character_relations,260:partner:Star-Lord / Peter Quill,insert,wikidata
+related_character_relations,261:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,262:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,263:enemy:X-51,insert,wikidata
+related_character_relations,263:partner:Iron Man / Tony Stark,insert,wikidata
+related_character_relations,264:enemy:Hawkeye,insert,wikidata
+related_character_relations,265:enemy:Kang the Conqueror,insert,wikidata
+related_character_relations,265:relative:Nathaniel Richards,insert,wikidata
+related_character_relations,266:spouse:Namor the Sub-Mariner,insert,wikidata
+related_character_relations,267:enemy:Frank Castle / The Punisher,insert,wikidata
+related_character_relations,268:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,269:enemy:Black Widow / Natasha Romanova,insert,wikidata
+related_character_relations,270:enemy:Moon Knight,insert,wikidata
+related_character_relations,271:father:Doctor Doom,insert,wikidata
+related_character_relations,272:child:Thor,insert,wikidata
+related_character_relations,273:partner:Firestar,insert,wikidata
+related_character_relations,274:partner:Nightcrawler (DS),insert,wikidata
+related_character_relations,275:enemy:Daredevil,insert,wikidata
+related_character_relations,276:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,277:partner:She-Hulk / Jennifer Walters,insert,wikidata
+related_character_relations,278:enemy:Doctor Strange,insert,wikidata
+related_character_relations,279:father:Kronos,insert,wikidata
+related_character_relations,280:partner:Nightcrawler (DS),insert,wikidata
+related_character_relations,281:partner:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,282:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,283:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,284:partner:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,285:enemy:Gold Goblin,insert,wikidata
+related_character_relations,286:mother:Caiera,insert,wikidata
+related_character_relations,286:father:Hulk,insert,wikidata
+related_character_relations,287:spouse:Human Torch,insert,wikidata
+related_character_relations,288:father:Hulk,insert,wikidata
+related_character_relations,289:father:Nick Fury,insert,wikidata
+related_character_relations,290:spouse:Howard Stark,insert,wikidata
+related_character_relations,290:child:Iron Man / Tony Stark,insert,wikidata
+related_character_relations,291:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,292:spouse:Lizard,insert,wikidata
+related_character_relations,292:child:Billy Connors,insert,wikidata
+related_character_relations,293:mother:Martha Connors,insert,wikidata
+related_character_relations,293:father:Lizard,insert,wikidata
+related_character_relations,294:enemy:Doctor Doom,insert,wikidata
+related_character_relations,294:enemy:Ultimate Doctor Doom,insert,wikidata
+related_character_relations,294:enemy:Eddie Brock / Venom,insert,wikidata
+related_character_relations,294:alternate_universe_counterpart:Mister Fantastic / Reed Richards,insert,wikidata
+related_character_relations,294:alternate_universe_counterpart:Doom,insert,wikidata
+related_character_relations,295:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,296:partner:Ultimate Storm,insert,wikidata
+related_character_relations,296:alternate_universe_counterpart:Beast (Hank McCoy),insert,wikidata
+related_character_relations,296:alternate_universe_counterpart:Dark Beast,insert,wikidata
+related_character_relations,297:alternate_universe_counterpart:Cyclops (Scott Summers),insert,wikidata
+related_character_relations,297:alternate_universe_counterpart:Cyclops,insert,wikidata
+related_character_relations,298:alternate_universe_counterpart:Captain America,insert,wikidata
+related_character_relations,299:alternate_universe_counterpart:Black Cat,insert,wikidata
+related_character_relations,300:enemy:Ultimate Spider-Man,insert,wikidata
+related_character_relations,300:alternate_universe_counterpart:Kraven the Hunter,insert,wikidata
+related_character_relations,301:partner:Ultimate Wolverine,insert,wikidata
+related_character_relations,301:partner:Ultimate Beast,insert,wikidata
+related_character_relations,301:alternate_universe_counterpart:Storm (Ororo Munroe),insert,wikidata
+related_character_relations,301:alternate_universe_counterpart:Storm,insert,wikidata
+related_character_relations,302:alternate_universe_counterpart:Thor,insert,wikidata
+related_character_relations,302:alternate_universe_counterpart:King Thor,insert,wikidata
+related_character_relations,303:alternate_universe_counterpart:Eddie Brock / Venom,insert,wikidata
+related_character_relations,304:enemy:Black Widow / Natasha Romanova,insert,wikidata
+related_character_relations,305:enemy:Luke Cage,insert,wikidata
+related_character_relations,306:enemy:Daredevil,insert,wikidata
+related_character_relations,307:enemy:Human Torch,insert,wikidata
+related_character_relations,308:enemy:Wolverine,insert,wikidata
+related_character_relations,308:enemy:Iron Fist,insert,wikidata
+related_character_relations,308:enemy:X-Men,insert,wikidata
+related_character_relations,308:enemy:Romulus,insert,wikidata
+related_character_relations,308:enemy:Graydon Creed,insert,wikidata
+related_character_relations,308:child:Graydon Creed,insert,wikidata
+related_character_relations,308:partner:Mystique,insert,wikidata
+related_character_relations,309:partner:Human Torch,insert,wikidata
+related_character_relations,310:enemy:Doctor Doom,insert,wikidata
+related_character_relations,311:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,311:enemy:Roderick Kingsley,insert,wikidata
+related_character_relations,311:enemy:Gold Goblin,insert,wikidata
+related_character_relations,312:father:Loki,insert,wikidata
+related_character_relations,313:enemy:Deadpool / Wade Wilson,insert,wikidata
+related_character_relations,313:enemy:X-Men,insert,wikidata
+related_character_relations,314:father:Thanos,insert,wikidata
+related_character_relations,315:mother:Mariko Yashida,insert,wikidata
+related_character_relations,315:father:Wolverine,insert,wikidata
+related_character_relations,316:enemy:Ultimate Green Goblin,insert,wikidata
+related_character_relations,316:enemy:Ultimate Kraven,insert,wikidata
+related_character_relations,316:partner:Ultimate Kitty Pryde,insert,wikidata
+related_character_relations,316:alternate_universe_counterpart:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,316:alternate_universe_counterpart:Spider-Man Noir,insert,wikidata
+related_character_relations,316:alternate_universe_counterpart:Spider-Ham,insert,wikidata
+related_character_relations,316:alternate_universe_counterpart:Pavitr Prabhakar / Spider-Man India,insert,wikidata
+related_character_relations,316:alternate_universe_counterpart:Spider-Man,insert,wikidata
+related_character_relations,317:enemy:Hulk,insert,wikidata
+related_character_relations,318:alternate_universe_counterpart:Magneto,insert,wikidata
+related_character_relations,319:enemy:Ultimate Spider-Man,insert,wikidata
+related_character_relations,319:enemy:Miles Morales,insert,wikidata
+related_character_relations,319:alternate_universe_counterpart:Gold Goblin,insert,wikidata
+related_character_relations,320:alternate_universe_counterpart:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,320:alternate_universe_counterpart:Ultimate Spider-Man,insert,wikidata
+related_character_relations,320:alternate_universe_counterpart:Spider-Man Noir,insert,wikidata
+related_character_relations,320:alternate_universe_counterpart:Spider-Ham,insert,wikidata
+related_character_relations,320:alternate_universe_counterpart:Pavitr Prabhakar / Spider-Man India,insert,wikidata
+related_character_relations,321:spouse:Gambit (Remy LeBeau),insert,wikidata
+related_character_relations,322:mother:Mary Jane Parker,insert,wikidata
+related_character_relations,322:father:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,323:partner:Ultimate Gambit,insert,wikidata
+related_character_relations,323:partner:Ultimate Iceman,insert,wikidata
+related_character_relations,323:alternate_universe_counterpart:Rogue,insert,wikidata
+related_character_relations,324:partner:Ultimate Rogue,insert,wikidata
+related_character_relations,324:partner:Ultimate Kitty Pryde,insert,wikidata
+related_character_relations,324:alternate_universe_counterpart:Iceman,insert,wikidata
+related_character_relations,325:partner:Ultimate Rogue,insert,wikidata
+related_character_relations,325:alternate_universe_counterpart:Gambit (Remy LeBeau),insert,wikidata
+related_character_relations,326:partner:Ultimate Iceman,insert,wikidata
+related_character_relations,326:partner:Ultimate Spider-Man,insert,wikidata
+related_character_relations,326:alternate_universe_counterpart:Star-Lord / Peter Quill,insert,wikidata
+related_character_relations,326:alternate_universe_counterpart:Kate Pryde,insert,wikidata
+related_character_relations,326:alternate_universe_counterpart:Colleen,insert,wikidata
+related_character_relations,327:enemy:Moon Knight,insert,wikidata
+related_character_relations,328:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,329:enemy:Hulk,insert,wikidata
+related_character_relations,329:spouse:Rebecca Banner,insert,wikidata
+related_character_relations,329:child:Hulk,insert,wikidata
+related_character_relations,330:enemy:Gambit (Remy LeBeau),insert,wikidata
+related_character_relations,331:enemy:Ghost Rider (Danny Ketch),insert,wikidata
+related_character_relations,332:enemy:Doctor Doom,insert,wikidata
+related_character_relations,332:father:Franklin Storm,insert,wikidata
+related_character_relations,332:spouse:Mister Fantastic / Reed Richards,insert,wikidata
+related_character_relations,332:child:Franklin Richards,insert,wikidata
+related_character_relations,332:child:Valeria Richards,insert,wikidata
+related_character_relations,333:child:Doctor Doom,insert,wikidata
+related_character_relations,335:enemy:Black Widow / Natasha Romanova,insert,wikidata
+related_character_relations,336:father:Ben Reilly / Scarlet Spider,insert,wikidata
+related_character_relations,337:alternate_universe_counterpart:Ultimate Wolverine,insert,wikidata
+related_character_relations,337:alternate_universe_counterpart:Wolverine,insert,wikidata
+related_character_relations,338:alternate_universe_counterpart:Doctor Doom,insert,wikidata
+related_character_relations,338:alternate_universe_counterpart:Ultimate Doctor Doom,insert,wikidata
+related_character_relations,339:enemy:Doctor Strange,insert,wikidata
+related_character_relations,340:partner:She-Hulk / Jennifer Walters,insert,wikidata
+related_character_relations,341:enemy:Magneto,insert,wikidata
+related_character_relations,341:enemy:Madelyne Pryor,insert,wikidata
+related_character_relations,341:spouse:Cyclops (Scott Summers),insert,wikidata
+related_character_relations,341:child:Nate Grey,insert,wikidata
+related_character_relations,341:partner:Wolverine,insert,wikidata
+related_character_relations,342:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,342:enemy:Daredevil,insert,wikidata
+related_character_relations,343:enemy:Black Panther / T'Challa,insert,wikidata
+related_character_relations,344:spouse:Daredevil,insert,wikidata
+related_character_relations,345:mother:Black Cat,insert,wikidata
+related_character_relations,345:father:Flash Thompson,insert,wikidata
+related_character_relations,346:father:Loki,insert,wikidata
+related_character_relations,347:enemy:Miguel O'Hara / Spider-Man 2099,insert,wikidata
+related_character_relations,348:child:Legion,insert,wikidata
+related_character_relations,348:partner:Professor X,insert,wikidata
+related_character_relations,349:father:Galactus,insert,wikidata
+related_character_relations,350:enemy:Patrick Mulligan / Toxin,insert,wikidata
+related_character_relations,350:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,351:enemy:Hulk,insert,wikidata
+related_character_relations,353:enemy:Captain America,insert,wikidata
+related_character_relations,353:enemy:Wolverine,insert,wikidata
+related_character_relations,353:spouse:Wolverine,insert,wikidata
+related_character_relations,354:spouse:Magneto,insert,wikidata
+related_character_relations,354:child:Anya Eisenhardt,insert,wikidata
+related_character_relations,354:child:Scarlet Witch,insert,wikidata
+related_character_relations,354:child:Quicksilver,insert,wikidata
+related_character_relations,355:mother:Magda Lehnsherr,insert,wikidata
+related_character_relations,355:father:Magneto,insert,wikidata
+related_character_relations,356:enemy:Wolverine,insert,wikidata
+related_character_relations,356:enemy:Nick Fury,insert,wikidata
+related_character_relations,357:enemy:Captain America,insert,wikidata
+related_character_relations,357:father:Red Skull,insert,wikidata
+related_character_relations,358:enemy:She-Hulk / Jennifer Walters,insert,wikidata
+related_character_relations,358:spouse:Absorbing Man,insert,wikidata
+related_character_relations,359:enemy:Thunderbolt Ross,insert,wikidata
+related_character_relations,359:partner:Cable,insert,wikidata
+related_character_relations,359:partner:Colossus,insert,wikidata
+related_character_relations,359:partner:Wolverine,insert,wikidata
+related_character_relations,360:partner:Star-Lord / Peter Quill,insert,wikidata
+related_character_relations,360:partner:Domino,insert,wikidata
+related_character_relations,361:enemy:Hulk,insert,wikidata
+related_character_relations,361:enemy:Betty Ross,insert,wikidata
+related_character_relations,362:enemy:Otto Octavius,insert,wikidata
+related_character_relations,362:enemy:Eddie Brock,insert,wikidata
+related_character_relations,362:alternate_universe_counterpart:Peter Parker,insert,wikidata
+related_character_relations,364:enemy:Miles Morales,insert,wikidata
+related_character_relations,365:spouse:Moon Knight,insert,wikidata
+related_character_relations,366:father:Thor,insert,wikidata
+related_character_relations,367:enemy:Galactus,insert,wikidata
+related_character_relations,368:enemy:The Leader,insert,wikidata
+related_character_relations,368:enemy:Abomination,insert,wikidata
+related_character_relations,368:father:Thunderbolt Ross,insert,wikidata
+related_character_relations,368:spouse:Hulk,insert,wikidata
+related_character_relations,368:spouse:Glenn Talbot,insert,wikidata
+related_character_relations,369:relative:Ghost Rider (Danny Ketch),insert,wikidata
+related_character_relations,369:relative:Noble Kale,insert,wikidata
+related_character_relations,370:enemy:Peter Parker,insert,wikidata
+related_character_relations,370:spouse:Rosalie Octavius,insert,wikidata
+related_character_relations,371:enemy:Peter Parker,insert,wikidata
+related_character_relations,371:alternate_universe_counterpart:Patrick Mulligan / Toxin,insert,wikidata
+related_character_relations,372:enemy:Black Panther / T'Challa,insert,wikidata
+related_character_relations,373:partner:Doctor Doom,insert,wikidata
+related_character_relations,375:enemy:Captain America,insert,wikidata
+related_character_relations,376:enemy:Thor,insert,wikidata
+related_character_relations,376:child:Loki,insert,wikidata
+related_character_relations,378:partner:Magneto,insert,wikidata
+related_character_relations,378:partner:Cyclops (Scott Summers),insert,wikidata
+related_character_relations,379:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,379:father:Kraven the Hunter,insert,wikidata
+related_character_relations,380:enemy:Thor,insert,wikidata
+related_character_relations,381:enemy:Namor the Sub-Mariner,insert,wikidata
+related_character_relations,382:enemy:Speedball,insert,wikidata
+related_character_relations,382:enemy:New Warriors,insert,wikidata
+related_character_relations,383:enemy:Red Skull,insert,wikidata
+related_character_relations,383:enemy:Batroc the Leaper (Georges Batroc),insert,wikidata
+related_character_relations,384:father:Bolivar Trask,insert,wikidata
+related_character_relations,385:enemy:Deadpool / Wade Wilson,insert,wikidata
+related_character_relations,386:enemy:Hulk,insert,wikidata
+related_character_relations,386:alternate_universe_counterpart:Hulk,insert,wikidata
+related_character_relations,386:alternate_universe_counterpart:Ultimate Hulk,insert,wikidata
+related_character_relations,387:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,387:enemy:Luke Cage,insert,wikidata
+related_character_relations,387:enemy:Iron Fist,insert,wikidata
+related_character_relations,388:enemy:Iron Fist,insert,wikidata
+related_character_relations,389:enemy:Hulk,insert,wikidata
+related_character_relations,390:enemy:Thor,insert,wikidata
+related_character_relations,390:father:Loki,insert,wikidata
+related_character_relations,391:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,391:enemy:Daredevil,insert,wikidata
+related_character_relations,393:partner:Wolverine,insert,wikidata
+related_character_relations,394:relative:Jennifer Kale,insert,wikidata
+related_character_relations,394:relative:Ghost Rider (Danny Ketch),insert,wikidata
+related_character_relations,395:mother:Liz Allan,insert,wikidata
+related_character_relations,395:father:Green Goblin / Norman Osborn,insert,wikidata
+related_character_relations,396:enemy:Star-Lord / Peter Quill,insert,wikidata
+related_character_relations,396:enemy:Wolverine,insert,wikidata
+related_character_relations,397:enemy:Wolverine,insert,wikidata
+related_character_relations,397:enemy:X-Men,insert,wikidata
+related_character_relations,397:father:Shingen Yashida,insert,wikidata
+related_character_relations,398:enemy:Wolverine,insert,wikidata
+related_character_relations,399:father:Robbie Robertson,insert,wikidata
+related_character_relations,399:partner:Janice Lincoln,insert,wikidata
+related_character_relations,400:enemy:Kang the Conqueror,insert,wikidata
+related_character_relations,401:mother:Invisible Woman,insert,wikidata
+related_character_relations,401:father:Mister Fantastic / Reed Richards,insert,wikidata
+related_character_relations,402:spouse:Hawkeye,insert,wikidata
+related_character_relations,402:partner:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,403:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,404:enemy:Rogue,insert,wikidata
+related_character_relations,404:enemy:Nightcrawler (DS),insert,wikidata
+related_character_relations,404:enemy:Captain Marvel / Carol Danvers,insert,wikidata
+related_character_relations,404:enemy:Excalibur,insert,wikidata
+related_character_relations,404:enemy:X-Men,insert,wikidata
+related_character_relations,404:enemy:Bolivar Trask,insert,wikidata
+related_character_relations,404:spouse:Destiny,insert,wikidata
+related_character_relations,404:child:Nightcrawler (DS),insert,wikidata
+related_character_relations,404:child:Graydon Creed,insert,wikidata
+related_character_relations,404:child:Rogue,insert,wikidata
+related_character_relations,404:partner:Azazel,insert,wikidata
+related_character_relations,404:partner:Sabretooth,insert,wikidata
+related_character_relations,404:partner:Destiny,insert,wikidata
+related_character_relations,404:partner:Iceman,insert,wikidata
+related_character_relations,404:partner:Magneto,insert,wikidata
+related_character_relations,404:partner:Wolverine,insert,wikidata
+related_character_relations,404:partner:Forge,insert,wikidata
+related_character_relations,405:spouse:Ghost Rider (Danny Ketch),insert,wikidata
+related_character_relations,406:enemy:Human Torch,insert,wikidata
+related_character_relations,406:enemy:The Fantastic Four,insert,wikidata
+related_character_relations,407:enemy:Jean Grey,insert,wikidata
+related_character_relations,407:spouse:Cyclops (Scott Summers),insert,wikidata
+related_character_relations,407:child:Cable,insert,wikidata
+related_character_relations,408:partner:Silver Surfer / Norrin Radd,insert,wikidata
+related_character_relations,409:enemy:Wolverine,insert,wikidata
+related_character_relations,409:child:Mariko Yashida,insert,wikidata
+related_character_relations,409:child:Kenuichio Harada,insert,wikidata
+related_character_relations,410:enemy:Black Panther / T'Challa,insert,wikidata
+related_character_relations,411:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,412:father:Bolivar Trask,insert,wikidata
+related_character_relations,413:spouse:Maria Stark,insert,wikidata
+related_character_relations,413:child:Iron Man / Tony Stark,insert,wikidata
+related_character_relations,414:child:Wolverine,insert,wikidata
+related_character_relations,415:enemy:Namor the Sub-Mariner,insert,wikidata
+related_character_relations,416:enemy:Daredevil,insert,wikidata
+related_character_relations,417:enemy:Miguel O'Hara / Spider-Man 2099,insert,wikidata
+related_character_relations,417:father:Tiberius Stone,insert,wikidata
+related_character_relations,417:child:Miguel O'Hara / Spider-Man 2099,insert,wikidata
+related_character_relations,418:alternate_universe_counterpart:Nick Fury,insert,wikidata
+related_character_relations,419:partner:Ultimate Storm,insert,wikidata
+related_character_relations,419:alternate_universe_counterpart:Wolverine,insert,wikidata
+related_character_relations,419:alternate_universe_counterpart:Old Man Logan,insert,wikidata
+related_character_relations,420:enemy:Kingpin,insert,wikidata
+related_character_relations,420:spouse:Kingpin,insert,wikidata
+related_character_relations,420:child:Richard Fisk,insert,wikidata
+related_character_relations,422:enemy:Mar-Vell,insert,wikidata
+related_character_relations,422:enemy:Captain Marvel / Carol Danvers,insert,wikidata
+related_character_relations,423:child:Amiko Kobayashi,insert,wikidata
+related_character_relations,423:partner:Wolverine,insert,wikidata
+related_character_relations,424:enemy:Doctor Strange,insert,wikidata
+related_character_relations,425:enemy:Taskmaster / Tony Masters,insert,wikidata
+related_character_relations,426:enemy:Professor X,insert,wikidata
+related_character_relations,426:enemy:New Warriors,insert,wikidata
+related_character_relations,426:enemy:Excalibur,insert,wikidata
+related_character_relations,426:enemy:X-Men,insert,wikidata
+related_character_relations,427:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,428:enemy:Professor X,insert,wikidata
+related_character_relations,428:mother:Sharon Xavier,insert,wikidata
+related_character_relations,428:father:Brian Xavier,insert,wikidata
+related_character_relations,429:enemy:Thanos,insert,wikidata
+related_character_relations,430:enemy:Wolverine,insert,wikidata
+related_character_relations,431:enemy:Doctor Doom,insert,wikidata
+related_character_relations,431:relative:Franklin Richards,insert,wikidata
+related_character_relations,432:partner:Daredevil,insert,wikidata
+related_character_relations,433:enemy:Yon-Rogg,insert,wikidata
+related_character_relations,433:enemy:Thanos,insert,wikidata
+related_character_relations,433:child:Phyla-Vell,insert,wikidata
+related_character_relations,434:mother:Magda Lehnsherr,insert,wikidata
+related_character_relations,434:father:Magneto,insert,wikidata
+related_character_relations,434:spouse:Crystal,insert,wikidata
+related_character_relations,435:mother:Magda Lehnsherr,insert,wikidata
+related_character_relations,435:father:Magneto,insert,wikidata
+related_character_relations,435:partner:Doctor Doom,insert,wikidata
+related_character_relations,435:partner:Wonder Man,insert,wikidata
+related_character_relations,436:father:Kronos,insert,wikidata
+related_character_relations,436:spouse:Sui-San,insert,wikidata
+related_character_relations,436:child:Thanos,insert,wikidata
+related_character_relations,436:child:Starfox,insert,wikidata
+related_character_relations,437:enemy:Peter Parker / Spider-Man,insert,wikidata
+related_character_relations,437:enemy:Phil Urich,insert,wikidata
+related_character_relations,438:partner:Happy Hogan,insert,wikidata
+related_character_relations,439:enemy:Daredevil,insert,wikidata
+related_character_relations,440:enemy:Frank Castle / The Punisher,insert,wikidata
+related_character_relations,441:enemy:New Warriors,insert,wikidata
+related_character_relations,441:enemy:Hulk,insert,wikidata
+related_character_relations,442:enemy:Thor,insert,wikidata
+related_character_relations,443:partner:She-Hulk / Jennifer Walters,insert,wikidata
+related_character_relations,444:enemy:Thor,insert,wikidata
+related_character_relations,445:enemy:Max Dillon,insert,wikidata
+related_character_relations,445:partner:Gwen Stacy,insert,wikidata
+related_character_relations,445:alternate_universe_counterpart:Peter Parker,insert,wikidata
+related_character_relations,446:partner:Peter Parker,insert,wikidata
+performers,performer:Nicholas Hammond,insert,derived
+character_portrayals,1:identity:27:1,insert,derived
+performers,performer:David White,insert,derived
+character_portrayals,1:identity:137:2,insert,derived
+character_portrayals,2:identity:27:1,insert,derived
+performers,performer:Robert F. Simon,insert,derived
+character_portrayals,2:identity:137:3,insert,derived
+performers,performer:Robert Alda,insert,derived
+character_portrayals,2:identity:192:4,insert,derived
+character_portrayals,3:identity:137:3,insert,derived
+performers,performer:Ellen Bry,insert,derived
+character_portrayals,3:identity:152:5,insert,derived
+performers,performer:Rosalind Chao,insert,derived
+character_portrayals,3:identity:106:6,insert,derived
+performers,performer:Richard Erdman,insert,derived
+character_portrayals,3:identity:83:7,insert,derived
+performers,performer:Shinji Tōdō,insert,derived
+character_portrayals,4:identity:40:8,insert,derived
+performers,performer:Noboru Nakaya,insert,derived
+character_portrayals,4:identity:154:9,insert,derived
+performers,performer:Tobey Maguire,insert,derived
+character_portrayals,5:identity:27:10,insert,derived
+performers,performer:J. K. Simmons,insert,derived
+character_portrayals,5:identity:137:11,insert,derived
+performers,performer:Bill Nunn,insert,derived
+character_portrayals,5:identity:227:12,insert,derived
+performers,performer:Willem Dafoe,insert,derived
+character_portrayals,5:identity:15:13,insert,derived
+performers,performer:Kirsten Dunst,insert,derived
+character_portrayals,5:identity:179:14,insert,derived
+performers,performer:James Franco,insert,derived
+character_portrayals,5:identity:17:15,insert,derived
+performers,performer:Joe Manganiello,insert,derived
+character_portrayals,5:identity:110:16,insert,derived
+character_portrayals,6:identity:27:10,insert,derived
+character_portrayals,6:identity:137:11,insert,derived
+character_portrayals,6:identity:179:14,insert,derived
+character_portrayals,6:identity:17:15,insert,derived
+performers,performer:Alfred Molina,insert,derived
+character_portrayals,6:identity:10:17,insert,derived
+performers,performer:Rosemary Harris,insert,derived
+character_portrayals,6:identity:1:18,insert,derived
+performers,performer:Donna Murphy,insert,derived
+character_portrayals,6:identity:231:19,insert,derived
+performers,performer:Daniel Gillies,insert,derived
+character_portrayals,6:identity:150:20,insert,derived
+character_portrayals,7:identity:27:10,insert,derived
+character_portrayals,7:identity:137:11,insert,derived
+character_portrayals,7:identity:179:14,insert,derived
+character_portrayals,7:identity:1:18,insert,derived
+performers,performer:Thomas Haden Church,insert,derived
+character_portrayals,7:identity:29:21,insert,derived
+character_portrayals,7:identity:17:15,insert,derived
+performers,performer:Bryce Dallas Howard,insert,derived
+character_portrayals,7:identity:16:22,insert,derived
+performers,performer:James Cromwell,insert,derived
+character_portrayals,7:identity:115:23,insert,derived
+performers,performer:Andrew Garfield,insert,derived
+character_portrayals,8:identity:27:24,insert,derived
+performers,performer:Chris Zylka,insert,derived
+character_portrayals,8:identity:110:25,insert,derived
+performers,performer:Rhys Ifans,insert,derived
+character_portrayals,8:identity:21:26,insert,derived
+performers,performer:Emma Stone,insert,derived
+character_portrayals,8:identity:16:27,insert,derived
+performers,performer:Denis Leary,insert,derived
+character_portrayals,8:identity:115:28,insert,derived
+performers,performer:Campbell Scott,insert,derived
+character_portrayals,8:identity:222:29,insert,derived
+performers,performer:Irrfan Khan,insert,derived
+character_portrayals,8:identity:219:30,insert,derived
+character_portrayals,9:identity:27:24,insert,derived
+character_portrayals,9:identity:16:27,insert,derived
+performers,performer:Jamie Foxx,insert,derived
+character_portrayals,9:identity:13:31,insert,derived
+performers,performer:Dane DeHaan,insert,derived
+character_portrayals,9:identity:17:32,insert,derived
+performers,performer:Paul Giamatti,insert,derived
+character_portrayals,9:identity:28:33,insert,derived
+performers,performer:Colm Feore,insert,derived
+character_portrayals,9:identity:98:34,insert,derived
+performers,performer:Tom Holland,insert,derived
+character_portrayals,10:identity:27:35,insert,derived
+performers,performer:Tony Revolori,insert,derived
+character_portrayals,10:identity:110:36,insert,derived
+performers,performer:Marisa Tomei,insert,derived
+character_portrayals,10:identity:1:37,insert,derived
+performers,performer:Michael Keaton,insert,derived
+character_portrayals,10:identity:45:38,insert,derived
+performers,performer:Robert Downey Jr.,insert,derived
+character_portrayals,10:identity:136:39,insert,derived
+performers,performer:Jon Favreau,insert,derived
+character_portrayals,10:identity:123:40,insert,derived
+performers,performer:Gwyneth Paltrow,insert,derived
+character_portrayals,10:identity:209:41,insert,derived
+performers,performer:Bokeem Woodbine,insert,derived
+character_portrayals,10:identity:31:42,insert,derived
+performers,performer:Tyne Daly,insert,derived
+character_portrayals,10:identity:56:43,insert,derived
+performers,performer:Lily Tomlin,insert,derived
+character_portrayals,11:identity:1:44,insert,derived
+performers,performer:Shameik Moore,insert,derived
+character_portrayals,11:identity:25:45,insert,derived
+performers,performer:Jake Johnson,insert,derived
+character_portrayals,11:identity:210:46,insert,derived
+performers,performer:Hailee Steinfeld,insert,derived
+character_portrayals,11:identity:16:47,insert,derived
+performers,performer:Brian Tyree Henry,insert,derived
+character_portrayals,11:identity:144:48,insert,derived
+performers,performer:Luna Lauren Vélez,insert,derived
+character_portrayals,11:identity:225:49,insert,derived
+performers,performer:John Mulaney,insert,derived
+character_portrayals,11:identity:36:50,insert,derived
+performers,performer:Kimiko Glenn,insert,derived
+character_portrayals,11:identity:101:51,insert,derived
+performers,performer:Nicolas Cage,insert,derived
+character_portrayals,11:identity:37:52,insert,derived
+performers,performer:Liev Schreiber,insert,derived
+character_portrayals,11:identity:19:53,insert,derived
+character_portrayals,12:identity:27:35,insert,derived
+character_portrayals,12:identity:110:36,insert,derived
+character_portrayals,12:identity:1:37,insert,derived
+character_portrayals,12:identity:123:40,insert,derived
+performers,performer:Jacob Batalon,insert,derived
+character_portrayals,12:identity:196:54,insert,derived
+performers,performer:Jake Gyllenhaal,insert,derived
+character_portrayals,12:identity:26:55,insert,derived
+performers,performer:Samuel L. Jackson,insert,derived
+character_portrayals,12:identity:198:56,insert,derived
+performers,performer:Cobie Smulders,insert,derived
+character_portrayals,12:identity:174:57,insert,derived
+performers,performer:Martin Starr,insert,derived
+character_portrayals,12:identity:228:58,insert,derived
+performers,performer:J. B. Smoove,insert,derived
+character_portrayals,12:identity:153:59,insert,derived
+character_portrayals,13:identity:15:13,insert,derived
+character_portrayals,13:identity:110:36,insert,derived
+character_portrayals,13:identity:10:17,insert,derived
+character_portrayals,13:identity:1:37,insert,derived
+character_portrayals,13:identity:13:31,insert,derived
+character_portrayals,13:identity:123:40,insert,derived
+character_portrayals,13:identity:196:54,insert,derived
+performers,performer:Benedict Wong,insert,derived
+character_portrayals,13:identity:261:60,insert,derived
+performers,performer:Shea Whigham,insert,derived
+character_portrayals,14:identity:115:61,insert,derived
+character_portrayals,14:identity:25:45,insert,derived
+character_portrayals,14:identity:210:46,insert,derived
+character_portrayals,14:identity:16:47,insert,derived
+performers,performer:Lauren Vélez,insert,derived
+character_portrayals,14:identity:225:62,insert,derived
+performers,performer:Oscar Isaac,insert,derived
+character_portrayals,14:identity:184:63,insert,derived
+performers,performer:Jason Schwartzman,insert,derived
+character_portrayals,14:identity:41:64,insert,derived
+performers,performer:Daniel Kaluuya,insert,derived
+character_portrayals,14:identity:38:65,insert,derived
+performers,performer:Karan Soni,insert,derived
+character_portrayals,14:identity:208:66,insert,derived
+character_portrayals,14:identity:145:48,insert,derived
+performers,performer:Mahershala Ali,insert,derived
+character_portrayals,14:identity:48:67,insert,derived
+performers,performer:Jharrel Jerome,insert,derived
+character_portrayals,14:identity:185:68,insert,derived
+character_portrayals,15:identity:25:45,insert,derived
+character_portrayals,15:identity:210:46,insert,derived
+character_portrayals,15:identity:184:63,insert,derived
+character_portrayals,15:identity:38:65,insert,derived
+character_portrayals,15:identity:16:47,insert,derived
+character_portrayals,15:identity:41:64,insert,derived
+character_portrayals,16:identity:27:35,insert,derived
+performers,performer:Jon Bernthal,insert,derived
+character_portrayals,16:identity:14:69,insert,derived
+performers,performer:Michael Mando,insert,derived
+character_portrayals,16:identity:30:70,insert,derived
+performers,performer:Marvin Jones III,insert,derived
+character_portrayals,16:identity:43:71,insert,derived
+performers,performer:Mark Ruffalo,insert,derived
+character_portrayals,16:identity:18:72,insert,derived
+performers,performer:Tom Hardy,insert,derived
+character_portrayals,17:identity:12:73,insert,derived
+performers,performer:Michelle Williams,insert,derived
+character_portrayals,17:identity:57:74,insert,derived
+performers,performer:Riz Ahmed,insert,derived
+character_portrayals,17:identity:80:75,insert,derived
+performers,performer:Scott Haze,insert,derived
+character_portrayals,17:identity:230:76,insert,derived
+performers,performer:Jenny Slate,insert,derived
+character_portrayals,17:identity:100:77,insert,derived
+performers,performer:Woody Harrelson,insert,derived
+character_portrayals,17:identity:6:78,insert,derived
+performers,performer:Peggy Lu,insert,derived
+character_portrayals,17:identity:193:79,insert,derived
+performers,performer:Melora Walters,insert,derived
+character_portrayals,17:identity:173:80,insert,derived
+character_portrayals,18:identity:12:73,insert,derived
+character_portrayals,18:identity:57:74,insert,derived
+character_portrayals,18:identity:193:79,insert,derived
+character_portrayals,18:identity:6:78,insert,derived
+performers,performer:Naomie Harris,insert,derived
+character_portrayals,18:identity:32:81,insert,derived
+performers,performer:Reid Scott,insert,derived
+character_portrayals,18:identity:89:82,insert,derived
+character_portrayals,19:identity:45:38,insert,derived
+performers,performer:Matt Smith,insert,derived
+character_portrayals,19:identity:165:83,insert,derived
+performers,performer:Adria Arjona,insert,derived
+character_portrayals,19:identity:177:84,insert,derived
+performers,performer:Jared Harris,insert,derived
+character_portrayals,19:identity:105:85,insert,derived
+performers,performer:Tyrese Gibson,insert,derived
+character_portrayals,19:identity:237:86,insert,derived
+performers,performer:Al Madrigal,insert,derived
+character_portrayals,19:identity:51:87,insert,derived
+performers,performer:Dakota Johnson,insert,derived
+character_portrayals,20:identity:22:88,insert,derived
+performers,performer:Tahar Rahim,insert,derived
+character_portrayals,20:identity:107:89,insert,derived
+performers,performer:Emma Roberts,insert,derived
+character_portrayals,20:identity:181:90,insert,derived
+performers,performer:Kerry Bishé,insert,derived
+character_portrayals,20:identity:86:91,insert,derived
+performers,performer:Mike Epps,insert,derived
+character_portrayals,20:identity:205:92,insert,derived
+performers,performer:José María Yazpik,insert,derived
+character_portrayals,20:identity:233:93,insert,derived
+performers,performer:Zosia Mamet,insert,derived
+character_portrayals,20:identity:54:94,insert,derived
+performers,performer:Alessandro Nivola,insert,derived
+character_portrayals,21:identity:28:95,insert,derived
+performers,performer:Aaron Taylor-Johnson,insert,derived
+character_portrayals,21:identity:20:96,insert,derived
+performers,performer:Fred Hechinger,insert,derived
+character_portrayals,21:identity:7:97,insert,derived
+performers,performer:Ariana DeBose,insert,derived
+character_portrayals,21:identity:4:98,insert,derived
+performers,performer:Christopher Abbott,insert,derived
+character_portrayals,21:identity:247:99,insert,derived
+performers,performer:Russell Crowe,insert,derived
+character_portrayals,21:identity:201:100,insert,derived
+performers,performer:Murat Seven,insert,derived
+character_portrayals,21:identity:264:101,insert,derived
+performers,performer:Yuri Kolokolnikov,insert,derived
+character_portrayals,21:identity:235:102,insert,derived
+character_portrayals,22:identity:12:73,insert,derived
+character_portrayals,22:identity:193:79,insert,derived
+performers,performer:Chiwetel Ejiofor,insert,derived
+character_portrayals,22:identity:221:103,insert,derived
+performers,performer:Andy Serkis,insert,derived
+character_portrayals,22:identity:160:104,insert,derived
+character_portrayals,22:identity:176:26,insert,derived
+performers,performer:Alanna Ubach,insert,derived
+character_portrayals,22:identity:204:105,insert,derived
+performers,performer:Benito Antonio Martínez Ocasio,insert,derived
+character_portrayals,23:identity:104:106,insert,derived
+performers,performer:Danny Seagren,insert,derived
+character_portrayals,24:identity:27:107,insert,derived
+character_portrayals,25:identity:137:3,insert,derived
+character_portrayals,25:identity:152:5,insert,derived
+character_portrayals,25:identity:27:1,insert,derived
+performers,performer:Chip Fields,insert,derived
+character_portrayals,25:identity:226:108,insert,derived
+character_portrayals,26:identity:40:8,insert,derived
+performers,performer:Mitsuo Andō,insert,derived
+character_portrayals,26:identity:213:109,insert,derived
+performers,performer:Yukie Kagawa,insert,derived
+character_portrayals,26:identity:55:110,insert,derived
+character_portrayals,27:identity:66:52,insert,derived
+performers,performer:Paul Kligman,insert,derived
+character_portrayals,28:identity:137:111,insert,derived
+performers,performer:Peg Dixon,insert,derived
+character_portrayals,28:identity:67:112,insert,derived
+performers,performer:Paul Soles,insert,derived
+character_portrayals,28:identity:27:113,insert,derived
+performers,performer:Len Carlson,insert,derived
+character_portrayals,28:identity:15:114,insert,derived
+performers,performer:William Woodson,insert,derived
+character_portrayals,29:identity:137:115,insert,derived
+performers,performer:Ted Schwartz,insert,derived
+character_portrayals,29:identity:27:116,insert,derived
+performers,performer:Brad Crandall,insert,derived
+character_portrayals,29:identity:9:117,insert,derived
+performers,performer:Dan Gilvezan,insert,derived
+character_portrayals,30:identity:27:118,insert,derived
+performers,performer:Frank Welker,insert,derived
+character_portrayals,30:identity:132:119,insert,derived
+performers,performer:Sara Ballantine,insert,derived
+character_portrayals,31:identity:179:120,insert,derived
+performers,performer:Christopher Daniel Barnes,insert,derived
+character_portrayals,31:identity:27:121,insert,derived
+performers,performer:Roscoe Lee Browne,insert,derived
+character_portrayals,31:identity:19:122,insert,derived
+performers,performer:Rino Romano,insert,derived
+character_portrayals,32:identity:27:123,insert,derived
+performers,performer:Brian Drummond,insert,derived
+character_portrayals,32:identity:12:124,insert,derived
+performers,performer:Michael Donovan,insert,derived
+character_portrayals,32:identity:6:125,insert,derived
+performers,performer:Richard Newman,insert,derived
+character_portrayals,32:identity:126:126,insert,derived
+performers,performer:Lisa Loeb,insert,derived
+character_portrayals,33:identity:179:127,insert,derived
+performers,performer:Neil Patrick Harris,insert,derived
+character_portrayals,33:identity:27:128,insert,derived
+performers,performer:Michael Clarke Duncan,insert,derived
+character_portrayals,33:identity:19:129,insert,derived
+performers,performer:Lacey Chabert,insert,derived
+character_portrayals,34:identity:16:130,insert,derived
+performers,performer:Alan Rachins,insert,derived
+character_portrayals,34:identity:15:131,insert,derived
+performers,performer:Josh Keaton,insert,derived
+character_portrayals,34:identity:27:132,insert,derived
+performers,performer:Drake Bell,insert,derived
+character_portrayals,35:identity:27:133,insert,derived
+performers,performer:Tom Kenny,insert,derived
+character_portrayals,35:identity:10:134,insert,derived
+performers,performer:Logan Miller,insert,derived
+character_portrayals,35:identity:203:135,insert,derived
+performers,performer:Caitlyn Taylor Love,insert,derived
+character_portrayals,35:identity:258:136,insert,derived
+performers,performer:Greg Cipes,insert,derived
+character_portrayals,35:identity:135:137,insert,derived
+performers,performer:Ogie Banks,insert,derived
+character_portrayals,35:identity:212:138,insert,derived
+performers,performer:Max Mittelman,insert,derived
+character_portrayals,36:identity:17:139,insert,derived
+performers,performer:Laura Bailey,insert,derived
+character_portrayals,36:identity:16:140,insert,derived
+character_portrayals,36:identity:15:132,insert,derived
+performers,performer:Nadji Jeter,insert,derived
+character_portrayals,36:identity:25:141,insert,derived
+performers,performer:Melanie Minichino,insert,derived
+character_portrayals,36:identity:58:142,insert,derived
+performers,performer:Lily Sanfelippo,insert,derived
+character_portrayals,37:identity:16:143,insert,derived
+performers,performer:Benjamin Valic,insert,derived
+character_portrayals,37:identity:27:144,insert,derived
+performers,performer:J. P. Karliak,insert,derived
+character_portrayals,37:identity:15:145,insert,derived
+performers,performer:Jakari Fraser,insert,derived
+character_portrayals,37:identity:25:146,insert,derived
+performers,performer:Kelly Ohanian,insert,derived
+character_portrayals,37:identity:96:147,insert,derived
+performers,performer:Kari Wahlgren,insert,derived
+character_portrayals,38:identity:1:148,insert,derived
+performers,performer:Colman Domingo,insert,derived
+character_portrayals,38:identity:15:149,insert,derived
+performers,performer:Hudson Thames,insert,derived
+character_portrayals,38:identity:27:150,insert,derived
+performers,performer:Hugh Dancy,insert,derived
+character_portrayals,38:identity:10:151,insert,derived
+performers,performer:Grace Song,insert,derived
+character_portrayals,38:identity:199:152,insert,derived
+performers,performer:Eugene Byrd,insert,derived
+character_portrayals,38:identity:43:153,insert,derived
+performers,performer:Charlie Cox,insert,derived
+character_portrayals,38:identity:8:154,insert,derived
+performers,performer:Michael Pataki,insert,derived
+performers,performer:Lisa Eilbacher,insert,derived
+performers,performer:Jeff Donnell,insert,derived
+character_portrayals,1:identity:1:157,insert,derived
+performers,performer:Hilly Hicks,insert,derived
+performers,performer:Thayer David,insert,derived
+character_portrayals,1:identity:103:159,insert,derived
+performers,performer:Robert Hastings,insert,derived
+performers,performer:Ivor Francis,insert,derived
+character_portrayals,2:identity:226:108,insert,derived
+performers,performer:Joanna Cameron,insert,derived
+performers,performer:Randy Powell,insert,derived
+performers,performer:Lawrence P. Casey,insert,derived
+performers,performer:Simon Scott,insert,derived
+character_portrayals,3:identity:27:1,insert,derived
+character_portrayals,3:identity:226:108,insert,derived
+performers,performer:Benson Fong,insert,derived
+performers,performer:John Milford,insert,derived
+performers,performer:Hagan Beggs,insert,derived
+performers,performer:Ted Danson,insert,derived
+character_portrayals,5:identity:1:18,insert,derived
+performers,performer:Cliff Robertson,insert,derived
+character_portrayals,5:identity:44:170,insert,derived
+performers,performer:Michael Papajohn,insert,derived
+character_portrayals,6:identity:15:13,insert,derived
+performers,performer:Dylan Baker,insert,derived
+character_portrayals,6:identity:21:172,insert,derived
+performers,performer:Topher Grace,insert,derived
+character_portrayals,7:identity:12:173,insert,derived
+performers,performer:Martin Sheen,insert,derived
+character_portrayals,8:identity:44:174,insert,derived
+performers,performer:Sally Field,insert,derived
+character_portrayals,8:identity:1:175,insert,derived
+performers,performer:Embeth Davidtz,insert,derived
+character_portrayals,8:identity:181:176,insert,derived
+character_portrayals,9:identity:222:29,insert,derived
+character_portrayals,9:identity:1:175,insert,derived
+character_portrayals,9:identity:181:176,insert,derived
+performers,performer:Zendaya,insert,derived
+performers,performer:Laura Harrier,insert,derived
+performers,performer:Donald Glover,insert,derived
+character_portrayals,10:identity:48:179,insert,derived
+character_portrayals,11:identity:48:67,insert,derived
+performers,performer:Chris Pine,insert,derived
+character_portrayals,11:identity:37:180,insert,derived
+character_portrayals,12:identity:24:177,insert,derived
+character_portrayals,13:identity:27:10,insert,derived
+character_portrayals,13:identity:27:24,insert,derived
+character_portrayals,13:identity:27:35,insert,derived
+character_portrayals,13:identity:24:177,insert,derived
+performers,performer:Benedict Cumberbatch,insert,derived
+character_portrayals,13:identity:11:181,insert,derived
+performers,performer:Issa Rae,insert,derived
+character_portrayals,15:identity:144:48,insert,derived
+character_portrayals,15:identity:225:49,insert,derived
+character_portrayals,15:identity:16:182,insert,derived
+character_portrayals,16:identity:196:54,insert,derived
+character_portrayals,16:identity:24:177,insert,derived
+character_portrayals,17:identity:89:82,insert,derived
+performers,performer:Stephen Graham,insert,derived
+character_portrayals,18:identity:207:183,insert,derived
+performers,performer:Jared Leto,insert,derived
+character_portrayals,19:identity:23:184,insert,derived
+performers,performer:Sydney Sweeney,insert,derived
+character_portrayals,20:identity:151:185,insert,derived
+performers,performer:Isabela Merced,insert,derived
+character_portrayals,20:identity:59:186,insert,derived
+performers,performer:Celeste O'Connor,insert,derived
+character_portrayals,20:identity:182:187,insert,derived
+performers,performer:Adam Scott,insert,derived
+character_portrayals,20:identity:44:188,insert,derived
+performers,performer:Levi Miller,insert,derived
+performers,performer:Billy Barratt,insert,derived
+performers,performer:Diaana Babnicova,insert,derived
+character_portrayals,21:identity:4:191,insert,derived
+character_portrayals,22:identity:89:82,insert,derived
+character_portrayals,22:identity:207:183,insert,derived
+performers,performer:Juno Temple,insert,derived
+character_portrayals,22:identity:50:192,insert,derived
+performers,performer:Clark Backo,insert,derived
+character_portrayals,22:identity:161:193,insert,derived
+performers,performer:Cristo Fernández,insert,derived
+character_portrayals,22:identity:62:194,insert,derived
+performers,performer:Morgan Freeman,insert,derived
+performers,performer:Skip Hinnant,insert,derived
+performers,performer:Judy Graubart,insert,derived
+performers,performer:Jim Boyd,insert,derived
+performers,performer:Rika Miura,insert,derived
+performers,performer:Izumi Ōyama,insert,derived
+performers,performer:Yoshiharu Yabuki,insert,derived
+performers,performer:Bernard Cowan,insert,derived
+performers,performer:Morgan Lofting,insert,derived
+character_portrayals,29:identity:1:203,insert,derived
+performers,performer:Mona Marshall,insert,derived
+character_portrayals,29:identity:67:204,insert,derived
+performers,performer:Lee Bailey,insert,derived
+character_portrayals,29:identity:227:205,insert,derived
+performers,performer:Kathy Garver,insert,derived
+character_portrayals,30:identity:109:206,insert,derived
+performers,performer:June Foray,insert,derived
+character_portrayals,30:identity:1:207,insert,derived
+performers,performer:Dick Tufeld,insert,derived
+performers,performer:Ed Asner,insert,derived
+character_portrayals,31:identity:137:209,insert,derived
+performers,performer:Rodney Saulsberry,insert,derived
+character_portrayals,31:identity:227:210,insert,derived
+performers,performer:Jennifer Hale,insert,derived
+character_portrayals,31:identity:3:211,insert,derived
+performers,performer:Gary Imhoff,insert,derived
+character_portrayals,31:related:363:212,insert,derived
+performers,performer:John Payne,insert,derived
+character_portrayals,32:identity:150:213,insert,derived
+performers,performer:Ian Ziering,insert,derived
+character_portrayals,33:related:363:214,insert,derived
+performers,performer:Keith Carradine,insert,derived
+character_portrayals,33:identity:137:215,insert,derived
+performers,performer:Angelle Brooks,insert,derived
+character_portrayals,34:identity:163:105,insert,derived
+performers,performer:James Arnold Taylor,insert,derived
+character_portrayals,34:related:363:217,insert,derived
+performers,performer:Daran Norris,insert,derived
+character_portrayals,34:identity:137:218,insert,derived
+performers,performer:Vanessa Marshall,insert,derived
+character_portrayals,35:identity:25:138,insert,derived
+performers,performer:Matt Lanter,insert,derived
+character_portrayals,35:identity:110:220,insert,derived
+performers,performer:Robbie Daymond,insert,derived
+character_portrayals,36:identity:27:221,insert,derived
+performers,performer:Scott Menville,insert,derived
+character_portrayals,36:identity:10:222,insert,derived
+character_portrayals,37:identity:1:142,insert,derived
+performers,performer:Dee Bradley Baker,insert,derived
+performers,performer:Zeno Robinson,insert,derived
+character_portrayals,38:related:363:224,insert,derived
+performers,performer:Elizabeth Banks,insert,wikidata
+character_portrayals,5:identity:67:225,insert,wikidata
+performers,performer:Randy Savage,insert,wikidata
+character_portrayals,5:related:352:226,insert,wikidata
+character_portrayals,5:identity:78:171,insert,wikidata
+performers,performer:Valery Kukhareshin,insert,wikidata
+character_portrayals,6:identity:15:227,insert,wikidata
+performers,performer:Vladimir Maslakov,insert,wikidata
+character_portrayals,6:identity:17:228,insert,wikidata
+performers,performer:Sergey Parshin,insert,wikidata
+character_portrayals,6:identity:10:229,insert,wikidata
+performers,performer:Yury Lazarev,insert,wikidata
+character_portrayals,6:identity:21:230,insert,wikidata
+character_portrayals,6:identity:227:12,insert,wikidata
+character_portrayals,6:identity:67:225,insert,wikidata
+character_portrayals,6:identity:44:170,insert,wikidata
+character_portrayals,7:identity:21:172,insert,wikidata
+character_portrayals,7:identity:227:12,insert,wikidata
+character_portrayals,7:identity:67:225,insert,wikidata
+character_portrayals,7:identity:44:170,insert,wikidata
+character_portrayals,7:identity:15:13,insert,wikidata
+character_portrayals,7:identity:110:16,insert,wikidata
+character_portrayals,7:identity:78:171,insert,wikidata
+character_portrayals,9:identity:44:174,insert,wikidata
+performers,performer:Chris Cooper,insert,wikidata
+character_portrayals,9:identity:117:231,insert,wikidata
+performers,performer:Felicity Jones,insert,wikidata
+character_portrayals,9:identity:3:232,insert,wikidata
+performers,performer:B. J. Novak,insert,wikidata
+character_portrayals,9:identity:53:233,insert,wikidata
+character_portrayals,9:identity:115:28,insert,wikidata
+performers,performer:Shailene Woodley,insert,wikidata
+character_portrayals,9:identity:178:234,insert,wikidata
+performers,performer:Jennifer Connelly,insert,wikidata
+character_portrayals,10:identity:158:235,insert,wikidata
+character_portrayals,10:identity:24:177,insert,wikidata
+character_portrayals,10:identity:228:58,insert,wikidata
+performers,performer:Logan Marshall-Green,insert,wikidata
+character_portrayals,10:identity:140:236,insert,wikidata
+character_portrayals,10:identity:30:70,insert,wikidata
+performers,performer:Tiffany Espensen,insert,wikidata
+character_portrayals,10:identity:33:237,insert,wikidata
+performers,performer:Angourie Rice,insert,wikidata
+character_portrayals,10:identity:67:238,insert,wikidata
+performers,performer:Michael Chernus,insert,wikidata
+character_portrayals,10:identity:42:239,insert,wikidata
+character_portrayals,10:identity:196:54,insert,wikidata
+performers,performer:Chris Evans,insert,wikidata
+character_portrayals,10:identity:5:240,insert,wikidata
+character_portrayals,11:identity:27:46,insert,wikidata
+performers,performer:Zoë Kravitz,insert,wikidata
+character_portrayals,11:identity:178:241,insert,wikidata
+performers,performer:Kathryn Hahn,insert,wikidata
+character_portrayals,11:identity:10:242,insert,wikidata
+character_portrayals,11:identity:27:180,insert,wikidata
+character_portrayals,11:identity:184:63,insert,wikidata
+character_portrayals,12:identity:67:238,insert,wikidata
+performers,performer:Remy Hii,insert,wikidata
+character_portrayals,12:identity:74:243,insert,wikidata
+performers,performer:Numan Acar,insert,wikidata
+character_portrayals,12:identity:95:244,insert,wikidata
+performers,performer:Peter Billingsley,insert,wikidata
+character_portrayals,12:identity:260:245,insert,wikidata
+performers,performer:Claire Rushbrook,insert,wikidata
+character_portrayals,12:identity:142:246,insert,wikidata
+character_portrayals,12:identity:137:11,insert,wikidata
+performers,performer:Ben Mendelsohn,insert,wikidata
+character_portrayals,12:identity:244:247,insert,wikidata
+performers,performer:Sharon Blynn,insert,wikidata
+character_portrayals,12:identity:239:248,insert,wikidata
+character_portrayals,13:identity:153:59,insert,wikidata
+character_portrayals,13:identity:67:238,insert,wikidata
+character_portrayals,13:identity:137:11,insert,wikidata
+character_portrayals,13:identity:8:154,insert,wikidata
+character_portrayals,13:identity:21:26,insert,wikidata
+character_portrayals,13:identity:29:21,insert,wikidata
+character_portrayals,14:identity:27:46,insert,wikidata
+character_portrayals,14:identity:149:182,insert,wikidata
+character_portrayals,14:identity:144:48,insert,wikidata
+character_portrayals,14:identity:225:49,insert,wikidata
+performers,performer:Andy Samberg,insert,wikidata
+character_portrayals,14:identity:2:249,insert,wikidata
+performers,performer:Amandla Stenberg,insert,wikidata
+character_portrayals,14:identity:172:250,insert,wikidata
+character_portrayals,17:identity:207:73,insert,wikidata
+character_portrayals,20:identity:22:185,insert,wikidata
+character_portrayals,20:identity:58:186,insert,wikidata
+character_portrayals,27:identity:37:52,insert,wikidata
+performers,performer:Lamorne Morris,insert,wikidata
+character_portrayals,27:identity:227:251,insert,wikidata
+performers,performer:Brendan Gleeson,insert,wikidata
+character_portrayals,27:related:166:252,insert,wikidata
+performers,performer:Li Jun Li,insert,wikidata
+character_portrayals,27:identity:3:253,insert,wikidata
+performers,performer:Abraham Popoola,insert,wikidata
+character_portrayals,27:identity:43:254,insert,wikidata
+performers,performer:Jack Huston,insert,wikidata
+character_portrayals,27:identity:29:255,insert,wikidata
+character_portrayals,57:identity:27:123,insert,wikidata
+character_portrayals,57:identity:6:223,insert,wikidata
+performers,performer:Efrem Zimbalist Jr.,insert,wikidata
+character_portrayals,57:identity:10:256,insert,wikidata
+character_portrayals,57:identity:3:211,insert,wikidata
+character_portrayals,57:identity:12:218,insert,wikidata
+character_portrayals,59:identity:27:123,insert,wikidata
+character_portrayals,59:identity:13:223,insert,wikidata
+character_portrayals,59:identity:31:218,insert,wikidata
+performers,performer:Stan Lee,insert,wikidata
+character_portrayals,59:identity:39:257,insert,wikidata
+character_portrayals,61:identity:27:10,insert,wikidata
+character_portrayals,61:related:403:13,insert,wikidata
+character_portrayals,61:identity:15:132,insert,wikidata
+performers,performer:Dwight Schultz,insert,wikidata
+character_portrayals,61:identity:45:258,insert,wikidata
+performers,performer:Catherine O'Connor,insert,wikidata
+character_portrayals,61:identity:178:259,insert,wikidata
+performers,performer:Gary Anthony Sturgis,insert,wikidata
+character_portrayals,61:identity:20:260,insert,wikidata
+character_portrayals,62:identity:27:10,insert,wikidata
+character_portrayals,62:identity:178:14,insert,wikidata
+character_portrayals,62:identity:10:17,insert,wikidata
+character_portrayals,62:identity:26:217,insert,wikidata
+character_portrayals,62:identity:15:132,insert,wikidata
+performers,performer:John DiMaggio,insert,wikidata
+character_portrayals,62:identity:28:261,insert,wikidata
+performers,performer:Mindy Sterling,insert,wikidata
+character_portrayals,62:identity:1:262,insert,wikidata
+performers,performer:Joe Alaskey,insert,wikidata
+character_portrayals,62:identity:21:263,insert,wikidata
+performers,performer:Holly Fields,insert,wikidata
+character_portrayals,62:identity:3:264,insert,wikidata
+performers,performer:Sean Marquette,insert,wikidata
+character_portrayals,63:identity:27:265,insert,wikidata
+performers,performer:Arthur Burghardt,insert,wikidata
+character_portrayals,63:identity:12:266,insert,wikidata
+performers,performer:Keith Szarabajka,insert,wikidata
+character_portrayals,63:identity:46:267,insert,wikidata
+performers,performer:Brian George,insert,wikidata
+character_portrayals,63:identity:45:268,insert,wikidata
+character_portrayals,63:identity:13:217,insert,wikidata
+performers,performer:Dave Fennoy,insert,wikidata
+character_portrayals,63:identity:198:269,insert,wikidata
+performers,performer:Peter Lurie,insert,wikidata
+character_portrayals,63:identity:15:270,insert,wikidata
+performers,performer:David Kaufman,insert,wikidata
+character_portrayals,63:identity:129:271,insert,wikidata
+performers,performer:Bob Glouberman,insert,wikidata
+character_portrayals,63:identity:28:272,insert,wikidata
+character_portrayals,63:identity:34:211,insert,wikidata
+character_portrayals,65:identity:27:10,insert,wikidata
+character_portrayals,65:identity:137:11,insert,wikidata
+character_portrayals,65:identity:29:21,insert,wikidata
+character_portrayals,65:identity:15:15,insert,wikidata
+character_portrayals,65:identity:178:148,insert,wikidata
+character_portrayals,65:identity:30:223,insert,wikidata
+performers,performer:Nathan Carlson,insert,wikidata
+character_portrayals,65:identity:21:273,insert,wikidata
+performers,performer:Bob Joles,insert,wikidata
+character_portrayals,65:identity:19:274,insert,wikidata
+performers,performer:Neil Kaplan,insert,wikidata
+character_portrayals,65:identity:20:275,insert,wikidata
+performers,performer:Steve Blum,insert,wikidata
+character_portrayals,65:identity:28:276,insert,wikidata
+character_portrayals,65:identity:12:173,insert,wikidata
+character_portrayals,66:identity:27:217,insert,wikidata
+performers,performer:Robin Atkin Downes,insert,wikidata
+character_portrayals,66:identity:26:277,insert,wikidata
+performers,performer:Quinton Flynn,insert,wikidata
+character_portrayals,66:identity:12:278,insert,wikidata
+performers,performer:Roger L. Jackson,insert,wikidata
+character_portrayals,66:related:403:279,insert,wikidata
+character_portrayals,66:identity:10:263,insert,wikidata
+character_portrayals,66:identity:28:261,insert,wikidata
+character_portrayals,66:identity:34:211,insert,wikidata
+performers,performer:Audrey Wasilewski,insert,wikidata
+character_portrayals,66:identity:3:280,insert,wikidata
+performers,performer:Mike Vaughn,insert,wikidata
+character_portrayals,67:identity:27:281,insert,wikidata
+performers,performer:Tricia Helfer,insert,wikidata
+character_portrayals,67:identity:3:282,insert,wikidata
+character_portrayals,67:identity:189:277,insert,wikidata
+performers,performer:Greg Baldwin,insert,wikidata
+character_portrayals,67:identity:26:283,insert,wikidata
+character_portrayals,67:identity:46:276,insert,wikidata
+character_portrayals,67:identity:12:267,insert,wikidata
+performers,performer:Gregg Berger,insert,wikidata
+character_portrayals,67:identity:19:284,insert,wikidata
+performers,performer:Martin Sherman,insert,wikidata
+character_portrayals,75:identity:27:285,insert,wikidata
+performers,performer:Josh Cowdery,insert,wikidata
+character_portrayals,75:identity:5:286,insert,wikidata
+performers,performer:Ronan Summers,insert,wikidata
+character_portrayals,75:identity:249:287,insert,wikidata
+performers,performer:Gary Martin,insert,wikidata
+character_portrayals,75:identity:18:288,insert,wikidata
+performers,performer:John Schwab,insert,wikidata
+character_portrayals,75:identity:136:289,insert,wikidata
+performers,performer:Ramon Tikaram,insert,wikidata
+character_portrayals,75:identity:11:290,insert,wikidata
+performers,performer:Kerry Shale,insert,wikidata
+character_portrayals,75:identity:211:291,insert,wikidata
+performers,performer:Peter Serafinowicz,insert,wikidata
+character_portrayals,75:identity:157:292,insert,wikidata
+performers,performer:Glenn Wrage,insert,wikidata
+character_portrayals,75:identity:137:293,insert,wikidata
+performers,performer:Greg Miller,insert,wikidata
+character_portrayals,75:identity:128:294,insert,wikidata
+performers,performer:John Guerrasio,insert,wikidata
+character_portrayals,75:identity:29:295,insert,wikidata
+character_portrayals,75:identity:39:257,insert,wikidata
+performers,performer:Alexis Rodney,insert,wikidata
+character_portrayals,75:related:237:296,insert,wikidata
+performers,performer:Dar Dash,insert,wikidata
+character_portrayals,75:identity:125:297,insert,wikidata
+performers,performer:Sacha Dhawan,insert,wikidata
+character_portrayals,75:related:85:298,insert,wikidata
+performers,performer:Kate O'Sullivan,insert,wikidata
+character_portrayals,75:related:373:299,insert,wikidata
+performers,performer:Rebecca Kiser,insert,wikidata
+character_portrayals,75:identity:156:300,insert,wikidata
+performers,performer:Teresa Gallagher,insert,wikidata
+character_portrayals,75:related:309:301,insert,wikidata
+performers,performer:Osi Okerafor,insert,wikidata
+character_portrayals,75:identity:69:302,insert,wikidata
+performers,"performer:Tim Bentinck, 12th Earl of Portland",insert,wikidata
+character_portrayals,75:related:204:303,insert,wikidata
+performers,performer:David Menkin,insert,wikidata
+character_portrayals,75:identity:116:304,insert,wikidata
+performers,performer:Naomi McDonald,insert,wikidata
+character_portrayals,75:related:153:305,insert,wikidata
+performers,performer:Yuri Lowenthal,insert,wikidata
+character_portrayals,76:identity:27:306,insert,wikidata
+character_portrayals,76:identity:178:140,insert,wikidata
+performers,performer:Nancy Linari,insert,wikidata
+character_portrayals,76:identity:1:307,insert,wikidata
+performers,performer:Stephen Oyoung,insert,wikidata
+character_portrayals,76:identity:175:308,insert,wikidata
+performers,performer:William Salyers,insert,wikidata
+character_portrayals,76:identity:10:309,insert,wikidata
+character_portrayals,76:identity:25:141,insert,wikidata
+performers,performer:Mark Rolston,insert,wikidata
+character_portrayals,76:identity:117:310,insert,wikidata
+performers,performer:Travis Willingham,insert,wikidata
+character_portrayals,76:identity:19:311,insert,wikidata
+character_portrayals,80:identity:27:306,insert,wikidata
+character_portrayals,80:identity:25:141,insert,wikidata
+performers,performer:Jim Pirri,insert,wikidata
+character_portrayals,80:identity:20:312,insert,wikidata
+performers,performer:Tony Todd,insert,wikidata
+character_portrayals,80:identity:12:313,insert,wikidata
+character_portrayals,80:identity:178:140,insert,wikidata
+performers,performer:Tara Platt,insert,wikidata
+character_portrayals,80:identity:47:314,insert,wikidata
+character_portrayals,80:identity:117:310,insert,wikidata
+character_portrayals,80:identity:175:308,insert,wikidata
+character_portrayals,1:identity:227:158,insert,wikipedia
+character_portrayals,6:related:363:15,insert,wikipedia
+character_portrayals,13:identity:16:24,insert,wikipedia
+performers,performer:Greta Lee,insert,derived
+character_portrayals,14:identity:168:315,insert,wikipedia
+character_portrayals,15:identity:145:48,insert,wikipedia
+character_portrayals,15:identity:225:62,insert,wikipedia
+character_portrayals,15:identity:208:66,insert,wikipedia
+character_portrayals,15:identity:36:50,insert,wikipedia
+character_portrayals,15:identity:48:67,insert,wikipedia
+character_portrayals,15:identity:37:52,insert,wikipedia
+character_portrayals,15:identity:101:51,insert,wikipedia
+character_portrayals,16:identity:1:37,insert,wikipedia
+character_portrayals,28:identity:45:113,insert,wikipedia
+character_portrayals,28:related:391:202,insert,wikipedia
+character_portrayals,28:related:292:112,insert,wikipedia
+character_portrayals,28:identity:1:112,insert,wikipedia
+character_portrayals,28:identity:178:112,insert,wikipedia
+performers,performer:Carl Banas,insert,derived
+character_portrayals,28:identity:30:316,insert,wikipedia
+performers,performer:Vern Chapman,insert,derived
+character_portrayals,28:identity:10:317,insert,wikipedia
+performers,performer:Tom Harvey,insert,derived
+character_portrayals,28:identity:13:318,insert,wikipedia
+character_portrayals,28:identity:10:318,insert,wikipedia
+character_portrayals,28:identity:108:318,insert,wikipedia
+character_portrayals,28:identity:19:318,insert,wikipedia
+character_portrayals,28:identity:29:318,insert,wikipedia
+performers,performer:Ed McNamara,insert,derived
+character_portrayals,28:identity:28:319,insert,wikipedia
+character_portrayals,28:related:175:319,insert,wikipedia
+performers,performer:Henry Ramer,insert,derived
+character_portrayals,28:identity:241:320,insert,wikipedia
+performers,performer:Billie Mae Richards,insert,derived
+character_portrayals,28:related:293:321,insert,wikipedia
+performers,performer:Chris Wiggins,insert,derived
+character_portrayals,28:identity:26:322,insert,wikipedia
+character_portrayals,28:identity:184:63,insert,wikipedia
+character_portrayals,28:identity:25:45,insert,wikipedia
+performers,performer:Wally Burr,insert,derived
+character_portrayals,29:identity:29:323,insert,wikipedia
+performers,performer:Corey Burton,insert,derived
+character_portrayals,29:identity:21:324,insert,wikipedia
+performers,performer:Regis Cordic,insert,derived
+character_portrayals,29:identity:224:325,insert,wikipedia
+performers,performer:Peter Cullen,insert,derived
+character_portrayals,29:related:114:326,insert,wikipedia
+performers,performer:Jack DeLeon,insert,derived
+character_portrayals,29:identity:20:327,insert,wikipedia
+performers,performer:Ralph James,insert,derived
+character_portrayals,29:identity:44:328,insert,wikipedia
+performers,performer:Lynn Johnson,insert,derived
+character_portrayals,29:identity:122:329,insert,wikipedia
+character_portrayals,29:identity:3:203,insert,wikipedia
+performers,performer:George DiCenzo,insert,derived
+character_portrayals,29:identity:5:330,insert,wikipedia
+character_portrayals,29:related:406:330,insert,wikipedia
+performers,performer:Walker Edmiston,insert,derived
+character_portrayals,29:identity:171:331,insert,wikipedia
+performers,performer:Linda Gary,insert,derived
+character_portrayals,29:related:39:332,insert,wikipedia
+performers,performer:Stan Jones,insert,derived
+character_portrayals,29:identity:10:333,insert,wikipedia
+character_portrayals,29:identity:19:333,insert,wikipedia
+performers,performer:John H. Mayer,insert,derived
+character_portrayals,29:identity:7:334,insert,wikipedia
+performers,performer:Don Messick,insert,derived
+character_portrayals,29:identity:45:335,insert,wikipedia
+performers,performer:Vic Perrin,insert,derived
+character_portrayals,29:identity:194:336,insert,wikipedia
+performers,performer:Neil Ross,insert,derived
+character_portrayals,29:identity:117:337,insert,wikipedia
+performers,performer:Michael Rye,insert,derived
+character_portrayals,29:identity:26:338,insert,wikipedia
+performers,performer:Michael Sheehan,insert,derived
+character_portrayals,29:identity:187:339,insert,wikipedia
+character_portrayals,29:identity:9:339,insert,wikipedia
+performers,performer:B.J. Ward,insert,derived
+character_portrayals,29:related:135:340,insert,wikipedia
+character_portrayals,29:related:309:340,insert,wikipedia
+performers,performer:Paul Winchell,insert,derived
+character_portrayals,29:related:166:341,insert,wikipedia
+performers,performer:Saratoga Ballantine,insert,derived
+character_portrayals,31:identity:178:342,insert,wikipedia
+character_portrayals,31:identity:1:332,insert,wikipedia
+performers,performer:Julie Bennett,insert,derived
+character_portrayals,31:identity:1:343,insert,wikipedia
+character_portrayals,31:identity:15:212,insert,wikipedia
+character_portrayals,31:identity:117:337,insert,wikipedia
+performers,performer:Hank Azaria,insert,derived
+character_portrayals,31:identity:207:344,insert,wikipedia
+performers,performer:Mark Hamill,insert,derived
+character_portrayals,31:related:427:345,insert,wikipedia
+performers,performer:Paul Dobson,insert,derived
+character_portrayals,32:identity:20:346,insert,wikipedia
+character_portrayals,32:identity:137:126,insert,wikipedia
+character_portrayals,32:identity:178:211,insert,wikipedia
+performers,performer:Mark Gibbon,insert,derived
+character_portrayals,32:identity:198:347,insert,wikipedia
+character_portrayals,32:related:403:123,insert,wikipedia
+performers,performer:Scott McNeil,insert,derived
+character_portrayals,32:identity:45:348,insert,wikipedia
+character_portrayals,34:identity:15:217,insert,wikipedia
+character_portrayals,34:related:113:217,insert,wikipedia
+character_portrayals,34:identity:178:219,insert,wikipedia
+performers,performer:Joshua LeBar,insert,derived
+character_portrayals,34:identity:110:349,insert,wikipedia
+performers,performer:Clancy Brown,insert,derived
+character_portrayals,34:identity:115:350,insert,wikipedia
+character_portrayals,34:identity:28:350,insert,wikipedia
+character_portrayals,34:identity:117:131,insert,wikipedia
+performers,performer:Thom Adcox-Hernandez,insert,derived
+character_portrayals,34:identity:42:351,insert,wikipedia
+character_portrayals,34:identity:44:209,insert,wikipedia
+character_portrayals,34:identity:21:223,insert,wikipedia
+performers,performer:Jeff Bennett,insert,derived
+character_portrayals,34:identity:31:352,insert,wikipedia
+performers,performer:Xander Berkeley,insert,derived
+character_portrayals,34:identity:26:353,insert,wikipedia
+character_portrayals,34:identity:15:276,insert,wikipedia
+character_portrayals,34:identity:7:276,insert,wikipedia
+performers,performer:Angela Bryant,insert,derived
+character_portrayals,34:identity:4:354,insert,wikipedia
+performers,performer:Max Burkholder,insert,derived
+character_portrayals,34:related:293:355,insert,wikipedia
+performers,performer:Nikki Cox,insert,derived
+character_portrayals,34:identity:34:356,insert,wikipedia
+performers,performer:Keith David,insert,derived
+character_portrayals,34:identity:43:357,insert,wikipedia
+performers,performer:Grey DeLisle,insert,derived
+character_portrayals,34:identity:67:358,insert,wikipedia
+character_portrayals,34:identity:29:261,insert,wikipedia
+character_portrayals,34:identity:122:261,insert,wikipedia
+performers,performer:Benjamin Diskin,insert,derived
+character_portrayals,34:identity:207:359,insert,wikipedia
+performers,performer:Charles Duckworth,insert,derived
+character_portrayals,34:identity:48:360,insert,wikipedia
+performers,performer:Robert Englund,insert,derived
+character_portrayals,34:identity:45:361,insert,wikipedia
+performers,performer:Bill Fagerbakke,insert,derived
+character_portrayals,34:identity:131:362,insert,wikipedia
+performers,performer:Miguel Ferrer,insert,derived
+character_portrayals,34:related:166:363,insert,wikipedia
+performers,performer:Crispin Freeman,insert,derived
+character_portrayals,34:identity:13:364,insert,wikipedia
+performers,performer:Elisa Gabrielli,insert,derived
+character_portrayals,34:identity:60:365,insert,wikipedia
+character_portrayals,34:related:176:268,insert,wikipedia
+character_portrayals,34:identity:3:282,insert,wikipedia
+performers,performer:Andrew Kishino,insert,derived
+character_portrayals,34:identity:196:366,insert,wikipedia
+performers,performer:Phil LaMarr,insert,derived
+character_portrayals,34:identity:227:367,insert,wikipedia
+character_portrayals,34:related:399:367,insert,wikipedia
+character_portrayals,34:related:115:367,insert,wikipedia
+character_portrayals,34:identity:39:257,insert,wikipedia
+performers,performer:Eric Lopez,insert,derived
+character_portrayals,34:related:170:368,insert,wikipedia
+performers,performer:James Remar,insert,derived
+character_portrayals,34:identity:256:369,insert,wikipedia
+performers,performer:Kevin Michael Richardson,insert,derived
+character_portrayals,34:identity:43:370,insert,wikipedia
+performers,performer:Kath Soucie,insert,derived
+character_portrayals,34:related:292:371,insert,wikipedia
+performers,performer:Deborah Strang,insert,derived
+character_portrayals,34:identity:1:372,insert,wikipedia
+performers,performer:Courtney B. Vance,insert,derived
+character_portrayals,34:related:437:373,insert,wikipedia
+performers,performer:Eric Vesbit,insert,derived
+character_portrayals,34:identity:20:374,insert,wikipedia
+performers,performer:Greg Weisman,insert,derived
+character_portrayals,34:identity:98:375,insert,wikipedia
+performers,performer:Thomas F. Wilson,insert,derived
+character_portrayals,34:related:47:376,insert,wikipedia
+character_portrayals,35:related:411:133,insert,wikipedia
+character_portrayals,35:identity:155:133,insert,wikipedia
+character_portrayals,35:identity:21:223,insert,wikipedia
+character_portrayals,35:identity:29:223,insert,wikipedia
+character_portrayals,35:identity:6:223,insert,wikipedia
+character_portrayals,35:identity:12:223,insert,wikipedia
+character_portrayals,35:related:134:223,insert,wikipedia
+character_portrayals,35:identity:166:138,insert,wikipedia
+performers,performer:Eric Bauza,insert,derived
+character_portrayals,35:related:411:377,insert,wikipedia
+character_portrayals,35:identity:30:377,insert,wikipedia
+character_portrayals,35:related:406:134,insert,wikipedia
+character_portrayals,35:identity:21:134,insert,wikipedia
+character_portrayals,35:identity:45:134,insert,wikipedia
+character_portrayals,35:identity:15:220,insert,wikipedia
+character_portrayals,35:related:194:220,insert,wikipedia
+character_portrayals,35:identity:12:220,insert,wikipedia
+performers,performer:Misty Lee,insert,derived
+character_portrayals,35:identity:1:378,insert,wikipedia
+character_portrayals,35:related:310:378,insert,wikipedia
+performers,performer:Chi McBride,insert,derived
+character_portrayals,35:identity:198:379,insert,wikipedia
+performers,performer:Scott Porter,insert,derived
+character_portrayals,35:identity:2:380,insert,wikipedia
+performers,performer:Tara Strong,insert,derived
+character_portrayals,35:identity:178:381,insert,wikipedia
+performers,performer:Steven Weber,insert,derived
+character_portrayals,35:identity:117:382,insert,wikipedia
+character_portrayals,35:related:307:382,insert,wikipedia
+character_portrayals,35:identity:12:382,insert,wikipedia
+character_portrayals,35:related:319:382,insert,wikipedia
+character_portrayals,36:identity:70:140,insert,wikipedia
+character_portrayals,36:related:140:140,insert,wikipedia
+character_portrayals,36:identity:15:139,insert,wikipedia
+performers,performer:Fred Tatasciore,insert,derived
+character_portrayals,36:identity:18:383,insert,wikipedia
+character_portrayals,36:related:375:383,insert,wikipedia
+character_portrayals,36:related:77:383,insert,wikipedia
+performers,performer:Aaron Abrams,insert,derived
+character_portrayals,36:identity:42:384,insert,wikipedia
+performers,performer:Charlie Adler,insert,derived
+character_portrayals,36:related:123:385,insert,wikipedia
+performers,performer:Troy Baker,insert,derived
+character_portrayals,36:identity:20:386,insert,wikipedia
+character_portrayals,36:identity:175:377,insert,wikipedia
+character_portrayals,36:related:162:284,insert,wikipedia
+performers,performer:Cameron Boyce,insert,derived
+character_portrayals,36:identity:31:387,insert,wikipedia
+performers,performer:Jonathan Brooks,insert,derived
+character_portrayals,36:related:70:388,insert,wikipedia
+performers,performer:Jim Cummings,insert,derived
+character_portrayals,36:identity:122:389,insert,wikipedia
+performers,performer:Felicia Day,insert,derived
+character_portrayals,36:identity:178:390,insert,wikipedia
+performers,performer:Alex Désert,insert,derived
+character_portrayals,36:identity:144:391,insert,wikipedia
+character_portrayals,36:identity:139:261,insert,wikipedia
+character_portrayals,36:identity:110:359,insert,wikipedia
+character_portrayals,36:identity:241:359,insert,wikipedia
+character_portrayals,36:identity:12:359,insert,wikipedia
+character_portrayals,36:identity:78:359,insert,wikipedia
+performers,performer:Alistair Duncan,insert,derived
+character_portrayals,36:identity:45:392,insert,wikipedia
+performers,performer:Meg Donnelly,insert,derived
+character_portrayals,36:identity:180:393,insert,wikipedia
+character_portrayals,36:identity:26:364,insert,wikipedia
+character_portrayals,36:identity:41:364,insert,wikipedia
+performers,performer:Will Friedle,insert,derived
+character_portrayals,36:identity:211:394,insert,wikipedia
+performers,performer:Peter Giles,insert,derived
+character_portrayals,36:identity:189:395,insert,wikipedia
+character_portrayals,36:identity:3:358,insert,wikipedia
+character_portrayals,36:identity:79:358,insert,wikipedia
+character_portrayals,36:related:191:345,insert,wikipedia
+performers,performer:Olivia Holt,insert,derived
+character_portrayals,36:related:154:396,insert,wikipedia
+performers,performer:Ernie Hudson,insert,derived
+character_portrayals,36:identity:227:397,insert,wikipedia
+performers,performer:Aubrey Joseph,insert,derived
+character_portrayals,36:related:154:398,insert,wikipedia
+character_portrayals,36:identity:117:132,insert,wikipedia
+character_portrayals,36:identity:150:132,insert,wikipedia
+character_portrayals,36:related:256:367,insert,wikipedia
+performers,performer:Natalie Lander,insert,derived
+character_portrayals,36:identity:163:399,insert,wikipedia
+performers,performer:Daisy Lightfoot,insert,derived
+character_portrayals,36:identity:13:400,insert,wikipedia
+character_portrayals,36:identity:1:307,insert,wikipedia
+character_portrayals,36:identity:21:306,insert,wikipedia
+performers,performer:Matthew Mercer,insert,derived
+character_portrayals,36:identity:28:401,insert,wikipedia
+performers,performer:Sumalee Montano,insert,derived
+character_portrayals,36:identity:47:402,insert,wikipedia
+performers,performer:Nolan North,insert,derived
+character_portrayals,36:related:166:403,insert,wikipedia
+performers,performer:Liam O'Brien,insert,derived
+character_portrayals,36:identity:11:404,insert,wikipedia
+performers,performer:Patton Oswalt,insert,derived
+character_portrayals,36:identity:44:405,insert,wikipedia
+character_portrayals,36:identity:7:405,insert,wikipedia
+performers,performer:Nathaniel J. Potvin,insert,derived
+character_portrayals,36:identity:48:406,insert,wikipedia
+performers,performer:Ben Pronsky,insert,derived
+character_portrayals,36:identity:12:407,insert,wikipedia
+character_portrayals,36:identity:207:407,insert,wikipedia
+performers,performer:Leonard Roberts,insert,derived
+character_portrayals,36:related:157:408,insert,wikipedia
+character_portrayals,36:related:399:224,insert,wikipedia
+performers,performer:Kevin Shinick,insert,derived
+character_portrayals,36:identity:18:409,insert,wikipedia
+performers,performer:Roger Craig Smith,insert,derived
+character_portrayals,36:identity:5:410,insert,wikipedia
+performers,performer:Jason Spisak,insert,derived
+character_portrayals,36:identity:53:411,insert,wikipedia
+character_portrayals,36:identity:30:411,insert,wikipedia
+performers,performer:April Stewart,insert,derived
+character_portrayals,36:identity:34:412,insert,wikipedia
+performers,performer:Booboo Stewart,insert,derived
+character_portrayals,36:identity:138:413,insert,wikipedia
+performers,performer:Imari Williams,insert,derived
+character_portrayals,36:related:170:414,insert,wikipedia
+character_portrayals,36:identity:29:311,insert,wikipedia
+character_portrayals,36:identity:249:311,insert,wikipedia
+performers,performer:Mick Wingert,insert,derived
+character_portrayals,36:identity:136:415,insert,wikipedia
+performers,performer:Gabrielle Ruiz,insert,derived
+character_portrayals,37:identity:225:416,insert,wikipedia
+character_portrayals,37:identity:115:380,insert,wikipedia
+performers,performer:Tru Valentino,insert,derived
+character_portrayals,37:identity:69:417,insert,wikipedia
+performers,performer:John Stamos,insert,derived
+character_portrayals,37:identity:136:418,insert,wikipedia
+performers,performer:Andy Milder,insert,derived
+character_portrayals,37:related:431:419,insert,wikipedia
+performers,performer:Mario Lopez,insert,derived
+character_portrayals,37:identity:187:420,insert,wikipedia
+performers,performer:Emma Berman,insert,derived
+character_portrayals,37:related:310:421,insert,wikipedia
+performers,performer:Kylie Cantrall,insert,derived
+character_portrayals,37:identity:258:422,insert,wikipedia
+character_portrayals,37:identity:5:410,insert,wikipedia
+performers,performer:Justin Shenkarow,insert,derived
+character_portrayals,37:identity:28:423,insert,wikipedia
+performers,performer:Stephanie Lemelin,insert,derived
+character_portrayals,37:identity:13:424,insert,wikipedia
+character_portrayals,37:identity:29:376,insert,wikipedia
+performers,performer:Trevor Devall,insert,derived
+character_portrayals,37:related:191:425,insert,wikipedia
+performers,performer:Bumper Robinson,insert,derived
+character_portrayals,37:identity:21:426,insert,wikipedia
+performers,performer:Haley Joel Osment,insert,derived
+character_portrayals,37:identity:131:427,insert,wikipedia
+performers,performer:Vanessa Bayer,insert,derived
+character_portrayals,37:related:411:428,insert,wikipedia
+character_portrayals,69:identity:27:128,insert,wikipedia
+character_portrayals,69:identity:37:121,insert,wikipedia
+character_portrayals,69:identity:184:118,insert,wikipedia
+character_portrayals,69:identity:27:132,insert,wikipedia
+character_portrayals,77:identity:27:306,insert,wikipedia
+character_portrayals,78:identity:27:306,insert,wikipedia
+work_characters,1:3:actor_person_id,fill,derived
+work_characters,1:5:actor_person_id,fill,derived
+work_characters,1:4:actor_person_id,fill,derived
+work_characters,2:7:actor_person_id,fill,derived
+work_characters,3:1:actor_person_id,fill,derived
+work_characters,5:18:actor_person_id,fill,derived
+work_characters,5:17:actor_person_id,fill,derived
+work_characters,6:14:actor_person_id,fill,derived
+work_characters,6:26:actor_person_id,fill,derived
+work_characters,7:28:actor_person_id,fill,derived
+work_characters,7:14:actor_person_id,fill,derived
+work_characters,7:26:actor_person_id,fill,derived
+work_characters,8:34:actor_person_id,fill,derived
+work_characters,8:33:actor_person_id,fill,derived
+work_characters,10:49:actor_person_id,fill,derived
+work_characters,10:55:actor_person_id,fill,derived
+work_characters,10:52:actor_person_id,fill,derived
+work_characters,10:50:actor_person_id,fill,derived
+work_characters,11:52:actor_person_id,fill,derived
+work_characters,11:71:actor_person_id,fill,derived
+work_characters,12:76:actor_person_id,fill,derived
+work_characters,12:2:actor_person_id,fill,derived
+work_characters,13:91:actor_person_id,fill,derived
+work_characters,13:88:actor_person_id,fill,derived
+work_characters,13:92:actor_person_id,fill,derived
+work_characters,13:26:actor_person_id,fill,derived
+work_characters,13:76:actor_person_id,fill,derived
+work_characters,13:27:actor_person_id,fill,derived
+work_characters,13:2:actor_person_id,fill,derived
+work_characters,14:95:actor_person_id,fill,derived
+work_characters,18:117:actor_person_id,fill,derived
+work_characters,19:121:actor_person_id,fill,derived
+work_characters,20:33:actor_person_id,fill,derived
+work_characters,20:130:actor_person_id,fill,derived
+work_characters,20:129:actor_person_id,fill,derived
+work_characters,20:131:actor_person_id,fill,derived
+work_characters,22:147:actor_person_id,fill,derived
+work_characters,22:154:actor_person_id,fill,derived
+work_characters,22:148:actor_person_id,fill,derived
+work_characters,22:117:actor_person_id,fill,derived
+work_characters,28:23:actor_person_id,fill,derived
+work_characters,29:23:actor_person_id,fill,derived
+work_characters,30:177:actor_person_id,fill,derived
+work_characters,36:162:actor_person_id,fill,derived
+work_characters,57:251:actor_person_id,fill,derived
+work_characters,57:267:actor_person_id,fill,derived
+work_characters,57:266:actor_person_id,fill,derived
+work_characters,57:264:actor_person_id,fill,derived
+work_characters,59:273:actor_person_id,fill,derived
+work_characters,59:264:actor_person_id,fill,derived
+work_characters,59:276:actor_person_id,fill,derived
+work_characters,59:271:actor_person_id,fill,derived
+work_characters,61:283:actor_person_id,fill,derived
+work_characters,61:264:actor_person_id,fill,derived
+work_characters,62:268:actor_person_id,fill,derived
+work_characters,62:281:actor_person_id,fill,derived
+work_characters,62:264:actor_person_id,fill,derived
+work_characters,63:295:actor_person_id,fill,derived
+work_characters,63:294:actor_person_id,fill,derived
+work_characters,65:266:actor_person_id,fill,derived
+work_characters,65:264:actor_person_id,fill,derived
+work_characters,65:300:actor_person_id,fill,derived
+work_characters,65:302:actor_person_id,fill,derived
+work_characters,65:2:actor_person_id,fill,derived
+work_characters,66:264:actor_person_id,fill,derived
+work_characters,66:294:actor_person_id,fill,derived
+work_characters,69:328:actor_person_id,fill,derived
+work_characters,69:329:actor_person_id,fill,derived
+work_characters,75:271:actor_person_id,fill,derived
+work_characters,76:194:actor_person_id,fill,derived
+work_characters,76:264:actor_person_id,fill,derived
+work_characters,77:264:actor_person_id,fill,derived
+work_characters,78:1:actor_person_id,fill,derived
+work_characters,80:58:actor_person_id,fill,derived
+work_characters,80:264:actor_person_id,fill,derived

@@ -1,0 +1,807 @@
+related_id,relation,other_name,other_identity_id,other_related_id
+1,partner,Storm (Ororo Munroe),243,
+1,partner,Mystique,,404
+2,partner,Scarlet Witch,,435
+2,partner,Captain Marvel / Carol Danvers,79,
+3,alternate_universe_counterpart,Frank Castle / The Punisher,14,
+4,enemy,X-Men,,57
+4,spouse,Mystique,,404
+4,child,Rogue,229,
+4,child,Nightcrawler (DS),200,
+4,partner,Mystique,,404
+5,alternate_universe_counterpart,Hulk,18,
+5,alternate_universe_counterpart,Maestro,,386
+6,enemy,Black Panther / T'Challa,69,
+7,alternate_universe_counterpart,Patrick Mulligan / Toxin,207,
+8,father,Wolverine,46,
+9,enemy,Jessica Drew / Spider-Woman,149,
+9,alternate_universe_counterpart,Daredevil,8,
+10,enemy,Peter Parker,,445
+11,enemy,Namor the Sub-Mariner,194,
+11,enemy,Doctor Strange,11,
+11,enemy,Wong,261,
+12,spouse,J. Jonah Jameson,137,
+13,spouse,David Munroe,,22
+13,child,Storm (Ororo Munroe),243,
+14,spouse,Sharon Xavier,,15
+14,child,Professor X,214,
+14,child,Cassandra Nova,,428
+15,spouse,Brian Xavier,,14
+15,child,Professor X,214,
+15,child,Cassandra Nova,,428
+16,spouse,Edna McCoy,,17
+16,child,Beast (Hank McCoy),64,
+17,spouse,Norton McCoy,,16
+17,child,Beast (Hank McCoy),64,
+18,enemy,Daredevil,8,
+19,enemy,Captain America,5,
+20,spouse,Madeline Drake,,21
+20,child,Iceman,132,
+21,spouse,William Drake,,20
+21,child,Iceman,132,
+22,spouse,N'Dare,,13
+22,child,Storm (Ororo Munroe),243,
+23,child,Star-Lord / Peter Quill,211,
+24,child,Star-Lord / Peter Quill,211,
+25,enemy,Black Widow / Natasha Romanova,70,
+25,spouse,Black Widow / Natasha Romanova,70,
+26,child,Betty Brant,67,
+27,enemy,Peter Parker / Spider-Man,27,
+28,enemy,Peter Parker / Spider-Man,27,
+30,child,Liz Allan,163,
+31,alternate_universe_counterpart,Star-Lord / Peter Quill,211,
+31,alternate_universe_counterpart,Ultimate Kitty Pryde,,326
+31,alternate_universe_counterpart,Colleen,,39
+32,alternate_universe_counterpart,Wolverine,46,
+32,alternate_universe_counterpart,Ultimate Wolverine,,419
+32,alternate_universe_counterpart,Old Man Logan,,337
+33,alternate_universe_counterpart,Magneto,171,
+34,alternate_universe_counterpart,Storm (Ororo Munroe),243,
+34,alternate_universe_counterpart,Ultimate Storm,,301
+35,spouse,Hulk,18,
+35,child,Skaar,,67
+35,child,Hiro-Kala,,286
+36,enemy,Blade,71,
+36,enemy,Apocalypse,,119
+36,spouse,Shiklah,,106
+37,partner,Star-Lord / Peter Quill,211,
+38,alternate_universe_counterpart,Thor,249,
+39,alternate_universe_counterpart,Star-Lord / Peter Quill,211,
+39,alternate_universe_counterpart,Ultimate Kitty Pryde,,326
+39,alternate_universe_counterpart,Kate Pryde,,31
+40,spouse,Frank Castle / The Punisher,14,
+40,child,Lisa Barbara Castle,,41
+40,child,Frank Castle Jr.,,42
+41,mother,Maria Castle,,40
+41,father,Frank Castle / The Punisher,14,
+42,mother,Maria Castle,,40
+42,father,Frank Castle / The Punisher,14,
+43,enemy,Doctor Doom,9,
+44,child,Namor the Sub-Mariner,194,
+45,mother,Jessica Jones,,128
+45,father,Luke Cage,166,
+46,enemy,Black Panther / T'Challa,69,
+47,enemy,Peter Parker / Spider-Man,27,
+47,enemy,Gold Goblin,117,
+48,spouse,Marie Danvers,,49
+48,child,Captain Marvel / Carol Danvers,79,
+49,spouse,Joe Danvers,,48
+49,child,Captain Marvel / Carol Danvers,79,
+50,alternate_universe_counterpart,Professor X,214,
+51,alternate_universe_counterpart,Nightcrawler (DS),200,
+52,partner,Firestar,109,
+54,enemy,Thanos,246,
+54,father,Mar-Vell,,433
+55,alternate_universe_counterpart,Patrick Mulligan / Toxin,207,
+56,enemy,Hulk,18,
+57,enemy,William Stryker,,174
+57,enemy,Magneto,171,
+57,enemy,Kenuichio Harada,,397
+57,enemy,Bolivar Trask,72,
+57,enemy,Vulcan,,175
+57,enemy,Thanos,246,
+57,enemy,Apocalypse,,119
+57,enemy,Vanisher,252,
+57,enemy,Destiny,,4
+57,enemy,Ajax,,313
+57,enemy,Mystique,,404
+57,enemy,Mister Sinister,,220
+57,enemy,Shadow King,,75
+57,enemy,Sabretooth,,308
+57,enemy,Juggernaut,,426
+58,alternate_universe_counterpart,Cyclops (Scott Summers),87,
+58,alternate_universe_counterpart,Ultimate Cyclops,,297
+59,spouse,Mentor,,436
+59,child,Thanos,246,
+59,child,Starfox,,132
+60,enemy,Surtur,,244
+60,spouse,Frigga,,230
+60,child,Thor,249,
+60,child,Loki,164,
+61,mother,Lilandra Neramani,,167
+61,father,Professor X,214,
+62,alternate_universe_counterpart,Iron Man / Tony Stark,136,
+62,alternate_universe_counterpart,Ultimate Iron Man,,209
+63,alternate_universe_counterpart,Mister Fantastic / Reed Richards,187,
+63,alternate_universe_counterpart,Maker,,294
+64,alternate_universe_counterpart,Captain America,5,
+64,alternate_universe_counterpart,Ultimate Captain America,,298
+65,alternate_universe_counterpart,Thor,249,
+65,alternate_universe_counterpart,King Thor,,38
+66,enemy,Captain Marvel / Carol Danvers,79,
+67,mother,Caiera,,35
+67,father,Hulk,18,
+68,enemy,Magneto,171,
+69,enemy,Captain America,5,
+70,child,Tyler Stone,,417
+71,alternate_universe_counterpart,Namor the Sub-Mariner,194,
+72,enemy,Doctor Doom,9,
+72,enemy,Galactus,111,
+72,enemy,Thanos,246,
+72,enemy,Ultron,,164
+72,enemy,Wizard,,406
+72,enemy,Terrax,,104
+73,enemy,Excalibur,,178
+73,enemy,Doctor Strange,11,
+74,spouse,Corsair,,144
+74,child,Cyclops (Scott Summers),87,
+74,child,Vulcan,,175
+75,enemy,Storm (Ororo Munroe),243,
+75,enemy,X-Men,,57
+75,enemy,Professor X,214,
+76,mother,Gabrielle Haller,,348
+76,father,Professor X,214,
+77,enemy,Peter Parker / Spider-Man,27,
+77,enemy,Human Torch,129,
+78,mother,Rogue,229,
+78,father,Magneto,171,
+79,enemy,Wolverine,46,
+79,enemy,Sabretooth,,308
+80,enemy,Hawkeye,125,
+81,enemy,Thor,249,
+81,enemy,Captain America,5,
+81,enemy,Daredevil,8,
+81,enemy,Hulk,18,
+82,enemy,Maker,,294
+82,alternate_universe_counterpart,Doctor Doom,9,
+82,alternate_universe_counterpart,Doom 2099,,338
+83,alternate_universe_counterpart,Hawkeye,125,
+84,spouse,Loki,164,
+85,enemy,Iron Fist,135,
+86,enemy,Spider-Punk,38,
+88,spouse,Brian Banner,,329
+88,child,Hulk,18,
+89,enemy,Thanos,246,
+89,enemy,In-Betweener,,221
+89,enemy,Ultron,,164
+90,partner,Green Goblin / Norman Osborn,15,
+90,partner,Gold Goblin,117,
+91,enemy,Blade,71,
+92,father,Magneto,171,
+92,partner,Rogue,229,
+93,enemy,Peter Parker / Spider-Man,27,
+95,enemy,Hulk,18,
+95,enemy,Domino,,359
+95,child,Betty Ross,,368
+96,enemy,Peter Parker / Spider-Man,27,
+96,father,Eddie Brock / Venom,12,
+97,father,Wolverine,46,
+99,mother,Scarlet Witch,,435
+99,father,Nightcrawler (DS),200,
+100,enemy,Frank Castle / The Punisher,14,
+101,partner,Human Torch,129,
+103,enemy,Frank Castle / The Punisher,14,
+104,enemy,Silver Surfer / Norrin Radd,202,
+104,enemy,New Warriors,,199
+104,enemy,The Fantastic Four,,72
+105,enemy,Frank Castle / The Punisher,14,
+106,spouse,Deadpool / Wade Wilson,91,
+106,spouse,Dracula,,36
+107,father,Kraven the Hunter,20,
+108,enemy,Surtur,,244
+108,enemy,Galactus,111,
+109,enemy,Frank Castle / The Punisher,14,
+110,enemy,Doctor Doom,9,
+110,enemy,Thanos,246,
+111,enemy,Firestar,109,
+111,child,Ruby Summers,,254
+111,partner,Cyclops (Scott Summers),87,
+111,partner,Namor the Sub-Mariner,194,
+111,partner,Iron Man / Tony Stark,136,
+112,enemy,Peter Parker / Spider-Man,27,
+112,father,Kraven the Hunter,20,
+113,enemy,Peter Parker / Spider-Man,27,
+114,enemy,Captain America,5,
+114,enemy,Falcon,,383
+114,enemy,Avengers,,243
+114,enemy,Magneto,171,
+114,child,Sin,,357
+115,enemy,Peter Parker / Spider-Man,27,
+115,enemy,Daredevil,8,
+116,enemy,Doctor Strange,11,
+116,relative,Clea,,149
+117,enemy,Daredevil,8,
+118,father,Magneto,171,
+119,enemy,Cable,,127
+119,enemy,Nate Grey,,177
+119,enemy,X-Men,,57
+119,enemy,Magneto,171,
+119,enemy,Dracula,,36
+120,enemy,Franklin Richards,,182
+120,enemy,Magneto,171,
+121,enemy,Peter Parker / Spider-Man,27,
+121,enemy,Kaine / Scarlet Spider,155,
+122,child,Invisible Woman,,332
+122,child,Human Torch,129,
+123,enemy,Captain America,5,
+123,enemy,Iron Man / Tony Stark,136,
+123,enemy,Hulk,18,
+125,spouse,Maggie Murdock,,137
+125,child,Daredevil,8,
+126,alternate_universe_counterpart,Liz Allan,163,
+127,enemy,Apocalypse,,119
+127,mother,Madelyne Pryor,,407
+127,father,Cyclops (Scott Summers),87,
+127,partner,Domino,,359
+128,spouse,Luke Cage,166,
+128,child,Danielle Cage,,45
+131,spouse,Namor the Sub-Mariner,194,
+132,mother,Sui-San,,59
+132,father,Mentor,,436
+133,partner,Daredevil,8,
+134,enemy,Hulk,18,
+135,partner,Human Torch,129,
+136,enemy,Hulk,18,
+136,enemy,Betty Ross,,368
+137,spouse,Jack Murdock,,125
+137,child,Daredevil,8,
+138,enemy,Frank Castle / The Punisher,14,
+139,enemy,Iron Man / Tony Stark,136,
+139,partner,Iron Man / Tony Stark,136,
+141,enemy,Professor X,214,
+142,partner,Professor X,214,
+143,enemy,Firestar,109,
+144,spouse,Katherine Summers,,74
+144,child,Cyclops (Scott Summers),87,
+144,child,Vulcan,,175
+145,spouse,Pepper Potts,209,
+145,child,Morgan Stark,,392
+146,enemy,Namor the Sub-Mariner,194,
+147,partner,Michelle Jones-Watson / MJ,24,
+147,relative,May Parker,,148
+147,alternate_universe_counterpart,Peter Parker,,445
+148,relative,Peter Parker,,147
+149,partner,Doctor Strange,11,
+149,relative,Dormammu,,116
+151,enemy,Iron Man / Tony Stark,136,
+152,enemy,Doctor Doom,9,
+152,enemy,Silver Surfer / Norrin Radd,202,
+152,enemy,Ghost Rider (Danny Ketch),116,
+153,spouse,Quicksilver,,434
+153,partner,Human Torch,129,
+154,enemy,Shriek,32,
+155,enemy,Wolverine,46,
+156,partner,Iceman,132,
+157,enemy,Doctor Strange,11,
+158,enemy,Peter Parker / Spider-Man,27,
+158,enemy,Kingpin,19,
+158,mother,Vanessa Fisk,,420
+158,father,Kingpin,19,
+159,enemy,Frank Castle / The Punisher,14,
+160,enemy,Peter Parker / Spider-Man,27,
+161,enemy,Wolverine,46,
+162,enemy,Thor,249,
+162,enemy,Hulk,18,
+162,spouse,Titania,,358
+163,enemy,Thor,249,
+164,enemy,The Fantastic Four,,72
+164,enemy,Adam Warlock,,89
+164,enemy,Avengers,,243
+164,enemy,Iron Man / Tony Stark,136,
+164,enemy,Kang the Conqueror,157,
+165,enemy,Iron Man / Tony Stark,136,
+165,child,Zeke Stane,,203
+166,enemy,Peter Parker / Spider-Man,27,
+166,enemy,Kingpin,19,
+167,enemy,Deathbird,,219
+167,spouse,Professor X,214,
+167,child,Xandra Neramani,,61
+169,enemy,Kraven the Hunter,20,
+169,enemy,Hood,,183
+170,enemy,Peter Parker / Spider-Man,27,
+172,enemy,Thanos,246,
+173,enemy,Daredevil,8,
+174,enemy,X-Men,,57
+174,enemy,Wolverine,46,
+174,enemy,Deadpool / Wade Wilson,91,
+174,enemy,Magneto,171,
+175,enemy,X-Men,,57
+175,enemy,Cyclops (Scott Summers),87,
+175,mother,Katherine Summers,,74
+175,father,Corsair,,144
+175,spouse,Deathbird,,219
+176,enemy,Peter Parker / Spider-Man,27,
+177,enemy,Apocalypse,,119
+177,enemy,Dark Beast,,198
+177,mother,Jean Grey,,341
+177,father,Cyclops (Scott Summers),87,
+178,enemy,Doctor Doom,9,
+178,enemy,Galactus,111,
+178,enemy,Juggernaut,,426
+178,enemy,Mister Sinister,,220
+178,enemy,Mystique,,404
+178,enemy,Nightmare,,73
+179,enemy,Peter Parker / Spider-Man,27,
+180,partner,Wolverine,46,
+181,enemy,Captain America,5,
+182,enemy,Onslaught,,120
+182,mother,Invisible Woman,,332
+182,father,Mister Fantastic / Reed Richards,187,
+183,enemy,Peter Parker / Spider-Man,27,
+183,enemy,Tigra,,169
+184,enemy,Peter Parker / Spider-Man,27,
+184,partner,Black Cat,3,
+185,enemy,Daredevil,8,
+185,enemy,Frank Castle / The Punisher,14,
+186,enemy,Doctor Strange,11,
+187,enemy,Nightcrawler (DS),200,
+187,child,Nightcrawler (DS),200,
+187,partner,Mystique,,404
+188,enemy,Thor,249,
+189,enemy,Eddie Brock / Venom,12,
+190,enemy,Bullseye,77,
+190,father,Wolverine,46,
+191,enemy,Captain America,5,
+192,enemy,Iron Man / Tony Stark,136,
+193,enemy,Daredevil,8,
+194,enemy,Black Panther / T'Challa,69,
+195,enemy,Luke Cage,166,
+196,enemy,Gamora,,197
+196,relative,Gamora,,197
+196,relative,Thanos,246,
+197,enemy,Thanos,246,
+197,enemy,Nebula,,196
+197,partner,Iron Man / Tony Stark,136,
+198,enemy,Beast (Hank McCoy),64,
+198,enemy,Nate Grey,,177
+198,alternate_universe_counterpart,Beast (Hank McCoy),64,
+198,alternate_universe_counterpart,Ultimate Beast,,296
+199,enemy,Terrax,,104
+199,enemy,High Evolutionary,126,
+199,enemy,Juggernaut,,426
+199,enemy,Malekith the Accursed,,247
+199,enemy,Nitro,,382
+199,enemy,U-Foes,,441
+200,enemy,Thanos,246,
+201,enemy,Thor,249,
+202,enemy,Hulk,18,
+203,enemy,Iron Man / Tony Stark,136,
+203,father,Iron Monger,,165
+204,enemy,Captain America,5,
+204,enemy,Bucky Barnes,,205
+204,father,Baron Zemo,,222
+205,enemy,Helmut Zemo,,204
+205,partner,Black Widow / Natasha Romanova,70,
+206,partner,Beast (Hank McCoy),64,
+207,enemy,Black Panther / T'Challa,69,
+208,partner,Professor X,214,
+209,alternate_universe_counterpart,Iron Man / Tony Stark,136,
+209,alternate_universe_counterpart,Iron Lad,,62
+210,father,Eddie Brock / Venom,12,
+211,enemy,Hulk,18,
+212,enemy,Wolverine,46,
+213,enemy,Captain Marvel / Carol Danvers,79,
+214,enemy,Iron Man / Tony Stark,136,
+215,enemy,Daredevil,8,
+216,enemy,Luke Cage,166,
+217,enemy,Luke Cage,166,
+218,enemy,Wolverine,46,
+219,enemy,Lilandra Neramani,,167
+219,enemy,Captain Marvel / Carol Danvers,79,
+219,spouse,Vulcan,,175
+220,enemy,Cyclops (Scott Summers),87,
+220,enemy,Gambit (Remy LeBeau),112,
+220,enemy,Excalibur,,178
+220,enemy,X-Men,,57
+221,enemy,Galactus,111,
+221,enemy,Adam Warlock,,89
+222,enemy,Captain America,5,
+222,child,Helmut Zemo,,204
+223,enemy,Peter Parker / Spider-Man,27,
+224,enemy,Iron Man / Tony Stark,136,
+225,enemy,Thanos,246,
+226,enemy,Doctor Doom,9,
+227,enemy,Thor,249,
+228,enemy,Iron Man / Tony Stark,136,
+228,enemy,Captain America,5,
+229,enemy,Captain Marvel / Carol Danvers,79,
+230,spouse,Odin,,60
+230,child,Loki,164,
+230,child,Thor,249,
+230,relative,Thor,249,
+231,enemy,Hulk,18,
+232,enemy,Wolverine,46,
+233,enemy,Hulk,18,
+233,spouse,Betty Ross,,368
+234,enemy,Thor,249,
+235,enemy,Wolverine,46,
+236,enemy,Nightcrawler (DS),200,
+236,enemy,Sabretooth,,308
+236,mother,Mystique,,404
+236,father,Sabretooth,,308
+237,enemy,Black Panther / T'Challa,69,
+238,enemy,Hulk,18,
+239,enemy,Peter Parker / Spider-Man,27,
+240,enemy,Miles Morales,25,
+241,enemy,Captain America,5,
+242,enemy,Thanos,246,
+242,child,Mentor,,436
+242,child,Zuras,,279
+243,enemy,Kang the Conqueror,157,
+243,enemy,Ultron,,164
+243,enemy,Thanos,246,
+243,enemy,Loki,164,
+243,enemy,Red Skull,,114
+244,enemy,Beta Ray Bill,,108
+244,enemy,Odin,,60
+244,enemy,Thor,249,
+245,enemy,Thor,249,
+246,enemy,Iron Man / Tony Stark,136,
+247,enemy,Thor,249,
+247,enemy,New Warriors,,199
+248,enemy,Thor,249,
+249,father,Shingen Yashida,,409
+249,child,Amiko Kobayashi,,315
+249,partner,Wolverine,46,
+251,child,Mister Fantastic / Reed Richards,187,
+251,relative,Invisible Woman,,332
+251,relative,Kang the Conqueror,157,
+252,enemy,Namor the Sub-Mariner,194,
+253,enemy,Peter Parker / Spider-Man,27,
+254,mother,Emma Frost,,111
+254,father,Cyclops (Scott Summers),87,
+255,enemy,Thor,249,
+256,enemy,Peter Parker / Spider-Man,27,
+257,enemy,Captain America,5,
+258,enemy,Captain America,5,
+259,enemy,Hulk,18,
+260,enemy,Thanos,246,
+260,partner,Star-Lord / Peter Quill,211,
+261,enemy,Peter Parker / Spider-Man,27,
+262,enemy,Peter Parker / Spider-Man,27,
+263,enemy,X-51,262,
+263,partner,Iron Man / Tony Stark,136,
+264,enemy,Hawkeye,125,
+265,enemy,Kang the Conqueror,157,
+265,relative,Nathaniel Richards,,251
+266,spouse,Namor the Sub-Mariner,194,
+267,enemy,Frank Castle / The Punisher,14,
+268,enemy,Peter Parker / Spider-Man,27,
+269,enemy,Black Widow / Natasha Romanova,70,
+270,enemy,Moon Knight,189,
+271,father,Doctor Doom,9,
+272,child,Thor,249,
+273,partner,Firestar,109,
+274,partner,Nightcrawler (DS),200,
+275,enemy,Daredevil,8,
+276,enemy,Peter Parker / Spider-Man,27,
+277,partner,She-Hulk / Jennifer Walters,146,
+278,enemy,Doctor Strange,11,
+279,father,Kronos,,242
+280,partner,Nightcrawler (DS),200,
+281,partner,Peter Parker / Spider-Man,27,
+282,enemy,Peter Parker / Spider-Man,27,
+283,enemy,Peter Parker / Spider-Man,27,
+284,partner,Peter Parker / Spider-Man,27,
+285,enemy,Gold Goblin,117,
+286,mother,Caiera,,35
+286,father,Hulk,18,
+287,spouse,Human Torch,129,
+288,father,Hulk,18,
+289,father,Nick Fury,198,
+290,spouse,Howard Stark,,413
+290,child,Iron Man / Tony Stark,136,
+291,enemy,Peter Parker / Spider-Man,27,
+292,spouse,Lizard,21,
+292,child,Billy Connors,,293
+293,mother,Martha Connors,,292
+293,father,Lizard,21,
+294,enemy,Doctor Doom,9,
+294,enemy,Ultimate Doctor Doom,,82
+294,enemy,Eddie Brock / Venom,12,
+294,alternate_universe_counterpart,Mister Fantastic / Reed Richards,187,
+294,alternate_universe_counterpart,Doom,,63
+295,enemy,Peter Parker / Spider-Man,27,
+296,partner,Ultimate Storm,,301
+296,alternate_universe_counterpart,Beast (Hank McCoy),64,
+296,alternate_universe_counterpart,Dark Beast,,198
+297,alternate_universe_counterpart,Cyclops (Scott Summers),87,
+297,alternate_universe_counterpart,Cyclops,,58
+298,alternate_universe_counterpart,Captain America,5,
+299,alternate_universe_counterpart,Black Cat,3,
+300,enemy,Ultimate Spider-Man,,316
+300,alternate_universe_counterpart,Kraven the Hunter,20,
+301,partner,Ultimate Wolverine,,419
+301,partner,Ultimate Beast,,296
+301,alternate_universe_counterpart,Storm (Ororo Munroe),243,
+301,alternate_universe_counterpart,Storm,,34
+302,alternate_universe_counterpart,Thor,249,
+302,alternate_universe_counterpart,King Thor,,38
+303,alternate_universe_counterpart,Eddie Brock / Venom,12,
+304,enemy,Black Widow / Natasha Romanova,70,
+305,enemy,Luke Cage,166,
+306,enemy,Daredevil,8,
+307,enemy,Human Torch,129,
+308,enemy,Wolverine,46,
+308,enemy,Iron Fist,135,
+308,enemy,X-Men,,57
+308,enemy,Romulus,,79
+308,enemy,Graydon Creed,,236
+308,child,Graydon Creed,,236
+308,partner,Mystique,,404
+309,partner,Human Torch,129,
+310,enemy,Doctor Doom,9,
+311,enemy,Peter Parker / Spider-Man,27,
+311,enemy,Roderick Kingsley,,437
+311,enemy,Gold Goblin,117,
+312,father,Loki,164,
+313,enemy,Deadpool / Wade Wilson,91,
+313,enemy,X-Men,,57
+314,father,Thanos,246,
+315,mother,Mariko Yashida,,249
+315,father,Wolverine,46,
+316,enemy,Ultimate Green Goblin,,319
+316,enemy,Ultimate Kraven,,300
+316,partner,Ultimate Kitty Pryde,,326
+316,alternate_universe_counterpart,Peter Parker / Spider-Man,27,
+316,alternate_universe_counterpart,Spider-Man Noir,37,
+316,alternate_universe_counterpart,Spider-Ham,36,
+316,alternate_universe_counterpart,Pavitr Prabhakar / Spider-Man India,208,
+316,alternate_universe_counterpart,Spider-Man,,320
+317,enemy,Hulk,18,
+318,alternate_universe_counterpart,Magneto,171,
+319,enemy,Ultimate Spider-Man,,316
+319,enemy,Miles Morales,25,
+319,alternate_universe_counterpart,Gold Goblin,117,
+320,alternate_universe_counterpart,Peter Parker / Spider-Man,27,
+320,alternate_universe_counterpart,Ultimate Spider-Man,,316
+320,alternate_universe_counterpart,Spider-Man Noir,37,
+320,alternate_universe_counterpart,Spider-Ham,36,
+320,alternate_universe_counterpart,Pavitr Prabhakar / Spider-Man India,208,
+321,spouse,Gambit (Remy LeBeau),112,
+322,mother,Mary Jane Parker,178,
+322,father,Peter Parker / Spider-Man,27,
+323,partner,Ultimate Gambit,,325
+323,partner,Ultimate Iceman,,324
+323,alternate_universe_counterpart,Rogue,229,
+324,partner,Ultimate Rogue,,323
+324,partner,Ultimate Kitty Pryde,,326
+324,alternate_universe_counterpart,Iceman,132,
+325,partner,Ultimate Rogue,,323
+325,alternate_universe_counterpart,Gambit (Remy LeBeau),112,
+326,partner,Ultimate Iceman,,324
+326,partner,Ultimate Spider-Man,,316
+326,alternate_universe_counterpart,Star-Lord / Peter Quill,211,
+326,alternate_universe_counterpart,Kate Pryde,,31
+326,alternate_universe_counterpart,Colleen,,39
+327,enemy,Moon Knight,189,
+328,enemy,Peter Parker / Spider-Man,27,
+329,enemy,Hulk,18,
+329,spouse,Rebecca Banner,,88
+329,child,Hulk,18,
+330,enemy,Gambit (Remy LeBeau),112,
+331,enemy,Ghost Rider (Danny Ketch),116,
+332,enemy,Doctor Doom,9,
+332,father,Franklin Storm,,122
+332,spouse,Mister Fantastic / Reed Richards,187,
+332,child,Franklin Richards,,182
+332,child,Valeria Richards,,401
+333,child,Doctor Doom,9,
+335,enemy,Black Widow / Natasha Romanova,70,
+336,father,Ben Reilly / Scarlet Spider,2,
+337,alternate_universe_counterpart,Ultimate Wolverine,,419
+337,alternate_universe_counterpart,Wolverine,,32
+338,alternate_universe_counterpart,Doctor Doom,9,
+338,alternate_universe_counterpart,Ultimate Doctor Doom,,82
+339,enemy,Doctor Strange,11,
+340,partner,She-Hulk / Jennifer Walters,146,
+341,enemy,Magneto,171,
+341,enemy,Madelyne Pryor,,407
+341,spouse,Cyclops (Scott Summers),87,
+341,child,Nate Grey,,177
+341,partner,Wolverine,46,
+342,enemy,Peter Parker / Spider-Man,27,
+342,enemy,Daredevil,8,
+343,enemy,Black Panther / T'Challa,69,
+344,spouse,Daredevil,8,
+345,mother,Black Cat,3,
+345,father,Flash Thompson,110,
+346,father,Loki,164,
+347,enemy,Miguel O'Hara / Spider-Man 2099,184,
+348,child,Legion,,76
+348,partner,Professor X,214,
+349,father,Galactus,111,
+350,enemy,Patrick Mulligan / Toxin,207,
+350,enemy,Peter Parker / Spider-Man,27,
+351,enemy,Hulk,18,
+353,enemy,Captain America,5,
+353,enemy,Wolverine,46,
+353,spouse,Wolverine,46,
+354,spouse,Magneto,171,
+354,child,Anya Eisenhardt,,355
+354,child,Scarlet Witch,,435
+354,child,Quicksilver,,434
+355,mother,Magda Lehnsherr,,354
+355,father,Magneto,171,
+356,enemy,Wolverine,46,
+356,enemy,Nick Fury,198,
+357,enemy,Captain America,5,
+357,father,Red Skull,,114
+358,enemy,She-Hulk / Jennifer Walters,146,
+358,spouse,Absorbing Man,,162
+359,enemy,Thunderbolt Ross,,95
+359,partner,Cable,,127
+359,partner,Colossus,,360
+359,partner,Wolverine,46,
+360,partner,Star-Lord / Peter Quill,211,
+360,partner,Domino,,359
+361,enemy,Hulk,18,
+361,enemy,Betty Ross,,368
+362,enemy,Otto Octavius,,370
+362,enemy,Eddie Brock,,371
+362,alternate_universe_counterpart,Peter Parker,,445
+364,enemy,Miles Morales,25,
+365,spouse,Moon Knight,189,
+366,father,Thor,249,
+367,enemy,Galactus,111,
+368,enemy,The Leader,,136
+368,enemy,Abomination,,361
+368,father,Thunderbolt Ross,,95
+368,spouse,Hulk,18,
+368,spouse,Glenn Talbot,,233
+369,relative,Ghost Rider (Danny Ketch),116,
+369,relative,Noble Kale,,394
+370,enemy,Peter Parker,,362
+370,spouse,Rosalie Octavius,231,
+371,enemy,Peter Parker,,362
+371,alternate_universe_counterpart,Patrick Mulligan / Toxin,207,
+372,enemy,Black Panther / T'Challa,69,
+373,partner,Doctor Doom,9,
+375,enemy,Captain America,5,
+376,enemy,Thor,249,
+376,child,Loki,164,
+378,partner,Magneto,171,
+378,partner,Cyclops (Scott Summers),87,
+379,enemy,Peter Parker / Spider-Man,27,
+379,father,Kraven the Hunter,20,
+380,enemy,Thor,249,
+381,enemy,Namor the Sub-Mariner,194,
+382,enemy,Speedball,240,
+382,enemy,New Warriors,,199
+383,enemy,Red Skull,,114
+383,enemy,Batroc the Leaper (Georges Batroc),63,
+384,father,Bolivar Trask,72,
+385,enemy,Deadpool / Wade Wilson,91,
+386,enemy,Hulk,18,
+386,alternate_universe_counterpart,Hulk,18,
+386,alternate_universe_counterpart,Ultimate Hulk,,5
+387,enemy,Peter Parker / Spider-Man,27,
+387,enemy,Luke Cage,166,
+387,enemy,Iron Fist,135,
+388,enemy,Iron Fist,135,
+389,enemy,Hulk,18,
+390,enemy,Thor,249,
+390,father,Loki,164,
+391,enemy,Peter Parker / Spider-Man,27,
+391,enemy,Daredevil,8,
+393,partner,Wolverine,46,
+394,relative,Jennifer Kale,,369
+394,relative,Ghost Rider (Danny Ketch),116,
+395,mother,Liz Allan,163,
+395,father,Green Goblin / Norman Osborn,15,
+396,enemy,Star-Lord / Peter Quill,211,
+396,enemy,Wolverine,46,
+397,enemy,Wolverine,46,
+397,enemy,X-Men,,57
+397,father,Shingen Yashida,,409
+398,enemy,Wolverine,46,
+399,father,Robbie Robertson,227,
+399,partner,Janice Lincoln,142,
+400,enemy,Kang the Conqueror,157,
+401,mother,Invisible Woman,,332
+401,father,Mister Fantastic / Reed Richards,187,
+402,spouse,Hawkeye,125,
+402,partner,Peter Parker / Spider-Man,27,
+403,enemy,Peter Parker / Spider-Man,27,
+404,enemy,Rogue,229,
+404,enemy,Nightcrawler (DS),200,
+404,enemy,Captain Marvel / Carol Danvers,79,
+404,enemy,Excalibur,,178
+404,enemy,X-Men,,57
+404,enemy,Bolivar Trask,72,
+404,spouse,Destiny,,4
+404,child,Nightcrawler (DS),200,
+404,child,Graydon Creed,,236
+404,child,Rogue,229,
+404,partner,Azazel,,187
+404,partner,Sabretooth,,308
+404,partner,Destiny,,4
+404,partner,Iceman,132,
+404,partner,Magneto,171,
+404,partner,Wolverine,46,
+404,partner,Forge,,1
+405,spouse,Ghost Rider (Danny Ketch),116,
+406,enemy,Human Torch,129,
+406,enemy,The Fantastic Four,,72
+407,enemy,Jean Grey,,341
+407,spouse,Cyclops (Scott Summers),87,
+407,child,Cable,,127
+408,partner,Silver Surfer / Norrin Radd,202,
+409,enemy,Wolverine,46,
+409,child,Mariko Yashida,,249
+409,child,Kenuichio Harada,,397
+410,enemy,Black Panther / T'Challa,69,
+411,enemy,Peter Parker / Spider-Man,27,
+412,father,Bolivar Trask,72,
+413,spouse,Maria Stark,,290
+413,child,Iron Man / Tony Stark,136,
+414,child,Wolverine,46,
+415,enemy,Namor the Sub-Mariner,194,
+416,enemy,Daredevil,8,
+417,enemy,Miguel O'Hara / Spider-Man 2099,184,
+417,father,Tiberius Stone,,70
+417,child,Miguel O'Hara / Spider-Man 2099,184,
+418,alternate_universe_counterpart,Nick Fury,198,
+419,partner,Ultimate Storm,,301
+419,alternate_universe_counterpart,Wolverine,46,
+419,alternate_universe_counterpart,Old Man Logan,,337
+420,enemy,Kingpin,19,
+420,spouse,Kingpin,19,
+420,child,Richard Fisk,,158
+422,enemy,Mar-Vell,,433
+422,enemy,Captain Marvel / Carol Danvers,79,
+423,child,Amiko Kobayashi,,315
+423,partner,Wolverine,46,
+424,enemy,Doctor Strange,11,
+425,enemy,Taskmaster / Tony Masters,245,
+426,enemy,Professor X,214,
+426,enemy,New Warriors,,199
+426,enemy,Excalibur,,178
+426,enemy,X-Men,,57
+427,enemy,Peter Parker / Spider-Man,27,
+428,enemy,Professor X,214,
+428,mother,Sharon Xavier,,15
+428,father,Brian Xavier,,14
+429,enemy,Thanos,246,
+430,enemy,Wolverine,46,
+431,enemy,Doctor Doom,9,
+431,relative,Franklin Richards,,182
+432,partner,Daredevil,8,
+433,enemy,Yon-Rogg,,422
+433,enemy,Thanos,246,
+433,child,Phyla-Vell,,54
+434,mother,Magda Lehnsherr,,354
+434,father,Magneto,171,
+434,spouse,Crystal,,153
+435,mother,Magda Lehnsherr,,354
+435,father,Magneto,171,
+435,partner,Doctor Doom,9,
+435,partner,Wonder Man,,2
+436,father,Kronos,,242
+436,spouse,Sui-San,,59
+436,child,Thanos,246,
+436,child,Starfox,,132
+437,enemy,Peter Parker / Spider-Man,27,
+437,enemy,Phil Urich,,311
+438,partner,Happy Hogan,123,
+439,enemy,Daredevil,8,
+440,enemy,Frank Castle / The Punisher,14,
+441,enemy,New Warriors,,199
+441,enemy,Hulk,18,
+442,enemy,Thor,249,
+443,partner,She-Hulk / Jennifer Walters,146,
+444,enemy,Thor,249,
+445,enemy,Max Dillon,,10
+445,partner,Gwen Stacy,,446
+445,alternate_universe_counterpart,Peter Parker,,362
+446,partner,Peter Parker,,445

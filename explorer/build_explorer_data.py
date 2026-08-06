@@ -321,6 +321,64 @@ def main():
         if ident:
             ident.setdefault("traits", {}).setdefault(t["trait"], []).append(t["value"])
 
+    # --- v5: performances, and the second ring of the character graph ---
+
+    related = {}
+    for r in rows(con, "SELECT * FROM related_characters ORDER BY id"):
+        related[r["id"]] = {
+            "id": r["id"], "name": r["name"], "description": r["description"],
+            "wikipedia": r["wikipedia_title"], "wikidata": r["wikidata_id"],
+            "kind": r["entity_type"], "gender": r["gender"],
+            "publisher": r["publisher"], "universe": r["narrative_universe"],
+            "first_appearance": r["first_appearance"], "creators": r["creators"],
+            "relations": [], "back_relations": [], "portrayals": []}
+
+    # A v4 relation that ended in a name now points at a row; the explorer greys
+    # out the ones that still do not, so it needs to know which is which.
+    target_of = {}
+    for t in rows(con, "SELECT * FROM character_relation_targets"):
+        target_of[(t["identity_id"], t["relation"], t["other_name"])] = t["related_id"]
+    for ident in identities.values():
+        for rel in ident.get("relations", []):
+            rid = target_of.get((ident["id"], rel["relation"], rel["name"]))
+            if rid:
+                rel["related_id"] = rid
+                related[rid]["back_relations"].append(
+                    {"relation": rel["relation"], "identity_id": ident["id"]})
+
+    for r in rows(con, "SELECT * FROM related_character_relations"
+                       " ORDER BY related_id, relation, other_name"):
+        related[r["related_id"]]["relations"].append(
+            {"relation": r["relation"], "name": r["other_name"],
+             "other_id": r["other_identity_id"], "other_related_id": r["other_related_id"]})
+
+    performers = {}
+    for p in rows(con, "SELECT * FROM performers ORDER BY name"):
+        performers[p["id"]] = {
+            "id": p["id"], "name": p["name"], "person_id": p["person_id"],
+            "wikipedia": p["wikipedia_title"], "wikidata": p["wikidata_id"],
+            "portrayals": []}
+
+    # Held three times over — on the work, on the character and on the performer —
+    # because all three pages lead with it and none of them can afford a scan of
+    # the whole table on render.
+    for x in rows(con, "SELECT * FROM character_portrayals"
+                       " ORDER BY work_id, target_kind, target_id"):
+        entry = {"work_id": x["work_id"], "performer_id": x["performer_id"],
+                 "kind": x["target_kind"], "target_id": x["target_id"],
+                 "as": x["credited_as"], "type": x["portrayal_type"],
+                 "origin": x["origin"], "method": x["match_method"]}
+        works[x["work_id"]].setdefault("portrayals", []).append(entry)
+        performers[x["performer_id"]]["portrayals"].append(entry)
+        target = (identities if x["target_kind"] == "identity" else related).get(
+            x["target_id"])
+        if target is not None:
+            target.setdefault("portrayals", []).append(entry)
+
+    for ident in identities.values():
+        ps = ident.get("portrayals") or []
+        ident["n_performers"] = len({p["performer_id"] for p in ps})
+
     platform_detail = {}
     for d in rows(con, "SELECT p.name, d.* FROM platform_details d"
                        " JOIN platforms p ON p.id = d.platform_id ORDER BY p.name"):
@@ -347,7 +405,7 @@ def main():
 
     prov_sources = {}
     provenance = []
-    for version in ("v3", "v4"):
+    for version in ("v3", "v4", "v5"):
         for r in rows(con, f"SELECT * FROM {version}_sources"):
             prov_sources.setdefault(r["source_key"], r)
         for r in rows(con, f"SELECT table_name, source_key, action, COUNT(*) n"
@@ -392,6 +450,9 @@ def main():
                 "credits": sum(len(p["credits"]) for p in people.values()),
                 "comics": len(comics),
                 "comic_creators": len(creators),
+                "performers": len(performers),
+                "portrayals": sum(len(p["portrayals"]) for p in performers.values()),
+                "related_characters": len(related),
             },
             "year_min": min(w["year"] for w in works.values() if w["year"]),
             "year_max": max(w["year"] for w in works.values() if w["year"]),
@@ -409,6 +470,8 @@ def main():
         "comics": prune(sorted(comics.values(),
                                key=lambda c: (c["year"] or 9999, c["title"]))),
         "comic_creators": prune(sorted(creators.values(), key=lambda c: c["name"])),
+        "performers": prune(sorted(performers.values(), key=lambda p: p["name"])),
+        "related_characters": prune(sorted(related.values(), key=lambda r: r["name"])),
         "platform_details": prune(platform_detail),
         "studio_details": prune(studio_detail),
     }
@@ -423,6 +486,7 @@ def main():
     (OUT_DIR / "data-details.js").write_text(
         "window.SPIDERMAN_DETAILS=" + details_js + ";\n", encoding="utf-8")
 
+    print(f"performers={len(performers)} related={len(related)}")
     print(f"data.json {len(js)/1024:.0f} KB + data-details.json {len(details_js)/1024:.0f} KB · "
           f"works={len(works)} characters={len(identities)} people={len(people)}")
 

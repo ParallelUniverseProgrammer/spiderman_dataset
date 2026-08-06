@@ -6,8 +6,9 @@
 [![Dependencies: none](https://img.shields.io/badge/dependencies-none-brightgreen.svg)](#reproducing-the-build)
 
 **Every Spider-Man movie, TV series and video game ever released — 1967 to 2026 —
-normalized into a 54-table SQLite database with cast, characters, studios, budgets,
-box office, review scores and the comics behind every adaptation.**
+normalized into a 61-table SQLite database with cast, characters, studios, budgets,
+box office, review scores, the comics behind every adaptation and every performer
+who has played every character.**
 
 Not a scraped CSV dump. Character names are resolved to *identities* (416 credit
 strings → 264 real characters), review scores are normalized onto a common 0–100
@@ -18,20 +19,33 @@ reproducible.
 
 ```
 81 works  ·  264 characters  ·  581 people  ·  826 cast & crew credits
-257 comics  ·  318 comic creators  ·  790 character relationships
-54 tables  ·  13 analysis views  ·  55 CSV exports  ·  4.7 MB
+257 comics  ·  318 comic creators  ·  1,596 character relationships
+652 performances  ·  428 performers  ·  446 second-ring characters
+61 tables  ·  17 analysis views  ·  62 CSV exports  ·  5.6 MB
 ```
 
-**v4** resolves the dataset's outer edges: the comic titles `source_material`
-only ever named as strings are now 257 real comics with writers, artists and
-publication dates attached, characters carry a relationship graph (enemies,
-family, alternate-universe counterparts), and three of the twelve columns that
-were NULL for every row in v3 — `studios.country`, `studios.parent_company`,
-`character_details.publisher` — are now populated for some of them. See
-[What v4 added](#what-v4-added).
+**v5** joins up the two things v4 left unjoinable. **Who played whom** is now a
+table of its own: `character_portrayals` has 652 rows over all 23 films, all 15
+series and 14 of the games — which had **no cast at all** before, because TMDB
+does not credit video games. And the **character graph closes**: all 533
+relationship edges that ended in a name rather than a row now point at one of
+446 second-ring characters, which bring 806 edges of their own. See
+[What v5 added](#what-v5-added).
 
 <details>
-<summary><b>What v3 added</b> — the 17-table enrichment release this builds on</summary>
+<summary><b>What v4 added</b> — the comics and the character graph this builds on</summary>
+
+v4 resolved the dataset's outer edges: the comic titles `source_material`
+only ever named as strings became 257 real comics with writers, artists and
+publication dates attached, characters gained a relationship graph (enemies,
+family, alternate-universe counterparts), and three of the twelve columns that
+were NULL for every row in v3 — `studios.country`, `studios.parent_company`,
+`character_details.publisher` — were populated for some of them. See
+[What v4 added](#what-v4-added).
+</details>
+
+<details>
+<summary><b>What v3 added</b> — the 17-table enrichment release that builds on</summary>
 
 Every v2 table kept its columns in the same order and no value v2 wrote was
 overwritten — it just had a lot more in it: review scores went from 30 works
@@ -48,8 +62,8 @@ to 56, every series got an episode guide rather than five of them, and
 | **Format** | SQLite (`spiderman.db`) + one CSV per table + a denormalized flat CSV |
 | **Provenance** | Wikipedia, Wikidata, Box Office Mojo, Rotten Tomatoes, Metacritic, IMDb, TMDB |
 
-**Contents** — [Quickstart](#quickstart) · [What v4 added](#what-v4-added) ·
-[What v3 added](#what-v3-added) · [Browse it interactively](#browse-it-interactively) ·
+**Contents** — [Quickstart](#quickstart) · [What v5 added](#what-v5-added) ·
+[What v4 added](#what-v4-added) · [What v3 added](#what-v3-added) · [Browse it interactively](#browse-it-interactively) ·
 [Example queries](#example-queries) ·
 [Schema](#schema) · [Read this before you count](#read-this-before-you-count) ·
 [Files](#files) · [Reproducing the build](#reproducing-the-build) ·
@@ -92,6 +106,126 @@ denormalized single-row-per-work view with studios, platforms, budget, gross and
 review averages already joined. Good for a spreadsheet or a quick notebook; use
 the database when you need the character and credit relationships.
 </details>
+
+---
+
+## What v5 added
+
+v4 turned the dataset's edges into rows. v5 joins those rows to each other, in
+the two places where they still could not be. It adds **2,940 rows** and fills
+**75** `work_characters.actor_person_id` values that were NULL, on the same
+terms as v3 and v4: nothing an earlier version wrote is changed except to fill
+a NULL, and `--check` proves it against all three.
+
+```sql
+SELECT table_name, action, COUNT(*) FROM v5_provenance GROUP BY 1, 2 ORDER BY 3 DESC;
+```
+
+### Who played whom
+
+Before v5 the question "who has played Doctor Octopus" was answerable for film
+and almost nowhere else. `work_characters.actor_person_id` was filled for 189
+of 233 film rows, 58 of 81 television rows and **0 of 487 game rows** — TMDB,
+where v2 got its cast, does not credit video games at all.
+
+`character_portrayals` is one row per (work, character, performer), pulled from
+four sources at once and recording which one each row came from:
+
+| Origin | Rows | |
+|---|---|---|
+| `work_characters` | 203 | the links v2 already had, restated in one place |
+| `wikipedia` | 220 | the cast sections of the article, parsed out of the wikitext |
+| `wikidata` | 165 | P725 voice actor / P161 cast member, with the P453 character-role qualifier |
+| `cast_crew` | 64 | `cast_crew.character_name` resolved against the character table — no network call needed, the dataset had been carrying the answer as a string |
+
+That covers **23/23 films, 15/15 series and 14/43 games**, 652 performances by
+428 performers, 174 of the 264 identities, and 39 performers who turn up in
+more than one medium. The lineage is a query now:
+
+```sql
+SELECT canonical_name, n_performers, first_year, last_year, performers
+FROM v_character_casting ORDER BY n_performers DESC LIMIT 3;
+```
+
+```
+Peter Parker / Spider-Man     23  1967  2026  Nicholas Hammond, Tobey Maguire, …
+Aunt May                      16  1967  2026  Rosemary Harris, Marisa Tomei, …
+Green Goblin / Norman Osborn  14  1967  2025  Willem Dafoe, Len Carlson, …
+```
+
+Two design decisions are worth knowing about.
+
+**Performers are their own table, not new `people` rows.** 195 of the 428 have
+no `people` row — mostly game and television voice actors with no film credit
+anywhere in the dataset. Adding them to `people` would have changed the
+contents of a v2 table, so `performers` holds them and carries a `person_id`
+when the name is somebody the dataset already knew. It is the same arrangement
+`comic_creators` uses, for the same reason.
+
+**A name is only accepted when it is unambiguous.** "Spider-Man" names eleven
+identities here, so it resolves only inside a work that already lists exactly
+one of them; where nothing narrows it, the credit is dropped rather than
+assigned to the most famous candidate. `match_method` records which of the
+three routes each row took — `wikidata_id`, `wikipedia_page` or `name` — so the
+325 rows an external id vouches for can be used without the 124 that rest on a
+name match.
+
+### The second ring of the character graph
+
+533 of v4's 790 relationship edges ended in a name with no row behind it —
+and every one of them was carrying a Wikidata id all along. So they were never
+unresolvable, only unresolved.
+
+`related_characters` gives those **446** second-ring characters a row each:
+Mephisto, the X-Men, Richard Fisk, Mystique. 369 have a Wikipedia article.
+`character_relation_targets` points every one of the 533 dead ends at the row
+it turned out to name, and `related_character_relations` adds the **806** edges
+the second ring has of its own — 518 of which land back on one of the 264.
+
+Nothing in the dataset's own 264 changed: these are a separate table on
+purpose, because a character who has never been on screen in a Spider-Man work
+is not the same kind of thing as one who has, and collapsing them would have
+made every "how many characters" count in four releases of documentation wrong.
+Only edges whose far side is already in one of the two sets are kept, so the
+ring closes rather than fraying into a third one.
+
+```sql
+-- every relationship, both rings, nothing left as a bare name
+SELECT to_kind, COUNT(*) FROM v_character_network_full GROUP BY 1;
+```
+
+The second ring also earns its keep on the performance side: 43 of it are
+characters somebody actually voiced — the Hulk and MODOK in the 2017 series,
+Red Skull in the 1981 one — credits that had nowhere to go before.
+
+### New tables
+
+Five, all new — no v2, v3 or v4 table changes shape.
+
+| Table | Rows | |
+|---|---|---|
+| `character_portrayals` | 652 | who performed which character in which work |
+| `performers` | 428 | everyone credited with a performance, linked to `people` where possible |
+| `related_characters` | 446 | the second ring: characters the catalogue's cast is related to |
+| `character_relation_targets` | 533 | each v4 dead-end edge, pointed at the row it named |
+| `related_character_relations` | 806 | the second ring's own edges |
+| `v5_provenance`, `v5_sources` | 2,940 / 3 | what v5 touched, and where it came from |
+
+Plus four views: `v_portrayals`, `v_character_casting`, `v_performer_lineage`,
+`v_character_network_full`.
+
+### Verifying the compatibility claim
+
+```bash
+python3 build_db_v5.py --check
+```
+
+Builds v2+v3+v4 on their own into a temporary directory and diffs the result
+against the v5 database: every earlier table must keep the same columns in the
+same order, every row any of them wrote must still be there with the same
+values (except the NULLs v5 filled, and only on `work_characters.actor_person_id`),
+all thirteen earlier views must still run, and the flat CSV must keep its 42
+columns.
 
 ---
 
@@ -292,11 +426,18 @@ open explorer/index.html          # or just double-click it
 ```
 
 A dependency-free static page — no server, no network calls, no build step. It
-reads `explorer/data.json` (the whole database, ~920 KB) and gives you:
+reads `explorer/data.json` (the whole database, ~1.4 MB) and gives you:
 
 - **Overview** — releases per year by medium, budget → worldwide gross per film,
   review scores over time, and the most-adapted characters. Every mark is
   clickable and every chart has a table view.
+- **Performances** — every work page lists who played whom (the only place a
+  game's voice cast appears at all), every character page lists everyone who
+  has played it and over what span, and a performer with no `people` row still
+  gets a page rather than being dropped.
+- **The second ring** — a relationship chip that used to be greyed-out text now
+  opens a page: 446 characters the catalogue's cast is related to but has never
+  shared a screen with, each leading back to the characters it connects.
 - **Works / Characters / People** — sortable, filterable tables over all 81 works,
   264 characters and 581 people. Filters live in the URL, so any view is a link
   you can share, and any view downloads as CSV.
@@ -335,11 +476,11 @@ reads `explorer/data.json` (the whole database, ~920 KB) and gives you:
   the works list filtered to that character. Where the honest answer is a
   comparison rather than a list — a review score, a gross, a runtime, a budget —
   the tile opens the ranked table with that row highlighted and the column it
-  ranked on in view. The smoke test asserts both halves — 140 checks across
-  every page the v3 and v4 layers added, including the new comic and creator
-  pages and the character graph — and fails on any cell of data that cannot be
-  followed or any summary tile that is inert or lands somewhere that says
-  nothing about the number on it.
+  ranked on in view. The smoke test asserts both halves — 149 checks across
+  every page the v3, v4 and v5 layers added, including the comic and creator
+  pages, the character graph and the performance tables — and fails on any cell
+  of data that cannot be followed or any summary tile that is inert or lands
+  somewhere that says nothing about the number on it.
 - **Search** (press `/`) across works, characters, people, franchises, studios,
   platforms, outlets, comic sources, comic creators, awarding bodies, credit
   roles and years at once, with a "search every column" fallback — which now
@@ -362,6 +503,31 @@ every view, filter, sort and link; open it in a browser after changing the app.
 ## Example queries
 
 Every query below is copy-pasteable and the output is real.
+
+<details open>
+<summary><b>Which performers have carried a character across more than one medium?</b></summary>
+
+```sql
+SELECT name, n_works, n_characters, media_types, first_year || '-' || last_year AS span
+FROM v_performer_lineage
+WHERE media_types LIKE '%,%'
+ORDER BY n_works DESC, n_characters DESC
+LIMIT 6;
+```
+
+| name | n_works | n_characters | media_types | span |
+|---|---|---|---|---|
+| Tobey Maguire | 7 | 1 | movie,game | 2002-2021 |
+| J. K. Simmons | 6 | 1 | movie,game | 2002-2021 |
+| Dee Bradley Baker | 5 | 7 | tv_show,game | 2000-2012 |
+| Josh Keaton | 5 | 4 | tv_show,game | 2002-2017 |
+| Jennifer Hale | 5 | 3 | tv_show,game | 1994-2007 |
+| Willem Dafoe | 5 | 2 | movie,game | 2002-2021 |
+
+39 performers cross a medium. The ones with one character and several works are
+the film leads whose games reused them; the ones with seven characters and five
+works are career voice actors.
+</details>
 
 <details open>
 <summary><b>Which films earned the most per dollar spent?</b></summary>
@@ -459,10 +625,11 @@ Read this one as a caveat, not a finding — see
 
 ## Schema
 
-54 tables, 13 views. Row counts are current as of the committed build. The 24 v2
+61 tables, 17 views. Row counts are current as of the committed build. The 24 v2
 tables below are unchanged in shape; the 17 tables v3 adds are listed under
-[What v3 added](#what-v3-added); the 13 tables v4 adds are listed under
-[What v4 added](#what-v4-added).
+[What v3 added](#what-v3-added); the 13 tables v4 adds are under
+[What v4 added](#what-v4-added); the 7 tables v5 adds are under
+[What v5 added](#what-v5-added).
 
 ```
 franchises (id, name, description)                              -- 13 rows
@@ -538,11 +705,13 @@ Prefer these over the raw tables for anything you plan to aggregate.
 | `v_film_economics` | 23 | Lifetime gross vs primary production budget, plus `gross_multiple`. |
 | `v_review_by_publication` | 270 | Review scores with the outlet split out from the reviewed platform. |
 
-The nine views v3 and v4 add are listed in their own sections:
-[v3's four](#what-v3-added), [v4's five](#what-v4-added). `v_character_dossier`
-and `v_work_comic_sources` are the ones most worth knowing about — one row per
-character with its abilities, teams and enemy count; one row per adaptation
-next to the specific comic it draws on.
+The thirteen views v3, v4 and v5 add are listed in their own sections:
+[v3's four](#what-v3-added), [v4's five](#what-v4-added),
+[v5's four](#what-v5-added). `v_character_casting`, `v_character_dossier` and
+`v_work_comic_sources` are the ones most worth knowing about — every performer
+who has played a character and over what span; one row per character with its
+abilities, teams and enemy count; one row per adaptation next to the specific
+comic it draws on.
 
 ---
 
@@ -588,6 +757,13 @@ Ned Leeds) have no dominant bearer and so have no default at all.
 > **Count characters with `v_character_work`, not `work_characters`** — the latter
 > splits Spider-Man across 7 rows and Doctor Octopus across 4.
 
+> **`related_characters` is not part of the character count.** v5's 446
+> second-ring rows are the wider Marvel cast this dataset's characters are
+> *related to*, not characters in it — none of them has ever been on screen in
+> a Spider-Man work except the 43 that turn up as a guest performance. The
+> dataset still has 264 characters. Anything that unions the two tables is
+> answering a different question and should say so.
+
 Where a character's spellings disagreed on alignment (21 identities, e.g.
 `May Parker`=hero vs `Aunt May`=neutral), `character_identities.alignment` takes
 the majority; the per-row research values stay in `characters`.
@@ -622,6 +798,14 @@ count is partly a measure of how thoroughly a work was catalogued.
 
 > **Appearance totals are not comparable across media.** Compare within a medium,
 > or read the per-medium split rather than the total.
+
+`character_portrayals` has the opposite skew, and for the opposite reason: it is
+built from cast lists, which exist in depth for film and television and barely
+at all for games before 2000. 265 rows over 23 films and 283 over 15 series
+against 104 over 14 games. **Do not read a portrayal count as an appearance
+count** — `work_characters` says a character is in a work, `character_portrayals`
+says somebody is on record performing them, and the second is a strictly
+narrower claim.
 
 ### Reading `box_office`
 
@@ -678,7 +862,7 @@ than stored — an unresolved person is preferable to a confidently wrong one.
 | Path | Description |
 |------|-------------|
 | `spiderman.db` | SQLite database — the primary artifact |
-| `data/*.csv` | One CSV per table (54) |
+| `data/*.csv` | One CSV per table (61) |
 | `data/spiderman_all_media_flat.csv` | Denormalized one-row-per-work view (42 columns) |
 | `data_raw/movies.json` | Source research: 23 films |
 | `data_raw/games.json` | Source research: 43 games with per-platform releases |
@@ -686,7 +870,10 @@ than stored — an unresolved person is preferable to a confidently wrong one.
 | `data_raw/people_external.json` | TMDB person data (367 people), consumed by the build |
 | `data_raw/v3/*.json` | Wikidata and Wikipedia enrichment, consumed by the v3 layer |
 | `data_raw/v4/*.json` | Comics, character graph and org data, consumed by the v4 layer |
-| `build_db_v4.py` | **The build.** Runs v2, applies the v3 layer then the v4 layer, validates, exports |
+| `data_raw/v5/*.json` | Screen cast and second-ring characters, consumed by the v5 layer |
+| `build_db_v5.py` | **The build.** Runs v2, applies the v3, v4 and v5 layers, validates, exports |
+| `v5_layer.py` | The additive v5 layer — performances, performers, the second ring |
+| `build_db_v4.py` | The v4 build; still produces exactly the v2+v3+v4 database on its own |
 | `v4_layer.py` | The additive v4 layer — comics, character graph, org detail, episode credits |
 | `build_db_v3.py` | The v3 build; still produces exactly the v2+v3 database on its own |
 | `v3_layer.py` | The additive v3 layer — every row it adds and why |
@@ -694,6 +881,7 @@ than stored — an unresolved person is preferable to a confidently wrong one.
 | `wdlib.py` | Cached, rate-limited Wikidata / Wikipedia / MusicBrainz access |
 | `fetch_wikidata_*.py`, `fetch_episodes.py`, `fetch_reception.py`, `fetch_summaries.py` | Optional network steps that regenerate `data_raw/v3/` |
 | `fetch_comics.py`, `fetch_character_graph.py`, `fetch_orgs.py` | Optional network steps that regenerate `data_raw/v4/` |
+| `fetch_screen_cast.py`, `fetch_related_characters.py` | Optional network steps that regenerate `data_raw/v5/` |
 | `fetch_tmdb_people.py` | Optional network step that regenerates `people_external.json` |
 | `build_db.py` | v1 build script, superseded — kept for history |
 | `AUDIT_REVIEW.md` | Historical QA audit of the v2 build; every issue listed is fixed |
@@ -707,28 +895,31 @@ Every research item in `data_raw/` resolves to exactly one work: 23/23 movies,
 ## Reproducing the build
 
 ```bash
-python3 build_db_v4.py           # v2 base + the v3 layer + the v4 layer
-python3 build_db_v4.py --check   # ... and prove v2 + v3 compatibility
+python3 build_db_v5.py           # v2 base + the v3, v4 and v5 layers
+python3 build_db_v5.py --check   # ... and prove v2 + v3 + v4 compatibility
 ```
 
-Python 3.9+, **standard library only** — no pip install, no network. `build_db_v4.py`
-runs `build_db_v2.py` unchanged and hands it `v4_layer`, which applies `v3_layer`
-and then its own rows before the CSVs are exported so the CSVs match the database
-they came from. All three stages validate: v2 over foreign keys, enums and export
-integrity; v3 over the same plus its own referential and scale checks; v4 over its
-own FK and invariant checks (a comic can't be its own series, a parsed issue must
-carry a series and number, no character is its own enemy). Either `--check` run
-exiting non-zero fails the build.
+Python 3.9+, **standard library only** — no pip install, no network. `build_db_v5.py`
+runs `build_db_v2.py` unchanged and hands it `v5_layer`, which applies `v4_layer`
+(and so `v3_layer`) and then its own rows before the CSVs are exported so the CSVs
+match the database they came from. All four stages validate: v2 over foreign keys,
+enums and export integrity; v3 over the same plus its own referential and scale
+checks; v4 over its own FK and invariant checks (a comic can't be its own series,
+a parsed issue must carry a series and number, no character is its own enemy); v5
+over its own (a portrayal must point at a row of the kind it claims, no
+second-ring row may shadow an identity the dataset already has, every actor link
+it records as filled must actually be filled). Any `--check` run exiting non-zero
+fails the build.
 
-`python3 build_db_v3.py` on its own still produces exactly the v2+v3 database it
-always did, and `python3 build_db_v2.py` still produces exactly v2 — the layer
-hook is inert unless `SPIDERMAN_V3_LAYER` is set, which `build_db_v3.py` points at
-`v3_layer` and `build_db_v4.py` points at `v4_layer`.
+`python3 build_db_v4.py` on its own still produces exactly the v2+v3+v4 database
+it always did, `build_db_v3.py` exactly v2+v3, and `build_db_v2.py` exactly v2 —
+the layer hook is inert unless `SPIDERMAN_V3_LAYER` is set, which each build
+script points at its own layer.
 
-All three are deterministic: the v3 and v4 layers read `data_raw/v3/*.json` and
-`data_raw/v4/*.json` written by the fetch scripts below, so the build itself never
-touches the network and rebuilding from a clean checkout reproduces the committed
-artifacts byte for byte.
+All four are deterministic: the layers read `data_raw/v3/*.json`,
+`data_raw/v4/*.json` and `data_raw/v5/*.json` written by the fetch scripts below,
+so the build itself never touches the network and rebuilding from a clean
+checkout reproduces the committed artifacts byte for byte.
 
 The run also prints its own quality report — row counts, research match rate,
 per-table coverage, fully-NULL columns, dropped rows and every contradiction it
@@ -786,6 +977,23 @@ python3 fetch_orgs.py             # studios and platforms -> Wikidata; country, 
 python3 build_db_v4.py --check
 ```
 
+The two v5 fetchers work the same way and write `data_raw/v5/*.json`:
+
+```bash
+python3 fetch_screen_cast.py          # cast sections + Wikidata P725/P161 -> who played whom
+python3 fetch_related_characters.py   # the QIDs v4's dead-end edges were already carrying
+python3 build_db_v5.py --check
+```
+
+`fetch_related_characters.py` needs no resolution step at all — every id it asks
+about was published by Wikidata as the value of a relationship claim on an item
+v3 had already resolved, so it costs one bulk call per fifty. `fetch_screen_cast.py`
+parses cast bullets (`* [[Actor]] – [[Character]]`) out of the article wikitext
+and, for the games that have no cast section, the narrower
+`[[Character]] (voiced by [[Actor]])` pattern from anywhere in the article — a
+bullet is only accepted when it has a separator and a wiki link, so the prose in
+a "Characters and setting" section is skipped rather than half-parsed.
+
 `fetch_comics.py` reports its match rate by kind: of the citations that name a
 comic at all, most resolve either to a specific Wikidata issue or, for the
 issues Wikidata hasn't itemised, to a series-and-number pair read out of the
@@ -811,6 +1019,7 @@ Works with at least one enrichment row:
 | `cast_crew` | 70/81 (86%) | |
 | `work_relations` | 68/81 (83%) | |
 | `review_scores` | 56/81 (69%) | was 30/81 in v2 |
+| `character_portrayals` | 52/81 (64%) | v5 — 23/23 films, 15/15 series, 14/43 games |
 | `work_source_comics` | 36/81 (44%) | v4 — only 73/81 have a `source_material` row to resolve in the first place |
 
 These are data-availability gaps, not build defects. The build reports each one.
@@ -826,7 +1035,25 @@ These are data-availability gaps, not build defects. The build reports each one.
 - **`character_relations` / `character_traits`** — 131 of 264 identities have
   at least one relationship edge, 141 at least one trait. Coverage tracks
   `character_details` coverage almost exactly: a character with no Wikidata
-  item to begin with has no relationships to read off it either.
+  item to begin with has no relationships to read off it either. As of v5 none
+  of those edges dead-ends: all 533 that named someone the dataset had no row
+  for now point at a `related_characters` row.
+- **`character_portrayals`** — 652 rows over 52 works, but the coverage is
+  lopsided by medium and by source. Every film and every series has at least
+  one performance on record; **29 of the 43 games have none**, because most
+  pre-2000 games had no voice cast and most of the rest are not credited
+  anywhere machine-readable. 174 of the 264 identities have a performer;
+  the missing 90 are background and one-scene characters. `work_characters.
+  actor_person_id` is still only 31/487 on game rows even after v5 filled 75
+  columns overall, because filling it needs *both* an unambiguous performer and
+  a `people` row for them, and most game voice actors have neither — the
+  portrayal itself is in `character_portrayals` either way.
+- **`performers`** — 233 of 428 resolve to a `people` row; the other 195 are
+  performers this dataset knows only from a cast list. They are deliberately
+  not added to `people`: see [What v5 added](#what-v5-added).
+- **`related_characters`** — 446 rows, of which 369 have a Wikipedia article
+  and 43 have been performed by somebody. They are *not* Spider-Man characters
+  and are not counted as such anywhere: the dataset still has 264 characters.
 - **`review_scores`** — 35 of 43 games, 17 of 23 films, 4 of 15 series. What is
   left is largely unreviewable rather than unresearched: the six films without a
   score are the three 1970s TV movies, the 1978 Toei film, and two that have not
@@ -851,7 +1078,7 @@ These are data-availability gaps, not build defects. The build reports each one.
   `studios.country`, `studios.parent_company` and `character_details.publisher`
   off it — filled for 71/104, 38/104 and 106/264 respectively, still short of
   every row because not every studio or debut issue resolves to a Wikidata
-  item with that fact on it.)
+  item with that fact on it.) v5 adds no fully-NULL column of its own.
 - **`box_office`** — 20 rows over 17 films: 16 lifetime totals and one genuine
   4-week run (*Venom: The Last Dance*). No film has both, so a film's opening week
   and its final gross are never both known. v3 adds nine per-territory figures in

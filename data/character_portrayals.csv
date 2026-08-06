@@ -1,0 +1,653 @@
+work_id,target_kind,target_id,performer_id,credited_as,portrayal_type,origin,match_method
+1,identity,27,1,Peter Parker / Spider-Man,live_action,work_characters,dataset
+1,identity,137,2,J. Jonah Jameson,live_action,work_characters,dataset
+2,identity,27,1,Peter Parker / Spider-Man,live_action,work_characters,dataset
+2,identity,137,3,J. Jonah Jameson,live_action,work_characters,dataset
+2,identity,192,4,Mr. White,live_action,work_characters,dataset
+3,identity,137,3,J. Jonah Jameson,live_action,work_characters,dataset
+3,identity,152,5,Julie Masters,live_action,work_characters,dataset
+3,identity,106,6,Emily Chan,live_action,work_characters,dataset
+3,identity,83,7,Charles Zeider,live_action,work_characters,dataset
+4,identity,40,8,Takuya Yamashiro / Spider-Man,live_action,work_characters,dataset
+4,identity,154,9,Jūzō Mamiya,live_action,work_characters,dataset
+5,identity,27,10,Peter Parker / Spider-Man,live_action,work_characters,dataset
+5,identity,137,11,J. Jonah Jameson,live_action,work_characters,dataset
+5,identity,227,12,Robbie Robertson,live_action,work_characters,dataset
+5,identity,15,13,Norman Osborn / Green Goblin,live_action,work_characters,dataset
+5,identity,179,14,Mary Jane Watson,live_action,work_characters,dataset
+5,identity,17,15,Harry Osborn,live_action,work_characters,dataset
+5,identity,110,16,Flash Thompson,live_action,work_characters,dataset
+6,identity,27,10,Peter Parker / Spider-Man,live_action,work_characters,dataset
+6,identity,137,11,J. Jonah Jameson,live_action,work_characters,dataset
+6,identity,179,14,Mary Jane Watson,live_action,work_characters,dataset
+6,identity,17,15,Harry Osborn,live_action,work_characters,dataset
+6,identity,10,17,Otto Octavius / Doctor Octopus,live_action,work_characters,dataset
+6,identity,1,18,May Parker,live_action,work_characters,dataset
+6,identity,231,19,Rosalie Octavius,live_action,work_characters,dataset
+6,identity,150,20,John Jameson,live_action,work_characters,dataset
+7,identity,27,10,Peter Parker / Spider-Man,live_action,work_characters,dataset
+7,identity,137,11,J. Jonah Jameson,live_action,work_characters,dataset
+7,identity,179,14,Mary Jane Watson,live_action,work_characters,dataset
+7,identity,1,18,May Parker,live_action,work_characters,dataset
+7,identity,29,21,Flint Marko / Sandman,live_action,work_characters,dataset
+7,identity,17,15,Harry Osborn / New Goblin,live_action,work_characters,dataset
+7,identity,16,22,Gwen Stacy,live_action,work_characters,dataset
+7,identity,115,23,George Stacy,live_action,work_characters,dataset
+8,identity,27,24,Peter Parker / Spider-Man,live_action,work_characters,dataset
+8,identity,110,25,Flash Thompson,live_action,work_characters,dataset
+8,identity,21,26,Curt Connors / Lizard,live_action,work_characters,dataset
+8,identity,16,27,Gwen Stacy,live_action,work_characters,dataset
+8,identity,115,28,George Stacy,live_action,work_characters,dataset
+8,identity,222,29,Richard Parker,live_action,work_characters,dataset
+8,identity,219,30,Rajit Ratha,live_action,work_characters,dataset
+9,identity,27,24,Peter Parker / Spider-Man,live_action,work_characters,dataset
+9,identity,16,27,Gwen Stacy,live_action,work_characters,dataset
+9,identity,13,31,Max Dillon / Electro,live_action,work_characters,dataset
+9,identity,17,32,Harry Osborn / Green Goblin,live_action,work_characters,dataset
+9,identity,28,33,Aleksei Sytsevich / Rhino,live_action,work_characters,dataset
+9,identity,98,34,Donald Menken,live_action,work_characters,dataset
+10,identity,27,35,Peter Parker / Spider-Man,live_action,work_characters,dataset
+10,identity,110,36,Flash Thompson,live_action,work_characters,dataset
+10,identity,1,37,May Parker,live_action,work_characters,dataset
+10,identity,45,38,Adrian Toomes / Vulture,live_action,work_characters,dataset
+10,identity,136,39,Tony Stark / Iron Man,live_action,work_characters,dataset
+10,identity,123,40,Happy Hogan,live_action,work_characters,dataset
+10,identity,209,41,Pepper Potts,live_action,work_characters,dataset
+10,identity,31,42,Herman Schultz / Shocker,live_action,work_characters,dataset
+10,identity,56,43,Anne Marie Hoag,live_action,work_characters,dataset
+11,identity,1,44,May Parker,live_action,work_characters,dataset
+11,identity,25,45,Miles Morales / Spider-Man,live_action,work_characters,dataset
+11,identity,210,46,Peter B. Parker / Spider-Man,live_action,work_characters,dataset
+11,identity,16,47,Gwen Stacy / Spider-Gwen,live_action,work_characters,dataset
+11,identity,144,48,Jefferson Davis,live_action,work_characters,dataset
+11,identity,225,49,Rio Morales,live_action,work_characters,dataset
+11,identity,36,50,Peter Porker / Spider-Ham,live_action,work_characters,dataset
+11,identity,101,51,Peni Parker / SP//dr,live_action,work_characters,dataset
+11,identity,37,52,Spider-Man Noir,live_action,work_characters,dataset
+11,identity,19,53,Wilson Fisk / Kingpin,live_action,work_characters,dataset
+12,identity,27,35,Peter Parker / Spider-Man,live_action,work_characters,dataset
+12,identity,110,36,Flash Thompson,live_action,work_characters,dataset
+12,identity,1,37,May Parker,live_action,work_characters,dataset
+12,identity,123,40,Happy Hogan,live_action,work_characters,dataset
+12,identity,196,54,Ned Leeds,live_action,work_characters,dataset
+12,identity,26,55,Quentin Beck / Mysterio,live_action,work_characters,dataset
+12,identity,198,56,Nick Fury,live_action,work_characters,dataset
+12,identity,174,57,Maria Hill,live_action,work_characters,dataset
+12,identity,228,58,Roger Harrington,live_action,work_characters,dataset
+12,identity,153,59,Julius Dell,live_action,work_characters,dataset
+13,identity,15,13,Norman Osborn / Green Goblin,live_action,work_characters,dataset
+13,identity,110,36,Flash Thompson,live_action,work_characters,dataset
+13,identity,10,17,Otto Octavius / Doctor Octopus,live_action,work_characters,dataset
+13,identity,1,37,May Parker,live_action,work_characters,dataset
+13,identity,13,31,Max Dillon / Electro,live_action,work_characters,dataset
+13,identity,123,40,Happy Hogan,live_action,work_characters,dataset
+13,identity,196,54,Ned Leeds,live_action,work_characters,dataset
+13,identity,261,60,Wong,live_action,work_characters,dataset
+14,identity,115,61,George Stacy,live_action,work_characters,dataset
+14,identity,25,45,Miles Morales / Spider-Man,live_action,work_characters,dataset
+14,identity,210,46,Peter B. Parker / Spider-Man,live_action,work_characters,dataset
+14,identity,16,47,Gwen Stacy / Spider-Gwen,live_action,work_characters,dataset
+14,identity,225,62,Rio Morales,live_action,work_characters,dataset
+14,identity,184,63,Miguel O'Hara / Spider-Man 2099,live_action,work_characters,dataset
+14,identity,41,64,Johnathon Ohnn / The Spot,live_action,work_characters,dataset
+14,identity,38,65,Hobie Brown / Spider-Punk,live_action,work_characters,dataset
+14,identity,208,66,Pavitr Prabhakar / Spider-Man India,live_action,work_characters,dataset
+14,identity,145,48,Jefferson Morales,live_action,work_characters,dataset
+14,identity,48,67,Aaron Davis / Prowler (Earth-42),live_action,work_characters,dataset
+14,identity,185,68,Miles G. Morales / Prowler (Earth-42),live_action,work_characters,dataset
+15,identity,25,45,Miles Morales / Spider-Man,live_action,work_characters,dataset
+15,identity,210,46,Peter B. Parker / Spider-Man,live_action,work_characters,dataset
+15,identity,184,63,Miguel O'Hara / Spider-Man 2099,live_action,work_characters,dataset
+15,identity,38,65,Hobie Brown / Spider-Punk,live_action,work_characters,dataset
+15,identity,16,47,Gwen Stacy / Spider-Woman,live_action,work_characters,dataset
+15,identity,41,64,Jonathan Ohnn / The Spot,live_action,work_characters,dataset
+16,identity,27,35,Peter Parker / Spider-Man,live_action,work_characters,dataset
+16,identity,14,69,Frank Castle / The Punisher,live_action,work_characters,dataset
+16,identity,30,70,Mac Gargan / Scorpion,live_action,work_characters,dataset
+16,identity,43,71,Lonnie Lincoln / Tombstone,live_action,work_characters,dataset
+16,identity,18,72,Bruce Banner,live_action,work_characters,dataset
+17,identity,12,73,Eddie Brock / Venom,live_action,work_characters,dataset
+17,identity,57,74,Anne Weying,live_action,work_characters,dataset
+17,identity,80,75,Carlton Drake / Riot,live_action,work_characters,dataset
+17,identity,230,76,Roland Treece,live_action,work_characters,dataset
+17,identity,100,77,Dora Skirth,live_action,work_characters,dataset
+17,identity,6,78,Cletus Kasady,live_action,work_characters,dataset
+17,identity,193,79,Mrs. Chen,live_action,work_characters,dataset
+17,identity,173,80,Maria,live_action,work_characters,dataset
+18,identity,12,73,Eddie Brock / Venom,live_action,work_characters,dataset
+18,identity,57,74,Anne Weying,live_action,work_characters,dataset
+18,identity,193,79,Mrs. Chen,live_action,work_characters,dataset
+18,identity,6,78,Cletus Kasady / Carnage,live_action,work_characters,dataset
+18,identity,32,81,Frances Barrison / Shriek,live_action,work_characters,dataset
+18,identity,89,82,Dan Lewis,live_action,work_characters,dataset
+19,identity,45,38,Adrian Toomes / Vulture,live_action,work_characters,dataset
+19,identity,165,83,Lucien / Milo Morbius,live_action,work_characters,dataset
+19,identity,177,84,Martine Bancroft,live_action,work_characters,dataset
+19,identity,105,85,Emil Nicholas,live_action,work_characters,dataset
+19,identity,237,86,Simon Stroud,live_action,work_characters,dataset
+19,identity,51,87,Al Rodriguez,live_action,work_characters,dataset
+20,identity,22,88,"Cassandra ""Cassie"" Webb / Madame Web",live_action,work_characters,dataset
+20,identity,107,89,Ezekiel Sims,live_action,work_characters,dataset
+20,identity,181,90,Mary Parker,live_action,work_characters,dataset
+20,identity,86,91,Constance Webb,live_action,work_characters,dataset
+20,identity,205,92,O'Neil,live_action,work_characters,dataset
+20,identity,233,93,Santiago,live_action,work_characters,dataset
+20,identity,54,94,Amaria,live_action,work_characters,dataset
+21,identity,28,95,Aleksei Sytsevich / Rhino,live_action,work_characters,dataset
+21,identity,20,96,Sergei Kravinoff / Kraven the Hunter,live_action,work_characters,dataset
+21,identity,7,97,Dmitri Kravinoff / Chameleon,live_action,work_characters,dataset
+21,identity,4,98,Calypso Ezili,live_action,work_characters,dataset
+21,identity,247,99,The Foreigner,live_action,work_characters,dataset
+21,identity,201,100,Nikolai Kravinoff,live_action,work_characters,dataset
+21,identity,264,101,Ömer Ozdemir,live_action,work_characters,dataset
+21,identity,235,102,Semyon Chorney,live_action,work_characters,dataset
+22,identity,12,73,Eddie Brock / Venom,live_action,work_characters,dataset
+22,identity,193,79,Mrs. Chen,live_action,work_characters,dataset
+22,identity,221,103,Rex Strickland,live_action,work_characters,dataset
+22,identity,160,104,Knull,live_action,work_characters,dataset
+22,identity,176,26,Martin Moon,live_action,work_characters,dataset
+22,identity,204,105,Nova Moon,live_action,work_characters,dataset
+23,identity,104,106,Juan-Carlos Estrada Sánchez / El Muerto,live_action,work_characters,dataset
+24,identity,27,107,Spider-Man,live_action,work_characters,dataset
+25,identity,137,3,J. Jonah Jameson,live_action,work_characters,dataset
+25,identity,152,5,Julie Masters,live_action,work_characters,dataset
+25,identity,27,1,Peter Parker,live_action,work_characters,dataset
+25,identity,226,108,Rita Conway,live_action,work_characters,dataset
+26,identity,40,8,Takuya Yamashiro,live_action,work_characters,dataset
+26,identity,213,109,Professor Monster,live_action,work_characters,dataset
+26,identity,55,110,Amazoness,live_action,work_characters,dataset
+27,identity,66,52,Ben Reilly / Spider-Man Noir,live_action,work_characters,dataset
+28,identity,137,111,J. Jonah Jameson,live_action,work_characters,dataset
+28,identity,67,112,Betty Brant,live_action,work_characters,dataset
+28,identity,27,113,Peter Parker,live_action,work_characters,dataset
+28,identity,15,114,Green Goblin,live_action,work_characters,dataset
+29,identity,137,115,J. Jonah Jameson,live_action,work_characters,dataset
+29,identity,27,116,Peter Parker,live_action,work_characters,dataset
+29,identity,9,117,Doctor Doom,live_action,work_characters,dataset
+30,identity,27,118,Spider-Man,live_action,work_characters,dataset
+30,identity,132,119,Iceman,live_action,work_characters,dataset
+31,identity,179,120,Mary Jane Watson,live_action,work_characters,dataset
+31,identity,27,121,Spider-Man,live_action,work_characters,dataset
+31,identity,19,122,Kingpin,live_action,work_characters,dataset
+32,identity,27,123,Spider-Man,live_action,work_characters,dataset
+32,identity,12,124,Venom,live_action,work_characters,dataset
+32,identity,6,125,Carnage,live_action,work_characters,dataset
+32,identity,126,126,High Evolutionary,live_action,work_characters,dataset
+33,identity,179,127,Mary Jane Watson,live_action,work_characters,dataset
+33,identity,27,128,Peter Parker,live_action,work_characters,dataset
+33,identity,19,129,Kingpin,live_action,work_characters,dataset
+34,identity,16,130,Gwen Stacy,live_action,work_characters,dataset
+34,identity,15,131,Norman Osborn,live_action,work_characters,dataset
+34,identity,27,132,Peter Parker,live_action,work_characters,dataset
+35,identity,27,133,Spider-Man,live_action,work_characters,dataset
+35,identity,10,134,Doctor Octopus,live_action,work_characters,dataset
+35,identity,203,135,Nova,live_action,work_characters,dataset
+35,identity,258,136,White Tiger,live_action,work_characters,dataset
+35,identity,135,137,Iron Fist,live_action,work_characters,dataset
+35,identity,212,138,Power Man,live_action,work_characters,dataset
+36,identity,17,139,Harry Osborn,live_action,work_characters,dataset
+36,identity,16,140,Gwen Stacy,live_action,work_characters,dataset
+36,identity,15,132,Norman Osborn,live_action,work_characters,dataset
+36,identity,25,141,Miles Morales,live_action,work_characters,dataset
+36,identity,58,142,Anya Corazon,live_action,work_characters,dataset
+37,identity,16,143,Gwen Stacy,live_action,work_characters,dataset
+37,identity,27,144,Peter Parker,live_action,work_characters,dataset
+37,identity,15,145,Green Goblin,live_action,work_characters,dataset
+37,identity,25,146,Miles Morales,live_action,work_characters,dataset
+37,identity,96,147,Doc Ock,live_action,work_characters,dataset
+38,identity,1,148,May Parker,live_action,work_characters,dataset
+38,identity,15,149,Norman Osborn,live_action,work_characters,dataset
+38,identity,27,150,Peter Parker,live_action,work_characters,dataset
+38,identity,10,151,Otto Octavius,live_action,work_characters,dataset
+38,identity,199,152,Nico Minoru,live_action,work_characters,dataset
+38,identity,43,153,Lonnie Lincoln,live_action,work_characters,dataset
+38,identity,8,154,Daredevil,live_action,work_characters,dataset
+1,identity,1,157,May Parker,live_action,cast_crew,name
+1,identity,103,159,Edward Byron,live_action,cast_crew,name
+2,identity,226,108,Rita Conway,live_action,cast_crew,name
+3,identity,27,1,Spider-Man / Peter Parker,live_action,cast_crew,name
+3,identity,226,108,Rita Conway,live_action,cast_crew,name
+5,identity,1,18,May Parker,live_action,cast_crew,name
+5,identity,44,170,Ben Parker,live_action,cast_crew,name
+6,identity,15,13,Norman Osborn,live_action,cast_crew,name
+6,identity,21,172,Dr. Curt Connors,live_action,cast_crew,name
+7,identity,12,173,Eddie Brock Jr. / Venom,live_action,cast_crew,name
+8,identity,44,174,Ben Parker,live_action,cast_crew,name
+8,identity,1,175,May Parker,live_action,cast_crew,name
+8,identity,181,176,Mary Parker,live_action,cast_crew,name
+9,identity,222,29,Richard Parker,live_action,cast_crew,name
+9,identity,1,175,May Parker,live_action,cast_crew,name
+9,identity,181,176,Mary Parker,live_action,cast_crew,name
+10,identity,48,179,Aaron Davis,live_action,cast_crew,name
+11,identity,48,67,Aaron Davis / The Prowler,live_action,cast_crew,name
+11,identity,37,180,Peter Parker (Miles' universe),live_action,cast_crew,name
+12,identity,24,177,MJ,live_action,cast_crew,name
+13,identity,27,10,Peter Parker / Spider-Man (Peter-Two),live_action,cast_crew,name
+13,identity,27,24,Peter Parker / Spider-Man (Peter-Three),live_action,cast_crew,name
+13,identity,27,35,Peter Parker / Spider-Man,live_action,cast_crew,name
+13,identity,24,177,"Michelle ""MJ"" Jones-Watson",live_action,cast_crew,name
+13,identity,11,181,Dr. Stephen Strange,live_action,cast_crew,name
+15,identity,144,48,Jefferson Davis,live_action,cast_crew,name
+15,identity,225,49,Rio Morales,live_action,cast_crew,name
+15,identity,16,182,Jessica Drew / Spider-Woman,live_action,cast_crew,name
+16,identity,196,54,Ned Leeds,live_action,cast_crew,name
+16,identity,24,177,Michelle 'MJ' Jones-Watson,live_action,cast_crew,name
+17,identity,89,82,Dan Lewis,live_action,cast_crew,name
+18,identity,207,183,Patrick Mulligan,live_action,cast_crew,name
+19,identity,23,184,Dr. Michael Morbius,live_action,cast_crew,name
+20,identity,151,185,Julia Cornwall,live_action,cast_crew,name
+20,identity,59,186,Anya Corazón,live_action,cast_crew,name
+20,identity,182,187,Mattie Franklin,live_action,cast_crew,name
+20,identity,44,188,Ben Parker,live_action,cast_crew,name
+21,identity,4,191,young Calypso,live_action,cast_crew,name
+22,identity,89,82,Head of Imperium / Dan Lewis,live_action,cast_crew,name
+22,identity,207,183,Patrick Mulligan,live_action,cast_crew,name
+22,identity,50,192,Dr. Teddy Paine,live_action,cast_crew,name
+22,identity,161,193,"Sadie ""Christmas""",live_action,cast_crew,name
+22,identity,62,194,Bartender,live_action,cast_crew,name
+29,identity,1,203,Aunt May / Black Cat,live_action,cast_crew,name
+29,identity,67,204,Betty Brant,live_action,cast_crew,name
+29,identity,227,205,Robbie Robertson,live_action,cast_crew,name
+30,identity,109,206,Fire-Star / Angelica Jones,live_action,cast_crew,name
+30,identity,1,207,Aunt May,live_action,cast_crew,name
+31,identity,137,209,J. Jonah Jameson,live_action,cast_crew,name
+31,identity,227,210,Robbie Robertson,live_action,cast_crew,name
+31,identity,3,211,Felicia Hardy / Black Cat,live_action,cast_crew,name
+31,related,363,212,Harry Osborn,live_action,cast_crew,name
+32,identity,150,213,John Jameson,live_action,cast_crew,name
+33,related,363,214,Harry Osborn,live_action,cast_crew,name
+33,identity,137,215,J. Jonah Jameson,live_action,cast_crew,name
+34,identity,163,105,Liz Allan,live_action,cast_crew,name
+34,related,363,217,Harry Osborn,live_action,cast_crew,name
+34,identity,137,218,J. Jonah Jameson,live_action,cast_crew,name
+35,identity,25,138,Miles Morales,live_action,cast_crew,name
+35,identity,110,220,Harry Osborn / Flash Thompson / Agent Venom,live_action,cast_crew,name
+36,identity,27,221,Peter Parker / Spider-Man,live_action,cast_crew,name
+36,identity,10,222,Otto Octavius / Doctor Octopus,live_action,cast_crew,name
+37,identity,1,142,Aunt May,live_action,cast_crew,name
+38,related,363,224,Harry Osborn,live_action,cast_crew,name
+5,identity,67,225,Betty Brant,live_action,wikidata,wikidata_id
+5,related,352,226,Bonesaw McGraw,live_action,wikidata,wikidata_id
+5,identity,78,171,Burglar,live_action,wikidata,wikidata_id
+6,identity,15,227,Norman Osborn,voice,wikidata,name
+6,identity,17,228,Harry Osborn,voice,wikidata,name
+6,identity,10,229,Otto Octavius,voice,wikidata,name
+6,identity,21,230,Curt Connors,voice,wikidata,name
+6,identity,227,12,Robbie Robertson,live_action,wikidata,wikidata_id
+6,identity,67,225,Betty Brant,live_action,wikidata,wikidata_id
+6,identity,44,170,Uncle Ben,live_action,wikidata,wikidata_id
+7,identity,21,172,Curt Connors,live_action,wikidata,name
+7,identity,227,12,Robbie Robertson,live_action,wikidata,wikidata_id
+7,identity,67,225,Betty Brant,live_action,wikidata,wikidata_id
+7,identity,44,170,Uncle Ben,live_action,wikidata,wikidata_id
+7,identity,15,13,Norman Osborn,live_action,wikidata,name
+7,identity,110,16,Flash Thompson,live_action,wikidata,wikidata_id
+7,identity,78,171,Burglar,live_action,wikidata,wikidata_id
+9,identity,44,174,Uncle Ben,live_action,wikidata,wikidata_id
+9,identity,117,231,Norman Osborn,live_action,wikidata,wikidata_id
+9,identity,3,232,Black Cat,live_action,wikidata,wikidata_id
+9,identity,53,233,Alistair Smythe,live_action,wikidata,wikidata_id
+9,identity,115,28,George Stacy,live_action,wikidata,wikidata_id
+9,identity,178,234,Mary Jane Watson,live_action,wikidata,wikidata_id
+10,identity,158,235,Karen,voice,wikidata,name
+10,identity,24,177,Michelle Jones,live_action,wikidata,wikidata_id
+10,identity,228,58,Roger Harrington,live_action,wikidata,wikidata_id
+10,identity,140,236,Jackson Brice,live_action,wikidata,name
+10,identity,30,70,Mac Gargan,live_action,wikidata,name
+10,identity,33,237,Cindy Moon,live_action,wikidata,name
+10,identity,67,238,Betty Brant,live_action,wikidata,name
+10,identity,42,239,Phineas Mason,live_action,wikidata,name
+10,identity,196,54,Ned Leeds,live_action,wikidata,name
+10,identity,5,240,Steve Rogers,live_action,wikidata,name
+11,identity,27,46,Spider-Man,voice,wikidata,wikidata_id
+11,identity,178,241,Mary Jane Watson,voice,wikidata,wikidata_id
+11,identity,10,242,Doctor Octopus,voice,wikidata,wikidata_id
+11,identity,27,180,Spider-Man,voice,wikidata,wikidata_id
+11,identity,184,63,Spider-Man 2099,voice,wikidata,wikidata_id
+12,identity,67,238,Betty Brant,live_action,wikidata,name
+12,identity,74,243,Brad Davis,live_action,wikidata,wikidata_id
+12,identity,95,244,Dimitri Smerdyakov,live_action,wikidata,wikidata_id
+12,identity,260,245,William Ginter Riva,live_action,wikidata,wikidata_id
+12,identity,142,246,Janice Lincoln,live_action,wikidata,name
+12,identity,137,11,J. Jonah Jameson,live_action,wikidata,name
+12,identity,244,247,Talos,live_action,wikidata,wikidata_id
+12,identity,239,248,Soren,live_action,wikidata,wikidata_id
+13,identity,153,59,Julius Dell,live_action,wikidata,wikidata_id
+13,identity,67,238,Betty Brant,live_action,wikidata,name
+13,identity,137,11,J. Jonah Jameson,live_action,wikidata,name
+13,identity,8,154,Matt Murdock,live_action,wikidata,name
+13,identity,21,26,Curt Connors,live_action,wikidata,name
+13,identity,29,21,Flint Marko,live_action,wikidata,name
+14,identity,27,46,Spider-Man,voice,wikidata,wikidata_id
+14,identity,149,182,Jessica Drew,voice,wikidata,name
+14,identity,144,48,Jefferson Davis,voice,wikidata,wikidata_id
+14,identity,225,49,Rio Morales,voice,wikidata,wikidata_id
+14,identity,2,249,Ben Reilly,voice,wikidata,wikidata_id
+14,identity,172,250,Spider-Byte,voice,wikidata,wikidata_id
+17,identity,207,73,Eddie Brock,live_action,wikidata,wikidata_id
+20,identity,22,185,Julia Carpenter,live_action,wikidata,wikidata_id
+20,identity,58,186,Anya Corazón,live_action,wikidata,wikidata_id
+27,identity,37,52,Spider-Man Noir,live_action,wikidata,wikidata_id
+27,identity,227,251,Robbie Robertson,live_action,wikidata,wikidata_id
+27,related,166,252,Silvermane,live_action,wikidata,wikidata_id
+27,identity,3,253,Black Cat,live_action,wikidata,wikidata_id
+27,identity,43,254,Tombstone,live_action,wikidata,wikidata_id
+27,identity,29,255,Sandman,live_action,wikidata,wikidata_id
+57,identity,27,123,Spider-Man,voice,wikidata,wikidata_id
+57,identity,6,223,Carnage,voice,wikidata,wikidata_id
+57,identity,10,256,Doctor Octopus,voice,wikidata,wikidata_id
+57,identity,3,211,Black Cat,voice,wikidata,wikidata_id
+57,identity,12,218,Venom,voice,wikidata,wikidata_id
+59,identity,27,123,Spider-Man,voice,wikidata,wikidata_id
+59,identity,13,223,Electro,voice,wikidata,wikidata_id
+59,identity,31,218,Shocker,voice,wikidata,wikidata_id
+59,identity,39,257,Stan Lee,voice,wikidata,name
+61,identity,27,10,Spider-Man,voice,wikidata,wikidata_id
+61,related,403,13,Green Goblin,voice,wikidata,wikidata_id
+61,identity,15,132,Harry Osborn,voice,wikidata,wikidata_id
+61,identity,45,258,Vulture,voice,wikidata,wikidata_id
+61,identity,178,259,Mary Jane Watson,voice,wikidata,wikidata_id
+61,identity,20,260,Kraven the Hunter,voice,wikidata,wikidata_id
+62,identity,27,10,Spider-Man,voice,wikidata,wikidata_id
+62,identity,178,14,Mary Jane Watson,voice,wikidata,wikidata_id
+62,identity,10,17,Doctor Octopus,voice,wikidata,wikidata_id
+62,identity,26,217,Mysterio,voice,wikidata,wikidata_id
+62,identity,15,132,Harry Osborn,voice,wikidata,wikidata_id
+62,identity,28,261,Rhino,voice,wikidata,wikidata_id
+62,identity,1,262,Aunt May,voice,wikidata,wikidata_id
+62,identity,21,263,Lizard,voice,wikidata,wikidata_id
+62,identity,3,264,Black Cat,voice,wikidata,wikidata_id
+63,identity,27,265,Spider-Man,voice,wikidata,wikidata_id
+63,identity,12,266,Venom,voice,wikidata,wikidata_id
+63,identity,46,267,Wolverine,voice,wikidata,wikidata_id
+63,identity,45,268,Vulture,voice,wikidata,wikidata_id
+63,identity,13,217,Electro,voice,wikidata,wikidata_id
+63,identity,198,269,Nick Fury,voice,wikidata,wikidata_id
+63,identity,15,270,Green Goblin,voice,wikidata,name
+63,identity,129,271,Human Torch,voice,wikidata,wikidata_id
+63,identity,28,272,Rhino,voice,wikidata,wikidata_id
+63,identity,34,211,Silver Sable,voice,wikidata,wikidata_id
+65,identity,27,10,Spider-Man,voice,wikidata,wikidata_id
+65,identity,137,11,J. Jonah Jameson,voice,wikidata,wikidata_id
+65,identity,29,21,Sandman,voice,wikidata,name
+65,identity,15,15,Harry Osborn,voice,wikidata,wikidata_id
+65,identity,178,148,Mary Jane Watson,voice,wikidata,wikidata_id
+65,identity,30,223,Scorpion,voice,wikidata,name
+65,identity,21,273,Lizard,voice,wikidata,wikidata_id
+65,identity,19,274,Kingpin,voice,wikidata,wikidata_id
+65,identity,20,275,Kraven the Hunter,voice,wikidata,wikidata_id
+65,identity,28,276,Rhino,voice,wikidata,wikidata_id
+65,identity,12,173,Venom,voice,wikidata,wikidata_id
+66,identity,27,217,Spider-Man,voice,wikidata,wikidata_id
+66,identity,26,277,Mysterio,voice,wikidata,wikidata_id
+66,identity,12,278,Venom,voice,wikidata,wikidata_id
+66,related,403,279,Green Goblin,voice,wikidata,wikidata_id
+66,identity,10,263,Doctor Octopus,voice,wikidata,wikidata_id
+66,identity,28,261,Rhino,voice,wikidata,wikidata_id
+66,identity,34,211,Silver Sable,voice,wikidata,wikidata_id
+66,identity,3,280,Black Cat,voice,wikidata,wikidata_id
+67,identity,27,281,Spider-Man,voice,wikidata,wikidata_id
+67,identity,3,282,Black Cat,voice,wikidata,wikidata_id
+67,identity,189,277,Moon Knight,voice,wikidata,wikidata_id
+67,identity,26,283,Mysterio,voice,wikidata,wikidata_id
+67,identity,46,276,Wolverine,voice,wikidata,wikidata_id
+67,identity,12,267,Venom,voice,wikidata,wikidata_id
+67,identity,19,284,Kingpin,voice,wikidata,wikidata_id
+75,identity,27,285,Spider-Man,voice,wikidata,wikidata_id
+75,identity,5,286,Captain America,voice,wikidata,wikidata_id
+75,identity,249,287,Thor,voice,wikidata,wikidata_id
+75,identity,18,288,Hulk,voice,wikidata,wikidata_id
+75,identity,136,289,Iron Man,voice,wikidata,wikidata_id
+75,identity,11,290,Doctor Strange,voice,wikidata,wikidata_id
+75,identity,211,291,Star-Lord,voice,wikidata,name
+75,identity,157,292,Kang the Conqueror,voice,wikidata,wikidata_id
+75,identity,137,293,J. Jonah Jameson,voice,wikidata,wikidata_id
+75,identity,128,294,Howard the Duck,voice,wikidata,wikidata_id
+75,identity,29,295,Sandman,voice,wikidata,wikidata_id
+75,identity,39,257,Stan Lee,voice,wikidata,name
+75,related,237,296,Man-Ape,voice,wikidata,wikidata_id
+75,identity,125,297,Hawkeye,voice,wikidata,wikidata_id
+75,related,85,298,Steel Serpent,voice,wikidata,wikidata_id
+75,related,373,299,Morgan le Fay,voice,wikidata,wikidata_id
+75,identity,156,300,Kamala Khan,voice,wikidata,name
+75,related,309,301,Medusa,voice,wikidata,wikidata_id
+75,identity,69,302,Black Panther,voice,wikidata,wikidata_id
+75,related,204,303,Helmut Zemo,voice,wikidata,wikidata_id
+75,identity,116,304,Ghost Rider,voice,wikidata,name
+75,related,153,305,Crystal,voice,wikidata,wikidata_id
+76,identity,27,306,Peter Parker,voice,wikidata,name
+76,identity,178,140,Mary Jane Watson,voice,wikidata,wikidata_id
+76,identity,1,307,Aunt May,voice,wikidata,wikidata_id
+76,identity,175,308,Mister Negative,voice,wikidata,wikidata_id
+76,identity,10,309,Doctor Octopus,voice,wikidata,wikidata_id
+76,identity,25,141,Miles Morales,voice,wikidata,wikidata_id
+76,identity,117,310,Norman Osborn,voice,wikidata,wikidata_id
+76,identity,19,311,Kingpin,voice,wikidata,wikidata_id
+80,identity,27,306,Spider-Man,voice,wikidata,wikidata_id
+80,identity,25,141,Miles Morales,voice,wikidata,wikidata_id
+80,identity,20,312,Kraven the Hunter,voice,wikidata,wikidata_id
+80,identity,12,313,Venom,voice,wikidata,wikidata_id
+80,identity,178,140,Mary Jane Watson,voice,wikidata,wikidata_id
+80,identity,47,314,Wraith,voice,wikidata,wikidata_id
+80,identity,117,310,Norman Osborn,voice,wikidata,wikidata_id
+80,identity,175,308,Mister Negative,voice,wikidata,wikidata_id
+1,identity,227,158,"Joe ""Robbie"" Robertson",live_action,wikipedia,wikipedia_page
+6,related,363,15,Harry Osborn:Oscorp's current Chief executive officer,live_action,wikipedia,wikipedia_page
+13,identity,16,24,Gwen Stacy,live_action,wikipedia,name
+14,identity,168,315,Lyla,voice,wikipedia,name
+15,identity,145,48,Jefferson Morales,voice,wikipedia,name
+15,identity,225,62,Rio Morales,voice,wikipedia,name
+15,identity,208,66,Pavitr Prabhakar / Spider-Man India,voice,wikipedia,wikipedia_page
+15,identity,36,50,Peter Porker / Spider-Ham,voice,wikipedia,wikipedia_page
+15,identity,48,67,Aaron Davis,voice,wikipedia,name
+15,identity,37,52,Peter Parker / Spider-Man Noir,voice,wikipedia,wikipedia_page
+15,identity,101,51,Peni Parker / SP//dr,voice,wikipedia,wikipedia_page
+16,identity,1,37,May Parker,live_action,wikipedia,name
+28,identity,45,113,Vulture,voice,wikipedia,wikipedia_page
+28,related,391,202,Cowboy,voice,wikipedia,wikipedia_page
+28,related,292,112,Martha Connors,voice,wikipedia,wikipedia_page
+28,identity,1,112,May Parker,voice,wikipedia,wikipedia_page
+28,identity,178,112,Mary Jane Watson,voice,wikipedia,wikipedia_page
+28,identity,30,316,Scorpion,voice,wikipedia,wikipedia_page
+28,identity,10,317,Doctor Octopus,voice,wikipedia,wikipedia_page
+28,identity,13,318,Electro,voice,wikipedia,wikipedia_page
+28,identity,10,318,Doctor Octopus,voice,wikipedia,wikipedia_page
+28,identity,108,318,Farley Stillwell,voice,wikipedia,wikipedia_page
+28,identity,19,318,Kingpin,voice,wikipedia,wikipedia_page
+28,identity,29,318,Sandman,voice,wikipedia,wikipedia_page
+28,identity,28,319,Rhino,voice,wikipedia,wikipedia_page
+28,related,175,319,Vulcan,voice,wikipedia,name
+28,identity,241,320,Henry Smythe,voice,wikipedia,wikipedia_page
+28,related,293,321,Billy Connors,voice,wikipedia,wikipedia_page
+28,identity,26,322,Mysterio,voice,wikipedia,wikipedia_page
+28,identity,184,63,Miguel O'Hara / Spider-Man 2099,voice,wikipedia,wikipedia_page
+28,identity,25,45,Miles Morales,voice,wikipedia,wikipedia_page
+29,identity,29,323,Sandman,live_action,wikipedia,wikipedia_page
+29,identity,21,324,Lizard,live_action,wikipedia,wikipedia_page
+29,identity,224,325,Ringmaster,live_action,wikipedia,wikipedia_page
+29,related,114,326,Red Skull,live_action,wikipedia,wikipedia_page
+29,identity,20,327,Kraven the Hunter,live_action,wikipedia,wikipedia_page
+29,identity,44,328,Uncle Ben,live_action,wikipedia,wikipedia_page
+29,identity,122,329,Hammerhead,live_action,wikipedia,wikipedia_page
+29,identity,3,203,Black Cat,live_action,wikipedia,wikipedia_page
+29,identity,5,330,Captain America,live_action,wikipedia,wikipedia_page
+29,related,406,330,Wizard,live_action,wikipedia,wikipedia_page
+29,identity,171,331,Magneto,live_action,wikipedia,wikipedia_page
+29,related,39,332,Colleen,live_action,wikipedia,name
+29,identity,10,333,Doctor Octopus,live_action,wikipedia,wikipedia_page
+29,identity,19,333,Kingpin,live_action,wikipedia,wikipedia_page
+29,identity,7,334,Chameleon,live_action,wikipedia,wikipedia_page
+29,identity,45,335,Vulture,live_action,wikipedia,wikipedia_page
+29,identity,194,336,Sub-Mariner,live_action,wikipedia,wikipedia_page
+29,identity,117,337,Green Goblin/Norman Osborn,live_action,wikipedia,wikipedia_page
+29,identity,26,338,Mysterio,live_action,wikipedia,wikipedia_page
+29,identity,187,339,Young Reed Richards,live_action,wikipedia,wikipedia_page
+29,identity,9,339,Young Victor Von Doom,live_action,wikipedia,name
+29,related,135,340,Namorita,live_action,wikipedia,wikipedia_page
+29,related,309,340,Medusa,live_action,wikipedia,wikipedia_page
+29,related,166,341,Silvermane,live_action,wikipedia,wikipedia_page
+31,identity,178,342,Mary Jane Watson,voice,wikipedia,wikipedia_page
+31,identity,1,332,May Parker,voice,wikipedia,wikipedia_page
+31,identity,1,343,May Parker,voice,wikipedia,wikipedia_page
+31,identity,15,212,Harry Osborn / Green Goblin,voice,wikipedia,wikipedia_page
+31,identity,117,337,Norman Osborn / Green Goblin,voice,wikipedia,wikipedia_page
+31,identity,207,344,Eddie Brock / Venom,voice,wikipedia,wikipedia_page
+31,related,427,345,Jason Philips / Hobgoblin,voice,wikipedia,wikipedia_page
+32,identity,20,346,The Hunter,voice,wikipedia,wikipedia_page
+32,identity,137,126,J. Jonah Jameson,voice,wikipedia,wikipedia_page
+32,identity,178,211,Mary Jane Watson-Parker,voice,wikipedia,wikipedia_page
+32,identity,198,347,Nick Fury,voice,wikipedia,wikipedia_page
+32,related,403,123,Green Goblin / Hector Jones,voice,wikipedia,wikipedia_page
+32,identity,45,348,Vulture,voice,wikipedia,wikipedia_page
+34,identity,15,217,Harry Osborn,live_action,wikipedia,wikipedia_page
+34,related,113,217,Fredrick Foswell / Patch,live_action,wikipedia,wikipedia_page
+34,identity,178,219,Mary Jane Watson,live_action,wikipedia,wikipedia_page
+34,identity,110,349,Flash Thompson,live_action,wikipedia,wikipedia_page
+34,identity,115,350,George Stacy,live_action,wikipedia,wikipedia_page
+34,identity,28,350,Alex O'Hirn / Rhino,live_action,wikipedia,wikipedia_page
+34,identity,117,131,Norman Osborn,live_action,wikipedia,wikipedia_page
+34,identity,42,351,Phineas Mason / Tinkerer,voice,wikipedia,wikipedia_page
+34,identity,44,209,Ben Parker,voice,wikipedia,wikipedia_page
+34,identity,21,223,Curt Connors / Lizard,voice,wikipedia,wikipedia_page
+34,identity,31,352,Montana / Shocker,voice,wikipedia,wikipedia_page
+34,identity,26,353,Quentin Beck / Mysterio,voice,wikipedia,wikipedia_page
+34,identity,15,276,Green Goblin,voice,wikipedia,name
+34,identity,7,276,Chameleon,voice,wikipedia,wikipedia_page
+34,identity,4,354,Calypso,voice,wikipedia,wikipedia_page
+34,related,293,355,Billy Connors,voice,wikipedia,wikipedia_page
+34,identity,34,356,Sable Manfredi / Silver Sable,voice,wikipedia,wikipedia_page
+34,identity,43,357,Big Man,voice,wikipedia,wikipedia_page
+34,identity,67,358,Betty Brant,voice,wikipedia,wikipedia_page
+34,identity,29,261,Flint Marko / Sandman,voice,wikipedia,wikipedia_page
+34,identity,122,261,Hammerhead,voice,wikipedia,wikipedia_page
+34,identity,207,359,Eddie Brock / Venom,voice,wikipedia,wikipedia_page
+34,identity,48,360,Hobie Brown,voice,wikipedia,wikipedia_page
+34,identity,45,361,Adrian Toomes / Vulture,voice,wikipedia,wikipedia_page
+34,identity,131,362,Morris Bench,voice,wikipedia,wikipedia_page
+34,related,166,363,Silvio Manfredi / Silvermane,voice,wikipedia,wikipedia_page
+34,identity,13,364,Max Dillon / Electro,voice,wikipedia,wikipedia_page
+34,identity,60,365,Ashley Kafka,voice,wikipedia,wikipedia_page
+34,related,176,268,Miles Warren,voice,wikipedia,wikipedia_page
+34,identity,3,282,Felicia Hardy / Black Cat,voice,wikipedia,wikipedia_page
+34,identity,196,366,Ned Lee,voice,wikipedia,wikipedia_page
+34,identity,227,367,Robbie Robertson,voice,wikipedia,wikipedia_page
+34,related,399,367,Rand Robertson,voice,wikipedia,wikipedia_page
+34,related,115,367,Fancy Dan / Ricochet,voice,wikipedia,wikipedia_page
+34,identity,39,257,Stan,voice,wikipedia,name
+34,related,170,368,Mark Allan / Molten Man,voice,wikipedia,wikipedia_page
+34,identity,256,369,Walter Hardy / Cat Burglar,voice,wikipedia,wikipedia_page
+34,identity,43,370,Tombstone,voice,wikipedia,wikipedia_page
+34,related,292,371,Martha Connors,voice,wikipedia,wikipedia_page
+34,identity,1,372,May Parker,voice,wikipedia,wikipedia_page
+34,related,437,373,Roderick Kingsley,voice,wikipedia,wikipedia_page
+34,identity,20,374,Sergei Kravinoff / Kraven the Hunter,voice,wikipedia,wikipedia_page
+34,identity,98,375,Donald Menken,voice,wikipedia,name
+34,related,47,376,Stan Carter,voice,wikipedia,wikipedia_page
+35,related,411,133,Swarm,voice,wikipedia,wikipedia_page
+35,identity,155,133,Kaine,voice,wikipedia,wikipedia_page
+35,identity,21,223,Curt Connors/Lizard,voice,wikipedia,wikipedia_page
+35,identity,29,223,Sandman,voice,wikipedia,wikipedia_page
+35,identity,6,223,Carnage,voice,wikipedia,wikipedia_page
+35,identity,12,223,Venom,voice,wikipedia,wikipedia_page
+35,related,134,223,Zzzax,voice,wikipedia,wikipedia_page
+35,identity,166,138,Luke Cage/Power Man,voice,wikipedia,wikipedia_page
+35,related,411,377,Swarm,voice,wikipedia,name
+35,identity,30,377,Scorpion,voice,wikipedia,wikipedia_page
+35,related,406,134,Wizard,voice,wikipedia,wikipedia_page
+35,identity,21,134,Curt Connors,voice,wikipedia,name
+35,identity,45,134,Vulture,voice,wikipedia,wikipedia_page
+35,identity,15,220,Harry Osborn,voice,wikipedia,wikipedia_page
+35,related,194,220,Klaw,voice,wikipedia,wikipedia_page
+35,identity,12,220,Venom,voice,wikipedia,wikipedia_page
+35,identity,1,378,Aunt May Parker,voice,wikipedia,wikipedia_page
+35,related,310,378,Squirrel Girl,voice,wikipedia,wikipedia_page
+35,identity,198,379,Nick Fury,voice,wikipedia,wikipedia_page
+35,identity,2,380,Ben Reilly/Scarlet Spider,voice,wikipedia,wikipedia_page
+35,identity,178,381,Mary Jane Watson,voice,wikipedia,wikipedia_page
+35,identity,117,382,Norman Osborn,voice,wikipedia,wikipedia_page
+35,related,307,382,Trapster,voice,wikipedia,wikipedia_page
+35,identity,12,382,Venom,voice,wikipedia,wikipedia_page
+35,related,319,382,Ultimate Green Goblin,voice,wikipedia,wikipedia_page
+36,identity,70,140,Black Widow,live_action,wikipedia,wikipedia_page
+36,related,140,140,Crimson Dynamo,live_action,wikipedia,wikipedia_page
+36,identity,15,139,Harry Osborn/Hobgoblin,live_action,wikipedia,wikipedia_page
+36,identity,18,383,Hulk,live_action,wikipedia,wikipedia_page
+36,related,375,383,Crossbones,live_action,wikipedia,wikipedia_page
+36,related,77,383,Beetle,live_action,wikipedia,wikipedia_page
+36,identity,42,384,Tinkerer,live_action,wikipedia,wikipedia_page
+36,related,123,385,MODOK,live_action,wikipedia,wikipedia_page
+36,identity,20,386,Kraven the Hunter,live_action,wikipedia,wikipedia_page
+36,identity,175,377,Mister Negative,live_action,wikipedia,wikipedia_page
+36,related,162,284,Absorbing Man,live_action,wikipedia,wikipedia_page
+36,identity,31,387,Herman Schultz,live_action,wikipedia,wikipedia_page
+36,related,70,388,Tiberius Stone,live_action,wikipedia,name
+36,identity,122,389,Hammerhead,live_action,wikipedia,wikipedia_page
+36,identity,178,390,Mary Jane Watson,live_action,wikipedia,wikipedia_page
+36,identity,144,391,Jefferson Davis/Swarm,live_action,wikipedia,name
+36,identity,139,261,Raymond Warren/Jackal,live_action,wikipedia,name
+36,identity,110,359,Flash Thompson,live_action,wikipedia,wikipedia_page
+36,identity,241,359,Spencer Smythe,live_action,wikipedia,wikipedia_page
+36,identity,12,359,Venom,live_action,wikipedia,wikipedia_page
+36,identity,78,359,Burglar,live_action,wikipedia,wikipedia_page
+36,identity,45,392,Adrian Toomes/Vulture/Goblin King,live_action,wikipedia,wikipedia_page
+36,identity,180,393,Scream,live_action,wikipedia,name
+36,identity,26,364,Mysterio,live_action,wikipedia,wikipedia_page
+36,identity,41,364,Spot,live_action,wikipedia,name
+36,identity,211,394,Star-Lord,live_action,wikipedia,name
+36,identity,189,395,Moon Knight,live_action,wikipedia,wikipedia_page
+36,identity,3,358,Black Cat,live_action,wikipedia,wikipedia_page
+36,identity,79,358,Captain Marvel,live_action,wikipedia,wikipedia_page
+36,related,191,345,Arnim Zola,live_action,wikipedia,wikipedia_page
+36,related,154,396,Dagger,live_action,wikipedia,wikipedia_page
+36,identity,227,397,Robbie Robertson,live_action,wikipedia,wikipedia_page
+36,related,154,398,Cloak,live_action,wikipedia,wikipedia_page
+36,identity,117,132,Norman Osborn/Dark Goblin/Spider-King,live_action,wikipedia,wikipedia_page
+36,identity,150,132,John Jameson/Man-Wolf,live_action,wikipedia,wikipedia_page
+36,related,256,367,Slyde,live_action,wikipedia,wikipedia_page
+36,identity,163,399,Liz Allan/Screwball,live_action,wikipedia,wikipedia_page
+36,identity,13,400,Electro,live_action,wikipedia,wikipedia_page
+36,identity,1,307,Aunt May Parker,live_action,wikipedia,wikipedia_page
+36,identity,21,306,Curt Connors/Lizard,live_action,wikipedia,wikipedia_page
+36,identity,28,401,Aleksei Sytsevich/Rhino,live_action,wikipedia,wikipedia_page
+36,identity,47,402,Yuri Watanabe,live_action,wikipedia,wikipedia_page
+36,related,166,403,Silvermane,live_action,wikipedia,wikipedia_page
+36,identity,11,404,Doctor Strange,live_action,wikipedia,wikipedia_page
+36,identity,44,405,Uncle Ben Parker,live_action,wikipedia,wikipedia_page
+36,identity,7,405,Chameleon,live_action,wikipedia,wikipedia_page
+36,identity,48,406,Prowler,live_action,wikipedia,wikipedia_page
+36,identity,12,407,Venom,live_action,wikipedia,wikipedia_page
+36,identity,207,407,Eddie Brock,live_action,wikipedia,wikipedia_page
+36,related,157,408,Baron Mordo,live_action,wikipedia,wikipedia_page
+36,related,399,224,Randy Robertson,live_action,wikipedia,wikipedia_page
+36,identity,18,409,Bruce Banner,live_action,wikipedia,name
+36,identity,5,410,Captain America,live_action,wikipedia,wikipedia_page
+36,identity,53,411,Alistair Smythe,live_action,wikipedia,wikipedia_page
+36,identity,30,411,Scorpion,live_action,wikipedia,wikipedia_page
+36,identity,34,412,Silver Sable,live_action,wikipedia,wikipedia_page
+36,identity,138,413,Jack O'Lantern,live_action,wikipedia,name
+36,related,170,414,Molten Man,live_action,wikipedia,wikipedia_page
+36,identity,29,311,Sandman,live_action,wikipedia,wikipedia_page
+36,identity,249,311,Thor,live_action,wikipedia,wikipedia_page
+36,identity,136,415,Iron Man,live_action,wikipedia,wikipedia_page
+37,identity,225,416,Rio Morales,voice,wikipedia,name
+37,identity,115,380,George Stacy,voice,wikipedia,wikipedia_page
+37,identity,69,417,Black Panther,voice,wikipedia,wikipedia_page
+37,identity,136,418,Tony Stark / Iron Man,voice,wikipedia,wikipedia_page
+37,related,431,419,Ben Grimm / Thing,voice,wikipedia,wikipedia_page
+37,identity,187,420,Mister Fantastic,voice,wikipedia,wikipedia_page
+37,related,310,421,Squirrel Girl,voice,wikipedia,wikipedia_page
+37,identity,258,422,White Tiger,voice,wikipedia,name
+37,identity,5,410,Steve Rogers / Captain America,voice,wikipedia,wikipedia_page
+37,identity,28,423,Rhino,voice,wikipedia,wikipedia_page
+37,identity,13,424,Electro,voice,wikipedia,name
+37,identity,29,376,Sandman,voice,wikipedia,wikipedia_page
+37,related,191,425,Zola,voice,wikipedia,wikipedia_page
+37,identity,21,426,Lizard,voice,wikipedia,wikipedia_page
+37,identity,131,427,Hydro-Man,voice,wikipedia,wikipedia_page
+37,related,411,428,Swarm,voice,wikipedia,wikipedia_page
+69,identity,27,128,Peter Parker / The Amazing Spider-Man,voice,wikipedia,wikipedia_page
+69,identity,37,121,Peter Parker / Spider-Man Noir,voice,wikipedia,wikipedia_page
+69,identity,184,118,Miguel O'Hara / Spider-Man 2099,voice,wikipedia,wikipedia_page
+69,identity,27,132,Peter Parker / Ultimate Spider-Man,voice,wikipedia,name
+77,identity,27,306,Peter Parker,voice,wikipedia,name
+78,identity,27,306,Peter Parker,voice,wikipedia,name

@@ -1,0 +1,429 @@
+id,name,person_id,wikidata_id,wikipedia_title
+1,Nicholas Hammond,1,,
+2,David White,2,,
+3,Robert F. Simon,3,,
+4,Robert Alda,4,,
+5,Ellen Bry,5,,
+6,Rosalind Chao,6,,
+7,Richard Erdman,7,,
+8,Shinji Tōdō,8,,
+9,Noboru Nakaya,9,,
+10,Tobey Maguire,10,,
+11,J. K. Simmons,14,,
+12,Bill Nunn,16,,
+13,Willem Dafoe,11,,
+14,Kirsten Dunst,12,,
+15,James Franco,13,,
+16,Joe Manganiello,15,,
+17,Alfred Molina,17,,
+18,Rosemary Harris,18,,
+19,Donna Murphy,19,,
+20,Daniel Gillies,20,,
+21,Thomas Haden Church,21,,
+22,Bryce Dallas Howard,22,,
+23,James Cromwell,23,,
+24,Andrew Garfield,24,,
+25,Chris Zylka,29,,
+26,Rhys Ifans,26,,
+27,Emma Stone,25,,
+28,Denis Leary,27,,
+29,Campbell Scott,28,,
+30,Irrfan Khan,30,,
+31,Jamie Foxx,31,,
+32,Dane DeHaan,32,,
+33,Paul Giamatti,33,,
+34,Colm Feore,34,,
+35,Tom Holland,35,,
+36,Tony Revolori,41,,
+37,Marisa Tomei,38,,
+38,Michael Keaton,36,,
+39,Robert Downey Jr.,37,,
+40,Jon Favreau,39,,
+41,Gwyneth Paltrow,40,,
+42,Bokeem Woodbine,42,,
+43,Tyne Daly,43,,
+44,Lily Tomlin,49,,
+45,Shameik Moore,44,,
+46,Jake Johnson,45,,
+47,Hailee Steinfeld,46,,
+48,Brian Tyree Henry,47,,
+49,Luna Lauren Vélez,48,,
+50,John Mulaney,50,,
+51,Kimiko Glenn,51,,
+52,Nicolas Cage,52,,
+53,Liev Schreiber,53,,
+54,Jacob Batalon,57,,
+55,Jake Gyllenhaal,54,,
+56,Samuel L. Jackson,55,,
+57,Cobie Smulders,56,,
+58,Martin Starr,58,,
+59,J. B. Smoove,59,,
+60,Benedict Wong,60,,
+61,Shea Whigham,66,,
+62,Lauren Vélez,65,,
+63,Oscar Isaac,61,,
+64,Jason Schwartzman,62,,
+65,Daniel Kaluuya,63,,
+66,Karan Soni,64,,
+67,Mahershala Ali,67,,
+68,Jharrel Jerome,68,,
+69,Jon Bernthal,102,,
+70,Michael Mando,103,,
+71,Marvin Jones III,104,,
+72,Mark Ruffalo,105,,
+73,Tom Hardy,69,,
+74,Michelle Williams,70,,
+75,Riz Ahmed,71,,
+76,Scott Haze,72,,
+77,Jenny Slate,73,,
+78,Woody Harrelson,74,,
+79,Peggy Lu,75,,
+80,Melora Walters,76,,
+81,Naomie Harris,77,,
+82,Reid Scott,78,,
+83,Matt Smith,79,,
+84,Adria Arjona,80,,
+85,Jared Harris,81,,
+86,Tyrese Gibson,82,,
+87,Al Madrigal,83,,
+88,Dakota Johnson,84,,
+89,Tahar Rahim,85,,
+90,Emma Roberts,86,,
+91,Kerry Bishé,87,,
+92,Mike Epps,88,,
+93,José María Yazpik,89,,
+94,Zosia Mamet,90,,
+95,Alessandro Nivola,93,,
+96,Aaron Taylor-Johnson,91,,
+97,Fred Hechinger,92,,
+98,Ariana DeBose,94,,
+99,Christopher Abbott,95,,
+100,Russell Crowe,96,,
+101,Murat Seven,97,,
+102,Yuri Kolokolnikov,98,,
+103,Chiwetel Ejiofor,99,,
+104,Andy Serkis,100,,
+105,Alanna Ubach,101,,
+106,Benito Antonio Martínez Ocasio,106,,
+107,Danny Seagren,107,,
+108,Chip Fields,108,,
+109,Mitsuo Andō,109,,
+110,Yukie Kagawa,110,,
+111,Paul Kligman,112,,
+112,Peg Dixon,113,,
+113,Paul Soles,111,,
+114,Len Carlson,114,,
+115,William Woodson,116,,
+116,Ted Schwartz,115,,
+117,Brad Crandall,117,,
+118,Dan Gilvezan,118,,
+119,Frank Welker,119,,
+120,Sara Ballantine,121,,
+121,Christopher Daniel Barnes,120,,
+122,Roscoe Lee Browne,122,,
+123,Rino Romano,123,,
+124,Brian Drummond,125,,
+125,Michael Donovan,126,,
+126,Richard Newman,124,,
+127,Lisa Loeb,128,,
+128,Neil Patrick Harris,127,,
+129,Michael Clarke Duncan,129,,
+130,Lacey Chabert,131,,
+131,Alan Rachins,132,,
+132,Josh Keaton,130,,
+133,Drake Bell,133,,
+134,Tom Kenny,138,,
+135,Logan Miller,134,,
+136,Caitlyn Taylor Love,135,,
+137,Greg Cipes,136,,
+138,Ogie Banks,137,,
+139,Max Mittelman,142,,
+140,Laura Bailey,140,,
+141,Nadji Jeter,139,,
+142,Melanie Minichino,141,,
+143,Lily Sanfelippo,145,,
+144,Benjamin Valic,143,,
+145,J. P. Karliak,147,,
+146,Jakari Fraser,144,,
+147,Kelly Ohanian,146,,
+148,Kari Wahlgren,149,,
+149,Colman Domingo,152,,
+150,Hudson Thames,148,,
+151,Hugh Dancy,153,,
+152,Grace Song,150,,
+153,Eugene Byrd,151,,
+154,Charlie Cox,154,,
+155,Michael Pataki,155,,
+156,Lisa Eilbacher,156,,
+157,Jeff Donnell,157,,
+158,Hilly Hicks,158,,
+159,Thayer David,159,,
+160,Robert Hastings,160,,
+161,Ivor Francis,161,,
+162,Joanna Cameron,170,,
+163,Randy Powell,171,,
+164,Lawrence P. Casey,172,,
+165,Simon Scott,173,,
+166,Benson Fong,177,,
+167,John Milford,178,,
+168,Hagan Beggs,179,,
+169,Ted Danson,180,,
+170,Cliff Robertson,192,,
+171,Michael Papajohn,193,,
+172,Dylan Baker,202,,
+173,Topher Grace,210,,
+174,Martin Sheen,214,,
+175,Sally Field,215,,
+176,Embeth Davidtz,216,,
+177,Zendaya,231,,
+178,Laura Harrier,232,,
+179,Donald Glover,233,,
+180,Chris Pine,246,,
+181,Benedict Cumberbatch,257,,
+182,Issa Rae,260,,
+183,Stephen Graham,273,,
+184,Jared Leto,278,,
+185,Sydney Sweeney,285,,
+186,Isabela Merced,286,,
+187,Celeste O'Connor,287,,
+188,Adam Scott,288,,
+189,Levi Miller,294,,
+190,Billy Barratt,295,,
+191,Diaana Babnicova,296,,
+192,Juno Temple,307,,
+193,Clark Backo,308,,
+194,Cristo Fernández,309,,
+195,Morgan Freeman,318,,
+196,Skip Hinnant,319,,
+197,Judy Graubart,320,,
+198,Jim Boyd,321,,
+199,Rika Miura,326,,
+200,Izumi Ōyama,327,,
+201,Yoshiharu Yabuki,328,,
+202,Bernard Cowan,332,,
+203,Morgan Lofting,339,,
+204,Mona Marshall,340,,
+205,Lee Bailey,341,,
+206,Kathy Garver,347,,
+207,June Foray,348,,
+208,Dick Tufeld,349,,
+209,Ed Asner,352,,
+210,Rodney Saulsberry,353,,
+211,Jennifer Hale,354,,
+212,Gary Imhoff,355,,
+213,John Payne,360,,
+214,Ian Ziering,366,,
+215,Keith Carradine,367,,
+216,Angelle Brooks,368,,
+217,James Arnold Taylor,374,,
+218,Daran Norris,375,,
+219,Vanessa Marshall,376,,
+220,Matt Lanter,383,,
+221,Robbie Daymond,389,,
+222,Scott Menville,390,,
+223,Dee Bradley Baker,396,,
+224,Zeno Robinson,401,,
+225,Elizabeth Banks,,Q219373,
+226,Randy Savage,,Q59635,
+227,Valery Kukhareshin,,Q4249791,
+228,Vladimir Maslakov,,Q4283881,
+229,Sergey Parshin,,Q4346314,
+230,Yury Lazarev,,Q4252832,
+231,Chris Cooper,,Q273208,
+232,Felicity Jones,,Q234447,
+233,B. J. Novak,,Q459925,
+234,Shailene Woodley,,Q231058,
+235,Jennifer Connelly,,Q103343,
+236,Logan Marshall-Green,,Q472084,
+237,Tiffany Espensen,,Q7801211,
+238,Angourie Rice,,Q24034671,
+239,Michael Chernus,,Q20630818,
+240,Chris Evans,,Q178348,
+241,Zoë Kravitz,,Q227129,
+242,Kathryn Hahn,,Q271986,
+243,Remy Hii,,Q16225873,
+244,Numan Acar,,Q1151023,
+245,Peter Billingsley,,Q3376457,
+246,Claire Rushbrook,,Q299684,
+247,Ben Mendelsohn,,Q816565,
+248,Sharon Blynn,,Q20857836,
+249,Andy Samberg,,Q314640,
+250,Amandla Stenberg,,Q195691,
+251,Lamorne Morris,408,Q500628,
+252,Brendan Gleeson,409,Q206659,
+253,Li Jun Li,410,Q27864073,
+254,Abraham Popoola,,Q123386756,
+255,Jack Huston,411,Q1190693,
+256,Efrem Zimbalist Jr.,,Q531718,
+257,Stan Lee,322,Q181900,
+258,Dwight Schultz,,Q355344,
+259,Catherine O'Connor,,Q26202654,
+260,Gary Anthony Sturgis,,Q4355888,
+261,John DiMaggio,,Q313266,
+262,Mindy Sterling,,Q271627,
+263,Joe Alaskey,,Q1691318,
+264,Holly Fields,,Q12687797,
+265,Sean Marquette,,Q4356272,
+266,Arthur Burghardt,,Q4798134,
+267,Keith Szarabajka,,Q1388258,
+268,Brian George,,Q1066454,
+269,Dave Fennoy,,Q5228760,
+270,Peter Lurie,,Q3376735,
+271,David Kaufman,,Q3241556,
+272,Bob Glouberman,,Q4932559,
+273,Nathan Carlson,,Q50808735,
+274,Bob Joles,,Q1766138,
+275,Neil Kaplan,,Q4356496,
+276,Steve Blum,,Q952156,
+277,Robin Atkin Downes,,Q4346488,
+278,Quinton Flynn,,Q1262695,
+279,Roger L. Jackson,,Q2461148,
+280,Audrey Wasilewski,,Q4820188,
+281,Mike Vaughn,,Q6849143,
+282,Tricia Helfer,,Q229021,
+283,Greg Baldwin,,Q1949750,
+284,Gregg Berger,,Q3090109,
+285,Martin Sherman,,Q6776577,
+286,Josh Cowdery,,Q29036493,
+287,Ronan Summers,,Q66091597,
+288,Gary Martin,,Q5525531,
+289,John Schwab,,Q6257003,
+290,Ramon Tikaram,,Q3929913,
+291,Kerry Shale,,Q6394654,
+292,Peter Serafinowicz,,Q723256,
+293,Glenn Wrage,,Q17021160,
+294,Greg Miller,,Q15995308,
+295,John Guerrasio,,Q20631147,
+296,Alexis Rodney,,Q66091559,
+297,Dar Dash,,Q17465875,
+298,Sacha Dhawan,,Q351505,
+299,Kate O'Sullivan,,Q6375696,
+300,Rebecca Kiser,,Q19561037,
+301,Teresa Gallagher,,Q7702140,
+302,Osi Okerafor,,Q100257818,
+303,"Tim Bentinck, 12th Earl of Portland",,Q3528586,
+304,David Menkin,,Q11964837,
+305,Naomi McDonald,,Q112176005,
+306,Yuri Lowenthal,581,Q579804,
+307,Nancy Linari,,Q6962811,
+308,Stephen Oyoung,,Q26155674,
+309,William Salyers,,Q8018068,
+310,Mark Rolston,,Q693301,
+311,Travis Willingham,,Q2403592,
+312,Jim Pirri,,Q2228120,
+313,Tony Todd,,Q351849,
+314,Tara Platt,,Q1316782,
+315,Greta Lee,,,Greta Lee
+316,Carl Banas,,,Carl Banas
+317,Vern Chapman,,,
+318,Tom Harvey,,,
+319,Ed McNamara,,,Ed McNamara
+320,Henry Ramer,,,Henry Ramer
+321,Billie Mae Richards,,,Billie Mae Richards
+322,Chris Wiggins,,,Chris Wiggins
+323,Wally Burr,346,,Wally Burr
+324,Corey Burton,,,Corey Burton
+325,Regis Cordic,,,Regis Cordic
+326,Peter Cullen,,,Peter Cullen
+327,Jack DeLeon,,,Jack DeLeon
+328,Ralph James,,,Ralph James (actor)
+329,Lynn Johnson,,,
+330,George DiCenzo,,,George DiCenzo
+331,Walker Edmiston,,,Walker Edmiston
+332,Linda Gary,,,Linda Gary
+333,Stan Jones,,,G. Stanley Jones
+334,John H. Mayer,,,
+335,Don Messick,,,Don Messick
+336,Vic Perrin,,,Vic Perrin
+337,Neil Ross,,,Neil Ross
+338,Michael Rye,,,Michael Rye
+339,Michael Sheehan,,,
+340,B.J. Ward,,,B. J. Ward (actress)
+341,Paul Winchell,,,Paul Winchell
+342,Saratoga Ballantine,,,
+343,Julie Bennett,,,Julie Bennett
+344,Hank Azaria,,,Hank Azaria
+345,Mark Hamill,,,Mark Hamill
+346,Paul Dobson,,,Paul Dobson (actor)
+347,Mark Gibbon,,,Mark Gibbon
+348,Scott McNeil,,,Scott McNeil
+349,Joshua LeBar,,,Joshua LeBar
+350,Clancy Brown,,,Clancy Brown
+351,Thom Adcox-Hernandez,,,Thom Adcox-Hernandez
+352,Jeff Bennett,,,Jeff Bennett
+353,Xander Berkeley,,,Xander Berkeley
+354,Angela Bryant,,,Angela Bryant
+355,Max Burkholder,,,Max Burkholder
+356,Nikki Cox,,,Nikki Cox
+357,Keith David,,,Keith David
+358,Grey DeLisle,,,Grey DeLisle
+359,Benjamin Diskin,,,Benjamin Diskin
+360,Charles Duckworth,,,
+361,Robert Englund,,,Robert Englund
+362,Bill Fagerbakke,,,Bill Fagerbakke
+363,Miguel Ferrer,,,Miguel Ferrer
+364,Crispin Freeman,,,Crispin Freeman
+365,Elisa Gabrielli,,,Elisa Gabrielli
+366,Andrew Kishino,,,Andrew Kishino
+367,Phil LaMarr,,,Phil LaMarr
+368,Eric Lopez,,,
+369,James Remar,,,James Remar
+370,Kevin Michael Richardson,,,Kevin Michael Richardson
+371,Kath Soucie,,,Kath Soucie
+372,Deborah Strang,,,
+373,Courtney B. Vance,,,Courtney B. Vance
+374,Eric Vesbit,,,
+375,Greg Weisman,377,,Greg Weisman
+376,Thomas F. Wilson,,,Thomas F. Wilson
+377,Eric Bauza,,,Eric Bauza
+378,Misty Lee,,,Misty Lee
+379,Chi McBride,,,Chi McBride
+380,Scott Porter,,,Scott Porter
+381,Tara Strong,,,Tara Strong
+382,Steven Weber,,,Steven Weber
+383,Fred Tatasciore,,,Fred Tatasciore
+384,Aaron Abrams,,,Aaron Abrams
+385,Charlie Adler,,,Charlie Adler
+386,Troy Baker,,,Troy Baker
+387,Cameron Boyce,,,Cameron Boyce
+388,Jonathan Brooks,,,
+389,Jim Cummings,,,Jim Cummings
+390,Felicia Day,,,Felicia Day
+391,Alex Désert,,,Alex Désert
+392,Alistair Duncan,,,Alastair Duncan (Scottish actor)
+393,Meg Donnelly,,,Meg Donnelly
+394,Will Friedle,,,Will Friedle
+395,Peter Giles,,,
+396,Olivia Holt,,,Olivia Holt
+397,Ernie Hudson,,,Ernie Hudson
+398,Aubrey Joseph,,,Aubrey Joseph
+399,Natalie Lander,,,
+400,Daisy Lightfoot,,,
+401,Matthew Mercer,,,Matthew Mercer
+402,Sumalee Montano,,,Sumalee Montano
+403,Nolan North,,,Nolan North
+404,Liam O'Brien,,,Liam O'Brien
+405,Patton Oswalt,,,Patton Oswalt
+406,Nathaniel J. Potvin,,,Nathaniel J. Potvin
+407,Ben Pronsky,,,Ben Pronsky
+408,Leonard Roberts,,,Leonard Roberts
+409,Kevin Shinick,391,,Kevin Shinick
+410,Roger Craig Smith,,,Roger Craig Smith
+411,Jason Spisak,,,Jason Spisak
+412,April Stewart,,,April Stewart
+413,Booboo Stewart,,,Booboo Stewart
+414,Imari Williams,,,
+415,Mick Wingert,,,Mick Wingert
+416,Gabrielle Ruiz,,,Gabrielle Ruiz
+417,Tru Valentino,,,Tru Valentino
+418,John Stamos,,,John Stamos
+419,Andy Milder,,,Andy Milder
+420,Mario Lopez,,,Mario Lopez
+421,Emma Berman,,,Emma Berman
+422,Kylie Cantrall,,,Kylie Cantrall
+423,Justin Shenkarow,,,Justin Shenkarow
+424,Stephanie Lemelin,,,Stephanie Lemelin
+425,Trevor Devall,,,Trevor Devall
+426,Bumper Robinson,,,Bumper Robinson
+427,Haley Joel Osment,,,Haley Joel Osment
+428,Vanessa Bayer,,,Vanessa Bayer

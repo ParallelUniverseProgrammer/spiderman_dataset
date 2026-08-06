@@ -59,6 +59,16 @@ const ALIGN = {
   neutral: { label: "Neutral", color: "var(--deemph)" },
 };
 
+/* The relationship vocabulary v4 and v5 share, in the order a dossier reads
+   best: who they fight, then who they are to each other. */
+const RELATION_LABELS = {
+  enemy: "Enemy of", ally: "Allied with", mother: "Mother", father: "Father",
+  spouse: "Spouse", child: "Child", partner: "Partner", relative: "Relative",
+  alternate_universe_counterpart: "Counterpart in another universe",
+};
+const RELATION_ORDER = ["enemy", "ally", "alternate_universe_counterpart", "spouse",
+                        "partner", "father", "mother", "child", "relative"];
+
 function money(v) {
   if (v == null) return "—";
   if (v >= 1e9) return "$" + (v / 1e9).toFixed(v >= 1e10 ? 0 : 2) + "B";
@@ -178,6 +188,32 @@ for (const p of people) {
   p.is_actor = p.roles.some((r) => r === "actor" || r === "voice actor");
   p.years = p.credits.map((c) => workById.get(c.work_id).year).filter(Boolean).sort();
 }
+
+/* v5: performances, and the second ring of the character graph. A portrayal is
+   held on the work, the character and the performer alike; the objects are
+   shared, so wiring the three sides here costs one pass and no extra payload. */
+const performers = DATA.performers || [];
+const relatedChars = DATA.related_characters || [];
+const performerById = new Map(performers.map((p) => [p.id, p]));
+const relatedById = new Map(relatedChars.map((r) => [r.id, r]));
+const portrayalsByPerson = new Map();
+
+for (const r of relatedChars) {
+  r.relations = r.relations || [];
+  r.back_relations = r.back_relations || [];
+  r.portrayals = r.portrayals || [];
+}
+for (const p of performers) {
+  p.portrayals = p.portrayals || [];
+  p.n_works = new Set(p.portrayals.map((x) => x.work_id)).size;
+  p.years = p.portrayals.map((x) => workById.get(x.work_id)?.year).filter(Boolean).sort();
+  if (p.person_id) portrayalsByPerson.set(p.person_id, p);
+}
+for (const c of characters) {
+  c.portrayals = c.portrayals || [];
+  c.n_performers = c.n_performers || 0;
+}
+for (const w of works) w.portrayals = w.portrayals || [];
 
 const FRANCHISES = [...new Set(works.map((w) => w.franchise).filter(Boolean))].sort();
 const GENRES = [...new Set(works.flatMap((w) => w.genres))].sort();
@@ -486,6 +522,10 @@ const FACETS = {
   relation: { label: "Work relation", title: (v) => `Works carrying a “${v}” link`, get: (w) => w.relations.map((r) => r.label) },
   "credited-as": { label: "Credit spelling", title: (v) => `Credited as “${v}”`, get: (w) => w.characters.map((c) => c.as) },
   "content-genre": { label: "Genre", title: (v) => `${v} works`, get: (w) => w.genres },
+  /* v5: the two facets a performance row can be read along — whether the
+     character was voiced or acted, and which source vouched for the credit. */
+  "portrayal-type": { label: "Performance", title: (v) => `Works with a ${v.replace(/_/g, " ")} performance on record`, get: (w) => (w.portrayals || []).map((x) => x.type) },
+  "cast-source": { label: "Cast source", title: (v) => `Works whose cast came from: ${PORTRAYAL_ORIGIN[v] || v}`, get: (w) => (w.portrayals || []).map((x) => x.origin) },
   country: { label: "Country", title: (v) => `Works made in ${v}`, get: (w) => w.countries },
   language: { label: "Language", title: (v) => `Works in ${v}`, get: (w) => w.languages },
 };
@@ -657,6 +697,8 @@ function render() {
     creators: viewCreators,
     creator: viewCreator,
     comicrow: viewComicRow,
+    related: viewRelated,
+    performer: viewPerformer,
     awards: viewAwards,
     award: viewAward,
     roles: viewRoles,
@@ -792,6 +834,62 @@ function creditedAsLink(work, credited) {
   if (!credited) return dash();
   const match = work.characters.find((wc) => wc.as === credited);
   return match ? characterLink(match.identity_id, credited) : facetLink("credited-as", credited);
+}
+
+/* A performer is either somebody the dataset already had a `people` row for —
+   in which case their page is the person page, with its birth dates and awards
+   — or somebody only the cast lists know about, who gets the thinner page of
+   their own rather than being dropped. */
+function performerLink(pid, label) {
+  const p = performerById.get(pid);
+  if (!p) return dash();
+  if (p.person_id && personById.has(p.person_id))
+    return el("button", { class: "row-link", onclick: () => go("#/person/" + p.person_id), text: label ?? p.name });
+  return softLink(label ?? p.name, "#/performer/" + p.id, { title: "Credited in a cast list; not otherwise in this dataset" });
+}
+
+function relatedLink(rid, label) {
+  const r = relatedById.get(rid);
+  if (!r) return label ? findLink(label) : dash();
+  return softLink(label ?? r.name, "#/related/" + r.id, { title: r.description || r.name });
+}
+
+/* Both halves of a portrayal's character side: one of the 264, or one of the
+   446 the graph reaches out to. */
+function portrayalCharacterLink(x) {
+  return x.kind === "identity" ? characterLink(x.target_id, x.as || undefined)
+                               : relatedLink(x.target_id, x.as || undefined);
+}
+
+const PORTRAYAL_TYPE = { voice: "Voice", live_action: "Live action" };
+const PORTRAYAL_ORIGIN = {
+  work_characters: "already in the dataset",
+  cast_crew: "resolved from a credited character name",
+  wikidata: "Wikidata cast statement",
+  wikipedia: "Wikipedia cast list",
+};
+
+/* One table, used by the work, character, performer and second-ring pages —
+   each drops the column that would repeat its own title on every row. */
+function portrayalTable(list, opts = {}) {
+  const cols = [];
+  if (opts.work !== false)
+    cols.push({ key: "w", label: "Work", wrap: true,
+      cell: (x) => { const w = workById.get(x.work_id); return w ? workLink(w, false) : dash(); } },
+      { key: "y", label: "Year", num: true, cell: (x) => yearLink(workById.get(x.work_id)?.year) });
+  if (opts.character !== false)
+    cols.push({ key: "c", label: "Character", wrap: true, cell: (x) => portrayalCharacterLink(x) });
+  if (opts.performer !== false)
+    cols.push({ key: "p", label: "Performer", wrap: true, cell: (x) => performerLink(x.performer_id) });
+  cols.push({ key: "t", label: "Type",
+    cell: (x) => facetLink("portrayal-type", x.type, PORTRAYAL_TYPE[x.type] || x.type) });
+  cols.push({ key: "src", label: "Source", wrap: true,
+    cell: (x) => el("span", { title: "Character matched by " + x.method.replace(/_/g, " ") },
+      facetLink("cast-source", x.origin, PORTRAYAL_ORIGIN[x.origin] || x.origin)) });
+  const sorted = [...list].sort(
+    (a, b) => (workById.get(a.work_id)?.year ?? 9999) - (workById.get(b.work_id)?.year ?? 9999) ||
+              String(a.as || "").localeCompare(String(b.as || "")));
+  return table(cols, sorted, { plain: true });
 }
 
 function dotLabel(color, label) {
@@ -1972,6 +2070,19 @@ function viewWork(id) {
     );
   }
 
+  /* performances — who played whom. The only place a game's voice cast lives,
+     since TMDB never credited one, and the only place a television guest
+     character from outside the 264 (the Hulk, MODOK) is named at all. */
+  if (w.portrayals.length) {
+    frag.appendChild(
+      anchor("performances",
+        section("Performances", w.portrayals.length,
+          portrayalTable(w.portrayals, { work: false }),
+          el("div", { class: "sub", style: { marginTop: "8px" },
+            text: "One row per character a performer plays in this work. The source column says where the credit came from and, on hover, how the character name was matched." })))
+    );
+  }
+
   /* crew */
   if (w.crew.length) {
     frag.appendChild(
@@ -2531,13 +2642,8 @@ function viewCharacter(id) {
      never say before v4. An edge whose other end is in the dataset is a link; one
      that is not is still worth naming, so it stays as text. */
   if (c.relations.length) {
-    const REL_LABELS = {
-      enemy: "Enemy of", ally: "Allied with", mother: "Mother", father: "Father",
-      spouse: "Spouse", child: "Child", partner: "Partner", relative: "Relative",
-      alternate_universe_counterpart: "Counterpart in another universe",
-    };
-    const order = ["enemy", "ally", "alternate_universe_counterpart", "spouse", "partner",
-                   "father", "mother", "child", "relative"];
+    const REL_LABELS = RELATION_LABELS;
+    const order = RELATION_ORDER;
     const byRel = new Map();
     for (const r of c.relations) {
       if (!byRel.has(r.relation)) byRel.set(r.relation, []);
@@ -2558,12 +2664,33 @@ function viewCharacter(id) {
               el("div", { class: "chip-list" },
                 [...list]
                   .sort((a, b) => (b.other_id ? 1 : 0) - (a.other_id ? 1 : 0) || a.name.localeCompare(b.name))
+                  /* Three tiers now: a character in the catalogue, a second-ring
+                     character v5 gave a row of its own, and — for the handful
+                     left — a bare name. */
                   .map((r) =>
                     r.other_id
                       ? el("button", { class: "chip", text: r.name, onclick: () => go("#/character/" + r.other_id) })
+                      : r.related_id
+                      ? el("button", { class: "chip outer", title: relatedById.get(r.related_id)?.description || "Outside this catalogue's cast, but resolved", text: r.name,
+                                       onclick: () => go("#/related/" + r.related_id) })
                       : el("span", { class: "chip muted", title: "Not a character in this dataset", text: r.name })))))),
         el("div", { class: "sub", style: { marginTop: "8px" },
-          text: "Greyed names are characters Wikidata links to that this catalogue has no row for — they have never been on screen in a Spider-Man work." }))
+          text: "Solid names are characters with a screen appearance in this catalogue. Outlined names are the wider Marvel cast they are connected to — resolved in v5, with a page of their own — and any greyed name is one neither could place." }))
+    );
+  }
+
+  /* Everyone who has played this character, in order. Before v5 this question
+     could only be answered for live-action film. */
+  if (c.portrayals.length) {
+    const spanYears = c.portrayals.map((x) => workById.get(x.work_id)?.year).filter(Boolean);
+    frag.appendChild(
+      anchor("performed-by",
+        section("Performed by", c.n_performers,
+          portrayalTable(c.portrayals, { character: false }),
+          el("div", { class: "sub", style: { marginTop: "8px" },
+            text: `${c.n_performers} performer${c.n_performers === 1 ? "" : "s"} across ` +
+                  `${new Set(c.portrayals.map((x) => x.work_id)).size} works` +
+                  (spanYears.length ? `, ${Math.min(...spanYears)}–${Math.max(...spanYears)}.` : ".") })))
     );
   }
 
@@ -2685,15 +2812,32 @@ function viewCharacter(id) {
 /* Every identity a person has been credited as, with the works behind each. */
 function charactersPlayedBy(person) {
   const byChar = new Map();
+  const seed = (key) => {
+    const [kind, id] = [key[0], Number(key.slice(2))];
+    return { kind: kind === "i" ? "identity" : "related",
+             character: kind === "i" ? charById.get(id) : relatedById.get(id),
+             target_id: id, works: [], as: new Set() };
+  };
   for (const cr of person.credits) {
     const w = workById.get(cr.work_id);
     for (const wc of w.characters) {
       const isMatch = wc.actor_person_id === person.id || (cr.character && wc.as === cr.character);
       if (!isMatch) continue;
-      const g = groupInto(byChar, wc.identity_id, (id) => ({ character: charById.get(id), works: [], as: new Set() }));
+      const g = groupInto(byChar, "i:" + wc.identity_id, seed);
       if (!g.works.includes(w)) g.works.push(w);
       if (wc.as) g.as.add(wc.as);
     }
+  }
+  /* v5's portrayals reach where the credit table could not: the games, whose
+     voice cast TMDB never carried, and the guest characters from outside the
+     264 that only a cast list names. */
+  const perf = portrayalsByPerson.get(person.id);
+  for (const x of perf ? perf.portrayals : []) {
+    const w = workById.get(x.work_id);
+    if (!w) continue;
+    const g = groupInto(byChar, (x.kind === "identity" ? "i:" : "r:") + x.target_id, seed);
+    if (!g.works.includes(w)) g.works.push(w);
+    if (x.as) g.as.add(x.as);
   }
   return [...byChar.values()]
     .filter((g) => g.character)
@@ -2899,8 +3043,8 @@ function viewPerson(id) {
         played.length,
         table(
           [
-            { key: "c", label: "Character", cell: (g) => characterLink(g.character.id) },
-            { key: "a", label: "Alignment", cell: (g) => alignLink(g.character.alignment) },
+            { key: "c", label: "Character", cell: (g) => (g.kind === "identity" ? characterLink(g.character.id) : relatedLink(g.character.id)) },
+            { key: "a", label: "Alignment", cell: (g) => (g.kind === "identity" ? alignLink(g.character.alignment) : el("span", { class: "as", text: "outside the catalogue" })) },
             { key: "y", label: "When", cell: (g) => (g.from == null ? dash() : g.from === g.to ? yearLink(g.from) : el("span", { class: "names" }, yearLink(g.from), el("span", { class: "sep", text: "\u2013" }), yearLink(g.to))) },
             { key: "w", label: "In", wrap: true, cell: (g) => el("span", { class: "chip-list" }, g.works.map((w) => el("button", { class: "chip", onclick: () => go("#/work/" + w.id) }, el("span", { class: "dot", style: { background: TYPE[w.type].color } }), w.title, el("span", { class: "as", text: String(yr(w)) })))) },
             {
@@ -2908,9 +3052,25 @@ function viewPerson(id) {
               label: "Also played by",
               wrap: true,
               cell: (g) => {
-                const others = [...new Set(g.character.appearances.map((ap) => ap.actor_person_id).filter((id) => id && id !== p.id))];
-                return others.length
-                  ? el("span", { class: "chip-list" }, others.slice(0, 5).map((id) => el("button", { class: "chip", onclick: () => go("#/person/" + id), text: personById.get(id)?.name || "\u2014" })))
+                /* Everyone else on the same character, from both the credit
+                   table and v5's portrayals — which is what makes a game voice
+                   actor and a film lead show up beside each other. */
+                const others = new Map();
+                if (g.kind === "identity")
+                  for (const ap of g.character.appearances || [])
+                    if (ap.actor_person_id && ap.actor_person_id !== p.id)
+                      others.set("p:" + ap.actor_person_id, () => go("#/person/" + ap.actor_person_id));
+                for (const x of g.character.portrayals || []) {
+                  const perf = performerById.get(x.performer_id);
+                  if (!perf || perf.person_id === p.id) continue;
+                  others.set(perf.person_id ? "p:" + perf.person_id : "f:" + perf.id,
+                             perf.person_id ? () => go("#/person/" + perf.person_id) : () => go("#/performer/" + perf.id));
+                }
+                const label = (key) => (key[0] === "p" ? personById.get(Number(key.slice(2)))?.name : performerById.get(Number(key.slice(2)))?.name) || "\u2014";
+                const keys = [...others.keys()];
+                return keys.length
+                  ? el("span", { class: "chip-list" }, keys.slice(0, 5).map((k) => el("button", { class: "chip", onclick: others.get(k), text: label(k) })),
+                       keys.length > 5 ? el("span", { class: "as", text: "+" + (keys.length - 5) }) : null)
                   : dash();
               },
             },
@@ -3859,6 +4019,111 @@ const viewRoles = dimensionListView({
     { key: "span", label: "Span", num: true, asc: true, value: (g) => g.first_year ?? 9999, cell: (g) => spanText(g) },
   ],
 });
+
+/* ---------- v5: the second ring, and performers without a `people` row ---------- */
+
+/* A character the catalogue's own cast never included, but that its cast is
+   related to: Mephisto, the X-Men, Richard Fisk. The page exists so a
+   relationship chip leads somewhere instead of dead-ending in a tooltip. */
+function viewRelated(id) {
+  const r = relatedById.get(Number(id));
+  if (!r) return el("div", { class: "empty-state", text: "Unknown character." });
+  const frag = document.createDocumentFragment();
+  frag.appendChild(backLink("All characters", listHash("characters")));
+
+  frag.appendChild(
+    el("div", { class: "detail-head" },
+      el("h1", { text: r.name }),
+      el("div", { class: "meta-line" },
+        el("span", { class: "badge", text: "Outside this catalogue's cast" }),
+        r.kind ? el("span", { class: "as", text: r.kind }) : null))
+  );
+  if (r.description)
+    frag.appendChild(el("p", { class: "sub", style: { marginTop: "6px" }, text: r.description }));
+
+  const facts = [];
+  const add = (k, v) => v && facts.push(el("div", null, el("div", { class: "k", text: k }), el("div", { class: "v" }, v)));
+  add("Publisher", r.publisher && findLink(r.publisher));
+  add("Narrative universe", r.universe && findLink(r.universe));
+  add("Gender", r.gender && findLink(r.gender));
+  add("First appearance", r.first_appearance && findLink(r.first_appearance));
+  add("Creators", r.creators && nameLinks(r.creators));
+  if (facts.length) frag.appendChild(section("Details", null, el("div", { class: "card deflist" }, facts)));
+
+  /* The edges that made this row worth creating, pointing back at the catalogue. */
+  if (r.back_relations.length) {
+    frag.appendChild(
+      section("Connected to", r.back_relations.length,
+        el("div", { class: "card" },
+          el("div", { class: "chip-list" },
+            r.back_relations
+              .filter((b) => charById.has(b.identity_id))
+              .sort((a, b) => (charById.get(a.identity_id)?.name || "").localeCompare(charById.get(b.identity_id)?.name || ""))
+              .map((b) => el("button", { class: "chip", onclick: () => go("#/character/" + b.identity_id) },
+                el("span", { class: "dot", style: { background: (ALIGN[charById.get(b.identity_id)?.alignment] || ALIGN.neutral).color } }),
+                charById.get(b.identity_id).name,
+                el("span", { class: "as", text: RELATION_LABELS[b.relation] || b.relation.replace(/_/g, " ") }))))),
+        el("div", { class: "sub", style: { marginTop: "8px" },
+          text: "Characters in this catalogue that Wikidata files a relationship to, which is why this row exists." }))
+    );
+  }
+
+  if (r.relations.length) {
+    frag.appendChild(
+      section("Other relationships", r.relations.length,
+        el("div", { class: "card" },
+          el("div", { class: "chip-list" },
+            [...r.relations]
+              .sort((a, b) => (b.other_id ? 1 : 0) - (a.other_id ? 1 : 0) || a.name.localeCompare(b.name))
+              .map((x) =>
+                x.other_id
+                  ? el("button", { class: "chip", onclick: () => go("#/character/" + x.other_id) }, x.name,
+                      el("span", { class: "as", text: RELATION_LABELS[x.relation] || x.relation.replace(/_/g, " ") }))
+                  : el("button", { class: "chip outer", onclick: () => go("#/related/" + x.other_related_id) }, x.name,
+                      el("span", { class: "as", text: RELATION_LABELS[x.relation] || x.relation.replace(/_/g, " ") }))))))
+    );
+  }
+
+  if (r.portrayals.length)
+    frag.appendChild(section("Performances", r.portrayals.length,
+      portrayalTable(r.portrayals, { character: false })));
+
+  const links = [];
+  if (r.wikipedia) links.push({ source: "wikipedia", url: "https://en.wikipedia.org/wiki/" + encodeURIComponent(r.wikipedia.replace(/ /g, "_")) });
+  if (r.wikidata) links.push({ source: "wikidata", url: "https://www.wikidata.org/wiki/" + r.wikidata });
+  if (links.length) frag.appendChild(section("Elsewhere", links.length, externalLinksRow(links)));
+  return frag;
+}
+
+/* Somebody a cast list credits who has no `people` row — most of them game and
+   television voice actors, whom TMDB never carried into this dataset. */
+function viewPerformer(id) {
+  const p = performerById.get(Number(id));
+  if (!p) return el("div", { class: "empty-state", text: "Unknown performer." });
+  if (p.person_id && personById.has(p.person_id)) return viewPerson(p.person_id);
+  const frag = document.createDocumentFragment();
+  frag.appendChild(backLink("All people", listHash("people")));
+  frag.appendChild(
+    el("div", { class: "detail-head" },
+      el("h1", { text: p.name }),
+      el("div", { class: "meta-line" },
+        el("span", { class: "badge", text: "Performer" }),
+        el("span", { class: "as", text: "credited in a cast list; no other credit in this catalogue" })))
+  );
+  frag.appendChild(
+    el("div", { class: "kpis", style: { marginTop: "16px" } },
+      statTile("Works", String(p.n_works)),
+      statTile("Characters", String(new Set(p.portrayals.map((x) => x.kind + ":" + x.target_id)).size)),
+      p.years.length ? statTile("Active", p.years[0] === p.years[p.years.length - 1] ? String(p.years[0]) : p.years[0] + "\u2013" + p.years[p.years.length - 1], "#/year/" + p.years[0]) : null)
+  );
+  frag.appendChild(section("Performances", p.portrayals.length,
+    portrayalTable(p.portrayals, { performer: false })));
+  const links = [];
+  if (p.wikipedia) links.push({ source: "wikipedia", url: "https://en.wikipedia.org/wiki/" + encodeURIComponent(p.wikipedia.replace(/ /g, "_")) });
+  if (p.wikidata) links.push({ source: "wikidata", url: "https://www.wikidata.org/wiki/" + p.wikidata });
+  if (links.length) frag.appendChild(section("Elsewhere", links.length, externalLinksRow(links)));
+  return frag;
+}
 
 function viewPublication(name) {
   const g = publicationIndex.get(name);
